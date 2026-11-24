@@ -1,0 +1,1 @@
+{"answer":"63.0548302872063","unit":"percent","expression":"(24.98 - 15.32) / 15.32 * 100","low":"62.9690048939641","high":"63.1407117205354","reliable_digits":"2","explanation":"Allowing each displayed price to vary by $0.005 gives these bounds; both round to 63% at two significant digits."}

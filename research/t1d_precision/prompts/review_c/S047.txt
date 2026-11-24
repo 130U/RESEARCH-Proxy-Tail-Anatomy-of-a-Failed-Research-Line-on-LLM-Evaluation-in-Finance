@@ -1,0 +1,187 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S047",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "devon energy corporation and subsidiaries notes to consolidated financial statements 2013 ( continued ) debt maturities as of december 31 , 2014 , excluding premiums and discounts , are as follows ( in millions ) : ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "2015",
+          "$1,432"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2016",
+          "350"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2017",
+          "—"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2018",
+          "875"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "2019",
+          "1,337"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "2020 and thereafter",
+          "7,263"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Total",
+          "$11,257"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_1",
+        "text": "credit lines devon has a $ 3.0 billion syndicated , unsecured revolving line of credit ( the senior credit facility ) ."
+      },
+      {
+        "location": "text_2",
+        "text": "the maturity date for $ 30 million of the senior credit facility is october 24 , 2017 ."
+      },
+      {
+        "location": "text_3",
+        "text": "the maturity date for $ 164 million of the senior credit facility is october 24 , 2018 ."
+      },
+      {
+        "location": "text_4",
+        "text": "the maturity date for the remaining $ 2.8 billion is october 24 , 2019 ."
+      },
+      {
+        "location": "text_5",
+        "text": "amounts borrowed under the senior credit facility may , at the election of devon , bear interest at various fixed rate options for periods of up to twelve months ."
+      },
+      {
+        "location": "text_6",
+        "text": "such rates are generally less than the prime rate ."
+      },
+      {
+        "location": "text_7",
+        "text": "however , devon may elect to borrow at the prime rate ."
+      },
+      {
+        "location": "text_8",
+        "text": "the senior credit facility currently provides for an annual facility fee of $ 3.8 million that is payable quarterly in arrears ."
+      },
+      {
+        "location": "text_9",
+        "text": "as of december 31 , 2014 , there were no borrowings under the senior credit facility ."
+      },
+      {
+        "location": "text_10",
+        "text": "the senior credit facility contains only one material financial covenant ."
+      },
+      {
+        "location": "text_11",
+        "text": "this covenant requires devon 2019s ratio of total funded debt to total capitalization , as defined in the credit agreement , to be no greater than 65 percent ."
+      },
+      {
+        "location": "text_12",
+        "text": "the credit agreement contains definitions of total funded debt and total capitalization that include adjustments to the respective amounts reported in the accompanying consolidated financial statements ."
+      },
+      {
+        "location": "text_13",
+        "text": "also , total capitalization is adjusted to add back noncash financial write-downs such as full cost ceiling impairments or goodwill impairments ."
+      },
+      {
+        "location": "text_14",
+        "text": "as of december 31 , 2014 , devon was in compliance with this covenant with a debt-to- capitalization ratio of 20.9 percent ."
+      },
+      {
+        "location": "text_15",
+        "text": "commercial paper devon has access to $ 3.0 billion of short-term credit under its commercial paper program ."
+      },
+      {
+        "location": "text_16",
+        "text": "commercial paper debt generally has a maturity of between 1 and 90 days , although it can have a maturity of up to 365 days , and bears interest at rates agreed to at the time of the borrowing ."
+      },
+      {
+        "location": "text_17",
+        "text": "the interest rate is generally based on a standard index such as the federal funds rate , libor or the money market rate as found in the commercial paper market ."
+      },
+      {
+        "location": "text_18",
+        "text": "as of december 31 , 2014 , devon 2019s commercial paper borrowings of $ 932 million have a weighted- average borrowing rate of 0.44 percent ."
+      },
+      {
+        "location": "text_19",
+        "text": "retirement of senior notes on november 13 , 2014 , devon redeemed $ 1.9 billion of senior notes prior to their scheduled maturity , primarily with proceeds received from its asset divestitures ."
+      },
+      {
+        "location": "text_20",
+        "text": "the redemption includes the 2.4% ( 2.4 % ) $ 500 million senior notes due 2016 , the 1.2% ( 1.2 % ) $ 650 million senior notes due 2016 and the 1.875% ( 1.875 % ) $ 750 million senior notes due 2017 ."
+      },
+      {
+        "location": "text_21",
+        "text": "the notes were redeemed for $ 1.9 billion , which included 100 percent of the principal amount and a make-whole premium of $ 40 million ."
+      },
+      {
+        "location": "text_22",
+        "text": "on the date of redemption , these notes also had an unamortized discount of $ 2 million and unamortized debt issuance costs of $ 6 million ."
+      },
+      {
+        "location": "text_23",
+        "text": "the make-whole premium , unamortized discounts and debt issuance costs are included in net financing costs on the accompanying 2014 consolidated comprehensive statement of earnings. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the weighted value of the devon 2019s commercial paper borrowings as of december 31 , 2014 in millions",
+  "human_answer": "410.08",
+  "reference_program": "multiply(932, 0.44)",
+  "reference_execution_value": 410.08,
+  "model_response": {
+    "answer": "4.1008",
+    "unit": "million dollars",
+    "expression": "932 * 0.44 / 100",
+    "explanation": "Multiplying commercial paper borrowings of $932 million by the weighted-average borrowing rate of 0.44% gives $4.1008 million."
+  }
+}

@@ -1,0 +1,1 @@
+{"answer":"33.261906373039","unit":"percent","expression":"(265436 / 798018) * 100","low":"33.261822877540","high":"33.261989868643","reliable_digits":"5","explanation":"U.S. revenue divided by total revenue gives this percentage; allowing each amount to vary by 0.5 thousand preserves five significant digits."}

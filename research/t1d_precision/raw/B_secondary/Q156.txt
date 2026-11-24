@@ -1,0 +1,1 @@
+{"answer":"33.2619063730","unit":"percent","expression":"265436 / 798018 * 100","low":"33.2618228775","high":"33.2619898686","reliable_digits":"5","explanation":"Allowing each revenue figure to vary by 0.5 thousand gives these bounds and five reliable significant digits."}

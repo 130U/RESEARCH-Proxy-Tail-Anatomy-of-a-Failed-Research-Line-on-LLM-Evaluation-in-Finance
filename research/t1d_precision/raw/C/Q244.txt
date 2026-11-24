@@ -1,0 +1,1 @@
+{"answer":"11.2121833094","unit":"percent","expression":"(222510 - 200077) / 200077 * 100","low":"11.2116554835","high":"11.2127111380","reliable_digits":"4","explanation":"Loans retained increased; allowing each reported amount to vary by 0.5 million gives these bounds and four reliable significant digits."}

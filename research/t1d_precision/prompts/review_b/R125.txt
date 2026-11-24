@@ -1,0 +1,250 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R125",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "notes to consolidated financial statements j.p ."
+      },
+      {
+        "location": "text_1",
+        "text": "morgan chase & co ."
+      },
+      {
+        "location": "text_2",
+        "text": "104 j.p ."
+      },
+      {
+        "location": "text_3",
+        "text": "morgan chase & co ."
+      },
+      {
+        "location": "text_4",
+        "text": "/ 2003 annual report notes to consolidated financial statements j.p ."
+      },
+      {
+        "location": "text_5",
+        "text": "morgan chase & co ."
+      },
+      {
+        "location": "text_6",
+        "text": "conduits ."
+      },
+      {
+        "location": "text_7",
+        "text": "commercial paper issued by conduits for which the firm acts as administrator aggregated $ 11.7 billion at december 31 , 2003 , and $ 17.5 billion at december 31 , 2002 ."
+      },
+      {
+        "location": "text_8",
+        "text": "the commercial paper issued is backed by sufficient collateral , credit enhance- ments and commitments to provide liquidity to support receiving at least an a-1 , p-1 and , in certain cases , an f1 rating ."
+      },
+      {
+        "location": "text_9",
+        "text": "the firm had commitments to provide liquidity on an asset- specific basis to these vehicles in an amount up to $ 18.0 billion at december 31 , 2003 , and $ 23.5 billion at december 31 , 2002 ."
+      },
+      {
+        "location": "text_10",
+        "text": "third-party banks had commitments to provide liquidity on an asset-specific basis to these vehicles in an amount up to $ 700 million at december 31 , 2003 , and up to $ 900 million at december 31 , 2002 ."
+      },
+      {
+        "location": "text_11",
+        "text": "asset-specific liquidity is the primary source of liquidity support for the conduits ."
+      },
+      {
+        "location": "text_12",
+        "text": "in addition , program-wide liquidity is provided by jpmorgan chase to these vehicles in the event of short-term disruptions in the commer- cial paper market ; these commitments totaled $ 2.6 billion and $ 2.7 billion at december 31 , 2003 and 2002 , respectively ."
+      },
+      {
+        "location": "text_13",
+        "text": "for certain multi-seller conduits , jpmorgan chase also provides lim- ited credit enhancement , primarily through the issuance of letters of credit ."
+      },
+      {
+        "location": "text_14",
+        "text": "commitments under these letters of credit totaled $ 1.9 billion and $ 3.4 billion at december 31 , 2003 and 2002 , respectively ."
+      },
+      {
+        "location": "text_15",
+        "text": "jpmorgan chase applies the same underwriting standards in making liquidity commitments to conduits as the firm would with other extensions of credit ."
+      },
+      {
+        "location": "text_16",
+        "text": "if jpmorgan chase were downgraded below a-1 , p-1 and , in certain cases , f1 , the firm could also be required to provide funding under these liquidity commitments , since commercial paper rated below a-1 , p-1 or f1 would generally not be issuable by the vehicle ."
+      },
+      {
+        "location": "text_17",
+        "text": "under these circumstances , the firm could either replace itself as liquidity provider or facilitate the sale or refinancing of the assets held in the vie in other markets ."
+      },
+      {
+        "location": "text_18",
+        "text": "jpmorgan chase 2019s maximum credit exposure to these vehicles at december 31 , 2003 , is $ 18.7 billion , as the firm cannot be obligated to fund the entire notional amounts of asset-specific liquidity , program-wide liquidity and credit enhancement facili- ties at the same time ."
+      },
+      {
+        "location": "text_19",
+        "text": "however , the firm views its credit exposure to multi-seller conduit transactions as limited ."
+      },
+      {
+        "location": "text_20",
+        "text": "this is because , for the most part , the firm is not required to fund under the liquidity facilities if the assets in the vie are in default ."
+      },
+      {
+        "location": "text_21",
+        "text": "additionally , the firm 2019s obligations under the letters of credit are secondary to the risk of first loss provided by the client or other third parties 2013 for example , by the overcollateralization of the vie with the assets sold to it ."
+      },
+      {
+        "location": "text_22",
+        "text": "jpmorgan chase consolidated these asset-backed commercial paper conduits at july 1 , 2003 , in accordance with fin 46 and recorded the assets and liabilities of the conduits on its consolidated balance sheet ."
+      },
+      {
+        "location": "text_23",
+        "text": "in december 2003 , one of the multi-seller conduits was restructured with the issuance of preferred securities acquired by an independent third-party investor , who will absorb the majority of the expected losses notes to consolidated financial statements j.p ."
+      },
+      {
+        "location": "text_24",
+        "text": "morgan chase & co ."
+      },
+      {
+        "location": "text_25",
+        "text": "of the conduit ."
+      },
+      {
+        "location": "text_26",
+        "text": "in determining the primary beneficiary of the conduit , the firm leveraged an existing rating agency model that is an independent market standard to size the expected losses and considered the relative rights and obligations of each of the variable interest holders ."
+      },
+      {
+        "location": "text_27",
+        "text": "as a result of the restructuring , jpmorgan chase deconsolidated approximately $ 5.4 billion of the vehicle 2019s assets and liabilities as of december 31 , 2003 ."
+      },
+      {
+        "location": "text_28",
+        "text": "the remaining conduits continue to be consolidated on the firm 2019s balance sheet at december 31 , 2003 : $ 4.8 billion of assets recorded in loans , and $ 1.5 billion of assets recorded in available-for-sale securities ."
+      },
+      {
+        "location": "text_29",
+        "text": "client intermediation as a financial intermediary , the firm is involved in structuring vie transactions to meet investor and client needs ."
+      },
+      {
+        "location": "text_30",
+        "text": "the firm inter- mediates various types of risks ( including , for example , fixed income , equity and credit ) , typically using derivative instruments ."
+      },
+      {
+        "location": "text_31",
+        "text": "in certain circumstances , the firm also provides liquidity and other support to the vies to facilitate the transaction ."
+      },
+      {
+        "location": "text_32",
+        "text": "the firm 2019s current exposure to nonconsolidated vies is reflected in its consolidated balance sheet or in the notes to consolidated financial statements ."
+      },
+      {
+        "location": "text_33",
+        "text": "the risks inherent in derivative instruments or liquidity commitments are managed similarly to other credit , market and liquidity risks to which the firm is exposed ."
+      },
+      {
+        "location": "text_34",
+        "text": "assets held by certain client intermediation 2013related vies at december 31 , 2003 and 2002 , were as follows: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "December 31, (in billions)",
+          "2003",
+          "2002"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Structured commercial loan vehicles",
+          "$5.3",
+          "$7.2"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Credit-linked note vehicles",
+          "17.7",
+          "9.2"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Municipal bond vehicles",
+          "5.5",
+          "5.0"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Other client intermediation vehicles",
+          "5.8",
+          "7.4"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_35",
+        "text": "the firm has created structured commercial loan vehicles managed by third parties , in which loans are purchased from third parties or through the firm 2019s syndication and trading func- tions and funded by issuing commercial paper ."
+      },
+      {
+        "location": "text_36",
+        "text": "investors provide collateral and have a first risk of loss up to the amount of collat- eral pledged ."
+      },
+      {
+        "location": "text_37",
+        "text": "the firm retains a second-risk-of-loss position for these vehicles and does not absorb a majority of the expected losses of the vehicles ."
+      },
+      {
+        "location": "text_38",
+        "text": "documentation includes provisions intended , subject to certain conditions , to enable jpmorgan chase to termi- nate the transactions related to a particular loan vehicle if the value of the relevant portfolio declines below a specified level ."
+      },
+      {
+        "location": "text_39",
+        "text": "the amount of the commercial paper issued by these vehicles totaled $ 5.3 billion as of december 31 , 2003 , and $ 7.2 billion as of december 31 , 2002 ."
+      },
+      {
+        "location": "text_40",
+        "text": "jpmorgan chase was committed to pro- vide liquidity to these vies of up to $ 8.0 billion at december 31 , 2003 , and $ 12.0 billion at december 31 , 2002 ."
+      },
+      {
+        "location": "text_41",
+        "text": "the firm 2019s maxi- mum exposure to loss to these vehicles at december 31 , 2003 , was $ 5.5 billion , which reflects the netting of collateral and other program limits. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the decline in commercial paper issued by conduits during 2003 , in b?",
+  "reference_program": "subtract(17.5, 11.7)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "17.5",
+      "raw": "17.5",
+      "location": "text_7:132",
+      "context": "commercial paper issued by conduits for which the firm acts as administrator aggregated $ 11.7 billion at december 31 , 2003 , and $ 17.5 billion at december 31 , 2002 ."
+    },
+    "x1": {
+      "program_token": "11.7",
+      "raw": "11.7",
+      "location": "text_7:89",
+      "context": "commercial paper issued by conduits for which the firm acts as administrator aggregated $ 11.7 billion at december 31 , 2003 , and $ 17.5 billion at december 31 , 2002 ."
+    }
+  }
+}

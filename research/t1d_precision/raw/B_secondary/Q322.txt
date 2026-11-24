@@ -1,0 +1,1 @@
+{"answer":"-44.5717403164","unit":"percent","expression":"(5,080 - 9,165) / 9,165 * 100","low":"-44.5802193006","high":"-44.5632604070","reliable_digits":"3","explanation":"Gain on land sales decreased by approximately 44.6%, with bounds allowing each displayed amount to vary by 0.5."}

@@ -1,0 +1,5 @@
+{
+    "review_id": "R244",
+    "verdict": "valid",
+    "reason": "The rounded risk-free interest-rate assumptions are correctly bound to 2005 and 2004, and the calculation uses 2004 as the percentage-change denominator."
+  }

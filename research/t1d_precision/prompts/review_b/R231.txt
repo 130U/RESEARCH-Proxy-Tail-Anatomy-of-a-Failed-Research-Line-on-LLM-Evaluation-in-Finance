@@ -1,0 +1,161 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R231",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "the fair value measurements of the borrowings under our credit agreement and receivables facility are classified as level 2 within the fair value hierarchy since they are determined based upon significant inputs observable in the market , including interest rates on recent financing transactions with similar terms and maturities ."
+      },
+      {
+        "location": "text_1",
+        "text": "we estimated the fair value by calculating the upfront cash payment a market participant would require at december 31 , 2016 to assume these obligations ."
+      },
+      {
+        "location": "text_2",
+        "text": "the fair value of our notes is classified as level 1 within the fair value hierarchy since it is determined based upon observable market inputs including quoted market prices in an active market ."
+      },
+      {
+        "location": "text_3",
+        "text": "the fair value of our euro notes is determined based upon observable market inputs including quoted market prices in a market that is not active , and therefore is classified as level 2 within the fair value hierarchy ."
+      },
+      {
+        "location": "text_4",
+        "text": "note 12 ."
+      },
+      {
+        "location": "text_5",
+        "text": "commitments and contingencies operating leases we are obligated under noncancelable operating leases for corporate office space , warehouse and distribution facilities , trucks and certain equipment ."
+      },
+      {
+        "location": "text_6",
+        "text": "the future minimum lease commitments under these leases at december 31 , 2016 are as follows ( in thousands ) : years ending december 31: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "2017",
+          "$200,450"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2018",
+          "168,926"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2019",
+          "136,462"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2020",
+          "110,063"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "2021",
+          "82,494"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Thereafter",
+          "486,199"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Future Minimum Lease Payments",
+          "$1,184,594"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_7",
+        "text": "rental expense for operating leases was approximately $ 211.5 million , $ 168.4 million and $ 148.5 million during the years ended december 31 , 2016 , 2015 and 2014 , respectively ."
+      },
+      {
+        "location": "text_8",
+        "text": "we guarantee the residual values of the majority of our truck and equipment operating leases ."
+      },
+      {
+        "location": "text_9",
+        "text": "the residual values decline over the lease terms to a defined percentage of original cost ."
+      },
+      {
+        "location": "text_10",
+        "text": "in the event the lessor does not realize the residual value when a piece of equipment is sold , we would be responsible for a portion of the shortfall ."
+      },
+      {
+        "location": "text_11",
+        "text": "similarly , if the lessor realizes more than the residual value when a piece of equipment is sold , we would be paid the amount realized over the residual value ."
+      },
+      {
+        "location": "text_12",
+        "text": "had we terminated all of our operating leases subject to these guarantees at december 31 , 2016 , our portion of the guaranteed residual value would have totaled approximately $ 59.0 million ."
+      },
+      {
+        "location": "text_13",
+        "text": "we have not recorded a liability for the guaranteed residual value of equipment under operating leases as the recovery on disposition of the equipment under the leases is expected to approximate the guaranteed residual value ."
+      },
+      {
+        "location": "text_14",
+        "text": "litigation and related contingencies we have certain contingencies resulting from litigation , claims and other commitments and are subject to a variety of environmental and pollution control laws and regulations incident to the ordinary course of business ."
+      },
+      {
+        "location": "text_15",
+        "text": "we currently expect that the resolution of such contingencies will not materially affect our financial position , results of operations or cash flows. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the cumulative rental expense from 2014 to 2016 in millions",
+  "reference_program": "add(211.5, 168.4), add(148.5, #0)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "211.5",
+      "raw": "211.5",
+      "location": "text_7:55",
+      "context": "rental expense for operating leases was approximately $ 211.5 million , $ 168.4 million and $ 148.5 million during the years ended december 31 , 2016 , 2015 and 2014 , respectively ."
+    },
+    "x1": {
+      "program_token": "168.4",
+      "raw": "168.4",
+      "location": "text_7:73",
+      "context": "rental expense for operating leases was approximately $ 211.5 million , $ 168.4 million and $ 148.5 million during the years ended december 31 , 2016 , 2015 and 2014 , respectively ."
+    },
+    "x2": {
+      "program_token": "148.5",
+      "raw": "148.5",
+      "location": "text_7:93",
+      "context": "rental expense for operating leases was approximately $ 211.5 million , $ 168.4 million and $ 148.5 million during the years ended december 31 , 2016 , 2015 and 2014 , respectively ."
+    }
+  }
+}

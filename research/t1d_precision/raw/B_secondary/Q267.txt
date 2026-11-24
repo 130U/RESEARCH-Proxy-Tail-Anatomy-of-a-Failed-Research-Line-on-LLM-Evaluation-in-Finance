@@ -1,0 +1,1 @@
+{"answer":"9.8641887062","unit":"percent","expression":"(153.7 - 139.9) / 139.9 * 100","low":"9.7892104323","high":"9.9392205935","reliable_digits":"1","explanation":"Cash flow hedges increased from $139.9 million to $153.7 million, with bounds allowing each amount to vary by $0.05 million."}

@@ -1,0 +1,1 @@
+{"answer":"11.029411764705882","unit":"percent","expression":"(151 - 136) / 136 * 100","low":"10.256410256410256","high":"11.808118081180812","reliable_digits":"1","explanation":"Allowing each reserve to vary by $0.5 million gives these bounds and one reliable significant digit."}

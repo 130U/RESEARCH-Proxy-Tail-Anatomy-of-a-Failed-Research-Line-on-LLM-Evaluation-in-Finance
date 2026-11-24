@@ -1,0 +1,20 @@
+{
+  "review_id": "R239",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "first",
+      "original_reason": "Post_text[6] gives pretax foreign-exchange losses1.7million(2007) and1.2million(2006). Growth of positive loss magnitudes is faithful; neither table minority-interest losses nor2005 exchange gain is a duplicate.",
+      "display_reason": "Post_text[6] gives pretax foreign-exchange losses1.7million(2007) and1.2million(2006). Growth of positive loss magnitudes is faithful; neither table minority-interest losses nor2005 exchange gain is a duplicate.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "second",
+      "original_reason": "The rounded foreign exchange loss amounts correctly refer to 2007 and 2006, but the calculation returns fractional growth without multiplying by 100 for percentage change.",
+      "display_reason": "The rounded foreign exchange loss amounts correctly refer to 2007 and 2006, but the calculation returns fractional growth without multiplying by 100 for percentage change.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

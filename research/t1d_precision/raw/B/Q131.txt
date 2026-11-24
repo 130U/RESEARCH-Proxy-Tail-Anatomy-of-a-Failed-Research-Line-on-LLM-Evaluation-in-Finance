@@ -1,0 +1,1 @@
+{"answer":"6.358381502890173","unit":"percent","expression":"(1840 - 1730) / 1730 * 100","low":"6.298757584513146","high":"6.418039895923677","reliable_digits":"1","explanation":"Each displayed balance has rounding uncertainty of ±0.5, yielding these growth bounds and one reliable significant digit."}

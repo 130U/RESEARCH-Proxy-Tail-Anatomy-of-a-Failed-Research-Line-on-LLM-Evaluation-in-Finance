@@ -1,0 +1,1 @@
+{"answer":"704","unit":"million dollars","expression":"581 + 123","low":"703","high":"705","reliable_digits":"2","explanation":"Adding the 2007 and 2006 pretax gains gives $704 million, with each figure subject to rounding of ±$0.5 million."}

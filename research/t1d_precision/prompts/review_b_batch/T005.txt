@@ -1,0 +1,4221 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only a JSON array, with one object for each supplied material in the supplied order. Each object must use exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+Assess each material independently. Do not infer a common answer or prevalence from the batch. Do not combine items or omit any item.
+
+MATERIALS
+[
+  {
+    "review_id": "R065",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "16 fa i r va lu e o f f i na n c i a l i n s t ru m e n t s we believe that the fair values of current assets and current liabilities approximate their reported carrying amounts ."
+        },
+        {
+          "location": "text_1",
+          "text": "the fair values of noncurrent financial assets , liabilities and derivatives are shown below. ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2004",
+            "2003"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "<i>($ in millions)</i>",
+            "Carrying Amount",
+            "Fair Value",
+            "Carrying Amount",
+            "Fair Value"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Notes and other long-term assets",
+            "$1,702",
+            "$1,770",
+            "$1,740",
+            "$1,778"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Long-term debt and other long-term liabilities",
+            "$848",
+            "$875",
+            "$1,373",
+            "$1,487"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Derivative instruments",
+            "$—",
+            "$—",
+            "$(1)",
+            "$(1)"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_2",
+          "text": "we value notes and other receivables based on the expected future cash flows dis- counted at risk-adjusted rates ."
+        },
+        {
+          "location": "text_3",
+          "text": "we determine valuations for long-term debt and other long-term liabilities based on quoted market prices or expected future payments dis- counted at risk-adjusted rates ."
+        },
+        {
+          "location": "text_4",
+          "text": "17 d e r i vat i v e i n s t ru m e n t s during the year ended january 2 , 2004 , we entered into an interest rate swap agreement under which we receive a floating rate of interest and pay a fixed rate of interest ."
+        },
+        {
+          "location": "text_5",
+          "text": "the swap modifies our interest rate exposure by effectively converting a note receivable with a fixed rate to a floating rate ."
+        },
+        {
+          "location": "text_6",
+          "text": "the aggregate notional amount of the swap is $ 92 mil- lion , and it matures in 2010 ."
+        },
+        {
+          "location": "text_7",
+          "text": "the swap is classified as a fair value hedge , and the change in the fair value of the swap , as well as the change in the fair value of the underlying note receivable , is recognized in interest income ."
+        },
+        {
+          "location": "text_8",
+          "text": "the fair value of the swap was a liabil- ity of approximately $ 3 million at december 31 , 2004 , and january 2 , 2004 ."
+        },
+        {
+          "location": "text_9",
+          "text": "the hedge is highly effective , and therefore , no net gain or loss was reported in earnings during the years ended december 31 , 2004 , and january 2 , 2004 ."
+        },
+        {
+          "location": "text_10",
+          "text": "at december 31 , 2004 , we had six outstanding interest rate swap agreements to manage interest rate risk associated with the residual interests we retain in conjunction with our timeshare note sales ."
+        },
+        {
+          "location": "text_11",
+          "text": "we are required by purchasers and/or rating agencies to utilize interest rate swaps to protect the excess spread within our sold note pools ."
+        },
+        {
+          "location": "text_12",
+          "text": "the aggregate notional amount of the swaps is $ 535 million , and they expire through 2022 ."
+        },
+        {
+          "location": "text_13",
+          "text": "these swaps are not accounted for as hedges under fas no ."
+        },
+        {
+          "location": "text_14",
+          "text": "133 , 201caccounting for derivative instruments and hedging activities . 201d the fair value of the swaps is a net asset of approximately $ 3 million at december 31 , 2004 , a net asset of approximately $ 1 million at january 2 , 2004 , and a net liability of $ 2 million at january 3 , 2003 ."
+        },
+        {
+          "location": "text_15",
+          "text": "we recorded a $ 2 million net gain , $ 3 million net gain and $ 21 million net loss during the years ended december 31 , 2004 , january 2 , 2004 and january 3 , 2003 , respectively ."
+        },
+        {
+          "location": "text_16",
+          "text": "these expenses were largely offset by income resulting from the change in fair value of the retained interests and note sale gains in response to changes in interest rates ."
+        },
+        {
+          "location": "text_17",
+          "text": "during the years ended december 31 , 2004 , and january 2 , 2004 , we entered into interest rate swaps to manage interest rate risk associated with forecasted timeshare note sales ."
+        },
+        {
+          "location": "text_18",
+          "text": "these swaps were not accounted for as hedges under fas no ."
+        },
+        {
+          "location": "text_19",
+          "text": "133 ."
+        },
+        {
+          "location": "text_20",
+          "text": "the swaps were terminated upon the sale of the notes and resulted in a gain of $ 2 million during the year ended december 31 , 2004 , and a loss of $ 4 million during the year ended january 2 , 2004 ."
+        },
+        {
+          "location": "text_21",
+          "text": "these amounts were largely offset by changes in the note sale gains and losses ."
+        },
+        {
+          "location": "text_22",
+          "text": "during the years ended december 31 , 2004 , and january 2 , 2004 , we entered into forward foreign exchange contracts to manage the foreign currency exposure related to certain monetary assets denominated in pounds sterling ."
+        },
+        {
+          "location": "text_23",
+          "text": "the aggregate dollar equiva- lent of the notional amount of the contracts is $ 36 million at december 31 , 2004 ."
+        },
+        {
+          "location": "text_24",
+          "text": "the forward exchange contracts are not accounted for as hedges in accordance with fas no ."
+        },
+        {
+          "location": "text_25",
+          "text": "133 ."
+        },
+        {
+          "location": "text_26",
+          "text": "the fair value of the forward contracts is approximately zero at december 31 , 2004 , and january 2 , 2004 ."
+        },
+        {
+          "location": "text_27",
+          "text": "we recorded a $ 3 million and $ 2 million net loss relating to these forward foreign exchange contracts for the years ended december 31 , 2004 and january 2 , 2004 , respectively ."
+        },
+        {
+          "location": "text_28",
+          "text": "the net losses for both years were offset by income recorded from translating the related monetary assets denominated in pounds sterling into u.s ."
+        },
+        {
+          "location": "text_29",
+          "text": "dollars ."
+        },
+        {
+          "location": "text_30",
+          "text": "during fiscal years 2004 and 2003 , we entered into foreign exchange option and forward contracts to hedge the potential volatility of earnings and cash flows associated with variations in foreign exchange rates ."
+        },
+        {
+          "location": "text_31",
+          "text": "the aggregate dollar equivalent of the notional amounts of the contracts is $ 36 million at december 31 , 2004 ."
+        },
+        {
+          "location": "text_32",
+          "text": "these contracts have terms of less than a year and are classified as cash flow hedges ."
+        },
+        {
+          "location": "text_33",
+          "text": "changes in their fair values are recorded as a component of other comprehensive income ."
+        },
+        {
+          "location": "text_34",
+          "text": "the fair value of the forward contracts is approximately zero and $ 1 million at december 31 , 2004 , and january 2 , 2004 , respectively ."
+        },
+        {
+          "location": "text_35",
+          "text": "during 2004 , it was determined that certain deriva- tives were no longer effective in offsetting the hedged item ."
+        },
+        {
+          "location": "text_36",
+          "text": "thus , cash flow hedge accounting treatment was discontinued and the ineffective contracts resulted in a loss of $ 1 million , which was reported in earnings for fiscal year 2004 ."
+        },
+        {
+          "location": "text_37",
+          "text": "the remaining hedges were highly effective and there was no net gain or loss reported in earnings for the fiscal years 2004 and 2003 ."
+        },
+        {
+          "location": "text_38",
+          "text": "as of december 31 , 2004 , there were no deferred gains or losses accumulated in other comprehensive income that we expect to reclassify into earnings over the next 12 months ."
+        },
+        {
+          "location": "text_39",
+          "text": "18 c o n t i n g e n c i e s guarantees we issue guarantees to certain lenders and hotel owners primarily to obtain long-term management contracts ."
+        },
+        {
+          "location": "text_40",
+          "text": "the guarantees generally have a stated maximum amount of funding and a term of five years or less ."
+        },
+        {
+          "location": "text_41",
+          "text": "the terms of guarantees to lenders generally require us to fund if cash flows from hotel operations are inadequate to cover annual debt service or to repay the loan at the end of the term ."
+        },
+        {
+          "location": "text_42",
+          "text": "the terms of the guarantees to hotel owners generally require us to fund if the hotels do not attain specified levels of operating profit ."
+        },
+        {
+          "location": "text_43",
+          "text": "44 marriott international , inc. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what is the difference of between the carrying amount and the fair value of notes and other long-term assets in 2004?",
+    "reference_program": "subtract(1770, 1702)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "1770",
+        "raw": "1,770",
+        "location": "table_2:2",
+        "context": "Notes and other long-term assets | 2003"
+      },
+      "x1": {
+        "program_token": "1702",
+        "raw": "1,702",
+        "location": "table_2:1",
+        "context": "Notes and other long-term assets | 2004"
+      }
+    }
+  },
+  {
+    "review_id": "R066",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "notes to the consolidated financial statements the activity in the accrued liability for unrecognized tax benefits for the two years ended december 31 , 2008 was as follows : ( millions ) 2008 2007 ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "<i>(Millions)</i>",
+            "2008",
+            "2007"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Balance at January 1",
+            "$110",
+            "$77"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Additions based on tax positions related to the current year",
+            "12",
+            "21"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Additions for tax positions of prior years",
+            "5",
+            "19"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Reductions for tax positions of prior years",
+            "(17)",
+            "(5)"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Pre-acquisition unrecognized tax benefits",
+            "20",
+            "—"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Reductions for expiration of the applicable statute of limitations",
+            "(6)",
+            "(5)"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Settlements",
+            "(21)",
+            "(1)"
+          ]
+        },
+        {
+          "row_index": 8,
+          "cells": [
+            "Currency",
+            "(4)",
+            "4"
+          ]
+        },
+        {
+          "row_index": 9,
+          "cells": [
+            "<i></i> <i>Balance at December 31</i>",
+            "$99",
+            "$110"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_1",
+          "text": "balance at december 31 $ 99 $ 110 the amount of unrecognized tax benefits was $ 99 million and $ 110 million as of december 31 , 2008 and 2007 , respectively ."
+        },
+        {
+          "location": "text_2",
+          "text": "if recognized , $ 89 million and $ 88 million would impact the effective rate as of december 31 , 2008 and 2007 , respectively ."
+        },
+        {
+          "location": "text_3",
+          "text": "the company recognizes accrued interest and penalties related to unrecognized tax benefits in income tax expense ."
+        },
+        {
+          "location": "text_4",
+          "text": "the company had accrued $ 10 million and $ 9 million for estimated interest and penalties on unrecognized tax benefits as of december 31 , 2008 and 2007 , respectively ."
+        },
+        {
+          "location": "text_5",
+          "text": "the company recognized $ 1 million and $ 3 million of expense for estimated interest and penalties during the years ended december 31 , 2008 and 2007 , respectively ."
+        },
+        {
+          "location": "text_6",
+          "text": "while it is expected that the amount of unrecognized tax benefits will change in the next 12 months , quantification of an estimated range cannot be made at this time ."
+        },
+        {
+          "location": "text_7",
+          "text": "the company does not expect this change to have a significant impact on the results of operations or financial position of the company , however , actual settlements may differ from amounts accrued ."
+        },
+        {
+          "location": "text_8",
+          "text": "14 ."
+        },
+        {
+          "location": "text_9",
+          "text": "pensions and other postretirement benefits defined benefit plans ppg has defined benefit pension plans that cover certain employees worldwide ."
+        },
+        {
+          "location": "text_10",
+          "text": "ppg also sponsors welfare benefit plans that provide postretirement medical and life insurance benefits for certain u.s ."
+        },
+        {
+          "location": "text_11",
+          "text": "and canadian employees and their dependents ."
+        },
+        {
+          "location": "text_12",
+          "text": "these programs require retiree contributions based on retiree-selected coverage levels for certain retirees and their dependents and provide for sharing of future benefit cost increases between ppg and participants based on management discretion ."
+        },
+        {
+          "location": "text_13",
+          "text": "the company has the right to modify or terminate certain of these benefit plans in the future ."
+        },
+        {
+          "location": "text_14",
+          "text": "salaried and certain hourly employees hired on or after october 1 , 2004 , are not eligible for postretirement medical benefits ."
+        },
+        {
+          "location": "text_15",
+          "text": "salaried employees hired , rehired or transferred to salaried status on or after january 1 , 2006 , and certain hourly employees hired in 2006 or thereafter are eligible to participate in a defined contribution retirement plan ."
+        },
+        {
+          "location": "text_16",
+          "text": "these employees are not eligible for defined benefit pension plan benefits ."
+        },
+        {
+          "location": "text_17",
+          "text": "the medicare act of 2003 introduced a prescription drug benefit under medicare ( 201cmedicare part d 201d ) that provides several options for medicare eligible participants and employers , including a federal subsidy payable to companies that elect to provide a retiree prescription drug benefit which is at least actuarially equivalent to medicare part d ."
+        },
+        {
+          "location": "text_18",
+          "text": "during the third quarter of 2004 , ppg concluded its evaluation of the provisions of the medicare act and decided to maintain its retiree prescription drug program and to take the subsidy available under the medicare act ."
+        },
+        {
+          "location": "text_19",
+          "text": "the impact of the medicare act was accounted for in accordance with fasb staff position no ."
+        },
+        {
+          "location": "text_20",
+          "text": "106-2 , 201caccounting and disclosure requirements related to the medicare prescription drug , improvement and modernization act of 2003 201d effective january 1 , 2004 ."
+        },
+        {
+          "location": "text_21",
+          "text": "in addition , the plan was amended september 1 , 2004 , to provide that ppg management will determine the extent to which future increases in the cost of its retiree medical and prescription drug programs will be shared by certain retirees ."
+        },
+        {
+          "location": "text_22",
+          "text": "the federal subsidy related to providing a retiree prescription drug benefit is not subject to u.s ."
+        },
+        {
+          "location": "text_23",
+          "text": "federal income tax and is recorded as a reduction in annual net periodic benefit cost of other postretirement benefits ."
+        },
+        {
+          "location": "text_24",
+          "text": "in august 2007 , the company 2019s u.s ."
+        },
+        {
+          "location": "text_25",
+          "text": "other postretirement benefit plan was amended to consolidate the number of retiree health care options available for certain retirees and their dependents ."
+        },
+        {
+          "location": "text_26",
+          "text": "the plan amendment was effective january 1 , 2008 ."
+        },
+        {
+          "location": "text_27",
+          "text": "the amended plan also offers a fully-insured medicare part d prescription drug plan for certain retirees and their dependents ."
+        },
+        {
+          "location": "text_28",
+          "text": "as such , beginning in 2008 ppg is no longer eligible to receive the subsidy provided under the medicare act of 2003 for these retirees and their dependents ."
+        },
+        {
+          "location": "text_29",
+          "text": "the impact of the plan amendment was to reduce the accumulated plan benefit obligation by $ 57 million ."
+        },
+        {
+          "location": "text_30",
+          "text": "50 2008 ppg annual report and form 10-k ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percentage net change in the accrued liability for unrecognized tax benefits from 2007 to 2008?",
+    "reference_program": "subtract(99, 110), divide(#0, 110)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "99",
+        "raw": "99",
+        "location": "table_9:1",
+        "context": " Balance at December 31 | 2008"
+      },
+      "x1": {
+        "program_token": "110",
+        "raw": "110",
+        "location": "table_9:2",
+        "context": " Balance at December 31 | 2007"
+      }
+    }
+  },
+  {
+    "review_id": "R067",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "financing activities the decrease in cash used in 2010 relative to 2009 was attributable to a decrease in commercial paper repayments , net of proceeds , proceeds from our share issuance to bm&fbovespa as well as the termination of the nymex securities lending program in 2009 ."
+        },
+        {
+          "location": "text_1",
+          "text": "the decrease was partially offset by the distribution to dow jones of $ 607.5 million related to index services as well as an increase in share repurchases of $ 548.3 million ."
+        },
+        {
+          "location": "text_2",
+          "text": "share repurchases increased in an effort to offset most of the dilution associated with the issuance of shares to bm&fbovespa ."
+        },
+        {
+          "location": "text_3",
+          "text": "the increase in cash used in 2009 relative to 2008 was due to new issuances of debt of $ 2.9 billion in 2008 in conjunction with our merger with nymex holdings compared with net debt reductions of $ 900.1 million in debt instruments ."
+        },
+        {
+          "location": "text_4",
+          "text": "the following table summarizes our debt outstanding as of december 31 , 2010: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "(in millions)",
+            "Par Value"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Term loan due 2011, interest equal to 3-month LIBOR plus 1.00%<sup>(1)</sup>",
+            "$420.5"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Fixed rate notes due August 2013, interest equal to 5.40%",
+            "750.0"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Fixed rate notes due February 2014, interest equal to 5.75%",
+            "750.0"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Fixed rate notes due March 2018, interest equal to 4.40%<sup>(2)</sup>",
+            "612.5"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_5",
+          "text": "fixed rate notes due march 2018 , interest equal to 4.40% ( 4.40 % ) ( 2 ) ."
+        },
+        {
+          "location": "text_6",
+          "text": "."
+        },
+        {
+          "location": "text_7",
+          "text": "."
+        },
+        {
+          "location": "text_8",
+          "text": "."
+        },
+        {
+          "location": "text_9",
+          "text": "."
+        },
+        {
+          "location": "text_10",
+          "text": "."
+        },
+        {
+          "location": "text_11",
+          "text": "."
+        },
+        {
+          "location": "text_12",
+          "text": "."
+        },
+        {
+          "location": "text_13",
+          "text": "."
+        },
+        {
+          "location": "text_14",
+          "text": "."
+        },
+        {
+          "location": "text_15",
+          "text": "."
+        },
+        {
+          "location": "text_16",
+          "text": "."
+        },
+        {
+          "location": "text_17",
+          "text": "."
+        },
+        {
+          "location": "text_18",
+          "text": "."
+        },
+        {
+          "location": "text_19",
+          "text": "."
+        },
+        {
+          "location": "text_20",
+          "text": "."
+        },
+        {
+          "location": "text_21",
+          "text": "."
+        },
+        {
+          "location": "text_22",
+          "text": "."
+        },
+        {
+          "location": "text_23",
+          "text": "."
+        },
+        {
+          "location": "text_24",
+          "text": "."
+        },
+        {
+          "location": "text_25",
+          "text": "."
+        },
+        {
+          "location": "text_26",
+          "text": "."
+        },
+        {
+          "location": "text_27",
+          "text": "."
+        },
+        {
+          "location": "text_28",
+          "text": "."
+        },
+        {
+          "location": "text_29",
+          "text": "."
+        },
+        {
+          "location": "text_30",
+          "text": "."
+        },
+        {
+          "location": "text_31",
+          "text": "."
+        },
+        {
+          "location": "text_32",
+          "text": "."
+        },
+        {
+          "location": "text_33",
+          "text": "."
+        },
+        {
+          "location": "text_34",
+          "text": "."
+        },
+        {
+          "location": "text_35",
+          "text": "."
+        },
+        {
+          "location": "text_36",
+          "text": "."
+        },
+        {
+          "location": "text_37",
+          "text": "."
+        },
+        {
+          "location": "text_38",
+          "text": "."
+        },
+        {
+          "location": "text_39",
+          "text": "612.5 ( 1 ) in september 2008 , the company entered into an interest rate swap agreement that modified the variable interest obligation associated with this loan so that the interest payable effectively became fixed at a rate of 4.72% ( 4.72 % ) beginning with the interest accrued after october 22 , 2008 ."
+        },
+        {
+          "location": "text_40",
+          "text": "the interest rate swap agreement was terminated on january 11 , 2011 when the loan was repaid ."
+        },
+        {
+          "location": "text_41",
+          "text": "( 2 ) in march 2010 , we completed an unregistered offering of fixed rate notes due 2018 ."
+        },
+        {
+          "location": "text_42",
+          "text": "net proceeds from the offering were used to fund a distribution to dow jones in conjunction with our investment in index services ."
+        },
+        {
+          "location": "text_43",
+          "text": "in february 2010 , we entered into a forward-starting interest rate swap agreement that modified the interest obligation associated with these notes so that the interest payable on the notes effectively became fixed at a rate of 4.46% ( 4.46 % ) beginning with the interest accrued after march 18 , 2010 ."
+        },
+        {
+          "location": "text_44",
+          "text": "we maintained a $ 1.4 billion senior credit facility with various financial institutions , including the $ 420.5 million term loan and a $ 945.5 million revolving credit facility ."
+        },
+        {
+          "location": "text_45",
+          "text": "the senior credit facility was terminated on january 11 , 2011 ."
+        },
+        {
+          "location": "text_46",
+          "text": "any commercial paper outstanding was backed by the revolving credit facility ."
+        },
+        {
+          "location": "text_47",
+          "text": "under our senior credit facility , we were required to maintain a consolidated net worth of at least $ 12.1 billion ."
+        },
+        {
+          "location": "text_48",
+          "text": "effective january 11 , 2011 , we entered into a new $ 1.0 billion multi-currency revolving senior credit facility with various financial institutions ."
+        },
+        {
+          "location": "text_49",
+          "text": "the proceeds from the revolving senior credit facility can be used for general corporate purposes , which includes providing liquidity for our clearing house ."
+        },
+        {
+          "location": "text_50",
+          "text": "as long as we are not in default under the new senior credit facility , we have the option to increase the facility from time to time by an aggregate amount of up to $ 1.8 billion with the consent of the agent and lenders providing the additional funds ."
+        },
+        {
+          "location": "text_51",
+          "text": "the new senior credit facility matures in january 2014 and is voluntarily prepayable from time to time without premium or penalty ."
+        },
+        {
+          "location": "text_52",
+          "text": "under our new credit facility , we are required to remain in compliance with a consolidated net worth test , as defined as our consolidated shareholders 2019 equity as of september 30 , 2010 , giving effect to share repurchases made and special dividends paid during the term of the agreement ( and in no event greater than $ 2.0 billion in aggregate ) , multiplied by 0.65 ."
+        },
+        {
+          "location": "text_53",
+          "text": "we maintain a 364-day fully secured , committed line of credit with a consortium of domestic and international banks to be used in certain situations by our clearing house ."
+        },
+        {
+          "location": "text_54",
+          "text": "we may use the proceeds to provide temporary liquidity in the unlikely event of a clearing firm default , in the event of a liquidity constraint or default by a depositary ( custodian for our collateral ) , or in the event of a temporary disruption with the domestic payments system that would delay payment of settlement variation between us and our clearing firms ."
+        },
+        {
+          "location": "text_55",
+          "text": "clearing firm guaranty fund contributions received in the form of u.s ."
+        },
+        {
+          "location": "text_56",
+          "text": "treasury securities , government agency securities or ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the ratio of the increase in cash in 2009 due to the insurance of debt compared to the reduction of debt instruments",
+    "reference_program": "divide(2.9, 900.1)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "2.9",
+        "raw": "2.9",
+        "location": "text_3:88",
+        "context": "the increase in cash used in 2009 relative to 2008 was due to new issuances of debt of $ 2.9 billion in 2008 in conjunction with our merger with nymex holdings compared with net debt reductions of $ 900.1 million in debt instruments ."
+      },
+      "x1": {
+        "program_token": "900.1",
+        "raw": "900.1",
+        "location": "text_3:198",
+        "context": "the increase in cash used in 2009 relative to 2008 was due to new issuances of debt of $ 2.9 billion in 2008 in conjunction with our merger with nymex holdings compared with net debt reductions of $ 900.1 million in debt instruments ."
+      }
+    }
+  },
+  {
+    "review_id": "R068",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "intangible asset amortization expense amounted to $ 12 million , $ 4 million and $ 4 million for the years ended december 31 , 2018 , 2017 and 2016 , respectively ."
+        },
+        {
+          "location": "text_1",
+          "text": "estimated amortization expense for the next five years subsequent to december 31 , 2018 is as follows: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Amount"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2019",
+            "$15"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2020",
+            "13"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2021",
+            "11"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2022",
+            "10"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "2023",
+            "7"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_2",
+          "text": "note 9 : shareholders 2019 equity common stock under the dividend reinvestment and direct stock purchase plan ( the 201cdrip 201d ) , shareholders may reinvest cash dividends and purchase additional company common stock , up to certain limits , through the plan administrator without commission fees ."
+        },
+        {
+          "location": "text_3",
+          "text": "shares purchased by participants through the drip may be newly issued shares , treasury shares , or at the company 2019s election , shares purchased by the plan administrator in the open market or in privately negotiated transactions ."
+        },
+        {
+          "location": "text_4",
+          "text": "purchases generally will be made and credited to drip accounts once each week ."
+        },
+        {
+          "location": "text_5",
+          "text": "as of december 31 , 2018 , there were approximately 4.2 million shares available for future issuance under the drip ."
+        },
+        {
+          "location": "text_6",
+          "text": "anti-dilutive stock repurchase program in february 2015 , the company 2019s board of directors authorized an anti-dilutive stock repurchase program , which allowed the company to purchase up to 10 million shares of its outstanding common stock over an unrestricted period of time ."
+        },
+        {
+          "location": "text_7",
+          "text": "the company repurchased 0.6 million shares and 0.7 million shares of common stock in the open market at an aggregate cost of $ 45 million and $ 54 million under this program for the years ended december 31 , 2018 and 2017 , respectively ."
+        },
+        {
+          "location": "text_8",
+          "text": "as of december 31 , 2018 , there were 5.5 million shares of common stock available for purchase under the program. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "at what price per share did awk repurchase its shares of common stock in 2018?",
+    "reference_program": "divide(45, 0.6)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "45",
+        "raw": "45",
+        "location": "text_7:126",
+        "context": "the company repurchased 0.6 million shares and 0.7 million shares of common stock in the open market at an aggregate cost of $ 45 million and $ 54 million under this program for the years ended december 31 , 2018 and 2017 , respectively ."
+      },
+      "x1": {
+        "program_token": "0.6",
+        "raw": "0.6",
+        "location": "text_7:24",
+        "context": "the company repurchased 0.6 million shares and 0.7 million shares of common stock in the open market at an aggregate cost of $ 45 million and $ 54 million under this program for the years ended december 31 , 2018 and 2017 , respectively ."
+      }
+    }
+  },
+  {
+    "review_id": "R069",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "the following table summarizes the short-term borrowing activity for awcc for the years ended december 31: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2017",
+            "2016"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Average borrowings",
+            "$779",
+            "$850"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Maximum borrowings outstanding",
+            "1,135",
+            "1,016"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Weighted average interest rates, computed on daily basis",
+            "1.24%",
+            "0.78%"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Weighted average interest rates, as of December 31",
+            "1.61%",
+            "0.98%"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_1",
+          "text": "the credit facility requires the company to maintain a ratio of consolidated debt to consolidated capitalization of not more than 0.70 to 1.00 ."
+        },
+        {
+          "location": "text_2",
+          "text": "the ratio as of december 31 , 2017 was 0.59 to 1.00 ."
+        },
+        {
+          "location": "text_3",
+          "text": "none of the company 2019s borrowings are subject to default or prepayment as a result of a downgrading of securities , although such a downgrading could increase fees and interest charges under the company 2019s credit facility ."
+        },
+        {
+          "location": "text_4",
+          "text": "as part of the normal course of business , the company routinely enters contracts for the purchase and sale of water , energy , fuels and other services ."
+        },
+        {
+          "location": "text_5",
+          "text": "these contracts either contain express provisions or otherwise permit the company and its counterparties to demand adequate assurance of future performance when there are reasonable grounds for doing so ."
+        },
+        {
+          "location": "text_6",
+          "text": "in accordance with the contracts and applicable contract law , if the company is downgraded by a credit rating agency , especially if such downgrade is to a level below investment grade , it is possible that a counterparty would attempt to rely on such a downgrade as a basis for making a demand for adequate assurance of future performance ."
+        },
+        {
+          "location": "text_7",
+          "text": "depending on the company 2019s net position with the counterparty , the demand could be for the posting of collateral ."
+        },
+        {
+          "location": "text_8",
+          "text": "in the absence of expressly agreed provisions that specify the collateral that must be provided , the obligation to supply the collateral requested will be a function of the facts and circumstances of the company 2019s situation at the time of the demand ."
+        },
+        {
+          "location": "text_9",
+          "text": "if the company can reasonably claim that it is willing and financially able to perform its obligations , it may be possible that no collateral would need to be posted or that only an amount equal to two or three months of future payments should be sufficient ."
+        },
+        {
+          "location": "text_10",
+          "text": "the company does not expect to post any collateral which will have a material adverse impact on the company 2019s results of operations , financial position or cash flows ."
+        },
+        {
+          "location": "text_11",
+          "text": "note 12 : general taxes the following table summarizes the components of general tax expense for the years ended december 31 : 2017 2016 2015 gross receipts and franchise ."
+        },
+        {
+          "location": "text_12",
+          "text": "."
+        },
+        {
+          "location": "text_13",
+          "text": "."
+        },
+        {
+          "location": "text_14",
+          "text": "."
+        },
+        {
+          "location": "text_15",
+          "text": "."
+        },
+        {
+          "location": "text_16",
+          "text": "."
+        },
+        {
+          "location": "text_17",
+          "text": "."
+        },
+        {
+          "location": "text_18",
+          "text": "."
+        },
+        {
+          "location": "text_19",
+          "text": "."
+        },
+        {
+          "location": "text_20",
+          "text": "."
+        },
+        {
+          "location": "text_21",
+          "text": "."
+        },
+        {
+          "location": "text_22",
+          "text": "."
+        },
+        {
+          "location": "text_23",
+          "text": "."
+        },
+        {
+          "location": "text_24",
+          "text": "."
+        },
+        {
+          "location": "text_25",
+          "text": "."
+        },
+        {
+          "location": "text_26",
+          "text": "."
+        },
+        {
+          "location": "text_27",
+          "text": "."
+        },
+        {
+          "location": "text_28",
+          "text": "."
+        },
+        {
+          "location": "text_29",
+          "text": "."
+        },
+        {
+          "location": "text_30",
+          "text": "."
+        },
+        {
+          "location": "text_31",
+          "text": "."
+        },
+        {
+          "location": "text_32",
+          "text": "."
+        },
+        {
+          "location": "text_33",
+          "text": "."
+        },
+        {
+          "location": "text_34",
+          "text": "."
+        },
+        {
+          "location": "text_35",
+          "text": "."
+        },
+        {
+          "location": "text_36",
+          "text": "."
+        },
+        {
+          "location": "text_37",
+          "text": "."
+        },
+        {
+          "location": "text_38",
+          "text": "."
+        },
+        {
+          "location": "text_39",
+          "text": "."
+        },
+        {
+          "location": "text_40",
+          "text": "."
+        },
+        {
+          "location": "text_41",
+          "text": "."
+        },
+        {
+          "location": "text_42",
+          "text": "."
+        },
+        {
+          "location": "text_43",
+          "text": "."
+        },
+        {
+          "location": "text_44",
+          "text": "."
+        },
+        {
+          "location": "text_45",
+          "text": "."
+        },
+        {
+          "location": "text_46",
+          "text": "."
+        },
+        {
+          "location": "text_47",
+          "text": "."
+        },
+        {
+          "location": "text_48",
+          "text": "."
+        },
+        {
+          "location": "text_49",
+          "text": "."
+        },
+        {
+          "location": "text_50",
+          "text": "."
+        },
+        {
+          "location": "text_51",
+          "text": "."
+        },
+        {
+          "location": "text_52",
+          "text": "."
+        },
+        {
+          "location": "text_53",
+          "text": "$ 110 $ 106 $ 99 property and capital stock ."
+        },
+        {
+          "location": "text_54",
+          "text": "."
+        },
+        {
+          "location": "text_55",
+          "text": "."
+        },
+        {
+          "location": "text_56",
+          "text": "."
+        },
+        {
+          "location": "text_57",
+          "text": "."
+        },
+        {
+          "location": "text_58",
+          "text": "."
+        },
+        {
+          "location": "text_59",
+          "text": "."
+        },
+        {
+          "location": "text_60",
+          "text": "."
+        },
+        {
+          "location": "text_61",
+          "text": "."
+        },
+        {
+          "location": "text_62",
+          "text": "."
+        },
+        {
+          "location": "text_63",
+          "text": "."
+        },
+        {
+          "location": "text_64",
+          "text": "."
+        },
+        {
+          "location": "text_65",
+          "text": "."
+        },
+        {
+          "location": "text_66",
+          "text": "."
+        },
+        {
+          "location": "text_67",
+          "text": "."
+        },
+        {
+          "location": "text_68",
+          "text": "."
+        },
+        {
+          "location": "text_69",
+          "text": "."
+        },
+        {
+          "location": "text_70",
+          "text": "."
+        },
+        {
+          "location": "text_71",
+          "text": "."
+        },
+        {
+          "location": "text_72",
+          "text": "."
+        },
+        {
+          "location": "text_73",
+          "text": "."
+        },
+        {
+          "location": "text_74",
+          "text": "."
+        },
+        {
+          "location": "text_75",
+          "text": "."
+        },
+        {
+          "location": "text_76",
+          "text": "."
+        },
+        {
+          "location": "text_77",
+          "text": "."
+        },
+        {
+          "location": "text_78",
+          "text": "."
+        },
+        {
+          "location": "text_79",
+          "text": "."
+        },
+        {
+          "location": "text_80",
+          "text": "."
+        },
+        {
+          "location": "text_81",
+          "text": "."
+        },
+        {
+          "location": "text_82",
+          "text": "."
+        },
+        {
+          "location": "text_83",
+          "text": "."
+        },
+        {
+          "location": "text_84",
+          "text": "."
+        },
+        {
+          "location": "text_85",
+          "text": "."
+        },
+        {
+          "location": "text_86",
+          "text": "."
+        },
+        {
+          "location": "text_87",
+          "text": "."
+        },
+        {
+          "location": "text_88",
+          "text": "."
+        },
+        {
+          "location": "text_89",
+          "text": "."
+        },
+        {
+          "location": "text_90",
+          "text": "."
+        },
+        {
+          "location": "text_91",
+          "text": "."
+        },
+        {
+          "location": "text_92",
+          "text": "."
+        },
+        {
+          "location": "text_93",
+          "text": "."
+        },
+        {
+          "location": "text_94",
+          "text": "."
+        },
+        {
+          "location": "text_95",
+          "text": "."
+        },
+        {
+          "location": "text_96",
+          "text": "."
+        },
+        {
+          "location": "text_97",
+          "text": "105 106 98 payroll ."
+        },
+        {
+          "location": "text_98",
+          "text": "."
+        },
+        {
+          "location": "text_99",
+          "text": "."
+        },
+        {
+          "location": "text_100",
+          "text": "."
+        },
+        {
+          "location": "text_101",
+          "text": "."
+        },
+        {
+          "location": "text_102",
+          "text": "."
+        },
+        {
+          "location": "text_103",
+          "text": "."
+        },
+        {
+          "location": "text_104",
+          "text": "."
+        },
+        {
+          "location": "text_105",
+          "text": "."
+        },
+        {
+          "location": "text_106",
+          "text": "."
+        },
+        {
+          "location": "text_107",
+          "text": "."
+        },
+        {
+          "location": "text_108",
+          "text": "."
+        },
+        {
+          "location": "text_109",
+          "text": "."
+        },
+        {
+          "location": "text_110",
+          "text": "."
+        },
+        {
+          "location": "text_111",
+          "text": "."
+        },
+        {
+          "location": "text_112",
+          "text": "."
+        },
+        {
+          "location": "text_113",
+          "text": "."
+        },
+        {
+          "location": "text_114",
+          "text": "."
+        },
+        {
+          "location": "text_115",
+          "text": "."
+        },
+        {
+          "location": "text_116",
+          "text": "."
+        },
+        {
+          "location": "text_117",
+          "text": "."
+        },
+        {
+          "location": "text_118",
+          "text": "."
+        },
+        {
+          "location": "text_119",
+          "text": "."
+        },
+        {
+          "location": "text_120",
+          "text": "."
+        },
+        {
+          "location": "text_121",
+          "text": "."
+        },
+        {
+          "location": "text_122",
+          "text": "."
+        },
+        {
+          "location": "text_123",
+          "text": "."
+        },
+        {
+          "location": "text_124",
+          "text": "."
+        },
+        {
+          "location": "text_125",
+          "text": "."
+        },
+        {
+          "location": "text_126",
+          "text": "."
+        },
+        {
+          "location": "text_127",
+          "text": "."
+        },
+        {
+          "location": "text_128",
+          "text": "."
+        },
+        {
+          "location": "text_129",
+          "text": "."
+        },
+        {
+          "location": "text_130",
+          "text": "."
+        },
+        {
+          "location": "text_131",
+          "text": "."
+        },
+        {
+          "location": "text_132",
+          "text": "."
+        },
+        {
+          "location": "text_133",
+          "text": "."
+        },
+        {
+          "location": "text_134",
+          "text": "."
+        },
+        {
+          "location": "text_135",
+          "text": "."
+        },
+        {
+          "location": "text_136",
+          "text": "."
+        },
+        {
+          "location": "text_137",
+          "text": "."
+        },
+        {
+          "location": "text_138",
+          "text": "."
+        },
+        {
+          "location": "text_139",
+          "text": "."
+        },
+        {
+          "location": "text_140",
+          "text": "."
+        },
+        {
+          "location": "text_141",
+          "text": "."
+        },
+        {
+          "location": "text_142",
+          "text": "."
+        },
+        {
+          "location": "text_143",
+          "text": "."
+        },
+        {
+          "location": "text_144",
+          "text": "."
+        },
+        {
+          "location": "text_145",
+          "text": "."
+        },
+        {
+          "location": "text_146",
+          "text": "."
+        },
+        {
+          "location": "text_147",
+          "text": "."
+        },
+        {
+          "location": "text_148",
+          "text": "."
+        },
+        {
+          "location": "text_149",
+          "text": "."
+        },
+        {
+          "location": "text_150",
+          "text": "."
+        },
+        {
+          "location": "text_151",
+          "text": "."
+        },
+        {
+          "location": "text_152",
+          "text": "."
+        },
+        {
+          "location": "text_153",
+          "text": "."
+        },
+        {
+          "location": "text_154",
+          "text": "."
+        },
+        {
+          "location": "text_155",
+          "text": "."
+        },
+        {
+          "location": "text_156",
+          "text": "31 32 31 other general ."
+        },
+        {
+          "location": "text_157",
+          "text": "."
+        },
+        {
+          "location": "text_158",
+          "text": "."
+        },
+        {
+          "location": "text_159",
+          "text": "."
+        },
+        {
+          "location": "text_160",
+          "text": "."
+        },
+        {
+          "location": "text_161",
+          "text": "."
+        },
+        {
+          "location": "text_162",
+          "text": "."
+        },
+        {
+          "location": "text_163",
+          "text": "."
+        },
+        {
+          "location": "text_164",
+          "text": "."
+        },
+        {
+          "location": "text_165",
+          "text": "."
+        },
+        {
+          "location": "text_166",
+          "text": "."
+        },
+        {
+          "location": "text_167",
+          "text": "."
+        },
+        {
+          "location": "text_168",
+          "text": "."
+        },
+        {
+          "location": "text_169",
+          "text": "."
+        },
+        {
+          "location": "text_170",
+          "text": "."
+        },
+        {
+          "location": "text_171",
+          "text": "."
+        },
+        {
+          "location": "text_172",
+          "text": "."
+        },
+        {
+          "location": "text_173",
+          "text": "."
+        },
+        {
+          "location": "text_174",
+          "text": "."
+        },
+        {
+          "location": "text_175",
+          "text": "."
+        },
+        {
+          "location": "text_176",
+          "text": "."
+        },
+        {
+          "location": "text_177",
+          "text": "."
+        },
+        {
+          "location": "text_178",
+          "text": "."
+        },
+        {
+          "location": "text_179",
+          "text": "."
+        },
+        {
+          "location": "text_180",
+          "text": "."
+        },
+        {
+          "location": "text_181",
+          "text": "."
+        },
+        {
+          "location": "text_182",
+          "text": "."
+        },
+        {
+          "location": "text_183",
+          "text": "."
+        },
+        {
+          "location": "text_184",
+          "text": "."
+        },
+        {
+          "location": "text_185",
+          "text": "."
+        },
+        {
+          "location": "text_186",
+          "text": "."
+        },
+        {
+          "location": "text_187",
+          "text": "."
+        },
+        {
+          "location": "text_188",
+          "text": "."
+        },
+        {
+          "location": "text_189",
+          "text": "."
+        },
+        {
+          "location": "text_190",
+          "text": "."
+        },
+        {
+          "location": "text_191",
+          "text": "."
+        },
+        {
+          "location": "text_192",
+          "text": "."
+        },
+        {
+          "location": "text_193",
+          "text": "."
+        },
+        {
+          "location": "text_194",
+          "text": "."
+        },
+        {
+          "location": "text_195",
+          "text": "."
+        },
+        {
+          "location": "text_196",
+          "text": "."
+        },
+        {
+          "location": "text_197",
+          "text": "."
+        },
+        {
+          "location": "text_198",
+          "text": "."
+        },
+        {
+          "location": "text_199",
+          "text": "."
+        },
+        {
+          "location": "text_200",
+          "text": "."
+        },
+        {
+          "location": "text_201",
+          "text": "."
+        },
+        {
+          "location": "text_202",
+          "text": "."
+        },
+        {
+          "location": "text_203",
+          "text": "."
+        },
+        {
+          "location": "text_204",
+          "text": "."
+        },
+        {
+          "location": "text_205",
+          "text": "."
+        },
+        {
+          "location": "text_206",
+          "text": "."
+        },
+        {
+          "location": "text_207",
+          "text": "."
+        },
+        {
+          "location": "text_208",
+          "text": "."
+        },
+        {
+          "location": "text_209",
+          "text": "."
+        },
+        {
+          "location": "text_210",
+          "text": "13 14 15 total general taxes ."
+        },
+        {
+          "location": "text_211",
+          "text": "."
+        },
+        {
+          "location": "text_212",
+          "text": "."
+        },
+        {
+          "location": "text_213",
+          "text": "."
+        },
+        {
+          "location": "text_214",
+          "text": "."
+        },
+        {
+          "location": "text_215",
+          "text": "."
+        },
+        {
+          "location": "text_216",
+          "text": "."
+        },
+        {
+          "location": "text_217",
+          "text": "."
+        },
+        {
+          "location": "text_218",
+          "text": "."
+        },
+        {
+          "location": "text_219",
+          "text": "."
+        },
+        {
+          "location": "text_220",
+          "text": "."
+        },
+        {
+          "location": "text_221",
+          "text": "."
+        },
+        {
+          "location": "text_222",
+          "text": "."
+        },
+        {
+          "location": "text_223",
+          "text": "."
+        },
+        {
+          "location": "text_224",
+          "text": "."
+        },
+        {
+          "location": "text_225",
+          "text": "."
+        },
+        {
+          "location": "text_226",
+          "text": "."
+        },
+        {
+          "location": "text_227",
+          "text": "."
+        },
+        {
+          "location": "text_228",
+          "text": "."
+        },
+        {
+          "location": "text_229",
+          "text": "."
+        },
+        {
+          "location": "text_230",
+          "text": "."
+        },
+        {
+          "location": "text_231",
+          "text": "."
+        },
+        {
+          "location": "text_232",
+          "text": "."
+        },
+        {
+          "location": "text_233",
+          "text": "."
+        },
+        {
+          "location": "text_234",
+          "text": "."
+        },
+        {
+          "location": "text_235",
+          "text": "."
+        },
+        {
+          "location": "text_236",
+          "text": "."
+        },
+        {
+          "location": "text_237",
+          "text": "."
+        },
+        {
+          "location": "text_238",
+          "text": "."
+        },
+        {
+          "location": "text_239",
+          "text": "."
+        },
+        {
+          "location": "text_240",
+          "text": "."
+        },
+        {
+          "location": "text_241",
+          "text": "."
+        },
+        {
+          "location": "text_242",
+          "text": "."
+        },
+        {
+          "location": "text_243",
+          "text": "."
+        },
+        {
+          "location": "text_244",
+          "text": "."
+        },
+        {
+          "location": "text_245",
+          "text": "."
+        },
+        {
+          "location": "text_246",
+          "text": "."
+        },
+        {
+          "location": "text_247",
+          "text": "."
+        },
+        {
+          "location": "text_248",
+          "text": "."
+        },
+        {
+          "location": "text_249",
+          "text": "."
+        },
+        {
+          "location": "text_250",
+          "text": "."
+        },
+        {
+          "location": "text_251",
+          "text": "."
+        },
+        {
+          "location": "text_252",
+          "text": "."
+        },
+        {
+          "location": "text_253",
+          "text": "."
+        },
+        {
+          "location": "text_254",
+          "text": "."
+        },
+        {
+          "location": "text_255",
+          "text": "."
+        },
+        {
+          "location": "text_256",
+          "text": "."
+        },
+        {
+          "location": "text_257",
+          "text": "."
+        },
+        {
+          "location": "text_258",
+          "text": "."
+        },
+        {
+          "location": "text_259",
+          "text": "."
+        },
+        {
+          "location": "text_260",
+          "text": "$ 259 $ 258 $ 243 ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percentage change in the weighted average interest rates computed on daily basis from 2016 to 2017",
+    "reference_program": "subtract(1.24, 0.78), divide(#0, 0.78)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "1.24",
+        "raw": "1.24%",
+        "location": "table_3:1",
+        "context": "Weighted average interest rates, computed on daily basis | 2017"
+      },
+      "x1": {
+        "program_token": "0.78",
+        "raw": "0.78%",
+        "location": "table_3:2",
+        "context": "Weighted average interest rates, computed on daily basis | 2016"
+      }
+    }
+  },
+  {
+    "review_id": "R070",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "power purchase contracts dominion has entered into contracts for long-term purchases of capacity and energy from other utilities , qualifying facilities and independent power producers ."
+        },
+        {
+          "location": "text_1",
+          "text": "as of december 31 , 2002 , dominion had 42 non-utility purchase contracts with a com- bined dependable summer capacity of 3758 megawatts ."
+        },
+        {
+          "location": "text_2",
+          "text": "the table below reflects dominion 2019s minimum commitments as of december 31 , 2002 under these contracts. ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Commitment"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "(millions)",
+            "Capacity",
+            "Other"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2003",
+            "$643",
+            "$44"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2004",
+            "635",
+            "29"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2005",
+            "629",
+            "22"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "2006",
+            "614",
+            "18"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "2007",
+            "589",
+            "11"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Later years",
+            "5,259",
+            "113"
+          ]
+        },
+        {
+          "row_index": 8,
+          "cells": [
+            "Total",
+            "8,369",
+            "237"
+          ]
+        },
+        {
+          "row_index": 9,
+          "cells": [
+            "Present value of the total",
+            "$4,836",
+            "$140"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_3",
+          "text": "capacity and other purchases under these contracts totaled $ 691 million , $ 680 million and $ 740 million for 2002 , 2001 and 2000 , respectively ."
+        },
+        {
+          "location": "text_4",
+          "text": "in 2001 , dominion completed the purchase of three gener- ating facilities and the termination of seven long-term power purchase contracts with non-utility generators ."
+        },
+        {
+          "location": "text_5",
+          "text": "dominion recorded an after-tax charge of $ 136 million in connection with the purchase and termination of long-term power purchase contracts ."
+        },
+        {
+          "location": "text_6",
+          "text": "cash payments related to the purchase of three gener- ating facilities totaled $ 207 million ."
+        },
+        {
+          "location": "text_7",
+          "text": "the allocation of the pur- chase price was assigned to the assets and liabilities acquired based upon estimated fair values as of the date of acquisition ."
+        },
+        {
+          "location": "text_8",
+          "text": "substantially all of the value was attributed to the power pur- chase contracts which were terminated and resulted in a charge included in operation and maintenance expense ."
+        },
+        {
+          "location": "text_9",
+          "text": "fuel purchase commitments dominion enters into long-term purchase commitments for fuel used in electric generation and natural gas for purposes other than trading ."
+        },
+        {
+          "location": "text_10",
+          "text": "estimated payments under these commitments for the next five years are as follows : 2003 2014$ 599 million ; 2004 2014$ 311 million ; 2005 2014$ 253 million ; 2006 2014$ 205 mil- lion ; 2007 2014$ 89 million ; and years beyond 2007 2014$ 215 mil- lion ."
+        },
+        {
+          "location": "text_11",
+          "text": "these purchase commitments include those required for regulated operations ."
+        },
+        {
+          "location": "text_12",
+          "text": "dominion recovers the costs of those pur- chases through regulated rates ."
+        },
+        {
+          "location": "text_13",
+          "text": "the natural gas purchase com- mitments of dominion 2019s field services operations are also included , net of related sales commitments ."
+        },
+        {
+          "location": "text_14",
+          "text": "in addition , dominion has committed to purchase certain volumes of nat- ural gas at market index prices determined in the period the natural gas is delivered ."
+        },
+        {
+          "location": "text_15",
+          "text": "these transactions have been designated as normal purchases and sales under sfas no ."
+        },
+        {
+          "location": "text_16",
+          "text": "133 ."
+        },
+        {
+          "location": "text_17",
+          "text": "natural gas pipeline and storage capacity commitments dominion enters into long-term commitments for the purchase of natural gas pipeline and storage capacity for purposes other than trading ."
+        },
+        {
+          "location": "text_18",
+          "text": "estimated payments under these commitments for the next five years are as follows : 2003 2014$ 34 million ; 2004 2014$ 23 million ; 2005 2014$ 13 million ."
+        },
+        {
+          "location": "text_19",
+          "text": "there were no signifi- cant commitments beyond 2005 ."
+        },
+        {
+          "location": "text_20",
+          "text": "production handling and firm transportation commitments in connection with its gas and oil production operations , dominion has entered into certain transportation and produc- tion handling agreements with minimum commitments expected to be paid in the following years : 2003 2014$ 23 million ; 2004 2014$ 57 million ; 2005 2014$ 56 million ; 2006 2014$ 53 million ; 2007 2014$ 44 million ; and years after 2007 2014$ 68 million ."
+        },
+        {
+          "location": "text_21",
+          "text": "lease commitments dominion leases various facilities , vehicles , aircraft and equip- ment under both operating and capital leases ."
+        },
+        {
+          "location": "text_22",
+          "text": "future minimum lease payments under operating and capital leases that have initial or remaining lease terms in excess of one year as of december 31 , 2002 are as follows : 2003 2014$ 94 million ; 2004 2014 $ 94 million ; 2005 2014$ 82 million ; 2006 2014$ 67 million ; 2007 2014 $ 62 million ; and years beyond 2007 2014$ 79 million ."
+        },
+        {
+          "location": "text_23",
+          "text": "rental expense included in other operations and maintenance expense was $ 84 million , $ 75 million and $ 107 million for 2002 , 2001 , and 2000 , respectively ."
+        },
+        {
+          "location": "text_24",
+          "text": "as of december 31 , 2002 , dominion , through certain sub- sidiaries , has entered into agreements with special purpose enti- ties ( lessors ) in order to finance and lease several new power generation projects , as well as its corporate headquarters and air- craft ."
+        },
+        {
+          "location": "text_25",
+          "text": "the lessors have an aggregate financing commitment from equity and debt investors of $ 2.2 billion , of which $ 1.6 billion has been used for total project costs to date ."
+        },
+        {
+          "location": "text_26",
+          "text": "dominion , in its role as construction agent for the lessors , is responsible for com- pleting construction by a specified date ."
+        },
+        {
+          "location": "text_27",
+          "text": "in the event a project is terminated before completion , dominion has the option to either purchase the project for 100 percent of project costs or terminate the project and make a payment to the lessor of approximately but no more than 89.9 percent of project costs ."
+        },
+        {
+          "location": "text_28",
+          "text": "upon completion of each individual project , dominion has use of the project assets subject to an operating lease ."
+        },
+        {
+          "location": "text_29",
+          "text": "dominion 2019s lease payments to the lessors are sufficient to provide a return to the investors ."
+        },
+        {
+          "location": "text_30",
+          "text": "at the end of each individual project 2019s lease term , dominion may renew the lease at negotiated amounts based on project costs and current market conditions , subject to investors 2019 approval ; purchase the project at its original construction cost ; or sell the project , on behalf of the lessor , to an independent third party ."
+        },
+        {
+          "location": "text_31",
+          "text": "if the project is sold and the proceeds from the sale are insufficient to repay the investors , dominion may be required to make a payment to the lessor up to an amount rang- ing from 81 percent to 85 percent of the project cost depending 85d o m i n i o n 2019 0 2 a n n u a l r e p o r t ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "estimated payments under natural gas pipeline and storage capacity commitments for the next three years total how much , in millions?",
+    "reference_program": "add(34, 23), add(13, #0)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "34",
+        "raw": "34",
+        "location": "text_18:94",
+        "context": "estimated payments under these commitments for the next five years are as follows : 2003 2014$ 34 million ; 2004 2014$ 23 million ; 2005 2014$ 13 million ."
+      },
+      "x1": {
+        "program_token": "23",
+        "raw": "23",
+        "location": "text_18:118",
+        "context": "estimated payments under these commitments for the next five years are as follows : 2003 2014$ 34 million ; 2004 2014$ 23 million ; 2005 2014$ 13 million ."
+      },
+      "x2": {
+        "program_token": "13",
+        "raw": "13",
+        "location": "text_18:142",
+        "context": "estimated payments under these commitments for the next five years are as follows : 2003 2014$ 34 million ; 2004 2014$ 23 million ; 2005 2014$ 13 million ."
+      }
+    }
+  },
+  {
+    "review_id": "R071",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "shareowner return performance graph the following performance graph and related information shall not be deemed 201csoliciting material 201d or to be 201cfiled 201d with the sec , nor shall such information be incorporated by reference into any future filing under the securities act of 1933 or securities exchange act of 1934 , each as amended , except to the extent that the company specifically incorporates such information by reference into such filing ."
+        },
+        {
+          "location": "text_1",
+          "text": "the following graph shows a five year comparison of cumulative total shareowners 2019 returns for our class b common stock , the standard & poor 2019s 500 index , and the dow jones transportation average ."
+        },
+        {
+          "location": "text_2",
+          "text": "the comparison of the total cumulative return on investment , which is the change in the quarterly stock price plus reinvested dividends for each of the quarterly periods , assumes that $ 100 was invested on december 31 , 2007 in the standard & poor 2019s 500 index , the dow jones transportation average , and our class b common stock. ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "12/31/2007",
+            "12/31/2008",
+            "12/31/2009",
+            "12/31/2010",
+            "12/31/2011",
+            "12/31/2012"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "United Parcel Service, Inc.",
+            "$100.00",
+            "$80.20",
+            "$86.42",
+            "$112.60",
+            "$116.97",
+            "$121.46"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Standard & Poor’s 500 Index",
+            "$100.00",
+            "$63.00",
+            "$79.67",
+            "$91.68",
+            "$93.61",
+            "$108.59"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Dow Jones Transportation Average",
+            "$100.00",
+            "$78.58",
+            "$93.19",
+            "$118.14",
+            "$118.15",
+            "$127.07"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_3",
+          "text": "."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what is the roi of an investment in s&p500 from 2008 to 2009?",
+    "reference_program": "subtract(79.67, 63.00), divide(#0, 63.00)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "79.67",
+        "raw": "79.67",
+        "location": "table_2:3",
+        "context": "Standard & Poor’s 500 Index | 12/31/2009"
+      },
+      "x1": {
+        "program_token": "63.00",
+        "raw": "63.00",
+        "location": "table_2:2",
+        "context": "Standard & Poor’s 500 Index | 12/31/2008"
+      }
+    }
+  },
+  {
+    "review_id": "R072",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "uncertain tax positions the following is a reconciliation of the company 2019s beginning and ending amount of uncertain tax positions ( in millions ) : ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2018",
+            "2017"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Balance at January 1",
+            "$280",
+            "$278"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Additions based on tax positions related to the current year",
+            "18",
+            "25"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Additions for tax positions of prior years",
+            "10",
+            "12"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Reductions for tax positions of prior years",
+            "(24)",
+            "(26)"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Settlements",
+            "—",
+            "(6)"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Business combinations",
+            "1",
+            "—"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Lapse of statute of limitations",
+            "(6)",
+            "(7)"
+          ]
+        },
+        {
+          "row_index": 8,
+          "cells": [
+            "Foreign currency translation",
+            "—",
+            "4"
+          ]
+        },
+        {
+          "row_index": 9,
+          "cells": [
+            "Balance at December 31",
+            "$279",
+            "$280"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_1",
+          "text": "the company 2019s liability for uncertain tax positions as of december 31 , 2018 , 2017 , and 2016 , includes $ 228 million , $ 219 million , and $ 240 million , respectively , related to amounts that would impact the effective tax rate if recognized ."
+        },
+        {
+          "location": "text_2",
+          "text": "it is possible that the amount of unrecognized tax benefits may change in the next twelve months ; however , the company does not expect the change to have a significant impact on its consolidated statements of income or consolidated balance sheets ."
+        },
+        {
+          "location": "text_3",
+          "text": "these changes may be the result of settlements of ongoing audits ."
+        },
+        {
+          "location": "text_4",
+          "text": "at this time , an estimate of the range of the reasonably possible outcomes within the twelve months cannot be made ."
+        },
+        {
+          "location": "text_5",
+          "text": "the company recognizes interest and penalties related to uncertain tax positions in its provision for income taxes ."
+        },
+        {
+          "location": "text_6",
+          "text": "the company accrued potential interest and penalties of $ 22 million , $ 11 million , and $ 15 million in 2018 , 2017 , and 2016 , respectively ."
+        },
+        {
+          "location": "text_7",
+          "text": "the company recorded a liability for interest and penalties of $ 77 million , $ 55 million , and $ 48 million as of december 31 , 2018 , 2017 , and 2016 , respectively ."
+        },
+        {
+          "location": "text_8",
+          "text": "the company and its subsidiaries file income tax returns in their respective jurisdictions ."
+        },
+        {
+          "location": "text_9",
+          "text": "the company has substantially concluded all u.s ."
+        },
+        {
+          "location": "text_10",
+          "text": "federal income tax matters for years through 2007 ."
+        },
+        {
+          "location": "text_11",
+          "text": "material u.s ."
+        },
+        {
+          "location": "text_12",
+          "text": "state and local income tax jurisdiction examinations have been concluded for years through 2005 ."
+        },
+        {
+          "location": "text_13",
+          "text": "the company has concluded income tax examinations in its primary non-u.s ."
+        },
+        {
+          "location": "text_14",
+          "text": "jurisdictions through 2010 ."
+        },
+        {
+          "location": "text_15",
+          "text": "12 ."
+        },
+        {
+          "location": "text_16",
+          "text": "shareholders 2019 equityq y distributable reserves as a company incorporated in england and wales , aon is required under u.k ."
+        },
+        {
+          "location": "text_17",
+          "text": "law to have available 201cdistributable reserves 201d to make share repurchases or pay dividends to shareholders ."
+        },
+        {
+          "location": "text_18",
+          "text": "distributable reserves may be created through the earnings of the u.k ."
+        },
+        {
+          "location": "text_19",
+          "text": "parent company and , among other methods , through a reduction in share capital approved by the courts of england and wales ."
+        },
+        {
+          "location": "text_20",
+          "text": "distributable reserves are not directly linked to a u.s ."
+        },
+        {
+          "location": "text_21",
+          "text": "gaap reported amount ( e.g. , retained earnings ) ."
+        },
+        {
+          "location": "text_22",
+          "text": "as of december 31 , 2018 and 2017 , the company had distributable reserves in excess of $ 2.2 billion and $ 1.2 billion , respectively ."
+        },
+        {
+          "location": "text_23",
+          "text": "ordinary shares aon has a share repurchase program authorized by the company 2019s board of directors ( the 201crepurchase program 201d ) ."
+        },
+        {
+          "location": "text_24",
+          "text": "the repurchase program was established in april 2012 with $ 5.0 billion in authorized repurchases , and was increased by $ 5.0 billion in authorized repurchases in each of november 2014 and february 2017 for a total of $ 15.0 billion in repurchase authorizations ."
+        },
+        {
+          "location": "text_25",
+          "text": "under the repurchase program , class a ordinary shares may be repurchased through the open market or in privately negotiated transactions , from time to time , based on prevailing market conditions , and will be funded from available capital. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percent of the increase in the company recorded a liability for interest and penalties from 2017 to 2018",
+    "reference_program": "subtract(77, 55), divide(#0, 55)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "77",
+        "raw": "77",
+        "location": "text_7:64",
+        "context": "the company recorded a liability for interest and penalties of $ 77 million , $ 55 million , and $ 48 million as of december 31 , 2018 , 2017 , and 2016 , respectively ."
+      },
+      "x1": {
+        "program_token": "55",
+        "raw": "55",
+        "location": "text_7:79",
+        "context": "the company recorded a liability for interest and penalties of $ 77 million , $ 55 million , and $ 48 million as of december 31 , 2018 , 2017 , and 2016 , respectively ."
+      }
+    }
+  },
+  {
+    "review_id": "R073",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "on the 4.25% ( 4.25 % ) notes due in 2021 ( 201c2021 notes 201d ) is payable semi-annually on may 24 and november 24 of each year , which commenced november 24 , 2011 , and is approximately $ 32 million per year ."
+        },
+        {
+          "location": "text_1",
+          "text": "the 2021 notes may be redeemed prior to maturity at any time in whole or in part at the option of the company at a 201cmake-whole 201d redemption price ."
+        },
+        {
+          "location": "text_2",
+          "text": "the 2021 notes were issued at a discount of $ 4 million ."
+        },
+        {
+          "location": "text_3",
+          "text": "at december 31 , 2014 , $ 3 million of unamortized debt issuance costs was included in other assets on the consolidated statement of financial condition and are being amortized over the remaining term of the 2021 notes ."
+        },
+        {
+          "location": "text_4",
+          "text": "in may 2011 , in conjunction with the issuance of the 2013 floating rate notes , the company entered into a $ 750 million notional interest rate swapmaturing in 2013 to hedge the future cash flows of its obligation at a fixed rate of 1.03% ( 1.03 % ) ."
+        },
+        {
+          "location": "text_5",
+          "text": "during the second quarter of 2013 , the interest rate swapmatured and the 2013 floating rate notes were fully repaid ."
+        },
+        {
+          "location": "text_6",
+          "text": "2019 notes ."
+        },
+        {
+          "location": "text_7",
+          "text": "in december 2009 , the company issued $ 2.5 billion in aggregate principal amount of unsecured and unsubordinated obligations ."
+        },
+        {
+          "location": "text_8",
+          "text": "these notes were issued as three separate series of senior debt securities including $ 0.5 billion of 2.25% ( 2.25 % ) notes , which were repaid in december 2012 , $ 1.0 billion of 3.50% ( 3.50 % ) notes , which were repaid in december 2014 at maturity , and $ 1.0 billion of 5.0% ( 5.0 % ) notes maturing in december 2019 ( the 201c2019 notes 201d ) ."
+        },
+        {
+          "location": "text_9",
+          "text": "net proceeds of this offering were used to repay borrowings under the cp program , which was used to finance a portion of the acquisition of barclays global investors ( 201cbgi 201d ) from barclays on december 1 , 2009 ( the 201cbgi transaction 201d ) , and for general corporate purposes ."
+        },
+        {
+          "location": "text_10",
+          "text": "interest on the 2019 notes of approximately $ 50 million per year is payable semi-annually in arrears on june 10 and december 10 of each year ."
+        },
+        {
+          "location": "text_11",
+          "text": "these notes may be redeemed prior to maturity at any time in whole or in part at the option of the company at a 201cmake- whole 201d redemption price ."
+        },
+        {
+          "location": "text_12",
+          "text": "these notes were issued collectively at a discount of $ 5 million ."
+        },
+        {
+          "location": "text_13",
+          "text": "at december 31 , 2014 , $ 3 million of unamortized debt issuance costs was included in other assets on the consolidated statement of financial condition and are being amortized over the remaining term of the 2019 notes ."
+        },
+        {
+          "location": "text_14",
+          "text": "2017 notes ."
+        },
+        {
+          "location": "text_15",
+          "text": "in september 2007 , the company issued $ 700 million in aggregate principal amount of 6.25% ( 6.25 % ) senior unsecured and unsubordinated notes maturing on september 15 , 2017 ( the 201c2017 notes 201d ) ."
+        },
+        {
+          "location": "text_16",
+          "text": "a portion of the net proceeds of the 2017 notes was used to fund the initial cash payment for the acquisition of the fund-of-funds business of quellos and the remainder was used for general corporate purposes ."
+        },
+        {
+          "location": "text_17",
+          "text": "interest is payable semi-annually in arrears on march 15 and september 15 of each year , or approximately $ 44 million per year ."
+        },
+        {
+          "location": "text_18",
+          "text": "the 2017 notes may be redeemed prior to maturity at any time in whole or in part at the option of the company at a 201cmake-whole 201d redemption price ."
+        },
+        {
+          "location": "text_19",
+          "text": "the 2017 notes were issued at a discount of $ 6 million , which is being amortized over their ten-year term ."
+        },
+        {
+          "location": "text_20",
+          "text": "the company incurred approximately $ 4 million of debt issuance costs , which are being amortized over ten years ."
+        },
+        {
+          "location": "text_21",
+          "text": "at december 31 , 2014 , $ 1 million of unamortized debt issuance costs was included in other assets on the consolidated statement of financial condition ."
+        },
+        {
+          "location": "text_22",
+          "text": "13 ."
+        },
+        {
+          "location": "text_23",
+          "text": "commitments and contingencies operating lease commitments the company leases its primary office spaces under agreements that expire through 2035 ."
+        },
+        {
+          "location": "text_24",
+          "text": "future minimum commitments under these operating leases are as follows : ( in millions ) ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "Year",
+            "Amount"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2015",
+            "$126"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2016",
+            "111"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2017",
+            "112"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2018",
+            "111"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "2019",
+            "105"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Thereafter",
+            "613"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Total",
+            "$1,178"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_25",
+          "text": "rent expense and certain office equipment expense under agreements amounted to $ 132 million , $ 137 million and $ 133 million in 2014 , 2013 and 2012 , respectively ."
+        },
+        {
+          "location": "text_26",
+          "text": "investment commitments ."
+        },
+        {
+          "location": "text_27",
+          "text": "at december 31 , 2014 , the company had $ 161 million of various capital commitments to fund sponsored investment funds , including funds of private equity funds , real estate funds , infrastructure funds , opportunistic funds and distressed credit funds ."
+        },
+        {
+          "location": "text_28",
+          "text": "this amount excludes additional commitments made by consolidated funds of funds to underlying third-party funds as third-party noncontrolling interest holders have the legal obligation to fund the respective commitments of such funds of funds ."
+        },
+        {
+          "location": "text_29",
+          "text": "in addition to the capital commitments of $ 161 million , the company had approximately $ 35 million of contingent commitments for certain funds which have investment periods that have expired ."
+        },
+        {
+          "location": "text_30",
+          "text": "generally , the timing of the funding of these commitments is unknown and the commitments are callable on demand at any time prior to the expiration of the commitment ."
+        },
+        {
+          "location": "text_31",
+          "text": "these unfunded commitments are not recorded on the consolidated statements of financial condition ."
+        },
+        {
+          "location": "text_32",
+          "text": "these commitments do not include potential future commitments approved by the company that are not yet legally binding ."
+        },
+        {
+          "location": "text_33",
+          "text": "the company intends to make additional capital commitments from time to time to fund additional investment products for , and with , its clients ."
+        },
+        {
+          "location": "text_34",
+          "text": "contingencies contingent payments ."
+        },
+        {
+          "location": "text_35",
+          "text": "the company acts as the portfolio manager in a series of derivative transactions and has a maximum potential exposure of $ 17 million under a derivative between the company and counterparty ."
+        },
+        {
+          "location": "text_36",
+          "text": "see note 7 , derivatives and hedging , for further discussion ."
+        },
+        {
+          "location": "text_37",
+          "text": "contingent payments related to business acquisitions ."
+        },
+        {
+          "location": "text_38",
+          "text": "in connection with the credit suisse etf transaction , blackrock is required to make contingent payments annually to credit suisse , subject to achieving specified thresholds during a seven-year period , subsequent to the 2013 acquisition date ."
+        },
+        {
+          "location": "text_39",
+          "text": "in addition , blackrock is required to make contingent payments related to the mgpa transaction during a five-year period , subject to achieving specified thresholds , subsequent to the 2013 acquisition date ."
+        },
+        {
+          "location": "text_40",
+          "text": "the fair value of the remaining contingent payments at december 31 , 2014 is not significant to the consolidated statement of financial condition and is included in other liabilities ."
+        },
+        {
+          "location": "text_41",
+          "text": "legal proceedings ."
+        },
+        {
+          "location": "text_42",
+          "text": "from time to time , blackrock receives subpoenas or other requests for information from various u.s ."
+        },
+        {
+          "location": "text_43",
+          "text": "federal , state governmental and domestic and ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what is the growth rate in rent expense and certain office equipment expense from 2013 to 2014?",
+    "reference_program": "subtract(132, 137), divide(#0, 137)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "132",
+        "raw": "132",
+        "location": "text_25:80",
+        "context": "rent expense and certain office equipment expense under agreements amounted to $ 132 million , $ 137 million and $ 133 million in 2014 , 2013 and 2012 , respectively ."
+      },
+      "x1": {
+        "program_token": "137",
+        "raw": "137",
+        "location": "text_25:96",
+        "context": "rent expense and certain office equipment expense under agreements amounted to $ 132 million , $ 137 million and $ 133 million in 2014 , 2013 and 2012 , respectively ."
+      }
+    }
+  },
+  {
+    "review_id": "R074",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "republic services , inc ."
+        },
+        {
+          "location": "text_1",
+          "text": "notes to consolidated financial statements 2014 ( continued ) high quality financial institutions ."
+        },
+        {
+          "location": "text_2",
+          "text": "such balances may be in excess of fdic insured limits ."
+        },
+        {
+          "location": "text_3",
+          "text": "to manage the related credit exposure , we continually monitor the credit worthiness of the financial institutions where we have deposits ."
+        },
+        {
+          "location": "text_4",
+          "text": "concentrations of credit risk with respect to trade accounts receivable are limited due to the wide variety of customers and markets in which we provide services , as well as the dispersion of our operations across many geographic areas ."
+        },
+        {
+          "location": "text_5",
+          "text": "we provide services to commercial , industrial , municipal and residential customers in the united states and puerto rico ."
+        },
+        {
+          "location": "text_6",
+          "text": "we perform ongoing credit evaluations of our customers , but do not require collateral to support customer receivables ."
+        },
+        {
+          "location": "text_7",
+          "text": "we establish an allowance for doubtful accounts based on various factors including the credit risk of specific customers , age of receivables outstanding , historical trends , economic conditions and other information ."
+        },
+        {
+          "location": "text_8",
+          "text": "no customer exceeded 5% ( 5 % ) of our outstanding accounts receivable balance at december 31 , 2012 and 2011 ."
+        },
+        {
+          "location": "text_9",
+          "text": "accounts receivable , net of allowance for doubtful accounts accounts receivable represent receivables from customers for collection , transfer , recycling , disposal and other services ."
+        },
+        {
+          "location": "text_10",
+          "text": "our receivables are recorded when billed or when the related revenue is earned , if earlier , and represent claims against third parties that will be settled in cash ."
+        },
+        {
+          "location": "text_11",
+          "text": "the carrying value of our receivables , net of the allowance for doubtful accounts , represents their estimated net realizable value ."
+        },
+        {
+          "location": "text_12",
+          "text": "provisions for doubtful accounts are evaluated on a monthly basis and are recorded based on our historical collection experience , the age of the receivables , specific customer information and economic conditions ."
+        },
+        {
+          "location": "text_13",
+          "text": "we also review outstanding balances on an account-specific basis ."
+        },
+        {
+          "location": "text_14",
+          "text": "in general , reserves are provided for accounts receivable in excess of ninety days old ."
+        },
+        {
+          "location": "text_15",
+          "text": "past due receivable balances are written-off when our collection efforts have been unsuccessful in collecting amounts the following table reflects the activity in our allowance for doubtful accounts for the years ended december 31 , 2012 , 2011 and 2010: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2012",
+            "2011",
+            "2010"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Balance at beginning of year",
+            "$48.1",
+            "$50.9",
+            "$55.2"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Additions charged to expense",
+            "29.7",
+            "21.0",
+            "23.6"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Accounts written-off",
+            "(32.5)",
+            "(23.8)",
+            "(27.9)"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Balance at end of year",
+            "$45.3",
+            "$48.1",
+            "$50.9"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_16",
+          "text": "restricted cash and marketable securities as of december 31 , 2012 , we had $ 164.2 million of restricted cash and marketable securities ."
+        },
+        {
+          "location": "text_17",
+          "text": "we obtain funds through the issuance of tax-exempt bonds for the purpose of financing qualifying expenditures at our landfills , transfer stations , collection and recycling centers ."
+        },
+        {
+          "location": "text_18",
+          "text": "the funds are deposited directly into trust accounts by the bonding authorities at the time of issuance ."
+        },
+        {
+          "location": "text_19",
+          "text": "as the use of these funds is contractually restricted , and we do not have the ability to use these funds for general operating purposes , they are classified as restricted cash and marketable securities in our consolidated balance sheets ."
+        },
+        {
+          "location": "text_20",
+          "text": "in the normal course of business , we may be required to provide financial assurance to governmental agencies and a variety of other entities in connection with municipal residential collection contracts , closure or post- closure of landfills , environmental remediation , environmental permits , and business licenses and permits as a financial guarantee of our performance ."
+        },
+        {
+          "location": "text_21",
+          "text": "at several of our landfills , we satisfy financial assurance requirements by depositing cash into restricted trust funds or escrow accounts. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percentage change in the additions charged to expense from 2011 to 2012 as part of the allowance for doubtful accounts",
+    "reference_program": "subtract(29.7, 21.0), divide(#0, 21.0)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "29.7",
+        "raw": "29.7",
+        "location": "table_2:1",
+        "context": "Additions charged to expense | 2012"
+      },
+      "x1": {
+        "program_token": "21.0",
+        "raw": "21.0",
+        "location": "table_2:2",
+        "context": "Additions charged to expense | 2011"
+      }
+    }
+  },
+  {
+    "review_id": "R075",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "teleflex incorporated notes to consolidated financial statements 2014 ( continued ) in june 2014 , the company initiated programs to consolidate locations in australia and terminate certain european distributor agreements in an effort to reduce costs ."
+        },
+        {
+          "location": "text_1",
+          "text": "as a result of these actions , the company incurred aggregate restructuring charges of $ 3.6 million as of december 31 , 2015 ."
+        },
+        {
+          "location": "text_2",
+          "text": "these programs include costs related to termination benefits , contract termination costs and other exit costs ."
+        },
+        {
+          "location": "text_3",
+          "text": "the company completed the programs in 2015 ."
+        },
+        {
+          "location": "text_4",
+          "text": "2013 restructuring programs in 2013 , the company initiated restructuring programs to consolidate administrative and manufacturing facilities in north america and warehouse facilities in europe and terminate certain european distributor agreements in an effort to reduce costs ."
+        },
+        {
+          "location": "text_5",
+          "text": "as of december 31 , 2015 , the company incurred net aggregate restructuring charges of $ 10.9 million related to these programs ."
+        },
+        {
+          "location": "text_6",
+          "text": "these programs entail costs related to termination benefits , contract termination costs and charges related to facility closure and other exit costs ."
+        },
+        {
+          "location": "text_7",
+          "text": "the company completed the programs in 2015 lma restructuring program in connection with the acquisition of substantially all of the assets of lma international n.v ."
+        },
+        {
+          "location": "text_8",
+          "text": "( the 201clma business 201d ) in 2012 , the company commenced a program ( the \"lma restructuring program\" ) related to the integration of the lma business and the company 2019s other businesses ."
+        },
+        {
+          "location": "text_9",
+          "text": "the program was focused on the closure of the lma business 2019 corporate functions and the consolidation of manufacturing , sales , marketing , and distribution functions in north america , europe and asia ."
+        },
+        {
+          "location": "text_10",
+          "text": "the company incurred net aggregate restructuring charges related to the lma restructuring program of $ 11.3 million ."
+        },
+        {
+          "location": "text_11",
+          "text": "the company completed the program in 2015 ."
+        },
+        {
+          "location": "text_12",
+          "text": "for the year ended december 31 , 2014 , the company recorded a net credit of $ 3.3 million , primarily resulting from the reversal of contract termination costs following the favorable settlement of a terminated distributor agreement ."
+        },
+        {
+          "location": "text_13",
+          "text": "2012 restructuring program in 2012 , the company identified opportunities to improve its supply chain strategy by consolidating its three north american warehouses into one centralized warehouse , and lower costs and improve operating efficiencies through the termination of certain distributor agreements in europe , the closure of certain north american facilities and workforce reductions ."
+        },
+        {
+          "location": "text_14",
+          "text": "as of december 31 , 2015 , the company has incurred net aggregate restructuring and impairment charges of $ 6.3 million in connection with this program , and expects future restructuring expenses associated with the program , if any , to be nominal ."
+        },
+        {
+          "location": "text_15",
+          "text": "as of december 31 , 2015 , the company has a reserve of $ 0.5 million in connection with the program ."
+        },
+        {
+          "location": "text_16",
+          "text": "the company expects to complete this program in 2016 ."
+        },
+        {
+          "location": "text_17",
+          "text": "impairment charges there were no impairment charges recorded for the years ended december 31 , 2015 or 2014 ."
+        },
+        {
+          "location": "text_18",
+          "text": "in 2013 , the company recorded $ 7.3 million of ipr&d charges and $ 3.5 million in impairment charges related to assets held for sale that had a carrying value in excess of their appraised fair value ."
+        },
+        {
+          "location": "text_19",
+          "text": "the restructuring and other impairment charges recognized for the years ended december 31 , 2015 , 2014 and 2013 consisted of the following : ( dollars in thousands ) termination benefits facility closure contract termination other exit costs total ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2015"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "(dollars in thousands)",
+            "Termination Benefits",
+            "Facility Closure Costs",
+            "Contract Termination Costs",
+            "Other Exit Costs",
+            "Total"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2015 Restructuring programs",
+            "$5,009",
+            "$231",
+            "$1,000",
+            "$64",
+            "$6,304"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2014 Manufacturing footprint realignment plan",
+            "$1,007",
+            "$241",
+            "$389",
+            "$48",
+            "$1,685"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Other restructuring programs - prior years<sup>(1)</sup>",
+            "$(194)",
+            "$2",
+            "$(13)",
+            "$35",
+            "$(170)"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Total restructuring charges",
+            "$5,822",
+            "$474",
+            "$1,376",
+            "$147",
+            "$7,819"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_20",
+          "text": "( 1 ) other restructuring programs - prior years includes the 2014 european restructuring plan , the other 2014 restructuring programs , the 2013 restructuring programs and the lma restructuring program. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what portion of the total 2015 restructuring programs is related to termination benefits?",
+    "reference_program": "divide(5009, 6304)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "5009",
+        "raw": "5,009",
+        "location": "table_2:1",
+        "context": "2015 Restructuring programs | 2015"
+      },
+      "x1": {
+        "program_token": "6304",
+        "raw": "6,304",
+        "location": "table_2:5",
+        "context": "2015 Restructuring programs | "
+      }
+    }
+  },
+  {
+    "review_id": "R076",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "financing activities the decrease in cash used in 2010 relative to 2009 was attributable to a decrease in commercial paper repayments , net of proceeds , proceeds from our share issuance to bm&fbovespa as well as the termination of the nymex securities lending program in 2009 ."
+        },
+        {
+          "location": "text_1",
+          "text": "the decrease was partially offset by the distribution to dow jones of $ 607.5 million related to index services as well as an increase in share repurchases of $ 548.3 million ."
+        },
+        {
+          "location": "text_2",
+          "text": "share repurchases increased in an effort to offset most of the dilution associated with the issuance of shares to bm&fbovespa ."
+        },
+        {
+          "location": "text_3",
+          "text": "the increase in cash used in 2009 relative to 2008 was due to new issuances of debt of $ 2.9 billion in 2008 in conjunction with our merger with nymex holdings compared with net debt reductions of $ 900.1 million in debt instruments ."
+        },
+        {
+          "location": "text_4",
+          "text": "the following table summarizes our debt outstanding as of december 31 , 2010: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "(in millions)",
+            "Par Value"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Term loan due 2011, interest equal to 3-month LIBOR plus 1.00%<sup>(1)</sup>",
+            "$420.5"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Fixed rate notes due August 2013, interest equal to 5.40%",
+            "750.0"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Fixed rate notes due February 2014, interest equal to 5.75%",
+            "750.0"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Fixed rate notes due March 2018, interest equal to 4.40%<sup>(2)</sup>",
+            "612.5"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_5",
+          "text": "fixed rate notes due march 2018 , interest equal to 4.40% ( 4.40 % ) ( 2 ) ."
+        },
+        {
+          "location": "text_6",
+          "text": "."
+        },
+        {
+          "location": "text_7",
+          "text": "."
+        },
+        {
+          "location": "text_8",
+          "text": "."
+        },
+        {
+          "location": "text_9",
+          "text": "."
+        },
+        {
+          "location": "text_10",
+          "text": "."
+        },
+        {
+          "location": "text_11",
+          "text": "."
+        },
+        {
+          "location": "text_12",
+          "text": "."
+        },
+        {
+          "location": "text_13",
+          "text": "."
+        },
+        {
+          "location": "text_14",
+          "text": "."
+        },
+        {
+          "location": "text_15",
+          "text": "."
+        },
+        {
+          "location": "text_16",
+          "text": "."
+        },
+        {
+          "location": "text_17",
+          "text": "."
+        },
+        {
+          "location": "text_18",
+          "text": "."
+        },
+        {
+          "location": "text_19",
+          "text": "."
+        },
+        {
+          "location": "text_20",
+          "text": "."
+        },
+        {
+          "location": "text_21",
+          "text": "."
+        },
+        {
+          "location": "text_22",
+          "text": "."
+        },
+        {
+          "location": "text_23",
+          "text": "."
+        },
+        {
+          "location": "text_24",
+          "text": "."
+        },
+        {
+          "location": "text_25",
+          "text": "."
+        },
+        {
+          "location": "text_26",
+          "text": "."
+        },
+        {
+          "location": "text_27",
+          "text": "."
+        },
+        {
+          "location": "text_28",
+          "text": "."
+        },
+        {
+          "location": "text_29",
+          "text": "."
+        },
+        {
+          "location": "text_30",
+          "text": "."
+        },
+        {
+          "location": "text_31",
+          "text": "."
+        },
+        {
+          "location": "text_32",
+          "text": "."
+        },
+        {
+          "location": "text_33",
+          "text": "."
+        },
+        {
+          "location": "text_34",
+          "text": "."
+        },
+        {
+          "location": "text_35",
+          "text": "."
+        },
+        {
+          "location": "text_36",
+          "text": "."
+        },
+        {
+          "location": "text_37",
+          "text": "."
+        },
+        {
+          "location": "text_38",
+          "text": "."
+        },
+        {
+          "location": "text_39",
+          "text": "612.5 ( 1 ) in september 2008 , the company entered into an interest rate swap agreement that modified the variable interest obligation associated with this loan so that the interest payable effectively became fixed at a rate of 4.72% ( 4.72 % ) beginning with the interest accrued after october 22 , 2008 ."
+        },
+        {
+          "location": "text_40",
+          "text": "the interest rate swap agreement was terminated on january 11 , 2011 when the loan was repaid ."
+        },
+        {
+          "location": "text_41",
+          "text": "( 2 ) in march 2010 , we completed an unregistered offering of fixed rate notes due 2018 ."
+        },
+        {
+          "location": "text_42",
+          "text": "net proceeds from the offering were used to fund a distribution to dow jones in conjunction with our investment in index services ."
+        },
+        {
+          "location": "text_43",
+          "text": "in february 2010 , we entered into a forward-starting interest rate swap agreement that modified the interest obligation associated with these notes so that the interest payable on the notes effectively became fixed at a rate of 4.46% ( 4.46 % ) beginning with the interest accrued after march 18 , 2010 ."
+        },
+        {
+          "location": "text_44",
+          "text": "we maintained a $ 1.4 billion senior credit facility with various financial institutions , including the $ 420.5 million term loan and a $ 945.5 million revolving credit facility ."
+        },
+        {
+          "location": "text_45",
+          "text": "the senior credit facility was terminated on january 11 , 2011 ."
+        },
+        {
+          "location": "text_46",
+          "text": "any commercial paper outstanding was backed by the revolving credit facility ."
+        },
+        {
+          "location": "text_47",
+          "text": "under our senior credit facility , we were required to maintain a consolidated net worth of at least $ 12.1 billion ."
+        },
+        {
+          "location": "text_48",
+          "text": "effective january 11 , 2011 , we entered into a new $ 1.0 billion multi-currency revolving senior credit facility with various financial institutions ."
+        },
+        {
+          "location": "text_49",
+          "text": "the proceeds from the revolving senior credit facility can be used for general corporate purposes , which includes providing liquidity for our clearing house ."
+        },
+        {
+          "location": "text_50",
+          "text": "as long as we are not in default under the new senior credit facility , we have the option to increase the facility from time to time by an aggregate amount of up to $ 1.8 billion with the consent of the agent and lenders providing the additional funds ."
+        },
+        {
+          "location": "text_51",
+          "text": "the new senior credit facility matures in january 2014 and is voluntarily prepayable from time to time without premium or penalty ."
+        },
+        {
+          "location": "text_52",
+          "text": "under our new credit facility , we are required to remain in compliance with a consolidated net worth test , as defined as our consolidated shareholders 2019 equity as of september 30 , 2010 , giving effect to share repurchases made and special dividends paid during the term of the agreement ( and in no event greater than $ 2.0 billion in aggregate ) , multiplied by 0.65 ."
+        },
+        {
+          "location": "text_53",
+          "text": "we maintain a 364-day fully secured , committed line of credit with a consortium of domestic and international banks to be used in certain situations by our clearing house ."
+        },
+        {
+          "location": "text_54",
+          "text": "we may use the proceeds to provide temporary liquidity in the unlikely event of a clearing firm default , in the event of a liquidity constraint or default by a depositary ( custodian for our collateral ) , or in the event of a temporary disruption with the domestic payments system that would delay payment of settlement variation between us and our clearing firms ."
+        },
+        {
+          "location": "text_55",
+          "text": "clearing firm guaranty fund contributions received in the form of u.s ."
+        },
+        {
+          "location": "text_56",
+          "text": "treasury securities , government agency securities or ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what is the estimated percentage of revolving credit facility in relation with the total senior credit facility in millions?",
+    "reference_program": "multiply(1.4, const_1000), divide(945.5, #0)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "1.4",
+        "raw": "1.4",
+        "location": "text_44:17",
+        "context": "we maintained a $ 1.4 billion senior credit facility with various financial institutions , including the $ 420.5 million term loan and a $ 945.5 million revolving credit facility ."
+      },
+      "x1": {
+        "program_token": "945.5",
+        "raw": "945.5",
+        "location": "text_44:138",
+        "context": "we maintained a $ 1.4 billion senior credit facility with various financial institutions , including the $ 420.5 million term loan and a $ 945.5 million revolving credit facility ."
+      }
+    }
+  },
+  {
+    "review_id": "R077",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "management 2019s discussion and analysis of financial conditionand results of operations d u k e r e a l t y c o r p o r a t i o n 1 3 2 0 0 2 a n n u a l r e p o r t the $ 19.5 million decrease in interest expense is primarily attributable to lower outstanding balances on the company 2019s lines of credit associated with the financing of the company 2019s investment and operating activities ."
+        },
+        {
+          "location": "text_1",
+          "text": "the company has maintained a significantly lower balance on its lines of credit throughout 2001 compared to 2000 , as a result of its property dispositions proceeds used to fund future development , combined with a lower development level as a result of the slower economy ."
+        },
+        {
+          "location": "text_2",
+          "text": "additionally , the company paid off $ 128.5 million of secured mortgage loans throughout 2001 , as well as an $ 85 million unsecured term loan ."
+        },
+        {
+          "location": "text_3",
+          "text": "these decreases were partially offset by an increase in interest expense on unsecured debt as a result of the company issuing $ 175.0 million of debt in february 2001 , as well as a decrease in the amount of interest capitalized in 2001 versus 2000 , because of the decrease in development activity by the company ."
+        },
+        {
+          "location": "text_4",
+          "text": "as a result of the above-mentioned items , earnings from rental operations increased $ 28.9 million from $ 225.2 million for the year ended december 31 , 2000 , to $ 254.1 million for the year ended december 31 , 2001 ."
+        },
+        {
+          "location": "text_5",
+          "text": "service operations service operations revenues decreased from $ 82.8 million for the year ended december 31 , 2000 , to $ 80.5 million for the year ended december 31 , 2001 ."
+        },
+        {
+          "location": "text_6",
+          "text": "the company experienced a decrease of $ 4.3 million in net general contractor revenues from third party jobs because of a decrease in the volume of construction in 2001 , compared to 2000 , as well as slightly lower profit margins ."
+        },
+        {
+          "location": "text_7",
+          "text": "this decrease is the effect of businesses delaying or terminating plans to expand in the wake of the slowed economy ."
+        },
+        {
+          "location": "text_8",
+          "text": "property management , maintenance and leasing fee revenues decreased approximately $ 2.7 million mainly because of a decrease in landscaping maintenance revenue associated with the sale of the landscape business in the third quarter of 2001 ( see discussion below ) ."
+        },
+        {
+          "location": "text_9",
+          "text": "construction management and development activity income represents construction and development fees earned on projects where the company acts as the construction manager along with profits from the company 2019s held for sale program whereby the company develops a property for sale upon completion ."
+        },
+        {
+          "location": "text_10",
+          "text": "the increase in revenues of $ 2.2 million in 2001 is primarily because of an increase in profits on the sale of properties from the held for sale program ."
+        },
+        {
+          "location": "text_11",
+          "text": "other income increased approximately $ 2.4 million in 2001 over 2000 ; due to a $ 1.8 million gain the company recognized on the sale of its landscape business in the third quarter of 2001 ."
+        },
+        {
+          "location": "text_12",
+          "text": "the sale of the landscape business resulted in a total net profit of over $ 9 million after deducting all related expenses ."
+        },
+        {
+          "location": "text_13",
+          "text": "this gain will be recognized in varying amounts over the next seven years because the company has an on-going contract to purchase future services from the buyer ."
+        },
+        {
+          "location": "text_14",
+          "text": "service operations expenses decreased by $ 4.7 million for the year ended december 31 , 2001 , compared to the same period in 2000 , as the company reduced total overhead costs throughout 2001 in an effort to minimize the effects of decreased construction and development activity ."
+        },
+        {
+          "location": "text_15",
+          "text": "the primary savings were experienced in employee salary and related costs through personnel reductions and reduced overhead costs from the sale of the landscaping business ."
+        },
+        {
+          "location": "text_16",
+          "text": "as a result , earnings from service operations increased from $ 32.8 million for the year ended december 31 , 2000 , to $ 35.1 million for the year ended december 31 , 2001 ."
+        },
+        {
+          "location": "text_17",
+          "text": "general and administrative expense general and administrative expense decreased from $ 21.1 million in 2000 to $ 15.6 million for the year ended december 31 , 2001 , through overhead cost reduction efforts ."
+        },
+        {
+          "location": "text_18",
+          "text": "in late 2000 and continuing throughout 2001 , the company introduced several cost cutting measures to reduce the amount of overhead , including personnel reductions , centralization of responsibilities and reduction of employee costs such as travel and entertainment ."
+        },
+        {
+          "location": "text_19",
+          "text": "other income and expenses gain on sale of land and depreciable property dispositions , net of impairment adjustment , was comprised of the following amounts in 2001 and 2000 : gain on sales of depreciable properties represent sales of previously held for investment rental properties ."
+        },
+        {
+          "location": "text_20",
+          "text": "beginning in 2000 and continuing into 2001 , the company pursued favorable opportunities to dispose of real estate assets that no longer meet long-term investment objectives ."
+        },
+        {
+          "location": "text_21",
+          "text": "gain on land sales represents sales of undeveloped land owned by the company ."
+        },
+        {
+          "location": "text_22",
+          "text": "the company pursues opportunities to dispose of land in markets with a high concentration of undeveloped land and those markets where the land no longer meets strategic development plans of the company ."
+        },
+        {
+          "location": "text_23",
+          "text": "the company recorded a $ 4.8 million asset impairment adjustment in 2001 on a single property that was sold in 2002 ."
+        },
+        {
+          "location": "text_24",
+          "text": "other expense for the year ended december 31 , 2001 , includes a $ 1.4 million expense related to an interest rate swap that does not qualify for hedge accounting ."
+        },
+        {
+          "location": "text_25",
+          "text": "net income available for common shares net income available for common shares for the year ended december 31 , 2001 was $ 230.0 million compared to $ 213.0 million for the year ended december 31 , 2000 ."
+        },
+        {
+          "location": "text_26",
+          "text": "this increase results primarily from the operating result fluctuations in rental and service operations and earnings from sales of real estate assets explained above. ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2001",
+            "2000"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Gain on sales of depreciable properties",
+            "$45,428",
+            "$52,067"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Gain on land sales",
+            "5,080",
+            "9,165"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Impairment adjustment",
+            "(4,800)",
+            "(540)"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Total",
+            "$45,708",
+            "$60,692"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_27",
+          "text": "."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percentage change in the earnings from service operations increased from 2000 to 2001",
+    "reference_program": "subtract(35.1, 32.8), divide(#0, 32.8)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "35.1",
+        "raw": "35.1",
+        "location": "text_16:121",
+        "context": "as a result , earnings from service operations increased from $ 32.8 million for the year ended december 31 , 2000 , to $ 35.1 million for the year ended december 31 , 2001 ."
+      },
+      "x1": {
+        "program_token": "32.8",
+        "raw": "32.8",
+        "location": "text_16:63",
+        "context": "as a result , earnings from service operations increased from $ 32.8 million for the year ended december 31 , 2000 , to $ 35.1 million for the year ended december 31 , 2001 ."
+      }
+    }
+  },
+  {
+    "review_id": "R078",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "16 fa i r va lu e o f f i na n c i a l i n s t ru m e n t s we believe that the fair values of current assets and current liabilities approximate their reported carrying amounts ."
+        },
+        {
+          "location": "text_1",
+          "text": "the fair values of noncurrent financial assets , liabilities and derivatives are shown below. ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2004",
+            "2003"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "<i>($ in millions)</i>",
+            "Carrying Amount",
+            "Fair Value",
+            "Carrying Amount",
+            "Fair Value"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Notes and other long-term assets",
+            "$1,702",
+            "$1,770",
+            "$1,740",
+            "$1,778"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Long-term debt and other long-term liabilities",
+            "$848",
+            "$875",
+            "$1,373",
+            "$1,487"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Derivative instruments",
+            "$—",
+            "$—",
+            "$(1)",
+            "$(1)"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_2",
+          "text": "we value notes and other receivables based on the expected future cash flows dis- counted at risk-adjusted rates ."
+        },
+        {
+          "location": "text_3",
+          "text": "we determine valuations for long-term debt and other long-term liabilities based on quoted market prices or expected future payments dis- counted at risk-adjusted rates ."
+        },
+        {
+          "location": "text_4",
+          "text": "17 d e r i vat i v e i n s t ru m e n t s during the year ended january 2 , 2004 , we entered into an interest rate swap agreement under which we receive a floating rate of interest and pay a fixed rate of interest ."
+        },
+        {
+          "location": "text_5",
+          "text": "the swap modifies our interest rate exposure by effectively converting a note receivable with a fixed rate to a floating rate ."
+        },
+        {
+          "location": "text_6",
+          "text": "the aggregate notional amount of the swap is $ 92 mil- lion , and it matures in 2010 ."
+        },
+        {
+          "location": "text_7",
+          "text": "the swap is classified as a fair value hedge , and the change in the fair value of the swap , as well as the change in the fair value of the underlying note receivable , is recognized in interest income ."
+        },
+        {
+          "location": "text_8",
+          "text": "the fair value of the swap was a liabil- ity of approximately $ 3 million at december 31 , 2004 , and january 2 , 2004 ."
+        },
+        {
+          "location": "text_9",
+          "text": "the hedge is highly effective , and therefore , no net gain or loss was reported in earnings during the years ended december 31 , 2004 , and january 2 , 2004 ."
+        },
+        {
+          "location": "text_10",
+          "text": "at december 31 , 2004 , we had six outstanding interest rate swap agreements to manage interest rate risk associated with the residual interests we retain in conjunction with our timeshare note sales ."
+        },
+        {
+          "location": "text_11",
+          "text": "we are required by purchasers and/or rating agencies to utilize interest rate swaps to protect the excess spread within our sold note pools ."
+        },
+        {
+          "location": "text_12",
+          "text": "the aggregate notional amount of the swaps is $ 535 million , and they expire through 2022 ."
+        },
+        {
+          "location": "text_13",
+          "text": "these swaps are not accounted for as hedges under fas no ."
+        },
+        {
+          "location": "text_14",
+          "text": "133 , 201caccounting for derivative instruments and hedging activities . 201d the fair value of the swaps is a net asset of approximately $ 3 million at december 31 , 2004 , a net asset of approximately $ 1 million at january 2 , 2004 , and a net liability of $ 2 million at january 3 , 2003 ."
+        },
+        {
+          "location": "text_15",
+          "text": "we recorded a $ 2 million net gain , $ 3 million net gain and $ 21 million net loss during the years ended december 31 , 2004 , january 2 , 2004 and january 3 , 2003 , respectively ."
+        },
+        {
+          "location": "text_16",
+          "text": "these expenses were largely offset by income resulting from the change in fair value of the retained interests and note sale gains in response to changes in interest rates ."
+        },
+        {
+          "location": "text_17",
+          "text": "during the years ended december 31 , 2004 , and january 2 , 2004 , we entered into interest rate swaps to manage interest rate risk associated with forecasted timeshare note sales ."
+        },
+        {
+          "location": "text_18",
+          "text": "these swaps were not accounted for as hedges under fas no ."
+        },
+        {
+          "location": "text_19",
+          "text": "133 ."
+        },
+        {
+          "location": "text_20",
+          "text": "the swaps were terminated upon the sale of the notes and resulted in a gain of $ 2 million during the year ended december 31 , 2004 , and a loss of $ 4 million during the year ended january 2 , 2004 ."
+        },
+        {
+          "location": "text_21",
+          "text": "these amounts were largely offset by changes in the note sale gains and losses ."
+        },
+        {
+          "location": "text_22",
+          "text": "during the years ended december 31 , 2004 , and january 2 , 2004 , we entered into forward foreign exchange contracts to manage the foreign currency exposure related to certain monetary assets denominated in pounds sterling ."
+        },
+        {
+          "location": "text_23",
+          "text": "the aggregate dollar equiva- lent of the notional amount of the contracts is $ 36 million at december 31 , 2004 ."
+        },
+        {
+          "location": "text_24",
+          "text": "the forward exchange contracts are not accounted for as hedges in accordance with fas no ."
+        },
+        {
+          "location": "text_25",
+          "text": "133 ."
+        },
+        {
+          "location": "text_26",
+          "text": "the fair value of the forward contracts is approximately zero at december 31 , 2004 , and january 2 , 2004 ."
+        },
+        {
+          "location": "text_27",
+          "text": "we recorded a $ 3 million and $ 2 million net loss relating to these forward foreign exchange contracts for the years ended december 31 , 2004 and january 2 , 2004 , respectively ."
+        },
+        {
+          "location": "text_28",
+          "text": "the net losses for both years were offset by income recorded from translating the related monetary assets denominated in pounds sterling into u.s ."
+        },
+        {
+          "location": "text_29",
+          "text": "dollars ."
+        },
+        {
+          "location": "text_30",
+          "text": "during fiscal years 2004 and 2003 , we entered into foreign exchange option and forward contracts to hedge the potential volatility of earnings and cash flows associated with variations in foreign exchange rates ."
+        },
+        {
+          "location": "text_31",
+          "text": "the aggregate dollar equivalent of the notional amounts of the contracts is $ 36 million at december 31 , 2004 ."
+        },
+        {
+          "location": "text_32",
+          "text": "these contracts have terms of less than a year and are classified as cash flow hedges ."
+        },
+        {
+          "location": "text_33",
+          "text": "changes in their fair values are recorded as a component of other comprehensive income ."
+        },
+        {
+          "location": "text_34",
+          "text": "the fair value of the forward contracts is approximately zero and $ 1 million at december 31 , 2004 , and january 2 , 2004 , respectively ."
+        },
+        {
+          "location": "text_35",
+          "text": "during 2004 , it was determined that certain deriva- tives were no longer effective in offsetting the hedged item ."
+        },
+        {
+          "location": "text_36",
+          "text": "thus , cash flow hedge accounting treatment was discontinued and the ineffective contracts resulted in a loss of $ 1 million , which was reported in earnings for fiscal year 2004 ."
+        },
+        {
+          "location": "text_37",
+          "text": "the remaining hedges were highly effective and there was no net gain or loss reported in earnings for the fiscal years 2004 and 2003 ."
+        },
+        {
+          "location": "text_38",
+          "text": "as of december 31 , 2004 , there were no deferred gains or losses accumulated in other comprehensive income that we expect to reclassify into earnings over the next 12 months ."
+        },
+        {
+          "location": "text_39",
+          "text": "18 c o n t i n g e n c i e s guarantees we issue guarantees to certain lenders and hotel owners primarily to obtain long-term management contracts ."
+        },
+        {
+          "location": "text_40",
+          "text": "the guarantees generally have a stated maximum amount of funding and a term of five years or less ."
+        },
+        {
+          "location": "text_41",
+          "text": "the terms of guarantees to lenders generally require us to fund if cash flows from hotel operations are inadequate to cover annual debt service or to repay the loan at the end of the term ."
+        },
+        {
+          "location": "text_42",
+          "text": "the terms of the guarantees to hotel owners generally require us to fund if the hotels do not attain specified levels of operating profit ."
+        },
+        {
+          "location": "text_43",
+          "text": "44 marriott international , inc. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what is the difference of between the carrying amount and the fair value of long-term debt and other long-term liabilities in 2014?",
+    "reference_program": "subtract(875, 848)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "875",
+        "raw": "875",
+        "location": "table_3:2",
+        "context": "Long-term debt and other long-term liabilities | 2003"
+      },
+      "x1": {
+        "program_token": "848",
+        "raw": "848",
+        "location": "table_3:1",
+        "context": "Long-term debt and other long-term liabilities | 2004"
+      }
+    }
+  },
+  {
+    "review_id": "R079",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "evaluation of accounts receivable aging , specifi c expo- sures and historical trends ."
+        },
+        {
+          "location": "text_1",
+          "text": "inventory we state our inventory at the lower of cost or fair market value , with cost being determined on the fi rst-in , fi rst-out ( fifo ) method ."
+        },
+        {
+          "location": "text_2",
+          "text": "we believe fifo most closely matches the fl ow of our products from manufacture through sale ."
+        },
+        {
+          "location": "text_3",
+          "text": "the reported net value of our inventory includes saleable products , promotional products , raw materials and com- ponentry and work in process that will be sold or used in future periods ."
+        },
+        {
+          "location": "text_4",
+          "text": "inventory cost includes raw materials , direct labor and overhead ."
+        },
+        {
+          "location": "text_5",
+          "text": "we also record an inventory obsolescence reserve , which represents the difference between the cost of the inventory and its estimated realizable value , based on various product sales projections ."
+        },
+        {
+          "location": "text_6",
+          "text": "this reserve is calcu- lated using an estimated obsolescence percentage applied to the inventory based on age , historical trends and requirements to support forecasted sales ."
+        },
+        {
+          "location": "text_7",
+          "text": "in addition , and as necessary , we may establish specifi c reserves for future known or anticipated events ."
+        },
+        {
+          "location": "text_8",
+          "text": "pension and other post-retirement benefit costs we offer the following benefi ts to some or all of our employees : a domestic trust-based noncontributory qual- ifi ed defi ned benefi t pension plan ( 201cu.s ."
+        },
+        {
+          "location": "text_9",
+          "text": "qualifi ed plan 201d ) and an unfunded , non-qualifi ed domestic noncontributory pension plan to provide benefi ts in excess of statutory limitations ( collectively with the u.s ."
+        },
+        {
+          "location": "text_10",
+          "text": "qualifi ed plan , the 201cdomestic plans 201d ) ; a domestic contributory defi ned con- tribution plan ; international pension plans , which vary by country , consisting of both defi ned benefi t and defi ned contribution pension plans ; deferred compensation arrange- ments ; and certain other post-retirement benefi t plans ."
+        },
+        {
+          "location": "text_11",
+          "text": "the amounts needed to fund future payouts under these plans are subject to numerous assumptions and variables ."
+        },
+        {
+          "location": "text_12",
+          "text": "certain signifi cant variables require us to make assumptions that are within our control such as an antici- pated discount rate , expected rate of return on plan assets and future compensation levels ."
+        },
+        {
+          "location": "text_13",
+          "text": "we evaluate these assumptions with our actuarial advisors and we believe they are within accepted industry ranges , although an increase or decrease in the assumptions or economic events outside our control could have a direct impact on reported net earnings ."
+        },
+        {
+          "location": "text_14",
+          "text": "the pre-retirement discount rate for each plan used for determining future net periodic benefi t cost is based on a review of highly rated long-term bonds ."
+        },
+        {
+          "location": "text_15",
+          "text": "for fi scal 2008 , we used a pre-retirement discount rate for our domestic plans of 6.25% ( 6.25 % ) and varying rates on our international plans of between 2.25% ( 2.25 % ) and 8.25% ( 8.25 % ) ."
+        },
+        {
+          "location": "text_16",
+          "text": "the pre-retirement rate for our domestic plans is based on a bond portfolio that includes only long-term bonds with an aa rating , or equivalent , from a major rating agency ."
+        },
+        {
+          "location": "text_17",
+          "text": "we believe the timing and amount of cash fl ows related to the bonds included in this portfolio is expected to match the esti- mated defi ned benefi t payment streams of our domestic plans ."
+        },
+        {
+          "location": "text_18",
+          "text": "for fi scal 2008 , we used an expected return on plan assets of 7.75% ( 7.75 % ) for our u.s ."
+        },
+        {
+          "location": "text_19",
+          "text": "qualifi ed plan and varying rates of between 3.00% ( 3.00 % ) and 8.25% ( 8.25 % ) for our international plans ."
+        },
+        {
+          "location": "text_20",
+          "text": "in determining the long-term rate of return for a plan , we consider the historical rates of return , the nature of the plan 2019s investments and an expectation for the plan 2019s investment strategies ."
+        },
+        {
+          "location": "text_21",
+          "text": "the u.s ."
+        },
+        {
+          "location": "text_22",
+          "text": "qualifi ed plan asset alloca- tion as of june 30 , 2008 was approximately 40% ( 40 % ) equity investments , 42% ( 42 % ) debt securities and 18% ( 18 % ) other invest- ments ."
+        },
+        {
+          "location": "text_23",
+          "text": "the asset allocation of our combined international plans as of june 30 , 2008 was approximately 45% ( 45 % ) equity investments , 38% ( 38 % ) debt securities and 17% ( 17 % ) other invest- ments ."
+        },
+        {
+          "location": "text_24",
+          "text": "the difference between actual and expected return on plan assets is reported as a component of accumulated other comprehensive income ."
+        },
+        {
+          "location": "text_25",
+          "text": "those gains/losses that are subject to amortization over future periods will be recog- nized as a component of the net periodic benefi t cost in such future periods ."
+        },
+        {
+          "location": "text_26",
+          "text": "for fi scal 2008 , our pension plans had actual negative return on assets of $ 19.3 million as compared with expected return on assets of $ 47.0 million , which resulted in a net deferred loss of $ 66.3 million , of which approximately $ 34 million is subject to amortiza- tion over periods ranging from approximately 8 to 16 years ."
+        },
+        {
+          "location": "text_27",
+          "text": "the actual negative return on assets was primarily related to the performance of equity markets during the past fi scal year ."
+        },
+        {
+          "location": "text_28",
+          "text": "a 25 basis-point change in the discount rate or the expected rate of return on plan assets would have had the following effect on fi scal 2008 pension expense : 25 basis-point 25 basis-point increase decrease ( in millions ) ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "(In millions)",
+            "25 Basis-Point Increase",
+            "25 Basis-Point  Decrease"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Discount rate",
+            "$(2.0)",
+            "$2.5"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Expected return on assets",
+            "$(1.7)",
+            "$1.7"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_29",
+          "text": "our post-retirement plans are comprised of health care plans that could be impacted by health care cost trend rates , which may have a signifi cant effect on the amounts reported ."
+        },
+        {
+          "location": "text_30",
+          "text": "a one-percentage-point change in assumed health care cost trend rates for fi scal 2008 would have had the following effects : the est{e lauder companies inc ."
+        },
+        {
+          "location": "text_31",
+          "text": "57 66732es_fin 5766732es_fin 57 9/19/08 9:21:34 pm9/19/08 9:21:34 pm ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "considering the expected return rate on assets , what is the total value of plan assets in 2008 , in millions?",
+    "reference_program": "multiply(1.7, const_100), divide(#0, 7.75)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "1.7",
+        "raw": "1.7",
+        "location": "table_2:2",
+        "context": "Expected return on assets | 25 Basis-Point  Decrease"
+      },
+      "x1": {
+        "program_token": "7.75",
+        "raw": "7.75%",
+        "location": "text_18:64",
+        "context": "for fi scal 2008 , we used an expected return on plan assets of 7.75% ( 7.75 % ) for our u.s ."
+      }
+    }
+  },
+  {
+    "review_id": "R080",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "compensation cost is generally recognized over the stated vesting period consistent with the terms of the arrangement ( i.e. , either on a straight-line or graded-vesting basis ) ."
+        },
+        {
+          "location": "text_1",
+          "text": "expense recognition is accelerated for retirement-eligible individuals who would meet the requirements for vesting of awards upon their retirement ."
+        },
+        {
+          "location": "text_2",
+          "text": "as of 30 september 2018 , there was no unrecognized compensation cost as all stock option awards were fully vested ."
+        },
+        {
+          "location": "text_3",
+          "text": "cash received from option exercises during fiscal year 2018 was $ 76.2 ."
+        },
+        {
+          "location": "text_4",
+          "text": "the total tax benefit realized from stock option exercises in fiscal year 2018 was $ 25.8 , of which $ 19.0 was the excess tax benefit ."
+        },
+        {
+          "location": "text_5",
+          "text": "restricted stock the grant-date fair value of restricted stock is estimated on the date of grant based on the closing price of the stock , and compensation cost is generally amortized to expense on a straight-line basis over the vesting period during which employees perform related services ."
+        },
+        {
+          "location": "text_6",
+          "text": "expense recognition is accelerated for retirement-eligible individuals who would meet the requirements for vesting of awards upon their retirement ."
+        },
+        {
+          "location": "text_7",
+          "text": "we have elected to account for forfeitures as they occur , rather than to estimate them ."
+        },
+        {
+          "location": "text_8",
+          "text": "forfeitures have not been significant historically ."
+        },
+        {
+          "location": "text_9",
+          "text": "we have issued shares of restricted stock to certain officers ."
+        },
+        {
+          "location": "text_10",
+          "text": "participants are entitled to cash dividends and to vote their respective shares ."
+        },
+        {
+          "location": "text_11",
+          "text": "restrictions on shares lift in one to four years or upon the earlier of retirement , death , or disability ."
+        },
+        {
+          "location": "text_12",
+          "text": "the shares are nontransferable while subject to forfeiture ."
+        },
+        {
+          "location": "text_13",
+          "text": "a summary of restricted stock activity is presented below : restricted stock shares ( 000 ) weighted average grant- date fair value ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "Restricted Stock",
+            "Shares (000)",
+            "Weighted AverageGrant-Date Fair Value"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Outstanding at 30 September 2017",
+            "56",
+            "$135.74"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Vested",
+            "( 14)",
+            "121.90"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Outstanding at 30 September 2018",
+            "42",
+            "$140.28"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_14",
+          "text": "as of 30 september 2018 , there was $ .1 of unrecognized compensation cost related to restricted stock awards ."
+        },
+        {
+          "location": "text_15",
+          "text": "the cost is expected to be recognized over a weighted average period of 0.5 years ."
+        },
+        {
+          "location": "text_16",
+          "text": "the total fair value of restricted stock vested during fiscal years 2018 , 2017 , and 2016 was $ 2.2 , $ 4.1 , and $ 4.3 , respectively ."
+        },
+        {
+          "location": "text_17",
+          "text": "as discussed in note 3 , discontinued operations , air products completed the spin-off of versum on 1 october 2016 ."
+        },
+        {
+          "location": "text_18",
+          "text": "in connection with the spin-off , the company adjusted the number of deferred stock units and stock options pursuant to existing anti-dilution provisions in the ltip to preserve the intrinsic value of the awards immediately before and after the separation ."
+        },
+        {
+          "location": "text_19",
+          "text": "the outstanding awards will continue to vest over the original vesting period defined at the grant date ."
+        },
+        {
+          "location": "text_20",
+          "text": "outstanding awards at the time of spin-off were primarily converted into awards of the holders' employer following the separation ."
+        },
+        {
+          "location": "text_21",
+          "text": "stock awards held upon separation were adjusted based upon the conversion ratio of air products' new york stock exchange ( 201cnyse 201d ) volume weighted-average closing stock price on 30 september 2016 ( $ 150.35 ) to the nyse volume weighted-average opening stock price on 3 october 2016 ( $ 140.38 ) , or 1.071 ."
+        },
+        {
+          "location": "text_22",
+          "text": "the adjustment to the awards did not result in incremental fair value , and no incremental compensation expense was recorded related to the conversion of these awards. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the decrease observed in the total fair value of restricted stock that vested during 2017 and 2018?",
+    "reference_program": "subtract(2.2, 4.1), divide(#0, 4.1)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "2.2",
+        "raw": "2.2",
+        "location": "text_16:96",
+        "context": "the total fair value of restricted stock vested during fiscal years 2018 , 2017 , and 2016 was $ 2.2 , $ 4.1 , and $ 4.3 , respectively ."
+      },
+      "x1": {
+        "program_token": "4.1",
+        "raw": "4.1",
+        "location": "text_16:104",
+        "context": "the total fair value of restricted stock vested during fiscal years 2018 , 2017 , and 2016 was $ 2.2 , $ 4.1 , and $ 4.3 , respectively ."
+      }
+    }
+  }
+]

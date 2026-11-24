@@ -1,0 +1,1 @@
+{"answer":"2061","unit":"million dollars","expression":"2975 - 914","low":"2060","high":"2062","reliable_digits":"3","explanation":"Subtracting the interest component from total capital lease obligations gives principal, with rounding uncertainty of 1 million dollars."}

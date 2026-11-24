@@ -1,0 +1,1423 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only a JSON array, with one object for each supplied material in the supplied order. Each object must use exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+Assess each material independently. Do not infer a common answer or prevalence from the batch. Do not combine items or omit any item.
+Each material includes two source interpretations in random order. Evaluate their reasons against that material and give your own judgment. Their order carries no priority.
+
+MATERIALS
+[
+  {
+    "review_id": "R151",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "notes to consolidated financial statements for the years ended february 3 , 2006 , january 28 , 2005 , and january 30 , 2004 , gross realized gains and losses on the sales of available-for-sale securities were not mate- rial ."
+        },
+        {
+          "location": "text_1",
+          "text": "the cost of securities sold is based upon the specific identification method ."
+        },
+        {
+          "location": "text_2",
+          "text": "merchandise inventories inventories are stated at the lower of cost or market with cost determined using the retail last-in , first-out ( 201clifo 201d ) method ."
+        },
+        {
+          "location": "text_3",
+          "text": "the excess of current cost over lifo cost was approximately $ 5.8 million at february 3 , 2006 and $ 6.3 million at january 28 , 2005 ."
+        },
+        {
+          "location": "text_4",
+          "text": "current cost is deter- mined using the retail first-in , first-out method ."
+        },
+        {
+          "location": "text_5",
+          "text": "lifo reserves decreased $ 0.5 million and $ 0.2 million in 2005 and 2004 , respectively , and increased $ 0.7 million in 2003 ."
+        },
+        {
+          "location": "text_6",
+          "text": "costs directly associated with warehousing and distribu- tion are capitalized into inventory ."
+        },
+        {
+          "location": "text_7",
+          "text": "in 2005 , the company expanded the number of inven- tory departments it utilizes for its gross profit calculation from 10 to 23 ."
+        },
+        {
+          "location": "text_8",
+          "text": "the impact of this change in estimate on the company 2019s consolidated 2005 results of operations was an estimated reduction of gross profit and a corre- sponding decrease to inventory , at cost , of $ 5.2 million ."
+        },
+        {
+          "location": "text_9",
+          "text": "store pre-opening costs pre-opening costs related to new store openings and the construction periods are expensed as incurred ."
+        },
+        {
+          "location": "text_10",
+          "text": "property and equipment property and equipment are recorded at cost ."
+        },
+        {
+          "location": "text_11",
+          "text": "the company provides for depreciation and amortization on a straight-line basis over the following estimated useful lives: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "Land improvements",
+            "20"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Buildings",
+            "39-40"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Furniture, fixtures and equipment",
+            "3-10"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_12",
+          "text": "improvements of leased properties are amortized over the shorter of the life of the applicable lease term or the estimated useful life of the asset ."
+        },
+        {
+          "location": "text_13",
+          "text": "impairment of long-lived assets when indicators of impairment are present , the company evaluates the carrying value of long-lived assets , other than goodwill , in relation to the operating perform- ance and future cash flows or the appraised values of the underlying assets ."
+        },
+        {
+          "location": "text_14",
+          "text": "the company may adjust the net book value of the underlying assets based upon such cash flow analysis compared to the book value and may also consid- er appraised values ."
+        },
+        {
+          "location": "text_15",
+          "text": "assets to be disposed of are adjusted to the fair value less the cost to sell if less than the book value ."
+        },
+        {
+          "location": "text_16",
+          "text": "the company recorded impairment charges of approximately $ 0.5 million and $ 0.6 million in 2004 and 2003 , respectively , and $ 4.7 million prior to 2003 to reduce the carrying value of its homerville , georgia dc ( which was sold in 2004 ) ."
+        },
+        {
+          "location": "text_17",
+          "text": "the company also recorded impair- ment charges of approximately $ 0.6 million in 2005 and $ 0.2 million in each of 2004 and 2003 to reduce the carrying value of certain of its stores 2019 assets as deemed necessary due to negative sales trends and cash flows at these locations ."
+        },
+        {
+          "location": "text_18",
+          "text": "these charges are included in sg&a expense ."
+        },
+        {
+          "location": "text_19",
+          "text": "other assets other assets consist primarily of long-term invest- ments , debt issuance costs which are amortized over the life of the related obligations , utility and security deposits , life insurance policies and goodwill ."
+        },
+        {
+          "location": "text_20",
+          "text": "vendor rebates the company records vendor rebates , primarily con- sisting of new store allowances , volume purchase rebates and promotional allowances , when realized ."
+        },
+        {
+          "location": "text_21",
+          "text": "the rebates are recorded as a reduction to inventory purchases , at cost , which has the effect of reducing cost of goods sold , as prescribed by emerging issues task force ( 201ceitf 201d ) issue no ."
+        },
+        {
+          "location": "text_22",
+          "text": "02-16 , 201caccounting by a customer ( including a reseller ) for certain consideration received from a vendor 201d ."
+        },
+        {
+          "location": "text_23",
+          "text": "rent expense rent expense is recognized over the term of the lease ."
+        },
+        {
+          "location": "text_24",
+          "text": "the company records minimum rental expense on a straight-line basis over the base , non-cancelable lease term commencing on the date that the company takes physical possession of the property from the landlord , which normally includes a period prior to store opening to make necessary leasehold improvements and install store fixtures ."
+        },
+        {
+          "location": "text_25",
+          "text": "when a lease contains a predetermined fixed escalation of the minimum rent , the company recognizes the related rent expense on a straight-line basis and records the difference between the recognized rental expense and the amounts payable under the lease as deferred rent ."
+        },
+        {
+          "location": "text_26",
+          "text": "the company also receives tenant allowances , which are recorded in deferred incentive rent and are amortized as a reduction to rent expense over the term of the lease ."
+        },
+        {
+          "location": "text_27",
+          "text": "any difference between the calculated expense and the amounts actually paid are reflected as a liability in accrued expenses and other in the consolidated balance sheets and totaled approximately $ 25.0 million ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percentage change in the excess of current cost over lifo cost was approximately between 2006 and 2005 .",
+    "reference_program": "subtract(5.8, 6.3), divide(#0, 6.3)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "5.8",
+        "raw": "5.8",
+        "location": "text_3:61",
+        "context": "the excess of current cost over lifo cost was approximately $ 5.8 million at february 3 , 2006 and $ 6.3 million at january 28 , 2005 ."
+      },
+      "x1": {
+        "program_token": "6.3",
+        "raw": "6.3",
+        "location": "text_3:100",
+        "context": "the excess of current cost over lifo cost was approximately $ 5.8 million at february 3 , 2006 and $ 6.3 million at january 28 , 2005 ."
+      }
+    },
+    "source_interpretations_random_order": [
+      "Feb2006/Jan2005 LIFO excess5.8/6.3m matches. Fiscal2005 separately disclosed0.5m reserve decrease constrains difference.",
+      "The approximate balances and 2005 denominator are correct, but the calculation returns a fractional change without converting it to the requested percentage."
+    ]
+  },
+  {
+    "review_id": "R153",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "future capital commitments future capital commitments consist of contracted commitments , including ship construction contracts , and future expected capital expenditures necessary for operations as well as our ship refurbishment projects ."
+        },
+        {
+          "location": "text_1",
+          "text": "as of december 31 , 2018 , anticipated capital expenditures were $ 1.6 billion , $ 1.2 billion and $ 0.7 billion for the years ending december 31 , 2019 , 2020 and 2021 , respectively ."
+        },
+        {
+          "location": "text_2",
+          "text": "we have export credit financing in place for the anticipated expenditures related to ship construction contracts of $ 0.6 billion , $ 0.5 billion and $ 0.2 billion for the years ending december 31 , 2019 , 2020 and 2021 , respectively ."
+        },
+        {
+          "location": "text_3",
+          "text": "these future expected capital expenditures will significantly increase our depreciation and amortization expense as we take delivery of the ships ."
+        },
+        {
+          "location": "text_4",
+          "text": "project leonardo will introduce an additional six ships , each approximately 140000 gross tons with approximately 3300 berths , with expected delivery dates from 2022 through 2027 , subject to certain conditions ."
+        },
+        {
+          "location": "text_5",
+          "text": "we have a breakaway plus class ship , norwegian encore , with approximately 168000 gross tons with 4000 berths , on order for delivery in the fall of 2019 ."
+        },
+        {
+          "location": "text_6",
+          "text": "for the regent brand , we have orders for two explorer class ships , seven seas splendor and an additional ship , to be delivered in 2020 and 2023 , respectively ."
+        },
+        {
+          "location": "text_7",
+          "text": "each of the explorer class ships will be approximately 55000 gross tons and 750 berths ."
+        },
+        {
+          "location": "text_8",
+          "text": "for the oceania cruises brand , we have orders for two allura class ships to be delivered in 2022 and 2025 ."
+        },
+        {
+          "location": "text_9",
+          "text": "each of the allura class ships will be approximately 67000 gross tons and 1200 berths ."
+        },
+        {
+          "location": "text_10",
+          "text": "the combined contract prices of the 11 ships on order for delivery was approximately 20ac7.9 billion , or $ 9.1 billion based on the euro/u.s ."
+        },
+        {
+          "location": "text_11",
+          "text": "dollar exchange rate as of december 31 , 2018 ."
+        },
+        {
+          "location": "text_12",
+          "text": "we have obtained export credit financing which is expected to fund approximately 80% ( 80 % ) of the contract price of each ship , subject to certain conditions ."
+        },
+        {
+          "location": "text_13",
+          "text": "we do not anticipate any contractual breaches or cancellations to occur ."
+        },
+        {
+          "location": "text_14",
+          "text": "however , if any such events were to occur , it could result in , among other things , the forfeiture of prior deposits or payments made by us and potential claims and impairment losses which may materially impact our business , financial condition and results of operations ."
+        },
+        {
+          "location": "text_15",
+          "text": "capitalized interest for the years ended december 31 , 2018 , 2017 and 2016 was $ 30.4 million , $ 29.0 million and $ 33.7 million , respectively , primarily associated with the construction of our newbuild ships ."
+        },
+        {
+          "location": "text_16",
+          "text": "off-balance sheet transactions contractual obligations as of december 31 , 2018 , our contractual obligations with initial or remaining terms in excess of one year , including interest payments on long-term debt obligations , were as follows ( in thousands ) : less than 1 year 1-3 years 3-5 years more than 5 years ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Total",
+            "Less than1 year",
+            "1-3 years",
+            "3-5 years",
+            "More than5 years"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Long-term debt (1)",
+            "$6,609,866",
+            "$681,218",
+            "$3,232,177",
+            "$929,088",
+            "$1,767,383"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Operating leases (2)",
+            "128,550",
+            "16,651",
+            "31,420",
+            "27,853",
+            "52,626"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Ship construction contracts (3)",
+            "5,141,441",
+            "912,858",
+            "662,687",
+            "1,976,223",
+            "1,589,673"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Port facilities (4)",
+            "1,738,036",
+            "62,388",
+            "151,682",
+            "157,330",
+            "1,366,636"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Interest (5)",
+            "974,444",
+            "222,427",
+            "404,380",
+            "165,172",
+            "182,465"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Other (6)",
+            "1,381,518",
+            "248,107",
+            "433,161",
+            "354,454",
+            "345,796"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Total (7)",
+            "$15,973,855",
+            "$2,143,649",
+            "$4,915,507",
+            "$3,610,120",
+            "$5,304,579"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_17",
+          "text": "( 1 ) long-term debt includes discount and premiums aggregating $ 0.4 million and capital leases ."
+        },
+        {
+          "location": "text_18",
+          "text": "long-term debt excludes deferred financing fees which are a direct deduction from the carrying value of the related debt liability in the consolidated balance sheets ."
+        },
+        {
+          "location": "text_19",
+          "text": "( 2 ) operating leases are primarily for offices , motor vehicles and office equipment ."
+        },
+        {
+          "location": "text_20",
+          "text": "( 3 ) ship construction contracts are for our newbuild ships based on the euro/u.s ."
+        },
+        {
+          "location": "text_21",
+          "text": "dollar exchange rate as of december 31 , 2018 ."
+        },
+        {
+          "location": "text_22",
+          "text": "export credit financing is in place from syndicates of banks ."
+        },
+        {
+          "location": "text_23",
+          "text": "the amount does not include the two project leonardo ships , one explorer class ship and two allura class ships which were still subject to financing and certain italian government approvals as of december 31 , 2018 ."
+        },
+        {
+          "location": "text_24",
+          "text": "we refer you to note 17 2014 201csubsequent events 201d in the notes to consolidated financial statements for details regarding the financing for certain ships ."
+        },
+        {
+          "location": "text_25",
+          "text": "( 4 ) port facilities are for our usage of certain port facilities ."
+        },
+        {
+          "location": "text_26",
+          "text": "( 5 ) interest includes fixed and variable rates with libor held constant as of december 31 , 2018 ."
+        },
+        {
+          "location": "text_27",
+          "text": "( 6 ) other includes future commitments for service , maintenance and other business enhancement capital expenditure contracts ."
+        },
+        {
+          "location": "text_28",
+          "text": "( 7 ) total excludes $ 0.5 million of unrecognized tax benefits as of december 31 , 2018 , because an estimate of the timing of future tax settlements cannot be reasonably determined. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what is the percentage change in capitalized interest from 2017 to 2018?",
+    "reference_program": "subtract(30.4, 29.0), divide(#0, 29.0)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "30.4",
+        "raw": "30.4",
+        "location": "text_15:81",
+        "context": "capitalized interest for the years ended december 31 , 2018 , 2017 and 2016 was $ 30.4 million , $ 29.0 million and $ 33.7 million , respectively , primarily associated with the construction of our newbuild ships ."
+      },
+      "x1": {
+        "program_token": "29.0",
+        "raw": "29.0",
+        "location": "text_15:98",
+        "context": "capitalized interest for the years ended december 31 , 2018 , 2017 and 2016 was $ 30.4 million , $ 29.0 million and $ 33.7 million , respectively , primarily associated with the construction of our newbuild ships ."
+      }
+    },
+    "source_interpretations_random_order": [
+      "Pre_text[15] directly supplies capitalized interest 30.4 million (2018) and 29.0 million (2017), with correct baseline. Contractual future interest in the table is a distinct metric/time period.",
+      "The rounded capitalized-interest amounts are correctly bound to 2018 and 2017, but the calculation returns a fraction without converting it to percent."
+    ]
+  },
+  {
+    "review_id": "R155",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "the contracts were valued as of april 1 , 2002 , and an asset and a corresponding gain of $ 127 million , net of income taxes , was recorded as a cumulative effect of a change in accounting principle in the second quarter of 2002 ."
+        },
+        {
+          "location": "text_1",
+          "text": "the majority of the gain recorded relates to the warrior run contract , as the asset value of the deepwater contract on april 1 , 2002 , was less than $ 1 million ."
+        },
+        {
+          "location": "text_2",
+          "text": "the warrior run contract qualifies and was designated as a cash flow hedge as defined by sfas no ."
+        },
+        {
+          "location": "text_3",
+          "text": "133 and hedge accounting is applied for this contract subsequent to april 1 , 2002 ."
+        },
+        {
+          "location": "text_4",
+          "text": "the contract valuations were performed using current forward electricity and gas price quotes and current market data for other contract variables ."
+        },
+        {
+          "location": "text_5",
+          "text": "the forward curves used to value the contracts include certain assumptions , including projections of future electricity and gas prices in periods where future prices are not quoted ."
+        },
+        {
+          "location": "text_6",
+          "text": "fluctuations in market prices and their impact on the assumptions will cause the value of these contracts to change ."
+        },
+        {
+          "location": "text_7",
+          "text": "such fluctuations will increase the volatility of the company 2019s reported results of operations ."
+        },
+        {
+          "location": "text_8",
+          "text": "11 ."
+        },
+        {
+          "location": "text_9",
+          "text": "commitments , contingencies and risks operating leases 2014as of december 31 , 2002 , the company was obligated under long-term non-cancelable operating leases , primarily for office rental and site leases ."
+        },
+        {
+          "location": "text_10",
+          "text": "rental expense for operating leases , excluding amounts related to the sale/leaseback discussed below , was $ 31 million $ 32 million and $ 13 million in the years ended december 31 , 2002 , 2001and 2000 , respectively , including commitments of businesses classified as discontinued amounting to $ 6 million in 2002 , $ 16 million in 2001 and $ 6 million in 2000 ."
+        },
+        {
+          "location": "text_11",
+          "text": "the future minimum lease commitments under these leases are as follows ( in millions ) : discontinued total operations ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Total",
+            "Discontinued Operations"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2003",
+            "$30",
+            "$4"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2004",
+            "20",
+            "4"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2005",
+            "15",
+            "3"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2006",
+            "11",
+            "1"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "2007",
+            "9",
+            "1"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Thereafter",
+            "84",
+            "1"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Total",
+            "$169",
+            "$14"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_12",
+          "text": "sale/leaseback 2014in may 1999 , a subsidiary of the company acquired six electric generating stations from new york state electric and gas ( 2018 2018nyseg 2019 2019 ) ."
+        },
+        {
+          "location": "text_13",
+          "text": "concurrently , the subsidiary sold two of the plants to an unrelated third party for $ 666 million and simultaneously entered into a leasing arrangement with the unrelated party ."
+        },
+        {
+          "location": "text_14",
+          "text": "this transaction has been accounted for as a sale/leaseback with operating lease treatment ."
+        },
+        {
+          "location": "text_15",
+          "text": "rental expense was $ 54 million , $ 58 million and $ 54 million in 2002 , 2001 and 2000 , respectively ."
+        },
+        {
+          "location": "text_16",
+          "text": "future minimum lease commitments are as follows ( in millions ) : in connection with the lease of the two power plants , the subsidiary is required to maintain a rent reserve account equal to the maximum semi-annual payment with respect to the sum of the basic rent ( other then deferrable basic rent ) and fixed charges expected to become due in the immediately succeeding three-year period ."
+        },
+        {
+          "location": "text_17",
+          "text": "at december 31 , 2002 , 2001 and 2000 , the amount deposited in the rent reserve account approximated ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "total discontinued operations represent what percentage of total future minimum lease commitments?",
+    "reference_program": "divide(14, 169)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "14",
+        "raw": "14",
+        "location": "table_7:2",
+        "context": "Total | Discontinued Operations"
+      },
+      "x1": {
+        "program_token": "169",
+        "raw": "169",
+        "location": "table_7:1",
+        "context": "Total | Total"
+      }
+    },
+    "source_interpretations_random_order": [
+      "The $14 million discontinued-operations commitment and $169 million total are correctly selected, but their quotient is not converted to the requested percentage.",
+      "Discontinued-operation14m/all169m lease commitments matches; both columns sum over maturity buckets."
+    ]
+  },
+  {
+    "review_id": "R167",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "borrowings under the credit facility bear interest based on the daily balance outstanding at libor ( with no rate floor ) plus an applicable margin ( varying from 1.25% ( 1.25 % ) to 1.75% ( 1.75 % ) ) or , in certain cases a base rate ( based on a certain lending institution 2019s prime rate or as otherwise specified in the credit agreement , with no rate floor ) plus an applicable margin ( varying from 0.25% ( 0.25 % ) to 0.75% ( 0.75 % ) ) ."
+        },
+        {
+          "location": "text_1",
+          "text": "the credit facility also carries a commitment fee equal to the unused borrowings multiplied by an applicable margin ( varying from 0.25% ( 0.25 % ) to 0.35% ( 0.35 % ) ) ."
+        },
+        {
+          "location": "text_2",
+          "text": "the applicable margins are calculated quarterly and vary based on the company 2019s leverage ratio as set forth in the credit agreement ."
+        },
+        {
+          "location": "text_3",
+          "text": "upon entering into the credit facility in march 2011 , the company terminated its prior $ 200.0 million revolving credit facility ."
+        },
+        {
+          "location": "text_4",
+          "text": "the prior revolving credit facility was collateralized by substantially all of the company 2019s assets , other than trademarks , and included covenants , conditions and other terms similar to the company 2019s new credit facility ."
+        },
+        {
+          "location": "text_5",
+          "text": "in may 2011 , the company borrowed $ 25.0 million under the term loan facility to finance a portion of the acquisition of the company 2019s corporate headquarters ."
+        },
+        {
+          "location": "text_6",
+          "text": "the interest rate on the term loan was 1.5% ( 1.5 % ) during the year ended december 31 , 2011 ."
+        },
+        {
+          "location": "text_7",
+          "text": "the maturity date of the term loan is march 2015 , which is the end of the credit facility term ."
+        },
+        {
+          "location": "text_8",
+          "text": "the company expects to refinance the term loan in early 2013 with the loan assumed in the acquisition of the company 2019s corporate headquarters ."
+        },
+        {
+          "location": "text_9",
+          "text": "during the three months ended september 30 , 2011 , the company borrowed $ 30.0 million under the revolving credit facility to fund seasonal working capital requirements and repaid it during the three months ended december 31 , 2011 ."
+        },
+        {
+          "location": "text_10",
+          "text": "the interest rate under the revolving credit facility was 1.5% ( 1.5 % ) during the year ended december 31 , 2011 , and no balance was outstanding as of december 31 , 2011 ."
+        },
+        {
+          "location": "text_11",
+          "text": "no balances were outstanding under the prior revolving credit facility during the year ended december 31 , 2010 ."
+        },
+        {
+          "location": "text_12",
+          "text": "long term debt the company has long term debt agreements with various lenders to finance the acquisition or lease of qualifying capital investments ."
+        },
+        {
+          "location": "text_13",
+          "text": "loans under these agreements are collateralized by a first lien on the related assets acquired ."
+        },
+        {
+          "location": "text_14",
+          "text": "as these agreements are not committed facilities , each advance is subject to approval by the lenders ."
+        },
+        {
+          "location": "text_15",
+          "text": "additionally , these agreements include a cross default provision whereby an event of default under other debt obligations , including the company 2019s credit facility , will be considered an event of default under these agreements ."
+        },
+        {
+          "location": "text_16",
+          "text": "these agreements require a prepayment fee if the company pays outstanding amounts ahead of the scheduled terms ."
+        },
+        {
+          "location": "text_17",
+          "text": "the terms of the credit facility limit the total amount of additional financing under these agreements to $ 40.0 million , of which $ 21.5 million was available for additional financing as of december 31 , 2011 ."
+        },
+        {
+          "location": "text_18",
+          "text": "at december 31 , 2011 and 2010 , the outstanding principal balance under these agreements was $ 14.5 million and $ 15.9 million , respectively ."
+        },
+        {
+          "location": "text_19",
+          "text": "currently , advances under these agreements bear interest rates which are fixed at the time of each advance ."
+        },
+        {
+          "location": "text_20",
+          "text": "the weighted average interest rates on outstanding borrowings were 3.5% ( 3.5 % ) , 5.3% ( 5.3 % ) and 5.9% ( 5.9 % ) for the years ended december 31 , 2011 , 2010 and 2009 , respectively ."
+        },
+        {
+          "location": "text_21",
+          "text": "the following are the scheduled maturities of long term debt as of december 31 , 2011 : ( in thousands ) ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "2012",
+            "$6,882"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2013 (1)",
+            "65,919"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2014",
+            "2,972"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2015",
+            "1,951"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2016",
+            "—"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Total scheduled maturities of long term debt",
+            "77,724"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Less current maturities of long term debt",
+            "(6,882)"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Long term debt obligations",
+            "$70,842"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_22",
+          "text": "( 1 ) includes the repayment of $ 25.0 million borrowed under the term loan facility , which is due in march 2015 , but is planned to be refinanced in early 2013 with the loan assumed in the acquisition of the company 2019s corporate headquarters. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percentage decrease in the weighted average interest rates on outstanding borrowings from 2010 to 2011",
+    "reference_program": "subtract(3.5, 5.3), divide(#0, 5.3)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "3.5",
+        "raw": "3.5%",
+        "location": "text_20:67",
+        "context": "the weighted average interest rates on outstanding borrowings were 3.5% ( 3.5 % ) , 5.3% ( 5.3 % ) and 5.9% ( 5.9 % ) for the years ended december 31 , 2011 , 2010 and 2009 , respectively ."
+      },
+      "x1": {
+        "program_token": "5.3",
+        "raw": "5.3%",
+        "location": "text_20:83",
+        "context": "the weighted average interest rates on outstanding borrowings were 3.5% ( 3.5 % ) , 5.3% ( 5.3 % ) and 5.9% ( 5.9 % ) for the years ended december 31 , 2011 , 2010 and 2009 , respectively ."
+      }
+    },
+    "source_interpretations_random_order": [
+      "Pre_text[20] supplies weighted-average borrowing rates3.5%(2011),5.3%(2010). Underlying individual advances have fixed rates, but the reported weighted average is a calculated quantity. Signed percentage decline is valid.",
+      "Although the rounded weighted average rates are correctly bound, subtracting 5.3 from 3.5 produces a negative percentage change rather than the requested positive percentage decrease."
+    ]
+  },
+  {
+    "review_id": "R168",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "in reporting environmental results , the company classifies its gross exposure into direct , assumed reinsurance , and london market ."
+        },
+        {
+          "location": "text_1",
+          "text": "the following table displays gross environmental reserves and other statistics by category as of december 31 , 2011 ."
+        },
+        {
+          "location": "text_2",
+          "text": "summary of environmental reserves as of december 31 , 2011 ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Total Reserves"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Gross [1] [2]",
+            ""
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Direct",
+            "$271"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Assumed Reinsurance",
+            "39"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "London Market",
+            "57"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Total",
+            "367"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Ceded",
+            "(47)"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Net",
+            "$320"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_3",
+          "text": "[1] the one year gross paid amount for total environmental claims is $ 58 , resulting in a one year gross survival ratio of 6.4 ."
+        },
+        {
+          "location": "text_4",
+          "text": "[2] the three year average gross paid amount for total environmental claims is $ 58 , resulting in a three year gross survival ratio of 6.4 ."
+        },
+        {
+          "location": "text_5",
+          "text": "during the second quarters of 2011 , 2010 and 2009 , the company completed its annual ground-up asbestos reserve evaluations ."
+        },
+        {
+          "location": "text_6",
+          "text": "as part of these evaluations , the company reviewed all of its open direct domestic insurance accounts exposed to asbestos liability , as well as assumed reinsurance accounts and its london market exposures for both direct insurance and assumed reinsurance ."
+        },
+        {
+          "location": "text_7",
+          "text": "based on this evaluation , the company strengthened its net asbestos reserves by $ 290 in second quarter 2011 ."
+        },
+        {
+          "location": "text_8",
+          "text": "during 2011 , for certain direct policyholders , the company experienced increases in claim frequency , severity and expense which were driven by mesothelioma claims , particularly against certain smaller , more peripheral insureds ."
+        },
+        {
+          "location": "text_9",
+          "text": "the company also experienced unfavorable development on its assumed reinsurance accounts driven largely by the same factors experienced by the direct policyholders ."
+        },
+        {
+          "location": "text_10",
+          "text": "during 2010 and 2009 , for certain direct policyholders , the company experienced increases in claim severity and expense ."
+        },
+        {
+          "location": "text_11",
+          "text": "increases in severity and expense were driven by litigation in certain jurisdictions and , to a lesser extent , development on primarily peripheral accounts ."
+        },
+        {
+          "location": "text_12",
+          "text": "the company also experienced unfavorable development on its assumed reinsurance accounts driven largely by the same factors experienced by the direct policyholders ."
+        },
+        {
+          "location": "text_13",
+          "text": "the net effect of these changes in 2010 and 2009 resulted in $ 169 and $ 138 increases in net asbestos reserves , respectively ."
+        },
+        {
+          "location": "text_14",
+          "text": "the company currently expects to continue to perform an evaluation of its asbestos liabilities annually ."
+        },
+        {
+          "location": "text_15",
+          "text": "the company divides its gross asbestos exposures into direct , assumed reinsurance and london market ."
+        },
+        {
+          "location": "text_16",
+          "text": "the company further divides its direct asbestos exposures into the following categories : major asbestos defendants ( the 201ctop 70 201d accounts in tillinghast 2019s published tiers 1 and 2 and wellington accounts ) , which are subdivided further as : structured settlements , wellington , other major asbestos defendants , accounts with future expected exposures greater than $ 2.5 , accounts with future expected exposures less than $ 2.5 , and unallocated ."
+        },
+        {
+          "location": "text_17",
+          "text": "2022 structured settlements are those accounts where the company has reached an agreement with the insured as to the amount and timing of the claim payments to be made to the insured ."
+        },
+        {
+          "location": "text_18",
+          "text": "2022 the wellington subcategory includes insureds that entered into the 201cwellington agreement 201d dated june 19 , 1985 ."
+        },
+        {
+          "location": "text_19",
+          "text": "the wellington agreement provided terms and conditions for how the signatory asbestos producers would access their coverage from the signatory insurers ."
+        },
+        {
+          "location": "text_20",
+          "text": "2022 the other major asbestos defendants subcategory represents insureds included in tiers 1 and 2 , as defined by tillinghast that are not wellington signatories and have not entered into structured settlements with the hartford ."
+        },
+        {
+          "location": "text_21",
+          "text": "the tier 1 and 2 classifications are meant to capture the insureds for which there is expected to be significant exposure to asbestos claims ."
+        },
+        {
+          "location": "text_22",
+          "text": "2022 accounts with future expected exposures greater or less than $ 2.5 include accounts that are not major asbestos defendants ."
+        },
+        {
+          "location": "text_23",
+          "text": "2022 the unallocated category includes an estimate of the reserves necessary for asbestos claims related to direct insureds that have not previously tendered asbestos claims to the company and exposures related to liability claims that may not be subject to an aggregate limit under the applicable policies ."
+        },
+        {
+          "location": "text_24",
+          "text": "an account may move between categories from one evaluation to the next ."
+        },
+        {
+          "location": "text_25",
+          "text": "for example , an account with future expected exposure of greater than $ 2.5 in one evaluation may be reevaluated due to changing conditions and recategorized as less than $ 2.5 in a subsequent evaluation or vice versa. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "of the total net reserves , what portion is related to london market?",
+    "reference_program": "divide(57, 320)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "57",
+        "raw": "57",
+        "location": "table_4:1",
+        "context": "London Market | Total Reserves"
+      },
+      "x1": {
+        "program_token": "320",
+        "raw": "320",
+        "location": "table_7:1",
+        "context": "Net | Total Reserves"
+      }
+    },
+    "source_interpretations_random_order": [
+      "London Market 57 and Net 320 are correctly bound to environmental reserves. Ratio asks gross London category relative to net total; that wording is taken literally, not as an additive share decomposition of net reserves.",
+      "The calculation divides gross London Market reserves of $57 by net total reserves of $320 without allocating ceded reserves to determine London's net contribution."
+    ]
+  },
+  {
+    "review_id": "R178",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "abiomed , inc ."
+        },
+        {
+          "location": "text_1",
+          "text": "and subsidiaries notes to consolidated financial statements 2014 ( continued ) note 14 ."
+        },
+        {
+          "location": "text_2",
+          "text": "income taxes ( continued ) and transition and defines the criteria that must be met for the benefits of a tax position to be recognized ."
+        },
+        {
+          "location": "text_3",
+          "text": "as a result of its adoption of fin no ."
+        },
+        {
+          "location": "text_4",
+          "text": "48 , the company has recorded the cumulative effect of the change in accounting principle of $ 0.3 million as a decrease to opening retained earnings and an increase to other long-term liabilities as of april 1 , 2007 ."
+        },
+        {
+          "location": "text_5",
+          "text": "this adjustment relates to state nexus for failure to file tax returns in various states for the years ended march 31 , 2003 , 2004 , and 2005 ."
+        },
+        {
+          "location": "text_6",
+          "text": "the company has initiated a voluntary disclosure plan ."
+        },
+        {
+          "location": "text_7",
+          "text": "the company has elected to recognize interest and/or penalties related to income tax matters in income tax expense in its consolidated statements of operations ."
+        },
+        {
+          "location": "text_8",
+          "text": "as of april 1 , 2007 , accrued interest was not significant and was recorded as part of the $ 0.3 million adjustment to the opening balance of retained earnings ."
+        },
+        {
+          "location": "text_9",
+          "text": "as of march 31 , 2008 , no penalties have been accrued which is consistent with the company 2019s discussions with states in connection with the company 2019s voluntary disclosure plan ."
+        },
+        {
+          "location": "text_10",
+          "text": "on a quarterly basis , the company accrues for the effects of uncertain tax positions and the related potential penalties and interest ."
+        },
+        {
+          "location": "text_11",
+          "text": "the company has recorded a liability for unrecognized tax benefits in other liabilities including accrued interest , of $ 0.2 million at march 31 , 2008 ."
+        },
+        {
+          "location": "text_12",
+          "text": "it is reasonably possible that the amount of the unrecognized tax benefit with respect to certain of the unrecognized tax positions will increase or decrease during the next 12 months ; however , it is not expected that the change will have a significant effect on the company 2019s results of operations or financial position ."
+        },
+        {
+          "location": "text_13",
+          "text": "a reconciliation of the beginning and ending balance of unrecognized tax benefits , excluding accrued interest recorded at march 31 , 2008 ( in thousands ) is as follows: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "Balance at April 1, 2007",
+            "$224"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Reductions for tax positions for closing of the applicable statute of limitations",
+            "(56)"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Balance at March 31, 2008",
+            "$168"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_14",
+          "text": "the company and its subsidiaries are subject to u.s ."
+        },
+        {
+          "location": "text_15",
+          "text": "federal income tax , as well as income tax of multiple state and foreign jurisdictions ."
+        },
+        {
+          "location": "text_16",
+          "text": "the company has accumulated significant losses since its inception in 1981 ."
+        },
+        {
+          "location": "text_17",
+          "text": "all tax years remain subject to examination by major tax jurisdictions , including the federal government and the commonwealth of massachusetts ."
+        },
+        {
+          "location": "text_18",
+          "text": "however , since the company has net operating loss and tax credit carry forwards which may be utilized in future years to offset taxable income , those years may also be subject to review by relevant taxing authorities if the carry forwards are utilized ."
+        },
+        {
+          "location": "text_19",
+          "text": "note 15 ."
+        },
+        {
+          "location": "text_20",
+          "text": "commitments and contingencies the company 2019s acquisition of impella provides that abiomed may be required to make additional contingent payments to impella 2019s former shareholders as follows : 2022 upon fda approval of the impella 2.5 device , a payment of $ 5583333 , and 2022 upon fda approval of the impella 5.0 device , a payment of $ 5583333 if the average market price per share of abiomed 2019s common stock , as determined in accordance with the purchase agreement , as of the date of one of these milestones is achieved is $ 22 or more , no additional contingent consideration will be required with respect to that milestone ."
+        },
+        {
+          "location": "text_21",
+          "text": "if the average market price is between $ 18 and $ 22 on the date of the company 2019s achievement of a milestone , the relevant milestone payment will be reduced ratably ."
+        },
+        {
+          "location": "text_22",
+          "text": "these milestone payments may be made , at the company 2019s option , with cash or stock or by a combination of cash or stock , except that no more than an aggregate of approximately $ 9.4 million of these milestone payments may be made in the form of stock ."
+        },
+        {
+          "location": "text_23",
+          "text": "if any of these contingent payments are made , they will result in an increase in the carrying value of goodwill ."
+        },
+        {
+          "location": "text_24",
+          "text": "in june 2008 , the company received 510 ( k ) clearance of its impella 2.5 , triggering an obligation to pay $ 5.6 million of contingent payments related to the may 2005 acquisition of impella ."
+        },
+        {
+          "location": "text_25",
+          "text": "these contingent payments may be made , at the company 2019s option , with cash , or stock or by a combination of cash or stock under circumstances described in the purchase agreement related to the company 2019s impella acquisition , except that approximately $ 1.8 million of the remaining $ 11.2 million potential contingent payments must be made in cash ."
+        },
+        {
+          "location": "text_26",
+          "text": "it is the company 2019s intent to satisfy the impella 2.5 510 ( k ) clearance contingent payment through issuance of common shares of company stock. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what is the maximum percentage of the june 2008 , contingent consideration for impella that must be satisfied in cash ? t",
+    "reference_program": "divide(1.8, 5.6)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "1.8",
+        "raw": "1.8",
+        "location": "text_25:262",
+        "context": "these contingent payments may be made , at the company 2019s option , with cash , or stock or by a combination of cash or stock under circumstances described in the purchase agreement related to the company 2019s impella acquisition , except that approximately $ 1.8 million of the remaining $ 11.2 million potential contingent payments must be made in cash ."
+      },
+      "x1": {
+        "program_token": "5.6",
+        "raw": "5.6",
+        "location": "text_24:110",
+        "context": "in june 2008 , the company received 510 ( k ) clearance of its impella 2.5 , triggering an obligation to pay $ 5.6 million of contingent payments related to the may 2005 acquisition of impella ."
+      }
+    },
+    "source_interpretations_random_order": [
+      "Cash requirement1.8m applies to remaining combined11.2m contingent payments, while5.6m is one milestone. Precise contractual5583333-dollar amount appears in P20. Rounded-independent assumptions and June-specific cash allocation are unsupported.",
+      "The approximately $1.8 million aggregate cash requirement divided by the rounded $5.6 million June obligation gives the maximum required cash share if that requirement falls entirely on June's payment."
+    ]
+  },
+  {
+    "review_id": "R191",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "rm&t segment marathon 2019s rm&t operations primarily use derivative commodity instruments to mitigate the price risk of certain crude oil and other feedstock purchases , to protect carrying values of excess inventories , to protect margins on fixed price sales of refined products and to lock-in the price spread between refined products and crude oil ."
+        },
+        {
+          "location": "text_1",
+          "text": "derivative instruments are used to mitigate the price risk between the time foreign and domestic crude oil and other feedstock purchases for refinery supply are priced and when they are actually refined into salable petroleum products ."
+        },
+        {
+          "location": "text_2",
+          "text": "in addition , natural gas options are in place to manage the price risk associated with approximately 60% ( 60 % ) of the anticipated natural gas purchases for refinery use through the first quarter of 2004 and 50% ( 50 % ) through the second quarter of 2004 ."
+        },
+        {
+          "location": "text_3",
+          "text": "derivative commodity instruments are also used to protect the value of excess refined product , crude oil and lpg inventories ."
+        },
+        {
+          "location": "text_4",
+          "text": "derivatives are used to lock in margins associated with future fixed price sales of refined products to non-retail customers ."
+        },
+        {
+          "location": "text_5",
+          "text": "derivative commodity instruments are used to protect against decreases in the future crack spreads ."
+        },
+        {
+          "location": "text_6",
+          "text": "within a limited framework , derivative instruments are also used to take advantage of opportunities identified in the commodity markets ."
+        },
+        {
+          "location": "text_7",
+          "text": "derivative gains ( losses ) included in rm&t segment income for each of the last two years are summarized in the following table : strategy ( in millions ) 2003 2002 ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "<i>Strategy (In Millions)</i>",
+            "2003",
+            "2002"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Mitigate price risk",
+            "$(112)",
+            "$(95)"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Protect carrying values of excess inventories",
+            "(57)",
+            "(41)"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Protect margin on fixed price sales",
+            "5",
+            "11"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Protect crack spread values",
+            "6",
+            "1"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Trading activities",
+            "(4)",
+            "–"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Total net derivative losses",
+            "$(162)",
+            "$(124)"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_8",
+          "text": "generally , derivative losses occur when market prices increase , which are offset by gains on the underlying physical commodity transaction ."
+        },
+        {
+          "location": "text_9",
+          "text": "conversely , derivative gains occur when market prices decrease , which are offset by losses on the underlying physical commodity transaction ."
+        },
+        {
+          "location": "text_10",
+          "text": "oerb segment marathon has used derivative instruments to convert the fixed price of a long-term gas sales contract to market prices ."
+        },
+        {
+          "location": "text_11",
+          "text": "the underlying physical contract is for a specified annual quantity of gas and matures in 2008 ."
+        },
+        {
+          "location": "text_12",
+          "text": "similarly , marathon will use derivative instruments to convert shorter term ( typically less than a year ) fixed price contracts to market prices in its ongoing purchase for resale activity ; and to hedge purchased gas injected into storage for subsequent resale ."
+        },
+        {
+          "location": "text_13",
+          "text": "derivative gains ( losses ) included in oerb segment income were $ 19 million , $ ( 8 ) million and $ ( 29 ) million for 2003 , 2002 and 2001 ."
+        },
+        {
+          "location": "text_14",
+          "text": "oerb 2019s trading activity gains ( losses ) of $ ( 7 ) million , $ 4 million and $ ( 1 ) million in 2003 , 2002 and 2001 are included in the aforementioned amounts ."
+        },
+        {
+          "location": "text_15",
+          "text": "other commodity risk marathon is subject to basis risk , caused by factors that affect the relationship between commodity futures prices reflected in derivative commodity instruments and the cash market price of the underlying commodity ."
+        },
+        {
+          "location": "text_16",
+          "text": "natural gas transaction prices are frequently based on industry reference prices that may vary from prices experienced in local markets ."
+        },
+        {
+          "location": "text_17",
+          "text": "for example , new york mercantile exchange ( 201cnymex 201d ) contracts for natural gas are priced at louisiana 2019s henry hub , while the underlying quantities of natural gas may be produced and sold in the western united states at prices that do not move in strict correlation with nymex prices ."
+        },
+        {
+          "location": "text_18",
+          "text": "to the extent that commodity price changes in one region are not reflected in other regions , derivative commodity instruments may no longer provide the expected hedge , resulting in increased exposure to basis risk ."
+        },
+        {
+          "location": "text_19",
+          "text": "these regional price differences could yield favorable or unfavorable results ."
+        },
+        {
+          "location": "text_20",
+          "text": "otc transactions are being used to manage exposure to a portion of basis risk ."
+        },
+        {
+          "location": "text_21",
+          "text": "marathon is subject to liquidity risk , caused by timing delays in liquidating contract positions due to a potential inability to identify a counterparty willing to accept an offsetting position ."
+        },
+        {
+          "location": "text_22",
+          "text": "due to the large number of active participants , liquidity risk exposure is relatively low for exchange-traded transactions. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "for natural gas options in place to manage the price risk , what is the change in the percentage of the anticipated natural gas purchases hedged between the first quarter of 2004 and the second quarter of 2004?",
+    "reference_program": "subtract(60, 50)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "60",
+        "raw": "60%",
+        "location": "text_2:102",
+        "context": "in addition , natural gas options are in place to manage the price risk associated with approximately 60% ( 60 % ) of the anticipated natural gas purchases for refinery use through the first quarter of 2004 and 50% ( 50 % ) through the second quarter of 2004 ."
+      },
+      "x1": {
+        "program_token": "50",
+        "raw": "50%",
+        "location": "text_2:211",
+        "context": "in addition , natural gas options are in place to manage the price risk associated with approximately 60% ( 60 % ) of the anticipated natural gas purchases for refinery use through the first quarter of 2004 and 50% ( 50 % ) through the second quarter of 2004 ."
+      }
+    },
+    "source_interpretations_random_order": [
+      "Coverage decreases from approximately 60% in the first quarter to 50% in the second, so subtracting 50 from 60 reverses the sign of the chronological change.",
+      "Pre_text[2] gives approximately 60% through Q1 and 50% through Q2. Program computes the 10-percentage-point decline magnitude; question asks change in percentage rather than relative growth. No exact contractual hedge percentage is asserted."
+    ]
+  },
+  {
+    "review_id": "R193",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "humana inc ."
+        },
+        {
+          "location": "text_1",
+          "text": "notes to consolidated financial statements 2014 ( continued ) amortization expense for other intangible assets was approximately $ 75 million in 2017 , $ 77 million in 2016 , and $ 93 million in 2015 ."
+        },
+        {
+          "location": "text_2",
+          "text": "the following table presents our estimate of amortization expense for each of the five next succeeding fiscal years: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "(in millions)"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "For the years ending December 31,",
+            ""
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2018",
+            "$64"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2019",
+            "54"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2020",
+            "52"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "2021",
+            "19"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "2022",
+            "16"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_3",
+          "text": "."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "in 2017 what was the percent of the total amortization expense that was due in 2019",
+    "reference_program": "add(64, 54), add(52, #0), add(#1, 19), add(#2, 16), divide(54, #3)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "64",
+        "raw": "64",
+        "location": "table_2:1",
+        "context": "2018 | (in millions)"
+      },
+      "x1": {
+        "program_token": "54",
+        "raw": "54",
+        "location": "table_3:1",
+        "context": "2019 | (in millions)"
+      },
+      "x2": {
+        "program_token": "52",
+        "raw": "52",
+        "location": "table_4:1",
+        "context": "2020 | (in millions)"
+      },
+      "x3": {
+        "program_token": "19",
+        "raw": "19",
+        "location": "table_5:1",
+        "context": "2021 | (in millions)"
+      },
+      "x4": {
+        "program_token": "16",
+        "raw": "16",
+        "location": "table_6:1",
+        "context": "2022 | (in millions)"
+      }
+    },
+    "source_interpretations_random_order": [
+      "The calculation uses rounded 2018–2022 estimates, but the question does not clearly identify their five-year sum as the intended total amortization expense.",
+      "Five table rows are the next five fiscal-year amortization estimates at the 2017 report date; 2019 amount 54 divided by their total matches share of displayed forecast total. No total is independently disclosed."
+    ]
+  }
+]

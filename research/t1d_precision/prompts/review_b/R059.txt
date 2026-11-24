@@ -1,0 +1,190 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R059",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "n o t e s t o c o n s o l i d a t e d f i n a n c i a l s t a t e m e n t s ( continued ) ace limited and subsidiaries there are no statutory restrictions on the payment of dividends from retained earnings by any of the bermuda subsidiaries as the minimum statutory capital and surplus requirements are satisfied by the share capital and additional paid-in capital of each of the bermuda subsidiaries ."
+      },
+      {
+        "location": "text_1",
+        "text": "the company 2019s u.s ."
+      },
+      {
+        "location": "text_2",
+        "text": "subsidiaries file financial statements prepared in accordance with statutory accounting practices prescribed or permitted by insurance regulators ."
+      },
+      {
+        "location": "text_3",
+        "text": "statutory accounting differs from gaap in the reporting of certain reinsurance contracts , investments , subsidiaries , acquis- ition expenses , fixed assets , deferred income taxes , and certain other items ."
+      },
+      {
+        "location": "text_4",
+        "text": "the statutory capital and surplus of the u.s ."
+      },
+      {
+        "location": "text_5",
+        "text": "subsidiaries met regulatory requirements for 2008 , 2007 , and 2006 ."
+      },
+      {
+        "location": "text_6",
+        "text": "the amount of dividends available to be paid in 2009 , without prior approval from the state insurance departments , totals $ 835 million ."
+      },
+      {
+        "location": "text_7",
+        "text": "the combined statutory capital and surplus and statutory net income of the bermuda and u.s ."
+      },
+      {
+        "location": "text_8",
+        "text": "subsidiaries as of and for the years ended december 31 , 2008 , 2007 , and 2006 , are as follows: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Bermuda Subsidiaries",
+          "U.S. Subsidiaries"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "(in millions of U.S. dollars)",
+          "2008",
+          "2007",
+          "2006",
+          "2008",
+          "2007",
+          "2006"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Statutory capital and surplus",
+          "$7,001",
+          "$8,579",
+          "$7,605",
+          "$5,337",
+          "$5,321",
+          "$4,431"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Statutory net income",
+          "$684",
+          "$1,535",
+          "$1,527",
+          "$798",
+          "$873",
+          "$724"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_9",
+        "text": "as permitted by the restructuring discussed previously in note 7 , certain of the company 2019s u.s ."
+      },
+      {
+        "location": "text_10",
+        "text": "subsidiaries discount certain a&e liabilities , which increased statutory capital and surplus by approximately $ 211 million , $ 140 million , and $ 157 million as of december 31 , 2008 , 2007 , and 2006 , respectively ."
+      },
+      {
+        "location": "text_11",
+        "text": "the company 2019s international subsidiaries prepare statutory financial statements based on local laws and regulations ."
+      },
+      {
+        "location": "text_12",
+        "text": "some jurisdictions impose complex regulatory requirements on insurance companies while other jurisdictions impose fewer requirements ."
+      },
+      {
+        "location": "text_13",
+        "text": "in some countries , the company must obtain licenses issued by governmental authorities to conduct local insurance business ."
+      },
+      {
+        "location": "text_14",
+        "text": "these licenses may be subject to reserves and minimum capital and solvency tests ."
+      },
+      {
+        "location": "text_15",
+        "text": "jurisdictions may impose fines , censure , and/or criminal sanctions for violation of regulatory requirements ."
+      },
+      {
+        "location": "text_16",
+        "text": "other disclosures required by swiss law ( i ) expenses total personnel expenses amounted to $ 1.4 billion for the year ended december 31 , 2008 , and $ 1.1 billion for each of the years ended december 31 , 2007 and 2006 ."
+      },
+      {
+        "location": "text_17",
+        "text": "amortization expense related to tangible property amounted to $ 90 million , $ 77 million , and $ 64 million for the years ended december 31 , 2008 , 2007 , and 2006 , respectively ."
+      },
+      {
+        "location": "text_18",
+        "text": "( ii ) fire insurance values of property and equipment total fire insurance values of property and equipment amounted to $ 680 million and $ 464 million at december 31 , 2008 and 2007 , respectively ."
+      },
+      {
+        "location": "text_19",
+        "text": "( iii ) risk assessment and management the management of ace is responsible for assessing risks related to the financial reporting process and for establishing and maintaining adequate internal control over financial reporting ."
+      },
+      {
+        "location": "text_20",
+        "text": "internal control over financial reporting is a process designed by , or under the supervision of the chief executive officer and chief financial officer to provide reasonable assurance regarding the reliability of financial reporting and the preparation of ace 2019s consolidated financial statements for external purposes in accordance with gaap ."
+      },
+      {
+        "location": "text_21",
+        "text": "the board , operating through its audit committee composed entirely of directors who are not officers or employees of the company , provides oversight of the financial reporting process and safeguarding of assets against unauthorized acquisition , use , or disposition ."
+      },
+      {
+        "location": "text_22",
+        "text": "the audit committee meets with management , the independent registered public accountants and the internal auditor ; approves the overall scope of audit work and related fee arrangements ; and reviews audit reports and findings ."
+      },
+      {
+        "location": "text_23",
+        "text": "in addition , the independent registered public accountants and the internal auditor meet separately with the audit committee , without management representatives present , to discuss the results of their audits ; the adequacy of the company 2019s internal control ; the quality of its financial reporting ; and the safeguarding of assets against unauthorized acquisition , use , or dis- position ."
+      },
+      {
+        "location": "text_24",
+        "text": "ace 2019s management is responsible for assessing operational risks facing the company and sets policies designed to address such risks ."
+      },
+      {
+        "location": "text_25",
+        "text": "examples of key areas addressed by ace 2019s risk management processes follow. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the net income-to-capital ratio for bermuda subsidiaries in 2008?",
+  "reference_program": "divide(684, 7001)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "684",
+      "raw": "684",
+      "location": "table_3:1",
+      "context": "Statutory net income | Bermuda Subsidiaries"
+    },
+    "x1": {
+      "program_token": "7001",
+      "raw": "7,001",
+      "location": "table_2:1",
+      "context": "Statutory capital and surplus | Bermuda Subsidiaries"
+    }
+  }
+}

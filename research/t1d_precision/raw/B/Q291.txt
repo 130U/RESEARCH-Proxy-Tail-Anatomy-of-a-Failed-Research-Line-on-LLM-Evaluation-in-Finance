@@ -1,0 +1,1 @@
+{"answer":"5.5434841166","unit":"percent","expression":"(3087 / 55687) * 100","low":"5.5425364759","high":"5.5444317743","reliable_digits":"3","explanation":"Each income figure has rounding uncertainty of ±0.5 million, giving the stated bounds, which agree to three significant digits."}

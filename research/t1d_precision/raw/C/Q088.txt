@@ -1,0 +1,1 @@
+{"answer":"1.5625","unit":"ratio","expression":"2.5 / 1.6","low":"1.484848484848485","high":"1.645161290322581","reliable_digits":"1","explanation":"Each amount may vary by $0.05 billion, giving bounds of 2.45/1.65 and 2.55/1.55."}

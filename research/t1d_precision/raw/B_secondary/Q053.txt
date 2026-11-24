@@ -1,0 +1,1 @@
+{"answer":"3.4603694178","unit":"percent","expression":"(4425 - 4277) / 4277 * 100","low":"3.4365867914","high":"3.4841576055","reliable_digits":"1","explanation":"The percentage increase uses the year-end balances, each subject to rounding uncertainty of 0.5 in the displayed units."}

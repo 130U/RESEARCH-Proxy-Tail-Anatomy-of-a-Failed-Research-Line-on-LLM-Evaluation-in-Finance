@@ -1,0 +1,1 @@
+{"answer":"1.6604836307509","unit":"percent","expression":"(938555 - 923225) / 923225 * 100","low":"1.6603744155680","high":"1.6605928460521","reliable_digits":"3","explanation":"Total assets increased; rounding each asset figure to the nearest million gives these bounds, supporting three reliable significant digits."}

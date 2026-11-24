@@ -1,0 +1,5 @@
+{
+    "review_id": "R153",
+    "verdict": "invalid",
+    "reason": "The rounded capitalized-interest amounts are correctly bound to 2018 and 2017, but the calculation returns a fraction without converting it to percent."
+  }

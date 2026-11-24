@@ -1,0 +1,1 @@
+{"answer":"-18.3086140851","unit":"percent","expression":"(58219 - 71267) / 71267 * 100","low":"-18.3098887992","high":"-18.3073393530","reliable_digits":"4","explanation":"The adjustments reduce common shareholders’ equity; bounds allow each displayed dollar amount to vary by half a million."}

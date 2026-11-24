@@ -1,0 +1,1 @@
+{"answer":"-7.32984293193717","unit":"percent","expression":"(17.7 - 19.1) / 19.1 * 100","low":"-7.83289817232376","high":"-6.82414698162730","reliable_digits":"0","explanation":"The 2003 and 2004 amounts each have rounding uncertainty of $0.05 million, producing a percentage-change range with no reliable significant digit."}

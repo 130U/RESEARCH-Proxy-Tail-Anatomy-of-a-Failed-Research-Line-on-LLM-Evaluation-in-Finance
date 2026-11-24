@@ -1,0 +1,1 @@
+{"answer":"20.1270928391","unit":"percent","expression":"(91640 + 2638 - 8349) / 426932 * 100","low":"20.1267179238","high":"20.1274677554","reliable_digits":"5","explanation":"The net increase is 85,929 thousand dollars; the bounds allow each displayed amount to vary by 0.5 thousand dollars."}

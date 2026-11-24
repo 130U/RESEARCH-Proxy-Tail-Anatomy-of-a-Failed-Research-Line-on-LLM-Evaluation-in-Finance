@@ -1,0 +1,1 @@
+{"answer":"51.221032","unit":"percent","expression":"(411.1 / 802.6) * 100","low":"51.211612","high":"51.230453","reliable_digits":"3","explanation":"Each total has rounding uncertainty of ±$0.05 million, giving bounds of (411.05 / 802.65) * 100 and (411.15 / 802.55) * 100."}

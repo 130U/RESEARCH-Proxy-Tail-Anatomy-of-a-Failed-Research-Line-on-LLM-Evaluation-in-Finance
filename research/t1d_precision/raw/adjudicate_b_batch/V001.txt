@@ -1,0 +1,42 @@
+[
+  {
+    "review_id": "R021",
+    "verdict": "invalid",
+    "reason": "The percentage reduction attributable to hedges requires the $104 million unhedged increase as the denominator, rather than the $87 million hedged increase."
+  },
+  {
+    "review_id": "R025",
+    "verdict": "uncertain",
+    "reason": "Even interpreting '20011' as 2011, the excerpt does not define State Street's 114 and 101 entries as investment values from which ROI can be verified."
+  },
+  {
+    "review_id": "R040",
+    "verdict": "valid",
+    "reason": "The $164 million and $30 million are reported aggregate facility amounts maturing in 2018 and 2017, appropriately treated as rounded monetary quantities and compared using the 2017 amount as the percentage-increase base."
+  },
+  {
+    "review_id": "R092",
+    "verdict": "uncertain",
+    "reason": "The $43 million and $47 million are loss reserves, while maximum recourse exposures are separately reported as $3.9 billion and $4.0 billion, leaving the intended meaning of 'obligations' ambiguous."
+  },
+  {
+    "review_id": "R093",
+    "verdict": "invalid",
+    "reason": "The tax rate on the sale gain requires dividing the tax difference by the $2.6 billion pretax gain, whereas the calculation uses the $2.2 billion after-tax gain."
+  },
+  {
+    "review_id": "R112",
+    "verdict": "uncertain",
+    "reason": "The $5,829 million and $5,735 million measure Utility net revenue, but the question does not establish whether that scope or Entergy Corporation overall is intended."
+  },
+  {
+    "review_id": "R119",
+    "verdict": "invalid",
+    "reason": "The $23 billion denominator covers only Verus acquisition inflows, so 20/23 measures acquisition composition rather than a share of total 2017 AUS net inflows."
+  },
+  {
+    "review_id": "R141",
+    "verdict": "invalid",
+    "reason": "The 294 and 30 reclassification entries concern SOP 03-1 adoption, whereas the prospective-method discussion concerns future SFAS 123R adoption."
+  }
+]

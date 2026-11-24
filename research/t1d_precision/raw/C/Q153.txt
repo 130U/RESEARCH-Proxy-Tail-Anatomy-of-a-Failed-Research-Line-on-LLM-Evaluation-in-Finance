@@ -1,0 +1,1 @@
+{"answer":"30.46875","unit":"percent","expression":"(3.9 / 12.8) * 100","low":"29.9610894942","high":"30.9803921569","reliable_digits":"1","explanation":"The bounds use exposure of 3.85–3.95 billion and unpaid principal of 12.75–12.85 billion, leaving one significant digit reliable."}

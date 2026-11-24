@@ -1,0 +1,274 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R132",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "on the 4.25% ( 4.25 % ) notes due in 2021 ( 201c2021 notes 201d ) is payable semi-annually on may 24 and november 24 of each year , which commenced november 24 , 2011 , and is approximately $ 32 million per year ."
+      },
+      {
+        "location": "text_1",
+        "text": "the 2021 notes may be redeemed prior to maturity at any time in whole or in part at the option of the company at a 201cmake-whole 201d redemption price ."
+      },
+      {
+        "location": "text_2",
+        "text": "the 2021 notes were issued at a discount of $ 4 million ."
+      },
+      {
+        "location": "text_3",
+        "text": "at december 31 , 2014 , $ 3 million of unamortized debt issuance costs was included in other assets on the consolidated statement of financial condition and are being amortized over the remaining term of the 2021 notes ."
+      },
+      {
+        "location": "text_4",
+        "text": "in may 2011 , in conjunction with the issuance of the 2013 floating rate notes , the company entered into a $ 750 million notional interest rate swapmaturing in 2013 to hedge the future cash flows of its obligation at a fixed rate of 1.03% ( 1.03 % ) ."
+      },
+      {
+        "location": "text_5",
+        "text": "during the second quarter of 2013 , the interest rate swapmatured and the 2013 floating rate notes were fully repaid ."
+      },
+      {
+        "location": "text_6",
+        "text": "2019 notes ."
+      },
+      {
+        "location": "text_7",
+        "text": "in december 2009 , the company issued $ 2.5 billion in aggregate principal amount of unsecured and unsubordinated obligations ."
+      },
+      {
+        "location": "text_8",
+        "text": "these notes were issued as three separate series of senior debt securities including $ 0.5 billion of 2.25% ( 2.25 % ) notes , which were repaid in december 2012 , $ 1.0 billion of 3.50% ( 3.50 % ) notes , which were repaid in december 2014 at maturity , and $ 1.0 billion of 5.0% ( 5.0 % ) notes maturing in december 2019 ( the 201c2019 notes 201d ) ."
+      },
+      {
+        "location": "text_9",
+        "text": "net proceeds of this offering were used to repay borrowings under the cp program , which was used to finance a portion of the acquisition of barclays global investors ( 201cbgi 201d ) from barclays on december 1 , 2009 ( the 201cbgi transaction 201d ) , and for general corporate purposes ."
+      },
+      {
+        "location": "text_10",
+        "text": "interest on the 2019 notes of approximately $ 50 million per year is payable semi-annually in arrears on june 10 and december 10 of each year ."
+      },
+      {
+        "location": "text_11",
+        "text": "these notes may be redeemed prior to maturity at any time in whole or in part at the option of the company at a 201cmake- whole 201d redemption price ."
+      },
+      {
+        "location": "text_12",
+        "text": "these notes were issued collectively at a discount of $ 5 million ."
+      },
+      {
+        "location": "text_13",
+        "text": "at december 31 , 2014 , $ 3 million of unamortized debt issuance costs was included in other assets on the consolidated statement of financial condition and are being amortized over the remaining term of the 2019 notes ."
+      },
+      {
+        "location": "text_14",
+        "text": "2017 notes ."
+      },
+      {
+        "location": "text_15",
+        "text": "in september 2007 , the company issued $ 700 million in aggregate principal amount of 6.25% ( 6.25 % ) senior unsecured and unsubordinated notes maturing on september 15 , 2017 ( the 201c2017 notes 201d ) ."
+      },
+      {
+        "location": "text_16",
+        "text": "a portion of the net proceeds of the 2017 notes was used to fund the initial cash payment for the acquisition of the fund-of-funds business of quellos and the remainder was used for general corporate purposes ."
+      },
+      {
+        "location": "text_17",
+        "text": "interest is payable semi-annually in arrears on march 15 and september 15 of each year , or approximately $ 44 million per year ."
+      },
+      {
+        "location": "text_18",
+        "text": "the 2017 notes may be redeemed prior to maturity at any time in whole or in part at the option of the company at a 201cmake-whole 201d redemption price ."
+      },
+      {
+        "location": "text_19",
+        "text": "the 2017 notes were issued at a discount of $ 6 million , which is being amortized over their ten-year term ."
+      },
+      {
+        "location": "text_20",
+        "text": "the company incurred approximately $ 4 million of debt issuance costs , which are being amortized over ten years ."
+      },
+      {
+        "location": "text_21",
+        "text": "at december 31 , 2014 , $ 1 million of unamortized debt issuance costs was included in other assets on the consolidated statement of financial condition ."
+      },
+      {
+        "location": "text_22",
+        "text": "13 ."
+      },
+      {
+        "location": "text_23",
+        "text": "commitments and contingencies operating lease commitments the company leases its primary office spaces under agreements that expire through 2035 ."
+      },
+      {
+        "location": "text_24",
+        "text": "future minimum commitments under these operating leases are as follows : ( in millions ) ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "Year",
+          "Amount"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2015",
+          "$126"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2016",
+          "111"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2017",
+          "112"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "2018",
+          "111"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "2019",
+          "105"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Thereafter",
+          "613"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Total",
+          "$1,178"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_25",
+        "text": "rent expense and certain office equipment expense under agreements amounted to $ 132 million , $ 137 million and $ 133 million in 2014 , 2013 and 2012 , respectively ."
+      },
+      {
+        "location": "text_26",
+        "text": "investment commitments ."
+      },
+      {
+        "location": "text_27",
+        "text": "at december 31 , 2014 , the company had $ 161 million of various capital commitments to fund sponsored investment funds , including funds of private equity funds , real estate funds , infrastructure funds , opportunistic funds and distressed credit funds ."
+      },
+      {
+        "location": "text_28",
+        "text": "this amount excludes additional commitments made by consolidated funds of funds to underlying third-party funds as third-party noncontrolling interest holders have the legal obligation to fund the respective commitments of such funds of funds ."
+      },
+      {
+        "location": "text_29",
+        "text": "in addition to the capital commitments of $ 161 million , the company had approximately $ 35 million of contingent commitments for certain funds which have investment periods that have expired ."
+      },
+      {
+        "location": "text_30",
+        "text": "generally , the timing of the funding of these commitments is unknown and the commitments are callable on demand at any time prior to the expiration of the commitment ."
+      },
+      {
+        "location": "text_31",
+        "text": "these unfunded commitments are not recorded on the consolidated statements of financial condition ."
+      },
+      {
+        "location": "text_32",
+        "text": "these commitments do not include potential future commitments approved by the company that are not yet legally binding ."
+      },
+      {
+        "location": "text_33",
+        "text": "the company intends to make additional capital commitments from time to time to fund additional investment products for , and with , its clients ."
+      },
+      {
+        "location": "text_34",
+        "text": "contingencies contingent payments ."
+      },
+      {
+        "location": "text_35",
+        "text": "the company acts as the portfolio manager in a series of derivative transactions and has a maximum potential exposure of $ 17 million under a derivative between the company and counterparty ."
+      },
+      {
+        "location": "text_36",
+        "text": "see note 7 , derivatives and hedging , for further discussion ."
+      },
+      {
+        "location": "text_37",
+        "text": "contingent payments related to business acquisitions ."
+      },
+      {
+        "location": "text_38",
+        "text": "in connection with the credit suisse etf transaction , blackrock is required to make contingent payments annually to credit suisse , subject to achieving specified thresholds during a seven-year period , subsequent to the 2013 acquisition date ."
+      },
+      {
+        "location": "text_39",
+        "text": "in addition , blackrock is required to make contingent payments related to the mgpa transaction during a five-year period , subject to achieving specified thresholds , subsequent to the 2013 acquisition date ."
+      },
+      {
+        "location": "text_40",
+        "text": "the fair value of the remaining contingent payments at december 31 , 2014 is not significant to the consolidated statement of financial condition and is included in other liabilities ."
+      },
+      {
+        "location": "text_41",
+        "text": "legal proceedings ."
+      },
+      {
+        "location": "text_42",
+        "text": "from time to time , blackrock receives subpoenas or other requests for information from various u.s ."
+      },
+      {
+        "location": "text_43",
+        "text": "federal , state governmental and domestic and ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the growth rate in rent expense and certain office equipment expense from 2012 to 2013?",
+  "reference_program": "subtract(137, 133), divide(#0, 133)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "137",
+      "raw": "137",
+      "location": "text_25:96",
+      "context": "rent expense and certain office equipment expense under agreements amounted to $ 132 million , $ 137 million and $ 133 million in 2014 , 2013 and 2012 , respectively ."
+    },
+    "x1": {
+      "program_token": "133",
+      "raw": "133",
+      "location": "text_25:114",
+      "context": "rent expense and certain office equipment expense under agreements amounted to $ 132 million , $ 137 million and $ 133 million in 2014 , 2013 and 2012 , respectively ."
+    }
+  }
+}

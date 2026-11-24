@@ -1,0 +1,1 @@
+{"answer":"15.65265486725664","unit":"percent","expression":"(849 / 5,424) * 100","low":"15.64199465388515","high":"15.66331704618789","reliable_digits":"2","explanation":"Allowing each amount to vary by 0.5 million gives these bounds, which agree when rounded to two significant digits."}

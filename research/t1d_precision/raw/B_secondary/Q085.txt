@@ -1,0 +1,1 @@
+{"answer":"70.4814189189","unit":"percent","expression":"(473.6 - 139.8) / 473.6 * 100","low":"70.4677436385","high":"70.4950913122","reliable_digits":"3","explanation":"Intangible assets equal total assets acquired less tangible assets, and the rounding bounds consistently round to 70.5%."}

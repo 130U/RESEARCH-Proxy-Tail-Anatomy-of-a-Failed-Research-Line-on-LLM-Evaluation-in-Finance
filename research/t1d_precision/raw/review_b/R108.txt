@@ -1,0 +1,5 @@
+{
+    "review_id": "R108",
+    "verdict": "valid",
+    "reason": "The rounded total income tax expenses are correctly bound to 2018 and 2017, and the calculation divides their increase by the 2017 baseline and converts it to percent."
+  }

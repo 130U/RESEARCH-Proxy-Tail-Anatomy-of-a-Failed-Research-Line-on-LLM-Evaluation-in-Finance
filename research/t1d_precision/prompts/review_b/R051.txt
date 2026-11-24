@@ -1,0 +1,166 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R051",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "( a ) consists of pollution control revenue bonds and environmental revenue bonds , some of which are secured by collateral mortgage bonds ."
+      },
+      {
+        "location": "text_1",
+        "text": "( b ) pursuant to the nuclear waste policy act of 1982 , entergy 2019s nuclear owner/licensee subsidiaries have contracts with the doe for spent nuclear fuel disposal service . a0 a0the contracts include a one-time fee for generation prior to april 7 , 1983 . a0 a0entergy arkansas is the only entergy company that generated electric power with nuclear fuel prior to that date and includes the one-time fee , plus accrued interest , in long-term debt ."
+      },
+      {
+        "location": "text_2",
+        "text": "( c ) see note 10 to the financial statements for further discussion of the waterford 3 lease obligation and entergy louisiana 2019s acquisition of the equity participant 2019s beneficial interest in the waterford 3 leased assets and for further discussion of the grand gulf lease obligation ."
+      },
+      {
+        "location": "text_3",
+        "text": "( d ) this note did not have a stated interest rate , but had an implicit interest rate of 7.458% ( 7.458 % ) ."
+      },
+      {
+        "location": "text_4",
+        "text": "( e ) the fair value excludes lease obligations of $ 34 million at system energy and long-term doe obligations of $ 183 million at entergy arkansas , and includes debt due within one year . a0 a0fair values are classified as level 2 in the fair value hierarchy discussed in note 15 to the financial statements and are based on prices derived from inputs such as benchmark yields and reported trades ."
+      },
+      {
+        "location": "text_5",
+        "text": "the annual long-term debt maturities ( excluding lease obligations and long-term doe obligations ) for debt outstanding as of december a031 , 2017 , for the next five years are as follows : amount ( in thousands ) ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Amount (In Thousands)"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2018",
+          "$760,000"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2019",
+          "$857,679"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2020",
+          "$898,500"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "2021",
+          "$960,764"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "2022",
+          "$1,304,431"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_6",
+        "text": "in november 2000 , entergy 2019s non-utility nuclear business purchased the fitzpatrick and indian point 3 power plants in a seller-financed transaction ."
+      },
+      {
+        "location": "text_7",
+        "text": "as part of the purchase agreement with nypa , entergy recorded a liability representing the net present value of the payments entergy would be liable to nypa for each year that the fitzpatrick and indian point 3 power plants would run beyond their respective original nrc license expiration date ."
+      },
+      {
+        "location": "text_8",
+        "text": "in october 2015 , entergy announced a planned shutdown of fitzpatrick at the end of its fuel cycle ."
+      },
+      {
+        "location": "text_9",
+        "text": "as a result of the announcement , entergy reduced this liability by $ 26.4 million pursuant to the terms of the purchase agreement ."
+      },
+      {
+        "location": "text_10",
+        "text": "in august 2016 , entergy entered into a trust transfer agreement with nypa to transfer the decommissioning trust funds and decommissioning liabilities for the indian point 3 and fitzpatrick plants to entergy ."
+      },
+      {
+        "location": "text_11",
+        "text": "as part of the trust transfer agreement , the original decommissioning agreements were amended , and the entergy subsidiaries 2019 obligation to make additional license extension payments to nypa was eliminated ."
+      },
+      {
+        "location": "text_12",
+        "text": "in the third quarter 2016 , entergy removed the note payable of $ 35.1 million from the consolidated balance sheet ."
+      },
+      {
+        "location": "text_13",
+        "text": "entergy louisiana , entergy mississippi , entergy new orleans , entergy texas , and system energy have obtained long-term financing authorizations from the ferc that extend through october 2019 . a0 a0entergy arkansas has obtained long-term financing authorization from the apsc that extends through december 2018 ."
+      },
+      {
+        "location": "text_14",
+        "text": "entergy new orleans has also obtained long-term financing authorization from the city council that extends through june 2018 , as the city council has concurrent jurisdiction with the ferc over such issuances ."
+      },
+      {
+        "location": "text_15",
+        "text": "capital funds agreement pursuant to an agreement with certain creditors , entergy corporation has agreed to supply system energy with sufficient capital to : 2022 maintain system energy 2019s equity capital at a minimum of 35% ( 35 % ) of its total capitalization ( excluding short- term debt ) ; entergy corporation and subsidiaries notes to financial statements ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the sum of the annual long-term debt maturities outstanding as of december 31 , 2017 , for the next five years",
+  "reference_program": "add(760000, 857679), add(#0, 898500), add(#1, 960764), add(#2, 1304431)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "760000",
+      "raw": "760,000",
+      "location": "table_1:1",
+      "context": "2018 | Amount (In Thousands)"
+    },
+    "x1": {
+      "program_token": "857679",
+      "raw": "857,679",
+      "location": "table_2:1",
+      "context": "2019 | Amount (In Thousands)"
+    },
+    "x2": {
+      "program_token": "898500",
+      "raw": "898,500",
+      "location": "table_3:1",
+      "context": "2020 | Amount (In Thousands)"
+    },
+    "x3": {
+      "program_token": "960764",
+      "raw": "960,764",
+      "location": "table_4:1",
+      "context": "2021 | Amount (In Thousands)"
+    },
+    "x4": {
+      "program_token": "1304431",
+      "raw": "1,304,431",
+      "location": "table_5:1",
+      "context": "2022 | Amount (In Thousands)"
+    }
+  }
+}

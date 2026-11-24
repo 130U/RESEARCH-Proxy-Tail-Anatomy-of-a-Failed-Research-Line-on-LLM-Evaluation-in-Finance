@@ -1,0 +1,1 @@
+{"answer":"940","unit":"percent","expression":"(156 - 15) / 15 * 100","low":"903.2258064516","high":"979.3103448276","reliable_digits":"1","explanation":"Allowing each expense figure to vary by 0.5 gives these bounds and supports one reliable significant digit."}

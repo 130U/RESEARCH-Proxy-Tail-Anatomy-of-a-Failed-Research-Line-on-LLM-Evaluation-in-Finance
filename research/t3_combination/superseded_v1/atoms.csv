@@ -1,0 +1,31 @@
+atom_id,polarity,headline
+P01,P,Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+P02,P,Virello Industries reports a 2% increase in recurring maintenance revenue.
+P03,P,Virello Industries reduces annual logistics costs by 5% through improved routing.
+P04,P,Virello Industries reports a 10% increase in quarterly operating profit.
+P05,P,Virello Industries raises its full-year free cash flow forecast by 15%.
+P06,P,Virello Industries reports a 25% increase in export orders.
+P07,P,Virello Industries secures its first license to sell into a major new overseas market.
+P08,P,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+P09,P,Virello Industries wins a patent expected to double revenue at its specialty materials division.
+P10,P,Virello Industries repays all overdue debt and eliminates an imminent default risk.
+N01,N,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+N02,N,Virello Industries loses one day's online sales during a website outage.
+N03,N,Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+N04,N,Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+N05,N,Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+N06,N,Virello Industries announces a product recall costing 25% of last year's profit.
+N07,N,Virello Industries loses a major customer accounting for 30% of annual revenue.
+N08,N,Virello Industries halts its largest factory for six months after a major fire.
+N09,N,Virello Industries faces an indefinite regulatory ban on its flagship product.
+N10,N,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+Z01,Z,Virello Industries schedules its annual shareholder meeting for June 18.
+Z02,Z,Virello Industries lists its registered office address on its website.
+Z03,Z,Virello Industries publishes the date of its next earnings call.
+Z04,Z,Virello Industries states that its fiscal year ends on December 31.
+Z05,Z,Virello Industries lists the names of its existing business divisions.
+Z06,Z,Virello Industries states that its headquarters is located in Westbridge.
+Z07,Z,Virello Industries posts a calendar of routine public holidays.
+Z08,Z,Virello Industries lists the telephone number of its investor relations office.
+Z09,Z,Virello Industries states that its ordinary shares use the ticker VIRI.
+Z10,Z,Virello Industries publishes the agenda for its scheduled annual meeting.

@@ -1,0 +1,5 @@
+{
+    "review_id": "R248",
+    "verdict": "valid",
+    "reason": "The calculation preserves the negative signs of the rounded 2007 and 2006 non-interest revenues and applies the signed percentage-change formula using 2006 as denominator."
+  }

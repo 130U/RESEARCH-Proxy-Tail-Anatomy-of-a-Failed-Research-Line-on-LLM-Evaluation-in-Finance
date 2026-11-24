@@ -1,0 +1,114 @@
+[
+  {
+    "call_id": "S017",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "Row 9 already reports 2018 unrecognized tax benefits of $127.1 million. The question does not identify an additional amount to include. The model's $70.4 million numerator is interest and penalties (text_9), making its formula conditional on that interpretation. The reference instead adds $108.7 million for 2018 and $138.0 million for 2017, which are effective-tax-rate portions, not additional 2018 benefits."
+  },
+  {
+    "call_id": "S018",
+    "primary_cause": "unresolved",
+    "formula_valid": false,
+    "alternative_precision_used": false,
+    "reason": "The question omits the comparison needed to calculate an increase. The model divides row 3's 2010 maturity amount, $240.9 million, by row 6's total debt, $2,251.2 million, calculating a share rather than an increase. The reference assumes a comparison with row 4's 2011 maturities of $500.0 million, which the question does not specify."
+  },
+  {
+    "call_id": "S019",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_15 reports acquisition capital spending of $122 million in 2012, $56 million in 2011, and $34 million in 2010. The requested 2011-to-2012 difference is 122−56=$66 million; the reference incorrectly subtracts 2010 from 2011."
+  },
+  {
+    "call_id": "S020",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_6 explicitly identifies the notes redeemed in February 2004 as carrying a 6.25% rate. The reference divides $4.8 million of accrued interest by $212.7 million principal, which is an accrued-interest proportion without an annual time basis, not the stated coupon rate."
+  },
+  {
+    "call_id": "S021",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_17 assigns pledged counterparty collateral of $19.3 million to December 31, 2010 and $2.3 million to 2011. Text_18 gives 2010 overnight and other short-term borrowings of $0.5 million. The model correctly uses 19.3/0.5; the reference uses the wrong year's numerator."
+  },
+  {
+    "call_id": "S022",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_1 reports amortization expense of $77 million in 2016 and $75 million in 2017. Using the 2016 denominator of $77 million, (77−75)/77×100 validly expresses the positive decline magnitude; the reference expresses the signed change."
+  },
+  {
+    "call_id": "S023",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 1 reports average borrowings falling from $850 in 2016 to $779 in 2017, with the monetary scale unstated in the excerpt. The model uses the correct 2016 denominator of 850 and reports the positive percentage decrease; the reference reports the signed change."
+  },
+  {
+    "call_id": "S024",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_10 gives the October 2015 regulatory liability as $107 million gross and $66 million net of tax, implying a $41 million tax effect. Interpreting that effect as the question's tax liability supports the model's requested gross-liability-to-tax ratio, 107/41. The reference instead calculates tax effect divided by the net-of-tax amount, 41/66."
+  },
+  {
+    "call_id": "S025",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_2 states that the Relief Act reduced the 2010 minimum contribution from $525 million to approximately $460 million. With $525 million as denominator, the model correctly reports the positive decrease magnitude of approximately 12.38%; the reference program reports its negative. The human answer of −14.0% is unsupported by that program."
+  },
+  {
+    "call_id": "S026",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Rows 1 and 5 show net revenue declining from $705.4 million in 2016 to $703.1 million in 2017. The percentage decrease uses the starting 2016 denominator, $705.4 million, as the model does. The reference incorrectly uses the ending 2017 denominator of $703.1 million."
+  },
+  {
+    "call_id": "S027",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Rows 3–5 give net adjustments of 91,640+2,638−8,349=85,929 thousand dollars. The question's wording permits expressing these as a percentage of row 6's adjusted December 30, 2017 balance of 426,932 thousand dollars, as the model explicitly does. The reference instead measures the increase relative to row 1's original 341,003 thousand dollars."
+  },
+  {
+    "call_id": "S028",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_8 gives July–August 2018 repayments of $2.7 billion, and text_12 gives December 29, 2018 debt carrying value of $31.2 billion. The model correctly divides by the stated December carrying value. The reference adds repayments to create a $33.9 billion denominator that is not the disclosed December balance."
+  },
+  {
+    "call_id": "S029",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_24 states that 2017 net interest income of $2.93 billion was 13% higher than 2016. Reversing that increase requires 2.93/1.13, as the model does. The reference incorrectly multiplies the 2017 amount by 0.87; the 13% growth denominator is 2016 income."
+  },
+  {
+    "call_id": "S030",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_0 reports a fourth-quarter 2008 goodwill impairment of $9.6 billion pretax and $8.7 billion after tax. The implied tax benefit is $0.9 billion, and the applied tax rate uses the pretax $9.6 billion denominator, yielding 9.375%. The reference incorrectly divides by the after-tax $8.7 billion."
+  },
+  {
+    "call_id": "S031",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_10 lists New Orleans storm recovery bond principal payments of $10.6 million for 2017, $11 million for 2018, and $11.2 million for 2019. The next three listed years total $32.8 million, supporting the model. The reference program sums only two years; the human answer of $44.4 million includes 2020 as a fourth year."
+  },
+  {
+    "call_id": "S032",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 2 gives December 31, 2012 available-for-sale securities fair value of $51,052 million; text_1 identifies $367 million of corporate stocks and other within that category. Subtraction yields $50,685 million, as the model states. The reference incorrectly starts with row 4's $61,912 million fair value of all securities, including held-to-maturity securities."
+  }
+]

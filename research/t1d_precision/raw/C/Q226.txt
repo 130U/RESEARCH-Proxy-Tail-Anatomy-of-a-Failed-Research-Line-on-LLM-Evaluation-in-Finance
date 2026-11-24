@@ -1,0 +1,1 @@
+{"answer":"-68.5686839577","unit":"percent","expression":"((-1636) - (-5205)) / (-5205) * 100","low":"-68.5813082317","high":"-68.5560572581","reliable_digits":"3","explanation":"The loss decreased by approximately 68.6%, with bounds allowing each reported loss to vary by $0.5 million."}

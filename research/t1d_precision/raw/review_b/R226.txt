@@ -1,0 +1,5 @@
+{
+    "review_id": "R226",
+    "verdict": "invalid",
+    "reason": "The $66 million is the regulatory liability net of tax, not a tax liability, and (107−66)/66 does not calculate the requested liability-to-tax ratio."
+  }

@@ -1,0 +1,1 @@
+{"answer":"17.8125","unit":"percent","expression":"57 / 320 * 100","low":"17.6287051482","high":"17.9968701095","reliable_digits":"2","explanation":"This compares reported gross London Market reserves with total net reserves, using rounding bounds of 56.5–57.5 and 319.5–320.5."}

@@ -1,0 +1,1 @@
+{"answer":"46.341463414634146","unit":"percent","expression":"(4.1 - 2.2) / 4.1 * 100","low":"44.44444444444444","high":"48.19277108433735","reliable_digits":"0","explanation":"The percentage decrease uses 2017 as the base; the rounding bounds yield different results even when rounded to one significant digit."}

@@ -1,0 +1,7 @@
+{
+    "call_id": "S005",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 2, Collateral pools underlying SSgA lending funds, shows $31 billion in 2008 and $24 billion in 2009. The model correctly calculates chronological percent change using the 2008 denominator of $31 billion. The reference reverses the subtraction and divides by the 2009 ending value."
+  }

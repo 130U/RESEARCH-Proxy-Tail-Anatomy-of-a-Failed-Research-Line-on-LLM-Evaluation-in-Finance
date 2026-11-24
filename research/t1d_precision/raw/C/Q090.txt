@@ -1,0 +1,1 @@
+{"answer":"10.34242894","unit":"percent","expression":"(558368 - 506032) / 506032 * 100","low":"10.34222110","high":"10.34263677","reliable_digits":"4","explanation":"Allowing each financing figure to vary by ±0.5 million gives these bounds, supporting four reliable significant digits."}

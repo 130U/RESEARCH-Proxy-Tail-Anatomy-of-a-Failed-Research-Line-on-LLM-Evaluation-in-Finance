@@ -1,0 +1,213 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R239",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "2007 annual report 61 warranties : snap-on provides product warranties for specific product lines and accrues for estimated future warranty costs in the period in which the sale is recorded ."
+      },
+      {
+        "location": "text_1",
+        "text": "see note 15 for further information on warranties ."
+      },
+      {
+        "location": "text_2",
+        "text": "minority interests and equity earnings ( loss ) of unconsolidated affiliates : 201cminority interests and equity earnings ( loss ) , net of tax 201d on the accompanying consolidated statements of earnings is comprised of the following : ( amounts in millions ) 2007 2006 2005 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "<i>(Amounts in millions)</i>",
+          "2007",
+          "2006",
+          "2005"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Minority interests",
+          "$(4.9)",
+          "$(3.7)",
+          "$(3.5)"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Equity earnings (loss), net of tax",
+          "2.4",
+          "—",
+          "2.1"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Total",
+          "$(2.5)",
+          "$(3.7)",
+          "$(1.4)"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_3",
+        "text": "minority interests in consolidated subsidiaries of $ 17.3 million as of december 29 , 2007 , and $ 16.8 million as of december 30 , 2006 , are included in 201cother long-term liabilities 201d on the accompanying consolidated balance sheets ."
+      },
+      {
+        "location": "text_4",
+        "text": "investments in unconsolidated affiliates of $ 30.7 million as of december 29 , 2007 , and $ 30.6 million as of december 30 , 2006 , are included in 201cother assets 201d on the accompanying consolidated balance sheets ."
+      },
+      {
+        "location": "text_5",
+        "text": "foreign currency translation : the financial statements of snap-on 2019s foreign subsidiaries are translated into u.s ."
+      },
+      {
+        "location": "text_6",
+        "text": "dollars in accordance with sfas no ."
+      },
+      {
+        "location": "text_7",
+        "text": "52 , 201cforeign currency translation . 201d assets and liabilities of foreign subsidiaries are translated at current rates of exchange , and income and expense items are translated at the average exchange rate for the period ."
+      },
+      {
+        "location": "text_8",
+        "text": "the resulting translation adjustments are recorded directly into 201caccumulated other comprehensive income ( loss ) 201d on the accompanying consolidated balance sheets ."
+      },
+      {
+        "location": "text_9",
+        "text": "foreign exchange transactions resulted in pretax losses of $ 1.7 million in 2007 and $ 1.2 million in 2006 , and a pretax gain of $ 0.7 million in 2005 ."
+      },
+      {
+        "location": "text_10",
+        "text": "foreign exchange transaction gains and losses are reported in 201cother income ( expense ) - net 201d on the accompanying consolidated statements of earnings ."
+      },
+      {
+        "location": "text_11",
+        "text": "income taxes : in the ordinary course of business there is inherent uncertainty in quantifying income tax positions ."
+      },
+      {
+        "location": "text_12",
+        "text": "we assess income tax positions and record tax benefits for all years subject to examination based upon management 2019s evaluation of the facts , circumstances and information available at the reporting dates ."
+      },
+      {
+        "location": "text_13",
+        "text": "for those tax positions where it is more-likely-than-not that a tax benefit will be sustained , we record the largest amount of tax benefit with a greater than 50% ( 50 % ) likelihood of being realized upon ultimate settlement with a taxing authority that has full knowledge of all relevant information ."
+      },
+      {
+        "location": "text_14",
+        "text": "for those income tax positions where it is not more-likely-than-not that a tax benefit will be sustained , no tax benefit is recognized in the financial statements ."
+      },
+      {
+        "location": "text_15",
+        "text": "when applicable , associated interest and penalties are recognized as a component of income tax expense ."
+      },
+      {
+        "location": "text_16",
+        "text": "accrued interest and penalties are included within the related tax liability in the accompanying consolidated balance sheets ."
+      },
+      {
+        "location": "text_17",
+        "text": "deferred income taxes are provided for temporary differences arising from differences in bases of assets and liabilities for tax and financial reporting purposes ."
+      },
+      {
+        "location": "text_18",
+        "text": "deferred income taxes are recorded on temporary differences using enacted tax rates in effect for the year in which the temporary differences are expected to reverse ."
+      },
+      {
+        "location": "text_19",
+        "text": "the effect of a change in tax rates on deferred tax assets and liabilities is recognized in income in the period that includes the enactment date ."
+      },
+      {
+        "location": "text_20",
+        "text": "see note 8 for further information on income taxes ."
+      },
+      {
+        "location": "text_21",
+        "text": "per share data : basic earnings per share calculations were computed by dividing net earnings by the corresponding weighted-average number of common shares outstanding for the period ."
+      },
+      {
+        "location": "text_22",
+        "text": "the dilutive effect of the potential exercise of outstanding options to purchase common shares is calculated using the treasury stock method ."
+      },
+      {
+        "location": "text_23",
+        "text": "snap-on had dilutive shares as of year-end 2007 , 2006 and 2005 , of 731442 shares , 911697 shares and 584222 shares , respectively ."
+      },
+      {
+        "location": "text_24",
+        "text": "options to purchase 493544 shares , 23000 shares and 612892 shares of snap-on common stock for the fiscal years ended 2007 , 2006 and 2005 , respectively , were not included in the computation of diluted earnings per share as the exercise prices of the options were greater than the average market price of the common stock for the respective year and , as a result , the effect on earnings per share would be anti-dilutive ."
+      },
+      {
+        "location": "text_25",
+        "text": "stock-based compensation : effective january 1 , 2006 , the company adopted sfas no ."
+      },
+      {
+        "location": "text_26",
+        "text": "123 ( r ) , 201cshare-based payment , 201d using the modified prospective method ."
+      },
+      {
+        "location": "text_27",
+        "text": "sfas no ."
+      },
+      {
+        "location": "text_28",
+        "text": "123 ( r ) requires entities to recognize the cost of employee services in exchange for awards of equity instruments based on the grant-date fair value of those awards ( with limited exceptions ) ."
+      },
+      {
+        "location": "text_29",
+        "text": "that cost , based on the estimated number of awards that are expected to vest , is recognized over the period during which the employee is required to provide the service in exchange for the award ."
+      },
+      {
+        "location": "text_30",
+        "text": "no compensation cost is recognized for awards for which employees do not render the requisite service ."
+      },
+      {
+        "location": "text_31",
+        "text": "upon adoption , the grant-date fair value of employee share options ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percentage change in the in pretax losses related to foreign exchange transactions in 2007",
+  "reference_program": "subtract(1.7, 1.2), divide(#0, 1.2)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "1.7",
+      "raw": "1.7",
+      "location": "text_9:60",
+      "context": "foreign exchange transactions resulted in pretax losses of $ 1.7 million in 2007 and $ 1.2 million in 2006 , and a pretax gain of $ 0.7 million in 2005 ."
+    },
+    "x1": {
+      "program_token": "1.2",
+      "raw": "1.2",
+      "location": "text_9:86",
+      "context": "foreign exchange transactions resulted in pretax losses of $ 1.7 million in 2007 and $ 1.2 million in 2006 , and a pretax gain of $ 0.7 million in 2005 ."
+    }
+  }
+}
+
+TWO SOURCE INTERPRETATIONS TO CONSIDER
+The order is random. Evaluate these reasons against the supplied source and give your own judgment using the same JSON schema. Their order carries no priority.
+[
+  "Post_text[6] gives pretax foreign-exchange losses1.7million(2007) and1.2million(2006). Growth of positive loss magnitudes is faithful; neither table minority-interest losses nor2005 exchange gain is a duplicate.",
+  "The rounded foreign exchange loss amounts correctly refer to 2007 and 2006, but the calculation returns fractional growth without multiplying by 100 for percentage change."
+]

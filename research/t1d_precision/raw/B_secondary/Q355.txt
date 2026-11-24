@@ -1,0 +1,1 @@
+{"answer":"3.007518796992481","unit":"percent","expression":"(137 - 133) / 133 * 100","low":"2.247191011235955","high":"3.773584905660377","reliable_digits":"0","explanation":"Allowing each expense figure to vary by $0.5 million gives the stated bounds, which do not preserve the first significant digit."}

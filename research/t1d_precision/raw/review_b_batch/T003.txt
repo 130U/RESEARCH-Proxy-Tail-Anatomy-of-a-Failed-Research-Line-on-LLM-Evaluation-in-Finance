@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R033",
+    "verdict": "invalid",
+    "reason": "The bound 776 and 748 measure MAP's gasoline sales volumes, whereas the question asks for growth in gasoline production."
+  },
+  {
+    "review_id": "R034",
+    "verdict": "valid",
+    "reason": "The rounded buildings values under capital leases are $190 million for 2016 and $207 million for 2015, so subtracting gives the requested signed change in millions."
+  },
+  {
+    "review_id": "R035",
+    "verdict": "valid",
+    "reason": "The source explicitly reports approximately $1.6 million and $2.3 million of 2005 plan compensation expense for 2010 and 2009, and the calculation uses the correct 2009 baseline."
+  },
+  {
+    "review_id": "R036",
+    "verdict": "uncertain",
+    "reason": "The question places the repeated four-point increase in 2009 but asks for 2010, so adding it to the actual 2009 index of 88 requires an unstated timing assumption."
+  },
+  {
+    "review_id": "R037",
+    "verdict": "valid",
+    "reason": "The preliminary trademark valuation of $890 million and total consideration of $4,932 million are rounded acquisition amounts whose ratio gives the requested portion."
+  },
+  {
+    "review_id": "R038",
+    "verdict": "invalid",
+    "reason": "The $6.6 million and $3.7 million increases concern 2004 versus 2003 and omit the stated severance offset, so their sum does not measure the requested 2003 expense increase."
+  },
+  {
+    "review_id": "R039",
+    "verdict": "valid",
+    "reason": "The 2007 purchases of 1.8 million shares are a rounded scaled count and $64.20 is an average purchase price, so their product gives cash inflow in millions of dollars."
+  },
+  {
+    "review_id": "R040",
+    "verdict": "valid",
+    "reason": "The $164 million and $30 million are aggregate facility amounts maturing in 2018 and 2017, and the calculation correctly expresses their increase relative to the 2017 amount as a percentage."
+  },
+  {
+    "review_id": "R041",
+    "verdict": "invalid",
+    "reason": "The denominator $2,329 million is 2007 purchase obligations, whereas the table reports 2007 total debt of $692 million."
+  },
+  {
+    "review_id": "R042",
+    "verdict": "valid",
+    "reason": "The approximately $75 million and $77 million expenses correspond to 2017 and 2016, and their signed difference divided by the 2016 amount expresses the percentage decline."
+  },
+  {
+    "review_id": "R043",
+    "verdict": "valid",
+    "reason": "The rounded 2014 environmental reserves of $8.8 million and remediation expenses of $2.9 million are correctly bound, and subtraction gives their difference in millions."
+  },
+  {
+    "review_id": "R044",
+    "verdict": "uncertain",
+    "reason": "The excerpt gives a $210 million transaction value and $182 million cash net of $7 million acquired cash, but does not identify their difference as noncash assets."
+  },
+  {
+    "review_id": "R045",
+    "verdict": "uncertain",
+    "reason": "The $955 million covers only U.S. containerboard sales, while the excerpt also identifies an Asian box and containerboard business without separating its containerboard sales."
+  },
+  {
+    "review_id": "R046",
+    "verdict": "uncertain",
+    "reason": "The table identifies Euro values for 2012 and 2011 but lacks a metric description establishing that they measure earnings impact."
+  },
+  {
+    "review_id": "R047",
+    "verdict": "valid",
+    "reason": "The $74 million and $110 million are rounded unpaid principal balances of unresolved home equity claims at the respective year ends, so subtraction gives the signed change in millions."
+  },
+  {
+    "review_id": "R048",
+    "verdict": "invalid",
+    "reason": "The calculation compares total scheduled maturities in 2011 and 2010 rather than measuring the effect of the floating rate notes maturing in 2010."
+  }
+]

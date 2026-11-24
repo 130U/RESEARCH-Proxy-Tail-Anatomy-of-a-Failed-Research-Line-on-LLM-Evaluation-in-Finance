@@ -1,0 +1,5 @@
+{
+    "review_id": "R143",
+    "verdict": "invalid",
+    "reason": "The 82% debt and 18% equity allocations are defined policy targets rather than rounded measured quantities, so treating these inputs as rounded is unjustified."
+  }

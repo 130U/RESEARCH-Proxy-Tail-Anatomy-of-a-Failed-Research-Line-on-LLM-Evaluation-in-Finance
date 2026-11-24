@@ -1,0 +1,1 @@
+{"answer":"34.3629343629","unit":"percent","expression":"(348 - 259) / 259 * 100","low":"33.9113680154","high":"34.8162475822","reliable_digits":"1","explanation":"Each fair value is rounded to the nearest $1 million, giving bounds from (347.5 - 259.5) / 259.5 * 100 to (348.5 - 258.5) / 258.5 * 100."}

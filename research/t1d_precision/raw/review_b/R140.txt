@@ -1,0 +1,5 @@
+{
+    "review_id": "R140",
+    "verdict": "invalid",
+    "reason": "The calculation measures the relative difference between net reserves of 320 and direct gross reserves of 271, which does not answer the request for the environmental reserves summary."
+  }

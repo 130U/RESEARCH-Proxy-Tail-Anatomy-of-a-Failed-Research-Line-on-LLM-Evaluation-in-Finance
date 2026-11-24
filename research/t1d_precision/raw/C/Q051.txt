@@ -1,0 +1,1 @@
+{"answer":"15.6526548673","unit":"percent","expression":"849 / 5424 * 100","low":"15.6419946539","high":"15.6633170462","reliable_digits":"3","explanation":"Labor deemed claims are $849 million of $5,424 million total; allowing ±$0.5 million for each figure gives the stated bounds."}

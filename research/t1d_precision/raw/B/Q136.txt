@@ -1,0 +1,1 @@
+{"answer":"26.923076923076923","unit":"percent","expression":"35 / 130 * 100","low":"26.4367816091954","high":"27.4131274131274","reliable_digits":"1","explanation":"The euro share is 35 divided by 130, with rounding bounds calculated using ±0.5 million for each figure."}

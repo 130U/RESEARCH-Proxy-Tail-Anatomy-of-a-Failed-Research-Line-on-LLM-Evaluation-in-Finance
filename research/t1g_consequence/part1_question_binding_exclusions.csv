@@ -1,0 +1,2 @@
+dataset,id,row,label,question,program,factor,reason
+tatqa,3c51553e-bb48-4a48-954f-768f8421ad28,8,Equity,What is the percentage change in the net assets from 2018 to 2019?,"(157,164-163,937)/163,937",1,numeric_formula_matches_but_source_ambiguous

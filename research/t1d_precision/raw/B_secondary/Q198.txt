@@ -1,0 +1,1 @@
+{"answer":"5.6631006962","unit":"percent","expression":"(1334 / 23556) * 100","low":"5.6608579373","high":"5.6653435503","reliable_digits":"2","explanation":"Divide the 2012 outflow by total outflow; allowing each displayed amount to vary by 0.5 million gives the bounds and two consistently rounded significant digits."}

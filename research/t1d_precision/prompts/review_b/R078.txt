@@ -1,0 +1,266 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R078",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "16 fa i r va lu e o f f i na n c i a l i n s t ru m e n t s we believe that the fair values of current assets and current liabilities approximate their reported carrying amounts ."
+      },
+      {
+        "location": "text_1",
+        "text": "the fair values of noncurrent financial assets , liabilities and derivatives are shown below. ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2004",
+          "2003"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "<i>($ in millions)</i>",
+          "Carrying Amount",
+          "Fair Value",
+          "Carrying Amount",
+          "Fair Value"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Notes and other long-term assets",
+          "$1,702",
+          "$1,770",
+          "$1,740",
+          "$1,778"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Long-term debt and other long-term liabilities",
+          "$848",
+          "$875",
+          "$1,373",
+          "$1,487"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Derivative instruments",
+          "$—",
+          "$—",
+          "$(1)",
+          "$(1)"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_2",
+        "text": "we value notes and other receivables based on the expected future cash flows dis- counted at risk-adjusted rates ."
+      },
+      {
+        "location": "text_3",
+        "text": "we determine valuations for long-term debt and other long-term liabilities based on quoted market prices or expected future payments dis- counted at risk-adjusted rates ."
+      },
+      {
+        "location": "text_4",
+        "text": "17 d e r i vat i v e i n s t ru m e n t s during the year ended january 2 , 2004 , we entered into an interest rate swap agreement under which we receive a floating rate of interest and pay a fixed rate of interest ."
+      },
+      {
+        "location": "text_5",
+        "text": "the swap modifies our interest rate exposure by effectively converting a note receivable with a fixed rate to a floating rate ."
+      },
+      {
+        "location": "text_6",
+        "text": "the aggregate notional amount of the swap is $ 92 mil- lion , and it matures in 2010 ."
+      },
+      {
+        "location": "text_7",
+        "text": "the swap is classified as a fair value hedge , and the change in the fair value of the swap , as well as the change in the fair value of the underlying note receivable , is recognized in interest income ."
+      },
+      {
+        "location": "text_8",
+        "text": "the fair value of the swap was a liabil- ity of approximately $ 3 million at december 31 , 2004 , and january 2 , 2004 ."
+      },
+      {
+        "location": "text_9",
+        "text": "the hedge is highly effective , and therefore , no net gain or loss was reported in earnings during the years ended december 31 , 2004 , and january 2 , 2004 ."
+      },
+      {
+        "location": "text_10",
+        "text": "at december 31 , 2004 , we had six outstanding interest rate swap agreements to manage interest rate risk associated with the residual interests we retain in conjunction with our timeshare note sales ."
+      },
+      {
+        "location": "text_11",
+        "text": "we are required by purchasers and/or rating agencies to utilize interest rate swaps to protect the excess spread within our sold note pools ."
+      },
+      {
+        "location": "text_12",
+        "text": "the aggregate notional amount of the swaps is $ 535 million , and they expire through 2022 ."
+      },
+      {
+        "location": "text_13",
+        "text": "these swaps are not accounted for as hedges under fas no ."
+      },
+      {
+        "location": "text_14",
+        "text": "133 , 201caccounting for derivative instruments and hedging activities . 201d the fair value of the swaps is a net asset of approximately $ 3 million at december 31 , 2004 , a net asset of approximately $ 1 million at january 2 , 2004 , and a net liability of $ 2 million at january 3 , 2003 ."
+      },
+      {
+        "location": "text_15",
+        "text": "we recorded a $ 2 million net gain , $ 3 million net gain and $ 21 million net loss during the years ended december 31 , 2004 , january 2 , 2004 and january 3 , 2003 , respectively ."
+      },
+      {
+        "location": "text_16",
+        "text": "these expenses were largely offset by income resulting from the change in fair value of the retained interests and note sale gains in response to changes in interest rates ."
+      },
+      {
+        "location": "text_17",
+        "text": "during the years ended december 31 , 2004 , and january 2 , 2004 , we entered into interest rate swaps to manage interest rate risk associated with forecasted timeshare note sales ."
+      },
+      {
+        "location": "text_18",
+        "text": "these swaps were not accounted for as hedges under fas no ."
+      },
+      {
+        "location": "text_19",
+        "text": "133 ."
+      },
+      {
+        "location": "text_20",
+        "text": "the swaps were terminated upon the sale of the notes and resulted in a gain of $ 2 million during the year ended december 31 , 2004 , and a loss of $ 4 million during the year ended january 2 , 2004 ."
+      },
+      {
+        "location": "text_21",
+        "text": "these amounts were largely offset by changes in the note sale gains and losses ."
+      },
+      {
+        "location": "text_22",
+        "text": "during the years ended december 31 , 2004 , and january 2 , 2004 , we entered into forward foreign exchange contracts to manage the foreign currency exposure related to certain monetary assets denominated in pounds sterling ."
+      },
+      {
+        "location": "text_23",
+        "text": "the aggregate dollar equiva- lent of the notional amount of the contracts is $ 36 million at december 31 , 2004 ."
+      },
+      {
+        "location": "text_24",
+        "text": "the forward exchange contracts are not accounted for as hedges in accordance with fas no ."
+      },
+      {
+        "location": "text_25",
+        "text": "133 ."
+      },
+      {
+        "location": "text_26",
+        "text": "the fair value of the forward contracts is approximately zero at december 31 , 2004 , and january 2 , 2004 ."
+      },
+      {
+        "location": "text_27",
+        "text": "we recorded a $ 3 million and $ 2 million net loss relating to these forward foreign exchange contracts for the years ended december 31 , 2004 and january 2 , 2004 , respectively ."
+      },
+      {
+        "location": "text_28",
+        "text": "the net losses for both years were offset by income recorded from translating the related monetary assets denominated in pounds sterling into u.s ."
+      },
+      {
+        "location": "text_29",
+        "text": "dollars ."
+      },
+      {
+        "location": "text_30",
+        "text": "during fiscal years 2004 and 2003 , we entered into foreign exchange option and forward contracts to hedge the potential volatility of earnings and cash flows associated with variations in foreign exchange rates ."
+      },
+      {
+        "location": "text_31",
+        "text": "the aggregate dollar equivalent of the notional amounts of the contracts is $ 36 million at december 31 , 2004 ."
+      },
+      {
+        "location": "text_32",
+        "text": "these contracts have terms of less than a year and are classified as cash flow hedges ."
+      },
+      {
+        "location": "text_33",
+        "text": "changes in their fair values are recorded as a component of other comprehensive income ."
+      },
+      {
+        "location": "text_34",
+        "text": "the fair value of the forward contracts is approximately zero and $ 1 million at december 31 , 2004 , and january 2 , 2004 , respectively ."
+      },
+      {
+        "location": "text_35",
+        "text": "during 2004 , it was determined that certain deriva- tives were no longer effective in offsetting the hedged item ."
+      },
+      {
+        "location": "text_36",
+        "text": "thus , cash flow hedge accounting treatment was discontinued and the ineffective contracts resulted in a loss of $ 1 million , which was reported in earnings for fiscal year 2004 ."
+      },
+      {
+        "location": "text_37",
+        "text": "the remaining hedges were highly effective and there was no net gain or loss reported in earnings for the fiscal years 2004 and 2003 ."
+      },
+      {
+        "location": "text_38",
+        "text": "as of december 31 , 2004 , there were no deferred gains or losses accumulated in other comprehensive income that we expect to reclassify into earnings over the next 12 months ."
+      },
+      {
+        "location": "text_39",
+        "text": "18 c o n t i n g e n c i e s guarantees we issue guarantees to certain lenders and hotel owners primarily to obtain long-term management contracts ."
+      },
+      {
+        "location": "text_40",
+        "text": "the guarantees generally have a stated maximum amount of funding and a term of five years or less ."
+      },
+      {
+        "location": "text_41",
+        "text": "the terms of guarantees to lenders generally require us to fund if cash flows from hotel operations are inadequate to cover annual debt service or to repay the loan at the end of the term ."
+      },
+      {
+        "location": "text_42",
+        "text": "the terms of the guarantees to hotel owners generally require us to fund if the hotels do not attain specified levels of operating profit ."
+      },
+      {
+        "location": "text_43",
+        "text": "44 marriott international , inc. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the difference of between the carrying amount and the fair value of long-term debt and other long-term liabilities in 2014?",
+  "reference_program": "subtract(875, 848)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "875",
+      "raw": "875",
+      "location": "table_3:2",
+      "context": "Long-term debt and other long-term liabilities | 2003"
+    },
+    "x1": {
+      "program_token": "848",
+      "raw": "848",
+      "location": "table_3:1",
+      "context": "Long-term debt and other long-term liabilities | 2004"
+    }
+  }
+}

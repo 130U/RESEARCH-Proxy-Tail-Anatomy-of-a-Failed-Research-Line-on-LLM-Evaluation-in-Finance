@@ -1,0 +1,1 @@
+{"answer":"4.72972972972973","unit":"percent","expression":"(155 - 148) / 148 * 100","low":"4.04040404040404","high":"5.42372881355932","reliable_digits":"0","explanation":"Each payment figure has rounding uncertainty of ±$0.5 million, producing a growth range whose first significant digit is not reliable."}

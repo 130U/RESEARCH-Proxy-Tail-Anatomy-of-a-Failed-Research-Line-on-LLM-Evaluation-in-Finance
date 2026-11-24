@@ -1,0 +1,1 @@
+{"answer":"0","unit":"percent","expression":"(250.0 - 250.0) / 250.0 * 100","low":"-0.0399920016","high":"0.0400080016","reliable_digits":"0","explanation":"The floating-rate exchange replaced $250.0 million of old principal with $250.0 million due in 2010, implying zero principal increase at the displayed precision."}

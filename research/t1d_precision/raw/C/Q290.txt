@@ -1,0 +1,1 @@
+{"answer":"-49.8346196251","unit":"percent","expression":"(318.5 - 634.9) / 634.9 * 100","low":"-49.8464446019","high":"-49.8227927857","reliable_digits":"3","explanation":"Allowing each net sales figure to vary by $0.05 million gives these bounds, supporting a decrease of 49.8% to three significant digits."}

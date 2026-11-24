@@ -1,0 +1,9 @@
+{
+  "answer": "5.9879198294",
+  "unit": "percent",
+  "expression": "(438861 - 414067) / 414067 * 100",
+  "low": "5.9876710923",
+  "high": "5.9881685671",
+  "reliable_digits": "4",
+  "explanation": "Allowing each asset figure to vary by 0.5 million gives these bounds, which both round to 5.988% at four significant digits."
+}

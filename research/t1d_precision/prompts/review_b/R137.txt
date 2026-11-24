@@ -1,0 +1,182 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R137",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "approximately 710 asphalt-paving contractors , government entities ( states , counties , cities and townships ) and asphalt roofing shingle manufacturers ."
+      },
+      {
+        "location": "text_1",
+        "text": "we also produce asphalt cements , polymerized asphalt , asphalt emulsions and industrial asphalts ."
+      },
+      {
+        "location": "text_2",
+        "text": "retail marketing ssa , our wholly-owned subsidiary , sells gasoline and merchandise through owned and operated retail outlets primarily under the speedway ae and superamerica ae brands ."
+      },
+      {
+        "location": "text_3",
+        "text": "diesel fuel is also sold at a number of these outlets ."
+      },
+      {
+        "location": "text_4",
+        "text": "ssa retail outlets offer a wide variety of merchandise , such as prepared foods , beverages , and non-food items , as well as a significant number of proprietary items ."
+      },
+      {
+        "location": "text_5",
+        "text": "as of december 31 , 2008 , ssa had 1617 retail outlets in nine states ."
+      },
+      {
+        "location": "text_6",
+        "text": "sales of refined products through these retail outlets accounted for 15 percent of our refined product sales volumes in 2008 ."
+      },
+      {
+        "location": "text_7",
+        "text": "revenues from sales of non-petroleum merchandise through these retail outlets totaled $ 2838 million in 2008 , $ 2796 million in 2007 and $ 2706 million in 2006 ."
+      },
+      {
+        "location": "text_8",
+        "text": "the demand for gasoline is seasonal in a majority of ssa markets , usually with the highest demand during the summer driving season ."
+      },
+      {
+        "location": "text_9",
+        "text": "profit levels from the sale of merchandise and services tend to be less volatile than profit levels from the retail sale of gasoline and diesel fuel ."
+      },
+      {
+        "location": "text_10",
+        "text": "in october 2008 , we sold our interest in pilot travel centers llc ( 201cptc 201d ) , an operator of travel centers in the united states ."
+      },
+      {
+        "location": "text_11",
+        "text": "pipeline transportation we own a system of pipelines through marathon pipe line llc ( 201cmpl 201d ) and ohio river pipe line llc ( 201corpl 201d ) , our wholly-owned subsidiaries ."
+      },
+      {
+        "location": "text_12",
+        "text": "our pipeline systems transport crude oil and refined products primarily in the midwest and gulf coast regions to our refineries , our terminals and other pipeline systems ."
+      },
+      {
+        "location": "text_13",
+        "text": "our mpl and orpl wholly-owned and undivided interest common carrier systems consist of 1815 miles of crude oil lines and 1826 miles of refined product lines comprising 34 systems located in 11 states ."
+      },
+      {
+        "location": "text_14",
+        "text": "the mpl common carrier pipeline network is one of the largest petroleum pipeline systems in the united states , based on total barrels delivered ."
+      },
+      {
+        "location": "text_15",
+        "text": "our common carrier pipeline systems are subject to state and federal energy regulatory commission regulations and guidelines , including published tariffs for the transportation of crude oil and refined products ."
+      },
+      {
+        "location": "text_16",
+        "text": "third parties generated 11 percent of the crude oil and refined product shipments on our mpl and orpl common carrier pipelines in 2008 ."
+      },
+      {
+        "location": "text_17",
+        "text": "our mpl and orpl common carrier pipelines transported the volumes shown in the following table for each of the last three years ."
+      },
+      {
+        "location": "text_18",
+        "text": "pipeline barrels handled ( thousands of barrels per day ) 2008 2007 2006 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "<i>(Thousands of barrels per day)</i>",
+          "2008",
+          "2007",
+          "2006"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Crude oil trunk lines",
+          "1,405",
+          "1,451",
+          "1,437"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Refined products trunk lines",
+          "960",
+          "1,049",
+          "1,101"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "TOTAL",
+          "2,365",
+          "2,500",
+          "2,538"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_19",
+        "text": "we also own 176 miles of private crude oil pipelines and 850 miles of private refined products pipelines , and we lease 217 miles of common carrier refined product pipelines ."
+      },
+      {
+        "location": "text_20",
+        "text": "we have partial ownership interests in several pipeline companies that have approximately 780 miles of crude oil pipelines and 3000 miles of refined products pipelines , including about 800 miles operated by mpl ."
+      },
+      {
+        "location": "text_21",
+        "text": "in addition , mpl operates most of our private pipelines and 985 miles of crude oil and 160 miles of natural gas pipelines owned by our e&p segment ."
+      },
+      {
+        "location": "text_22",
+        "text": "our major refined product lines include the cardinal products pipeline and the wabash pipeline ."
+      },
+      {
+        "location": "text_23",
+        "text": "the cardinal products pipeline delivers refined products from kenova , west virginia , to columbus , ohio ."
+      },
+      {
+        "location": "text_24",
+        "text": "the wabash pipeline system delivers product from robinson , illinois , to various terminals in the area of chicago , illinois ."
+      },
+      {
+        "location": "text_25",
+        "text": "other significant refined product pipelines owned and operated by mpl extend from : robinson , illinois , to louisville , kentucky ; garyville , louisiana , to zachary , louisiana ; and texas city , texas , to pasadena , texas. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was total miles of private crude oil pipelines and private refined products pipelines?",
+  "reference_program": "add(176, 850)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "176",
+      "raw": "176",
+      "location": "text_19:12",
+      "context": "we also own 176 miles of private crude oil pipelines and 850 miles of private refined products pipelines , and we lease 217 miles of common carrier refined product pipelines ."
+    },
+    "x1": {
+      "program_token": "850",
+      "raw": "850",
+      "location": "text_19:57",
+      "context": "we also own 176 miles of private crude oil pipelines and 850 miles of private refined products pipelines , and we lease 217 miles of common carrier refined product pipelines ."
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"answer":"0.0000218639769116","unit":"million dollars per share","expression":"9 / 411636","low":"0.0000206493115277","high":"0.0000230786422956","reliable_digits":"1","explanation":"This divides U.S. compensation expense by shares issued; it measures expense per share, since the actual purchase price is not provided."}

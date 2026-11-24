@@ -1,0 +1,139 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R038",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "entergy mississippi , inc ."
+      },
+      {
+        "location": "text_1",
+        "text": "management's financial discussion and analysis other regulatory charges ( credits ) have no material effect on net income due to recovery and/or refund of such expenses ."
+      },
+      {
+        "location": "text_2",
+        "text": "other regulatory credits increased primarily due to the under-recovery through the grand gulf rider of grand gulf capacity charges ."
+      },
+      {
+        "location": "text_3",
+        "text": "2003 compared to 2002 net revenue , which is entergy mississippi's measure of gross margin , consists of operating revenues net of : 1 ) fuel , fuel-related , and purchased power expenses and 2 ) other regulatory charges ( credits ) ."
+      },
+      {
+        "location": "text_4",
+        "text": "following is an analysis of the change in net revenue comparing 2003 to 2002. ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "(In Millions)"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2002 net revenue",
+          "$380.2"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Base rates",
+          "48.3"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Other",
+          "(1.9)"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "2003 net revenue",
+          "$426.6"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_5",
+        "text": "the increase in base rates was effective january 2003 as approved by the mpsc ."
+      },
+      {
+        "location": "text_6",
+        "text": "gross operating revenue , fuel and purchased power expenses , and other regulatory charges ( credits ) gross operating revenues increased primarily due to an increase in base rates effective january 2003 and an increase of $ 29.7 million in fuel cost recovery revenues due to quarterly changes in the fuel factor resulting from the increases in market prices of natural gas and purchased power ."
+      },
+      {
+        "location": "text_7",
+        "text": "this increase was partially offset by a decrease of $ 35.9 million in gross wholesale revenue as a result of decreased generation and purchases that resulted in less energy available for resale sales ."
+      },
+      {
+        "location": "text_8",
+        "text": "fuel and fuel-related expenses decreased primarily due to the decreased recovery of fuel and purchased power costs and decreased generation , partially offset by an increase in the market price of purchased power ."
+      },
+      {
+        "location": "text_9",
+        "text": "other regulatory charges increased primarily due to over-recovery of capacity charges related to the grand gulf rate rider and the cessation of the grand gulf accelerated recovery tariff that was suspended in july 2003 ."
+      },
+      {
+        "location": "text_10",
+        "text": "other income statement variances 2004 compared to 2003 other operation and maintenance expenses increased primarily due to : 2022 an increase of $ 6.6 million in customer service support costs ; and 2022 an increase of $ 3.7 million in benefit costs ."
+      },
+      {
+        "location": "text_11",
+        "text": "the increase was partially offset by the absence of the voluntary severance program accruals of $ 7.1 million that occurred in 2003 ."
+      },
+      {
+        "location": "text_12",
+        "text": "taxes other than income taxes increased primarily due to a higher assessment of ad valorem and franchise taxes compared to the same period in 2003 ."
+      },
+      {
+        "location": "text_13",
+        "text": "2003 compared to 2002 other operation and maintenance expenses increased primarily due to : 2022 voluntary severance program accruals of $ 7.1 million ; and 2022 an increase of $ 4.4 million in benefit costs. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the increase in operation and maintenance expenses as a percentage of net revenue in 2003?",
+  "reference_program": "add(6.6, 3.7), divide(#0, 426.6)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "6.6",
+      "raw": "6.6",
+      "location": "text_10:146",
+      "context": "other income statement variances 2004 compared to 2003 other operation and maintenance expenses increased primarily due to : 2022 an increase of $ 6.6 million in customer service support costs ; and 2022 an increase of $ 3.7 million in benefit costs ."
+    },
+    "x1": {
+      "program_token": "3.7",
+      "raw": "3.7",
+      "location": "text_10:220",
+      "context": "other income statement variances 2004 compared to 2003 other operation and maintenance expenses increased primarily due to : 2022 an increase of $ 6.6 million in customer service support costs ; and 2022 an increase of $ 3.7 million in benefit costs ."
+    },
+    "x2": {
+      "program_token": "426.6",
+      "raw": "426.6",
+      "location": "table_4:1",
+      "context": "2003 net revenue | (In Millions)"
+    }
+  }
+}

@@ -1,0 +1,192 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R171",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "in september 2015 , the company entered into treasury lock hedges with a total notional amount of $ 1.0 billion , reducing the risk of changes in the benchmark index component of the 10-year treasury yield ."
+      },
+      {
+        "location": "text_1",
+        "text": "the company designated these derivatives as cash flow hedges ."
+      },
+      {
+        "location": "text_2",
+        "text": "on october 13 , 2015 , in conjunction with the pricing of the $ 4.5 billion senior notes , the company terminated these treasury lock contracts for a cash settlement payment of $ 16 million , which was recorded as a component of other comprehensive earnings and will be reclassified as an adjustment to interest expense over the ten years during which the related interest payments that were hedged will be recognized in income ."
+      },
+      {
+        "location": "text_3",
+        "text": "foreign currency risk we are exposed to foreign currency risks that arise from normal business operations ."
+      },
+      {
+        "location": "text_4",
+        "text": "these risks include the translation of local currency balances of foreign subsidiaries , transaction gains and losses associated with intercompany loans with foreign subsidiaries and transactions denominated in currencies other than a location's functional currency ."
+      },
+      {
+        "location": "text_5",
+        "text": "we manage the exposure to these risks through a combination of normal operating activities and the use of foreign currency forward contracts and non- derivative investment hedges ."
+      },
+      {
+        "location": "text_6",
+        "text": "contracts are denominated in currencies of major industrial countries ."
+      },
+      {
+        "location": "text_7",
+        "text": "our exposure to foreign currency exchange risks generally arises from our non-u.s ."
+      },
+      {
+        "location": "text_8",
+        "text": "operations , to the extent they are conducted in local currency ."
+      },
+      {
+        "location": "text_9",
+        "text": "changes in foreign currency exchange rates affect translations of revenues denominated in currencies other than the u.s ."
+      },
+      {
+        "location": "text_10",
+        "text": "dollar ."
+      },
+      {
+        "location": "text_11",
+        "text": "during the years ended december 31 , 2017 , 2016 and 2015 , we generated approximately $ 1830 million , $ 1909 million and $ 1336 million , respectively , in revenues denominated in currencies other than the u.s ."
+      },
+      {
+        "location": "text_12",
+        "text": "dollar ."
+      },
+      {
+        "location": "text_13",
+        "text": "the major currencies to which our revenues are exposed are the brazilian real , the euro , the british pound sterling and the indian rupee ."
+      },
+      {
+        "location": "text_14",
+        "text": "a 10% ( 10 % ) move in average exchange rates for these currencies ( assuming a simultaneous and immediate 10% ( 10 % ) change in all of such rates for the relevant period ) would have resulted in the following increase or ( decrease ) in our reported revenues for the years ended december 31 , 2017 , 2016 and 2015 ( in millions ) : ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "Currency",
+          "2017",
+          "2016",
+          "2015"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Pound Sterling",
+          "$42",
+          "$47",
+          "$34"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Euro",
+          "35",
+          "38",
+          "33"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Real",
+          "39",
+          "32",
+          "29"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Indian Rupee",
+          "14",
+          "12",
+          "10"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Total increase or decrease",
+          "$130",
+          "$129",
+          "$106"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_15",
+        "text": "while our results of operations have been impacted by the effects of currency fluctuations , our international operations' revenues and expenses are generally denominated in local currency , which reduces our economic exposure to foreign exchange risk in those jurisdictions ."
+      },
+      {
+        "location": "text_16",
+        "text": "revenues included $ 16 million favorable and $ 100 million unfavorable and net earnings included $ 2 million favorable and $ 10 million unfavorable , respectively , of foreign currency impact during 2017 and 2016 resulting from changes in the u.s ."
+      },
+      {
+        "location": "text_17",
+        "text": "dollar during these years compared to the preceding year ."
+      },
+      {
+        "location": "text_18",
+        "text": "in 2018 , we expect minimal foreign currency impact on our earnings ."
+      },
+      {
+        "location": "text_19",
+        "text": "our foreign exchange risk management policy permits the use of derivative instruments , such as forward contracts and options , to reduce volatility in our results of operations and/or cash flows resulting from foreign exchange rate fluctuations ."
+      },
+      {
+        "location": "text_20",
+        "text": "we do not enter into foreign currency derivative instruments for trading purposes or to engage in speculative activity ."
+      },
+      {
+        "location": "text_21",
+        "text": "we do periodically enter into foreign currency forward exchange contracts to hedge foreign currency exposure to intercompany loans ."
+      },
+      {
+        "location": "text_22",
+        "text": "we did not have any of these derivatives as of december 31 , 2017 ."
+      },
+      {
+        "location": "text_23",
+        "text": "the company also utilizes non-derivative net investment hedges in order to reduce the volatility in the income statement caused by the changes in foreign currency exchange rates ( see note 11 of the notes to consolidated financial statements ) . ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what percent of the total increase or decrease would the euro be in 2016?",
+  "reference_program": "divide(38, 129)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "38",
+      "raw": "38",
+      "location": "table_2:2",
+      "context": "Euro | 2016"
+    },
+    "x1": {
+      "program_token": "129",
+      "raw": "129",
+      "location": "table_5:2",
+      "context": "Total increase or decrease | 2016"
+    }
+  }
+}

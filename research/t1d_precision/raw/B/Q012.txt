@@ -1,0 +1,1 @@
+{"answer":"2.420774647887324","unit":"percent","expression":"(165 / 6816) * 100","low":"2.413261937944693","high":"2.428288460127650","reliable_digits":"2","explanation":"Allowing rounding of ±0.5 million dollars in inventory and working capital gives these bounds and two reliable significant digits."}

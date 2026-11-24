@@ -1,0 +1,131 @@
+{
+  "status": "mathematical_component_only",
+  "audit_grid": [
+    {
+      "N": 100000,
+      "n": 1000,
+      "x": 0,
+      "alpha": "0.05",
+      "upper": 297,
+      "tie_favourable_min_m": 594,
+      "strict_margin_min_m": 595,
+      "source": "assumed design grid, not measured SEC counts"
+    },
+    {
+      "N": 10000,
+      "n": 1000,
+      "x": 0,
+      "alpha": "0.05",
+      "upper": 28,
+      "tie_favourable_min_m": 56,
+      "strict_margin_min_m": 57,
+      "source": "assumed design grid, not measured SEC counts"
+    },
+    {
+      "N": 1000,
+      "n": 500,
+      "x": 0,
+      "alpha": "0.05",
+      "upper": 4,
+      "tie_favourable_min_m": 8,
+      "strict_margin_min_m": 9,
+      "source": "assumed design grid, not measured SEC counts"
+    },
+    {
+      "N": 1000,
+      "n": 1000,
+      "x": 0,
+      "alpha": "0.05",
+      "upper": 0,
+      "tie_favourable_min_m": 1,
+      "strict_margin_min_m": 1,
+      "source": "assumed design grid, not measured SEC counts"
+    },
+    {
+      "N": 100,
+      "n": 99,
+      "x": 0,
+      "alpha": "0.05",
+      "upper": 0,
+      "tie_favourable_min_m": 1,
+      "strict_margin_min_m": 1,
+      "source": "assumed design grid, not measured SEC counts"
+    }
+  ],
+  "examples": [
+    {
+      "votes": [
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "scores": [
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "k": 1,
+      "result": {
+        "lower": 1.0,
+        "upper": 1.0,
+        "lower_exact": "1",
+        "upper_exact": "1",
+        "arithmetic": "exact rational scores; outward-rounded binary64 endpoints",
+        "reachable": [
+          [
+            0
+          ]
+        ],
+        "pointwise_certified": 1,
+        "n": 1
+      }
+    },
+    {
+      "votes": [
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "scores": [
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "k": 0,
+      "result": {
+        "lower": 1.0,
+        "upper": 1.0,
+        "lower_exact": "1",
+        "upper_exact": "1",
+        "arithmetic": "exact rational scores; outward-rounded binary64 endpoints",
+        "reachable": [
+          [
+            0
+          ]
+        ],
+        "pointwise_certified": 1,
+        "n": 1
+      }
+    }
+  ],
+  "assumptions": [
+    "uniform sample without replacement, fixed n, perfect timestamp adjudication",
+    "trusted core and all shared components are temporally valid",
+    "stable document IDs, at most k affected independent shards",
+    "fixed test inputs, labels, and additive bounded scores"
+  ],
+  "limitations": [
+    "not a real trained model certificate",
+    "not a population generalization interval",
+    "not an anytime-valid audit",
+    "does not certify trusted core"
+  ]
+}

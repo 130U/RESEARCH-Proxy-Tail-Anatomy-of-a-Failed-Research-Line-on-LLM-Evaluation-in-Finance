@@ -1,0 +1,1 @@
+{"answer":"-3.383348043542","unit":"percent","expression":"(328.4 - 339.9) / 339.9 * 100","low":"-3.412266509781","high":"-3.354421068118","reliable_digits":"2","explanation":"Each share figure may vary by 0.05 million; the resulting bounds both round to a 3.4% decrease."}

@@ -1,0 +1,1 @@
+{"answer":"65.27306967984934","unit":"percent","expression":"(1733 / 2655) * 100","low":"65.24195066842403","high":"65.30420041439066","reliable_digits":"2","explanation":"Each amount can vary by 0.5 million due to rounding; the resulting percentage is stable to two significant digits."}

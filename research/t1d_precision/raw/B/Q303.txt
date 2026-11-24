@@ -1,0 +1,1 @@
+{"answer":"448.5","unit":"million dollars","expression":"897 * 50 / 100","low":"443.7675","high":"453.2375","reliable_digits":"1","explanation":"The rounded figures imply backlog bounds of 896.5–897.5 million and fixed-price shares of 49.5%–50.5%, leaving only the leading digit stable."}

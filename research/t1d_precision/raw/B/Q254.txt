@@ -1,0 +1,1 @@
+{"answer":"39.00709219858156","unit":"percent","expression":"(39.2 - 28.2) / 28.2 * 100","low":"38.58407079646018","high":"39.43161634103020","reliable_digits":"2","explanation":"Each volatility figure has rounding uncertainty of 0.05 percentage points; both resulting bounds round to a 39% increase at two significant digits."}

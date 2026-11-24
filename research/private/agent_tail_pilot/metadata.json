@@ -1,0 +1,1572 @@
+{
+  "purpose": "Private blind within-model scoring input; data preparation only, no sentiment inference",
+  "source_path": "<workspace>\\130U-FinLLM-certifiable\\research\\private\\real_baseline\\test.jsonl",
+  "original_source_path": "<workspace>\\130U-FinLLM\\data\\raw\\candidates\\sentfin\\SEntFiN.csv",
+  "source_records": [
+    "research/real_baseline/aggregate_manifest.json",
+    "research/real_baseline/PREPARE_README.md",
+    "research/real_baseline/PROTOCOL.md",
+    "research/data/source_audit.md"
+  ],
+  "source_task": "SEntFiN source-native entity-related financial sentiment, not investment stance",
+  "text_source_field": "input_text; exact [ENTITY] target newline [TITLE] headline",
+  "sampling": "Uniformly sample 128 distinct family IDs without replacement from the sorted test-family list; uniformly choose one row within each selected family from members sorted by source ID. Separate fixed pseudorandom streams for family selection, within-family selection, and order2 shuffle. Blind IDs assigned in order1; IDs remain stable in order2.",
+  "sampling_seed": 20261116,
+  "within_family_seed": 20261117,
+  "order2_shuffle_seed": 20261118,
+  "population_samples": 2107,
+  "population_families": 1570,
+  "selected_samples": 128,
+  "selected_families": 128,
+  "characters": {
+    "unit": "Unicode code points, including field markers and newline",
+    "minimum": 55,
+    "maximum": 130,
+    "total": 10948
+  },
+  "input_fields": [
+    "id",
+    "text"
+  ],
+  "labels_or_predictions_used_for_sampling": false,
+  "family_caveat": "Existing lexical connected components; not audited semantic-event independence",
+  "python_version": "3.12.14",
+  "mapping": [
+    {
+      "blind_id": "P0001",
+      "original_id": "sample_20fca2882ac7bb04691a09d4482f77b07618ea06a2026ce4d06a2991c8cd846a",
+      "family_id": "family_476ebae45e0820245152cb52e619fbaa1b78bd977f48f5205db1e2bd1c8277ef",
+      "source_line": 269,
+      "original_source_ids": [
+        "10345"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 1,
+      "order2_position": 111
+    },
+    {
+      "blind_id": "P0002",
+      "original_id": "sample_ac44231d06229eb377124c75ac0bbc177dffd2b338c881563bcb43e443b612c6",
+      "family_id": "family_494aa7218ca7658c8092f76d886d9cefec8154de42c9ad095e5926aadd95c4b5",
+      "source_line": 1432,
+      "original_source_ids": [
+        "871"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 2,
+      "order2_position": 52
+    },
+    {
+      "blind_id": "P0003",
+      "original_id": "sample_24c5ca4961cb1199bb8ca65deb978516cea1c523b6d1f887e1d3f815dfa40caf",
+      "family_id": "family_d2cb7e95abe673259f34b21a19f8313e6d9ae4bc41b94a3a9ccfcb0b99b0a532",
+      "source_line": 296,
+      "original_source_ids": [
+        "4354"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 3,
+      "order2_position": 123
+    },
+    {
+      "blind_id": "P0004",
+      "original_id": "sample_9f5a6ecbedcf1068f876b5811b1cdbd0d020109bb1faa56ef257db8852be8a74",
+      "family_id": "family_85c8e87d782e63f105c9983d9a81bfdc200669be6c6129d0feed4bdfd3f9a710",
+      "source_line": 1319,
+      "original_source_ids": [
+        "8210"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 4,
+      "order2_position": 46
+    },
+    {
+      "blind_id": "P0005",
+      "original_id": "sample_d7c31a4c7dd7ac189d2dbbc48c6b402ec909307ebea535fbac7d635301cc9071",
+      "family_id": "family_7270e68c1a38a23930c1f5f6c033a773b15999f6896c67edde84488848323497",
+      "source_line": 1772,
+      "original_source_ids": [
+        "2624"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 5,
+      "order2_position": 61
+    },
+    {
+      "blind_id": "P0006",
+      "original_id": "sample_3c6d4416b7d11b029a38fe482ca46c56ae5d2b50bc980552fc83e23e3cb256de",
+      "family_id": "family_a4da44c325f459604102c40e3ecdae924cee5227eccf12d5a47906f04dfc3891",
+      "source_line": 490,
+      "original_source_ids": [
+        "7341"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 6,
+      "order2_position": 125
+    },
+    {
+      "blind_id": "P0007",
+      "original_id": "sample_c0bc3c009c7c70e7488548605e9d3f30a3486214f916124d258231add9e8cf98",
+      "family_id": "family_d71efc7cfa90954772017ed059204c54af0d93cc15cab68e4fdfa4b1549fe257",
+      "source_line": 1583,
+      "original_source_ids": [
+        "3701"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 7,
+      "order2_position": 108
+    },
+    {
+      "blind_id": "P0008",
+      "original_id": "sample_fef3ec1a26ff722eb3362a673d78214afa6d42e23c4c2c4b1b3db53a796b9143",
+      "family_id": "family_6d0ce3da60bb938f0dc870769d773d25c70a41c9641b16088a968f7131453406",
+      "source_line": 2096,
+      "original_source_ids": [
+        "1052"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 8,
+      "order2_position": 78
+    },
+    {
+      "blind_id": "P0009",
+      "original_id": "sample_81e9972231faa22cee5d43fee5e9367bf91be5c0f4910bc7f435aa630de33b0d",
+      "family_id": "family_bc988ee8fcc63a9f7e54557fb67ae73a9414e916df4c2d68f584b976d6855730",
+      "source_line": 1051,
+      "original_source_ids": [
+        "5599"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 9,
+      "order2_position": 77
+    },
+    {
+      "blind_id": "P0010",
+      "original_id": "sample_4c0f1674c1f25008374d507575373586cc1d848b5b6525c4d3401db9ddbe5e99",
+      "family_id": "family_03dde73b3bfa0c081a7455941bec181bdd875a0f3ede39110f3161fadc3a9a12",
+      "source_line": 596,
+      "original_source_ids": [
+        "6629"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 10,
+      "order2_position": 126
+    },
+    {
+      "blind_id": "P0011",
+      "original_id": "sample_b0a6be1dcd77213a74a7a21884caf127f15ec630314cc62f32d77a50e10b1a61",
+      "family_id": "family_a5d34d46fe606a6e1492a8bb35cf6fd5ae99ea6bf9019215996d79e6922dc370",
+      "source_line": 1461,
+      "original_source_ids": [
+        "1222"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 11,
+      "order2_position": 34
+    },
+    {
+      "blind_id": "P0012",
+      "original_id": "sample_6b9db0f0b2d8a68d322cc7c48cf8c0495e9005e03e566eb9628069e8986ddfe1",
+      "family_id": "family_40be24e28338c4d4cad51cf56c197589a46482e09204126d5f2931c80bf2303b",
+      "source_line": 844,
+      "original_source_ids": [
+        "2358"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 12,
+      "order2_position": 17
+    },
+    {
+      "blind_id": "P0013",
+      "original_id": "sample_a2f59c48c373ee9c57c3bcb3263ee557c704a1e79665a5d4ecdd922dfe512799",
+      "family_id": "family_e6237dc60633463642a0bc65295f84b1c53e793942204ae4d3406d4c56ff4155",
+      "source_line": 1354,
+      "original_source_ids": [
+        "8647"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 13,
+      "order2_position": 101
+    },
+    {
+      "blind_id": "P0014",
+      "original_id": "sample_8f744380664930ce1ba8a9db9d2b9758d011d0e2e9383e739e640cbe45621bcb",
+      "family_id": "family_01bcd09b5469f9360fe3b99c76f81249e2f6182e8131361d61243e105e29908e",
+      "source_line": 1184,
+      "original_source_ids": [
+        "2595"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 14,
+      "order2_position": 92
+    },
+    {
+      "blind_id": "P0015",
+      "original_id": "sample_220feddca3847143b5ae1ef7cad2d22ba3e51b04646800d105f818cfd05ee52c",
+      "family_id": "family_fdbc237ea97abfda88ab7c0b19b846dbd5eac01622133688dd83821eb7b96f1e",
+      "source_line": 276,
+      "original_source_ids": [
+        "939"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 15,
+      "order2_position": 69
+    },
+    {
+      "blind_id": "P0016",
+      "original_id": "sample_d26479536d14424d39419c20330ba5774bdde8b9bbded23bcbad56148918af93",
+      "family_id": "family_ac03a34e089a4b8f7cd7cde8d3b3032d6886fe40e7668fbc5e8928de4e92d098",
+      "source_line": 1726,
+      "original_source_ids": [
+        "3459"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 16,
+      "order2_position": 57
+    },
+    {
+      "blind_id": "P0017",
+      "original_id": "sample_7cff0ef56f609da101e4df097ca02c70db783810e1a2868d8c4182577e7b0dbe",
+      "family_id": "family_a36c7cea25c4f205a2a175fff64af8de163d1ad70dc23899432a33cf91adc322",
+      "source_line": 1011,
+      "original_source_ids": [
+        "7728"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 17,
+      "order2_position": 41
+    },
+    {
+      "blind_id": "P0018",
+      "original_id": "sample_f3348dbe029406f686ca570aa924c8ec52c2f69e1d46e3f01e9152ad597040b5",
+      "family_id": "family_ce92ec21a082025fb54cc232629f56a455e824158ac3f283e510cb26d2ad3d68",
+      "source_line": 1992,
+      "original_source_ids": [
+        "4039"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 18,
+      "order2_position": 51
+    },
+    {
+      "blind_id": "P0019",
+      "original_id": "sample_b27757f786a8b3e5e1f6332739358bd24d811c938aace2be6e66b9a8548911d9",
+      "family_id": "family_79e1fb7f0e96398e6ab90702e73933bcc0966a6d375317d9c5441a2a40a11e80",
+      "source_line": 1471,
+      "original_source_ids": [
+        "4075"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 19,
+      "order2_position": 96
+    },
+    {
+      "blind_id": "P0020",
+      "original_id": "sample_8fe9329ab76d8151299e70e91aa3dd6818752fe84d3dc456c084d4e8c39a3900",
+      "family_id": "family_543d942d50c12192b2d24e5f163f01bb6e66741e1961264592a5bfe1f20a6ad7",
+      "source_line": 1192,
+      "original_source_ids": [
+        "4633"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 20,
+      "order2_position": 82
+    },
+    {
+      "blind_id": "P0021",
+      "original_id": "sample_aee2a1696c933a0abc2634c9f05404c27c1784bbb05e52e170aec1b54f774c67",
+      "family_id": "family_b8cb1816948089837b08a6bf9a36b479ef52c92113bdb01f6c14b81f80252a31",
+      "source_line": 1453,
+      "original_source_ids": [
+        "8700"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 21,
+      "order2_position": 3
+    },
+    {
+      "blind_id": "P0022",
+      "original_id": "sample_93f66d4b9ecc23792e248dea55331ec62092270da7e485233375a8d26867d7de",
+      "family_id": "family_905a19ee4c6f2cc546b3df4baf4db5ec0536861ca3779aee0a425c56cc3af880",
+      "source_line": 1223,
+      "original_source_ids": [
+        "10241"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 22,
+      "order2_position": 115
+    },
+    {
+      "blind_id": "P0023",
+      "original_id": "sample_fdd02513ae0069651cedf636991b4efd064b8f09c21b42162aedd7af2cd0a4bb",
+      "family_id": "family_b833dea296790c5c4ad118fe68e88377c005302456dba7fc678d6486006378ef",
+      "source_line": 2088,
+      "original_source_ids": [
+        "3512"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 23,
+      "order2_position": 45
+    },
+    {
+      "blind_id": "P0024",
+      "original_id": "sample_83fcf49ff141539d74d3aac91259a28a28b582baeddf93700064f409dd2d6c49",
+      "family_id": "family_77f0912c57f2ae487bf1d5111063fda862c0dca309c51960f4a2cb09d8bcf319",
+      "source_line": 1070,
+      "original_source_ids": [
+        "4813"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 24,
+      "order2_position": 86
+    },
+    {
+      "blind_id": "P0025",
+      "original_id": "sample_754062578ccad8c9fa26dfb977336e7d71793e9c99c73cd9efe551473e7a346d",
+      "family_id": "family_b6cf3819f8b0ac3f67f5bd6f083fb6babb7292737f5900b15b96fe37ae4c9990",
+      "source_line": 947,
+      "original_source_ids": [
+        "16"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 25,
+      "order2_position": 56
+    },
+    {
+      "blind_id": "P0026",
+      "original_id": "sample_d8955e33e835622f9f5d96f4f1b208326aab5b3712cfbee6fe568d3994e05118",
+      "family_id": "family_58020bf13c84c1a390c13fdb8830592dd659650a07a2566bd920307a413da44b",
+      "source_line": 1779,
+      "original_source_ids": [
+        "273"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 26,
+      "order2_position": 68
+    },
+    {
+      "blind_id": "P0027",
+      "original_id": "sample_24ebd14489df3cc99af61758e6921e839d3340ca3006a9a7d484afc35b8338f3",
+      "family_id": "family_ec66cbb4910941f565c4bb4e88927a0e4c803a2458d1d6a8e06bc90215a11079",
+      "source_line": 300,
+      "original_source_ids": [
+        "7333"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 27,
+      "order2_position": 105
+    },
+    {
+      "blind_id": "P0028",
+      "original_id": "sample_dcce213eed383cd2351aa74ce9bab9aac3fde1aaa2e23deeb7be04ee4c82f0d9",
+      "family_id": "family_089482ec5bfb3879a64ddeb804fc6b6ed0095a6f7f1d56603ec366c1d60dc37f",
+      "source_line": 1816,
+      "original_source_ids": [
+        "1919"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 28,
+      "order2_position": 114
+    },
+    {
+      "blind_id": "P0029",
+      "original_id": "sample_4ebc6cd13978986676b1a5c5e9ffd7fd700e11e3434d8b5c4511ef6c1f0e063e",
+      "family_id": "family_4ccab0f2208e8ef467b8c3d0d0c9cfeffa2b0cd0990e7fda5924ddcf4d3d82c7",
+      "source_line": 613,
+      "original_source_ids": [
+        "4855"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 29,
+      "order2_position": 122
+    },
+    {
+      "blind_id": "P0030",
+      "original_id": "sample_f2069abc8fb8a17159c98b3e89f2c9f292f258ec8c71c0abb78f73af4287d2fc",
+      "family_id": "family_bc43b3e4588c3b9a5f26f6c7816fa44e634c08367dae902f8765a1cb396af18c",
+      "source_line": 1982,
+      "original_source_ids": [
+        "487"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 30,
+      "order2_position": 110
+    },
+    {
+      "blind_id": "P0031",
+      "original_id": "sample_ac03c712d8db40956e973cd9ab9b7a6dbfb069d2d5a0ad5d90bbb9a81f377692",
+      "family_id": "family_8f61348a3c7674abc59504f77a11f31d4917e2bc8e805715ab79dfcba52b16f7",
+      "source_line": 1429,
+      "original_source_ids": [
+        "9984"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 31,
+      "order2_position": 42
+    },
+    {
+      "blind_id": "P0032",
+      "original_id": "sample_bcc79a707581986eee442676a351921857b18da4f12fd0a32e8db381fc91f31b",
+      "family_id": "family_852de9ab0c7e1a1e424433b4d8c5dc91d2d0d0df50356790d831492ccb217277",
+      "source_line": 1552,
+      "original_source_ids": [
+        "7302"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 32,
+      "order2_position": 6
+    },
+    {
+      "blind_id": "P0033",
+      "original_id": "sample_6a13ca0451b2cd9ff13f60eaa1490bf61c3c14d4b23e929a7ef5873369b23d53",
+      "family_id": "family_95792d2c06a023b15bf2b50374ef70a5330d4792dc8d89ac2273f8be9196a6d4",
+      "source_line": 827,
+      "original_source_ids": [
+        "2340"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 33,
+      "order2_position": 84
+    },
+    {
+      "blind_id": "P0034",
+      "original_id": "sample_10bc93fca90427652f762523ead87605382c05718c3a0e82c0d6329a4ef593f5",
+      "family_id": "family_d5ad7411c636ccc9bad7c788a2449c6f840f2fc558b4ea2001581d7b2b6a0ce8",
+      "source_line": 129,
+      "original_source_ids": [
+        "7007"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 34,
+      "order2_position": 22
+    },
+    {
+      "blind_id": "P0035",
+      "original_id": "sample_5bbf0ddfcf4a5a062bf7bb924cd1557c4dc07fd6022afad3c8d0fc4a649ece4c",
+      "family_id": "family_299bb36df9bcf9214b3ea7556afd3e14b01c78c04f214b78990c7cfed7443a2d",
+      "source_line": 702,
+      "original_source_ids": [
+        "7131"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 35,
+      "order2_position": 71
+    },
+    {
+      "blind_id": "P0036",
+      "original_id": "sample_a5f4b9bab99c84380f68ad644e305978f30714ea60941fb6ceb66654b2f03703",
+      "family_id": "family_980f524c621a419485a736f56d4c08f8ff35e4d6186f0a5e001ffa0142ee8e7d",
+      "source_line": 1383,
+      "original_source_ids": [
+        "8464"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 36,
+      "order2_position": 104
+    },
+    {
+      "blind_id": "P0037",
+      "original_id": "sample_64845ca3e5b9c703dd64d745b197e6b590792db28fc6f018a54480df3cefc45a",
+      "family_id": "family_4577a96e917ad75b2b9431bdc6d636f6d63281f9df6a62939affb3c46437c2e9",
+      "source_line": 786,
+      "original_source_ids": [
+        "10544"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 37,
+      "order2_position": 21
+    },
+    {
+      "blind_id": "P0038",
+      "original_id": "sample_1c7253d110e0659579d722d1a1e421107538872653f52a966daa54360d93b2f4",
+      "family_id": "family_3ef6241e80cf0136fc09d72d207e61182c9577ee40071c6c46ec8c7b304a069e",
+      "source_line": 227,
+      "original_source_ids": [
+        "432"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 38,
+      "order2_position": 76
+    },
+    {
+      "blind_id": "P0039",
+      "original_id": "sample_7607c273969533bbb1bf766b9d0d741781c5ae36dbc1cb73fd048cf9ff3adeb0",
+      "family_id": "family_4dc5b5906814a5752622a479d1036d2c7f2b15a33b447ad3b5b78c0f8fe23ec5",
+      "source_line": 958,
+      "original_source_ids": [
+        "7869"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 39,
+      "order2_position": 58
+    },
+    {
+      "blind_id": "P0040",
+      "original_id": "sample_f80be4da63dcabef427aaf5331b275d5ae738a46fc3159ad0781ac8929017281",
+      "family_id": "family_bf4e6e9019003602f3a036837b48f87d30976caa52fa9cc39e254f8183983426",
+      "source_line": 2034,
+      "original_source_ids": [
+        "8754"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 40,
+      "order2_position": 5
+    },
+    {
+      "blind_id": "P0041",
+      "original_id": "sample_67250daab332ac7ba5ccb50ffdfa4ca876c816ba3f53f1f8c3c5ad601d032b88",
+      "family_id": "family_01833b4ee59e373b04c362fc00e7ef0f4c4ce0804d9d79be507c1a3fbc805460",
+      "source_line": 803,
+      "original_source_ids": [
+        "8806"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 41,
+      "order2_position": 120
+    },
+    {
+      "blind_id": "P0042",
+      "original_id": "sample_9908a3314a8f726026f24f30ec71cf08ec1c9bb3bbc16f4085224467f4961966",
+      "family_id": "family_48ac21e34a84b180d5916044ced2f9b5ddf41350d3c54cdbb0be9a6e113c3e55",
+      "source_line": 1263,
+      "original_source_ids": [
+        "4238"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 42,
+      "order2_position": 31
+    },
+    {
+      "blind_id": "P0043",
+      "original_id": "sample_ece11738fb1411602032d39de49d5312217086e6f0b4a5d5fdd0be6fe1c05c5f",
+      "family_id": "family_82711a9c3dd8c35286d2cf409ef5ab90c0f076be6c66445d2df44bfe1d22ddf2",
+      "source_line": 1951,
+      "original_source_ids": [
+        "6956"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 43,
+      "order2_position": 36
+    },
+    {
+      "blind_id": "P0044",
+      "original_id": "sample_cc3518a0eaa701a54d4aa125beacd28fe29e2f5718103079938f87c1c483c15a",
+      "family_id": "family_9dce335c0b44780b21ecc9914740c69a88a1ef2be584df281794d4fd147b3914",
+      "source_line": 1675,
+      "original_source_ids": [
+        "7841"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 44,
+      "order2_position": 127
+    },
+    {
+      "blind_id": "P0045",
+      "original_id": "sample_037ced37c04744e1f412edb84b5df19be4da447fc155956a1cfe71f1235893ff",
+      "family_id": "family_ee32861d9d5d442f296e3ad85077276dedae44fec5893cc80f006e533d72a32d",
+      "source_line": 26,
+      "original_source_ids": [
+        "10610"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 45,
+      "order2_position": 4
+    },
+    {
+      "blind_id": "P0046",
+      "original_id": "sample_79b02781132f89e69e170ad9a405008b8ab0ca6a3e1cf3023a6c19bf68843cd5",
+      "family_id": "family_36d8cb1eaec63dbb477684968f04ca88fc4a964b9173de8b83d159a6d0c3b85c",
+      "source_line": 988,
+      "original_source_ids": [
+        "4153"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 46,
+      "order2_position": 103
+    },
+    {
+      "blind_id": "P0047",
+      "original_id": "sample_9eb8341803df54a6ade6419672d90ae9505e8d1d7395784c638dbb68c69594d0",
+      "family_id": "family_42226560ecd20bbc789733eca266f13713a60db29a472d7e544ad36f2bdc4888",
+      "source_line": 1316,
+      "original_source_ids": [
+        "2306"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 47,
+      "order2_position": 37
+    },
+    {
+      "blind_id": "P0048",
+      "original_id": "sample_3c3e0404ca010051481a55933bd28fd7d0172ecef4f95077c2f28b8221bdcc7b",
+      "family_id": "family_f2cf98bb9fd0e657d93b2fb640dede866c9d7316fdd5d65a61be9e77e89e1fa2",
+      "source_line": 488,
+      "original_source_ids": [
+        "9573"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 48,
+      "order2_position": 107
+    },
+    {
+      "blind_id": "P0049",
+      "original_id": "sample_ed0cb8705713b05e2d63f380bc3e392b7091ec8b8b7f49767e98f603942c9bf1",
+      "family_id": "family_2f7ad8fcbc8bf9fd9ca99cee391a27c0cd87298544bf2d68dd2e6a88edf1976f",
+      "source_line": 1953,
+      "original_source_ids": [
+        "2240"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 49,
+      "order2_position": 121
+    },
+    {
+      "blind_id": "P0050",
+      "original_id": "sample_9bfe62ae36719230b3edc4c90d3012ab477bd4ccebdcff8170948e3b8b4230a6",
+      "family_id": "family_5590acc3a58291ae8f0c66e8f1960b2f2d0939126f108c987516e1903902cedd",
+      "source_line": 1286,
+      "original_source_ids": [
+        "9307"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 50,
+      "order2_position": 97
+    },
+    {
+      "blind_id": "P0051",
+      "original_id": "sample_811aa710f6c0d3acb6e7bdc90785e65bda20b802589f0b17cc7963670f3ea76e",
+      "family_id": "family_f31ad242ecc706b652eeb20fe69029026b7bddae54d1afe14e9cd238157d955e",
+      "source_line": 1043,
+      "original_source_ids": [
+        "6504"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 51,
+      "order2_position": 72
+    },
+    {
+      "blind_id": "P0052",
+      "original_id": "sample_8ec8a40373fa6894eb2028bee5897e5c2203bc6529d840c0df2caf902e20009c",
+      "family_id": "family_af532c644521cb7848e098165d2d56acfeee7b4b35291222256e429c10c70a67",
+      "source_line": 1177,
+      "original_source_ids": [
+        "3122"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 52,
+      "order2_position": 81
+    },
+    {
+      "blind_id": "P0053",
+      "original_id": "sample_c64dcb2cec6ae1e7cdf8f6c7fb50b1145aa69440bd7f688a21e096ab50d31dbe",
+      "family_id": "family_b43d1034b7a71781a2f013b11e763a4645605b9f34fcd530ef30fa2a10522d81",
+      "source_line": 1636,
+      "original_source_ids": [
+        "10562"
+      ],
+      "family_size_in_test": 3,
+      "order1_position": 53,
+      "order2_position": 128
+    },
+    {
+      "blind_id": "P0054",
+      "original_id": "sample_02760bd9b8c75719b68c6c9dfd43dcd1195919a12d698918a1a6ccc257292154",
+      "family_id": "family_50cf9fa3c4d30cf2ce008a41eda8126452719ba1a66eafc44ef94ba79f616fd6",
+      "source_line": 21,
+      "original_source_ids": [
+        "1325"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 54,
+      "order2_position": 23
+    },
+    {
+      "blind_id": "P0055",
+      "original_id": "sample_50b365b11357e4c62cb8f2e659001f89f371c07199e00a79d40509b95e150405",
+      "family_id": "family_820d332a4959009fdceb6ac84807f7c64c6a1379b1905346092295f2c5db4c4a",
+      "source_line": 629,
+      "original_source_ids": [
+        "614"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 55,
+      "order2_position": 117
+    },
+    {
+      "blind_id": "P0056",
+      "original_id": "sample_9ad37e51bd0ebb99fadb46290a4865a9b85254f9cb148f9e7ffb82cad831ec82",
+      "family_id": "family_2767860fe6963dc2970b3f42ead9a241c2e8b5f02c197267ebec714d63dd8cee",
+      "source_line": 1276,
+      "original_source_ids": [
+        "3584"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 56,
+      "order2_position": 66
+    },
+    {
+      "blind_id": "P0057",
+      "original_id": "sample_d498085dcc86351ef906ad7b378c42881eefee6d1d9b9281e106d10260681436",
+      "family_id": "family_39a9a75922babc836d62b338471c94462f9b1159274c662cb6d6715589b0e403",
+      "source_line": 1746,
+      "original_source_ids": [
+        "9734"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 57,
+      "order2_position": 30
+    },
+    {
+      "blind_id": "P0058",
+      "original_id": "sample_e4a2408d4ab916e5e99b6399e5f1050e43e418907f692b9c59d46c1a46723b55",
+      "family_id": "family_c328506a3e2fc8e078147ef0215c0b96ef60ce288f5c9bd49253ea6770d0f2c4",
+      "source_line": 1887,
+      "original_source_ids": [
+        "8694"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 58,
+      "order2_position": 18
+    },
+    {
+      "blind_id": "P0059",
+      "original_id": "sample_0975da102e9bae2fba1368c49f4ef985864ff313db4c94ced4a751f728b52f46",
+      "family_id": "family_1b74f08b8d9ec21eb6b21f67e9f665fe7dfd4c232561c7839b86b06d247ce166",
+      "source_line": 66,
+      "original_source_ids": [
+        "8322"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 59,
+      "order2_position": 60
+    },
+    {
+      "blind_id": "P0060",
+      "original_id": "sample_8690e8509f14d1e6acebde189c7090ef5eb77f459f89510cc0adc20527a2fadf",
+      "family_id": "family_4554f725b47bd96b2e613967b51b9df8d2d0ccfbbd35bb7aa89683339591b6ca",
+      "source_line": 1101,
+      "original_source_ids": [
+        "2622"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 60,
+      "order2_position": 87
+    },
+    {
+      "blind_id": "P0061",
+      "original_id": "sample_e665b8ad5e0417b60052644382dcd7e6c0440e7cbaea07b12411739a03f6b1c7",
+      "family_id": "family_93febd56396540263b5bb3d0e175b6da7b8e743c1c876a4d66ef9dd8c5dc143d",
+      "source_line": 1903,
+      "original_source_ids": [
+        "8917"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 61,
+      "order2_position": 65
+    },
+    {
+      "blind_id": "P0062",
+      "original_id": "sample_aa28df34841d0012b559dcf9787e1e0010b1956457c798184ffe96b7429af0f1",
+      "family_id": "family_46fde5023940983ff30beaa8e414f841e4537efc804654414360e0b2fe99165e",
+      "source_line": 1414,
+      "original_source_ids": [
+        "10548"
+      ],
+      "family_size_in_test": 3,
+      "order1_position": 62,
+      "order2_position": 20
+    },
+    {
+      "blind_id": "P0063",
+      "original_id": "sample_470993cb9aa983ba8c4d22c5c520ce7199d1216898c0e6e39a88e08017b023af",
+      "family_id": "family_a164408dcc92ea0567039aad62a795cef01c0ad7e676fd7df1953d1b9d24ef0a",
+      "source_line": 562,
+      "original_source_ids": [
+        "2811"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 63,
+      "order2_position": 2
+    },
+    {
+      "blind_id": "P0064",
+      "original_id": "sample_6a4638f607fff1c71c9e1953e35ad99797368b55bd520532cc14a8974013261c",
+      "family_id": "family_01092b68a3270bec71db9d2a504c5a4fc96a8fb82be68426c7cf8004f76d2de9",
+      "source_line": 830,
+      "original_source_ids": [
+        "1389"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 64,
+      "order2_position": 119
+    },
+    {
+      "blind_id": "P0065",
+      "original_id": "sample_f96e47a2d6388c9e8fb4fcdd139db2d4a3ae9e3ec24bb92d2c469e2fd6013fd1",
+      "family_id": "family_8ac3e2f5194acd970b8b14e8a6fa3874cf0ade6d6b6b5a0897ffcb334b663f97",
+      "source_line": 2050,
+      "original_source_ids": [
+        "1842"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 65,
+      "order2_position": 27
+    },
+    {
+      "blind_id": "P0066",
+      "original_id": "sample_6beefe860a578c10b20d5b66d2ae4ddf8ce5c9a37b2ea3612d29c36127bd27f7",
+      "family_id": "family_28e5a36202d2f2231ab373859797e629bfe73bc56f82e92d4cbc4def90ebf6e2",
+      "source_line": 849,
+      "original_source_ids": [
+        "7552"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 66,
+      "order2_position": 38
+    },
+    {
+      "blind_id": "P0067",
+      "original_id": "sample_49728bae78449618134f8ccb58c93d0132451fb7dd93e12d1841c1cf00a59207",
+      "family_id": "family_40548649618aa11b2a150d35b26971a652fedbe43bd92dde1a81588df82ec5a0",
+      "source_line": 580,
+      "original_source_ids": [
+        "7876"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 67,
+      "order2_position": 99
+    },
+    {
+      "blind_id": "P0068",
+      "original_id": "sample_c7aece2b027ffbd3bca3aa2a40b9dd7c664e3624574158a0151115c405096213",
+      "family_id": "family_ceccf3cd4d2af8ef827604572c687399dfcb0375486e93444e85b68152f2c681",
+      "source_line": 1647,
+      "original_source_ids": [
+        "7221"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 68,
+      "order2_position": 50
+    },
+    {
+      "blind_id": "P0069",
+      "original_id": "sample_8129fbba85d6b4c53685744ecf2e5e54d610aec1d3a229d21c47635990181de2",
+      "family_id": "family_cd84bc4ae70772d8da1642c3a28717f5fb3858193627cb06b6a1b03b201f8ecf",
+      "source_line": 1044,
+      "original_source_ids": [
+        "5962"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 69,
+      "order2_position": 25
+    },
+    {
+      "blind_id": "P0070",
+      "original_id": "sample_3111a25638922d87d2dcffa490a9e7eb2cb477984315240cbc0a0f71559c16a5",
+      "family_id": "family_6c24586580d3e07ad5d3709a4d8ae960740af6137a1fbf09462c70f1fbb026ee",
+      "source_line": 401,
+      "original_source_ids": [
+        "1313"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 70,
+      "order2_position": 109
+    },
+    {
+      "blind_id": "P0071",
+      "original_id": "sample_75d69a190144f1ce1eb10bd60b3ba3402d56aed7adbb4f4960a49a19e54e863d",
+      "family_id": "family_6392d4f12b7f197d87f9a6bd3b0ca5850060944afc9a6fc782816e67826ec1b5",
+      "source_line": 957,
+      "original_source_ids": [
+        "36"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 71,
+      "order2_position": 53
+    },
+    {
+      "blind_id": "P0072",
+      "original_id": "sample_d7fb8bc5739767dc75abe8014c0f1f0ad65af50473c2a1d3c0020c2f1a7b3a28",
+      "family_id": "family_cde9a461068419cc52a90a9e9f6a7abc98ccf2d90c1464c806535d7f71861498",
+      "source_line": 1775,
+      "original_source_ids": [
+        "8497"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 72,
+      "order2_position": 85
+    },
+    {
+      "blind_id": "P0073",
+      "original_id": "sample_f992197eb3815b1d9408d49de9ab68125a6ad3cdfd8f9c06f3e3cb35d68f86e6",
+      "family_id": "family_8c592286b7da61541b69a5fd45cf79ea45b00eb9280947585aa9ab4a3f95a6aa",
+      "source_line": 2053,
+      "original_source_ids": [
+        "7920"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 73,
+      "order2_position": 100
+    },
+    {
+      "blind_id": "P0074",
+      "original_id": "sample_c1315c4b9de4451a9cd3a5ab0b2b1471018370a3425e34e94e45cab8209d7fb7",
+      "family_id": "family_53d628afc58225381c33d173ce9857b544590e214cd9f526c6d7bc478f4aa1eb",
+      "source_line": 1589,
+      "original_source_ids": [
+        "2223"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 74,
+      "order2_position": 28
+    },
+    {
+      "blind_id": "P0075",
+      "original_id": "sample_36521e958c7ea2eaab159f1398ac600d0262d4028ecfb351712f914a40f0456b",
+      "family_id": "family_80caec06d80d74f3021c5e2f3f4ebdb2de3d721a06b711219fbb2a2868ea6f35",
+      "source_line": 439,
+      "original_source_ids": [
+        "9534"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 75,
+      "order2_position": 94
+    },
+    {
+      "blind_id": "P0076",
+      "original_id": "sample_9c25542a5dcef78b5cb5eb96df7a5fee9316ab40564dd81c76e750060ff66f1c",
+      "family_id": "family_80b8c905e862124aaa624b332d40aa3b4410e72e1a6f71e491223540213f693b",
+      "source_line": 1290,
+      "original_source_ids": [
+        "6147"
+      ],
+      "family_size_in_test": 3,
+      "order1_position": 76,
+      "order2_position": 7
+    },
+    {
+      "blind_id": "P0077",
+      "original_id": "sample_0dd63f53fa9c2fbd69d7736181fabca18971240893e821be04dfdb820933dffc",
+      "family_id": "family_fdce903ed73e658d34f86f1f20f315fbe7c15e0f2a4ea8e21b771db7dc3c197c",
+      "source_line": 99,
+      "original_source_ids": [
+        "10202"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 77,
+      "order2_position": 19
+    },
+    {
+      "blind_id": "P0078",
+      "original_id": "sample_5e1b3bb06d8603fb2eaf2badb377893e1f48997bcfc2a8710288e90644f483ee",
+      "family_id": "family_29276127709224acd5d95fb13da1078846e006bd862216b75efd6cb04f715b74",
+      "source_line": 724,
+      "original_source_ids": [
+        "7070"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 78,
+      "order2_position": 9
+    },
+    {
+      "blind_id": "P0079",
+      "original_id": "sample_4f1954a75340966abae80921f051d1a12d9fb467871649b59b2a50ccda8ddc71",
+      "family_id": "family_9730a760e16a3f1b1e4115c81fba5bfca7c7df66806253767fb531f5e5b993fa",
+      "source_line": 616,
+      "original_source_ids": [
+        "9937"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 79,
+      "order2_position": 8
+    },
+    {
+      "blind_id": "P0080",
+      "original_id": "sample_e546a9cba96c36c866c3e68fd1a8475d1eb53bfe773995d30e0e13b2548b8aea",
+      "family_id": "family_b571c90456d471993c9778edf9108d6c55a677c8acf4b4e2c57eafe2fd1dd81b",
+      "source_line": 1894,
+      "original_source_ids": [
+        "1355"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 80,
+      "order2_position": 83
+    },
+    {
+      "blind_id": "P0081",
+      "original_id": "sample_3b07ebcb9abc0a5462a5b28b37fcbb5b3b850eedff25bd9dd0de6f26fbd6983f",
+      "family_id": "family_d358050bf30e1f5dc12c3a0c7b86bef35e9b7405c65bedf492f192406355152e",
+      "source_line": 477,
+      "original_source_ids": [
+        "5945"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 81,
+      "order2_position": 33
+    },
+    {
+      "blind_id": "P0082",
+      "original_id": "sample_54a23274e7cb92d344234da601c90d25832a948aa7796a6d974a8ccd9fc310b5",
+      "family_id": "family_27592b1206f33897d678be6c44ad4f41ff3009bd849ee79173c1dcb685307fce",
+      "source_line": 660,
+      "original_source_ids": [
+        "5359"
+      ],
+      "family_size_in_test": 4,
+      "order1_position": 82,
+      "order2_position": 73
+    },
+    {
+      "blind_id": "P0083",
+      "original_id": "sample_1cfef43cdd02c7449a214a43263de364a38280d0b5414eb8678f61e80b6feae0",
+      "family_id": "family_67ee65cd9900107ec5da47acd4d06a602cb220c3c68c2bea4018915f5c6e3b6e",
+      "source_line": 233,
+      "original_source_ids": [
+        "7242"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 83,
+      "order2_position": 74
+    },
+    {
+      "blind_id": "P0084",
+      "original_id": "sample_6f780cef17c479c50487664378bcfb9bffb230daa123b1c8aa1f761215ed426e",
+      "family_id": "family_7f9da671a3ff51b2fac65ecdc00d4686004a7dba7f7140759c9e5de68d630650",
+      "source_line": 883,
+      "original_source_ids": [
+        "374"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 84,
+      "order2_position": 48
+    },
+    {
+      "blind_id": "P0085",
+      "original_id": "sample_79b32d1f0970f743190924955d4c9ffe69efa739c0f28b8d0e016dc9e21f4780",
+      "family_id": "family_84c27d25dc0278ceafa57758e57d1c11904e15fed2c4cf6b41f106d94f0cbadd",
+      "source_line": 989,
+      "original_source_ids": [
+        "6926"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 85,
+      "order2_position": 12
+    },
+    {
+      "blind_id": "P0086",
+      "original_id": "sample_a75090f1b63db4d6cec93a6764f27fdb12fe51c536be9c1a7499a3504e7b1f84",
+      "family_id": "family_f57a963c8ae029e2d2c848b489c4ade2c3909fef40b11acdf048a1ec383a409b",
+      "source_line": 1392,
+      "original_source_ids": [
+        "681"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 86,
+      "order2_position": 15
+    },
+    {
+      "blind_id": "P0087",
+      "original_id": "sample_b83ef4bfac9576fff307ceb28b8c6e3a865cca69f0cfb8135b103bd23fe17e6a",
+      "family_id": "family_cd3d830513daf7d8c7c575787e80d8aaaa8def142b3332255ef34feb2900a3e1",
+      "source_line": 1510,
+      "original_source_ids": [
+        "5915"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 87,
+      "order2_position": 113
+    },
+    {
+      "blind_id": "P0088",
+      "original_id": "sample_fbe7b25baecfaf605bbde2f9693489ccbacfe6f21e146e437cf2c50208b87a0c",
+      "family_id": "family_ac8fa25c7a431b49f9b7791c84a4e3eea73c6c530b23bed6667378a1a28cb3de",
+      "source_line": 2072,
+      "original_source_ids": [
+        "397"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 88,
+      "order2_position": 43
+    },
+    {
+      "blind_id": "P0089",
+      "original_id": "sample_4d7d23ba330b19147cf6cd0ae3eae533bac51137437d84f54e6b45f566737205",
+      "family_id": "family_4ee1d726f3a608e265f3c01c0ead4711452067aa2e7b37aa3e66e21d415ef583",
+      "source_line": 605,
+      "original_source_ids": [
+        "7023"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 89,
+      "order2_position": 26
+    },
+    {
+      "blind_id": "P0090",
+      "original_id": "sample_3172643eb08744cbddd01e691dc105dafc6a94c29ac27c1746d1b6c7cb23381b",
+      "family_id": "family_9e823d7f628d563ed8fe0b4b4aa4c48b42f2457780789a980da2abf624ba7cc3",
+      "source_line": 404,
+      "original_source_ids": [
+        "2613"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 90,
+      "order2_position": 116
+    },
+    {
+      "blind_id": "P0091",
+      "original_id": "sample_cbfa3df042e51576ae5a72ad09dda51b66e944ea4b396b506b9efd4752af04e9",
+      "family_id": "family_12917d5a8f9c2f0c550ea2a8026154c60997477d4041b5c6c4087549b518ae0d",
+      "source_line": 1672,
+      "original_source_ids": [
+        "634"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 91,
+      "order2_position": 118
+    },
+    {
+      "blind_id": "P0092",
+      "original_id": "sample_ee000bd109ac9ab4b0f076fbe9f9d0ac354c607296c8e6061e491678546d4845",
+      "family_id": "family_035ee0e4fd2acaadd44baf91a49d49803e73622485c96e0dea032410db235e04",
+      "source_line": 1958,
+      "original_source_ids": [
+        "9491"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 92,
+      "order2_position": 16
+    },
+    {
+      "blind_id": "P0093",
+      "original_id": "sample_bd5669a099d404b62033b1aabe8a512ddae31da467936ff821d5e8b45cb6a049",
+      "family_id": "family_171904ffeb9ac2517a190008f7f0c3c3aaa3adef82fadedb8211dfe4e09c889c",
+      "source_line": 1555,
+      "original_source_ids": [
+        "571"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 93,
+      "order2_position": 55
+    },
+    {
+      "blind_id": "P0094",
+      "original_id": "sample_9e59a6f9844e135b49a1a3227ef6df082570f26864b9f31e79d9a193d2a28fa6",
+      "family_id": "family_85432c306d7cd9c92cd813aff1512fb6530e4b91a15ac757dc2e09826c17410f",
+      "source_line": 1313,
+      "original_source_ids": [
+        "2723"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 94,
+      "order2_position": 70
+    },
+    {
+      "blind_id": "P0095",
+      "original_id": "sample_1104e9825306dd6dec1c9b2f645f99738d5170cc2ed6f92b6673aa3c48cc3eea",
+      "family_id": "family_f7a8ecd05f198b4b9fbc2a377e63d222c1c1d02f1e1e4a828288b3be5fbe9da0",
+      "source_line": 132,
+      "original_source_ids": [
+        "4798"
+      ],
+      "family_size_in_test": 4,
+      "order1_position": 95,
+      "order2_position": 89
+    },
+    {
+      "blind_id": "P0096",
+      "original_id": "sample_53c152ca6ed0ad5f8c05430d90f8aa16e904bcafca528fd055e6b627aefb9b5f",
+      "family_id": "family_4ecb4ea150a1ead206cd38f94f3325ed538b44516fd2274a2f6bc0ab47a75b4f",
+      "source_line": 651,
+      "original_source_ids": [
+        "9474"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 96,
+      "order2_position": 102
+    },
+    {
+      "blind_id": "P0097",
+      "original_id": "sample_4332b0b54aad695b32a6b694f228ba81d560de7fc15edf39056015eb133f8004",
+      "family_id": "family_073ca8f2e3629e6547a9881319caa662e20aceb1a4b8c8cc7c2ef111641e513d",
+      "source_line": 540,
+      "original_source_ids": [
+        "1840"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 97,
+      "order2_position": 124
+    },
+    {
+      "blind_id": "P0098",
+      "original_id": "sample_58e3b28d750242fe5b2bb29d675af144e058dc99422b7a7151349c8913f63499",
+      "family_id": "family_05b38f98c9d2d96abe29648746e3dcec8bf4aa83e59a0baa1880e6bfe55bcb76",
+      "source_line": 683,
+      "original_source_ids": [
+        "2815"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 98,
+      "order2_position": 54
+    },
+    {
+      "blind_id": "P0099",
+      "original_id": "sample_116160810882730b895fc96053d0f2cb05a3c0f4ebf8b6d5c8bbef60232edc74",
+      "family_id": "family_c6d0ba61e8b8288bb99c8b8baa213c2a06f859a2ddd8a1b6b194f184e371eb36",
+      "source_line": 138,
+      "original_source_ids": [
+        "2789"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 99,
+      "order2_position": 63
+    },
+    {
+      "blind_id": "P0100",
+      "original_id": "sample_59ce7b787dd55db2517ce57a2e3a42eebabe8730837ffdafbfbfcb760299552b",
+      "family_id": "family_530d2b65a9d099054e9efc35b201370e57418775fa13eb07d311623cd5a7f3bf",
+      "source_line": 688,
+      "original_source_ids": [
+        "6797"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 100,
+      "order2_position": 14
+    },
+    {
+      "blind_id": "P0101",
+      "original_id": "sample_ceae9782fc145d0ba3c8cee74353c460c56868e6b402214dc172f4fbf9cd5819",
+      "family_id": "family_6af42617f2caac0a4fe097cfd8ab0ee8ef376eae5c2b8066bec814f2e0b4fe4b",
+      "source_line": 1690,
+      "original_source_ids": [
+        "7219"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 101,
+      "order2_position": 47
+    },
+    {
+      "blind_id": "P0102",
+      "original_id": "sample_6405c392bba1ad55c38ba9ff42d0f9779467f121dc4a436e55a31460fc18f3fd",
+      "family_id": "family_6cf3eac44cf4e25bffc0ba0fcba7eee980efe0f62079ad3dced0c0c38f7d44af",
+      "source_line": 782,
+      "original_source_ids": [
+        "9165"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 102,
+      "order2_position": 64
+    },
+    {
+      "blind_id": "P0103",
+      "original_id": "sample_1cd285f21dcebb5248001b8bfab1a5a0c03a54ffe92ff5faf20c9761e62e0d38",
+      "family_id": "family_ea16ac9bb6dfbb3572922163b88ae2a5b7fd7dc005b08f6b686949d504d48ca0",
+      "source_line": 230,
+      "original_source_ids": [
+        "6932"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 103,
+      "order2_position": 79
+    },
+    {
+      "blind_id": "P0104",
+      "original_id": "sample_059a2193497f31a1b21e817bf3a2de60051a8576237df8752c3c17df7d47f178",
+      "family_id": "family_f4cc1890e4c2e3e9e8d02c5e5f942ca8193f69c69f3768b7df6370ce3424cc62",
+      "source_line": 37,
+      "original_source_ids": [
+        "2001"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 104,
+      "order2_position": 67
+    },
+    {
+      "blind_id": "P0105",
+      "original_id": "sample_3aafd0795dad6d2a6cf0a5e968ee238552f69222359f5135a439ac3996a8e500",
+      "family_id": "family_458928745bcd6305a14b5c0d1b3e2982e8553755ddc8232745d05d618effc7a2",
+      "source_line": 470,
+      "original_source_ids": [
+        "5625"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 105,
+      "order2_position": 98
+    },
+    {
+      "blind_id": "P0106",
+      "original_id": "sample_4afdfd7b6eed11bb09fdccf6dd710b17c1f8c8ecb6f04f1d3d5a272ef55d4355",
+      "family_id": "family_e993f6e2005b8e1f93395af96d4fd6a2a831cbb845faadd6623614098e4cad28",
+      "source_line": 592,
+      "original_source_ids": [
+        "6275"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 106,
+      "order2_position": 13
+    },
+    {
+      "blind_id": "P0107",
+      "original_id": "sample_d2ce7eb60b70450709f4e20365d5eba9d263d25bb15cf5d645332d9d2afb7d37",
+      "family_id": "family_bc9f3369617dfff69738154a10ab5e49881cff31cf50ad596369ecada3270d6a",
+      "source_line": 1732,
+      "original_source_ids": [
+        "3412"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 107,
+      "order2_position": 59
+    },
+    {
+      "blind_id": "P0108",
+      "original_id": "sample_0c85f0ce22ef4ae2b3df5092e10dc03ccd8b62c137ddd02c27e87c01fcae3edc",
+      "family_id": "family_0ffffaf5ef650916e30182fabe46d72619f9357c065af1c2385d43ffe5e83773",
+      "source_line": 90,
+      "original_source_ids": [
+        "10242"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 108,
+      "order2_position": 88
+    },
+    {
+      "blind_id": "P0109",
+      "original_id": "sample_357d8f72edd85895d8ab17b897ba1caa7a087a33472930aaad41040f44457521",
+      "family_id": "family_db48efaa427558d618a0b3bf95a4c05b4b3e4460b3d1cefe899c45fd45f5b9b4",
+      "source_line": 430,
+      "original_source_ids": [
+        "2009"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 109,
+      "order2_position": 32
+    },
+    {
+      "blind_id": "P0110",
+      "original_id": "sample_2e2b8ad58289eedacc73ba7ae1db3ed1a4c485edce57d9c607ad14fb1f47d56b",
+      "family_id": "family_82a59a8d3343a28aa752de834a24dc5fed6bc0eabcf7c8a908046100deddd07f",
+      "source_line": 372,
+      "original_source_ids": [
+        "6725"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 110,
+      "order2_position": 93
+    },
+    {
+      "blind_id": "P0111",
+      "original_id": "sample_8d0cc1232b3e60f29843f471341607080b8c52ee7f87b1e496272ab52b91f3e1",
+      "family_id": "family_c1904062e15a00534ef965cd2b2a153d9ac67fa1a2a80e45b61d3cccf8d80e85",
+      "source_line": 1169,
+      "original_source_ids": [
+        "736"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 111,
+      "order2_position": 106
+    },
+    {
+      "blind_id": "P0112",
+      "original_id": "sample_4cd0de9fd4514e74b8c503bad1947b3af581cd43e26d8495fd1b6b7dd1f5f7b7",
+      "family_id": "family_7d40731a85c3ab88dde5e0333621e0652d1c29cbaf0fdce60ce5409fb35e1b1d",
+      "source_line": 601,
+      "original_source_ids": [
+        "7176"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 112,
+      "order2_position": 112
+    },
+    {
+      "blind_id": "P0113",
+      "original_id": "sample_8ff172e6cc58a51ce900044d4381b588cb124245927161765f4574713ef90e0e",
+      "family_id": "family_8eb4d0b089275bffc75e5b882c4df50ea2c0b214166e16777967e9553d9ed99a",
+      "source_line": 1193,
+      "original_source_ids": [
+        "6072"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 113,
+      "order2_position": 29
+    },
+    {
+      "blind_id": "P0114",
+      "original_id": "sample_d792941545b452d67d397b71880ccbc9f4e5ea14fe170c7f8cb067d679390020",
+      "family_id": "family_f1aaabcb967ccfbc88df9d27636c52d9bf97596299c91687a5d8c64d00d055eb",
+      "source_line": 1770,
+      "original_source_ids": [
+        "10451"
+      ],
+      "family_size_in_test": 3,
+      "order1_position": 114,
+      "order2_position": 95
+    },
+    {
+      "blind_id": "P0115",
+      "original_id": "sample_3aebeae753f3f1f6b1306eba42583bc95e8d6a46e35cfbac2879e37373d7f22e",
+      "family_id": "family_2a31cbf3a0c317fe640876eae1ce1b741903a3b306142a22cfc26be863e84385",
+      "source_line": 475,
+      "original_source_ids": [
+        "6029"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 115,
+      "order2_position": 10
+    },
+    {
+      "blind_id": "P0116",
+      "original_id": "sample_e3a00fb072a33a621b9b14933c621a9cdca8aed7f8887bf128f8d32b969aa26a",
+      "family_id": "family_02a7f1f024f8479c528dad6190c384c9bdd4626fc7ec8c3b69e910c58c9fae1f",
+      "source_line": 1879,
+      "original_source_ids": [
+        "3862"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 116,
+      "order2_position": 11
+    },
+    {
+      "blind_id": "P0117",
+      "original_id": "sample_dc2bbac07a32eb4d8ce8e01bd920c8b623192cbf56ab26c10dceebc1db5d9828",
+      "family_id": "family_e211d9153b89a7efd6df29551ef57718398ddd0985e1f51b26d95af410301eb2",
+      "source_line": 1808,
+      "original_source_ids": [
+        "5300"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 117,
+      "order2_position": 90
+    },
+    {
+      "blind_id": "P0118",
+      "original_id": "sample_a8db41a975977b0e16e61013b8874b13e92dbb0eb2866b0ffe823d116782462f",
+      "family_id": "family_c3ca4949d220c2ea750232f75fc4cfeb08b0f0989be14678062cd6d58898cbdf",
+      "source_line": 1404,
+      "original_source_ids": [
+        "3924"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 118,
+      "order2_position": 1
+    },
+    {
+      "blind_id": "P0119",
+      "original_id": "sample_8fdd18650a26eca37c091b26cf222b06ff0ebec83fd90177a919ce74fd38feae",
+      "family_id": "family_68ed90ad9fb5d2d17fcbdb3f6bad755dbc69498b81582a186b6c56f59738daea",
+      "source_line": 1191,
+      "original_source_ids": [
+        "1421"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 119,
+      "order2_position": 91
+    },
+    {
+      "blind_id": "P0120",
+      "original_id": "sample_f37a08c9f5b2f41500c176319588f92336131c9de7fc1fa976a81960acc6e48c",
+      "family_id": "family_0228caa646c258103014e9149149d2e7c90c03ecd6868760583d6958e85ea8b4",
+      "source_line": 1995,
+      "original_source_ids": [
+        "6377"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 120,
+      "order2_position": 24
+    },
+    {
+      "blind_id": "P0121",
+      "original_id": "sample_206d67a20fed7505f1947978ce0f56a54c178d113d74c9d0d002faac7aca75a5",
+      "family_id": "family_b57dccc4f807c1fab114ef45db31dce7d4b018cbb76696c552c1dab32fa2ed72",
+      "source_line": 263,
+      "original_source_ids": [
+        "2209"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 121,
+      "order2_position": 80
+    },
+    {
+      "blind_id": "P0122",
+      "original_id": "sample_d176c21620e3151677f0ec68e8e529c97d0158bc13bb94703a9891e3864ea83e",
+      "family_id": "family_097beff65fa05d9fbeccfee391e4716e9e9b09884f2dbae1cb2145ae3441359e",
+      "source_line": 1719,
+      "original_source_ids": [
+        "6124"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 122,
+      "order2_position": 35
+    },
+    {
+      "blind_id": "P0123",
+      "original_id": "sample_7d49e48813927a3b35f8d0dda9caa6188dd0a14f102b691c2a765d59cd2aa3c4",
+      "family_id": "family_18087625165ff3f09087796f282669e6fc9d40a63df300d2bf99187be8b0562b",
+      "source_line": 1014,
+      "original_source_ids": [
+        "7056"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 123,
+      "order2_position": 44
+    },
+    {
+      "blind_id": "P0124",
+      "original_id": "sample_16bb889a62c4838f7d929c7b5a4232ef9407bb98ee3846fec5ab2560959a4e25",
+      "family_id": "family_aa7709ae636fa5f94c08a690d51cff0407825f874b806b44de20dbef5fbae36c",
+      "source_line": 184,
+      "original_source_ids": [
+        "2453"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 124,
+      "order2_position": 39
+    },
+    {
+      "blind_id": "P0125",
+      "original_id": "sample_12d3734b004e2e9bc0036976c0b0df06fbff318457b4902c2535afd531081cc9",
+      "family_id": "family_271541f04201ff16a77a6ec1c1e816e62734404922bb3906e192ace40a85487e",
+      "source_line": 152,
+      "original_source_ids": [
+        "651"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 125,
+      "order2_position": 49
+    },
+    {
+      "blind_id": "P0126",
+      "original_id": "sample_1245265ada139a3c7af265436d3522e0d155deb31decdfd29e217adb587a6b70",
+      "family_id": "family_d7e956fb3f7c90b8432969ed512725fa751893964a76a1bd2a3f0875eb16d8f2",
+      "source_line": 148,
+      "original_source_ids": [
+        "3190"
+      ],
+      "family_size_in_test": 1,
+      "order1_position": 126,
+      "order2_position": 62
+    },
+    {
+      "blind_id": "P0127",
+      "original_id": "sample_7e045d6cc1f00a40a7b77562166cfb882f21c01cde4a1fd8dfdb30c294330f79",
+      "family_id": "family_f77ea42bd033506b63a4adf512d03c35b78a10470bc4eb9e04768f02f6b8d912",
+      "source_line": 1019,
+      "original_source_ids": [
+        "4653"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 127,
+      "order2_position": 75
+    },
+    {
+      "blind_id": "P0128",
+      "original_id": "sample_1c0bf80c0a899fef1498a18c096492a29d0e7c981a21bebdba4a407d6feb1ab0",
+      "family_id": "family_a3923f7e42f8ce28dd342beaa22ba5658cd2bbd46b9dcf7584b6383edfa8ac26",
+      "source_line": 223,
+      "original_source_ids": [
+        "3639"
+      ],
+      "family_size_in_test": 2,
+      "order1_position": 128,
+      "order2_position": 40
+    }
+  ]
+}

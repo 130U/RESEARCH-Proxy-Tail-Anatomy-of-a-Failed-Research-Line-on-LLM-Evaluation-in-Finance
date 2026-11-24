@@ -1,0 +1,1 @@
+{"answer":"-1.9","unit":"million shares","expression":"326.5 - 328.4","low":"-2.0","high":"-1.8","reliable_digits":"1","explanation":"Each weighted average is rounded to 0.1 million, so the decrease of 1.9 million has a rounding uncertainty of 0.1 million."}

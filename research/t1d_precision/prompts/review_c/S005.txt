@@ -1,0 +1,117 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S005",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "action commenced by the california attorney general , we are providing customers with greater transparency into the pricing of this product and other alternatives offered by us for addressing their foreign exchange requirements ."
+      },
+      {
+        "location": "text_1",
+        "text": "although we believe such disclosures will address customer interests for increased transparency , over time such action may result in pressure on our pricing of this product or result in clients electing other foreign exchange execution options , which would have an adverse impact on the revenue from , and profitability of , this product for us ."
+      },
+      {
+        "location": "text_2",
+        "text": "we may be exposed to customer claims , financial loss , reputational damage and regulatory scrutiny as a result of transacting purchases and redemptions relating to the unregistered cash collateral pools underlying our securities lending program at a net asset value of $ 1.00 per unit rather than a lower net asset value based upon market value of the underlying portfolios ."
+      },
+      {
+        "location": "text_3",
+        "text": "a portion of the cash collateral received by customers under our securities lending program is invested in cash collateral pools that we manage ."
+      },
+      {
+        "location": "text_4",
+        "text": "interests in these cash collateral pools are held by unaffiliated customers and by registered and unregistered investment funds that we manage ."
+      },
+      {
+        "location": "text_5",
+        "text": "our cash collateral pools that are money market funds registered under the investment company act of 1940 are required to maintain , and have maintained , a constant net asset value of $ 1.00 per unit ."
+      },
+      {
+        "location": "text_6",
+        "text": "the remainder of our cash collateral pools are collective investment funds that are not required to be registered under the investment company act ."
+      },
+      {
+        "location": "text_7",
+        "text": "these unregistered cash collateral pools seek , but are not required , to maintain , and transact purchases and redemptions at , a constant net asset value of $ 1.00 per unit ."
+      },
+      {
+        "location": "text_8",
+        "text": "our securities lending operations consist of two components ; a direct lending program for third-party investment managers and asset owners , the collateral pools for which we refer to as direct lending collateral pools ; and investment funds with a broad range of investment objectives that are managed by ssga and engage in securities lending , which we refer to as ssga lending funds ."
+      },
+      {
+        "location": "text_9",
+        "text": "the following table shows the aggregate net asset values of the unregistered direct lending collateral pools and the aggregate net asset value of the unregistered collateral pools underlying the ssga lending funds , in each case based on a constant net asset value of $ 1.00 per ( in billions ) december 31 , 2009 december 31 , 2008 december 31 , 2007 ( 1 ) ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "(in billions)",
+          "December 31, 2009",
+          "December 31, 2008",
+          "December 31, 2007<sup>(1)</sup>"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Direct lending collateral pools",
+          "$85",
+          "$85",
+          "$150"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Collateral pools underlying SSgA lending funds",
+          "24",
+          "31",
+          "44"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_10",
+        "text": "( 1 ) certain of the ssga lending funds were participants in the direct lending collateral pools until october 2008 ."
+      },
+      {
+        "location": "text_11",
+        "text": "the direct lending collateral pool balances at december 31 , 2007 related to ssga lending funds have been included within the ssga lending fund balances and excluded from the direct lending collateral pool balances presented above. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percent change in the aggregate net asset values of the collateral pools underlying ssga lending funds between 2008 and 2009?",
+  "human_answer": "-22%",
+  "reference_program": "subtract(31, 24), divide(#0, 24)",
+  "reference_execution_value": 0.29167,
+  "model_response": {
+    "answer": "-22.580645161290322",
+    "unit": "percent",
+    "expression": "(24 - 31) / 31 * 100",
+    "explanation": "The aggregate net asset value decreased from $31 billion in 2008 to $24 billion in 2009."
+  }
+}

@@ -1,0 +1,174 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S025",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "american airlines , inc ."
+      },
+      {
+        "location": "text_1",
+        "text": "notes to consolidated financial statements 2014 ( continued ) temporary , targeted funding relief ( subject to certain terms and conditions ) for single employer and multiemployer pension plans that suffered significant losses in asset value due to the steep market slide in 2008 ."
+      },
+      {
+        "location": "text_2",
+        "text": "under the relief act , the company 2019s 2010 minimum required contribution to its defined benefit pension plans was reduced from $ 525 million to approximately $ 460 million ."
+      },
+      {
+        "location": "text_3",
+        "text": "the following benefit payments , which reflect expected future service as appropriate , are expected to be paid : retiree medical pension and other ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Pension",
+          "Retiree Medical   and Other"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2011",
+          "574",
+          "173"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2012",
+          "602",
+          "170"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2013",
+          "665",
+          "169"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "2014",
+          "729",
+          "170"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "2015",
+          "785",
+          "173"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "2016 — 2020",
+          "4,959",
+          "989"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_4",
+        "text": "during 2008 , amr recorded a settlement charge totaling $ 103 million related to lump sum distributions from the company 2019s defined benefit pension plans to pilots who retired ."
+      },
+      {
+        "location": "text_5",
+        "text": "pursuant to u.s ."
+      },
+      {
+        "location": "text_6",
+        "text": "gaap , the use of settlement accounting is required if , for a given year , the cost of all settlements exceeds , or is expected to exceed , the sum of the service cost and interest cost components of net periodic pension expense for a plan ."
+      },
+      {
+        "location": "text_7",
+        "text": "under settlement accounting , unrecognized plan gains or losses must be recognized immediately in proportion to the percentage reduction of the plan 2019s projected benefit obligation ."
+      },
+      {
+        "location": "text_8",
+        "text": "11 ."
+      },
+      {
+        "location": "text_9",
+        "text": "intangible assets the company has recorded international slot and route authorities of $ 708 million and $ 736 million as of december 31 , 2010 and 2009 , respectively ."
+      },
+      {
+        "location": "text_10",
+        "text": "the company considers these assets indefinite life assets and as a result , they are not amortized but instead are tested for impairment annually or more frequently if events or changes in circumstances indicate that the asset might be impaired ."
+      },
+      {
+        "location": "text_11",
+        "text": "such triggering events may include significant changes to the company 2019s network or capacity , or the implementation of open skies agreements in countries where the company operates flights ."
+      },
+      {
+        "location": "text_12",
+        "text": "in the fourth quarter of 2010 , the company performed its annual impairment testing on international slots and routes , at which time the net carrying value was reassessed for recoverability ."
+      },
+      {
+        "location": "text_13",
+        "text": "it was determined through this annual impairment testing that the fair value of certain international routes in latin america was less than the carrying value ."
+      },
+      {
+        "location": "text_14",
+        "text": "thus , the company incurred an impairment charge of $ 28 million to write down the values of these and certain other slots and routes ."
+      },
+      {
+        "location": "text_15",
+        "text": "as there is minimal market activity for the valuation of routes and international slots and landing rights , the company measures fair value with inputs using the income approach ."
+      },
+      {
+        "location": "text_16",
+        "text": "the income approach uses valuation techniques , such as future cash flows , to convert future amounts to a single present discounted amount ."
+      },
+      {
+        "location": "text_17",
+        "text": "the inputs utilized for these valuations are unobservable and reflect the company 2019s assumptions about market participants and what they would use to value the routes and accordingly are considered level 3 in the fair value hierarchy ."
+      },
+      {
+        "location": "text_18",
+        "text": "the company 2019s unobservable inputs are developed based on the best information available as of december 31 ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the percentage decrease in the minimum contribution to benefit pension plans due to the relied act?",
+  "human_answer": "-14.0%",
+  "reference_program": "subtract(460, 525), divide(#0, 525)",
+  "reference_execution_value": -0.12381,
+  "model_response": {
+    "answer": "12.380952380952381",
+    "unit": "percent",
+    "expression": "(525 - 460) / 525 * 100",
+    "explanation": "The minimum required contribution decreased from $525 million to approximately $460 million."
+  }
+}

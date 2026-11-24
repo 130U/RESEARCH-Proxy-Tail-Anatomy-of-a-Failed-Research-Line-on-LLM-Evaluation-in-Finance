@@ -1,0 +1,1 @@
+{"answer":"22.0238095238","unit":"percent","expression":"(205 - 168) / 168 * 100","low":"21.3649851632","high":"22.6865671642","reliable_digits":"1","explanation":"Rent rose from $168 million to $205 million; rounding each amount to the nearest million gives the stated bounds."}

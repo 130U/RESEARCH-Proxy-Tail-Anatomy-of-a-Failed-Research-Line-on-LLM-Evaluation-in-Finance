@@ -1,0 +1,117 @@
+{
+  "format": "130u-entity-pilot-v1",
+  "scope": "literal single-identifier entity; not a verified security",
+  "private_research_only": true,
+  "source_url": "https://github.com/pyRis/SEntFiN/tree/eba43610fe3cb57a3e5773cd6c037da1f8992ad5",
+  "rights_note": "SEntFiN author repository publishes the dataset under MIT; source publication headlines may have third-party rights not independently verified. Private research pilot.",
+  "source_review_sha256": "c5f2859dd8bb307638559ef6d588d602200dc4c82ac03d28ac82b6a61568f528",
+  "source_review_manifest_sha256": "53941f843ff4c78df4779537f6a2ad0c56da0ffdb8203b26427f2bb0296bf129",
+  "seed_exclusions_sha256": "4716d7f7f8c2df18aec9e4c1d82adf6ff8604fe42ddfa4d8eb9a678be94ce596",
+  "expansion_exclusions_sha256": "5cbf8d5c3e524823a9a495de39550bb358f2ef1e0064d34c285dfdb4a48252d0",
+  "source_rows": 2000,
+  "candidate_rows": 1008,
+  "candidate_labels": {
+    "neutral": 697,
+    "bearish": 107,
+    "bullish": 204
+  },
+  "skipped": {
+    "target_not_single_identifier": 864,
+    "unreviewed_or_excluded": 121,
+    "target_not_literal_boundary": 7
+  },
+  "split": {
+    "mode": "formal",
+    "source_sha256": "b303a9bb0c4bd8e828dde3c68df66e1a0934b0155bc0ac7018da1b10c4d8926f",
+    "split_method": "grouped_non_temporal",
+    "counts": {
+      "train": 705,
+      "development": 101,
+      "calibration": 101,
+      "test": 101
+    },
+    "groups": 1008,
+    "near_duplicate_method": "normalized-exact + SimHash64 Hamming<=3",
+    "frozen_eval_sha256": "896ce8976edd677b00f1261fa1062cd6b2310b7630afa88e1e61fc0a29a5fa38",
+    "warning": "Check class counts and manually audit event/semantic paraphrases; proportions are group-based"
+  },
+  "class_counts": {
+    "train": {
+      "neutral": 491,
+      "bearish": 74,
+      "bullish": 140
+    },
+    "development": {
+      "neutral": 76,
+      "bullish": 15,
+      "bearish": 10
+    },
+    "calibration": {
+      "neutral": 71,
+      "bullish": 21,
+      "bearish": 9
+    },
+    "test": {
+      "bullish": 28,
+      "bearish": 14,
+      "neutral": 59
+    },
+    "calibration_temperature": {
+      "neutral": 34,
+      "bearish": 5,
+      "bullish": 12
+    },
+    "calibration_threshold": {
+      "neutral": 37,
+      "bullish": 9,
+      "bearish": 4
+    }
+  },
+  "user_verified_asset_count": 0,
+  "semantic_event_audit_complete": false,
+  "test_interpretation": "non-temporal, lexical/source-group-isolated development pilot only; not final independent or X evaluation",
+  "cautions": [
+    "Original author MIT license does not independently guarantee publisher rights.",
+    "Target identity is literal text, not a verified or tradable security.",
+    "Semantic event paraphrases and historical time are not verified.",
+    "Production inference does not currently support identical bare entity aliases."
+  ],
+  "files": {
+    "calibration.jsonl": {
+      "sha256": "a2b25cb82fd1f67a229c5da88c180e519e8bf107b60cae4550ea4dd8091f10ad",
+      "bytes": 69882
+    },
+    "calibration_temperature.jsonl": {
+      "sha256": "e2c505313dd341f4a2294731b53eb3bd8c7449d05fc60ad56b629a8f04129357",
+      "bytes": 35248
+    },
+    "calibration_threshold.jsonl": {
+      "sha256": "0aa89f4901c914836487f957616e8885283d2b36f7247131d470e93943d9eb3e",
+      "bytes": 34634
+    },
+    "development.jsonl": {
+      "sha256": "3e06024172c04b36ec13932b27e90b7ecb3d4f8e72df68497b09c14801d34e6b",
+      "bytes": 69978
+    },
+    "frozen_eval.jsonl": {
+      "sha256": "896ce8976edd677b00f1261fa1062cd6b2310b7630afa88e1e61fc0a29a5fa38",
+      "bytes": 208631
+    },
+    "reviewed_entity_candidates.jsonl": {
+      "sha256": "b303a9bb0c4bd8e828dde3c68df66e1a0934b0155bc0ac7018da1b10c4d8926f",
+      "bytes": 657753
+    },
+    "split_manifest.json": {
+      "sha256": "68e314bd746b6378a1486b84d144a8223445f32409ab73fc946fea4ee72bfe6b",
+      "bytes": 558
+    },
+    "test.jsonl": {
+      "sha256": "6d366f0fb36a2371fd8d04a291a5acbf1d4e24a21aea7bc782a75470751c5647",
+      "bytes": 68771
+    },
+    "train.jsonl": {
+      "sha256": "2dbbfb2ebe47a5ab13dc302632b9afe578c76d93920e9976082d193f8f876a70",
+      "bytes": 482398
+    }
+  }
+}

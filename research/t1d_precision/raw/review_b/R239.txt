@@ -1,0 +1,5 @@
+{
+    "review_id": "R239",
+    "verdict": "invalid",
+    "reason": "The rounded foreign exchange loss amounts correctly refer to 2007 and 2006, but the calculation returns fractional growth without multiplying by 100 for percentage change."
+  }

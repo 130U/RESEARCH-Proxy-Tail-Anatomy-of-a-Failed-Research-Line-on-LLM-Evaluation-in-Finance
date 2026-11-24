@@ -1,0 +1,186 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S012",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "2007 duke realty corporation annual report54 recognition and account for the continued operations of the property by applying the finance , installment or cost recovery methods , as appropriate , until the full accrual sales criteria are met ."
+      },
+      {
+        "location": "text_1",
+        "text": "estimated future costs to be incurred after completion of each sale are included in the determination of the gain on sales ."
+      },
+      {
+        "location": "text_2",
+        "text": "gains from sales of depreciated property are included in discontinued operations and the proceeds from the sale of these held-for-rental properties are classified in the investing activities section of the consolidated statements of cash flows ."
+      },
+      {
+        "location": "text_3",
+        "text": "gains or losses from our sale of properties that were developed or repositioned with the intent to sell and not for long-term rental are classified as gain on sale of service operation properties in the consolidated statements of operations ."
+      },
+      {
+        "location": "text_4",
+        "text": "all activities and proceeds received from the development and sale of these buildings are classified in the operating activities section of the consolidated statements of cash flows ."
+      },
+      {
+        "location": "text_5",
+        "text": "net income per common share basic net income per common share is computed by dividing net income available for common shareholders by the weighted average number of common shares outstanding for the period ."
+      },
+      {
+        "location": "text_6",
+        "text": "diluted net income per common share is computed by dividing the sum of net income available for common shareholders and the minority interest in earnings allocable to units not owned by us , by the sum of the weighted average number of common shares outstanding and minority units outstanding , including any dilutive potential common equivalents for the period ."
+      },
+      {
+        "location": "text_7",
+        "text": "the following table reconciles the components of basic and diluted net income per common share ( in thousands ) : ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2007",
+          "2006",
+          "2005"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Basic net income available for common shareholders",
+          "$217,692",
+          "$145,095",
+          "$309,183"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Minority interest in earnings of common unitholders",
+          "14,399",
+          "14,238",
+          "29,649"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Diluted net income available for common shareholders",
+          "$232,091",
+          "$159,333",
+          "$338,832"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Weighted average number of common shares outstanding",
+          "139,255",
+          "134,883",
+          "141,508"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Weighted average partnership Units outstanding",
+          "9,204",
+          "13,186",
+          "13,551"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Dilutive shares for stock-based compensation plans (1)",
+          "1,155",
+          "1,324",
+          "818"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Weighted average number of common shares and potential dilutive common equivalents",
+          "149,614",
+          "149,393",
+          "155,877"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_8",
+        "text": "weighted average number of common shares and potential dilutive common equivalents 149614 149393 155877 ( 1 ) excludes the effect of outstanding stock options , as well as the exchangeable senior notes ( 201cexchangeable notes 201d ) issued in 2006 , that have an anti-dilutive effect on earnings per share for the periods presented ."
+      },
+      {
+        "location": "text_9",
+        "text": "a joint venture partner in one of our unconsolidated companies has the option to convert a portion of its ownership in the joint venture to our common shares ."
+      },
+      {
+        "location": "text_10",
+        "text": "the effect of this option on earnings per share was anti-dilutive for the years ended december 31 , 2007 , 2006 and 2005 ."
+      },
+      {
+        "location": "text_11",
+        "text": "federal income taxes we have elected to be taxed as a real estate investment trust ( 201creit 201d ) under the internal revenue code ."
+      },
+      {
+        "location": "text_12",
+        "text": "to qualify as a reit , we must meet a number of organizational and operational requirements , including a requirement to distribute at least 90% ( 90 % ) of our adjusted taxable income to our stockholders ."
+      },
+      {
+        "location": "text_13",
+        "text": "management intends to continue to adhere to these requirements and to maintain our reit status ."
+      },
+      {
+        "location": "text_14",
+        "text": "as a reit , we are entitled to a tax deduction for some or all of the dividends we pay to shareholders ."
+      },
+      {
+        "location": "text_15",
+        "text": "accordingly , we generally will not be subject to federal income taxes as long as we distribute an amount equal to or in excess of our taxable income currently to shareholders ."
+      },
+      {
+        "location": "text_16",
+        "text": "we are also generally subject to federal income taxes on any taxable income that is not currently distributed to its shareholders ."
+      },
+      {
+        "location": "text_17",
+        "text": "if we fail to qualify as a reit in any taxable year , we will be subject to federal income taxes and may not be able to qualify as a reit for four subsequent taxable years. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the percent change in basic net income available for common shareholders from 2006 to 2007?",
+  "human_answer": "50.0%",
+  "reference_program": "subtract(217692, 145095), divide(#0, 145095), subtract(#1, const_100)",
+  "reference_execution_value": -99.49966,
+  "model_response": {
+    "answer": "50.03",
+    "unit": "percent",
+    "expression": "(217692 - 145095) / 145095 * 100",
+    "explanation": "Basic net income available for common shareholders increased by approximately 50.03% from 2006 to 2007."
+  }
+}

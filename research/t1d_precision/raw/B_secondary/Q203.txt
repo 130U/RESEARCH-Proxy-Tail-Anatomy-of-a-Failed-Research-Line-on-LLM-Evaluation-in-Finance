@@ -1,0 +1,1 @@
+{"answer":"17.3230248852","unit":"percent","expression":"(48.56 - 41.39) / 41.39 * 100","low":"17.2967749728","high":"17.3492811405","reliable_digits":"3","explanation":"Allowing each cost to vary by $0.005 gives these bounds, which both round to a 17.3% increase at three significant digits."}

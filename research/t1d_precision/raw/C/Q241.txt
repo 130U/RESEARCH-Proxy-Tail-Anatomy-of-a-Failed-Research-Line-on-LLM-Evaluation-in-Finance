@@ -1,0 +1,1 @@
+{"answer":"-1.694231545","unit":"percent","expression":"(243.7 - 247.9) / 247.9 * 100","low":"-1.734220609","high":"-1.654226347","reliable_digits":"1","explanation":"Total other accrued liabilities decreased; rounding each total by ±0.05 million produces about 2.4% relative uncertainty in the percentage change."}

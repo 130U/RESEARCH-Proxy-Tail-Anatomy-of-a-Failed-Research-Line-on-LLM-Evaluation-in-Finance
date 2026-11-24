@@ -1,0 +1,1 @@
+{"answer":"35.5112","unit":"percent","expression":"(50,856 - 37,529) / 37,529 * 100","low":"35.508067","high":"35.514342","reliable_digits":"4","explanation":"Allowing each cash-flow figure to vary by $0.5 million gives these bounds, which support four significant digits."}

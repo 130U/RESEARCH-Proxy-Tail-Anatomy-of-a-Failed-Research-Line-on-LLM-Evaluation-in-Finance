@@ -1,0 +1,1 @@
+{"answer":"10.3424289373","unit":"percent","expression":"(558368 - 506032) / 506032 * 100","low":"10.3422211024","high":"10.3426367726","reliable_digits":"4","explanation":"Each financing amount is rounded to the nearest million, so allowing ±0.5 million yields these bounds and four reliable significant digits."}

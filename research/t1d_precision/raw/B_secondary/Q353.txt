@@ -1,0 +1,1 @@
+{"answer":"1.63905841325196","unit":"percent","expression":"(5829 - 5735) / 5735 * 100","low":"1.62148025455496","high":"1.65663963728311","reliable_digits":"1","explanation":"Growth equals the revenue increase divided by 2014 revenue; bounds allow each displayed revenue to vary by $0.5 million."}

@@ -1,0 +1,1346 @@
+{
+  "stage": "stage2_n128_sol",
+  "selected_branch": "Sol plus four-ranking Borda aggregation per panel",
+  "source_path": "<workspace>\\130U-FinLLM-certifiable\\research\\private\\real_baseline\\test.jsonl",
+  "excluded_metadata_paths": [
+    "<workspace>\\130U-FinLLM-certifiable\\research\\private\\agent_tail_pilot\\metadata.json",
+    "<workspace>\\130U-FinLLM-certifiable\\research\\private\\agent_tail_methods\\stage1_n32\\metadata.json"
+  ],
+  "instruction_source_path": "<workspace>\\130U-FinLLM-certifiable\\research\\private\\agent_tail_methods\\stage1_n32\\rank_instructions.txt",
+  "instructions_copied_byte_for_byte": true,
+  "sampling": "Uniformly choose 128 different eligible families without replacement from sorted family IDs, then uniformly choose one sorted-ID member per family using a separate fixed stream",
+  "population_samples": 2107,
+  "population_families": 1570,
+  "excluded_prior_family_counts": [
+    128,
+    32
+  ],
+  "excluded_family_count": 160,
+  "eligible_family_count": 1410,
+  "eligible_sample_count": 1892,
+  "selected_samples": 128,
+  "selected_families": 128,
+  "excluded_family_intersection_n": 0,
+  "family_seed": 20261216,
+  "within_family_seed": 20261217,
+  "rank_order_seeds": {
+    "rank_order1.jsonl": 20261218,
+    "rank_order2.jsonl": 20261219,
+    "rank_order3.jsonl": 20261220,
+    "rank_order4.jsonl": 20261221,
+    "rank_order5.jsonl": 20261222,
+    "rank_order6.jsonl": 20261223,
+    "rank_order7.jsonl": 20261224,
+    "rank_order8.jsonl": 20261225
+  },
+  "rank_panels": {
+    "1": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "2": [
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "blind_fields": [
+    "id",
+    "text"
+  ],
+  "text_source": "Unmodified input_text: ENTITY and TITLE fields",
+  "labels_or_predictions_used": false,
+  "family_caveat": "Lexical groups do not establish independent semantic events",
+  "characters": {
+    "unit": "Unicode code points including field markers/newline",
+    "minimum": 52,
+    "maximum": 145,
+    "total": 10784
+  },
+  "mapping": [
+    {
+      "blind_id": "V0001",
+      "original_id": "sample_7654b552bda3b43e187aa57d5c5dd249dacabbdda0a4c1796747101455a41ca0",
+      "family_id": "family_1d55f459a8c9d0a0694de0360ae767f84f2d26db40bd41de16f55c10c6e1a1ba",
+      "source_line": 960,
+      "original_source_ids": [
+        "9088"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0002",
+      "original_id": "sample_885b76411a762f4cf96710ca1047b0edc3a2d675edd8caf2b4ed9620956046a2",
+      "family_id": "family_9d4ea3375c9f2eb6252d33410e6a087dfb038801d1ebea49e1e471000664d4a3",
+      "source_line": 1120,
+      "original_source_ids": [
+        "1835"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0003",
+      "original_id": "sample_6f825fff3fb274e238a8a7fc7c15e17b6ae84ea8052bf2b584a8a33a45ee9882",
+      "family_id": "family_4d8d026b60318de9ae044117125db802fa05f7331a6cbe0f5ef6568eb49961c6",
+      "source_line": 884,
+      "original_source_ids": [
+        "5659"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0004",
+      "original_id": "sample_55da027361af970f8bae27f4153c38448db03dabb584d34870fdb4c400acfdf6",
+      "family_id": "family_cb18f0752885fbf8f9f32a34b30c9f0ac747c6fa8bd168dbed81f544a459ff6c",
+      "source_line": 666,
+      "original_source_ids": [
+        "7803"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0005",
+      "original_id": "sample_8c782f46e28f21dccf9d4d4b276b627a9b9057f098df68dd59283451d067a92b",
+      "family_id": "family_c1fdf73a17b37f493a790f46a588a4656d8b354829b718639e9cb0d95c0e7306",
+      "source_line": 1164,
+      "original_source_ids": [
+        "876"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0006",
+      "original_id": "sample_6046afa84aa19f1e56ce1bea32cd7aa694db22b7e01dc731dba186f49227531d",
+      "family_id": "family_eab6bfd488164c9c490b1d7d4abf3b65033a35e26fc7a865a7d3862c5dbaed22",
+      "source_line": 741,
+      "original_source_ids": [
+        "3819"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0007",
+      "original_id": "sample_4e13de2b3623b99525b246524440961ca112ece744522490c8d4baee4718e093",
+      "family_id": "family_b52db96c5a3f69154cecfdd08f0fd023bdeb3b3db9518f80d79c19877bde5006",
+      "source_line": 607,
+      "original_source_ids": [
+        "7618"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0008",
+      "original_id": "sample_3aeab298373fbc0ab52fe9576389255c0f0d89f6c5d306d6a5e59570f3aa0375",
+      "family_id": "family_ade2d088e60087950fb3cb47d5b75af3e5f7f77bee353734aefad1e7f6df8216",
+      "source_line": 474,
+      "original_source_ids": [
+        "7631"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0009",
+      "original_id": "sample_12f644a3ae2fdf8849c03c3ba22069229f1fd4b1377ebb84a951820097d8d4b4",
+      "family_id": "family_3c68a5e916b23384c9d4a93c1a17c6bb109061e6988c74b790e34cf8a760c62d",
+      "source_line": 153,
+      "original_source_ids": [
+        "1372"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0010",
+      "original_id": "sample_6cef5e00aaf5e3d11c33514225781a5f1604b3ff2f209643d0162613b1cfdbb6",
+      "family_id": "family_e5d0ca27e2ea20b665e4690cb4e17ba17e23f539f4c070eb274501825a97059f",
+      "source_line": 861,
+      "original_source_ids": [
+        "9516"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0011",
+      "original_id": "sample_2d744594ee91f56d5f614bdd2d52f8e5b65af7f4e96ae976f2d43864309a2052",
+      "family_id": "family_6086e8915d00d39436cae546440a56dd5252d80ef38359c14124775e672ec9ff",
+      "source_line": 363,
+      "original_source_ids": [
+        "3805"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0012",
+      "original_id": "sample_aeaf0c20a179b1f6a27bb07349317e60f7f7db9f9b7f08feb64f87d8c3b05d39",
+      "family_id": "family_17ee88325700e8084410517f605e3bd3355c8431ddb7da0be1ab17bb5150cd12",
+      "source_line": 1450,
+      "original_source_ids": [
+        "8546"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0013",
+      "original_id": "sample_33188429bce6b87e112b4caa2ee775aa0c65c9e5e1108fcb21dc8896a2317657",
+      "family_id": "family_e07b03aa5e7c3eeef4273230bd4a8e72e8312d4046302625744064a7745f6f5a",
+      "source_line": 414,
+      "original_source_ids": [
+        "6091"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0014",
+      "original_id": "sample_67a060365593ea31f3fd06bf014381af52642c73af3ff4b8409e199b31fb7628",
+      "family_id": "family_f7e61b8a5cb0735ffe50f7ae072e4b2eef77efceba88f06f36b03b30ae28bbaf",
+      "source_line": 807,
+      "original_source_ids": [
+        "9459"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0015",
+      "original_id": "sample_f5fdcc0cb63e8a2e58e25f21c22f2f7541c1b830144acadc1f98a73733c1bce6",
+      "family_id": "family_11c3612d9a8d839f6e7f591367d9a6b61c96c3ad0ba4dc846aa0f9dc0e252d23",
+      "source_line": 2017,
+      "original_source_ids": [
+        "3167"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0016",
+      "original_id": "sample_514c51b1d17d76ee47aaa2d679f6f835187cc277171bfc3a550123d66d126bb1",
+      "family_id": "family_a8b356f6ac4941c6b856f05624778164e22b263f46974ca1decd21994dd3fddd",
+      "source_line": 631,
+      "original_source_ids": [
+        "10340"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0017",
+      "original_id": "sample_f0387ed4c4291aa23a654efd17f35ca575ac7adfa9239e341eb1655007213dbb",
+      "family_id": "family_b6f06b5a273b78d52ed61d1c0ff84d69f6240c2feb2a62049b0375ceebfa0f9a",
+      "source_line": 1971,
+      "original_source_ids": [
+        "8892"
+      ],
+      "family_size_in_test": 3
+    },
+    {
+      "blind_id": "V0018",
+      "original_id": "sample_b31746f412889843b01b9754984df6f59779798198e9c3285ad62707aa306c36",
+      "family_id": "family_73dae807c606ba52da1676d61a5280a50c4c8ef4a642bdeb79b1e88ca32742d0",
+      "source_line": 1478,
+      "original_source_ids": [
+        "2308"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0019",
+      "original_id": "sample_c485c74f16005eb1b3ffd0237b9d2ed4752847aa27463e0bf01b28af7e555080",
+      "family_id": "family_d4950c44d18a25ae7edb8bf7b718037c8581feccca1176495c2977497ccbe623",
+      "source_line": 1616,
+      "original_source_ids": [
+        "2213"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0020",
+      "original_id": "sample_ef7f1c83d4e2f98bd8e60299264e94eb84445dbaf457af73028adc314cdff88b",
+      "family_id": "family_951513395af549d37429a2d054683b8cddadf68389f64d8620cc73ea97d1af5e",
+      "source_line": 1964,
+      "original_source_ids": [
+        "10061"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0021",
+      "original_id": "sample_2ce99357c513c805c04d985096291d2b1d7dda210a2ce8130ef38978bf5dfa17",
+      "family_id": "family_755c582c721e18ed8e8c12d7287072ce79ef2ed93ef2326e3cdad72d25c9b62f",
+      "source_line": 359,
+      "original_source_ids": [
+        "10611"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0022",
+      "original_id": "sample_e84c104f20d0a0e59a27d0bbf4e86edfc8ee5a9f5eed392b3010ac7b161e04cf",
+      "family_id": "family_097894748171e1dbdbcd6224d1dca71c3a63ba7dbb12622e4748994c9928666b",
+      "source_line": 1919,
+      "original_source_ids": [
+        "2096"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0023",
+      "original_id": "sample_ed2028bf0a4ee7ea04f22d049810f00b8d351dacd56bc66a17c85c5e152be848",
+      "family_id": "family_ee7cdf57c58fdca0cf836bd226e354cef6856095b9f8f2b3b1056b2d9525d63e",
+      "source_line": 1954,
+      "original_source_ids": [
+        "951"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0024",
+      "original_id": "sample_595bfc660dc62b6cd2029f9491abf76a43e7f85c4fd01addb78c41bb76dfcfb0",
+      "family_id": "family_f3c1a6f0f453e4cadb35ae991e38638c265acd1fdd55fa0fc56c860d274b2142",
+      "source_line": 687,
+      "original_source_ids": [
+        "8718"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0025",
+      "original_id": "sample_27b3066c4a204072676d6617cbf7838d8b2eb0bee178c9e54aecaea52bab8071",
+      "family_id": "family_9b1fe095410fc6f5b4bbed2c2ed2bea10ab7c3427a876709268d9ef1e77de4e0",
+      "source_line": 317,
+      "original_source_ids": [
+        "58"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0026",
+      "original_id": "sample_ffc7fab19665f4423953b3240bddbf0c9c8f52d1e3fe3987f3cfd4f4f693d2f6",
+      "family_id": "family_d5bc03418ee9c8f4d4684a982890e6cca4306f3b5d7e2578cd2ad841be8ca976",
+      "source_line": 2105,
+      "original_source_ids": [
+        "8750"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0027",
+      "original_id": "sample_49252111e8627c418d5b7024095a5482451da5f68aa4c8da493f3b2aeea15016",
+      "family_id": "family_9c735bafa0cc160050636624f5912324315f32a3a08979beb1a921ca8921ea62",
+      "source_line": 577,
+      "original_source_ids": [
+        "8199"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0028",
+      "original_id": "sample_b21404ec0492fcd09c371e3da9dd724f0925ed809c06f0f7e7945d1d2a21b73f",
+      "family_id": "family_353d34cb5d2ce231f3c6f58086168bc02fd395576488f28fd5fa17c00db35c9b",
+      "source_line": 1469,
+      "original_source_ids": [
+        "10576"
+      ],
+      "family_size_in_test": 3
+    },
+    {
+      "blind_id": "V0029",
+      "original_id": "sample_a864e2307ff87d4ee10fa9404dce8dad0e6a7dda8427540ddc131bacf81ed7b4",
+      "family_id": "family_e1a16f272b0a85793ffdaba4922bef44948fd3666daba9d93215dae353735398",
+      "source_line": 1399,
+      "original_source_ids": [
+        "5956"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0030",
+      "original_id": "sample_a383522421d827b614f4bcdbf8b768dff2d1f40c469d20ad93a79284bf51386d",
+      "family_id": "family_7e6e235223f2479dbcb015d97cc68f4da1a85505a867aa2352ccb3690db60071",
+      "source_line": 1361,
+      "original_source_ids": [
+        "8433"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0031",
+      "original_id": "sample_7bbaaf8eb58a1eb4067b8e13322880346f2a801256f34d6db1f86c99621e1973",
+      "family_id": "family_3241089d3463a0b9721a7c2de78aa4a648be17df2957fec567c1da675a20fb2e",
+      "source_line": 1002,
+      "original_source_ids": [
+        "9571"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0032",
+      "original_id": "sample_f6b381baae2ed67c9327957ccb7fb583a3b9afcd63967ba4dd99da533767c8dd",
+      "family_id": "family_38ba711694cf8919cca467f25a143abcce6e3b902a5bbe63d13f36ece3b28ada",
+      "source_line": 2021,
+      "original_source_ids": [
+        "908"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0033",
+      "original_id": "sample_6b2838f40becb1857ba4e49605bb9d29ddd25c66dc7d955974d1a0ee302cbdf1",
+      "family_id": "family_9d380e8cea77bd3372717fd7f50e21c18dfcf07c7532b8c64cd0cc605d965789",
+      "source_line": 840,
+      "original_source_ids": [
+        "3394"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0034",
+      "original_id": "sample_07e82e8a339bc8a30fe4333ec642fc644307d993e59a7cbb1d0866db8a4cb3bf",
+      "family_id": "family_b0ec8a2b0618865ef41d46ada84f63df4b14df02caa6308f5de63b9e0a180d66",
+      "source_line": 57,
+      "original_source_ids": [
+        "4568"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0035",
+      "original_id": "sample_ffa110b7ee58e778e84361918afc8bfcc1d5f0aadd560060d29093a44eb6da4d",
+      "family_id": "family_49e32bfb10b5e1e80f1212ac4980ce5c677957bed7f6324e6e9278a793861f97",
+      "source_line": 2103,
+      "original_source_ids": [
+        "8396"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0036",
+      "original_id": "sample_5a362f2015d5ac42a260e1149628a1891e477dcb4cce175d3a0d8f25ad3fa23f",
+      "family_id": "family_c8f8efe87b39959eaf5fb62153571056df2dc88f4a3645896d880e7175b6ef5e",
+      "source_line": 693,
+      "original_source_ids": [
+        "6315"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0037",
+      "original_id": "sample_980f52bb86599948dd052cd4d9081259fe85f34b64aadca0eb83d0efa1ea1ad0",
+      "family_id": "family_d033faaa3eb7e3693ead337ccf073a9b0429aca91ee91ed8a09c4f99972c852b",
+      "source_line": 1254,
+      "original_source_ids": [
+        "3899"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0038",
+      "original_id": "sample_ee41f4c02f1aad60aea88763e0304055ffee490d4dc1fcdeac8437896b50e63b",
+      "family_id": "family_96722295c0e7e409bafc63b3e026aece1adc1651fef94fb10640f4f8d4a057fb",
+      "source_line": 1961,
+      "original_source_ids": [
+        "1118"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0039",
+      "original_id": "sample_61092384d973e091bd7af5d228ca3a2faf4aa2e940e9782db002522a9ee8fd79",
+      "family_id": "family_132554efe4e0b1faa5feefdfc76a713d272a7c42d4c0b9e8f2f9629573c0a009",
+      "source_line": 749,
+      "original_source_ids": [
+        "8357"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0040",
+      "original_id": "sample_6daa3c61689ee6b0c7af123e8543916b0c2afbeb7492f6c5e83ecc27c45464cb",
+      "family_id": "family_2a2f3421fd7f22d7d0db71646da10382cd59e656cc86c603318ef854ee6d1f68",
+      "source_line": 867,
+      "original_source_ids": [
+        "6347"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0041",
+      "original_id": "sample_9922194dbb7b25a4f5257e6380bfa892128edcfda19b001fbe3b9448f7a42d84",
+      "family_id": "family_280971a78173f65722d51d12cb1776fb29de1f4759e5363d37d83432a65b93b7",
+      "source_line": 1264,
+      "original_source_ids": [
+        "2533"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0042",
+      "original_id": "sample_f4f818d3c17dd1ae80f43232e7fca54bc359559ef16f2ca63d53936353e01599",
+      "family_id": "family_a986eb1a954caae71b727865d5c6e73eb4418d51721de26e985a8b1153579a5c",
+      "source_line": 2006,
+      "original_source_ids": [
+        "4072"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0043",
+      "original_id": "sample_93845bdff2d740a0df0475396148b97d318ff74247980a26f734e53411785054",
+      "family_id": "family_58e3de1e7754423f1a4b62cc33f79f283de1428487b00b0f4da8bc1be236640b",
+      "source_line": 1219,
+      "original_source_ids": [
+        "9570"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0044",
+      "original_id": "sample_0893e3eb3fc93bb78af0b568188a9d5d39a0c5cea508f81fce2fb5bbdc3f8b94",
+      "family_id": "family_52ed774d2f07c421a5fe09bd830d177d9d677c6d399a365d23589f5518c495ca",
+      "source_line": 59,
+      "original_source_ids": [
+        "7157"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0045",
+      "original_id": "sample_ffc35e74862e2c537e2dd670d62d60f58389542cbfba760e99bdb1f4c3bf1994",
+      "family_id": "family_be340c74397323692ce18cfe95443b45134537b4de9e1e22960366ccd0976793",
+      "source_line": 2104,
+      "original_source_ids": [
+        "4397"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0046",
+      "original_id": "sample_dd50427598667e99c112e705fb40a51673b8488a6c9eaa51b19f66977bea8ada",
+      "family_id": "family_8d95413cb1516ffa4ab0710612285e9e2ad2d6e31f1dd71434641b4404e9e6f8",
+      "source_line": 1819,
+      "original_source_ids": [
+        "4795"
+      ],
+      "family_size_in_test": 4
+    },
+    {
+      "blind_id": "V0047",
+      "original_id": "sample_42d23fde5885625f700bc5df47a6e8a7ec7596d3954f74e5d82ccf9311114f3c",
+      "family_id": "family_2716e426bedfd8f372f35e13c3147d855a1de70fa54ab8d8284317bea9b3244d",
+      "source_line": 537,
+      "original_source_ids": [
+        "7129"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0048",
+      "original_id": "sample_c7d19f5a4cb84fe192e51660db8d2502461a5173b82b83fa7d71affbaee8fbc2",
+      "family_id": "family_85be37566751269270634ed3552a9ab03e9703109d3bf909ae3759651c14d1e5",
+      "source_line": 1650,
+      "original_source_ids": [
+        "7833"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0049",
+      "original_id": "sample_297a932eeb7d7b58a56f1fa96ed073fd728c7b59df31c222179e48a14322b38b",
+      "family_id": "family_0c1bf79bd751044437733c31ab714652d1ef28d2d8805a6981cefd324802787b",
+      "source_line": 324,
+      "original_source_ids": [
+        "4966"
+      ],
+      "family_size_in_test": 3
+    },
+    {
+      "blind_id": "V0050",
+      "original_id": "sample_54f45ca3f6146e98db9d56c99b8d5621f4e7817258d79d970cc2dab68df0c15d",
+      "family_id": "family_0e5da47de5f9ff3651e0dd939265f0e353928c90c06ff1770902c5a7d0a0d957",
+      "source_line": 663,
+      "original_source_ids": [
+        "10733"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0051",
+      "original_id": "sample_53ad7ca0e985233f183bedd95718244a47097b5df5e3e0c35542b522a08bd770",
+      "family_id": "family_d15f6a90597f31e14f18b8517893155b7f32fd19f486cb10ed5530fff95420ba",
+      "source_line": 650,
+      "original_source_ids": [
+        "3604"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0052",
+      "original_id": "sample_067effe5e27461f378b343aaef46ce47726ccf2a064db9ce20146ff4c7b442be",
+      "family_id": "family_1214c38b4c5d851b027865cf3deac332e448788355c214e31972c2c98bef1372",
+      "source_line": 45,
+      "original_source_ids": [
+        "2087"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0053",
+      "original_id": "sample_0d18049b8c760b5072be2ecd28ef35609f7fd72f8b55650f928180a33b2b41e7",
+      "family_id": "family_9d1a8bb82eca26981e3cf96bdca4c09fa1ac08c8319bb61583f2d2c992b2337f",
+      "source_line": 94,
+      "original_source_ids": [
+        "4049"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0054",
+      "original_id": "sample_fa1b8332cd5c6129179bd032270629b0159b2c51a7f1c3983cbde474f736a8a0",
+      "family_id": "family_e3204a4414812cceb9da32fcf0c5c70a0a5c26a1cd07874a5afbd0eafa499148",
+      "source_line": 2056,
+      "original_source_ids": [
+        "5265"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0055",
+      "original_id": "sample_4e7976d0e9699b35af75d9d73f855ca4b96a32888c8071b854e8fb806cc77d01",
+      "family_id": "family_405f98b2114d050c541c744815aa368b25dbb70ea27340efc1b6fd39e88f606f",
+      "source_line": 611,
+      "original_source_ids": [
+        "10667"
+      ],
+      "family_size_in_test": 3
+    },
+    {
+      "blind_id": "V0056",
+      "original_id": "sample_c34c0e69065ed7d05131bc0f18114e8619ec44a892e9a9f6c7abeeab6ac48ee1",
+      "family_id": "family_6e1571df5ed34ee61f5c787cebbe732a6e04eb6b894748505574ae8514837cf2",
+      "source_line": 1609,
+      "original_source_ids": [
+        "2993"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0057",
+      "original_id": "sample_2b44da2af0d8a33ef6af6e15d1e6348d095cce84ebeaeefaabc17d263a6fed0d",
+      "family_id": "family_8a3d1cc6c1320fff064d367ec235fd8dbfe32dcd3d31cc3251d0ed918c82c8e1",
+      "source_line": 343,
+      "original_source_ids": [
+        "5734"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0058",
+      "original_id": "sample_3ebff4318ce11291724b04517ac85ad170fb283e61f02adc3302e91ae4abc2ac",
+      "family_id": "family_35a01ada3751dbcd6cec79bc78440b31f708101197e32e7c189188b2cf0b430a",
+      "source_line": 508,
+      "original_source_ids": [
+        "381"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0059",
+      "original_id": "sample_2e7f1d5413fa713d8c7261f79ef7a878df0928ee7db1b2fd5c28689055ced186",
+      "family_id": "family_05350cd10fb629e137214f265b74f281e3eeda323200842e603403ee02f8d873",
+      "source_line": 378,
+      "original_source_ids": [
+        "154"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0060",
+      "original_id": "sample_6bacf1332136e2869a2a71a690826fb053aea9821912e567f6cc5ede5cba7a73",
+      "family_id": "family_80b710683571aab98b10021ba26207ae208c06e94a7a28d2d8735c9010768d01",
+      "source_line": 846,
+      "original_source_ids": [
+        "9823"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0061",
+      "original_id": "sample_b2b918dd5403a0942a82504a85f68eb5e67f816f5bc90f2a3cd0f007a9e9929c",
+      "family_id": "family_3d0effe5ef3ef99f16891f9c6ff35d595702917460e6199973bbf632751a70a1",
+      "source_line": 1475,
+      "original_source_ids": [
+        "10665"
+      ],
+      "family_size_in_test": 5
+    },
+    {
+      "blind_id": "V0062",
+      "original_id": "sample_317968e5f55887f7127814053f38bfb9cd4a83241844b7eb8c2d55cdde875ae1",
+      "family_id": "family_398266f2e834ac7ba5e334782c5b7f8cdd48ce296c350946b46847a873c26516",
+      "source_line": 405,
+      "original_source_ids": [
+        "9869"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0063",
+      "original_id": "sample_c78dd91594294632ab1a3ff6821e1a50d32f07659b7c5f62bdd7647c1f0d58eb",
+      "family_id": "family_9a62aaf1d8bb0dd385ffd7a160c9045cf5e0698ca0a3a264a10ec3098d42a344",
+      "source_line": 1646,
+      "original_source_ids": [
+        "9545"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0064",
+      "original_id": "sample_7b262211a7372571e3a9005d9b683dc4c2c1185a0b08fba79321b5c1f4285965",
+      "family_id": "family_9f3d45e47e048e37530f6bd9a670494479575ee91a4a766ce26f178de65f2c5c",
+      "source_line": 997,
+      "original_source_ids": [
+        "2704",
+        "8221"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0065",
+      "original_id": "sample_0ac1f81bd5f6a3a54f25983a56db3e18064f4e220ff4d6906a9df1a3b5a5abb8",
+      "family_id": "family_42c5e2340c5e3dde8acd8dd22da853932d65479661f36fcdcda79d61e205a766",
+      "source_line": 78,
+      "original_source_ids": [
+        "2456"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0066",
+      "original_id": "sample_7c2b97de58902e531e56df2947445b176af9535674107821f7e850eaea24592c",
+      "family_id": "family_ac6e10f1a955448441e1eb078e69165239ee7a197a54e6d7025dc749b7361f97",
+      "source_line": 1005,
+      "original_source_ids": [
+        "2265"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0067",
+      "original_id": "sample_fa978c2e24c09da7d876b0ea148a85fbbc36a5e24d1192ae65fe82e63fe6ce38",
+      "family_id": "family_9f6437fdf87d9c7a61dc0f8678128c46fc140f6b0a42100e52c9d0b711ca0cee",
+      "source_line": 2063,
+      "original_source_ids": [
+        "6911"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0068",
+      "original_id": "sample_e1b9460bcaa684879c825dc04508fefacbf54a019fd2343baf7704ceae416b40",
+      "family_id": "family_8e57ee10f5155ade44b874438f618602911b7164eb8c40058b3063f1a7d67c7d",
+      "source_line": 1863,
+      "original_source_ids": [
+        "4652"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0069",
+      "original_id": "sample_2c95bf93b54e8b2514c360400c2d8b534cd19f95e670cbf433912784f372fbe8",
+      "family_id": "family_c3c1c79cbf7068ec1ed18ffbc567325f1c3e40fac6cb3d0477af791896e7d00a",
+      "source_line": 355,
+      "original_source_ids": [
+        "2864"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0070",
+      "original_id": "sample_1202698fa5a8b468927b22d3ac228d5833ebd0e68865c97a713479f6ee83d5d9",
+      "family_id": "family_533ef182c48aa86fb3588b793c8ff5744c8ba906dacfead2f024ef97933ffe56",
+      "source_line": 146,
+      "original_source_ids": [
+        "3052"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0071",
+      "original_id": "sample_0de3f8be1cd0d65569d684af3a86434619078241caa4ef43d14bfa2801a403b7",
+      "family_id": "family_d33226916c48f433cb385f0cc5e1f89cdeb7175019a13fbc8a2c6561350bc4ca",
+      "source_line": 100,
+      "original_source_ids": [
+        "1755"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0072",
+      "original_id": "sample_9296a8c197bc8e04c14e4540461e36ca006591d7a457538d441bd89dfcc8ce6c",
+      "family_id": "family_02cf53c6d6fd42b50ad198bd44b46c00072e6bc3cdcac24b7be3e13f7dea5843",
+      "source_line": 1214,
+      "original_source_ids": [
+        "2859"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0073",
+      "original_id": "sample_e8cd995928f09b59e107f54d7832844b6c8d8967f60b8819b719fed613290d18",
+      "family_id": "family_1808f42a4976e18f46023332db68b22dce4247db8a4bf5e1cc7368d292ac8855",
+      "source_line": 1923,
+      "original_source_ids": [
+        "2439"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0074",
+      "original_id": "sample_5c0dfe5c726fd996e59df4ed4663b37d405868eaf22ce3c73502f57ab782c740",
+      "family_id": "family_91134926e66f150576e1828ed46a14fdd96d8e2d6cccdb586aadda768d7ca108",
+      "source_line": 707,
+      "original_source_ids": [
+        "7444"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0075",
+      "original_id": "sample_aecb91cae3765db619513a35493d71de38dffe2a021383ffcd461b2269bfa2d1",
+      "family_id": "family_3cdc2cd7d316783fb4095830aea3011cdda279c5977f9424296fa74ffa525abc",
+      "source_line": 1451,
+      "original_source_ids": [
+        "111"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0076",
+      "original_id": "sample_f7c6c500e3f1f781530f5f04a392226a018f55b471bc52e6901b9c764d5d8cc2",
+      "family_id": "family_fcfb337b81a387102539335ac4d19a41f6287d7f8a3b824548c6e9ff8fae8a0f",
+      "source_line": 2033,
+      "original_source_ids": [
+        "5397"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0077",
+      "original_id": "sample_6bff71536364cf231ffa4afa3c4285e786f621ab10910c1fba7d1e18a9f3fece",
+      "family_id": "family_44adb28ac6de92ae3969423c70f889edfc54804cf775b97d9568568d008ccc88",
+      "source_line": 850,
+      "original_source_ids": [
+        "5051"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0078",
+      "original_id": "sample_461a3a1c1623bc29f41fe7e5597b7c07610ded6df07a6434e6213ac1e668fef2",
+      "family_id": "family_549cfe688b427750531bc1d72da365be96bf5f1edb14eb1edb1e3bb7bebc127b",
+      "source_line": 556,
+      "original_source_ids": [
+        "8020"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0079",
+      "original_id": "sample_9c46228b2ec37e53ba559a195ec20cbfa790a29b6f730dc485b47d91918b8712",
+      "family_id": "family_6dff3568740befdd444e4c43a2aeeef2621074f5ce525efe8b2557b6466db32c",
+      "source_line": 1292,
+      "original_source_ids": [
+        "6413"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0080",
+      "original_id": "sample_f8b8ffe0c80376f3cfbf276e8b8cb8f6c7bb66e674d29b708878ccb6444b40a0",
+      "family_id": "family_9f2c7f4bbf4b8f7b7db71c3d5c55e550cb64c12831f569ab62094027c257028f",
+      "source_line": 2040,
+      "original_source_ids": [
+        "5888"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0081",
+      "original_id": "sample_0e6e6592240a9f87895b7aaf722a2eb2b1f1531f8ddbe2987a9a0047cd7e3bcb",
+      "family_id": "family_369fa39b1048246fba7c2b2173cae9c72489b3b4526a7267e7d1945cc8209866",
+      "source_line": 109,
+      "original_source_ids": [
+        "7932"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0082",
+      "original_id": "sample_cc2590a64dca666de3b692fea595083344701cccca7586829ad4c370d4999ebb",
+      "family_id": "family_84d07339479f77e14d2525dec44ef97374981479bd08ef33c8737ded0545c325",
+      "source_line": 1674,
+      "original_source_ids": [
+        "10371"
+      ],
+      "family_size_in_test": 3
+    },
+    {
+      "blind_id": "V0083",
+      "original_id": "sample_f5881050643e7793bae4bdc8852f3aeef0be31248ded75813eff4d6df43523bf",
+      "family_id": "family_4bb265369b453f0c139653f8329c1e29a04eaba0b27bc735f9e25b87907859e9",
+      "source_line": 2012,
+      "original_source_ids": [
+        "6334"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0084",
+      "original_id": "sample_e6362525ff3446ada7e27d6e45110087757feb95ce5bc112ccce736ca8862618",
+      "family_id": "family_b9cf4cdc152a18aff101e2fd224bdf06aa9c852d89f66810caeb0f6bb3d1d41b",
+      "source_line": 1901,
+      "original_source_ids": [
+        "6792"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0085",
+      "original_id": "sample_7c434c744f6f7478c3a82ad0e714f42a3f86500da45284d433a99c07596387c2",
+      "family_id": "family_d8ff626c0bcffdf44d8e4c33f420aa462b6a4dd78f69a3238cb209e04495f962",
+      "source_line": 1007,
+      "original_source_ids": [
+        "4361"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0086",
+      "original_id": "sample_e2c24fab8576ce542b7b6f57a5673b581b8ba96bd84b121320e82be0348db59c",
+      "family_id": "family_919a68138a1662e51921a55173175bf60908d823dfee9fbb6f229686aa2e326d",
+      "source_line": 1874,
+      "original_source_ids": [
+        "8235"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0087",
+      "original_id": "sample_e1f2912ac0014560e26b89c1eefc34cdc28dff69574a52def6c2cafcd617c93b",
+      "family_id": "family_670638673d0e31d8ed2a54c319d606300f3f4a7e1411263643e456f2799d7962",
+      "source_line": 1865,
+      "original_source_ids": [
+        "1473"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0088",
+      "original_id": "sample_d79831f47933996cd2d3ef163835ac9af4a1673477c0abf474ac536fab69ffde",
+      "family_id": "family_03e3dce3095c0f1cf24354c94dc56e9d6e52cf3acee72778adbd3d8bc3042fee",
+      "source_line": 1771,
+      "original_source_ids": [
+        "6131"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0089",
+      "original_id": "sample_9aee95af8325e127cbacbe1b87a5bd605374480202658c5a29fa7e991e359f22",
+      "family_id": "family_bc4a53f5293056030729423474d96893f61b4462d7ac83b42ee98e692a47e5f7",
+      "source_line": 1281,
+      "original_source_ids": [
+        "7415"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0090",
+      "original_id": "sample_e257e0951b080a67bd69ac5e71b5f16f5f99d9d60e9c495f1bb2651390902e30",
+      "family_id": "family_f31c171c66e81720c85c26d6031def1c80862b9c603d1f379773a6fdbdf477a8",
+      "source_line": 1868,
+      "original_source_ids": [
+        "5601"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0091",
+      "original_id": "sample_f2b0fc282c323426744ccc26515fa5d773337ddf5b3734e9caf92587da10fc99",
+      "family_id": "family_2a80de4fe03a0cad4531fe5c7e868731053320b2c7d4e14596a92ddffe16b975",
+      "source_line": 1989,
+      "original_source_ids": [
+        "5899"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0092",
+      "original_id": "sample_b7441dafadd8a9e88e1ec32671d0bf1cda1b21c0022fa84a1ff6c2682e15fb0e",
+      "family_id": "family_448e427db909af492750eeec44b5654b6df7b98ad85c7fd20d29b0bea25e2807",
+      "source_line": 1502,
+      "original_source_ids": [
+        "275"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0093",
+      "original_id": "sample_66f81b22612e3fc80894f2338361c0d17861d24310ca34f5b752fb81b85fb612",
+      "family_id": "family_42c25db70a28131f6124af57f64f69a9fef1c814f0cfab5c108da5f0a8284715",
+      "source_line": 800,
+      "original_source_ids": [
+        "3503"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0094",
+      "original_id": "sample_9fafeaf6a8782fd59138fa80af37d510471f6202556191a5edde84a88c517149",
+      "family_id": "family_71735f7ea7d25d456617dd5b8954663f42ea38cc53c44ec86a501988207ec2a3",
+      "source_line": 1324,
+      "original_source_ids": [
+        "5093"
+      ],
+      "family_size_in_test": 3
+    },
+    {
+      "blind_id": "V0095",
+      "original_id": "sample_a28aa6ab6b7c14771c27da5d2782ccc57abf8f866d04bc4aa6136cc5746fafbb",
+      "family_id": "family_55c060f73160db7574885bd3ab4115907a7889d31506451c5d1512c48240e94f",
+      "source_line": 1345,
+      "original_source_ids": [
+        "9632"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0096",
+      "original_id": "sample_bab08e074964908e796ade99e935b8d0aabf88dc8d7e258628c766d4bf3e3e7c",
+      "family_id": "family_b14f36f66e98c1e1a494668cf5392c3d6501930f4696356c793d37af9f10904e",
+      "source_line": 1537,
+      "original_source_ids": [
+        "6543"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0097",
+      "original_id": "sample_c59698fe8f23bbfe12068e655a0d49519462d8d7a046d4f024a4668b915fd992",
+      "family_id": "family_abf4074a29dd172a60c208e4fda52f13299a9f35439878e020c5d85155e6dbdc",
+      "source_line": 1631,
+      "original_source_ids": [
+        "4102"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0098",
+      "original_id": "sample_4d60b8c5c7876fd78945dcedcc447402c57adc06aacae77cf0962d4058d9caa4",
+      "family_id": "family_1ab9623c1394fcc838dbfe49682cbee064c3417b713772621a20a46733f1fb10",
+      "source_line": 604,
+      "original_source_ids": [
+        "7042"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0099",
+      "original_id": "sample_8ec8a46d61291b8ac8a03db043db719a1e32225b935badb479cbce9b97b349b4",
+      "family_id": "family_6174498bdc3be7dd8a33644ba5c14a00f142f47143e3525afe0a5734ec4b23cc",
+      "source_line": 1178,
+      "original_source_ids": [
+        "2629"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0100",
+      "original_id": "sample_2ca5cbf6fc12d23ca7379d5ab3882316b1606b6bb8c8d96183e2dce7ad8daa0f",
+      "family_id": "family_3498f0dd5b1872eed8ecfe47127cb452e54a4fcbfdbbf4c3f6aeb0680de29d18",
+      "source_line": 356,
+      "original_source_ids": [
+        "6984"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0101",
+      "original_id": "sample_bdcf80f84e1a7a3846cce48f8710c69e3ea306aad4b871f1af52397f127f9b3d",
+      "family_id": "family_4cb2ef97532e5595be504322338b669fa7c61a7473d6f531a159468a5b00d9ae",
+      "source_line": 1559,
+      "original_source_ids": [
+        "836"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0102",
+      "original_id": "sample_2f9f170bd5c3bc424e98e16adee867fd11163c12ed3b0ea68640092bad03d096",
+      "family_id": "family_aa50d0cdb85a8397b19a827e2c982c57a8625da4e41975a6e5863c023c0a0248",
+      "source_line": 389,
+      "original_source_ids": [
+        "1787"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0103",
+      "original_id": "sample_c2efddcd27623c0cbe81b72ce9b898b6261f8eedf1adafce952f543fe2c80e0f",
+      "family_id": "family_b832dd133b206ff3e6a1908bc65c71cf661cf50bac082f228da45b30025da583",
+      "source_line": 1604,
+      "original_source_ids": [
+        "7547"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0104",
+      "original_id": "sample_45ad0d54f5db10dd6318fb7be311e952b74f056cf7c2635f62b88c373c84d3d4",
+      "family_id": "family_b3a6823cc8d6db0c0451071a9d068d54f5575b5b036b27bad589771bb3632324",
+      "source_line": 553,
+      "original_source_ids": [
+        "7569"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0105",
+      "original_id": "sample_c2a8d35ea9d160b7ffbf3a14822f1a711b3ac6680613b4d5ce80704866da3b9a",
+      "family_id": "family_a8ed66a816a93013f20a92a491803a05cbbc694421deeb00b30f63cb5ac14df3",
+      "source_line": 1602,
+      "original_source_ids": [
+        "5554"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0106",
+      "original_id": "sample_685bdc3e7bd3ed9e6de07f234b705bcd181ec9110d97bed4ff9b9a2d3c5ddeff",
+      "family_id": "family_2d7e3d9d508a01c6fdb7c57ed44b92491f5b9847e840cb95e9b1847ca9458799",
+      "source_line": 814,
+      "original_source_ids": [
+        "6256"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0107",
+      "original_id": "sample_a64a7d66c3ab6591deea0c1eb3c6d18bc4242a2ccba8f1ed6a25895104175e33",
+      "family_id": "family_07fcc5fd37cfbd4e78d0a1ddee2f7193575d54f7d451053a83ab3392d3c0f410",
+      "source_line": 1388,
+      "original_source_ids": [
+        "6983"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0108",
+      "original_id": "sample_f8e4faf74864e05d454fb0e48539d734599f4fdc64d13aa8c2e8fb56e3e1771f",
+      "family_id": "family_577850a1db28be3ee1a5b780a6b79bc748b0e2fdc42ca94d2e4346e8b7eb8332",
+      "source_line": 2042,
+      "original_source_ids": [
+        "1549"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0109",
+      "original_id": "sample_0f57432709b2d26fba4d165f6d318c981da5a9e9310b41853f65f3e87144ff09",
+      "family_id": "family_d91aedb53fdb207bf890ac03a278265152ec4930d27e3abd1fda5a8e1caa7d28",
+      "source_line": 114,
+      "original_source_ids": [
+        "1252"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0110",
+      "original_id": "sample_33d1fb7b849cef6f6083ca0525087ae812da0ce29b02f64e5b6deabf63dec5b3",
+      "family_id": "family_2dcf5fd5458a00ed7a5855b3ef0b0fed865349c01f8b4a1ffda626cf7cad1eb4",
+      "source_line": 417,
+      "original_source_ids": [
+        "597"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0111",
+      "original_id": "sample_68064268f3f6a8cb1b1f1dfdf2f60f1e4f6f65d4673bc750a948f74919e9b910",
+      "family_id": "family_2ca8d4968405ecbe163122b26ba2582faefb3bd3e096dfd00b9a99d7ca05d5dd",
+      "source_line": 810,
+      "original_source_ids": [
+        "4212"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0112",
+      "original_id": "sample_63bf18663b95e717a86383b107d97a08e252f214e07f3cc2b74b68afaef08718",
+      "family_id": "family_438572260b1de3c2c8a18be1c3628860a3d05298a39e0f8eb04933228c5b2fdf",
+      "source_line": 779,
+      "original_source_ids": [
+        "5611"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0113",
+      "original_id": "sample_8c3c6923fac1291abd0b9aa071f78b5dcb5a0c3bcd27d2c4320f1a5dc642ed10",
+      "family_id": "family_d391b84956e9206a5f18318ac714c67b5e3235f4c2a65f5026455fb61eeecaae",
+      "source_line": 1162,
+      "original_source_ids": [
+        "8704"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0114",
+      "original_id": "sample_d9cedc2a3a5be5f731fde4315a2aa36db56933aa610ff14047a310f818c4cf74",
+      "family_id": "family_f3e8a434ece904d3be6035f0ecaaee19b87e9199a26812110cb7dfb64d7b0f5e",
+      "source_line": 1786,
+      "original_source_ids": [
+        "1715"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0115",
+      "original_id": "sample_338a21e9e4da6ebaafa4539229de7e75eb7a1b510846698c6b685eb1e01700df",
+      "family_id": "family_646a9f3161594d64f5fcd7ee1f2da75e39516f8722efe11d30e54307af35b75d",
+      "source_line": 415,
+      "original_source_ids": [
+        "5618"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0116",
+      "original_id": "sample_f56263e11ebdece70e56133bebf698b10960e9d758ab12fc1471a8069c0ee42c",
+      "family_id": "family_32a0aeb1b0206bcda06f6f1bb4ddcf88745de41e214864afdc0351ed8bd4f518",
+      "source_line": 2009,
+      "original_source_ids": [
+        "3927"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0117",
+      "original_id": "sample_97252de10fd13e7a374fd41159b5d450a752550e30cfae1c5b0e8b9dd48c9efd",
+      "family_id": "family_a326a711ded6830c2221e68ca2eadf21a62e52ec9ca3fceccba87370caf9b2aa",
+      "source_line": 1245,
+      "original_source_ids": [
+        "5752"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0118",
+      "original_id": "sample_d0a450a2762b7ebc3d27bc43f0110cdac567d26c4a0593658e6c22fd0f46ba84",
+      "family_id": "family_d7abdde54496c8f84191c16548523b1d5f27dddada9b18ac102358976151af24",
+      "source_line": 1709,
+      "original_source_ids": [
+        "2416"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0119",
+      "original_id": "sample_7fa00f98dcb50c5a98ac6767a906947b0d1183830ba2ce114ecf5d31f956e882",
+      "family_id": "family_4eba73ed9248eadd12385c04c48b75c084c9b427687977196923e6b990e60ce8",
+      "source_line": 1028,
+      "original_source_ids": [
+        "8821"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0120",
+      "original_id": "sample_714a8a6db7d7fb60f3ca7becb72dec5ec3e8dbcd7394793319219c91dfc50e2b",
+      "family_id": "family_94f97b17c497354daaa73654c4e7736e0f6369e3cb6e8f0f85392f6e5b08c8bf",
+      "source_line": 907,
+      "original_source_ids": [
+        "1938"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0121",
+      "original_id": "sample_863eeddb7225bf65751be706c7d6d01f7d3e041e988ad0ea2e135f3cff4bcd64",
+      "family_id": "family_912b2f1f85b21d2a250478fbef69d6678dc1f3a003b6f8693984eaa00e6b663b",
+      "source_line": 1094,
+      "original_source_ids": [
+        "2519"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0122",
+      "original_id": "sample_846ecf047fbb43642431f8ca4b06cd9a0e6db4ceff8bacf031311b3dd3600403",
+      "family_id": "family_237a95b2631cf74249def920c665810c67df1d12636da6751a1dcfe08a6335ba",
+      "source_line": 1075,
+      "original_source_ids": [
+        "5730"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "V0123",
+      "original_id": "sample_005072fb3553319e30c417efe7b47f26d516a3150be2461688fad737573dce4b",
+      "family_id": "family_dbea8a65e050066ecf311e24699e58e69442ddff0d45454a4cc0e58aa9bea34e",
+      "source_line": 4,
+      "original_source_ids": [
+        "9460"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0124",
+      "original_id": "sample_e53819e05dcf2c4c25597dafd30f672b0ca695cf882fa6c39153094c598ceaab",
+      "family_id": "family_1c631af17a99a574067ab798a135a9aca598f68dcee542f82a46a4be43f52ab6",
+      "source_line": 1891,
+      "original_source_ids": [
+        "7218"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0125",
+      "original_id": "sample_73e3e058b4d82a293830216505c0d91389cab297e19875b9cb3564b416f590e1",
+      "family_id": "family_96574a807a98cd0f42b861a7417c0f483fc7b5053b4022b740428ff75278984b",
+      "source_line": 932,
+      "original_source_ids": [
+        "1607"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0126",
+      "original_id": "sample_eb785a9a91faba5646e9044c55ecee021dc78db7088d255c967078cd914bda65",
+      "family_id": "family_5b216a17f729b226418ff94a175f8c3d85a1fc6ecbef0cf61e1a46e585514569",
+      "source_line": 1943,
+      "original_source_ids": [
+        "5137"
+      ],
+      "family_size_in_test": 3
+    },
+    {
+      "blind_id": "V0127",
+      "original_id": "sample_3476f95ef499c69ac530d71088aeb8b9edbe7040ceabb1637c4e6211bd19756e",
+      "family_id": "family_e466e6223def29dc9dd0910c23f2c7a47946fc8046e4b442eb1f80cb9d06c47a",
+      "source_line": 422,
+      "original_source_ids": [
+        "4119"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "V0128",
+      "original_id": "sample_7387182f4a9860a736297dc4f77b90ab777a32a912514497c4ea2b97baac579b",
+      "family_id": "family_41ff8104d7195342716dd78f48b2847ee417b45bdf219e2f49bc558e85218402",
+      "source_line": 929,
+      "original_source_ids": [
+        "5092"
+      ],
+      "family_size_in_test": 4
+    }
+  ]
+}

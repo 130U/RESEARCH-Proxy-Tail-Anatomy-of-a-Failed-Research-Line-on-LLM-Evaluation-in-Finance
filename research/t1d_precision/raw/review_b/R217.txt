@@ -1,0 +1,5 @@
+{
+    "review_id": "R217",
+    "verdict": "invalid",
+    "reason": "Subtracting the correctly bound option fair values produces a dollar increase per option, but the requested percentage increase requires division by the 2013 value."
+  }

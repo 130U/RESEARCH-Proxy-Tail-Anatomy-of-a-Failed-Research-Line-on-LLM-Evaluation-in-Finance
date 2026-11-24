@@ -1,0 +1,158 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S050",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "notes to consolidated financial statements ( continued ) goodwill and other intangible assets : goodwill and other indefinite-lived assets are tested for impairment annually or more frequently if events or changes in circumstances indicate that the assets might be impaired ."
+      },
+      {
+        "location": "text_1",
+        "text": "annual impairment tests are performed by the company in the second quarter of each year ."
+      },
+      {
+        "location": "text_2",
+        "text": "snap-on evaluates the existence of goodwill and indefinite-lived intangible asset impairment on the basis of whether the assets are fully recoverable from projected , discounted cash flows of the related business unit or asset ."
+      },
+      {
+        "location": "text_3",
+        "text": "intangible assets with finite lives are amortized over their estimated useful lives using straight-line and accelerated methods depending on the nature of the particular asset ."
+      },
+      {
+        "location": "text_4",
+        "text": "see note 6 for further information on goodwill and other intangible assets ."
+      },
+      {
+        "location": "text_5",
+        "text": "new accounting standards disclosures relating to accumulated other comprehensive income the financial accounting standards board ( 201cfasb 201d ) issued authoritative guidance in february 2013 that amends the presentation of accumulated other comprehensive income and clarifies how to report the effect of significant reclassifications out of accumulated other comprehensive income ."
+      },
+      {
+        "location": "text_6",
+        "text": "the guidance , which became effective for snap-on on a prospective basis at the beginning of its 2013 fiscal year , requires footnote disclosure regarding the changes in accumulated other comprehensive income by component and the line items affected in the statements of earnings ."
+      },
+      {
+        "location": "text_7",
+        "text": "the adoption of this updated authoritative guidance did not have a significant impact on the company 2019s consolidated financial statements ."
+      },
+      {
+        "location": "text_8",
+        "text": "see note 17 for additional information ."
+      },
+      {
+        "location": "text_9",
+        "text": "note 2 : acquisition on may 13 , 2013 , snap-on acquired 100% ( 100 % ) of challenger lifts , inc ."
+      },
+      {
+        "location": "text_10",
+        "text": "( 201cchallenger 201d ) for a cash purchase price of $ 38.2 million , including post-closing adjustments ."
+      },
+      {
+        "location": "text_11",
+        "text": "challenger designs , manufactures and distributes a comprehensive line of vehicle lifts and accessories to a diverse customer base in the automotive repair sector ."
+      },
+      {
+        "location": "text_12",
+        "text": "the acquisition of the challenger vehicle lift product line complemented and increased snap-on 2019s existing undercar equipment offering , broadened its established capabilities in serving vehicle repair facilities and expanded the company 2019s presence with repair shop owners and managers ."
+      },
+      {
+        "location": "text_13",
+        "text": "for segment reporting purposes , the results of operations and assets of challenger have been included in the repair systems & information group since the date of acquisition ."
+      },
+      {
+        "location": "text_14",
+        "text": "pro forma financial information has not been presented as the net effects of the challenger acquisition were neither significant nor material to snap-on 2019s results of operations or financial position ."
+      },
+      {
+        "location": "text_15",
+        "text": "note 3 : receivables trade and other accounts receivable snap-on 2019s trade and other accounts receivable primarily arise from the sale of tools and diagnostic and equipment products to a broad range of industrial and commercial customers and to snap-on 2019s independent franchise van channel on a non-extended-term basis with payment terms generally ranging from 30 to 120 days ."
+      },
+      {
+        "location": "text_16",
+        "text": "the components of snap-on 2019s trade and other accounts receivable as of 2013 and 2012 year end are as follows : ( amounts in millions ) 2013 2012 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "<i>(Amounts in millions)</i>",
+          "2013",
+          "2012"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Trade and other accounts receivable",
+          "$546.5",
+          "$516.9"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Allowances for doubtful accounts",
+          "(14.9)",
+          "(19.0)"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Total trade and other accounts receivable – net",
+          "$531.6",
+          "$497.9"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_17",
+        "text": "finance and contract receivables soc originates extended-term finance and contract receivables on sales of snap-on product sold through the u.s ."
+      },
+      {
+        "location": "text_18",
+        "text": "franchisee and customer network and to snap-on 2019s industrial and other customers ; snap-on 2019s foreign finance subsidiaries provide similar financing internationally ."
+      },
+      {
+        "location": "text_19",
+        "text": "interest income on finance and contract receivables is included in 201cfinancial services revenue 201d on the accompanying consolidated statements of earnings ."
+      },
+      {
+        "location": "text_20",
+        "text": "74 snap-on incorporated ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the difference between total sales and total payments received during 2013?",
+  "human_answer": "29.6",
+  "reference_program": "subtract(546.5, 516.9)",
+  "reference_execution_value": 29.6,
+  "model_response": {
+    "answer": "33.7",
+    "unit": "million dollars",
+    "expression": "531.6 - 497.9",
+    "explanation": "The difference is the increase in total net trade and other accounts receivable from 2012 to 2013."
+  }
+}

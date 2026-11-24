@@ -1,0 +1,188 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R075",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "teleflex incorporated notes to consolidated financial statements 2014 ( continued ) in june 2014 , the company initiated programs to consolidate locations in australia and terminate certain european distributor agreements in an effort to reduce costs ."
+      },
+      {
+        "location": "text_1",
+        "text": "as a result of these actions , the company incurred aggregate restructuring charges of $ 3.6 million as of december 31 , 2015 ."
+      },
+      {
+        "location": "text_2",
+        "text": "these programs include costs related to termination benefits , contract termination costs and other exit costs ."
+      },
+      {
+        "location": "text_3",
+        "text": "the company completed the programs in 2015 ."
+      },
+      {
+        "location": "text_4",
+        "text": "2013 restructuring programs in 2013 , the company initiated restructuring programs to consolidate administrative and manufacturing facilities in north america and warehouse facilities in europe and terminate certain european distributor agreements in an effort to reduce costs ."
+      },
+      {
+        "location": "text_5",
+        "text": "as of december 31 , 2015 , the company incurred net aggregate restructuring charges of $ 10.9 million related to these programs ."
+      },
+      {
+        "location": "text_6",
+        "text": "these programs entail costs related to termination benefits , contract termination costs and charges related to facility closure and other exit costs ."
+      },
+      {
+        "location": "text_7",
+        "text": "the company completed the programs in 2015 lma restructuring program in connection with the acquisition of substantially all of the assets of lma international n.v ."
+      },
+      {
+        "location": "text_8",
+        "text": "( the 201clma business 201d ) in 2012 , the company commenced a program ( the \"lma restructuring program\" ) related to the integration of the lma business and the company 2019s other businesses ."
+      },
+      {
+        "location": "text_9",
+        "text": "the program was focused on the closure of the lma business 2019 corporate functions and the consolidation of manufacturing , sales , marketing , and distribution functions in north america , europe and asia ."
+      },
+      {
+        "location": "text_10",
+        "text": "the company incurred net aggregate restructuring charges related to the lma restructuring program of $ 11.3 million ."
+      },
+      {
+        "location": "text_11",
+        "text": "the company completed the program in 2015 ."
+      },
+      {
+        "location": "text_12",
+        "text": "for the year ended december 31 , 2014 , the company recorded a net credit of $ 3.3 million , primarily resulting from the reversal of contract termination costs following the favorable settlement of a terminated distributor agreement ."
+      },
+      {
+        "location": "text_13",
+        "text": "2012 restructuring program in 2012 , the company identified opportunities to improve its supply chain strategy by consolidating its three north american warehouses into one centralized warehouse , and lower costs and improve operating efficiencies through the termination of certain distributor agreements in europe , the closure of certain north american facilities and workforce reductions ."
+      },
+      {
+        "location": "text_14",
+        "text": "as of december 31 , 2015 , the company has incurred net aggregate restructuring and impairment charges of $ 6.3 million in connection with this program , and expects future restructuring expenses associated with the program , if any , to be nominal ."
+      },
+      {
+        "location": "text_15",
+        "text": "as of december 31 , 2015 , the company has a reserve of $ 0.5 million in connection with the program ."
+      },
+      {
+        "location": "text_16",
+        "text": "the company expects to complete this program in 2016 ."
+      },
+      {
+        "location": "text_17",
+        "text": "impairment charges there were no impairment charges recorded for the years ended december 31 , 2015 or 2014 ."
+      },
+      {
+        "location": "text_18",
+        "text": "in 2013 , the company recorded $ 7.3 million of ipr&d charges and $ 3.5 million in impairment charges related to assets held for sale that had a carrying value in excess of their appraised fair value ."
+      },
+      {
+        "location": "text_19",
+        "text": "the restructuring and other impairment charges recognized for the years ended december 31 , 2015 , 2014 and 2013 consisted of the following : ( dollars in thousands ) termination benefits facility closure contract termination other exit costs total ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2015"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "(dollars in thousands)",
+          "Termination Benefits",
+          "Facility Closure Costs",
+          "Contract Termination Costs",
+          "Other Exit Costs",
+          "Total"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2015 Restructuring programs",
+          "$5,009",
+          "$231",
+          "$1,000",
+          "$64",
+          "$6,304"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2014 Manufacturing footprint realignment plan",
+          "$1,007",
+          "$241",
+          "$389",
+          "$48",
+          "$1,685"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Other restructuring programs - prior years<sup>(1)</sup>",
+          "$(194)",
+          "$2",
+          "$(13)",
+          "$35",
+          "$(170)"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Total restructuring charges",
+          "$5,822",
+          "$474",
+          "$1,376",
+          "$147",
+          "$7,819"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_20",
+        "text": "( 1 ) other restructuring programs - prior years includes the 2014 european restructuring plan , the other 2014 restructuring programs , the 2013 restructuring programs and the lma restructuring program. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what portion of the total 2015 restructuring programs is related to termination benefits?",
+  "reference_program": "divide(5009, 6304)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "5009",
+      "raw": "5,009",
+      "location": "table_2:1",
+      "context": "2015 Restructuring programs | 2015"
+    },
+    "x1": {
+      "program_token": "6304",
+      "raw": "6,304",
+      "location": "table_2:5",
+      "context": "2015 Restructuring programs | "
+    }
+  }
+}

@@ -1,0 +1,1273 @@
+{
+  "status": "complete",
+  "created_utc": "2026-11-16T08:52:29.942204+00:00",
+  "research_status": "exploratory artificial mathematical comparisons",
+  "alpha_exact": "1/20",
+  "output_contract": "All zero findings must output fixed I; any finding outputs the full range.",
+  "sampling_class": "arbitrary distributions on distinct m-document audit subsets; truth fixed before randomization",
+  "network_used": false,
+  "real_audit_performed": false,
+  "model_trained": false,
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "budget": {
+    "wall_seconds": 30,
+    "peak_memory_measured": false
+  },
+  "source_sha256": {
+    "research/planning/run_randomization.py": "702312f54f5defa628458d4c4538143eb9821995771c679d0e212168882b051d",
+    "research/planning/randomized_audit.py": "bbe16b1637e1cc805c9c81f53aca261bd3a8347076312efa7f8fde77adebfd6d",
+    "research/planning/test_randomized_audit.py": "985595a14a716ea284b5bc40520b1704b63b90ca2d23b7a3719208e36aa125cd",
+    "research/planning/RANDOMIZATION_PROTOCOL.md": "0dc929118dfbde182c49493201e0c34dff74dc762ac1e246f1ff4740f2e831a8",
+    "research/planning/localization_results.json": "9b7f81cd51d6724838afa7b08707363c988bb4b361c64e9cac1b20d2a3f2c1d0"
+  },
+  "cases": [
+    {
+      "case_id": "threshold-r2-N2",
+      "family": "threshold",
+      "N": 2,
+      "d": 3,
+      "k": 2,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        4,
+        4
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        4,
+        4
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 4,
+        "risk_exact": "0",
+        "previous_audits_risk_exact": "1/6",
+        "construction": {
+          "full_strata": 2,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 5,
+        "risk_exact": "0",
+        "previous_audits_risk_exact": "1/15"
+      },
+      "saving_vs_pooled_exact": "1/5",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "0",
+        "0"
+      ],
+      "elapsed_seconds": 0.000108
+    },
+    {
+      "case_id": "threshold-r2-N5",
+      "family": "threshold",
+      "N": 5,
+      "d": 3,
+      "k": 2,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        10,
+        10
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        10,
+        10
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 10,
+        "risk_exact": "0",
+        "previous_audits_risk_exact": "1/15",
+        "construction": {
+          "full_strata": 2,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 12,
+        "risk_exact": "1/35",
+        "previous_audits_risk_exact": "2/35"
+      },
+      "saving_vs_pooled_exact": "1/6",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "0",
+        "0"
+      ],
+      "elapsed_seconds": 3e-05
+    },
+    {
+      "case_id": "threshold-r2-N10",
+      "family": "threshold",
+      "N": 10,
+      "d": 3,
+      "k": 2,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        20,
+        20
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        20,
+        20
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 19,
+        "risk_exact": "1/30",
+        "previous_audits_risk_exact": "1/15",
+        "construction": {
+          "full_strata": 1,
+          "partial_documents": 9,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 23,
+        "risk_exact": "7/145",
+        "previous_audits_risk_exact": "28/435"
+      },
+      "saving_vs_pooled_exact": "4/23",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "1/20",
+        "1/20"
+      ],
+      "elapsed_seconds": 3.1e-05
+    },
+    {
+      "case_id": "threshold-r2-N20",
+      "family": "threshold",
+      "N": 20,
+      "d": 3,
+      "k": 2,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        38,
+        38
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        38,
+        38
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 37,
+        "risk_exact": "1/20",
+        "previous_audits_risk_exact": "1/15",
+        "construction": {
+          "full_strata": 1,
+          "partial_documents": 17,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 47,
+        "risk_exact": "13/295",
+        "previous_audits_risk_exact": "91/1770"
+      },
+      "saving_vs_pooled_exact": "10/47",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "1/38",
+        "1/38"
+      ],
+      "elapsed_seconds": 3.2e-05
+    },
+    {
+      "case_id": "threshold-r3-N2",
+      "family": "threshold",
+      "N": 2,
+      "d": 5,
+      "k": 3,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        6,
+        6
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        6,
+        6
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 5,
+        "risk_exact": "1/20",
+        "previous_audits_risk_exact": "1/10",
+        "construction": {
+          "full_strata": 2,
+          "partial_documents": 1,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 6,
+        "risk_exact": "1/30",
+        "previous_audits_risk_exact": "1/12"
+      },
+      "saving_vs_pooled_exact": "1/6",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "1/6",
+        "1/6"
+      ],
+      "elapsed_seconds": 2.2e-05
+    },
+    {
+      "case_id": "threshold-r3-N5",
+      "family": "threshold",
+      "N": 5,
+      "d": 5,
+      "k": 3,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        15,
+        15
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        15,
+        15
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 13,
+        "risk_exact": "1/25",
+        "previous_audits_risk_exact": "3/50",
+        "construction": {
+          "full_strata": 2,
+          "partial_documents": 3,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 16,
+        "risk_exact": "21/575",
+        "previous_audits_risk_exact": "6/115"
+      },
+      "saving_vs_pooled_exact": "3/16",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "2/15",
+        "2/15"
+      ],
+      "elapsed_seconds": 2.7e-05
+    },
+    {
+      "case_id": "threshold-r3-N10",
+      "family": "threshold",
+      "N": 10,
+      "d": 5,
+      "k": 3,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        30,
+        30
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        30,
+        30
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 25,
+        "risk_exact": "1/20",
+        "previous_audits_risk_exact": "3/50",
+        "construction": {
+          "full_strata": 2,
+          "partial_documents": 5,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 31,
+        "risk_exact": "969/19600",
+        "previous_audits_risk_exact": "57/980"
+      },
+      "saving_vs_pooled_exact": "6/31",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "1/6",
+        "1/6"
+      ],
+      "elapsed_seconds": 2.9e-05
+    },
+    {
+      "case_id": "threshold-r3-N20",
+      "family": "threshold",
+      "N": 20,
+      "d": 5,
+      "k": 3,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        57,
+        57
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        57,
+        57
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 50,
+        "risk_exact": "1/20",
+        "previous_audits_risk_exact": "11/200",
+        "construction": {
+          "full_strata": 2,
+          "partial_documents": 10,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 63,
+        "risk_exact": "37/770",
+        "previous_audits_risk_exact": "703/13475"
+      },
+      "saving_vs_pooled_exact": "13/63",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "7/57",
+        "7/57"
+      ],
+      "elapsed_seconds": 3.1e-05
+    },
+    {
+      "case_id": "threshold-r4-N2",
+      "family": "threshold",
+      "N": 2,
+      "d": 7,
+      "k": 4,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        8,
+        8
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        8,
+        8
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 6,
+        "risk_exact": "1/35",
+        "previous_audits_risk_exact": "3/35",
+        "construction": {
+          "full_strata": 3,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 7,
+        "risk_exact": "5/143",
+        "previous_audits_risk_exact": "10/143"
+      },
+      "saving_vs_pooled_exact": "1/7",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "1/4",
+        "1/4"
+      ],
+      "elapsed_seconds": 2.4e-05
+    },
+    {
+      "case_id": "threshold-r4-N5",
+      "family": "threshold",
+      "N": 5,
+      "d": 7,
+      "k": 4,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        20,
+        20
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        20,
+        20
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 15,
+        "risk_exact": "1/35",
+        "previous_audits_risk_exact": "9/175",
+        "construction": {
+          "full_strata": 3,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 18,
+        "risk_exact": "1/22",
+        "previous_audits_risk_exact": "9/154"
+      },
+      "saving_vs_pooled_exact": "1/6",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "1/4",
+        "1/4"
+      ],
+      "elapsed_seconds": 2.8e-05
+    },
+    {
+      "case_id": "threshold-r4-N10",
+      "family": "threshold",
+      "N": 10,
+      "d": 7,
+      "k": 4,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        39,
+        39
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        40,
+        40
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 29,
+        "risk_exact": "1/25",
+        "previous_audits_risk_exact": "9/175",
+        "construction": {
+          "full_strata": 2,
+          "partial_documents": 9,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 37,
+        "risk_exact": "8184/183379",
+        "previous_audits_risk_exact": "2728/53935"
+      },
+      "saving_vs_pooled_exact": "8/37",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "10/39",
+        "10/39"
+      ],
+      "elapsed_seconds": 3.2e-05
+    },
+    {
+      "case_id": "threshold-r4-N20",
+      "family": "threshold",
+      "N": 20,
+      "d": 7,
+      "k": 4,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        76,
+        76
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        76,
+        76
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 57,
+        "risk_exact": "8/175",
+        "previous_audits_risk_exact": "9/175",
+        "construction": {
+          "full_strata": 2,
+          "partial_documents": 17,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 73,
+        "risk_exact": "153296/3065923",
+        "previous_audits_risk_exact": "162877/3065923"
+      },
+      "saving_vs_pooled_exact": "16/73",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "1/4",
+        "1/4"
+      ],
+      "elapsed_seconds": 3.3e-05
+    },
+    {
+      "case_id": "threshold-r5-N2",
+      "family": "threshold",
+      "N": 2,
+      "d": 9,
+      "k": 5,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        9,
+        9
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        9,
+        9
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 6,
+        "risk_exact": "1/21",
+        "previous_audits_risk_exact": "3/28",
+        "construction": {
+          "full_strata": 3,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 8,
+        "risk_exact": "1/34",
+        "previous_audits_risk_exact": "11/204"
+      },
+      "saving_vs_pooled_exact": "1/4",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "1/3",
+        "1/3"
+      ],
+      "elapsed_seconds": 2.5e-05
+    },
+    {
+      "case_id": "threshold-r5-N5",
+      "family": "threshold",
+      "N": 5,
+      "d": 9,
+      "k": 5,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        23,
+        23
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        25,
+        25
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 15,
+        "risk_exact": "1/21",
+        "previous_audits_risk_exact": "1/14",
+        "construction": {
+          "full_strata": 3,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 20,
+        "risk_exact": "230/5289",
+        "previous_audits_risk_exact": "5980/111069"
+      },
+      "saving_vs_pooled_exact": "1/4",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "8/23",
+        "8/23"
+      ],
+      "elapsed_seconds": 2.8e-05
+    },
+    {
+      "case_id": "threshold-r5-N10",
+      "family": "threshold",
+      "N": 10,
+      "d": 9,
+      "k": 5,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        42,
+        42
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        44,
+        44
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 30,
+        "risk_exact": "1/21",
+        "previous_audits_risk_exact": "5/84",
+        "construction": {
+          "full_strata": 3,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 40,
+        "risk_exact": "529690/10987317",
+        "previous_audits_risk_exact": "195755/3662439"
+      },
+      "saving_vs_pooled_exact": "1/4",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "2/7",
+        "2/7"
+      ],
+      "elapsed_seconds": 3.1e-05
+    },
+    {
+      "case_id": "threshold-r5-N20",
+      "family": "threshold",
+      "N": 20,
+      "d": 9,
+      "k": 5,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        84,
+        84
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        86,
+        86
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 60,
+        "risk_exact": "1/21",
+        "previous_audits_risk_exact": "3/56",
+        "construction": {
+          "full_strata": 3,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 81,
+        "risk_exact": "90307/1879858",
+        "previous_audits_risk_exact": "47530/939929"
+      },
+      "saving_vs_pooled_exact": "7/27",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "2/7",
+        "2/7"
+      ],
+      "elapsed_seconds": 3.7e-05
+    },
+    {
+      "case_id": "threshold-r6-N2",
+      "family": "threshold",
+      "N": 2,
+      "d": 11,
+      "k": 6,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        10,
+        10
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        11,
+        11
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 7,
+        "risk_exact": "5/132",
+        "previous_audits_risk_exact": "2/33",
+        "construction": {
+          "full_strata": 3,
+          "partial_documents": 1,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 8,
+        "risk_exact": "13/323",
+        "previous_audits_risk_exact": "65/969"
+      },
+      "saving_vs_pooled_exact": "1/8",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "3/10",
+        "3/10"
+      ],
+      "elapsed_seconds": 2.7e-05
+    },
+    {
+      "case_id": "threshold-r6-N5",
+      "family": "threshold",
+      "N": 5,
+      "d": 11,
+      "k": 6,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        22,
+        22
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        22,
+        22
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 17,
+        "risk_exact": "7/165",
+        "previous_audits_risk_exact": "17/330",
+        "construction": {
+          "full_strata": 3,
+          "partial_documents": 2,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 21,
+        "risk_exact": "7192/155025",
+        "previous_audits_risk_exact": "1736/31005"
+      },
+      "saving_vs_pooled_exact": "4/21",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "5/22",
+        "5/22"
+      ],
+      "elapsed_seconds": 2.9e-05
+    },
+    {
+      "case_id": "threshold-r6-N10",
+      "family": "threshold",
+      "N": 10,
+      "d": 11,
+      "k": 6,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        44,
+        44
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        44,
+        44
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 33,
+        "risk_exact": "31/660",
+        "previous_audits_risk_exact": "17/330",
+        "construction": {
+          "full_strata": 3,
+          "partial_documents": 3,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 43,
+        "risk_exact": "432016/9272085",
+        "previous_audits_risk_exact": "473824/9272085"
+      },
+      "saving_vs_pooled_exact": "10/43",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "1/4",
+        "1/4"
+      ],
+      "elapsed_seconds": 3.3e-05
+    },
+    {
+      "case_id": "threshold-r6-N20",
+      "family": "threshold",
+      "N": 20,
+      "d": 11,
+      "k": 6,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        88,
+        88
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        88,
+        88
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 65,
+        "risk_exact": "13/264",
+        "previous_audits_risk_exact": "17/330",
+        "construction": {
+          "full_strata": 3,
+          "partial_documents": 5,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 86,
+        "risk_exact": "2167919/44400060",
+        "previous_audits_risk_exact": "2167919/42426724"
+      },
+      "saving_vs_pooled_exact": "21/86",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "23/88",
+        "23/88"
+      ],
+      "elapsed_seconds": 3.7e-05
+    },
+    {
+      "case_id": "and-d2-N2",
+      "family": "and",
+      "N": 2,
+      "d": 2,
+      "k": 2,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 2,
+        "risk_exact": "0",
+        "previous_audits_risk_exact": "1/2",
+        "construction": {
+          "full_strata": 1,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 3,
+        "risk_exact": "0",
+        "previous_audits_risk_exact": "1/6"
+      },
+      "saving_vs_pooled_exact": "1/3",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "0",
+        "0"
+      ],
+      "elapsed_seconds": 1.8e-05
+    },
+    {
+      "case_id": "and-d3-N2",
+      "family": "and",
+      "N": 2,
+      "d": 3,
+      "k": 3,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 2,
+        "risk_exact": "0",
+        "previous_audits_risk_exact": "1/2",
+        "construction": {
+          "full_strata": 1,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 3,
+        "risk_exact": "1/20",
+        "previous_audits_risk_exact": "1/5"
+      },
+      "saving_vs_pooled_exact": "1/3",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "0",
+        "0"
+      ],
+      "elapsed_seconds": 2.1e-05
+    },
+    {
+      "case_id": "and-d4-N2",
+      "family": "and",
+      "N": 2,
+      "d": 4,
+      "k": 4,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 2,
+        "risk_exact": "0",
+        "previous_audits_risk_exact": "1/2",
+        "construction": {
+          "full_strata": 1,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 4,
+        "risk_exact": "1/70",
+        "previous_audits_risk_exact": "1/14"
+      },
+      "saving_vs_pooled_exact": "1/2",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "0",
+        "0"
+      ],
+      "elapsed_seconds": 2e-05
+    },
+    {
+      "case_id": "and-d5-N2",
+      "family": "and",
+      "N": 2,
+      "d": 5,
+      "k": 5,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 2,
+        "risk_exact": "0",
+        "previous_audits_risk_exact": "1/2",
+        "construction": {
+          "full_strata": 1,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 4,
+        "risk_exact": "1/42",
+        "previous_audits_risk_exact": "1/12"
+      },
+      "saving_vs_pooled_exact": "1/2",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "0",
+        "0"
+      ],
+      "elapsed_seconds": 2.1e-05
+    },
+    {
+      "case_id": "and-d6-N2",
+      "family": "and",
+      "N": 2,
+      "d": 6,
+      "k": 6,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 2,
+        "risk_exact": "0",
+        "previous_audits_risk_exact": "1/2",
+        "construction": {
+          "full_strata": 1,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 4,
+        "risk_exact": "1/33",
+        "previous_audits_risk_exact": "1/11"
+      },
+      "saving_vs_pooled_exact": "1/2",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "0",
+        "0"
+      ],
+      "elapsed_seconds": 2.2e-05
+    },
+    {
+      "case_id": "and-d8-N2",
+      "family": "and",
+      "N": 2,
+      "d": 8,
+      "k": 8,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 2,
+        "risk_exact": "0",
+        "previous_audits_risk_exact": "1/2",
+        "construction": {
+          "full_strata": 1,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 4,
+        "risk_exact": "1/26",
+        "previous_audits_risk_exact": "1/10"
+      },
+      "saving_vs_pooled_exact": "1/2",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "0",
+        "0"
+      ],
+      "elapsed_seconds": 2.3e-05
+    },
+    {
+      "case_id": "and-d12-N2",
+      "family": "and",
+      "N": 2,
+      "d": 12,
+      "k": 12,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 2,
+        "risk_exact": "0",
+        "previous_audits_risk_exact": "1/2",
+        "construction": {
+          "full_strata": 1,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 4,
+        "risk_exact": "15/322",
+        "previous_audits_risk_exact": "5/46"
+      },
+      "saving_vs_pooled_exact": "1/2",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "0",
+        "0"
+      ],
+      "elapsed_seconds": 4.2e-05
+    },
+    {
+      "case_id": "and-d20-N2",
+      "family": "and",
+      "N": 2,
+      "d": 20,
+      "k": 20,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        2,
+        2
+      ],
+      "fixed_costs_exact": true,
+      "randomized_optimal": {
+        "audits": 2,
+        "risk_exact": "0",
+        "previous_audits_risk_exact": "1/2",
+        "construction": {
+          "full_strata": 1,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 5,
+        "risk_exact": "34/1443",
+        "previous_audits_risk_exact": "51/962"
+      },
+      "saving_vs_pooled_exact": "3/5",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "0",
+        "0"
+      ],
+      "elapsed_seconds": 2.8e-05
+    },
+    {
+      "case_id": "sharpness-N4",
+      "family": "sharpness_bounds",
+      "N": 4,
+      "d": 31,
+      "k": 16,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        16,
+        26
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        28,
+        31
+      ],
+      "fixed_costs_exact": false,
+      "randomized_optimal": {
+        "audits": 16,
+        "risk_exact": "39/899",
+        "previous_audits_risk_exact": "52/899",
+        "construction": {
+          "full_strata": 4,
+          "partial_documents": 0,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 20,
+        "risk_exact": "11523405492690/235969426528099",
+        "previous_audits_risk_exact": "13595028952050/235969426528099"
+      },
+      "saving_vs_pooled_exact": "1/5",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "0",
+        "5/13"
+      ],
+      "elapsed_seconds": 3.9e-05
+    },
+    {
+      "case_id": "sharpness-N8",
+      "family": "sharpness_bounds",
+      "N": 8,
+      "d": 127,
+      "k": 64,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        64,
+        86
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        120,
+        127
+      ],
+      "fixed_costs_exact": false,
+      "randomized_optimal": {
+        "audits": 35,
+        "risk_exact": "6039/130175",
+        "previous_audits_risk_exact": "6527/130175",
+        "construction": {
+          "full_strata": 4,
+          "partial_documents": 3,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 46,
+        "risk_exact": "12148743173917828299387557579771654689762519477704892795708303/260037195481897360111449239244061690772315241231333626618592285",
+        "previous_audits_risk_exact": "13394424668046117198883745953441736151888114087877500326029/267803496891758352328989947728178878241313327735667998577335"
+      },
+      "saving_vs_pooled_exact": "11/46",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "29/64",
+        "51/86"
+      ],
+      "elapsed_seconds": 0.00011
+    },
+    {
+      "case_id": "sharpness-N16",
+      "family": "sharpness_bounds",
+      "N": 16,
+      "d": 511,
+      "k": 256,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        256,
+        302
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        496,
+        511
+      ],
+      "fixed_costs_exact": false,
+      "randomized_optimal": {
+        "audits": 70,
+        "risk_exact": "311949/6279533",
+        "previous_audits_risk_exact": "324093/6279533",
+        "construction": {
+          "full_strata": 4,
+          "partial_documents": 6,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 94,
+        "risk_exact": "352471790723153479902406588578581918785519675931240035717608547857634557257536241378377503198932070017385311909682403425079016779100731592119446276093210460867499627181324196707/7134503057437179539612358743816169375454414078726388026832907310838851517169038837493974477188665936401481185458870785478871414557622865158404072497901250599876173646977064477175",
+        "previous_audits_risk_exact": "2656935690898946635267917302432136605129124936750116533453290446352426073616281875728155447647501230487509058728920633969549251305346002802484646772645894620056532260597691019/52076664652826128026367582071650871353681854589243708225057717597363879687365246989007112972180043331397672886561100623933367989471699745681781551079571172261869880634869083775"
+      },
+      "saving_vs_pooled_exact": "12/47",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "93/128",
+        "116/151"
+      ],
+      "elapsed_seconds": 0.000977
+    },
+    {
+      "case_id": "sharpness-N32",
+      "family": "sharpness_bounds",
+      "N": 32,
+      "d": 2047,
+      "k": 1024,
+      "status": "complete",
+      "fixed_direct_cost_bounds": [
+        1024,
+        1118
+      ],
+      "fixed_simple_portfolio_cost_bounds": [
+        2016,
+        2047
+      ],
+      "fixed_costs_exact": false,
+      "randomized_optimal": {
+        "audits": 141,
+        "risk_exact": "28239839/570148863",
+        "previous_audits_risk_exact": "9598421/190049621",
+        "construction": {
+          "full_strata": 4,
+          "partial_documents": 13,
+          "selection": "uniform random ordered distinct strata; uniform documents in the partial stratum"
+        }
+      },
+      "pooled_srs_optimal": {
+        "audits": 190,
+        "risk_exact": "3773580376905156277073115964320044771274018494756567752608660398061941368143005416606805390667922958561561441659182935370323876353542209915991858821790286950094657203980333689654865724599368735831785591128435620821021840693771261974673755305522257229208939235527472057316554682498596345322196715575500942153480854892089390952667326522521429489901342045313649863027912438474633087182305346063497289987831778619397937899109700154695868556601370780980683853/75644664983616954533069314773917055361483112400281908421077361609653372674474436745950646190732880478059855987328318682114443947257076041052024372305598983978621657768504741785494718160061229477543161062417177409333165823820982301983537096385144281532507175379584557351659770162565187206344673435321725129617674260518080855555124916672462529474442084177894476708003452039593333777649207278118773710193683011851091446535666033044761723031477509087820768453",
+        "previous_audits_risk_exact": "18867901884525781385365579821600223856370092473782838763043301990309706840715027083034026953339614792807807208295914676851619381767711049579959294108951434750473286019901668448274328622996843679158927955642178104105109203468856309873368776527611286146044696177637360286582773412492981726610983577877504710767404274460446954763336632612607147449506710226568249315139562192373165435911526730317486449939158893096989689495548500773479342783006853904903419265/372293589256810657879932581805856342819039330883145079560551531443483501692921688190608052839960776147511766154889760115732964542073388636245556068276756049833083135542749625210996013567212470668355459531796888373531238151976940456007317114269104417362506224629018661616440196242936419710870810673679019391276880952535247361593396311550890950198373729915104784661582326806820410464582805260471107754884947907442281266877784959846955212081200377919703362521"
+      },
+      "saving_vs_pooled_exact": "49/190",
+      "saving_vs_fixed_direct_bounds_exact": [
+        "883/1024",
+        "977/1118"
+      ],
+      "elapsed_seconds": 0.011469
+    }
+  ],
+  "source_sha256_after": {
+    "research/planning/run_randomization.py": "702312f54f5defa628458d4c4538143eb9821995771c679d0e212168882b051d",
+    "research/planning/randomized_audit.py": "bbe16b1637e1cc805c9c81f53aca261bd3a8347076312efa7f8fde77adebfd6d",
+    "research/planning/test_randomized_audit.py": "985595a14a716ea284b5bc40520b1704b63b90ca2d23b7a3719208e36aa125cd",
+    "research/planning/RANDOMIZATION_PROTOCOL.md": "0dc929118dfbde182c49493201e0c34dff74dc762ac1e246f1ff4740f2e831a8",
+    "research/planning/localization_results.json": "9b7f81cd51d6724838afa7b08707363c988bb4b361c64e9cac1b20d2a3f2c1d0"
+  },
+  "sources_unchanged_during_run": true,
+  "summaries": {
+    "threshold": {
+      "cases": 20,
+      "strict_gain_vs_pooled": 20,
+      "median_saving_vs_pooled_exact": "64/315",
+      "strict_gain_vs_fixed_direct_lower": 18
+    },
+    "and": {
+      "cases": 8,
+      "strict_gain_vs_pooled": 8,
+      "median_saving_vs_pooled_exact": "1/2",
+      "strict_gain_vs_fixed_direct_lower": 0
+    },
+    "sharpness_bounds": {
+      "cases": 4,
+      "strict_gain_vs_pooled": 4,
+      "median_saving_vs_pooled_exact": "1069/4324",
+      "strict_gain_vs_fixed_direct_lower": 3
+    }
+  },
+  "elapsed_seconds": 0.651663
+}

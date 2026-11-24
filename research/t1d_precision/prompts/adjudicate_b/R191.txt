@@ -1,0 +1,197 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R191",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "rm&t segment marathon 2019s rm&t operations primarily use derivative commodity instruments to mitigate the price risk of certain crude oil and other feedstock purchases , to protect carrying values of excess inventories , to protect margins on fixed price sales of refined products and to lock-in the price spread between refined products and crude oil ."
+      },
+      {
+        "location": "text_1",
+        "text": "derivative instruments are used to mitigate the price risk between the time foreign and domestic crude oil and other feedstock purchases for refinery supply are priced and when they are actually refined into salable petroleum products ."
+      },
+      {
+        "location": "text_2",
+        "text": "in addition , natural gas options are in place to manage the price risk associated with approximately 60% ( 60 % ) of the anticipated natural gas purchases for refinery use through the first quarter of 2004 and 50% ( 50 % ) through the second quarter of 2004 ."
+      },
+      {
+        "location": "text_3",
+        "text": "derivative commodity instruments are also used to protect the value of excess refined product , crude oil and lpg inventories ."
+      },
+      {
+        "location": "text_4",
+        "text": "derivatives are used to lock in margins associated with future fixed price sales of refined products to non-retail customers ."
+      },
+      {
+        "location": "text_5",
+        "text": "derivative commodity instruments are used to protect against decreases in the future crack spreads ."
+      },
+      {
+        "location": "text_6",
+        "text": "within a limited framework , derivative instruments are also used to take advantage of opportunities identified in the commodity markets ."
+      },
+      {
+        "location": "text_7",
+        "text": "derivative gains ( losses ) included in rm&t segment income for each of the last two years are summarized in the following table : strategy ( in millions ) 2003 2002 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "<i>Strategy (In Millions)</i>",
+          "2003",
+          "2002"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Mitigate price risk",
+          "$(112)",
+          "$(95)"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Protect carrying values of excess inventories",
+          "(57)",
+          "(41)"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Protect margin on fixed price sales",
+          "5",
+          "11"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Protect crack spread values",
+          "6",
+          "1"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Trading activities",
+          "(4)",
+          "–"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Total net derivative losses",
+          "$(162)",
+          "$(124)"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_8",
+        "text": "generally , derivative losses occur when market prices increase , which are offset by gains on the underlying physical commodity transaction ."
+      },
+      {
+        "location": "text_9",
+        "text": "conversely , derivative gains occur when market prices decrease , which are offset by losses on the underlying physical commodity transaction ."
+      },
+      {
+        "location": "text_10",
+        "text": "oerb segment marathon has used derivative instruments to convert the fixed price of a long-term gas sales contract to market prices ."
+      },
+      {
+        "location": "text_11",
+        "text": "the underlying physical contract is for a specified annual quantity of gas and matures in 2008 ."
+      },
+      {
+        "location": "text_12",
+        "text": "similarly , marathon will use derivative instruments to convert shorter term ( typically less than a year ) fixed price contracts to market prices in its ongoing purchase for resale activity ; and to hedge purchased gas injected into storage for subsequent resale ."
+      },
+      {
+        "location": "text_13",
+        "text": "derivative gains ( losses ) included in oerb segment income were $ 19 million , $ ( 8 ) million and $ ( 29 ) million for 2003 , 2002 and 2001 ."
+      },
+      {
+        "location": "text_14",
+        "text": "oerb 2019s trading activity gains ( losses ) of $ ( 7 ) million , $ 4 million and $ ( 1 ) million in 2003 , 2002 and 2001 are included in the aforementioned amounts ."
+      },
+      {
+        "location": "text_15",
+        "text": "other commodity risk marathon is subject to basis risk , caused by factors that affect the relationship between commodity futures prices reflected in derivative commodity instruments and the cash market price of the underlying commodity ."
+      },
+      {
+        "location": "text_16",
+        "text": "natural gas transaction prices are frequently based on industry reference prices that may vary from prices experienced in local markets ."
+      },
+      {
+        "location": "text_17",
+        "text": "for example , new york mercantile exchange ( 201cnymex 201d ) contracts for natural gas are priced at louisiana 2019s henry hub , while the underlying quantities of natural gas may be produced and sold in the western united states at prices that do not move in strict correlation with nymex prices ."
+      },
+      {
+        "location": "text_18",
+        "text": "to the extent that commodity price changes in one region are not reflected in other regions , derivative commodity instruments may no longer provide the expected hedge , resulting in increased exposure to basis risk ."
+      },
+      {
+        "location": "text_19",
+        "text": "these regional price differences could yield favorable or unfavorable results ."
+      },
+      {
+        "location": "text_20",
+        "text": "otc transactions are being used to manage exposure to a portion of basis risk ."
+      },
+      {
+        "location": "text_21",
+        "text": "marathon is subject to liquidity risk , caused by timing delays in liquidating contract positions due to a potential inability to identify a counterparty willing to accept an offsetting position ."
+      },
+      {
+        "location": "text_22",
+        "text": "due to the large number of active participants , liquidity risk exposure is relatively low for exchange-traded transactions. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "for natural gas options in place to manage the price risk , what is the change in the percentage of the anticipated natural gas purchases hedged between the first quarter of 2004 and the second quarter of 2004?",
+  "reference_program": "subtract(60, 50)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "60",
+      "raw": "60%",
+      "location": "text_2:102",
+      "context": "in addition , natural gas options are in place to manage the price risk associated with approximately 60% ( 60 % ) of the anticipated natural gas purchases for refinery use through the first quarter of 2004 and 50% ( 50 % ) through the second quarter of 2004 ."
+    },
+    "x1": {
+      "program_token": "50",
+      "raw": "50%",
+      "location": "text_2:211",
+      "context": "in addition , natural gas options are in place to manage the price risk associated with approximately 60% ( 60 % ) of the anticipated natural gas purchases for refinery use through the first quarter of 2004 and 50% ( 50 % ) through the second quarter of 2004 ."
+    }
+  }
+}
+
+TWO SOURCE INTERPRETATIONS TO CONSIDER
+The order is random. Evaluate these reasons against the supplied source and give your own judgment using the same JSON schema. Their order carries no priority.
+[
+  "Coverage decreases from approximately 60% in the first quarter to 50% in the second, so subtracting 50 from 60 reverses the sign of the chronological change.",
+  "Pre_text[2] gives approximately 60% through Q1 and 50% through Q2. Program computes the 10-percentage-point decline magnitude; question asks change in percentage rather than relative growth. No exact contractual hedge percentage is asserted."
+]

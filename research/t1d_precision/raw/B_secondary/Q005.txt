@@ -1,0 +1,1 @@
+{"answer":"102.43204577968526","unit":"percent","expression":"(1415 - 699) / 699 * 100","low":"102.215868477484","high":"102.648532569792","reliable_digits":"2","explanation":"Free cash flow increased by $716 million; bounds allow each reported cash flow to vary by $0.5 million."}

@@ -1,0 +1,1 @@
+{"answer":"33.9622641509434","unit":"percent","expression":"(5.3 - 3.5) / 5.3 * 100","low":"32.3809523809524","high":"35.5140186915888","reliable_digits":"1","explanation":"Each weighted average rate is rounded to 0.1 percentage point, giving the stated bounds and one stable leading digit."}

@@ -1,0 +1,1 @@
+{"answer":"11.7125984252","unit":"percent","expression":"(1,135 - 1,016) / 1,016 * 100","low":"11.6084604033","high":"11.8168399803","reliable_digits":"2","explanation":"Maximum borrowings outstanding increased from 1,016 to 1,135, with each amount subject to rounding uncertainty of 0.5."}

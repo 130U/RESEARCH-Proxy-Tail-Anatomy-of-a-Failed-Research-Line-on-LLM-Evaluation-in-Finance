@@ -1,0 +1,1 @@
+{"answer":"35","unit":"million dollars","expression":"(32 + 38) / 2","low":"34.5","high":"35.5","reliable_digits":"2","explanation":"Averaging the two sensitivities gives $35 million, with rounding uncertainty of up to $0.5 million."}

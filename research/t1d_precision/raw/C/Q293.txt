@@ -1,0 +1,1 @@
+{"answer":"13.11795544","unit":"percent","expression":"(8,630.9 - 7,630.0) / 7,630.0 * 100","low":"13.11655887","high":"13.11935203","reliable_digits":"4","explanation":"Allowing each sales figure to vary by $0.05 million gives these bounds, both of which round to 13.12 percent."}

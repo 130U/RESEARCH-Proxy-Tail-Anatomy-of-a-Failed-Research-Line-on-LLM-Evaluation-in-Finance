@@ -1,0 +1,1204 @@
+{
+  "GS/2018/page_78.pdf-4": [
+    {
+      "variable": "x0",
+      "source_location": "text_1:160",
+      "original_interval": [
+        "39/2",
+        "41/2"
+      ],
+      "candidate_location": "table_1:2",
+      "raw": "2017",
+      "scale": "1/100",
+      "interval": [
+        "4033/200",
+        "807/40"
+      ],
+      "context": "$ in billions | "
+    },
+    {
+      "variable": "x0",
+      "source_location": "text_1:160",
+      "original_interval": [
+        "39/2",
+        "41/2"
+      ],
+      "candidate_location": "table_1:3",
+      "raw": "2016",
+      "scale": "1/100",
+      "interval": [
+        "4031/200",
+        "4033/200"
+      ],
+      "context": "$ in billions | "
+    }
+  ],
+  "HIG/2004/page_140.pdf-3": [
+    {
+      "variable": "x1",
+      "source_location": "table_3:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "table_1:1",
+      "raw": "54",
+      "scale": "-1/100",
+      "interval": [
+        "107/200",
+        "109/200"
+      ],
+      "context": "Establishing GMDB and other benefit reserves for annuity contracts | Net Income"
+    },
+    {
+      "variable": "x1",
+      "source_location": "table_3:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_3:0",
+      "raw": "150",
+      "scale": "1/100",
+      "interval": [
+        "299/200",
+        "301/200"
+      ],
+      "context": "150 , 201caccounting for certain financial instruments with characteristics of both liabilities and equity 201d ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "table_3:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_5:0",
+      "raw": "150",
+      "scale": "1/100",
+      "interval": [
+        "299/200",
+        "301/200"
+      ],
+      "context": "150 establishes standards for classifying and measuring as liabilities certain financial instruments that embody obligations of the issuer and have characteristics of both liabilities and equity ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "table_3:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_7:0",
+      "raw": "150",
+      "scale": "1/100",
+      "interval": [
+        "299/200",
+        "301/200"
+      ],
+      "context": "150 requires liability classification for two broad classes of financial instruments : ( a ) instruments that represent , or are indexed to , an obligation to buy back the issuer 2019s shares regardless of whether the instrument is settled on a net-cash or gross-physical basis and ( b ) obligations that ( i ) can be settled in shares but derive their value predominately from another underlying instrument or index ( e.g ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "table_3:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_11:0",
+      "raw": "150",
+      "scale": "1/100",
+      "interval": [
+        "299/200",
+        "301/200"
+      ],
+      "context": "150 specifies accounting only for certain freestanding financial instruments and does not affect whether an embedded derivative must be bifurcated and accounted for separately ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "table_3:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_13:0",
+      "raw": "150",
+      "scale": "1/100",
+      "interval": [
+        "299/200",
+        "301/200"
+      ],
+      "context": "150 was effective for instruments entered into or modified after may 31 , 2003 and for all other instruments beginning with the first interim reporting period beginning after june 15 , 2003 ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "table_3:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_17:0",
+      "raw": "51",
+      "scale": "1/100",
+      "interval": [
+        "101/200",
+        "103/200"
+      ],
+      "context": "51 201d ( 201cfin 46 201d ) , which required an enterprise to assess whether consolidation of an entity is appropriate based upon its interests in a variable interest entity ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "table_3:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_34:142",
+      "raw": "952",
+      "scale": "1/1000",
+      "interval": [
+        "1903/2000",
+        "381/400"
+      ],
+      "context": "at december 31 , 2003 and 2002 , the impact of deconsolidation was to increase long-term debt and decrease the trust preferred securities by $ 952 and $ 1.5 billion , respectively ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "table_3:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_34:152",
+      "raw": "1.5",
+      "scale": "1",
+      "interval": [
+        "29/20",
+        "31/20"
+      ],
+      "context": "at december 31 , 2003 and 2002 , the impact of deconsolidation was to increase long-term debt and decrease the trust preferred securities by $ 952 and $ 1.5 billion , respectively ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "table_3:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_36:0",
+      "raw": "123",
+      "scale": "1/100",
+      "interval": [
+        "49/40",
+        "247/200"
+      ],
+      "context": "123 ( revised 2004 ) , 201cshare-based payment 201d ( 201csfas no ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "table_3:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_38:0",
+      "raw": "123",
+      "scale": "1/100",
+      "interval": [
+        "49/40",
+        "247/200"
+      ],
+      "context": "123 , 201caccounting for stock-based compensation 201d ( 201csfas no ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "table_3:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_39:0",
+      "raw": "123",
+      "scale": "1/100",
+      "interval": [
+        "49/40",
+        "247/200"
+      ],
+      "context": "123 201d ) and supercedes apb opinion no ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "table_3:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_44:0",
+      "raw": "123",
+      "scale": "1/100",
+      "interval": [
+        "49/40",
+        "247/200"
+      ],
+      "context": "123 will no longer be an alternative to financial statement recognition ."
+    }
+  ],
+  "IP/2006/page_38.pdf-3": [
+    {
+      "variable": "x0",
+      "source_location": "text_18:168",
+      "original_interval": [
+        "45/2",
+        "47/2"
+      ],
+      "candidate_location": "table_3:1",
+      "raw": "2,329",
+      "scale": "1/100",
+      "interval": [
+        "4657/200",
+        "4659/200"
+      ],
+      "context": "Purchase obligations (c,d) | 2007"
+    }
+  ],
+  "IP/2009/page_84.pdf-4": [
+    {
+      "variable": "x2",
+      "source_location": "text_19:119",
+      "original_interval": [
+        "73/20",
+        "15/4"
+      ],
+      "candidate_location": "table_2:6",
+      "raw": "3,729",
+      "scale": "1/1000",
+      "interval": [
+        "7457/2000",
+        "7459/2000"
+      ],
+      "context": "Purchase obligations (a) | Thereafter"
+    },
+    {
+      "variable": "x2",
+      "source_location": "text_19:119",
+      "original_interval": [
+        "73/20",
+        "15/4"
+      ],
+      "candidate_location": "text_8:65",
+      "raw": "369",
+      "scale": "1/100",
+      "interval": [
+        "737/200",
+        "739/200"
+      ],
+      "context": "excluding the impact of spe- cial items , the tax provision was $ 369 million , or 31.5% ( 31.5 % ) of pre-tax earnings before equity earnings ."
+    },
+    {
+      "variable": "x2",
+      "source_location": "text_19:119",
+      "original_interval": [
+        "73/20",
+        "15/4"
+      ],
+      "candidate_location": "text_24:291",
+      "raw": "3729",
+      "scale": "1/1000",
+      "interval": [
+        "7457/2000",
+        "7459/2000"
+      ],
+      "context": "at december 31 , 2009 , total future minimum commitments under existing non-cancelable operat- ing leases and purchase obligations were as follows : in millions 2010 2011 2012 2013 2014 thereafter obligations $ 177 $ 148 $ 124 $ 96 $ 79 $ 184 purchase obligations ( a ) 2262 657 623 556 532 3729 ."
+    }
+  ],
+  "IPG/2006/page_77.pdf-1": [
+    {
+      "variable": "x1",
+      "source_location": "text_3:160",
+      "original_interval": [
+        "4999/20",
+        "5001/20"
+      ],
+      "candidate_location": "text_19:425",
+      "raw": "02",
+      "scale": "100",
+      "interval": [
+        "150",
+        "250"
+      ],
+      "context": "the conversion rate of the new notes is also subject to adjustment for certain events arising from stock splits and combinations , stock dividends , certain cash dividends and certain other actions by us that modify our capital notes to consolidated financial statements 2014 ( continued ) ( amounts in millions , except per share amounts ) %%transmsg*** transmitting job : y31000 pcn : 072000000 ***%%pcmsg|72 |00009|yes|no|02/28/2007 01:12|0|0|page is valid , no graphics -- color : d| ."
+    }
+  ],
+  "MRK/2013/page_125.pdf-4": [
+    {
+      "variable": "x0",
+      "source_location": "text_9:71",
+      "original_interval": [
+        "23/20",
+        "5/4"
+      ],
+      "candidate_location": "table_4:3",
+      "raw": "1,223",
+      "scale": "-1/1000",
+      "interval": [
+        "489/400",
+        "2447/2000"
+      ],
+      "context": "Reductions for tax positions of prior years | 2011"
+    }
+  ],
+  "MRO/2003/page_84.pdf-1": [
+    {
+      "variable": "x1",
+      "source_location": "text_2:211",
+      "original_interval": [
+        "99/2",
+        "101/2"
+      ],
+      "candidate_location": "table_4:2",
+      "raw": "1",
+      "scale": "100",
+      "interval": [
+        "50",
+        "150"
+      ],
+      "context": "Protect crack spread values | 2002"
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_2:211",
+      "original_interval": [
+        "99/2",
+        "101/2"
+      ],
+      "candidate_location": "text_14:85",
+      "raw": "1",
+      "scale": "-100",
+      "interval": [
+        "50",
+        "150"
+      ],
+      "context": "oerb 2019s trading activity gains ( losses ) of $ ( 7 ) million , $ 4 million and $ ( 1 ) million in 2003 , 2002 and 2001 are included in the aforementioned amounts ."
+    }
+  ],
+  "MSI/2008/page_69.pdf-2": [
+    {
+      "variable": "x0",
+      "source_location": "text_22:100",
+      "original_interval": [
+        "23/20",
+        "5/4"
+      ],
+      "candidate_location": "table_3:2",
+      "raw": "1,201",
+      "scale": "-1/1000",
+      "interval": [
+        "2401/2000",
+        "2403/2000"
+      ],
+      "context": "Operating earnings (loss) | Percent Change"
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_22:43",
+      "original_interval": [
+        "43/20",
+        "9/4"
+      ],
+      "candidate_location": "table_3:1",
+      "raw": "2,199",
+      "scale": "-1/1000",
+      "interval": [
+        "4397/2000",
+        "4399/2000"
+      ],
+      "context": "Operating earnings (loss) | Years Ended December 31"
+    }
+  ],
+  "NCLH/2018/page_64.pdf-2": [
+    {
+      "variable": "x0",
+      "source_location": "text_1:66",
+      "original_interval": [
+        "31/20",
+        "33/20"
+      ],
+      "candidate_location": "table_3:5",
+      "raw": "1,589,673",
+      "scale": "1/1000000",
+      "interval": [
+        "635869/400000",
+        "3179347/2000000"
+      ],
+      "context": "Ship construction contracts (3) | More than5 years"
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_1:82",
+      "original_interval": [
+        "23/20",
+        "5/4"
+      ],
+      "candidate_location": "text_9:74",
+      "raw": "1200",
+      "scale": "1/1000",
+      "interval": [
+        "2399/2000",
+        "2401/2000"
+      ],
+      "context": "each of the allura class ships will be approximately 67000 gross tons and 1200 berths ."
+    }
+  ],
+  "NWS/2017/page_119.pdf-1": [
+    {
+      "variable": "x1",
+      "source_location": "text_3:178",
+      "original_interval": [
+        "7/2",
+        "9/2"
+      ],
+      "candidate_location": "text_7:65",
+      "raw": "382",
+      "scale": "1/100",
+      "interval": [
+        "763/200",
+        "153/40"
+      ],
+      "context": "the nols are subject to limitations as promulgated under section 382 of the internal revenue code of 1986 , as amended ( the 201ccode 201d ) ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_3:178",
+      "original_interval": [
+        "7/2",
+        "9/2"
+      ],
+      "candidate_location": "text_8:8",
+      "raw": "382",
+      "scale": "1/100",
+      "interval": [
+        "763/200",
+        "153/40"
+      ],
+      "context": "section 382 of the code limits the amount of acquired nols that we can use on an annual basis to offset future u.s ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_3:178",
+      "original_interval": [
+        "7/2",
+        "9/2"
+      ],
+      "candidate_location": "text_13:186",
+      "raw": "382",
+      "scale": "1/100",
+      "interval": [
+        "763/200",
+        "153/40"
+      ],
+      "context": "upon filing its fiscal 2015 federal income tax return , the company reduced move 2019s nols by $ 298 million which represents the amount expected to expire unutilized due to the section 382 limitation discussed above ."
+    }
+  ],
+  "PPG/2006/page_42.pdf-2": [
+    {
+      "variable": "x0",
+      "source_location": "text_37:64",
+      "original_interval": [
+        "19/2",
+        "21/2"
+      ],
+      "candidate_location": "table_4:3",
+      "raw": "1,028",
+      "scale": "-1/100",
+      "interval": [
+        "411/40",
+        "2057/200"
+      ],
+      "context": "Other postretirement benefits | After Application of SFAS No. 158"
+    },
+    {
+      "variable": "x0",
+      "source_location": "text_37:64",
+      "original_interval": [
+        "19/2",
+        "21/2"
+      ],
+      "candidate_location": "table_5:3",
+      "raw": "985",
+      "scale": "1/100",
+      "interval": [
+        "1969/200",
+        "1971/200"
+      ],
+      "context": "Accumulated other comprehensive loss | After Application of SFAS No. 158"
+    },
+    {
+      "variable": "x0",
+      "source_location": "text_37:64",
+      "original_interval": [
+        "19/2",
+        "21/2"
+      ],
+      "candidate_location": "text_16:47",
+      "raw": "1028",
+      "scale": "-1/100",
+      "interval": [
+        "411/40",
+        "2057/200"
+      ],
+      "context": "other postretirement benefits ( 619 ) ( 409 ) ( 1028 ) accumulated other comprehensive loss 480 505 985 ( 1 ) represents balances that would have been recorded under accounting standards prior to the adoption of sfas no ."
+    },
+    {
+      "variable": "x0",
+      "source_location": "text_37:64",
+      "original_interval": [
+        "19/2",
+        "21/2"
+      ],
+      "candidate_location": "text_16:100",
+      "raw": "985",
+      "scale": "1/100",
+      "interval": [
+        "1969/200",
+        "1971/200"
+      ],
+      "context": "other postretirement benefits ( 619 ) ( 409 ) ( 1028 ) accumulated other comprehensive loss 480 505 985 ( 1 ) represents balances that would have been recorded under accounting standards prior to the adoption of sfas no ."
+    }
+  ],
+  "PPG/2006/page_42.pdf-3": [
+    {
+      "variable": "x0",
+      "source_location": "text_27:61",
+      "original_interval": [
+        "19/2",
+        "21/2"
+      ],
+      "candidate_location": "table_4:3",
+      "raw": "1,028",
+      "scale": "-1/100",
+      "interval": [
+        "411/40",
+        "2057/200"
+      ],
+      "context": "Other postretirement benefits | After Application of SFAS No. 158"
+    },
+    {
+      "variable": "x0",
+      "source_location": "text_27:61",
+      "original_interval": [
+        "19/2",
+        "21/2"
+      ],
+      "candidate_location": "table_5:3",
+      "raw": "985",
+      "scale": "1/100",
+      "interval": [
+        "1969/200",
+        "1971/200"
+      ],
+      "context": "Accumulated other comprehensive loss | After Application of SFAS No. 158"
+    },
+    {
+      "variable": "x0",
+      "source_location": "text_27:61",
+      "original_interval": [
+        "19/2",
+        "21/2"
+      ],
+      "candidate_location": "text_16:47",
+      "raw": "1028",
+      "scale": "-1/100",
+      "interval": [
+        "411/40",
+        "2057/200"
+      ],
+      "context": "other postretirement benefits ( 619 ) ( 409 ) ( 1028 ) accumulated other comprehensive loss 480 505 985 ( 1 ) represents balances that would have been recorded under accounting standards prior to the adoption of sfas no ."
+    },
+    {
+      "variable": "x0",
+      "source_location": "text_27:61",
+      "original_interval": [
+        "19/2",
+        "21/2"
+      ],
+      "candidate_location": "text_16:100",
+      "raw": "985",
+      "scale": "1/100",
+      "interval": [
+        "1969/200",
+        "1971/200"
+      ],
+      "context": "other postretirement benefits ( 619 ) ( 409 ) ( 1028 ) accumulated other comprehensive loss 480 505 985 ( 1 ) represents balances that would have been recorded under accounting standards prior to the adoption of sfas no ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_27:78",
+      "original_interval": [
+        "7/2",
+        "9/2"
+      ],
+      "candidate_location": "table_3:1",
+      "raw": "371",
+      "scale": "-1/100",
+      "interval": [
+        "741/200",
+        "743/200"
+      ],
+      "context": "Accrued pensions | Before Application of SFAS No. 158 (1)"
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_27:78",
+      "original_interval": [
+        "7/2",
+        "9/2"
+      ],
+      "candidate_location": "table_4:2",
+      "raw": "409",
+      "scale": "-1/100",
+      "interval": [
+        "817/200",
+        "819/200"
+      ],
+      "context": "Other postretirement benefits | Adjustments"
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_27:78",
+      "original_interval": [
+        "7/2",
+        "9/2"
+      ],
+      "candidate_location": "text_16:39",
+      "raw": "409",
+      "scale": "-1/100",
+      "interval": [
+        "817/200",
+        "819/200"
+      ],
+      "context": "other postretirement benefits ( 619 ) ( 409 ) ( 1028 ) accumulated other comprehensive loss 480 505 985 ( 1 ) represents balances that would have been recorded under accounting standards prior to the adoption of sfas no ."
+    }
+  ],
+  "PPG/2006/page_42.pdf-4": [
+    {
+      "variable": "x0",
+      "source_location": "text_27:61",
+      "original_interval": [
+        "19/2",
+        "21/2"
+      ],
+      "candidate_location": "table_4:3",
+      "raw": "1,028",
+      "scale": "-1/100",
+      "interval": [
+        "411/40",
+        "2057/200"
+      ],
+      "context": "Other postretirement benefits | After Application of SFAS No. 158"
+    },
+    {
+      "variable": "x0",
+      "source_location": "text_27:61",
+      "original_interval": [
+        "19/2",
+        "21/2"
+      ],
+      "candidate_location": "table_5:3",
+      "raw": "985",
+      "scale": "1/100",
+      "interval": [
+        "1969/200",
+        "1971/200"
+      ],
+      "context": "Accumulated other comprehensive loss | After Application of SFAS No. 158"
+    },
+    {
+      "variable": "x0",
+      "source_location": "text_27:61",
+      "original_interval": [
+        "19/2",
+        "21/2"
+      ],
+      "candidate_location": "text_16:47",
+      "raw": "1028",
+      "scale": "-1/100",
+      "interval": [
+        "411/40",
+        "2057/200"
+      ],
+      "context": "other postretirement benefits ( 619 ) ( 409 ) ( 1028 ) accumulated other comprehensive loss 480 505 985 ( 1 ) represents balances that would have been recorded under accounting standards prior to the adoption of sfas no ."
+    },
+    {
+      "variable": "x0",
+      "source_location": "text_27:61",
+      "original_interval": [
+        "19/2",
+        "21/2"
+      ],
+      "candidate_location": "text_16:100",
+      "raw": "985",
+      "scale": "1/100",
+      "interval": [
+        "1969/200",
+        "1971/200"
+      ],
+      "context": "other postretirement benefits ( 619 ) ( 409 ) ( 1028 ) accumulated other comprehensive loss 480 505 985 ( 1 ) represents balances that would have been recorded under accounting standards prior to the adoption of sfas no ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_27:78",
+      "original_interval": [
+        "7/2",
+        "9/2"
+      ],
+      "candidate_location": "table_3:1",
+      "raw": "371",
+      "scale": "-1/100",
+      "interval": [
+        "741/200",
+        "743/200"
+      ],
+      "context": "Accrued pensions | Before Application of SFAS No. 158 (1)"
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_27:78",
+      "original_interval": [
+        "7/2",
+        "9/2"
+      ],
+      "candidate_location": "table_4:2",
+      "raw": "409",
+      "scale": "-1/100",
+      "interval": [
+        "817/200",
+        "819/200"
+      ],
+      "context": "Other postretirement benefits | Adjustments"
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_27:78",
+      "original_interval": [
+        "7/2",
+        "9/2"
+      ],
+      "candidate_location": "text_16:39",
+      "raw": "409",
+      "scale": "-1/100",
+      "interval": [
+        "817/200",
+        "819/200"
+      ],
+      "context": "other postretirement benefits ( 619 ) ( 409 ) ( 1028 ) accumulated other comprehensive loss 480 505 985 ( 1 ) represents balances that would have been recorded under accounting standards prior to the adoption of sfas no ."
+    }
+  ],
+  "PPG/2012/page_29.pdf-2": [
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_6:59",
+      "raw": "139",
+      "scale": "1/100",
+      "interval": [
+        "277/200",
+        "279/200"
+      ],
+      "context": "operating working capital at december 31 , 2012 increased $ 139 million compared with the prior year end level ; however , excluding the impact of currency and acquisitions , the change was a decrease of $ 21 million during the year ended december 31 , 2012 ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_9:27",
+      "raw": "61",
+      "scale": "1/100",
+      "interval": [
+        "121/200",
+        "123/200"
+      ],
+      "context": "days sales outstanding was 61 days in 2012 , a one day improvement from 2011 ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_12:55",
+      "raw": "533",
+      "scale": "1/1000",
+      "interval": [
+        "213/400",
+        "1067/2000"
+      ],
+      "context": "total capital spending , including acquisitions , was $ 533 million , $ 446 million and $ 341 million in 2012 , 2011 , and 2010 , respectively ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_15:63",
+      "raw": "122",
+      "scale": "1/100",
+      "interval": [
+        "243/200",
+        "49/40"
+      ],
+      "context": "capital spending related to business acquisitions amounted to $ 122 million , $ 56 million , and $ 34 million in 2012 , 2011 and 2010 , respectively ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_15:79",
+      "raw": "56",
+      "scale": "1/100",
+      "interval": [
+        "111/200",
+        "113/200"
+      ],
+      "context": "capital spending related to business acquisitions amounted to $ 122 million , $ 56 million , and $ 34 million in 2012 , 2011 and 2010 , respectively ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_17:32",
+      "raw": "900",
+      "scale": "1/1000",
+      "interval": [
+        "1799/2000",
+        "1801/2000"
+      ],
+      "context": "in january 2013 , ppg received $ 900 million in cash proceeds in connection with the closing of the separation of its commodity chemicals business and subsequent merger of the subsidiary holding the ppg commodity chemicals business with a subsidiary of georgia gulf ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_19:180",
+      "raw": "1.05",
+      "scale": "1",
+      "interval": [
+        "209/200",
+        "211/200"
+      ],
+      "context": "in december 2012 , the company reached a definitive agreement to acquire the north american architectural coatings business of akzo nobel , n.v. , amsterdam , in a deal valued at $ 1.05 billion ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_29:34",
+      "raw": "50",
+      "scale": "1/100",
+      "interval": [
+        "99/200",
+        "101/200"
+      ],
+      "context": "defined benefit pension plans of $ 50 million and $ 250 million , respectively ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_33:34",
+      "raw": "81",
+      "scale": "1/100",
+      "interval": [
+        "161/200",
+        "163/200"
+      ],
+      "context": "defined benefit pension plans of $ 81 million , $ 71 million and $ 87 million for 2012 , 2011 and 2010 , respectively , some of which were required by local funding requirements ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_33:49",
+      "raw": "71",
+      "scale": "1/100",
+      "interval": [
+        "141/200",
+        "143/200"
+      ],
+      "context": "defined benefit pension plans of $ 81 million , $ 71 million and $ 87 million for 2012 , 2011 and 2010 , respectively , some of which were required by local funding requirements ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_33:66",
+      "raw": "87",
+      "scale": "1/100",
+      "interval": [
+        "173/200",
+        "7/8"
+      ],
+      "context": "defined benefit pension plans of $ 81 million , $ 71 million and $ 87 million for 2012 , 2011 and 2010 , respectively , some of which were required by local funding requirements ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_35:45",
+      "raw": "75",
+      "scale": "1/100",
+      "interval": [
+        "149/200",
+        "151/200"
+      ],
+      "context": "plans in 2013 in the range of approximately $ 75 million to $ 100 million ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_35:61",
+      "raw": "100",
+      "scale": "1/100",
+      "interval": [
+        "199/200",
+        "201/200"
+      ],
+      "context": "plans in 2013 in the range of approximately $ 75 million to $ 100 million ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_36:103",
+      "raw": "92",
+      "scale": "1/100",
+      "interval": [
+        "183/200",
+        "37/40"
+      ],
+      "context": "the company 2019s share repurchase activity in 2012 , 2011 and 2010 was 1 million shares at a cost of $ 92 million , 10.2 million shares at a cost of $ 858 million and 8.1 million shares at a cost of $ 586 million , respectively ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_36:151",
+      "raw": "858",
+      "scale": "1/1000",
+      "interval": [
+        "343/400",
+        "1717/2000"
+      ],
+      "context": "the company 2019s share repurchase activity in 2012 , 2011 and 2010 was 1 million shares at a cost of $ 92 million , 10.2 million shares at a cost of $ 858 million and 8.1 million shares at a cost of $ 586 million , respectively ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_36:201",
+      "raw": "586",
+      "scale": "1/1000",
+      "interval": [
+        "1171/2000",
+        "1173/2000"
+      ],
+      "context": "the company 2019s share repurchase activity in 2012 , 2011 and 2010 was 1 million shares at a cost of $ 92 million , 10.2 million shares at a cost of $ 858 million and 8.1 million shares at a cost of $ 586 million , respectively ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_39:32",
+      "raw": "500",
+      "scale": "1/1000",
+      "interval": [
+        "999/2000",
+        "1001/2000"
+      ],
+      "context": "we anticipate spending between $ 500 million and $ 750 million for share repurchases during 2013 ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_39:50",
+      "raw": "750",
+      "scale": "1/1000",
+      "interval": [
+        "1499/2000",
+        "1501/2000"
+      ],
+      "context": "we anticipate spending between $ 500 million and $ 750 million for share repurchases during 2013 ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_36:72",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "text_42:37",
+      "raw": "1.2",
+      "scale": "1",
+      "interval": [
+        "23/20",
+        "5/4"
+      ],
+      "context": "the credit agreement provides for a $ 1.2 billion unsecured revolving credit facility ."
+    }
+  ],
+  "SLG/2011/page_91.pdf-2": [
+    {
+      "variable": "x1",
+      "source_location": "text_30:47",
+      "original_interval": [
+        "9/4",
+        "47/20"
+      ],
+      "candidate_location": "table_1:2",
+      "raw": "2,330,532",
+      "scale": "1/1000000",
+      "interval": [
+        "4661063/2000000",
+        "932213/400000"
+      ],
+      "context": "Balance at beginning of year | 2010"
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_30:47",
+      "original_interval": [
+        "9/4",
+        "47/20"
+      ],
+      "candidate_location": "table_4:3",
+      "raw": "2,330,532",
+      "scale": "1/1000000",
+      "interval": [
+        "4661063/2000000",
+        "932213/400000"
+      ],
+      "context": "Balance at end of year | 2009"
+    }
+  ],
+  "SNA/2007/page_69.pdf-1": [
+    {
+      "variable": "x1",
+      "source_location": "text_9:86",
+      "original_interval": [
+        "23/20",
+        "5/4"
+      ],
+      "candidate_location": "text_26:0",
+      "raw": "123",
+      "scale": "1/100",
+      "interval": [
+        "49/40",
+        "247/200"
+      ],
+      "context": "123 ( r ) , 201cshare-based payment , 201d using the modified prospective method ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_9:86",
+      "original_interval": [
+        "23/20",
+        "5/4"
+      ],
+      "candidate_location": "text_28:0",
+      "raw": "123",
+      "scale": "1/100",
+      "interval": [
+        "49/40",
+        "247/200"
+      ],
+      "context": "123 ( r ) requires entities to recognize the cost of employee services in exchange for awards of equity instruments based on the grant-date fair value of those awards ( with limited exceptions ) ."
+    }
+  ],
+  "UPS/2007/page_98.pdf-1": [
+    {
+      "variable": "x0",
+      "source_location": "text_2:20",
+      "original_interval": [
+        "7/4",
+        "37/20"
+      ],
+      "candidate_location": "table_1:2",
+      "raw": "1.79%",
+      "scale": "1",
+      "interval": [
+        "357/200",
+        "359/200"
+      ],
+      "context": "Expected dividend yield | 2006"
+    },
+    {
+      "variable": "x0",
+      "source_location": "text_2:20",
+      "original_interval": [
+        "7/4",
+        "37/20"
+      ],
+      "candidate_location": "text_21:69",
+      "raw": "175",
+      "scale": "1/100",
+      "interval": [
+        "349/200",
+        "351/200"
+      ],
+      "context": "our forwarding and logistics business provides services in more than 175 countries and territories worldwide , and includes supply chain design and management , freight distribution , customs brokerage , mail and consulting services ."
+    }
+  ]
+}

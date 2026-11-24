@@ -1,0 +1,1 @@
+{"answer":"97.2102724547","unit":"percent","expression":"(59,656 / 61,368) * 100","low":"97.2086656835","high":"97.2118792520","reliable_digits":"4","explanation":"Allowing each amount to vary by ±0.5 million dollars gives these bounds, supporting four significant digits (97.21%)."}

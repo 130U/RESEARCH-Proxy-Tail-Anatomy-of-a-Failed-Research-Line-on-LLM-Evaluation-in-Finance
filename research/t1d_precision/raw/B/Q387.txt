@@ -1,0 +1,1 @@
+{"answer":"21","unit":"million dollars","expression":"210 - (182 + 7)","low":"19.5","high":"22.5","reliable_digits":"1","explanation":"Subtracting gross cash consideration, including the cash netted out, from total transaction value gives the noncash portion."}

@@ -1,0 +1,118 @@
+[
+  {
+    "budget": 1,
+    "classes": 2,
+    "labels": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "name": "shared_budget_strict_improvement",
+    "votes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "budget": 1,
+    "classes": 3,
+    "labels": [
+      0,
+      1,
+      2
+    ],
+    "name": "component_optima_incompatible",
+    "votes": [
+      [
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ]
+  },
+  {
+    "budget": 0,
+    "classes": 3,
+    "labels": [
+      0,
+      1,
+      2
+    ],
+    "name": "no_contamination_perfect",
+    "votes": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "budget": 3,
+    "classes": 3,
+    "labels": [
+      0,
+      1,
+      2
+    ],
+    "name": "all_heads_change",
+    "votes": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        0
+      ]
+    ]
+  }
+]

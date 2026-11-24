@@ -1,0 +1,5 @@
+{
+    "review_id": "R041",
+    "verdict": "invalid",
+    "reason": "The denominator $2,329 million is 2007 purchase obligations, whereas the table reports 2007 total debt of $692 million."
+  }

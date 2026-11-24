@@ -1,0 +1,1 @@
+{"answer":"6.3583815029","unit":"percent","expression":"(1840 - 1730) / 1730 * 100","low":"6.2987575845","high":"6.4180398959","reliable_digits":"2","explanation":"Allowing each balance to vary by 0.5 gives these bounds and less than 1% relative uncertainty."}

@@ -1,0 +1,1 @@
+{"answer":"0.402475749668","unit":"ratio","expression":"817388 / 2030900","low":"0.402475404383","high":"0.402476094952","reliable_digits":"5","explanation":"Dividing total debt by stockholders’ equity, with each input varying by 0.5 thousand, gives these bounds and five stable significant digits."}

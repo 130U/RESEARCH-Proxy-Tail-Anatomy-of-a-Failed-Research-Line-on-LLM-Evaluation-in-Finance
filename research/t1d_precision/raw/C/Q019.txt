@@ -1,0 +1,1 @@
+{"answer":"3.091158","unit":"percent","expression":"(98.05 - 95.11) / 95.11 * 100","low":"3.080482","high":"3.101835","reliable_digits":"2","explanation":"Allowing each price to vary by $0.005 gives these bounds and supports two significant digits."}

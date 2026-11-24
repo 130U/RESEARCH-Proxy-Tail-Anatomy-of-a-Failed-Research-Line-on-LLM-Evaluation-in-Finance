@@ -1,0 +1,7 @@
+{
+    "call_id": "S017",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "Row 9 already reports 2018 unrecognized tax benefits of $127.1 million. The question does not identify an additional amount to include. The model's $70.4 million numerator is interest and penalties (text_9), making its formula conditional on that interpretation. The reference instead adds $108.7 million for 2018 and $138.0 million for 2017, which are effective-tax-rate portions, not additional 2018 benefits."
+  }

@@ -1,0 +1,1 @@
+{"answer":"85.52321007081039","unit":"percent","expression":"(108.7 / 127.1) * 100","low":"85.45025560361777","high":"85.59622195985832","reliable_digits":"1","explanation":"Treating the $108.7 million benefit as the increase over $127.1 million, the rounding interval crosses 85.5%, so only one significant digit rounds consistently."}

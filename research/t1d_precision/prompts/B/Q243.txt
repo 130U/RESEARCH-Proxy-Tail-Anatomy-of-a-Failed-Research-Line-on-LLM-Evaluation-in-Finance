@@ -1,0 +1,73 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+management 2019s discussion and analysis scenario analyses .
+we conduct scenario analyses including as part of the comprehensive capital analysis and review ( ccar ) and dodd-frank act stress tests ( dfast ) as well as our resolution and recovery planning .
+see 201cequity capital management and regulatory capital 2014 equity capital management 201d below for further information .
+these scenarios cover short-term and long- term time horizons using various macroeconomic and firm- specific assumptions , based on a range of economic scenarios .
+we use these analyses to assist us in developing our longer-term balance sheet management strategy , including the level and composition of assets , funding and equity capital .
+additionally , these analyses help us develop approaches for maintaining appropriate funding , liquidity and capital across a variety of situations , including a severely stressed environment .
+balance sheet allocation in addition to preparing our consolidated statements of financial condition in accordance with u.s .
+gaap , we prepare a balance sheet that generally allocates assets to our businesses , which is a non-gaap presentation and may not be comparable to similar non-gaap presentations used by other companies .
+we believe that presenting our assets on this basis is meaningful because it is consistent with the way management views and manages risks associated with the firm 2019s assets and better enables investors to assess the liquidity of the firm 2019s assets .
+the table below presents our balance sheet allocation. .
+
+TABLE
+ | As of December
+<i>$ in millions</i> | 2014 | 2013
+Global Core Liquid Assets (GCLA) | $182,947 | $184,070
+Other cash | 7,805 | 5,793
+GCLA and cash | 190,752 | 189,863
+Secured client financing | 210,641 | 263,386
+Inventory | 230,667 | 255,534
+Secured financing agreements | 74,767 | 79,635
+Receivables | 47,317 | 39,557
+Institutional Client Services | 352,751 | 374,726
+Public equity | 4,041 | 4,308
+Private equity | 17,979 | 16,236
+Debt<sup>1</sup> | 24,768 | 23,274
+Loans receivable<sup>2</sup> | 28,938 | 14,895
+Other | 3,771 | 2,310
+Investing & Lending | 79,497 | 61,023
+Total inventory and related assets | 432,248 | 435,749
+Other assets | 22,599 | 22,509
+Total assets | $856,240 | $911,507
+
+1 .
+includes $ 18.24 billion and $ 15.76 billion as of december 2014 and december 2013 , respectively , of direct loans primarily extended to corporate and private wealth management clients that are accounted for at fair value .
+2 .
+see note 9 to the consolidated financial statements for further information about loans receivable .
+below is a description of the captions in the table above .
+2030 global core liquid assets and cash .
+we maintain substantial liquidity to meet a broad range of potential cash outflows and collateral needs in the event of a stressed environment .
+see 201cliquidity risk management 201d below for details on the composition and sizing of our 201cglobal core liquid assets 201d ( gcla ) , previously global core excess ( gce ) .
+in addition to our gcla , we maintain other operating cash balances , primarily for use in specific currencies , entities , or jurisdictions where we do not have immediate access to parent company liquidity .
+2030 secured client financing .
+we provide collateralized financing for client positions , including margin loans secured by client collateral , securities borrowed , and resale agreements primarily collateralized by government obligations .
+as a result of client activities , we are required to segregate cash and securities to satisfy regulatory requirements .
+our secured client financing arrangements , which are generally short-term , are accounted for at fair value or at amounts that approximate fair value , and include daily margin requirements to mitigate counterparty credit risk .
+2030 institutional client services .
+in institutional client services , we maintain inventory positions to facilitate market-making in fixed income , equity , currency and commodity products .
+additionally , as part of market- making activities , we enter into resale or securities borrowing arrangements to obtain securities which we can use to cover transactions in which we or our clients have sold securities that have not yet been purchased .
+the receivables in institutional client services primarily relate to securities transactions .
+2030 investing & lending .
+in investing & lending , we make investments and originate loans to provide financing to clients .
+these investments and loans are typically longer- term in nature .
+we make investments , directly and indirectly through funds that we manage , in debt securities , loans , public and private equity securities , real estate entities and other investments .
+2030 other assets .
+other assets are generally less liquid , non- financial assets , including property , leasehold improvements and equipment , goodwill and identifiable intangible assets , income tax-related receivables , equity- method investments , assets classified as held for sale and miscellaneous receivables .
+goldman sachs 2014 annual report 49 .
+
+QUESTION
+what is the percentage change in inventory balance in 2014?

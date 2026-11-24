@@ -1,0 +1,206 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S006",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "4 ."
+      },
+      {
+        "location": "text_1",
+        "text": "acquisitions and dispositions acquisitions the company makes acquisitions that align with its strategic business objectives ."
+      },
+      {
+        "location": "text_2",
+        "text": "the assets and liabilities of the acquired entities have been recorded as of the acquisition date , at their respective fair values , and are included in the consolidated balance sheet ."
+      },
+      {
+        "location": "text_3",
+        "text": "the purchase price allocation is based on estimates of the fair value of assets acquired and liabilities assumed ."
+      },
+      {
+        "location": "text_4",
+        "text": "the aggregate purchase price of acquisitions has been reduced for any cash or cash equivalents acquired with the acquisition ."
+      },
+      {
+        "location": "text_5",
+        "text": "acquisitions during 2017 , 2016 and 2015 were not significant to the company 2019s consolidated financial statements ; therefore , pro forma financial information is not presented ."
+      },
+      {
+        "location": "text_6",
+        "text": "anios acquisition on february 1 , 2017 , the company acquired anios for total consideration of $ 798.3 million , including satisfaction of outstanding debt ."
+      },
+      {
+        "location": "text_7",
+        "text": "anios had annualized pre-acquisition sales of approximately $ 245 million and is a leading european manufacturer and marketer of hygiene and disinfection products for the healthcare , food service , and food and beverage processing industries ."
+      },
+      {
+        "location": "text_8",
+        "text": "anios provides an innovative product line that expands the solutions the company is able to offer , while also providing a complementary geographic footprint within the healthcare market ."
+      },
+      {
+        "location": "text_9",
+        "text": "during 2016 , the company deposited 20ac50 million in an escrow account that was released back to the company upon closing of the transaction in february 2017 ."
+      },
+      {
+        "location": "text_10",
+        "text": "as shown within note 5 , this was recorded as restricted cash within other assets on the consolidated balance sheet as of december 31 , 2016 ."
+      },
+      {
+        "location": "text_11",
+        "text": "the company incurred certain acquisition and integration costs associated with the transaction that were expensed and are reflected in the consolidated statement of income ."
+      },
+      {
+        "location": "text_12",
+        "text": "see note 3 for additional information related to the company 2019s special ( gains ) and charges related to such activities ."
+      },
+      {
+        "location": "text_13",
+        "text": "the components of the cash paid for anios are shown in the following table. ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "(millions)",
+          "2017"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Tangible assets",
+          "$139.8"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Identifiable intangible assets",
+          ""
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Customer relationships",
+          "252.0"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Trademarks",
+          "65.7"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Other technology",
+          "16.1"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Total assets acquired",
+          "473.6"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Goodwill",
+          "511.7"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Total liabilities",
+          "187.0"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Total consideration transferred",
+          "798.3"
+        ]
+      },
+      {
+        "row_index": 10,
+        "cells": [
+          "Long-term debt repaid upon close",
+          "192.8"
+        ]
+      },
+      {
+        "row_index": 11,
+        "cells": [
+          "Net consideration transferred to sellers",
+          "$605.5"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_14",
+        "text": "tangible assets are primarily comprised of accounts receivable of $ 64.8 million , property , plant and equipment of $ 24.7 million and inventory of $ 29.1 million ."
+      },
+      {
+        "location": "text_15",
+        "text": "liabilities primarily consist of deferred tax liabilities of $ 102.3 million and current liabilities of $ 62.5 million ."
+      },
+      {
+        "location": "text_16",
+        "text": "customer relationships , trademarks and other technology are being amortized over weighted average lives of 20 , 17 , and 11 years , respectively ."
+      },
+      {
+        "location": "text_17",
+        "text": "goodwill of $ 511.7 million arising from the acquisition consists largely of the synergies and economies of scale expected through adding complementary geographies and innovative products to the company 2019s healthcare portfolio ."
+      },
+      {
+        "location": "text_18",
+        "text": "the goodwill was allocated to the institutional , healthcare , and specialty operating segments within the global institutional reportable segment and the food & beverage and life sciences operating segments within the global industrial reportable segment ."
+      },
+      {
+        "location": "text_19",
+        "text": "none of the goodwill recognized is expected to be deductible for income tax purposes. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what portion of anios' purchasing price is related to goodwill?",
+  "human_answer": "84.5%",
+  "reference_program": "divide(511.7, 605.5)",
+  "reference_execution_value": 0.84509,
+  "model_response": {
+    "answer": "64.10",
+    "unit": "percent",
+    "expression": "(511.7 / 798.3) * 100",
+    "explanation": "Goodwill represents approximately 64.10% of Anios' total purchase price."
+  }
+}

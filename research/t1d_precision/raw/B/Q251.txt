@@ -1,0 +1,1 @@
+{"answer":"-44.11764705882353","unit":"percent","expression":"(26.6 - 47.6) / 47.6 * 100","low":"-44.28121720881427","high":"-43.95373291272345","reliable_digits":"2","explanation":"Operating leases decreased, with bounds calculated by allowing each displayed amount to vary by 0.05 million."}

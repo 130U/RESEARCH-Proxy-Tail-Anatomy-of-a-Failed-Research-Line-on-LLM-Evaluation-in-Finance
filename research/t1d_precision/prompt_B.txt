@@ -1,0 +1,18 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+{document}
+
+QUESTION
+{question}

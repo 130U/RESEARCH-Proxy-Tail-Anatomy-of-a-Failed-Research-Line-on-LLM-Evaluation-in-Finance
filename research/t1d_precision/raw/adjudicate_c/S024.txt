@@ -1,0 +1,7 @@
+{
+    "call_id": "S024",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_10 gives the October 2015 regulatory liability as $107 million gross and $66 million net of tax. Interpreting the question's 'tax liability' as the implied $41 million tax effect supports 107/41. The reference instead uses $66 million as denominator in 41/66. An actual tax liability is not separately disclosed."
+  }

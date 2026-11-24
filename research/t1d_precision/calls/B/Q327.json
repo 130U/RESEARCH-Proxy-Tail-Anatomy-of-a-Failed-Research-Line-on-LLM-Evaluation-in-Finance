@@ -1,0 +1,31 @@
+{
+  "group": "B",
+  "id": "Q327",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "fresh_session": true,
+  "prompt_file": "prompts/B/Q327.txt",
+  "started_utc": "2026-11-17T08:01:06.789504+00:00",
+  "status": "completed",
+  "returncode": 0,
+  "completed_utc": "2026-11-17T08:02:27.974068+00:00",
+  "elapsed_seconds": 81.187,
+  "thread_id": "01a1e886-2290-7981-a9a4-e387382cbbe0",
+  "errors": [
+    {
+      "type": "error",
+      "message": "Reconnecting... 2/5 (workspace routing discovery failed)"
+    }
+  ],
+  "usage": {
+    "input_tokens": 18187,
+    "cached_input_tokens": 15488,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1828,
+    "reasoning_output_tokens": 1739
+  },
+  "event_item_types": [
+    "agent_message"
+  ],
+  "tool_use_observed": false
+}

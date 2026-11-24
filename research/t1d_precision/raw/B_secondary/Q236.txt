@@ -1,0 +1,1 @@
+{"answer":"-83.0974188177","unit":"percent","expression":"(1201 - 2199) / 1201 * 100","low":"-83.2153269471","high":"-82.9796088223","reliable_digits":"2","explanation":"The negative decline indicates that the operating loss increased; bounds allow each displayed loss to vary by 0.5 million."}

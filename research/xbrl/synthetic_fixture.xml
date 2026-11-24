@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Handwritten synthetic fixture. Not a SEC filing or a downloaded example. -->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ix="http://www.xbrl.org/2013/inlineXBRL"
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+      xmlns:demo="urn:finllm:synthetic:taxonomy"
+      xmlns:ixt="urn:unsupported:transformation">
+  <body>
+    <xbrli:context id="instant">
+      <xbrli:entity><xbrli:identifier scheme="urn:synthetic:company">SYNTHETIC-A</xbrli:identifier></xbrli:entity>
+      <xbrli:period><xbrli:instant>2024-03-31</xbrli:instant></xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="quarter">
+      <xbrli:entity><xbrli:identifier scheme="urn:synthetic:company">SYNTHETIC-A</xbrli:identifier></xbrli:entity>
+      <xbrli:period><xbrli:startDate>2024-01-01</xbrli:startDate><xbrli:endDate>2024-03-31</xbrli:endDate></xbrli:period>
+    </xbrli:context>
+    <xbrli:unit id="USD"><xbrli:measure>iso4217:USD</xbrli:measure></xbrli:unit>
+    <xbrli:unit id="pure"><xbrli:measure>xbrli:pure</xbrli:measure></xbrli:unit>
+    <p>Revenue (million USD): <ix:nonFraction id="revenue" name="demo:Revenue" contextRef="quarter" unitRef="USD" scale="6" decimals="-4">123.40</ix:nonFraction>.</p>
+    <p>Cash change (thousand USD): <ix:nonFraction id="cash_change" name="demo:CashChange" contextRef="quarter" unitRef="USD" scale="3" sign="-" decimals="-2">5.2</ix:nonFraction>.</p>
+    <p>Ratio: <ix:nonFraction id="ratio" name="demo:Ratio" contextRef="instant" unitRef="pure" decimals="3">0.125</ix:nonFraction>.</p>
+    <p>Unsupported format: <ix:nonFraction id="unsupported" name="demo:Other" contextRef="quarter" unitRef="USD" decimals="0" format="ixt:accounting">(1,234)</ix:nonFraction>.</p>
+  </body>
+</html>

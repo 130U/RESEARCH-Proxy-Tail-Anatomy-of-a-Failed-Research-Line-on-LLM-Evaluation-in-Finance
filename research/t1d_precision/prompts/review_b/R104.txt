@@ -1,0 +1,203 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R104",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "comcast corporation changes in our net deferred tax liability in 2015 that were not recorded as deferred income tax expense are primarily related to decreases of $ 28 million associated with items included in other comprehensive income ( loss ) and decreases of $ 132 million related to acquisitions made in 2015 ."
+      },
+      {
+        "location": "text_1",
+        "text": "our net deferred tax liability includes $ 23 billion related to cable franchise rights that will remain unchanged unless we recognize an impairment or dispose of a cable franchise ."
+      },
+      {
+        "location": "text_2",
+        "text": "as of december 31 , 2015 , we had federal net operating loss carryforwards of $ 135 million and various state net operating loss carryforwards that expire in periods through 2035 ."
+      },
+      {
+        "location": "text_3",
+        "text": "as of december 31 , 2015 , we also had foreign net operating loss carryforwards of $ 700 million that are related to the foreign operations of nbcuni- versal , the majority of which expire in periods through 2025 ."
+      },
+      {
+        "location": "text_4",
+        "text": "the determination of the realization of the state and foreign net operating loss carryforwards is dependent on our subsidiaries 2019 taxable income or loss , appor- tionment percentages , and state and foreign laws that can change from year to year and impact the amount of such carryforwards ."
+      },
+      {
+        "location": "text_5",
+        "text": "we recognize a valuation allowance if we determine it is more likely than not that some portion , or all , of a deferred tax asset will not be realized ."
+      },
+      {
+        "location": "text_6",
+        "text": "as of december 31 , 2015 and 2014 , our valuation allowance was primarily related to state and foreign net operating loss carryforwards ."
+      },
+      {
+        "location": "text_7",
+        "text": "uncertain tax positions our uncertain tax positions as of december 31 , 2015 totaled $ 1.1 billion , which exclude the federal benefits on state tax positions that were recorded as deferred income taxes ."
+      },
+      {
+        "location": "text_8",
+        "text": "included in our uncertain tax positions was $ 220 million related to tax positions of nbcuniversal and nbcuniversal enterprise for which we have been indemnified by ge ."
+      },
+      {
+        "location": "text_9",
+        "text": "if we were to recognize the tax benefit for our uncertain tax positions in the future , $ 592 million would impact our effective tax rate and the remaining amount would increase our deferred income tax liability ."
+      },
+      {
+        "location": "text_10",
+        "text": "the amount and timing of the recognition of any such tax benefit is dependent on the completion of examinations of our tax filings by the various tax authorities and the expiration of statutes of limitations ."
+      },
+      {
+        "location": "text_11",
+        "text": "in 2014 , we reduced our accruals for uncertain tax positions and the related accrued interest on these tax positions and , as a result , our income tax expense decreased by $ 759 million ."
+      },
+      {
+        "location": "text_12",
+        "text": "it is reasonably possible that certain tax contests could be resolved within the next 12 months that may result in a decrease in our effective tax rate ."
+      },
+      {
+        "location": "text_13",
+        "text": "reconciliation of unrecognized tax benefits ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "(in millions)",
+          "2015",
+          "2014",
+          "2013"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Balance, January 1",
+          "$1,171",
+          "$1,701",
+          "$1,573"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Additions based on tax positions related to the current year",
+          "67",
+          "63",
+          "90"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Additions based on tax positions related to prior years",
+          "98",
+          "111",
+          "201"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Additions from acquired subsidiaries",
+          "—",
+          "—",
+          "268"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Reductions for tax positions of prior years",
+          "(84)",
+          "(220)",
+          "(141)"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Reductions due to expiration of statutes of limitations",
+          "(41)",
+          "(448)",
+          "(3)"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Settlements with tax authorities",
+          "(75)",
+          "(36)",
+          "(287)"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Balance, December 31",
+          "$1,136",
+          "$1,171",
+          "$1,701"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_14",
+        "text": "as of december 31 , 2015 and 2014 , our accrued interest associated with tax positions was $ 510 million and $ 452 million , respectively ."
+      },
+      {
+        "location": "text_15",
+        "text": "as of december 31 , 2015 and 2014 , $ 49 million and $ 44 million , respectively , of these amounts were related to tax positions of nbcuniversal and nbcuniversal enterprise for which we have been indemnified by ge ."
+      },
+      {
+        "location": "text_16",
+        "text": "during 2015 , the irs completed its examination of our income tax returns for the year 2013 ."
+      },
+      {
+        "location": "text_17",
+        "text": "various states are examining our tax returns , with most of the periods relating to tax years 2000 and forward ."
+      },
+      {
+        "location": "text_18",
+        "text": "the tax years of our state tax returns currently under examination vary by state ."
+      },
+      {
+        "location": "text_19",
+        "text": "109 comcast 2015 annual report on form 10-k ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the change in unrecognized tax benefits from the end of 2013 to the end of 2014?",
+  "reference_program": "subtract(1171, 1701)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "1171",
+      "raw": "1,171",
+      "location": "table_8:2",
+      "context": "Balance, December 31 | 2014"
+    },
+    "x1": {
+      "program_token": "1701",
+      "raw": "1,701",
+      "location": "table_8:3",
+      "context": "Balance, December 31 | 2013"
+    }
+  }
+}

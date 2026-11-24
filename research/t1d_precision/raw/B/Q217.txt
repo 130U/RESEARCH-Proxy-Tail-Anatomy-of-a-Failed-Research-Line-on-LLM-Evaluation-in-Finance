@@ -1,0 +1,1 @@
+{"answer":"4.161486908333","unit":"percent","expression":"7532 / 180993 * 100","low":"4.161199159086","high":"4.161774659171","reliable_digits":"3","explanation":"Dividing the 2012 unrecognized tax benefit by gross liabilities gives this percentage; allowing each figure to vary by 0.5 leaves three significant digits reliable."}

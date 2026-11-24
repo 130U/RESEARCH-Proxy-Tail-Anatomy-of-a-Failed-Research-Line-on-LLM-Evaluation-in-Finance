@@ -1,0 +1,1 @@
+{"answer":"34.75539226","unit":"percent","expression":"(198.05 - 146.97) / 146.97 * 100","low":"34.74740602","high":"34.76337904","reliable_digits":"2","explanation":"ROI is the gain divided by the 2005 investment value; allowing each index value to vary by 0.005 yields bounds that round consistently to two significant digits."}

@@ -1,0 +1,7 @@
+{
+    "call_id": "S054",
+    "primary_cause": "unresolved",
+    "formula_valid": false,
+    "alternative_precision_used": false,
+    "reason": "Text_15 reports capitalized interest, not capital expenditures: $30.4 million in 2018 and $29.0 million in 2017. The model's $29.0 million denominator therefore concerns the wrong concept. Actual 2017–2018 capital expenditures are absent; the reference's $1.6 billion and $1.2 billion concern anticipated 2019 and 2020 expenditures."
+  }

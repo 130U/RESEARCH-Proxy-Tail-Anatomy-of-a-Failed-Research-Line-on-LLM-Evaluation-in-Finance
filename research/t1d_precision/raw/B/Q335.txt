@@ -1,0 +1,1 @@
+{"answer":"2.592920353982301","unit":"billion dollars","expression":"2.93 / (1 + 13 / 100)","low":"2.577092511013216","high":"2.608888888888889","reliable_digits":"2","explanation":"Divide 2017 income by its growth factor; rounding permits income of 2.925–2.935 billion and growth of 12.5%–13.5%."}

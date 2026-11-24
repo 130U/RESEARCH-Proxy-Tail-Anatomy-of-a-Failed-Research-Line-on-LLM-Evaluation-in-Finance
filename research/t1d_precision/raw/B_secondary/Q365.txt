@@ -1,0 +1,1 @@
+{"answer":"45","unit":"million dollars","expression":"(43 + 47) / 2","low":"44.5","high":"45.5","reliable_digits":"1","explanation":"The average year-end reserve is $45 million, with rounding uncertainty of $0.5 million."}

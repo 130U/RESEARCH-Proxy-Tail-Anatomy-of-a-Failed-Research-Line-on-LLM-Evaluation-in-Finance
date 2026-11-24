@@ -1,0 +1,1 @@
+{"answer":"25.089515466739666","unit":"percent","expression":"(45,826 / 182,650) * 100","low":"25.089173038124725","high":"25.089857897229393","reliable_digits":"4","explanation":"The percentage uses 2013 non-U.S. dollar GCLA divided by total GCLA, allowing each amount to vary by $0.5 million for rounding."}

@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R113",
+    "verdict": "valid",
+    "reason": "The source identifies rounded amounts of $57 million affecting the effective tax rate and $70 million in total year-end unrecognized tax benefits, so 57/70 gives the requested portion despite the binding context's erroneous $53."
+  },
+  {
+    "review_id": "R114",
+    "verdict": "valid",
+    "reason": "The 2006 table binds 27,318 main-line miles and 51,596 total miles, which are measured lengths reasonably treated as rounded, and their ratio gives the requested share."
+  },
+  {
+    "review_id": "R115",
+    "verdict": "valid",
+    "reason": "The rounded annual net interest expenses are $270.4 million for 2018 and $267.8 million for 2017, and the calculation correctly measures their relative change against 2017."
+  },
+  {
+    "review_id": "R116",
+    "verdict": "valid",
+    "reason": "The bound values are AWCC's rounded average borrowings for 2017 and 2016, and subtracting 850 from 779 before dividing by 850 expresses the decrease as a negative relative change."
+  },
+  {
+    "review_id": "R117",
+    "verdict": "invalid",
+    "reason": "Although the three rounded diluted weighted-average share amounts are correctly bound, the program adds three to their sum instead of dividing the sum by three."
+  },
+  {
+    "review_id": "R118",
+    "verdict": "valid",
+    "reason": "The source gives estimated fiscal 2018 benefits payments of $21 million and deferred compensation of $14.6 million, both reasonably rounded financial amounts, and their quotient answers the requested ratio."
+  },
+  {
+    "review_id": "R119",
+    "verdict": "invalid",
+    "reason": "The $23 billion denominator represents only Verus acquisition inflows rather than total 2017 AUS net inflows, so 20/23 does not answer the question as written."
+  },
+  {
+    "review_id": "R120",
+    "verdict": "invalid",
+    "reason": "The $4.25 and $3.71 annual dividends per share sum specified quarterly payment rates and should be treated as exact declared amounts rather than rounded financial measurements."
+  },
+  {
+    "review_id": "R121",
+    "verdict": "valid",
+    "reason": "The source assigns rounded acquisition capital spending of $56 million to 2011 and $34 million to 2010, so their subtraction gives the requested increase in millions."
+  },
+  {
+    "review_id": "R122",
+    "verdict": "valid",
+    "reason": "The table reports estimated long-term debt payments of $604.2 million due in 2018 out of $8,290.6 million overall, making the rounded inputs and denominator appropriate."
+  },
+  {
+    "review_id": "R123",
+    "verdict": "valid",
+    "reason": "The source binds rounded total facility lease liabilities of $136 million for 2016 and $133 million for 2015, and the calculation correctly uses 2015 as the change denominator."
+  },
+  {
+    "review_id": "R124",
+    "verdict": "valid",
+    "reason": "The explicitly approximate $164 million forecast for 2018 and $199 million expense for 2017 share the exclusion of early retirement programs, and the calculation gives the anticipated relative change."
+  },
+  {
+    "review_id": "R125",
+    "verdict": "valid",
+    "reason": "The rounded conduit commercial paper balances are $17.5 billion at year-end 2002 and $11.7 billion at year-end 2003, so their subtraction measures the decline in billions."
+  },
+  {
+    "review_id": "R126",
+    "verdict": "valid",
+    "reason": "The source assigns rounded rent expenses of $205 million to 2008 and $168 million to 2007, and the calculation correctly measures the increase relative to 2007."
+  },
+  {
+    "review_id": "R127",
+    "verdict": "valid",
+    "reason": "The source identifies $12 million potentially affecting earnings within the $29 million year-end 2018 unrecognized tax benefit balance, both rounded financial amounts, so their ratio gives the requested share."
+  },
+  {
+    "review_id": "R128",
+    "verdict": "valid",
+    "reason": "The rounded product warranty reserves are correctly bound to $10 million for 2006 and $4 million for 2005, and the calculation measures their increase against the 2005 balance."
+  }
+]

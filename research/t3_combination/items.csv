@@ -1,0 +1,811 @@
+item_id,kind,first,second,headline
+I0017,single,I0017,,Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+I0022,single,I0022,,Virello Industries reports a 2% increase in recurring maintenance revenue.
+I0008,single,I0008,,Virello Industries reduces annual logistics costs by 5% through improved routing.
+I0026,single,I0026,,Virello Industries reports a 10% increase in quarterly operating profit.
+I0018,single,I0018,,Virello Industries raises its full-year free cash flow forecast by 15%.
+I0016,single,I0016,,Virello Industries reports a 25% increase in export orders.
+I0021,single,I0021,,Virello Industries secures its first license to sell into a major new overseas market.
+I0012,single,I0012,,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+I0024,single,I0024,,Virello Industries wins a patent expected to double revenue at its specialty materials division.
+I0019,single,I0019,,Virello Industries repays all overdue debt and eliminates an imminent default risk.
+I0002,single,I0002,,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+I0010,single,I0010,,Virello Industries loses one day's online sales during a website outage.
+I0023,single,I0023,,Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+I0009,single,I0009,,Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+I0025,single,I0025,,Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+I0027,single,I0027,,Virello Industries announces a product recall costing 25% of last year's profit.
+I0015,single,I0015,,Virello Industries loses a major customer accounting for 30% of annual revenue.
+I0003,single,I0003,,Virello Industries halts its largest factory for six months after a major fire.
+I0029,single,I0029,,Virello Industries faces an indefinite regulatory ban on its flagship product.
+I0011,single,I0011,,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+I0028,single,I0028,,Virello Industries schedules its annual shareholder meeting for June 18.
+I0013,single,I0013,,Virello Industries lists its registered office address on its website.
+I0020,single,I0020,,Virello Industries publishes the date of its next earnings call.
+I0004,single,I0004,,Virello Industries states that its fiscal year ends on December 31.
+I0006,single,I0006,,Virello Industries lists the names of its existing business divisions.
+I0001,single,I0001,,Virello Industries states that its headquarters is located in Westbridge.
+I0030,single,I0030,,Virello Industries posts a calendar of routine public holidays.
+I0007,single,I0007,,Virello Industries lists the telephone number of its investor relations office.
+I0014,single,I0014,,Virello Industries states that its ordinary shares use the ticker VIRI.
+I0005,single,I0005,,Virello Industries publishes the agenda for its scheduled annual meeting.
+C0001,PN,I0017,I0002,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0002,PN,I0002,I0017,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0003,PN,I0017,I0010,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries loses one day's online sales during a website outage.
+C0004,PN,I0010,I0017,Virello Industries loses one day's online sales during a website outage; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0005,PN,I0017,I0023,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0006,PN,I0023,I0017,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0007,PN,I0017,I0009,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0008,PN,I0009,I0017,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0009,PN,I0017,I0025,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0010,PN,I0025,I0017,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0011,PN,I0017,I0027,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries announces a product recall costing 25% of last year's profit.
+C0012,PN,I0027,I0017,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0013,PN,I0017,I0015,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0014,PN,I0015,I0017,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0015,PN,I0017,I0003,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries halts its largest factory for six months after a major fire.
+C0016,PN,I0003,I0017,Virello Industries halts its largest factory for six months after a major fire; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0017,PN,I0017,I0029,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0018,PN,I0029,I0017,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0019,PN,I0017,I0011,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0020,PN,I0011,I0017,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0021,PN,I0022,I0002,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0022,PN,I0002,I0022,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0023,PN,I0022,I0010,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries loses one day's online sales during a website outage.
+C0024,PN,I0010,I0022,Virello Industries loses one day's online sales during a website outage; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0025,PN,I0022,I0023,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0026,PN,I0023,I0022,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0027,PN,I0022,I0009,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0028,PN,I0009,I0022,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0029,PN,I0022,I0025,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0030,PN,I0025,I0022,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0031,PN,I0022,I0027,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries announces a product recall costing 25% of last year's profit.
+C0032,PN,I0027,I0022,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0033,PN,I0022,I0015,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0034,PN,I0015,I0022,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0035,PN,I0022,I0003,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries halts its largest factory for six months after a major fire.
+C0036,PN,I0003,I0022,Virello Industries halts its largest factory for six months after a major fire; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0037,PN,I0022,I0029,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0038,PN,I0029,I0022,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0039,PN,I0022,I0011,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0040,PN,I0011,I0022,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0041,PN,I0008,I0002,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0042,PN,I0002,I0008,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0043,PN,I0008,I0010,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries loses one day's online sales during a website outage.
+C0044,PN,I0010,I0008,Virello Industries loses one day's online sales during a website outage; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0045,PN,I0008,I0023,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0046,PN,I0023,I0008,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0047,PN,I0008,I0009,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0048,PN,I0009,I0008,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0049,PN,I0008,I0025,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0050,PN,I0025,I0008,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0051,PN,I0008,I0027,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries announces a product recall costing 25% of last year's profit.
+C0052,PN,I0027,I0008,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0053,PN,I0008,I0015,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0054,PN,I0015,I0008,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0055,PN,I0008,I0003,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries halts its largest factory for six months after a major fire.
+C0056,PN,I0003,I0008,Virello Industries halts its largest factory for six months after a major fire; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0057,PN,I0008,I0029,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0058,PN,I0029,I0008,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0059,PN,I0008,I0011,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0060,PN,I0011,I0008,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0061,PN,I0026,I0002,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0062,PN,I0002,I0026,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries reports a 10% increase in quarterly operating profit.
+C0063,PN,I0026,I0010,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries loses one day's online sales during a website outage.
+C0064,PN,I0010,I0026,Virello Industries loses one day's online sales during a website outage; Virello Industries reports a 10% increase in quarterly operating profit.
+C0065,PN,I0026,I0023,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0066,PN,I0023,I0026,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries reports a 10% increase in quarterly operating profit.
+C0067,PN,I0026,I0009,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0068,PN,I0009,I0026,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries reports a 10% increase in quarterly operating profit.
+C0069,PN,I0026,I0025,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0070,PN,I0025,I0026,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries reports a 10% increase in quarterly operating profit.
+C0071,PN,I0026,I0027,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries announces a product recall costing 25% of last year's profit.
+C0072,PN,I0027,I0026,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries reports a 10% increase in quarterly operating profit.
+C0073,PN,I0026,I0015,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0074,PN,I0015,I0026,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries reports a 10% increase in quarterly operating profit.
+C0075,PN,I0026,I0003,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries halts its largest factory for six months after a major fire.
+C0076,PN,I0003,I0026,Virello Industries halts its largest factory for six months after a major fire; Virello Industries reports a 10% increase in quarterly operating profit.
+C0077,PN,I0026,I0029,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0078,PN,I0029,I0026,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries reports a 10% increase in quarterly operating profit.
+C0079,PN,I0026,I0011,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0080,PN,I0011,I0026,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries reports a 10% increase in quarterly operating profit.
+C0081,PN,I0018,I0002,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0082,PN,I0002,I0018,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0083,PN,I0018,I0010,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries loses one day's online sales during a website outage.
+C0084,PN,I0010,I0018,Virello Industries loses one day's online sales during a website outage; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0085,PN,I0018,I0023,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0086,PN,I0023,I0018,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0087,PN,I0018,I0009,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0088,PN,I0009,I0018,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0089,PN,I0018,I0025,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0090,PN,I0025,I0018,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0091,PN,I0018,I0027,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries announces a product recall costing 25% of last year's profit.
+C0092,PN,I0027,I0018,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0093,PN,I0018,I0015,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0094,PN,I0015,I0018,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0095,PN,I0018,I0003,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries halts its largest factory for six months after a major fire.
+C0096,PN,I0003,I0018,Virello Industries halts its largest factory for six months after a major fire; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0097,PN,I0018,I0029,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0098,PN,I0029,I0018,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0099,PN,I0018,I0011,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0100,PN,I0011,I0018,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0101,PN,I0016,I0002,Virello Industries reports a 25% increase in export orders; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0102,PN,I0002,I0016,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries reports a 25% increase in export orders.
+C0103,PN,I0016,I0010,Virello Industries reports a 25% increase in export orders; Virello Industries loses one day's online sales during a website outage.
+C0104,PN,I0010,I0016,Virello Industries loses one day's online sales during a website outage; Virello Industries reports a 25% increase in export orders.
+C0105,PN,I0016,I0023,Virello Industries reports a 25% increase in export orders; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0106,PN,I0023,I0016,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries reports a 25% increase in export orders.
+C0107,PN,I0016,I0009,Virello Industries reports a 25% increase in export orders; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0108,PN,I0009,I0016,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries reports a 25% increase in export orders.
+C0109,PN,I0016,I0025,Virello Industries reports a 25% increase in export orders; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0110,PN,I0025,I0016,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries reports a 25% increase in export orders.
+C0111,PN,I0016,I0027,Virello Industries reports a 25% increase in export orders; Virello Industries announces a product recall costing 25% of last year's profit.
+C0112,PN,I0027,I0016,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries reports a 25% increase in export orders.
+C0113,PN,I0016,I0015,Virello Industries reports a 25% increase in export orders; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0114,PN,I0015,I0016,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries reports a 25% increase in export orders.
+C0115,PN,I0016,I0003,Virello Industries reports a 25% increase in export orders; Virello Industries halts its largest factory for six months after a major fire.
+C0116,PN,I0003,I0016,Virello Industries halts its largest factory for six months after a major fire; Virello Industries reports a 25% increase in export orders.
+C0117,PN,I0016,I0029,Virello Industries reports a 25% increase in export orders; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0118,PN,I0029,I0016,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries reports a 25% increase in export orders.
+C0119,PN,I0016,I0011,Virello Industries reports a 25% increase in export orders; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0120,PN,I0011,I0016,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries reports a 25% increase in export orders.
+C0121,PN,I0021,I0002,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0122,PN,I0002,I0021,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries secures its first license to sell into a major new overseas market.
+C0123,PN,I0021,I0010,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries loses one day's online sales during a website outage.
+C0124,PN,I0010,I0021,Virello Industries loses one day's online sales during a website outage; Virello Industries secures its first license to sell into a major new overseas market.
+C0125,PN,I0021,I0023,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0126,PN,I0023,I0021,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries secures its first license to sell into a major new overseas market.
+C0127,PN,I0021,I0009,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0128,PN,I0009,I0021,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries secures its first license to sell into a major new overseas market.
+C0129,PN,I0021,I0025,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0130,PN,I0025,I0021,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries secures its first license to sell into a major new overseas market.
+C0131,PN,I0021,I0027,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries announces a product recall costing 25% of last year's profit.
+C0132,PN,I0027,I0021,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries secures its first license to sell into a major new overseas market.
+C0133,PN,I0021,I0015,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0134,PN,I0015,I0021,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries secures its first license to sell into a major new overseas market.
+C0135,PN,I0021,I0003,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries halts its largest factory for six months after a major fire.
+C0136,PN,I0003,I0021,Virello Industries halts its largest factory for six months after a major fire; Virello Industries secures its first license to sell into a major new overseas market.
+C0137,PN,I0021,I0029,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0138,PN,I0029,I0021,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries secures its first license to sell into a major new overseas market.
+C0139,PN,I0021,I0011,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0140,PN,I0011,I0021,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries secures its first license to sell into a major new overseas market.
+C0141,PN,I0012,I0002,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0142,PN,I0002,I0012,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0143,PN,I0012,I0010,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries loses one day's online sales during a website outage.
+C0144,PN,I0010,I0012,Virello Industries loses one day's online sales during a website outage; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0145,PN,I0012,I0023,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0146,PN,I0023,I0012,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0147,PN,I0012,I0009,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0148,PN,I0009,I0012,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0149,PN,I0012,I0025,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0150,PN,I0025,I0012,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0151,PN,I0012,I0027,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries announces a product recall costing 25% of last year's profit.
+C0152,PN,I0027,I0012,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0153,PN,I0012,I0015,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0154,PN,I0015,I0012,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0155,PN,I0012,I0003,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries halts its largest factory for six months after a major fire.
+C0156,PN,I0003,I0012,Virello Industries halts its largest factory for six months after a major fire; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0157,PN,I0012,I0029,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0158,PN,I0029,I0012,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0159,PN,I0012,I0011,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0160,PN,I0011,I0012,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0161,PN,I0024,I0002,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0162,PN,I0002,I0024,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0163,PN,I0024,I0010,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries loses one day's online sales during a website outage.
+C0164,PN,I0010,I0024,Virello Industries loses one day's online sales during a website outage; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0165,PN,I0024,I0023,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0166,PN,I0023,I0024,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0167,PN,I0024,I0009,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0168,PN,I0009,I0024,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0169,PN,I0024,I0025,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0170,PN,I0025,I0024,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0171,PN,I0024,I0027,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries announces a product recall costing 25% of last year's profit.
+C0172,PN,I0027,I0024,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0173,PN,I0024,I0015,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0174,PN,I0015,I0024,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0175,PN,I0024,I0003,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries halts its largest factory for six months after a major fire.
+C0176,PN,I0003,I0024,Virello Industries halts its largest factory for six months after a major fire; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0177,PN,I0024,I0029,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0178,PN,I0029,I0024,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0179,PN,I0024,I0011,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0180,PN,I0011,I0024,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0181,PN,I0019,I0002,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0182,PN,I0002,I0019,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0183,PN,I0019,I0010,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries loses one day's online sales during a website outage.
+C0184,PN,I0010,I0019,Virello Industries loses one day's online sales during a website outage; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0185,PN,I0019,I0023,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0186,PN,I0023,I0019,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0187,PN,I0019,I0009,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0188,PN,I0009,I0019,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0189,PN,I0019,I0025,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0190,PN,I0025,I0019,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0191,PN,I0019,I0027,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries announces a product recall costing 25% of last year's profit.
+C0192,PN,I0027,I0019,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0193,PN,I0019,I0015,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0194,PN,I0015,I0019,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0195,PN,I0019,I0003,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries halts its largest factory for six months after a major fire.
+C0196,PN,I0003,I0019,Virello Industries halts its largest factory for six months after a major fire; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0197,PN,I0019,I0029,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0198,PN,I0029,I0019,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0199,PN,I0019,I0011,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0200,PN,I0011,I0019,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0201,PP,I0017,I0022,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0202,PP,I0022,I0017,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0203,PP,I0017,I0008,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0204,PP,I0008,I0017,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0205,PP,I0017,I0026,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries reports a 10% increase in quarterly operating profit.
+C0206,PP,I0026,I0017,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0207,PP,I0017,I0018,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0208,PP,I0018,I0017,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0209,PP,I0017,I0016,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries reports a 25% increase in export orders.
+C0210,PP,I0016,I0017,Virello Industries reports a 25% increase in export orders; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0211,PP,I0017,I0021,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries secures its first license to sell into a major new overseas market.
+C0212,PP,I0021,I0017,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0213,PP,I0017,I0012,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0214,PP,I0012,I0017,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0215,PP,I0017,I0024,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0216,PP,I0024,I0017,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0217,PP,I0017,I0019,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0218,PP,I0019,I0017,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0219,PP,I0022,I0008,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0220,PP,I0008,I0022,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0221,PP,I0022,I0026,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries reports a 10% increase in quarterly operating profit.
+C0222,PP,I0026,I0022,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0223,PP,I0022,I0018,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0224,PP,I0018,I0022,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0225,PP,I0022,I0016,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries reports a 25% increase in export orders.
+C0226,PP,I0016,I0022,Virello Industries reports a 25% increase in export orders; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0227,PP,I0022,I0021,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries secures its first license to sell into a major new overseas market.
+C0228,PP,I0021,I0022,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0229,PP,I0022,I0012,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0230,PP,I0012,I0022,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0231,PP,I0022,I0024,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0232,PP,I0024,I0022,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0233,PP,I0022,I0019,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0234,PP,I0019,I0022,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0235,PP,I0008,I0026,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries reports a 10% increase in quarterly operating profit.
+C0236,PP,I0026,I0008,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0237,PP,I0008,I0018,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0238,PP,I0018,I0008,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0239,PP,I0008,I0016,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries reports a 25% increase in export orders.
+C0240,PP,I0016,I0008,Virello Industries reports a 25% increase in export orders; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0241,PP,I0008,I0021,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries secures its first license to sell into a major new overseas market.
+C0242,PP,I0021,I0008,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0243,PP,I0008,I0012,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0244,PP,I0012,I0008,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0245,PP,I0008,I0024,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0246,PP,I0024,I0008,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0247,PP,I0008,I0019,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0248,PP,I0019,I0008,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0249,PP,I0026,I0018,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0250,PP,I0018,I0026,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries reports a 10% increase in quarterly operating profit.
+C0251,PP,I0026,I0016,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries reports a 25% increase in export orders.
+C0252,PP,I0016,I0026,Virello Industries reports a 25% increase in export orders; Virello Industries reports a 10% increase in quarterly operating profit.
+C0253,PP,I0026,I0021,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries secures its first license to sell into a major new overseas market.
+C0254,PP,I0021,I0026,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries reports a 10% increase in quarterly operating profit.
+C0255,PP,I0026,I0012,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0256,PP,I0012,I0026,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries reports a 10% increase in quarterly operating profit.
+C0257,PP,I0026,I0024,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0258,PP,I0024,I0026,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries reports a 10% increase in quarterly operating profit.
+C0259,PP,I0026,I0019,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0260,PP,I0019,I0026,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries reports a 10% increase in quarterly operating profit.
+C0261,PP,I0018,I0016,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries reports a 25% increase in export orders.
+C0262,PP,I0016,I0018,Virello Industries reports a 25% increase in export orders; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0263,PP,I0018,I0021,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries secures its first license to sell into a major new overseas market.
+C0264,PP,I0021,I0018,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0265,PP,I0018,I0012,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0266,PP,I0012,I0018,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0267,PP,I0018,I0024,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0268,PP,I0024,I0018,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0269,PP,I0018,I0019,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0270,PP,I0019,I0018,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0271,PP,I0016,I0021,Virello Industries reports a 25% increase in export orders; Virello Industries secures its first license to sell into a major new overseas market.
+C0272,PP,I0021,I0016,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries reports a 25% increase in export orders.
+C0273,PP,I0016,I0012,Virello Industries reports a 25% increase in export orders; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0274,PP,I0012,I0016,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries reports a 25% increase in export orders.
+C0275,PP,I0016,I0024,Virello Industries reports a 25% increase in export orders; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0276,PP,I0024,I0016,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries reports a 25% increase in export orders.
+C0277,PP,I0016,I0019,Virello Industries reports a 25% increase in export orders; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0278,PP,I0019,I0016,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries reports a 25% increase in export orders.
+C0279,PP,I0021,I0012,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0280,PP,I0012,I0021,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries secures its first license to sell into a major new overseas market.
+C0281,PP,I0021,I0024,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0282,PP,I0024,I0021,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries secures its first license to sell into a major new overseas market.
+C0283,PP,I0021,I0019,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0284,PP,I0019,I0021,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries secures its first license to sell into a major new overseas market.
+C0285,PP,I0012,I0024,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0286,PP,I0024,I0012,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0287,PP,I0012,I0019,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0288,PP,I0019,I0012,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0289,PP,I0024,I0019,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0290,PP,I0019,I0024,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0291,NN,I0002,I0010,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries loses one day's online sales during a website outage.
+C0292,NN,I0010,I0002,Virello Industries loses one day's online sales during a website outage; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0293,NN,I0002,I0023,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0294,NN,I0023,I0002,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0295,NN,I0002,I0009,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0296,NN,I0009,I0002,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0297,NN,I0002,I0025,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0298,NN,I0025,I0002,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0299,NN,I0002,I0027,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries announces a product recall costing 25% of last year's profit.
+C0300,NN,I0027,I0002,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0301,NN,I0002,I0015,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0302,NN,I0015,I0002,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0303,NN,I0002,I0003,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries halts its largest factory for six months after a major fire.
+C0304,NN,I0003,I0002,Virello Industries halts its largest factory for six months after a major fire; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0305,NN,I0002,I0029,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0306,NN,I0029,I0002,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0307,NN,I0002,I0011,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0308,NN,I0011,I0002,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0309,NN,I0010,I0023,Virello Industries loses one day's online sales during a website outage; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0310,NN,I0023,I0010,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries loses one day's online sales during a website outage.
+C0311,NN,I0010,I0009,Virello Industries loses one day's online sales during a website outage; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0312,NN,I0009,I0010,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries loses one day's online sales during a website outage.
+C0313,NN,I0010,I0025,Virello Industries loses one day's online sales during a website outage; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0314,NN,I0025,I0010,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries loses one day's online sales during a website outage.
+C0315,NN,I0010,I0027,Virello Industries loses one day's online sales during a website outage; Virello Industries announces a product recall costing 25% of last year's profit.
+C0316,NN,I0027,I0010,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries loses one day's online sales during a website outage.
+C0317,NN,I0010,I0015,Virello Industries loses one day's online sales during a website outage; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0318,NN,I0015,I0010,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries loses one day's online sales during a website outage.
+C0319,NN,I0010,I0003,Virello Industries loses one day's online sales during a website outage; Virello Industries halts its largest factory for six months after a major fire.
+C0320,NN,I0003,I0010,Virello Industries halts its largest factory for six months after a major fire; Virello Industries loses one day's online sales during a website outage.
+C0321,NN,I0010,I0029,Virello Industries loses one day's online sales during a website outage; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0322,NN,I0029,I0010,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries loses one day's online sales during a website outage.
+C0323,NN,I0010,I0011,Virello Industries loses one day's online sales during a website outage; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0324,NN,I0011,I0010,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries loses one day's online sales during a website outage.
+C0325,NN,I0023,I0009,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0326,NN,I0009,I0023,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0327,NN,I0023,I0025,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0328,NN,I0025,I0023,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0329,NN,I0023,I0027,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries announces a product recall costing 25% of last year's profit.
+C0330,NN,I0027,I0023,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0331,NN,I0023,I0015,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0332,NN,I0015,I0023,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0333,NN,I0023,I0003,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries halts its largest factory for six months after a major fire.
+C0334,NN,I0003,I0023,Virello Industries halts its largest factory for six months after a major fire; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0335,NN,I0023,I0029,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0336,NN,I0029,I0023,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0337,NN,I0023,I0011,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0338,NN,I0011,I0023,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0339,NN,I0009,I0025,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0340,NN,I0025,I0009,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0341,NN,I0009,I0027,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries announces a product recall costing 25% of last year's profit.
+C0342,NN,I0027,I0009,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0343,NN,I0009,I0015,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0344,NN,I0015,I0009,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0345,NN,I0009,I0003,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries halts its largest factory for six months after a major fire.
+C0346,NN,I0003,I0009,Virello Industries halts its largest factory for six months after a major fire; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0347,NN,I0009,I0029,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0348,NN,I0029,I0009,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0349,NN,I0009,I0011,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0350,NN,I0011,I0009,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0351,NN,I0025,I0027,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries announces a product recall costing 25% of last year's profit.
+C0352,NN,I0027,I0025,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0353,NN,I0025,I0015,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0354,NN,I0015,I0025,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0355,NN,I0025,I0003,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries halts its largest factory for six months after a major fire.
+C0356,NN,I0003,I0025,Virello Industries halts its largest factory for six months after a major fire; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0357,NN,I0025,I0029,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0358,NN,I0029,I0025,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0359,NN,I0025,I0011,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0360,NN,I0011,I0025,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0361,NN,I0027,I0015,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0362,NN,I0015,I0027,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries announces a product recall costing 25% of last year's profit.
+C0363,NN,I0027,I0003,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries halts its largest factory for six months after a major fire.
+C0364,NN,I0003,I0027,Virello Industries halts its largest factory for six months after a major fire; Virello Industries announces a product recall costing 25% of last year's profit.
+C0365,NN,I0027,I0029,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0366,NN,I0029,I0027,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries announces a product recall costing 25% of last year's profit.
+C0367,NN,I0027,I0011,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0368,NN,I0011,I0027,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries announces a product recall costing 25% of last year's profit.
+C0369,NN,I0015,I0003,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries halts its largest factory for six months after a major fire.
+C0370,NN,I0003,I0015,Virello Industries halts its largest factory for six months after a major fire; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0371,NN,I0015,I0029,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0372,NN,I0029,I0015,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0373,NN,I0015,I0011,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0374,NN,I0011,I0015,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0375,NN,I0003,I0029,Virello Industries halts its largest factory for six months after a major fire; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0376,NN,I0029,I0003,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries halts its largest factory for six months after a major fire.
+C0377,NN,I0003,I0011,Virello Industries halts its largest factory for six months after a major fire; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0378,NN,I0011,I0003,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries halts its largest factory for six months after a major fire.
+C0379,NN,I0029,I0011,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0380,NN,I0011,I0029,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0381,P0,I0017,I0028,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries schedules its annual shareholder meeting for June 18.
+C0382,P0,I0028,I0017,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0383,P0,I0017,I0013,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries lists its registered office address on its website.
+C0384,P0,I0013,I0017,Virello Industries lists its registered office address on its website; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0385,P0,I0017,I0020,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries publishes the date of its next earnings call.
+C0386,P0,I0020,I0017,Virello Industries publishes the date of its next earnings call; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0387,P0,I0017,I0004,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries states that its fiscal year ends on December 31.
+C0388,P0,I0004,I0017,Virello Industries states that its fiscal year ends on December 31; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0389,P0,I0017,I0006,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries lists the names of its existing business divisions.
+C0390,P0,I0006,I0017,Virello Industries lists the names of its existing business divisions; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0391,P0,I0017,I0001,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries states that its headquarters is located in Westbridge.
+C0392,P0,I0001,I0017,Virello Industries states that its headquarters is located in Westbridge; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0393,P0,I0017,I0030,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries posts a calendar of routine public holidays.
+C0394,P0,I0030,I0017,Virello Industries posts a calendar of routine public holidays; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0395,P0,I0017,I0007,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries lists the telephone number of its investor relations office.
+C0396,P0,I0007,I0017,Virello Industries lists the telephone number of its investor relations office; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0397,P0,I0017,I0014,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0398,P0,I0014,I0017,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0399,P0,I0017,I0005,Virello Industries wins a small supply contract worth 0.2% of annual revenue; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0400,P0,I0005,I0017,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries wins a small supply contract worth 0.2% of annual revenue.
+C0401,P0,I0022,I0028,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries schedules its annual shareholder meeting for June 18.
+C0402,P0,I0028,I0022,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0403,P0,I0022,I0013,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries lists its registered office address on its website.
+C0404,P0,I0013,I0022,Virello Industries lists its registered office address on its website; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0405,P0,I0022,I0020,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries publishes the date of its next earnings call.
+C0406,P0,I0020,I0022,Virello Industries publishes the date of its next earnings call; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0407,P0,I0022,I0004,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries states that its fiscal year ends on December 31.
+C0408,P0,I0004,I0022,Virello Industries states that its fiscal year ends on December 31; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0409,P0,I0022,I0006,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries lists the names of its existing business divisions.
+C0410,P0,I0006,I0022,Virello Industries lists the names of its existing business divisions; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0411,P0,I0022,I0001,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries states that its headquarters is located in Westbridge.
+C0412,P0,I0001,I0022,Virello Industries states that its headquarters is located in Westbridge; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0413,P0,I0022,I0030,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries posts a calendar of routine public holidays.
+C0414,P0,I0030,I0022,Virello Industries posts a calendar of routine public holidays; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0415,P0,I0022,I0007,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries lists the telephone number of its investor relations office.
+C0416,P0,I0007,I0022,Virello Industries lists the telephone number of its investor relations office; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0417,P0,I0022,I0014,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0418,P0,I0014,I0022,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0419,P0,I0022,I0005,Virello Industries reports a 2% increase in recurring maintenance revenue; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0420,P0,I0005,I0022,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries reports a 2% increase in recurring maintenance revenue.
+C0421,P0,I0008,I0028,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries schedules its annual shareholder meeting for June 18.
+C0422,P0,I0028,I0008,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0423,P0,I0008,I0013,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries lists its registered office address on its website.
+C0424,P0,I0013,I0008,Virello Industries lists its registered office address on its website; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0425,P0,I0008,I0020,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries publishes the date of its next earnings call.
+C0426,P0,I0020,I0008,Virello Industries publishes the date of its next earnings call; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0427,P0,I0008,I0004,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries states that its fiscal year ends on December 31.
+C0428,P0,I0004,I0008,Virello Industries states that its fiscal year ends on December 31; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0429,P0,I0008,I0006,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries lists the names of its existing business divisions.
+C0430,P0,I0006,I0008,Virello Industries lists the names of its existing business divisions; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0431,P0,I0008,I0001,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries states that its headquarters is located in Westbridge.
+C0432,P0,I0001,I0008,Virello Industries states that its headquarters is located in Westbridge; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0433,P0,I0008,I0030,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries posts a calendar of routine public holidays.
+C0434,P0,I0030,I0008,Virello Industries posts a calendar of routine public holidays; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0435,P0,I0008,I0007,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries lists the telephone number of its investor relations office.
+C0436,P0,I0007,I0008,Virello Industries lists the telephone number of its investor relations office; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0437,P0,I0008,I0014,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0438,P0,I0014,I0008,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0439,P0,I0008,I0005,Virello Industries reduces annual logistics costs by 5% through improved routing; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0440,P0,I0005,I0008,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries reduces annual logistics costs by 5% through improved routing.
+C0441,P0,I0026,I0028,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries schedules its annual shareholder meeting for June 18.
+C0442,P0,I0028,I0026,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries reports a 10% increase in quarterly operating profit.
+C0443,P0,I0026,I0013,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries lists its registered office address on its website.
+C0444,P0,I0013,I0026,Virello Industries lists its registered office address on its website; Virello Industries reports a 10% increase in quarterly operating profit.
+C0445,P0,I0026,I0020,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries publishes the date of its next earnings call.
+C0446,P0,I0020,I0026,Virello Industries publishes the date of its next earnings call; Virello Industries reports a 10% increase in quarterly operating profit.
+C0447,P0,I0026,I0004,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries states that its fiscal year ends on December 31.
+C0448,P0,I0004,I0026,Virello Industries states that its fiscal year ends on December 31; Virello Industries reports a 10% increase in quarterly operating profit.
+C0449,P0,I0026,I0006,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries lists the names of its existing business divisions.
+C0450,P0,I0006,I0026,Virello Industries lists the names of its existing business divisions; Virello Industries reports a 10% increase in quarterly operating profit.
+C0451,P0,I0026,I0001,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries states that its headquarters is located in Westbridge.
+C0452,P0,I0001,I0026,Virello Industries states that its headquarters is located in Westbridge; Virello Industries reports a 10% increase in quarterly operating profit.
+C0453,P0,I0026,I0030,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries posts a calendar of routine public holidays.
+C0454,P0,I0030,I0026,Virello Industries posts a calendar of routine public holidays; Virello Industries reports a 10% increase in quarterly operating profit.
+C0455,P0,I0026,I0007,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries lists the telephone number of its investor relations office.
+C0456,P0,I0007,I0026,Virello Industries lists the telephone number of its investor relations office; Virello Industries reports a 10% increase in quarterly operating profit.
+C0457,P0,I0026,I0014,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0458,P0,I0014,I0026,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries reports a 10% increase in quarterly operating profit.
+C0459,P0,I0026,I0005,Virello Industries reports a 10% increase in quarterly operating profit; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0460,P0,I0005,I0026,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries reports a 10% increase in quarterly operating profit.
+C0461,P0,I0018,I0028,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries schedules its annual shareholder meeting for June 18.
+C0462,P0,I0028,I0018,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0463,P0,I0018,I0013,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries lists its registered office address on its website.
+C0464,P0,I0013,I0018,Virello Industries lists its registered office address on its website; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0465,P0,I0018,I0020,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries publishes the date of its next earnings call.
+C0466,P0,I0020,I0018,Virello Industries publishes the date of its next earnings call; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0467,P0,I0018,I0004,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries states that its fiscal year ends on December 31.
+C0468,P0,I0004,I0018,Virello Industries states that its fiscal year ends on December 31; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0469,P0,I0018,I0006,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries lists the names of its existing business divisions.
+C0470,P0,I0006,I0018,Virello Industries lists the names of its existing business divisions; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0471,P0,I0018,I0001,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries states that its headquarters is located in Westbridge.
+C0472,P0,I0001,I0018,Virello Industries states that its headquarters is located in Westbridge; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0473,P0,I0018,I0030,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries posts a calendar of routine public holidays.
+C0474,P0,I0030,I0018,Virello Industries posts a calendar of routine public holidays; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0475,P0,I0018,I0007,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries lists the telephone number of its investor relations office.
+C0476,P0,I0007,I0018,Virello Industries lists the telephone number of its investor relations office; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0477,P0,I0018,I0014,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0478,P0,I0014,I0018,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0479,P0,I0018,I0005,Virello Industries raises its full-year free cash flow forecast by 15%; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0480,P0,I0005,I0018,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries raises its full-year free cash flow forecast by 15%.
+C0481,P0,I0016,I0028,Virello Industries reports a 25% increase in export orders; Virello Industries schedules its annual shareholder meeting for June 18.
+C0482,P0,I0028,I0016,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries reports a 25% increase in export orders.
+C0483,P0,I0016,I0013,Virello Industries reports a 25% increase in export orders; Virello Industries lists its registered office address on its website.
+C0484,P0,I0013,I0016,Virello Industries lists its registered office address on its website; Virello Industries reports a 25% increase in export orders.
+C0485,P0,I0016,I0020,Virello Industries reports a 25% increase in export orders; Virello Industries publishes the date of its next earnings call.
+C0486,P0,I0020,I0016,Virello Industries publishes the date of its next earnings call; Virello Industries reports a 25% increase in export orders.
+C0487,P0,I0016,I0004,Virello Industries reports a 25% increase in export orders; Virello Industries states that its fiscal year ends on December 31.
+C0488,P0,I0004,I0016,Virello Industries states that its fiscal year ends on December 31; Virello Industries reports a 25% increase in export orders.
+C0489,P0,I0016,I0006,Virello Industries reports a 25% increase in export orders; Virello Industries lists the names of its existing business divisions.
+C0490,P0,I0006,I0016,Virello Industries lists the names of its existing business divisions; Virello Industries reports a 25% increase in export orders.
+C0491,P0,I0016,I0001,Virello Industries reports a 25% increase in export orders; Virello Industries states that its headquarters is located in Westbridge.
+C0492,P0,I0001,I0016,Virello Industries states that its headquarters is located in Westbridge; Virello Industries reports a 25% increase in export orders.
+C0493,P0,I0016,I0030,Virello Industries reports a 25% increase in export orders; Virello Industries posts a calendar of routine public holidays.
+C0494,P0,I0030,I0016,Virello Industries posts a calendar of routine public holidays; Virello Industries reports a 25% increase in export orders.
+C0495,P0,I0016,I0007,Virello Industries reports a 25% increase in export orders; Virello Industries lists the telephone number of its investor relations office.
+C0496,P0,I0007,I0016,Virello Industries lists the telephone number of its investor relations office; Virello Industries reports a 25% increase in export orders.
+C0497,P0,I0016,I0014,Virello Industries reports a 25% increase in export orders; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0498,P0,I0014,I0016,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries reports a 25% increase in export orders.
+C0499,P0,I0016,I0005,Virello Industries reports a 25% increase in export orders; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0500,P0,I0005,I0016,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries reports a 25% increase in export orders.
+C0501,P0,I0021,I0028,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries schedules its annual shareholder meeting for June 18.
+C0502,P0,I0028,I0021,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries secures its first license to sell into a major new overseas market.
+C0503,P0,I0021,I0013,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries lists its registered office address on its website.
+C0504,P0,I0013,I0021,Virello Industries lists its registered office address on its website; Virello Industries secures its first license to sell into a major new overseas market.
+C0505,P0,I0021,I0020,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries publishes the date of its next earnings call.
+C0506,P0,I0020,I0021,Virello Industries publishes the date of its next earnings call; Virello Industries secures its first license to sell into a major new overseas market.
+C0507,P0,I0021,I0004,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries states that its fiscal year ends on December 31.
+C0508,P0,I0004,I0021,Virello Industries states that its fiscal year ends on December 31; Virello Industries secures its first license to sell into a major new overseas market.
+C0509,P0,I0021,I0006,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries lists the names of its existing business divisions.
+C0510,P0,I0006,I0021,Virello Industries lists the names of its existing business divisions; Virello Industries secures its first license to sell into a major new overseas market.
+C0511,P0,I0021,I0001,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries states that its headquarters is located in Westbridge.
+C0512,P0,I0001,I0021,Virello Industries states that its headquarters is located in Westbridge; Virello Industries secures its first license to sell into a major new overseas market.
+C0513,P0,I0021,I0030,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries posts a calendar of routine public holidays.
+C0514,P0,I0030,I0021,Virello Industries posts a calendar of routine public holidays; Virello Industries secures its first license to sell into a major new overseas market.
+C0515,P0,I0021,I0007,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries lists the telephone number of its investor relations office.
+C0516,P0,I0007,I0021,Virello Industries lists the telephone number of its investor relations office; Virello Industries secures its first license to sell into a major new overseas market.
+C0517,P0,I0021,I0014,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0518,P0,I0014,I0021,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries secures its first license to sell into a major new overseas market.
+C0519,P0,I0021,I0005,Virello Industries secures its first license to sell into a major new overseas market; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0520,P0,I0005,I0021,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries secures its first license to sell into a major new overseas market.
+C0521,P0,I0012,I0028,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries schedules its annual shareholder meeting for June 18.
+C0522,P0,I0028,I0012,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0523,P0,I0012,I0013,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries lists its registered office address on its website.
+C0524,P0,I0013,I0012,Virello Industries lists its registered office address on its website; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0525,P0,I0012,I0020,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries publishes the date of its next earnings call.
+C0526,P0,I0020,I0012,Virello Industries publishes the date of its next earnings call; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0527,P0,I0012,I0004,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries states that its fiscal year ends on December 31.
+C0528,P0,I0004,I0012,Virello Industries states that its fiscal year ends on December 31; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0529,P0,I0012,I0006,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries lists the names of its existing business divisions.
+C0530,P0,I0006,I0012,Virello Industries lists the names of its existing business divisions; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0531,P0,I0012,I0001,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries states that its headquarters is located in Westbridge.
+C0532,P0,I0001,I0012,Virello Industries states that its headquarters is located in Westbridge; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0533,P0,I0012,I0030,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries posts a calendar of routine public holidays.
+C0534,P0,I0030,I0012,Virello Industries posts a calendar of routine public holidays; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0535,P0,I0012,I0007,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries lists the telephone number of its investor relations office.
+C0536,P0,I0007,I0012,Virello Industries lists the telephone number of its investor relations office; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0537,P0,I0012,I0014,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0538,P0,I0014,I0012,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0539,P0,I0012,I0005,Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0540,P0,I0005,I0012,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries wins an appeal canceling a fine equal to 30% of last year's profit.
+C0541,P0,I0024,I0028,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries schedules its annual shareholder meeting for June 18.
+C0542,P0,I0028,I0024,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0543,P0,I0024,I0013,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries lists its registered office address on its website.
+C0544,P0,I0013,I0024,Virello Industries lists its registered office address on its website; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0545,P0,I0024,I0020,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries publishes the date of its next earnings call.
+C0546,P0,I0020,I0024,Virello Industries publishes the date of its next earnings call; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0547,P0,I0024,I0004,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries states that its fiscal year ends on December 31.
+C0548,P0,I0004,I0024,Virello Industries states that its fiscal year ends on December 31; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0549,P0,I0024,I0006,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries lists the names of its existing business divisions.
+C0550,P0,I0006,I0024,Virello Industries lists the names of its existing business divisions; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0551,P0,I0024,I0001,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries states that its headquarters is located in Westbridge.
+C0552,P0,I0001,I0024,Virello Industries states that its headquarters is located in Westbridge; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0553,P0,I0024,I0030,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries posts a calendar of routine public holidays.
+C0554,P0,I0030,I0024,Virello Industries posts a calendar of routine public holidays; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0555,P0,I0024,I0007,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries lists the telephone number of its investor relations office.
+C0556,P0,I0007,I0024,Virello Industries lists the telephone number of its investor relations office; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0557,P0,I0024,I0014,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0558,P0,I0014,I0024,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0559,P0,I0024,I0005,Virello Industries wins a patent expected to double revenue at its specialty materials division; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0560,P0,I0005,I0024,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries wins a patent expected to double revenue at its specialty materials division.
+C0561,P0,I0019,I0028,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries schedules its annual shareholder meeting for June 18.
+C0562,P0,I0028,I0019,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0563,P0,I0019,I0013,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries lists its registered office address on its website.
+C0564,P0,I0013,I0019,Virello Industries lists its registered office address on its website; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0565,P0,I0019,I0020,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries publishes the date of its next earnings call.
+C0566,P0,I0020,I0019,Virello Industries publishes the date of its next earnings call; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0567,P0,I0019,I0004,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries states that its fiscal year ends on December 31.
+C0568,P0,I0004,I0019,Virello Industries states that its fiscal year ends on December 31; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0569,P0,I0019,I0006,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries lists the names of its existing business divisions.
+C0570,P0,I0006,I0019,Virello Industries lists the names of its existing business divisions; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0571,P0,I0019,I0001,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries states that its headquarters is located in Westbridge.
+C0572,P0,I0001,I0019,Virello Industries states that its headquarters is located in Westbridge; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0573,P0,I0019,I0030,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries posts a calendar of routine public holidays.
+C0574,P0,I0030,I0019,Virello Industries posts a calendar of routine public holidays; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0575,P0,I0019,I0007,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries lists the telephone number of its investor relations office.
+C0576,P0,I0007,I0019,Virello Industries lists the telephone number of its investor relations office; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0577,P0,I0019,I0014,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0578,P0,I0014,I0019,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0579,P0,I0019,I0005,Virello Industries repays all overdue debt and eliminates an imminent default risk; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0580,P0,I0005,I0019,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries repays all overdue debt and eliminates an imminent default risk.
+C0581,N0,I0002,I0028,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries schedules its annual shareholder meeting for June 18.
+C0582,N0,I0028,I0002,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0583,N0,I0002,I0013,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries lists its registered office address on its website.
+C0584,N0,I0013,I0002,Virello Industries lists its registered office address on its website; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0585,N0,I0002,I0020,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries publishes the date of its next earnings call.
+C0586,N0,I0020,I0002,Virello Industries publishes the date of its next earnings call; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0587,N0,I0002,I0004,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries states that its fiscal year ends on December 31.
+C0588,N0,I0004,I0002,Virello Industries states that its fiscal year ends on December 31; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0589,N0,I0002,I0006,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries lists the names of its existing business divisions.
+C0590,N0,I0006,I0002,Virello Industries lists the names of its existing business divisions; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0591,N0,I0002,I0001,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries states that its headquarters is located in Westbridge.
+C0592,N0,I0001,I0002,Virello Industries states that its headquarters is located in Westbridge; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0593,N0,I0002,I0030,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries posts a calendar of routine public holidays.
+C0594,N0,I0030,I0002,Virello Industries posts a calendar of routine public holidays; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0595,N0,I0002,I0007,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries lists the telephone number of its investor relations office.
+C0596,N0,I0007,I0002,Virello Industries lists the telephone number of its investor relations office; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0597,N0,I0002,I0014,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0598,N0,I0014,I0002,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0599,N0,I0002,I0005,Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0600,N0,I0005,I0002,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries incurs an unexpected filing fee equal to 0.2% of annual revenue.
+C0601,N0,I0010,I0028,Virello Industries loses one day's online sales during a website outage; Virello Industries schedules its annual shareholder meeting for June 18.
+C0602,N0,I0028,I0010,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries loses one day's online sales during a website outage.
+C0603,N0,I0010,I0013,Virello Industries loses one day's online sales during a website outage; Virello Industries lists its registered office address on its website.
+C0604,N0,I0013,I0010,Virello Industries lists its registered office address on its website; Virello Industries loses one day's online sales during a website outage.
+C0605,N0,I0010,I0020,Virello Industries loses one day's online sales during a website outage; Virello Industries publishes the date of its next earnings call.
+C0606,N0,I0020,I0010,Virello Industries publishes the date of its next earnings call; Virello Industries loses one day's online sales during a website outage.
+C0607,N0,I0010,I0004,Virello Industries loses one day's online sales during a website outage; Virello Industries states that its fiscal year ends on December 31.
+C0608,N0,I0004,I0010,Virello Industries states that its fiscal year ends on December 31; Virello Industries loses one day's online sales during a website outage.
+C0609,N0,I0010,I0006,Virello Industries loses one day's online sales during a website outage; Virello Industries lists the names of its existing business divisions.
+C0610,N0,I0006,I0010,Virello Industries lists the names of its existing business divisions; Virello Industries loses one day's online sales during a website outage.
+C0611,N0,I0010,I0001,Virello Industries loses one day's online sales during a website outage; Virello Industries states that its headquarters is located in Westbridge.
+C0612,N0,I0001,I0010,Virello Industries states that its headquarters is located in Westbridge; Virello Industries loses one day's online sales during a website outage.
+C0613,N0,I0010,I0030,Virello Industries loses one day's online sales during a website outage; Virello Industries posts a calendar of routine public holidays.
+C0614,N0,I0030,I0010,Virello Industries posts a calendar of routine public holidays; Virello Industries loses one day's online sales during a website outage.
+C0615,N0,I0010,I0007,Virello Industries loses one day's online sales during a website outage; Virello Industries lists the telephone number of its investor relations office.
+C0616,N0,I0007,I0010,Virello Industries lists the telephone number of its investor relations office; Virello Industries loses one day's online sales during a website outage.
+C0617,N0,I0010,I0014,Virello Industries loses one day's online sales during a website outage; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0618,N0,I0014,I0010,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries loses one day's online sales during a website outage.
+C0619,N0,I0010,I0005,Virello Industries loses one day's online sales during a website outage; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0620,N0,I0005,I0010,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries loses one day's online sales during a website outage.
+C0621,N0,I0023,I0028,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries schedules its annual shareholder meeting for June 18.
+C0622,N0,I0028,I0023,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0623,N0,I0023,I0013,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries lists its registered office address on its website.
+C0624,N0,I0013,I0023,Virello Industries lists its registered office address on its website; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0625,N0,I0023,I0020,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries publishes the date of its next earnings call.
+C0626,N0,I0020,I0023,Virello Industries publishes the date of its next earnings call; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0627,N0,I0023,I0004,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries states that its fiscal year ends on December 31.
+C0628,N0,I0004,I0023,Virello Industries states that its fiscal year ends on December 31; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0629,N0,I0023,I0006,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries lists the names of its existing business divisions.
+C0630,N0,I0006,I0023,Virello Industries lists the names of its existing business divisions; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0631,N0,I0023,I0001,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries states that its headquarters is located in Westbridge.
+C0632,N0,I0001,I0023,Virello Industries states that its headquarters is located in Westbridge; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0633,N0,I0023,I0030,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries posts a calendar of routine public holidays.
+C0634,N0,I0030,I0023,Virello Industries posts a calendar of routine public holidays; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0635,N0,I0023,I0007,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries lists the telephone number of its investor relations office.
+C0636,N0,I0007,I0023,Virello Industries lists the telephone number of its investor relations office; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0637,N0,I0023,I0014,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0638,N0,I0014,I0023,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0639,N0,I0023,I0005,Virello Industries incurs warranty repair costs equal to 5% of last year's profit; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0640,N0,I0005,I0023,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries incurs warranty repair costs equal to 5% of last year's profit.
+C0641,N0,I0009,I0028,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries schedules its annual shareholder meeting for June 18.
+C0642,N0,I0028,I0009,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0643,N0,I0009,I0013,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries lists its registered office address on its website.
+C0644,N0,I0013,I0009,Virello Industries lists its registered office address on its website; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0645,N0,I0009,I0020,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries publishes the date of its next earnings call.
+C0646,N0,I0020,I0009,Virello Industries publishes the date of its next earnings call; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0647,N0,I0009,I0004,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries states that its fiscal year ends on December 31.
+C0648,N0,I0004,I0009,Virello Industries states that its fiscal year ends on December 31; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0649,N0,I0009,I0006,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries lists the names of its existing business divisions.
+C0650,N0,I0006,I0009,Virello Industries lists the names of its existing business divisions; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0651,N0,I0009,I0001,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries states that its headquarters is located in Westbridge.
+C0652,N0,I0001,I0009,Virello Industries states that its headquarters is located in Westbridge; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0653,N0,I0009,I0030,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries posts a calendar of routine public holidays.
+C0654,N0,I0030,I0009,Virello Industries posts a calendar of routine public holidays; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0655,N0,I0009,I0007,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries lists the telephone number of its investor relations office.
+C0656,N0,I0007,I0009,Virello Industries lists the telephone number of its investor relations office; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0657,N0,I0009,I0014,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0658,N0,I0014,I0009,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0659,N0,I0009,I0005,Virello Industries loses a distribution agreement accounting for 10% of retail sales; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0660,N0,I0005,I0009,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries loses a distribution agreement accounting for 10% of retail sales.
+C0661,N0,I0025,I0028,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries schedules its annual shareholder meeting for June 18.
+C0662,N0,I0028,I0025,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0663,N0,I0025,I0013,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries lists its registered office address on its website.
+C0664,N0,I0013,I0025,Virello Industries lists its registered office address on its website; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0665,N0,I0025,I0020,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries publishes the date of its next earnings call.
+C0666,N0,I0020,I0025,Virello Industries publishes the date of its next earnings call; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0667,N0,I0025,I0004,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries states that its fiscal year ends on December 31.
+C0668,N0,I0004,I0025,Virello Industries states that its fiscal year ends on December 31; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0669,N0,I0025,I0006,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries lists the names of its existing business divisions.
+C0670,N0,I0006,I0025,Virello Industries lists the names of its existing business divisions; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0671,N0,I0025,I0001,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries states that its headquarters is located in Westbridge.
+C0672,N0,I0001,I0025,Virello Industries states that its headquarters is located in Westbridge; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0673,N0,I0025,I0030,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries posts a calendar of routine public holidays.
+C0674,N0,I0030,I0025,Virello Industries posts a calendar of routine public holidays; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0675,N0,I0025,I0007,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries lists the telephone number of its investor relations office.
+C0676,N0,I0007,I0025,Virello Industries lists the telephone number of its investor relations office; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0677,N0,I0025,I0014,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0678,N0,I0014,I0025,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0679,N0,I0025,I0005,Virello Industries cuts production at a domestic plant by 15% because of weak demand; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0680,N0,I0005,I0025,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries cuts production at a domestic plant by 15% because of weak demand.
+C0681,N0,I0027,I0028,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries schedules its annual shareholder meeting for June 18.
+C0682,N0,I0028,I0027,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries announces a product recall costing 25% of last year's profit.
+C0683,N0,I0027,I0013,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries lists its registered office address on its website.
+C0684,N0,I0013,I0027,Virello Industries lists its registered office address on its website; Virello Industries announces a product recall costing 25% of last year's profit.
+C0685,N0,I0027,I0020,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries publishes the date of its next earnings call.
+C0686,N0,I0020,I0027,Virello Industries publishes the date of its next earnings call; Virello Industries announces a product recall costing 25% of last year's profit.
+C0687,N0,I0027,I0004,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries states that its fiscal year ends on December 31.
+C0688,N0,I0004,I0027,Virello Industries states that its fiscal year ends on December 31; Virello Industries announces a product recall costing 25% of last year's profit.
+C0689,N0,I0027,I0006,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries lists the names of its existing business divisions.
+C0690,N0,I0006,I0027,Virello Industries lists the names of its existing business divisions; Virello Industries announces a product recall costing 25% of last year's profit.
+C0691,N0,I0027,I0001,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries states that its headquarters is located in Westbridge.
+C0692,N0,I0001,I0027,Virello Industries states that its headquarters is located in Westbridge; Virello Industries announces a product recall costing 25% of last year's profit.
+C0693,N0,I0027,I0030,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries posts a calendar of routine public holidays.
+C0694,N0,I0030,I0027,Virello Industries posts a calendar of routine public holidays; Virello Industries announces a product recall costing 25% of last year's profit.
+C0695,N0,I0027,I0007,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries lists the telephone number of its investor relations office.
+C0696,N0,I0007,I0027,Virello Industries lists the telephone number of its investor relations office; Virello Industries announces a product recall costing 25% of last year's profit.
+C0697,N0,I0027,I0014,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0698,N0,I0014,I0027,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries announces a product recall costing 25% of last year's profit.
+C0699,N0,I0027,I0005,Virello Industries announces a product recall costing 25% of last year's profit; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0700,N0,I0005,I0027,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries announces a product recall costing 25% of last year's profit.
+C0701,N0,I0015,I0028,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries schedules its annual shareholder meeting for June 18.
+C0702,N0,I0028,I0015,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0703,N0,I0015,I0013,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries lists its registered office address on its website.
+C0704,N0,I0013,I0015,Virello Industries lists its registered office address on its website; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0705,N0,I0015,I0020,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries publishes the date of its next earnings call.
+C0706,N0,I0020,I0015,Virello Industries publishes the date of its next earnings call; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0707,N0,I0015,I0004,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries states that its fiscal year ends on December 31.
+C0708,N0,I0004,I0015,Virello Industries states that its fiscal year ends on December 31; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0709,N0,I0015,I0006,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries lists the names of its existing business divisions.
+C0710,N0,I0006,I0015,Virello Industries lists the names of its existing business divisions; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0711,N0,I0015,I0001,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries states that its headquarters is located in Westbridge.
+C0712,N0,I0001,I0015,Virello Industries states that its headquarters is located in Westbridge; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0713,N0,I0015,I0030,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries posts a calendar of routine public holidays.
+C0714,N0,I0030,I0015,Virello Industries posts a calendar of routine public holidays; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0715,N0,I0015,I0007,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries lists the telephone number of its investor relations office.
+C0716,N0,I0007,I0015,Virello Industries lists the telephone number of its investor relations office; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0717,N0,I0015,I0014,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0718,N0,I0014,I0015,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0719,N0,I0015,I0005,Virello Industries loses a major customer accounting for 30% of annual revenue; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0720,N0,I0005,I0015,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries loses a major customer accounting for 30% of annual revenue.
+C0721,N0,I0003,I0028,Virello Industries halts its largest factory for six months after a major fire; Virello Industries schedules its annual shareholder meeting for June 18.
+C0722,N0,I0028,I0003,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries halts its largest factory for six months after a major fire.
+C0723,N0,I0003,I0013,Virello Industries halts its largest factory for six months after a major fire; Virello Industries lists its registered office address on its website.
+C0724,N0,I0013,I0003,Virello Industries lists its registered office address on its website; Virello Industries halts its largest factory for six months after a major fire.
+C0725,N0,I0003,I0020,Virello Industries halts its largest factory for six months after a major fire; Virello Industries publishes the date of its next earnings call.
+C0726,N0,I0020,I0003,Virello Industries publishes the date of its next earnings call; Virello Industries halts its largest factory for six months after a major fire.
+C0727,N0,I0003,I0004,Virello Industries halts its largest factory for six months after a major fire; Virello Industries states that its fiscal year ends on December 31.
+C0728,N0,I0004,I0003,Virello Industries states that its fiscal year ends on December 31; Virello Industries halts its largest factory for six months after a major fire.
+C0729,N0,I0003,I0006,Virello Industries halts its largest factory for six months after a major fire; Virello Industries lists the names of its existing business divisions.
+C0730,N0,I0006,I0003,Virello Industries lists the names of its existing business divisions; Virello Industries halts its largest factory for six months after a major fire.
+C0731,N0,I0003,I0001,Virello Industries halts its largest factory for six months after a major fire; Virello Industries states that its headquarters is located in Westbridge.
+C0732,N0,I0001,I0003,Virello Industries states that its headquarters is located in Westbridge; Virello Industries halts its largest factory for six months after a major fire.
+C0733,N0,I0003,I0030,Virello Industries halts its largest factory for six months after a major fire; Virello Industries posts a calendar of routine public holidays.
+C0734,N0,I0030,I0003,Virello Industries posts a calendar of routine public holidays; Virello Industries halts its largest factory for six months after a major fire.
+C0735,N0,I0003,I0007,Virello Industries halts its largest factory for six months after a major fire; Virello Industries lists the telephone number of its investor relations office.
+C0736,N0,I0007,I0003,Virello Industries lists the telephone number of its investor relations office; Virello Industries halts its largest factory for six months after a major fire.
+C0737,N0,I0003,I0014,Virello Industries halts its largest factory for six months after a major fire; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0738,N0,I0014,I0003,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries halts its largest factory for six months after a major fire.
+C0739,N0,I0003,I0005,Virello Industries halts its largest factory for six months after a major fire; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0740,N0,I0005,I0003,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries halts its largest factory for six months after a major fire.
+C0741,N0,I0029,I0028,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries schedules its annual shareholder meeting for June 18.
+C0742,N0,I0028,I0029,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0743,N0,I0029,I0013,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries lists its registered office address on its website.
+C0744,N0,I0013,I0029,Virello Industries lists its registered office address on its website; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0745,N0,I0029,I0020,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries publishes the date of its next earnings call.
+C0746,N0,I0020,I0029,Virello Industries publishes the date of its next earnings call; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0747,N0,I0029,I0004,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries states that its fiscal year ends on December 31.
+C0748,N0,I0004,I0029,Virello Industries states that its fiscal year ends on December 31; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0749,N0,I0029,I0006,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries lists the names of its existing business divisions.
+C0750,N0,I0006,I0029,Virello Industries lists the names of its existing business divisions; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0751,N0,I0029,I0001,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries states that its headquarters is located in Westbridge.
+C0752,N0,I0001,I0029,Virello Industries states that its headquarters is located in Westbridge; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0753,N0,I0029,I0030,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries posts a calendar of routine public holidays.
+C0754,N0,I0030,I0029,Virello Industries posts a calendar of routine public holidays; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0755,N0,I0029,I0007,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries lists the telephone number of its investor relations office.
+C0756,N0,I0007,I0029,Virello Industries lists the telephone number of its investor relations office; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0757,N0,I0029,I0014,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0758,N0,I0014,I0029,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0759,N0,I0029,I0005,Virello Industries faces an indefinite regulatory ban on its flagship product; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0760,N0,I0005,I0029,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries faces an indefinite regulatory ban on its flagship product.
+C0761,N0,I0011,I0028,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries schedules its annual shareholder meeting for June 18.
+C0762,N0,I0028,I0011,Virello Industries schedules its annual shareholder meeting for June 18; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0763,N0,I0011,I0013,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries lists its registered office address on its website.
+C0764,N0,I0013,I0011,Virello Industries lists its registered office address on its website; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0765,N0,I0011,I0020,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries publishes the date of its next earnings call.
+C0766,N0,I0020,I0011,Virello Industries publishes the date of its next earnings call; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0767,N0,I0011,I0004,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries states that its fiscal year ends on December 31.
+C0768,N0,I0004,I0011,Virello Industries states that its fiscal year ends on December 31; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0769,N0,I0011,I0006,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries lists the names of its existing business divisions.
+C0770,N0,I0006,I0011,Virello Industries lists the names of its existing business divisions; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0771,N0,I0011,I0001,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries states that its headquarters is located in Westbridge.
+C0772,N0,I0001,I0011,Virello Industries states that its headquarters is located in Westbridge; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0773,N0,I0011,I0030,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries posts a calendar of routine public holidays.
+C0774,N0,I0030,I0011,Virello Industries posts a calendar of routine public holidays; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0775,N0,I0011,I0007,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries lists the telephone number of its investor relations office.
+C0776,N0,I0007,I0011,Virello Industries lists the telephone number of its investor relations office; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0777,N0,I0011,I0014,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries states that its ordinary shares use the ticker VIRI.
+C0778,N0,I0014,I0011,Virello Industries states that its ordinary shares use the ticker VIRI; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.
+C0779,N0,I0011,I0005,Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets; Virello Industries publishes the agenda for its scheduled annual meeting.
+C0780,N0,I0005,I0011,Virello Industries publishes the agenda for its scheduled annual meeting; Virello Industries discovers fraud causing unrecoverable losses equal to 60% of its assets.

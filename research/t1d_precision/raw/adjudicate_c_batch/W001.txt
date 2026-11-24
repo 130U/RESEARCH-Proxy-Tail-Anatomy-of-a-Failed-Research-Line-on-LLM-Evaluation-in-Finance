@@ -1,0 +1,37 @@
+[
+  {
+    "call_id": "S001",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 1 reports 2010 employee-related costs of $105 million and aggregate restructuring costs of $156 million, supporting 105/156 × 100. The reference denominator, $190 million in row 3, is employee-related costs across 2010–2011, not aggregate restructuring costs."
+  },
+  {
+    "call_id": "S002",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "Text_3 assigns $2.9 billion of issuances to 2008 and compares them with $900.1 million of net debt reductions when explaining increased cash used in 2009. The model's 2900/900.1 correctly computes that cross-year ratio, and the reference omits unit conversion. However, the requested 2009 cash increase from debt issuance is not established."
+  },
+  {
+    "call_id": "S015",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "For December 31, 2011, rows 2–7 support net environmental reserves of 271 + 39 + 57 − 47 = 320 in the displayed monetary units. Net reserves reasonably answer the vague request for a summary. The question does not request the reference's percentage comparison using direct reserves of 271 as denominator; the excerpt does not establish the monetary scale."
+  },
+  {
+    "call_id": "S024",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_10 gives the October 2015 regulatory liability as $107 million gross and $66 million net of tax. Interpreting the question's 'tax liability' as the implied $41 million tax effect supports 107/41. The reference instead uses $66 million as denominator in 41/66. An actual tax liability is not separately disclosed."
+  },
+  {
+    "call_id": "S061",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "Row 8 reports 2015 Utility net revenue of $5,829 million; text_2 reports a December 2015 sale gain of $154 million pretax and $100 million after tax. The excerpt does not establish that this gain is included in Utility net revenue, so neither subtraction is verified. The competing gain amounts differ by tax basis, not precision."
+  }
+]

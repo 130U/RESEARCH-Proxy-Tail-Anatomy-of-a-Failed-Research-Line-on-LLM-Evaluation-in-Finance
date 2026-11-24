@@ -1,0 +1,1 @@
+{"answer":"27.40300869","unit":"percent","expression":"(534648 - 419651) / 419651 * 100","low":"27.4027377479","high":"27.4032796339","reliable_digits":"5","explanation":"Equity AUM increased by this percentage; allowing each displayed AUM figure to vary by 0.5 million gives the rounding bounds."}

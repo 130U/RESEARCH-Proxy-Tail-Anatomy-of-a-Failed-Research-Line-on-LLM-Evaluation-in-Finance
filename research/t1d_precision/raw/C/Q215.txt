@@ -1,0 +1,1 @@
+{"answer":"-55.3191489362","unit":"percent","expression":"(21 - 47) / 47 * 100","low":"-56.8421052632","high":"-53.7634408602","reliable_digits":"1","explanation":"Each fair value may vary by $0.5 million, giving these bounds and approximately 3% relative uncertainty in the percentage decrease."}

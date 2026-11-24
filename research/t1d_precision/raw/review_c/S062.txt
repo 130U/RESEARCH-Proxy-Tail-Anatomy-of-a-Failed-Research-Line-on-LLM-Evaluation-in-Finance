@@ -1,0 +1,7 @@
+{
+    "call_id": "S062",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_5 reports an EnLink disposal gain of $2.6 billion pretax and $2.2 billion after tax. The model uses the conventional tax-rate denominator of $2.6 billion, yielding 15.38%. The wording 'on the net earnings' also permits the reference's tax-to-after-tax-gain interpretation using $2.2 billion."
+  }

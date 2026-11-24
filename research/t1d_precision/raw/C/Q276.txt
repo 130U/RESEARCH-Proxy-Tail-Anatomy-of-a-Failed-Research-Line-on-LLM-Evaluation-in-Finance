@@ -1,0 +1,1 @@
+{"answer":"7.2","unit":"million dollars","expression":"258.6 - 250.0 - 1.4","low":"7.05","high":"7.35","reliable_digits":"1","explanation":"Subtracting principal and the prepayment penalty from total redemption cost gives accrued interest, with rounding uncertainty of 0.15 million dollars."}

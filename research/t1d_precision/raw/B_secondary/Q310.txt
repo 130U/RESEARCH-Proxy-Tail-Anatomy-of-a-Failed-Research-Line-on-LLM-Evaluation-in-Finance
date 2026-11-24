@@ -1,0 +1,1 @@
+{"answer":"117.56","unit":"percent","expression":"(217.56 - 100) / 100 * 100","low":"116.4726368159204","high":"118.6582914572864","reliable_digits":"2","explanation":"Allowing the displayed $100 investment and $217.56 ending value to vary by their rounding precision gives these bounds and two reliable significant digits."}

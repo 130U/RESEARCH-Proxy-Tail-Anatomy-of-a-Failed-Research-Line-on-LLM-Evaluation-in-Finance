@@ -1,0 +1,190 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R123",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "alexion pharmaceuticals , inc ."
+      },
+      {
+        "location": "text_1",
+        "text": "notes to consolidated financial statements for the years ended december 31 , 2016 , 2015 and 2014 ( amounts in millions except per share amounts ) depending upon our consolidated net leverage ratio ( as calculated in accordance with the credit agreement ) ."
+      },
+      {
+        "location": "text_2",
+        "text": "at december 31 , 2016 , the interest rate on our outstanding loans under the credit agreement was 2.52% ( 2.52 % ) ."
+      },
+      {
+        "location": "text_3",
+        "text": "our obligations under the credit facilities are guaranteed by certain of alexion 2019s foreign and domestic subsidiaries and secured by liens on certain of alexion 2019s and its subsidiaries 2019 equity interests , subject to certain exceptions ."
+      },
+      {
+        "location": "text_4",
+        "text": "the credit agreement requires us to comply with certain financial covenants on a quarterly basis ."
+      },
+      {
+        "location": "text_5",
+        "text": "under these financial covenants , we are required to deliver to the administrative agent , not later than 50 days after each fiscal quarter , our quarterly financial statements , and within 5 days thereafter , a compliance certificate ."
+      },
+      {
+        "location": "text_6",
+        "text": "in november 2016 , we obtained a waiver from the necessary lenders for this requirement and the due date for delivery of the third quarter 2016 financial statements and compliance certificate was extended to january 18 , 2017 ."
+      },
+      {
+        "location": "text_7",
+        "text": "the posting of the third quarter report on form 10-q on our website on january 4 , 2017 satisfied the financial statement covenant , and we simultaneously delivered the required compliance certificate , as required by the lenders ."
+      },
+      {
+        "location": "text_8",
+        "text": "further , the credit agreement includes negative covenants , subject to exceptions , restricting or limiting our ability and the ability of our subsidiaries to , among other things , incur additional indebtedness , grant liens , and engage in certain investment , acquisition and disposition transactions ."
+      },
+      {
+        "location": "text_9",
+        "text": "the credit agreement also contains customary representations and warranties , affirmative covenants and events of default , including payment defaults , breach of representations and warranties , covenant defaults and cross defaults ."
+      },
+      {
+        "location": "text_10",
+        "text": "if an event of default occurs , the interest rate would increase and the administrative agent would be entitled to take various actions , including the acceleration of amounts due under the loan ."
+      },
+      {
+        "location": "text_11",
+        "text": "in connection with entering into the credit agreement , we paid $ 45 in financing costs which are being amortized as interest expense over the life of the debt ."
+      },
+      {
+        "location": "text_12",
+        "text": "amortization expense associated with deferred financing costs for the years ended december 31 , 2016 and 2015 was $ 10 and $ 6 , respectively ."
+      },
+      {
+        "location": "text_13",
+        "text": "amortization expense associated with deferred financing costs for the year ended december 31 , 2014 was not material ."
+      },
+      {
+        "location": "text_14",
+        "text": "in connection with the acquisition of synageva in june 2015 , we borrowed $ 3500 under the term loan facility and $ 200 under the revolving facility , and we used our available cash for the remaining cash consideration ."
+      },
+      {
+        "location": "text_15",
+        "text": "we made principal payments of $ 375 during the year ended december 31 , 2016 ."
+      },
+      {
+        "location": "text_16",
+        "text": "at december 31 , 2016 , we had $ 3081 outstanding on the term loan and zero outstanding on the revolving facility ."
+      },
+      {
+        "location": "text_17",
+        "text": "at december 31 , 2016 , we had open letters of credit of $ 15 , and our borrowing availability under the revolving facility was $ 485 ."
+      },
+      {
+        "location": "text_18",
+        "text": "the fair value of our long term debt , which is measured using level 2 inputs , approximates book value ."
+      },
+      {
+        "location": "text_19",
+        "text": "the contractual maturities of our long-term debt obligations due subsequent to december 31 , 2016 are as follows: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "2017",
+          "$—"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2018",
+          "150"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2019",
+          "175"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2020",
+          "2,756"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_20",
+        "text": "based upon our intent and ability to make payments during 2017 , we included $ 175 within current liabilities on our consolidated balance sheet as of december 31 , 2016 , net of current deferred financing costs ."
+      },
+      {
+        "location": "text_21",
+        "text": "9 ."
+      },
+      {
+        "location": "text_22",
+        "text": "facility lease obligations new haven facility lease obligation in november 2012 , we entered into a lease agreement for office and laboratory space to be constructed in new haven , connecticut ."
+      },
+      {
+        "location": "text_23",
+        "text": "the term of the lease commenced in 2015 and will expire in 2030 , with a renewal option of 10 years ."
+      },
+      {
+        "location": "text_24",
+        "text": "although we do not legally own the premises , we are deemed to be the owner of the building due to the substantial improvements directly funded by us during the construction period based on applicable accounting guidance for build-to-suit leases ."
+      },
+      {
+        "location": "text_25",
+        "text": "accordingly , the landlord 2019s costs of constructing the facility during the construction period are required to be capitalized , as a non-cash transaction , offset by a corresponding facility lease obligation in our consolidated balance sheet ."
+      },
+      {
+        "location": "text_26",
+        "text": "construction of the new facility was completed and the building was placed into service in the first quarter 2016 ."
+      },
+      {
+        "location": "text_27",
+        "text": "the imputed interest rate on this facility lease obligation as of december 31 , 2016 was approximately 11% ( 11 % ) ."
+      },
+      {
+        "location": "text_28",
+        "text": "for the year ended december 31 , 2016 and 2015 , we recognized $ 14 and $ 5 , respectively , of interest expense associated with this arrangement ."
+      },
+      {
+        "location": "text_29",
+        "text": "as of december 31 , 2016 and 2015 , our total facility lease obligation was $ 136 and $ 133 , respectively , recorded within other current liabilities and facility lease obligation on our consolidated balance sheets. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the percentage change in total facility lease obligations from 2015 to 2016?",
+  "reference_program": "subtract(136, 133), divide(#0, 133)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "136",
+      "raw": "136",
+      "location": "text_29:77",
+      "context": "as of december 31 , 2016 and 2015 , our total facility lease obligation was $ 136 and $ 133 , respectively , recorded within other current liabilities and facility lease obligation on our consolidated balance sheets. ."
+    },
+    "x1": {
+      "program_token": "133",
+      "raw": "133",
+      "location": "text_29:87",
+      "context": "as of december 31 , 2016 and 2015 , our total facility lease obligation was $ 136 and $ 133 , respectively , recorded within other current liabilities and facility lease obligation on our consolidated balance sheets. ."
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "call_id": "S049",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_13 identifies the 2003-versus-2002 operation and maintenance increases as $7.1 million and $4.4 million. Dividing their sum by 2003 net revenue of $426.6 million in row 4 is supported. The reference instead uses increases for 2004 versus 2003."
+  }

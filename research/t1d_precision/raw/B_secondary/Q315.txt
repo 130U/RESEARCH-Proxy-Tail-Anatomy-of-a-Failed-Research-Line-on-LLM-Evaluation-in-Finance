@@ -1,0 +1,1 @@
+{"answer":"47.88732394366197","unit":"percent","expression":"(10.5 - 7.1) / 7.1 * 100","low":"46.15384615384615","high":"49.64539007092199","reliable_digits":"1","explanation":"Recorded net losses increased from $7.1 million in 2007 to $10.5 million in 2008, with bounds reflecting rounding to $0.1 million."}

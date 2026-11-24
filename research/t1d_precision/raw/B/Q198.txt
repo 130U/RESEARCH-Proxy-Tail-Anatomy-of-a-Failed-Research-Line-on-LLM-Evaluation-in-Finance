@@ -1,0 +1,1 @@
+{"answer":"5.66310069621328","unit":"percent","expression":"(1334 / 23556) * 100","low":"5.66085793772419","high":"5.66534355033856","reliable_digits":"2","explanation":"Allowing each amount to vary by $0.5 million gives these bounds, which consistently round to 5.7% at two significant digits."}

@@ -1,0 +1,1 @@
+{"answer":"-17.5879396985","unit":"percent","expression":"(164 - 199) / 199 * 100","low":"-18.0451127820","high":"-17.1284634761","reliable_digits":"1","explanation":"Using rounding bounds of ±0.5 million for each expense, the anticipated decrease has one reliable significant digit."}

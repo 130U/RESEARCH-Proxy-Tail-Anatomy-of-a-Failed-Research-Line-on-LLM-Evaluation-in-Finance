@@ -1,0 +1,5 @@
+{
+    "review_id": "R007",
+    "verdict": "valid",
+    "reason": "The bindings correctly select rounded interest-rate-risk revenues for 2017 and 2016, and the calculation divides their increase by the 2016 amount."
+  }

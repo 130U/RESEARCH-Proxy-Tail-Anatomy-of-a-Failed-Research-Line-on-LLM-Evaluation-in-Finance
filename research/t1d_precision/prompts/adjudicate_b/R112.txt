@@ -1,0 +1,164 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R112",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "entergy corporation and subsidiaries management 2019s financial discussion and analysis a result of the entergy louisiana and entergy gulf states louisiana business combination , results of operations for 2015 also include two items that occurred in october 2015 : 1 ) a deferred tax asset and resulting net increase in tax basis of approximately $ 334 million and 2 ) a regulatory liability of $ 107 million ( $ 66 million net-of-tax ) as a result of customer credits to be realized by electric customers of entergy louisiana , consistent with the terms of the stipulated settlement in the business combination proceeding ."
+      },
+      {
+        "location": "text_1",
+        "text": "see note 2 to the financial statements for further discussion of the business combination and customer credits ."
+      },
+      {
+        "location": "text_2",
+        "text": "results of operations for 2015 also include the sale in december 2015 of the 583 mw rhode island state energy center for a realized gain of $ 154 million ( $ 100 million net-of-tax ) on the sale and the $ 77 million ( $ 47 million net-of-tax ) write-off and regulatory charges to recognize that a portion of the assets associated with the waterford 3 replacement steam generator project is no longer probable of recovery ."
+      },
+      {
+        "location": "text_3",
+        "text": "see note 14 to the financial statements for further discussion of the rhode island state energy center sale ."
+      },
+      {
+        "location": "text_4",
+        "text": "see note 2 to the financial statements for further discussion of the waterford 3 write-off ."
+      },
+      {
+        "location": "text_5",
+        "text": "results of operations for 2014 include $ 154 million ( $ 100 million net-of-tax ) of charges related to vermont yankee primarily resulting from the effects of an updated decommissioning cost study completed in the third quarter 2014 along with reassessment of the assumptions regarding the timing of decommissioning cash flows and severance and employee retention costs ."
+      },
+      {
+        "location": "text_6",
+        "text": "see note 14 to the financial statements for further discussion of the charges ."
+      },
+      {
+        "location": "text_7",
+        "text": "results of operations for 2014 also include the $ 56.2 million ( $ 36.7 million net-of-tax ) write-off in 2014 of entergy mississippi 2019s regulatory asset associated with new nuclear generation development costs as a result of a joint stipulation entered into with the mississippi public utilities staff , subsequently approved by the mpsc , in which entergy mississippi agreed not to pursue recovery of the costs deferred by an mpsc order in the new nuclear generation docket ."
+      },
+      {
+        "location": "text_8",
+        "text": "see note 2 to the financial statements for further discussion of the new nuclear generation development costs and the joint stipulation ."
+      },
+      {
+        "location": "text_9",
+        "text": "net revenue utility following is an analysis of the change in net revenue comparing 2015 to 2014 ."
+      },
+      {
+        "location": "text_10",
+        "text": "amount ( in millions ) ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Amount (In Millions)"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2014 net revenue",
+          "$5,735"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Retail electric price",
+          "187"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Volume/weather",
+          "95"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Waterford 3 replacement steam generator provision",
+          "(32)"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "MISO deferral",
+          "(35)"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Louisiana business combination customer credits",
+          "(107)"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Other",
+          "(14)"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "2015 net revenue",
+          "$5,829"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_11",
+        "text": "the retail electric price variance is primarily due to : 2022 formula rate plan increases at entergy louisiana , as approved by the lpsc , effective december 2014 and january 2015 ; 2022 an increase in energy efficiency rider revenue primarily due to increases in the energy efficiency rider at entergy arkansas , as approved by the apsc , effective july 2015 and july 2014 , and new energy efficiency riders at entergy louisiana and entergy mississippi that began in the fourth quarter 2014 ; and 2022 an annual net rate increase at entergy mississippi of $ 16 million , effective february 2015 , as a result of the mpsc order in the june 2014 rate case ."
+      },
+      {
+        "location": "text_12",
+        "text": "see note 2 to the financial statements for a discussion of rate and regulatory proceedings. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the growth rate in net revenue in 2015 for entergy corporation?",
+  "reference_program": "subtract(5829, 5735), divide(#0, 5735)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "5829",
+      "raw": "5,829",
+      "location": "table_8:1",
+      "context": "2015 net revenue | Amount (In Millions)"
+    },
+    "x1": {
+      "program_token": "5735",
+      "raw": "5,735",
+      "location": "table_1:1",
+      "context": "2014 net revenue | Amount (In Millions)"
+    }
+  }
+}
+
+TWO SOURCE INTERPRETATIONS TO CONSIDER
+The order is random. Evaluate these reasons against the supplied source and give your own judgment using the same JSON schema. Their order carries no priority.
+[
+  "The rounded figures and growth formula correctly describe Utility net revenue, but the excerpt does not establish whether the question intends that business scope or Entergy Corporation overall.",
+  "2015/2014Entergy revenue growth matches full bridge; repeated economic facts from prior report remain separate benchmark context."
+]

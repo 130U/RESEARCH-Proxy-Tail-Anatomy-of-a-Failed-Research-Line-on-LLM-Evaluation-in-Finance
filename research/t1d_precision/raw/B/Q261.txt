@@ -1,0 +1,1 @@
+{"answer":"-88.6363636364","unit":"percent","expression":"(1.0 - 8.8) / 8.8 * 100","low":"-89.2655367232","high":"-88","reliable_digits":"1","explanation":"Fees decreased relative to 2006, with bounds allowing each displayed fee to vary by $0.05 million."}

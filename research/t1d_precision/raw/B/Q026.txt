@@ -1,0 +1,1 @@
+{"answer":"4.1705282669","unit":"percent","expression":"(11.24 - 10.79) / 10.79 * 100","low":"4.0759610931","high":"4.2651831247","reliable_digits":"1","explanation":"Each EPS has rounding uncertainty of ±0.005, giving these percentage-change bounds and one reliable significant digit."}

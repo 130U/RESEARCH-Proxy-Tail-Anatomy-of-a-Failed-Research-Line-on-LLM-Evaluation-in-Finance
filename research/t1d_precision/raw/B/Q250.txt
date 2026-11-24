@@ -1,0 +1,1 @@
+{"answer":"29.6518607443","unit":"percent","expression":"(988 / 3332) * 100","low":"29.6324081020","high":"29.6713192256","reliable_digits":"2","explanation":"Each amount is rounded to the nearest million dollars; the resulting percentage bounds agree when rounded to two significant digits."}

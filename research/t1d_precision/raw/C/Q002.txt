@@ -1,0 +1,1 @@
+{"answer":"1.1476771613","unit":"ratio","expression":"223.82 / 195.02","low":"1.1476220997","high":"1.1477322257","reliable_digits":"4","explanation":"Allowing each figure to vary by 0.005 gives these bounds, both of which round to 1.148 at four significant digits."}

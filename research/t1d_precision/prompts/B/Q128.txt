@@ -1,0 +1,49 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+item 2 .
+properties our principal offices are located in boston , southborough and woburn , massachusetts ; atlanta , georgia ; cary , north carolina ; mexico city , mexico ; and sao paulo , brazil .
+details of each of these offices are provided below: .
+
+TABLE
+Location | Function | Size (square feet) | Property Interest
+Boston, MA | Corporate Headquarters, US Tower Division Headquarters and American Tower International Headquarters | 19,600 | Leased
+Southborough, MA | Information Technology Data Center | 13,900 | Leased
+Woburn, MA | US Tower Division, Lease Administration, Site Leasing Management and Broadcast Division Headquarters | 57,800 | Owned(1)
+Atlanta, GA | US Tower Division, Accounting Services Headquarters | 21,400 | Leased
+Cary, North Carolina | US Tower Division, New Site Development, Site Operations and Structural Engineering Services Headquarters | 17,500 | Leased
+Mexico City, Mexico | Mexico Headquarters | 11,000 | Leased
+Sao Paulo, Brazil | Brazil Headquarters | 5,200 | Leased
+
+( 1 ) the facility in woburn contains a total of 163000 square feet of space .
+approximately 57100 square feet of space is occupied by our lease administration office and our broadcast division , and we lease the remaining space to unaffiliated tenants .
+in addition to the principal offices set forth above , we maintain 15 regional area offices in the united states through which we operate our tower leasing and services businesses .
+we believe that our owned and leased facilities are suitable and adequate to meet our anticipated needs .
+we have also established an office in delhi , india to pursue business opportunities in india and southeast asia , and we have an international business development group based in london , england .
+our interests in our communications sites are comprised of a variety of ownership interests , including leases created by long-term ground lease agreements , easements , licenses or rights-of-way granted by government entities .
+pursuant to the loan agreement for the securitization , the tower sites subject to the securitization are subject to mortgages , deeds of trust and deeds to secure the loan .
+a typical tower site consists of a compound enclosing the tower site , a tower structure , and one or more equipment shelters that house a variety of transmitting , receiving and switching equipment .
+there are three principal types of towers : guyed , self- supporting lattice , and monopole .
+2022 a guyed tower includes a series of cables attaching separate levels of the tower to anchor foundations in the ground .
+a guyed tower can reach heights of up to 2000 feet .
+a guyed tower site for a typical broadcast tower can consist of a tract of land of up to 20 acres .
+2022 a lattice tower typically tapers from the bottom up and usually has three or four legs .
+a lattice tower can reach heights of up to 1000 feet .
+depending on the height of the tower , a lattice tower site for a wireless communications tower can consist of a tract of land of 10000 square feet for a rural site or less than 2500 square feet for a metropolitan site .
+2022 a monopole is a tubular structure that is used primarily to address space constraints or aesthetic concerns .
+monopoles typically have heights ranging from 50 to 200 feet .
+a monopole tower site of the kind typically used in metropolitan areas for a wireless communications tower can consist of a tract of land of less than 2500 square feet. .
+
+QUESTION
+what portion of the woburn property is used by the american tower corporation?

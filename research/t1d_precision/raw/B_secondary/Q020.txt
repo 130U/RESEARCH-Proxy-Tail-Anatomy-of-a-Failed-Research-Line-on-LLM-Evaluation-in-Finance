@@ -1,0 +1,1 @@
+{"answer":"111.97","unit":"percentage points","expression":"(318.46 - 206.49) / 100 * 100","low":"111.4029850746269","high":"112.5427135678392","reliable_digits":"2","explanation":"The bounds account for rounding in both ending values and the displayed $100 initial investment."}

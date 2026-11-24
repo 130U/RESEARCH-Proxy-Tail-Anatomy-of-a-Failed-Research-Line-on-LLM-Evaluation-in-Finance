@@ -1,0 +1,20 @@
+{
+  "review_id": "R191",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "second",
+      "original_reason": "Coverage decreases from approximately 60% in the first quarter to 50% in the second, so subtracting 50 from 60 reverses the sign of the chronological change.",
+      "display_reason": "Coverage decreases from approximately 60% in the first quarter to 50% in the second, so subtracting 50 from 60 reverses the sign of the chronological change.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "first",
+      "original_reason": "Pre_text[2] gives approximately 60% through Q1 and 50% through Q2. Program computes the 10-percentage-point decline magnitude; question asks change in percentage rather than relative growth. No exact contractual hedge percentage is asserted.",
+      "display_reason": "Pre_text[2] gives approximately 60% through Q1 and 50% through Q2. Program computes the 10-percentage-point decline magnitude; question asks change in percentage rather than relative growth. No exact contractual hedge percentage is asserted.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"answer":"-5.1140636751","unit":"percent","expression":"(378.5 - 398.9) / 398.9 * 100","low":"-5.1384885324","high":"-5.0896326940","reliable_digits":"2","explanation":"HQLA decreased from Q3 to Q4; allowing ±0.05 billion for each displayed amount gives these bounds and two reliable significant digits."}

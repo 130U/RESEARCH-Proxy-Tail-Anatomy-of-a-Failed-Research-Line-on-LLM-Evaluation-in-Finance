@@ -1,0 +1,860 @@
+{
+  "scope": "finite mathematical and implementation checks; no mainline model training",
+  "design": {
+    "world_seed": 20261115,
+    "companies": 4,
+    "quarters": 10,
+    "pipeline_seeds": [
+      11,
+      130,
+      2026
+    ],
+    "cutoffs": [
+      -5,
+      -2,
+      0,
+      2,
+      4
+    ],
+    "configs": [
+      {
+        "allowed_sources": [
+          "fixture",
+          "synthetic-world"
+        ],
+        "require_core": false,
+        "stopwords": [
+          "a",
+          "of",
+          "the"
+        ],
+        "lexical_threshold": [
+          4,
+          5
+        ],
+        "sample_limit": 1000,
+        "development_fraction": [
+          1,
+          5
+        ],
+        "tokenizer_candidates": [
+          [
+            4,
+            1
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "capacity_penalty": [
+          1,
+          1000
+        ]
+      },
+      {
+        "allowed_sources": [
+          "fixture",
+          "synthetic-world"
+        ],
+        "require_core": false,
+        "stopwords": [
+          "a",
+          "of",
+          "the"
+        ],
+        "lexical_threshold": [
+          1,
+          1
+        ],
+        "sample_limit": 21,
+        "development_fraction": [
+          1,
+          3
+        ],
+        "tokenizer_candidates": [
+          [
+            16,
+            1
+          ],
+          [
+            32,
+            1
+          ],
+          [
+            32,
+            2
+          ]
+        ],
+        "capacity_penalty": [
+          1,
+          10000
+        ]
+      }
+    ],
+    "contamination_seed": 20261115,
+    "planted_wrong_times": 3
+  },
+  "comparisons": 210,
+  "stable_byte_comparisons": 2100,
+  "artifact_count_per_comparison": 10,
+  "nonempty_development_base_cases": 29,
+  "base_cases": [
+    {
+      "configuration_index": 0,
+      "seed": 11,
+      "cutoff": -5,
+      "visible_events": 4,
+      "development_documents": 3,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "ab6ccdb74eb3c554ef2dd4f26b5c2a7df74839f71f03fb74c7bbd379ecb19ab4",
+        "deduplicate.json": "466546ab3b53877b3c39568dc7a355f73a7c76bdafa647ff00d41bd8c866f97b",
+        "filter.json": "5cb14ac1cc3ec664b1d4611d47ad0099c511d5012e58e406197de192099c8a3f",
+        "history.json": "f3fc8a51208eecc12cc762c796189755f5c7b9899a5b41cf77eabcce0d517846",
+        "sample.json": "5cb14ac1cc3ec664b1d4611d47ad0099c511d5012e58e406197de192099c8a3f",
+        "selected_tokenizer.json": "a4b66f68aa0710dd72c11888bf361792050c59d1d0e2887e483efb6a336a2d3f",
+        "snapshot.json": "485568adc0af49f894d2a3e4e5b8a0f0f890be47e70a490258eefcefa4bb4ed0",
+        "split.json": "d01d3fc8bd041106202ec3d0cb3ef3cb936c769c5708b413581adc79baaec07e",
+        "tokenizer_candidates.json": "1d8d06f4c3daa616621e230216917ab8039da11088a4bb4a0e53d3970ec85dbf"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 0,
+      "seed": 11,
+      "cutoff": -2,
+      "visible_events": 16,
+      "development_documents": 8,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "fc8712f0b797caf63e63c47a30e5a8ca4df29d59019a511620fe3a27adf69dbc",
+        "deduplicate.json": "48ccccd3b8811522b3ed15e5b45fd7a575d4db80aee8b6212a3f33ae68c26879",
+        "filter.json": "effe69a4b184dcac4d8e4447330eccf7d6915cd414a1f02abf5dca497054e1d6",
+        "history.json": "aa9e238b2c9611148f851d6a8bfc1f7e7d3ba733c318e3549a3249f469f1e6cf",
+        "sample.json": "1da802193a8fd264a705076f92a504bf74639968fe1b402292feef389b6095d1",
+        "selected_tokenizer.json": "71170fe8cda4c39c3de30c41dd5ef0656295debbaf043d0be617ffdc909a73d8",
+        "snapshot.json": "1ecde98cabdd151bacd867f35d9857278a957240af5fee91b0895865de69e4a4",
+        "split.json": "a6c4498543fbc1abb6a68aaa62401512ff66b6db9445b70b9b45b053a7eb13bb",
+        "tokenizer_candidates.json": "76915e3c8bea9950c82265e8bd27dae99c9befd16f6baecb1717daa137979b38"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 0,
+      "seed": 11,
+      "cutoff": 0,
+      "visible_events": 24,
+      "development_documents": 9,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "1e7c1bde62403a52d2caf4850cf55ee34e134e303847e91f2759b6726dfbdd14",
+        "deduplicate.json": "4956acc8a3eb662793e7fbc535a5649f41476347ad0983a5cb8105c4d5cd8a92",
+        "filter.json": "fa691cc94b1d031a6f595a5a9cac7b29b32d83ee6e07d5bee8adcc425f5a361a",
+        "history.json": "c3cafaa2a00f03a73eb13d924a686321383678835cb3f8b9ee36c3879ef4a07d",
+        "sample.json": "c0d9f6fa762577b335d27b15dbd1c64a5457819f0a4cc5230e328d97d3773132",
+        "selected_tokenizer.json": "cd139966a93a49a4d82140291d0cef6f01f704a7123cb1de109c014b60adb640",
+        "snapshot.json": "8f846d9651f0a49265a4666cdacbb63153754af592248cb5417d778fca03a73d",
+        "split.json": "2588566bf84aaed9b083e8c2bb07feb1082e6991791ab8cd491da0b76fb50c72",
+        "tokenizer_candidates.json": "88234960215adf98e0901be80912ae87ba2f017b0cd97743bbf8c4fd4da4c3ce"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 0,
+      "seed": 11,
+      "cutoff": 2,
+      "visible_events": 32,
+      "development_documents": 10,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "10633326083e7e6890f4948018e8b8edc0d53739960dcc04ead04333940a0479",
+        "deduplicate.json": "62aeb5fee31f33535a7ce174b920c1d8f4718883c399aa07eac08991d9c593cd",
+        "filter.json": "799334d82dbc0fd15b7c4f6e742388a96f4609d5a1dbffdb616deada32aa7e6c",
+        "history.json": "9fe28657f3b88538c864270bd096a42e618c9b51ced4d13befbbf1f2e024d7fc",
+        "sample.json": "36a283c0a81be143b00db502f454800199409c2d6139434b074f2a1ea092a080",
+        "selected_tokenizer.json": "0d1e42223de446ff71e6267ebfa85d9debd33696313deda6bea78f7fe703c9c0",
+        "snapshot.json": "06cb005cb3b7f5b21c29ff15f4dedf8489495fe03d9d2a64ef84d35c69890067",
+        "split.json": "75a42ee8862d4220ef014ee26d08a854a7ac71380beaaf0ed61d7105c03207a5",
+        "tokenizer_candidates.json": "f6dde0b3fe773db35a8e72ed40ccdf192c796d6a23faafaf5ca8f887db369c80"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 0,
+      "seed": 11,
+      "cutoff": 4,
+      "visible_events": 40,
+      "development_documents": 11,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "1064bf230ca78f4b44bb21f3bd0bb12e81b27369600d113e6f95c6b89b5a84b6",
+        "deduplicate.json": "c8b9069cb3b1d51bb5dc054bfa2327f08ee9fc13c8b526e15a2e66d1b483d9fd",
+        "filter.json": "e71cce7a1e984d0da9bfc5d4fea5ad382aab7d6fd97680d108b0ab633433dc96",
+        "history.json": "995bf2d37d12837250aa81df3dd9339da369af94e1810fa795736e411b95581a",
+        "sample.json": "6ea3d82ef201438a06dd550479aa13ef97ebc8968c7d99aaf583cccf0b54c1f6",
+        "selected_tokenizer.json": "d78447e917f41cf88fe8bb839c59d794967d18b884d0993ff182cec639dc2e06",
+        "snapshot.json": "11a5e716b1f774241e2a3c9a8b1f7be9b8e79db5275bfc0f918f6f01c6f90e1e",
+        "split.json": "02c01e085fbd72a4c11241a5707eb2d3fa0231fdadafa4fbfe2954960497cd03",
+        "tokenizer_candidates.json": "9b04f2eddbb60f1893b297321f0e4faae86a2887a45c820b0a96fb30c8117a67"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 0,
+      "seed": 130,
+      "cutoff": -5,
+      "visible_events": 4,
+      "development_documents": 0,
+      "selected_candidate_index": 0,
+      "artifact_digest_manifest": {
+        "configuration.json": "5733a101450e97af37e48112c8389e09682b4cd3194850cab03626839a0087dc",
+        "deduplicate.json": "466546ab3b53877b3c39568dc7a355f73a7c76bdafa647ff00d41bd8c866f97b",
+        "filter.json": "5cb14ac1cc3ec664b1d4611d47ad0099c511d5012e58e406197de192099c8a3f",
+        "history.json": "f3fc8a51208eecc12cc762c796189755f5c7b9899a5b41cf77eabcce0d517846",
+        "sample.json": "5cb14ac1cc3ec664b1d4611d47ad0099c511d5012e58e406197de192099c8a3f",
+        "selected_tokenizer.json": "02d731debec1f1d99d08ef587ac7f438672c6945927b25f4f756021383d9783d",
+        "snapshot.json": "485568adc0af49f894d2a3e4e5b8a0f0f890be47e70a490258eefcefa4bb4ed0",
+        "split.json": "bb2d5bd55cfa2529e89a8fffdcd2fb697215d3b7fb239339d6dc6295a8b4f471",
+        "tokenizer_candidates.json": "11825392dedda64d03774e7d09f33361ac391f5f77bbe6cb54a7043c3b97464f"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 0,
+      "seed": 130,
+      "cutoff": -2,
+      "visible_events": 16,
+      "development_documents": 4,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "8929aca528c7f5de5ea3864ffe3fdc720a4d9345d7ef5b58d46fe4871ace4727",
+        "deduplicate.json": "48ccccd3b8811522b3ed15e5b45fd7a575d4db80aee8b6212a3f33ae68c26879",
+        "filter.json": "effe69a4b184dcac4d8e4447330eccf7d6915cd414a1f02abf5dca497054e1d6",
+        "history.json": "aa9e238b2c9611148f851d6a8bfc1f7e7d3ba733c318e3549a3249f469f1e6cf",
+        "sample.json": "1da802193a8fd264a705076f92a504bf74639968fe1b402292feef389b6095d1",
+        "selected_tokenizer.json": "cfd2ae4210df8084f993a2b4d2130a6843b2c8c511f70ad4f0ab916356a9680a",
+        "snapshot.json": "1ecde98cabdd151bacd867f35d9857278a957240af5fee91b0895865de69e4a4",
+        "split.json": "4082b94ffc487b37db549513bee161ce6da060b443a26bd2d09802c22afcabed",
+        "tokenizer_candidates.json": "b98cf74851c44315db06bc52204075c39456fd95b60fdc81cce9dc034621afb7"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 0,
+      "seed": 130,
+      "cutoff": 0,
+      "visible_events": 24,
+      "development_documents": 4,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "f144e6c1ce0c761308fca3e98a4b7d841e1bcc6559ee8bc25012c3a422ec9432",
+        "deduplicate.json": "4956acc8a3eb662793e7fbc535a5649f41476347ad0983a5cb8105c4d5cd8a92",
+        "filter.json": "fa691cc94b1d031a6f595a5a9cac7b29b32d83ee6e07d5bee8adcc425f5a361a",
+        "history.json": "c3cafaa2a00f03a73eb13d924a686321383678835cb3f8b9ee36c3879ef4a07d",
+        "sample.json": "c0d9f6fa762577b335d27b15dbd1c64a5457819f0a4cc5230e328d97d3773132",
+        "selected_tokenizer.json": "b8a350df46e62353e05790aba389343005c97db8c501dc2529f281e00d546973",
+        "snapshot.json": "8f846d9651f0a49265a4666cdacbb63153754af592248cb5417d778fca03a73d",
+        "split.json": "b882b790e0d2871bddae995196f90af97e8fe0b159a8a6db3b0f62ef45be3ac0",
+        "tokenizer_candidates.json": "2e1b96ade0f0e6522daee2622e3124288bb8947d3bb74eae6762798743488c45"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 0,
+      "seed": 130,
+      "cutoff": 2,
+      "visible_events": 32,
+      "development_documents": 4,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "8bacac951939a585f15f6fa6b74f54ba43306a11f8996675826f94872bb0ad40",
+        "deduplicate.json": "62aeb5fee31f33535a7ce174b920c1d8f4718883c399aa07eac08991d9c593cd",
+        "filter.json": "799334d82dbc0fd15b7c4f6e742388a96f4609d5a1dbffdb616deada32aa7e6c",
+        "history.json": "9fe28657f3b88538c864270bd096a42e618c9b51ced4d13befbbf1f2e024d7fc",
+        "sample.json": "36a283c0a81be143b00db502f454800199409c2d6139434b074f2a1ea092a080",
+        "selected_tokenizer.json": "84876d70ad3f1dea0dba86e891a2867c557444bd1bbaf4faad7fd8de2b201612",
+        "snapshot.json": "06cb005cb3b7f5b21c29ff15f4dedf8489495fe03d9d2a64ef84d35c69890067",
+        "split.json": "e89dbbe4ff90dab04d70d635c5ed9b4876757078436dcb36464f3778d88dad71",
+        "tokenizer_candidates.json": "fdf89c2f83e4793c5b5fc93f48dd218447aa2b1283eba2de5910d6c5067bb90b"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 0,
+      "seed": 130,
+      "cutoff": 4,
+      "visible_events": 40,
+      "development_documents": 4,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "1297091774226e59a467ad265d6d4f3b9700ea453f5dae3689964d33ba36d381",
+        "deduplicate.json": "c8b9069cb3b1d51bb5dc054bfa2327f08ee9fc13c8b526e15a2e66d1b483d9fd",
+        "filter.json": "e71cce7a1e984d0da9bfc5d4fea5ad382aab7d6fd97680d108b0ab633433dc96",
+        "history.json": "995bf2d37d12837250aa81df3dd9339da369af94e1810fa795736e411b95581a",
+        "sample.json": "6ea3d82ef201438a06dd550479aa13ef97ebc8968c7d99aaf583cccf0b54c1f6",
+        "selected_tokenizer.json": "edd7dab9470bbb37bd1bc85416a5c7bfb3a0c73fb9d0875c8e5da7e5e69d93fc",
+        "snapshot.json": "11a5e716b1f774241e2a3c9a8b1f7be9b8e79db5275bfc0f918f6f01c6f90e1e",
+        "split.json": "6074567c366857ce16513e72442d53231e913f0eaa6d464b8d1ef761ac776830",
+        "tokenizer_candidates.json": "f0ca33076ce0635e03f49b97c017f4efb51ce21f214170637690b274334e589d"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 0,
+      "seed": 2026,
+      "cutoff": -5,
+      "visible_events": 4,
+      "development_documents": 1,
+      "selected_candidate_index": 0,
+      "artifact_digest_manifest": {
+        "configuration.json": "0e5ec9fd910ded0205ddd51f74c04247cd838dbf53a1af611f236dc28d1741d8",
+        "deduplicate.json": "466546ab3b53877b3c39568dc7a355f73a7c76bdafa647ff00d41bd8c866f97b",
+        "filter.json": "5cb14ac1cc3ec664b1d4611d47ad0099c511d5012e58e406197de192099c8a3f",
+        "history.json": "f3fc8a51208eecc12cc762c796189755f5c7b9899a5b41cf77eabcce0d517846",
+        "sample.json": "5cb14ac1cc3ec664b1d4611d47ad0099c511d5012e58e406197de192099c8a3f",
+        "selected_tokenizer.json": "b9cb44f8da5b3a78de52781079df9dbfe9e3a31dcfddd07665c36ca572ffd84a",
+        "snapshot.json": "485568adc0af49f894d2a3e4e5b8a0f0f890be47e70a490258eefcefa4bb4ed0",
+        "split.json": "b1cea59e311d2bf2f811ddf9ebe55adfc0e9b20f7174213186b3154162d5bedc",
+        "tokenizer_candidates.json": "9d4f8ed5e00167330bc4bfc2d4ec3fa599209a2ccc7829616dd28ca0e1026331"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 0,
+      "seed": 2026,
+      "cutoff": -2,
+      "visible_events": 16,
+      "development_documents": 3,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "e865530af833de6ab6727a67cbe24cfb53e4b88cf820d32c37a35931314b968e",
+        "deduplicate.json": "48ccccd3b8811522b3ed15e5b45fd7a575d4db80aee8b6212a3f33ae68c26879",
+        "filter.json": "effe69a4b184dcac4d8e4447330eccf7d6915cd414a1f02abf5dca497054e1d6",
+        "history.json": "aa9e238b2c9611148f851d6a8bfc1f7e7d3ba733c318e3549a3249f469f1e6cf",
+        "sample.json": "1da802193a8fd264a705076f92a504bf74639968fe1b402292feef389b6095d1",
+        "selected_tokenizer.json": "98e24231699c2b638db73e08d2d0bb0aedf1b3f342ab13c7878dd9a350c05f57",
+        "snapshot.json": "1ecde98cabdd151bacd867f35d9857278a957240af5fee91b0895865de69e4a4",
+        "split.json": "a2d8b9d443d79cf285327a01bed6a961b7b83f571af81531c9ecd683b073c27c",
+        "tokenizer_candidates.json": "30db7476f8792f6942a70de8f37992c9f1766ff8dde3f2960abecafbdca858c7"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 0,
+      "seed": 2026,
+      "cutoff": 0,
+      "visible_events": 24,
+      "development_documents": 4,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "55324260a8d82de531e63d9a57e4fe8c80c2d507ec614103e34d468d4ba9153d",
+        "deduplicate.json": "4956acc8a3eb662793e7fbc535a5649f41476347ad0983a5cb8105c4d5cd8a92",
+        "filter.json": "fa691cc94b1d031a6f595a5a9cac7b29b32d83ee6e07d5bee8adcc425f5a361a",
+        "history.json": "c3cafaa2a00f03a73eb13d924a686321383678835cb3f8b9ee36c3879ef4a07d",
+        "sample.json": "c0d9f6fa762577b335d27b15dbd1c64a5457819f0a4cc5230e328d97d3773132",
+        "selected_tokenizer.json": "27dc3920380048317f964433d0b660cb7e457769878b4b87bc01c82d118c0e1f",
+        "snapshot.json": "8f846d9651f0a49265a4666cdacbb63153754af592248cb5417d778fca03a73d",
+        "split.json": "999427680987f9d931c3996d596fb61e24506bfd35f3b727f6ad842635c3716e",
+        "tokenizer_candidates.json": "62f2e05ded9a0627f76e858289c736aaaf78cb16715816c6b866b360263c0129"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 0,
+      "seed": 2026,
+      "cutoff": 2,
+      "visible_events": 32,
+      "development_documents": 5,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "727c7c35d17bd58373cb9f7787dd036c257f3f46a338c94085a8fc75dec0abb7",
+        "deduplicate.json": "62aeb5fee31f33535a7ce174b920c1d8f4718883c399aa07eac08991d9c593cd",
+        "filter.json": "799334d82dbc0fd15b7c4f6e742388a96f4609d5a1dbffdb616deada32aa7e6c",
+        "history.json": "9fe28657f3b88538c864270bd096a42e618c9b51ced4d13befbbf1f2e024d7fc",
+        "sample.json": "36a283c0a81be143b00db502f454800199409c2d6139434b074f2a1ea092a080",
+        "selected_tokenizer.json": "274e532ba3bf47037da57e3148b24d4d188a0ca63cd1d7acf8e3b97e301cd136",
+        "snapshot.json": "06cb005cb3b7f5b21c29ff15f4dedf8489495fe03d9d2a64ef84d35c69890067",
+        "split.json": "9f506b09a7027ad56d9d415f684945653d3c2d834292603e67be2f9e3852ebcb",
+        "tokenizer_candidates.json": "51dc34edad951ff221887e3636158cfb8f5dedb96602da35dcee42b6d20d8a25"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 0,
+      "seed": 2026,
+      "cutoff": 4,
+      "visible_events": 40,
+      "development_documents": 6,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "8e4ffe27720116ee1a88fd2d7b4ec1adf8856cc5eaa830dfc3969593cb101fc2",
+        "deduplicate.json": "c8b9069cb3b1d51bb5dc054bfa2327f08ee9fc13c8b526e15a2e66d1b483d9fd",
+        "filter.json": "e71cce7a1e984d0da9bfc5d4fea5ad382aab7d6fd97680d108b0ab633433dc96",
+        "history.json": "995bf2d37d12837250aa81df3dd9339da369af94e1810fa795736e411b95581a",
+        "sample.json": "6ea3d82ef201438a06dd550479aa13ef97ebc8968c7d99aaf583cccf0b54c1f6",
+        "selected_tokenizer.json": "d4d281aa66a8d036e6f87242b0304be3a16d3808a6981a2e048349647817200d",
+        "snapshot.json": "11a5e716b1f774241e2a3c9a8b1f7be9b8e79db5275bfc0f918f6f01c6f90e1e",
+        "split.json": "8fc68c0242bceabab5d8d796d122de11e8094f6b62e29ab91f9d81e5c911a8b7",
+        "tokenizer_candidates.json": "4f1e2bf5af53b8ec790b3cf94e07c5553ceb3e7eb0222fe1349a8e82409958a4"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 11,
+      "cutoff": -5,
+      "visible_events": 4,
+      "development_documents": 3,
+      "selected_candidate_index": 0,
+      "artifact_digest_manifest": {
+        "configuration.json": "bba90c2bab79700004c2145fbe3c9b0475a81d5eca07eb605530869af11a6ed9",
+        "deduplicate.json": "466546ab3b53877b3c39568dc7a355f73a7c76bdafa647ff00d41bd8c866f97b",
+        "filter.json": "5cb14ac1cc3ec664b1d4611d47ad0099c511d5012e58e406197de192099c8a3f",
+        "history.json": "f3fc8a51208eecc12cc762c796189755f5c7b9899a5b41cf77eabcce0d517846",
+        "sample.json": "5cb14ac1cc3ec664b1d4611d47ad0099c511d5012e58e406197de192099c8a3f",
+        "selected_tokenizer.json": "8df5cc6b64f45a4d4c3f3d07971cf4b1921f5033f8e4a4bd319a7746d99531e2",
+        "snapshot.json": "485568adc0af49f894d2a3e4e5b8a0f0f890be47e70a490258eefcefa4bb4ed0",
+        "split.json": "d01d3fc8bd041106202ec3d0cb3ef3cb936c769c5708b413581adc79baaec07e",
+        "tokenizer_candidates.json": "ebdd292ce40626e83599427ec9cf71457a8af41916647f909c9fc57ee64ab5a8"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 11,
+      "cutoff": -2,
+      "visible_events": 16,
+      "development_documents": 9,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "f388a77441c6d797301757ae1290eb416f46f4c1ae6e46fd02cb124c15f52f46",
+        "deduplicate.json": "c5bf64f1ece61972b668c53e8074f8a853220e2a635178dca20dc1ea89bb081a",
+        "filter.json": "effe69a4b184dcac4d8e4447330eccf7d6915cd414a1f02abf5dca497054e1d6",
+        "history.json": "aa9e238b2c9611148f851d6a8bfc1f7e7d3ba733c318e3549a3249f469f1e6cf",
+        "sample.json": "effe69a4b184dcac4d8e4447330eccf7d6915cd414a1f02abf5dca497054e1d6",
+        "selected_tokenizer.json": "fb023fdfbd7f7191cc5b7e7871b74e9b225c5d8ea13363483303776ef86c051a",
+        "snapshot.json": "1ecde98cabdd151bacd867f35d9857278a957240af5fee91b0895865de69e4a4",
+        "split.json": "e0ead3a02f90b5aadeac6c84304b5e2b44609da425a26cbba1c990b5359a4461",
+        "tokenizer_candidates.json": "e0b6b280b72c7fc5fa7f1f72cd35b9f2a6e04abf60a5cf7a6a31ef90a6db16de"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 11,
+      "cutoff": 0,
+      "visible_events": 24,
+      "development_documents": 11,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "ecf85f99c2bdefc6312055d88b81b07c11609ec59fe2e7f58a6a2d3ab28b20d2",
+        "deduplicate.json": "bd68d24e5c6b1c2640a7a6a52c9ee5a565c6c56ccac9fb7b1a3e9c70c43f41e8",
+        "filter.json": "fa691cc94b1d031a6f595a5a9cac7b29b32d83ee6e07d5bee8adcc425f5a361a",
+        "history.json": "c3cafaa2a00f03a73eb13d924a686321383678835cb3f8b9ee36c3879ef4a07d",
+        "sample.json": "787a48a1cc90ff47995c7f00a52b0df543d5dc4dbba6170f67829dd4000a96b1",
+        "selected_tokenizer.json": "474d2d09de510e54aace37a34cc9faeb1e553d4e06f27044ced4302790ccda33",
+        "snapshot.json": "8f846d9651f0a49265a4666cdacbb63153754af592248cb5417d778fca03a73d",
+        "split.json": "1842067689e8208a599944f3ef5dbb36113199caa977c3cff809812f3e09df8a",
+        "tokenizer_candidates.json": "734d6a479c287334ad17daf3417d0a38f55811567876037006df6faaee8a9d65"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 11,
+      "cutoff": 2,
+      "visible_events": 32,
+      "development_documents": 13,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "998cce792d25c2cdf7d3c0aee5d1836483f45e9d6d517c6fbad0eae30b86914b",
+        "deduplicate.json": "b14e5b501917be12579c885e50b3cebc06e17be8def45396fae02dc52d671609",
+        "filter.json": "799334d82dbc0fd15b7c4f6e742388a96f4609d5a1dbffdb616deada32aa7e6c",
+        "history.json": "9fe28657f3b88538c864270bd096a42e618c9b51ced4d13befbbf1f2e024d7fc",
+        "sample.json": "9cc4ed25aad322bd645a18b036a859baf1fa15b04ca4cb4539a0af30d4d50c80",
+        "selected_tokenizer.json": "265a74f4c28043d0392feb01cb123058a3774b38d9c169a050ef5e58f8b4f2c8",
+        "snapshot.json": "06cb005cb3b7f5b21c29ff15f4dedf8489495fe03d9d2a64ef84d35c69890067",
+        "split.json": "c113b211b98b98c1e0bc9bc38b9f5c5a717c2d43058ef9c62bae372447ccb461",
+        "tokenizer_candidates.json": "3e8c4515dc48807fe06904f345ce07ada1ef03f8ab5f5b5fa375a17f7590f6cf"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 11,
+      "cutoff": 4,
+      "visible_events": 40,
+      "development_documents": 13,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "4b57c89b794cd5b482417419571b8e45ab6847decd81ca55ddece6239225adef",
+        "deduplicate.json": "6300353174add3a6ad0aa75c1e59e1a24d3ecacfaf1a32c0f65e3c6b83ea030b",
+        "filter.json": "e71cce7a1e984d0da9bfc5d4fea5ad382aab7d6fd97680d108b0ab633433dc96",
+        "history.json": "995bf2d37d12837250aa81df3dd9339da369af94e1810fa795736e411b95581a",
+        "sample.json": "79f5443d1ab13c289dd365ea9a7e3bc5da372f50b82d7e83d73a8bc85d0a0990",
+        "selected_tokenizer.json": "59843386d2711edbe7714844290017b54df3bd59a775e5cf6a7a7057f8a671cd",
+        "snapshot.json": "11a5e716b1f774241e2a3c9a8b1f7be9b8e79db5275bfc0f918f6f01c6f90e1e",
+        "split.json": "7415bfaf3d6b0005d9a01db6a14cb8c1f6fb820d8debee8b197ff605ff655455",
+        "tokenizer_candidates.json": "fd25c111403edc72ff5b2791a0b12f821c5e041a632f14611b1c63a1c2505c41"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 130,
+      "cutoff": -5,
+      "visible_events": 4,
+      "development_documents": 1,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "5459e7af833943ab1699aaf4ed93ddd51e2627b8dd1557eb5850e32f9f82d559",
+        "deduplicate.json": "466546ab3b53877b3c39568dc7a355f73a7c76bdafa647ff00d41bd8c866f97b",
+        "filter.json": "5cb14ac1cc3ec664b1d4611d47ad0099c511d5012e58e406197de192099c8a3f",
+        "history.json": "f3fc8a51208eecc12cc762c796189755f5c7b9899a5b41cf77eabcce0d517846",
+        "sample.json": "5cb14ac1cc3ec664b1d4611d47ad0099c511d5012e58e406197de192099c8a3f",
+        "selected_tokenizer.json": "75053217b9f008394f45257bf120b332e741377e9122a4747657f740b03db01b",
+        "snapshot.json": "485568adc0af49f894d2a3e4e5b8a0f0f890be47e70a490258eefcefa4bb4ed0",
+        "split.json": "6a4d2c1707049af80ab1c766b26133a62a3bf6316342e1c5506a480110ff1f64",
+        "tokenizer_candidates.json": "1039b125c8ce42ab53d90f335be3f26dbf4231c7ff01b7ba23122138d3192329"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 130,
+      "cutoff": -2,
+      "visible_events": 16,
+      "development_documents": 6,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "3a294fb69777a085ae1a763bb10191d1c8d27b8a6f9794d74fe2a7198903cd29",
+        "deduplicate.json": "c5bf64f1ece61972b668c53e8074f8a853220e2a635178dca20dc1ea89bb081a",
+        "filter.json": "effe69a4b184dcac4d8e4447330eccf7d6915cd414a1f02abf5dca497054e1d6",
+        "history.json": "aa9e238b2c9611148f851d6a8bfc1f7e7d3ba733c318e3549a3249f469f1e6cf",
+        "sample.json": "effe69a4b184dcac4d8e4447330eccf7d6915cd414a1f02abf5dca497054e1d6",
+        "selected_tokenizer.json": "cad8faca87a234d30385ff57cd25e3f86fae78c066b95e72051aa5e15910095d",
+        "snapshot.json": "1ecde98cabdd151bacd867f35d9857278a957240af5fee91b0895865de69e4a4",
+        "split.json": "9ef39c3138549f7c9b6275f5d671b4bb810c3ca60f6c15f604919a59e70cf6e2",
+        "tokenizer_candidates.json": "62de7a01e42143008a70212081ed4df269b76b82efd0347c3da4e5a1340feaf7"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 130,
+      "cutoff": 0,
+      "visible_events": 24,
+      "development_documents": 4,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "3e02e65ae6569dfca3b7abb19abbdf3eb5b43be2aa1001297e121e03e8ea1fdf",
+        "deduplicate.json": "bd68d24e5c6b1c2640a7a6a52c9ee5a565c6c56ccac9fb7b1a3e9c70c43f41e8",
+        "filter.json": "fa691cc94b1d031a6f595a5a9cac7b29b32d83ee6e07d5bee8adcc425f5a361a",
+        "history.json": "c3cafaa2a00f03a73eb13d924a686321383678835cb3f8b9ee36c3879ef4a07d",
+        "sample.json": "27c51212ab4b34419ef74f92165743b801a663235f3a420cb8fb5a66a0e80378",
+        "selected_tokenizer.json": "4f987e4c8251ca41dcf3a49020563708ab93327fa7b4dd7923ba1c1670739a06",
+        "snapshot.json": "8f846d9651f0a49265a4666cdacbb63153754af592248cb5417d778fca03a73d",
+        "split.json": "1a044f9c890cc352f9df89b25f2d5c2ec876fc3ea541a257a72a388c7795419d",
+        "tokenizer_candidates.json": "afba12d3a72fc874e0b733b2b9e5c8d4a22f43c70830fc6cd3b0770dd07c4c53"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 130,
+      "cutoff": 2,
+      "visible_events": 32,
+      "development_documents": 5,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "fe8e86033e1d0567f3196804d558133d049f3f9d9fefc3078927dce24527adb4",
+        "deduplicate.json": "b14e5b501917be12579c885e50b3cebc06e17be8def45396fae02dc52d671609",
+        "filter.json": "799334d82dbc0fd15b7c4f6e742388a96f4609d5a1dbffdb616deada32aa7e6c",
+        "history.json": "9fe28657f3b88538c864270bd096a42e618c9b51ced4d13befbbf1f2e024d7fc",
+        "sample.json": "d765acc70cf291269a99d385a57a9409720e50f5535bc0c1fa5047c956e2891b",
+        "selected_tokenizer.json": "d7a216ebdb09c11fe350f6c9d634abfcbd84ea9e323c8343e8baa1aa681d0dd6",
+        "snapshot.json": "06cb005cb3b7f5b21c29ff15f4dedf8489495fe03d9d2a64ef84d35c69890067",
+        "split.json": "28d76c9b76d857080451503dc7fee707970fc958780585f2a74899a1ece34eef",
+        "tokenizer_candidates.json": "9f7b03d98df14f106f6fb2c413f4ea46439b7eff9f4281a3a2bec14c96dc69f6"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 130,
+      "cutoff": 4,
+      "visible_events": 40,
+      "development_documents": 6,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "abac7e9df61a9cc114ab690621891d94feff2f6a8e94bf2f27287c8bbd1caf32",
+        "deduplicate.json": "6300353174add3a6ad0aa75c1e59e1a24d3ecacfaf1a32c0f65e3c6b83ea030b",
+        "filter.json": "e71cce7a1e984d0da9bfc5d4fea5ad382aab7d6fd97680d108b0ab633433dc96",
+        "history.json": "995bf2d37d12837250aa81df3dd9339da369af94e1810fa795736e411b95581a",
+        "sample.json": "55ed56c6eb8b4a02bb05f63464b1a944f0142839d45110f133362171ea3a4d1b",
+        "selected_tokenizer.json": "2967f0dd36b2d4f6253a9b19694529ea27643075409bcae46ce9b1b4762268b1",
+        "snapshot.json": "11a5e716b1f774241e2a3c9a8b1f7be9b8e79db5275bfc0f918f6f01c6f90e1e",
+        "split.json": "341bbbd64c006ecbdd700cd21ae28f81890d1ea1bf788a0fe805de646337f9a5",
+        "tokenizer_candidates.json": "6a6924595baf1a96fd29039f93685c6775865cb4be34332ce5c8c2c2021e192e"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 2026,
+      "cutoff": -5,
+      "visible_events": 4,
+      "development_documents": 2,
+      "selected_candidate_index": 0,
+      "artifact_digest_manifest": {
+        "configuration.json": "d76d4f1800ef6c7c8d34a303a4918146efc84d65019d6e11e8e66ae5965cbbb2",
+        "deduplicate.json": "466546ab3b53877b3c39568dc7a355f73a7c76bdafa647ff00d41bd8c866f97b",
+        "filter.json": "5cb14ac1cc3ec664b1d4611d47ad0099c511d5012e58e406197de192099c8a3f",
+        "history.json": "f3fc8a51208eecc12cc762c796189755f5c7b9899a5b41cf77eabcce0d517846",
+        "sample.json": "5cb14ac1cc3ec664b1d4611d47ad0099c511d5012e58e406197de192099c8a3f",
+        "selected_tokenizer.json": "d32bf58299abf804b4e5ad55d2e4bfe3f626ddda4ec09f207e158fcba4688875",
+        "snapshot.json": "485568adc0af49f894d2a3e4e5b8a0f0f890be47e70a490258eefcefa4bb4ed0",
+        "split.json": "d80cb7f5c88af7ab74cce2d8c9e1c87d0abfc5e85ff8ff916f0911fda9b2d8b0",
+        "tokenizer_candidates.json": "3b0763d4a2f9839486132f02f3f892cf424218fd273414562895b3ad42d6b726"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 2026,
+      "cutoff": -2,
+      "visible_events": 16,
+      "development_documents": 5,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "d89cdf66ffafab92715832abd88d0d2ed221f81736ba74a033b64d0d935d8932",
+        "deduplicate.json": "c5bf64f1ece61972b668c53e8074f8a853220e2a635178dca20dc1ea89bb081a",
+        "filter.json": "effe69a4b184dcac4d8e4447330eccf7d6915cd414a1f02abf5dca497054e1d6",
+        "history.json": "aa9e238b2c9611148f851d6a8bfc1f7e7d3ba733c318e3549a3249f469f1e6cf",
+        "sample.json": "effe69a4b184dcac4d8e4447330eccf7d6915cd414a1f02abf5dca497054e1d6",
+        "selected_tokenizer.json": "2fcecce3b261d47c1de3ec752a2ed38a4a89ed483a578f66158166f5ff3bd6bd",
+        "snapshot.json": "1ecde98cabdd151bacd867f35d9857278a957240af5fee91b0895865de69e4a4",
+        "split.json": "3b76d26c72774a9a19f009478d1c819706feb625bd48f7734cbdfc540e48681f",
+        "tokenizer_candidates.json": "82c9a54878575ea05c118bda1eb1909905a78c5a18facc06971da834f293a4d1"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 2026,
+      "cutoff": 0,
+      "visible_events": 24,
+      "development_documents": 6,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "8fa20300b27e225f271bb660f1e5f8cac7095e9588684f7ea2a08b5858e86f43",
+        "deduplicate.json": "bd68d24e5c6b1c2640a7a6a52c9ee5a565c6c56ccac9fb7b1a3e9c70c43f41e8",
+        "filter.json": "fa691cc94b1d031a6f595a5a9cac7b29b32d83ee6e07d5bee8adcc425f5a361a",
+        "history.json": "c3cafaa2a00f03a73eb13d924a686321383678835cb3f8b9ee36c3879ef4a07d",
+        "sample.json": "4bda9e67055c324303f65b53311dcf49bd690e7ed06633ad5ea2a29055ebb36f",
+        "selected_tokenizer.json": "f8c31b8976e4b2a08c580709cfe058c6bea78b51725cb63bb6493fae802f841a",
+        "snapshot.json": "8f846d9651f0a49265a4666cdacbb63153754af592248cb5417d778fca03a73d",
+        "split.json": "3f9726a40d788c7dda2342d0e85171a2f8d4d42b2ed9e7f163e320d45e289ab3",
+        "tokenizer_candidates.json": "66b0164dce86aa1ced03d243f1b3ec3c483955702eedf6e1798b34d35b0d102a"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 2026,
+      "cutoff": 2,
+      "visible_events": 32,
+      "development_documents": 6,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "849fbcde9031caa22e98d5c9a3805f64aef7c166ae2e611d1bb10c03d9b70d3d",
+        "deduplicate.json": "b14e5b501917be12579c885e50b3cebc06e17be8def45396fae02dc52d671609",
+        "filter.json": "799334d82dbc0fd15b7c4f6e742388a96f4609d5a1dbffdb616deada32aa7e6c",
+        "history.json": "9fe28657f3b88538c864270bd096a42e618c9b51ced4d13befbbf1f2e024d7fc",
+        "sample.json": "7138cccb727536b24a767452a725f7cc40e7e5f9fba8e2a824cc7e0e57ecb7fc",
+        "selected_tokenizer.json": "ab8d50cb439d1468baac134c01567583c2c7b0b225959113ab09e6be40d06086",
+        "snapshot.json": "06cb005cb3b7f5b21c29ff15f4dedf8489495fe03d9d2a64ef84d35c69890067",
+        "split.json": "2c56e4e9f38684951f4fd42c1f421efb4ce976e1c82c9939b21da6c8055a5e05",
+        "tokenizer_candidates.json": "82ec36541222064244efae40baa93e896f30d9c35150137aacac11e9ffcc2235"
+      },
+      "future_variants_compared": 7
+    },
+    {
+      "configuration_index": 1,
+      "seed": 2026,
+      "cutoff": 4,
+      "visible_events": 40,
+      "development_documents": 5,
+      "selected_candidate_index": 1,
+      "artifact_digest_manifest": {
+        "configuration.json": "5d23a09ba8e38c2c6147e4287aa236d3d74fa09454e6a964c38089cbf6f66418",
+        "deduplicate.json": "6300353174add3a6ad0aa75c1e59e1a24d3ecacfaf1a32c0f65e3c6b83ea030b",
+        "filter.json": "e71cce7a1e984d0da9bfc5d4fea5ad382aab7d6fd97680d108b0ab633433dc96",
+        "history.json": "995bf2d37d12837250aa81df3dd9339da369af94e1810fa795736e411b95581a",
+        "sample.json": "fb944b24e7cc4255ba0f3883fad70cc4f449b148cd7a54e60f8b1361b24bb7d0",
+        "selected_tokenizer.json": "12d5e7a9f701e272bc41ad1f396cd269afaacab6ded64d7fa36d3f081881ea0e",
+        "snapshot.json": "11a5e716b1f774241e2a3c9a8b1f7be9b8e79db5275bfc0f918f6f01c6f90e1e",
+        "split.json": "7175be690eda29a8f71f7911692747b97300725f6a26f5f63199e9c863016f61",
+        "tokenizer_candidates.json": "549104b36add5ff1cb04ca67023c35d96ab457670e257c04a19ca3c0d111afbb"
+      },
+      "future_variants_compared": 7
+    }
+  ],
+  "known_bad_pipeline_positive_controls": [
+    {
+      "case": "vocabulary_before_projection",
+      "before": [
+        "alpha",
+        "beta",
+        "old"
+      ],
+      "after": [
+        "alpha",
+        "beta",
+        "future",
+        "old",
+        "omega",
+        "unseen"
+      ],
+      "future_interference": true
+    },
+    {
+      "case": "latest_duplicate_before_projection",
+      "before": [
+        "a",
+        "b"
+      ],
+      "after": [
+        "b"
+      ],
+      "future_interference": true
+    },
+    {
+      "case": "full_log_length_selects_old_document",
+      "before": "a",
+      "after": "b",
+      "future_interference": true
+    }
+  ],
+  "timestamp_truth_counterexample": {
+    "planted_wrong_record_times": 3,
+    "wrong_time_records_admitted": 3,
+    "future_append_invariance_still_passes": true,
+    "conclusion": "record-relative noninterference does not certify true availability"
+  },
+  "seed_independence_counterexample": {
+    "scope": "all 16 deterministic Boolean seeds in an artificial independent fair-bit world",
+    "arithmetic": "exact Fraction probabilities",
+    "functions_enumerated": 16,
+    "marginal_independence_passes": 6,
+    "conditional_independence_passes": 4,
+    "marginal_only_counterexamples": [
+      {
+        "omega_table_order_00_01_10_11": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "omega_independent_of_future_marginally": true,
+        "omega_independent_of_future_given_history": false
+      },
+      {
+        "omega_table_order_00_01_10_11": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "omega_independent_of_future_marginally": true,
+        "omega_independent_of_future_given_history": false
+      }
+    ],
+    "xor_worlds": [
+      {
+        "history": 0,
+        "future": 0,
+        "seed": 0,
+        "output": 0,
+        "probability": "1/4"
+      },
+      {
+        "history": 0,
+        "future": 1,
+        "seed": 1,
+        "output": 1,
+        "probability": "1/4"
+      },
+      {
+        "history": 1,
+        "future": 0,
+        "seed": 1,
+        "output": 0,
+        "probability": "1/4"
+      },
+      {
+        "history": 1,
+        "future": 1,
+        "seed": 0,
+        "output": 1,
+        "probability": "1/4"
+      }
+    ],
+    "conclusion": "fixed-seed factorization and measurability are distinct from no added future information",
+    "limitations": [
+      "finite check of a specified counterexample, not a proof for all probability spaces",
+      "no inference about actual seed generation or actual financial data"
+    ]
+  },
+  "local_metadata_evidence_gap": {
+    "source": "previous fixed nonrandom 10-document saved-source metadata audit",
+    "source_sha256": "d8649cddcded9d5153bf0e71abde59b4209e22d1a6f0005181da6b06ad5d358d",
+    "n": 10,
+    "counts": [
+      {
+        "cutoff": "2015-12-31",
+        "claimed_release_on_or_before": 3,
+        "declared_local_retrieval_on_or_before": 0,
+        "historical_byte_version_proven": 0
+      },
+      {
+        "cutoff": "2020-12-31",
+        "claimed_release_on_or_before": 6,
+        "declared_local_retrieval_on_or_before": 0,
+        "historical_byte_version_proven": 0
+      },
+      {
+        "cutoff": "2025-12-31",
+        "claimed_release_on_or_before": 10,
+        "declared_local_retrieval_on_or_before": 0,
+        "historical_byte_version_proven": 0
+      }
+    ],
+    "interpretation": "missing historical-byte evidence is not evidence that the content was unavailable then",
+    "limitation": "not a new source audit, not a random population sample, not a real-text pipeline run"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "gpu_used": false,
+  "model_training_performed": false,
+  "peak_memory_measured": false,
+  "source_hashes": {
+    "pit/pipeline.py": "b6902b9e68a00bde1b32c39e4d7688e6f81ea6aab48b78e43fd9621f0aba1847",
+    "pit/run_checks.py": "4d2494b14f6dcec3442315a2b3bcb37a364f76596ea60b37bf55bd5ecafa6206",
+    "pit/seed_checks.py": "35177c39d0a62a165721d2285c195affc1b3b38fcd1d9ef9a33b51b41129d6d7",
+    "local/world.py": "4d03283cfa6dffab17fea978c846df1a488edbd6e956227cb208f2ad62ecb293",
+    "pit/PROTOCOL.md": "cadc63a8af8ff55fffd1a37676171e660fb0b6590ae49ed8719fde43346e060b"
+  },
+  "elapsed_seconds": 1.7181233000010252,
+  "limitations": [
+    "finite suite does not prove universal program correctness",
+    "clock truth, frozen external choices and completeness remain external premises",
+    "byte equality checked directly; digests only index the artifacts",
+    "no real-text model, performance evaluation, historical certificate or novelty verification"
+  ]
+}

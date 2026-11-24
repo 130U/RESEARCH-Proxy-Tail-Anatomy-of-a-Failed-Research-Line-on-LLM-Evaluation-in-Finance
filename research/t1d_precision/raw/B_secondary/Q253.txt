@@ -1,0 +1,1 @@
+{"answer":"25.5938242280","unit":"percent","expression":"(211.5 - 168.4) / 168.4 * 100","low":"25.5268625705","high":"25.6608256608","reliable_digits":"2","explanation":"Rental expense increased; the bounds allow each displayed expense to vary by 0.05 million due to rounding."}

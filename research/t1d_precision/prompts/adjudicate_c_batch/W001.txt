@@ -1,0 +1,932 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only a JSON array, with one object for each supplied material in the supplied order, using its anonymous call_id and the requested fields.
+
+Assess each material independently. Do not infer a common answer or prevalence from the batch. Do not combine items or omit any item.
+Each material includes two source interpretations in random order. Evaluate their reasons against that material and give your own judgment. Their order carries no priority.
+
+MATERIALS
+[
+  {
+    "call_id": "S001",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "with respect to our business operations , we are standardizing certain core business processes , primarily through our execution of the state street lean methodology , and driving automation of these business processes ."
+        },
+        {
+          "location": "text_1",
+          "text": "we are currently creating a new technology platform , including transferring certain core software applications to a private cloud , and have expanded our use of service providers associated with components of our technology infrastructure and application maintenance and support ."
+        },
+        {
+          "location": "text_2",
+          "text": "we expect the transfer of core software applications to a private cloud to occur primarily in 2013 and 2014 ."
+        },
+        {
+          "location": "text_3",
+          "text": "to implement this program , we expect to incur aggregate pre-tax restructuring charges of approximately $ 400 million to $ 450 million over the four-year period ending december 31 , 2014 ."
+        },
+        {
+          "location": "text_4",
+          "text": "to date , we have recorded aggregate restructuring charges of $ 289 million in our consolidated statement of income , composed of $ 156 million in 2010 and $ 133 million in 2011 ."
+        },
+        {
+          "location": "text_5",
+          "text": "the following table presents the charges by type of cost : ( in millions ) employee-related real estate consolidation information technology costs total ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "(In millions)",
+            "Employee-Related Costs",
+            "Real Estate Consolidation",
+            "Information Technology Costs",
+            "Total"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2010",
+            "$105",
+            "$51",
+            "",
+            "$156"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2011",
+            "85",
+            "7",
+            "$41",
+            "133"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Total",
+            "$190",
+            "$58",
+            "$41",
+            "$289"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_6",
+          "text": "the employee-related costs included costs related to severance , benefits and outplacement services ."
+        },
+        {
+          "location": "text_7",
+          "text": "real estate consolidation costs resulted from actions taken to reduce our occupancy costs through consolidation of leases and properties ."
+        },
+        {
+          "location": "text_8",
+          "text": "information technology costs included transition fees related to the above-described expansion of our use of service providers ."
+        },
+        {
+          "location": "text_9",
+          "text": "in 2010 , in connection with the program , we initiated the involuntary termination of 1400 employees , or approximately 5% ( 5 % ) of our global workforce , which was substantially complete at the end of 2011 ."
+        },
+        {
+          "location": "text_10",
+          "text": "in addition , in the third quarter of 2011 , in connection with the expansion of our use of service providers associated with our information technology infrastructure and application maintenance and support , we identified 530 employees who will be provided with severance and outplacement services as their roles are eliminated ."
+        },
+        {
+          "location": "text_11",
+          "text": "as of december 31 , 2011 , in connection with the planned aggregate staff reductions of 1930 employees described above , 1332 employees had been involuntarily terminated and left state street , including 782 employees in 2011 ."
+        },
+        {
+          "location": "text_12",
+          "text": "in connection with our continued implementation of the business operations and information technology transformation program , we achieved approximately $ 86 million of annual pre-tax , run-rate expense savings in 2011 compared to 2010 run-rate expenses ."
+        },
+        {
+          "location": "text_13",
+          "text": "excluding the expected aggregate restructuring charges of $ 400 million to $ 450 million described earlier , we expect the program to reduce our pre-tax expenses from operations , on an annualized basis , by approximately $ 575 million to $ 625 million by the end of 2014 compared to 2010 , with the full effect realized in 2015 ."
+        },
+        {
+          "location": "text_14",
+          "text": "assuming all other things equal , we expect to achieve aggregate annual pre-tax expense savings of approximately $ 540 million by the end of 2014 , for a total annual pre-tax expense savings of approximately $ 600 million to be realized in 2015 ."
+        },
+        {
+          "location": "text_15",
+          "text": "we expect the business operations transformation component of the program to result in annual pre-tax expense savings of approximately $ 440 million in 2015 , with the majority of these savings expected to be achieved by the end of 2013 ."
+        },
+        {
+          "location": "text_16",
+          "text": "in addition , we expect the information technology transformation component of the program to result in annual pre-tax expense savings of approximately $ 160 million in 2015 ."
+        },
+        {
+          "location": "text_17",
+          "text": "these annual pre-tax run-rate savings relate only to the business operations and information technology transformation program ."
+        },
+        {
+          "location": "text_18",
+          "text": "our actual operating expenses may increase or decrease as a result of other factors ."
+        },
+        {
+          "location": "text_19",
+          "text": "the majority of the annualized savings will affect compensation and employee benefits expenses ; these savings will be modestly offset by increases in information systems and communications expenses as we implement the program ."
+        },
+        {
+          "location": "text_20",
+          "text": "2011 expense control measures during the fourth quarter of 2011 , in connection with expense control measures designed to calibrate our expenses to our outlook for our capital markets-facing businesses in 2012 , we took two actions ."
+        },
+        {
+          "location": "text_21",
+          "text": "first , we ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percent of the aggregate restructuring costs that were employee-related costs in 2010",
+    "human_answer": "55.3%",
+    "reference_program": "divide(105, 190)",
+    "reference_execution_value": 0.55263,
+    "model_response": {
+      "answer": "67.3076923076923",
+      "unit": "percent",
+      "expression": "105 / 156 * 100",
+      "explanation": "Employee-related costs were $105 million of the $156 million aggregate restructuring costs in 2010."
+    },
+    "source_interpretations_random_order": [
+      "The table gives 2010 employee-related costs 105 and total 2010 restructuring costs 156. Model computes the employee share of that year's aggregate. Gold denominator 190 is the employee-related total across 2010 and 2011, not aggregate restructuring costs (which are 289 across both years). Thus gold uses a different category/period denominator unsupported by the requested 2010 share.",
+      "Row 1 reports 2010 employee-related costs of $105 million and total restructuring costs of $156 million. The model reasonably uses the 2010 total as denominator. The reference instead uses $190 million, the employee-related total across 2010–2011 in row 3; the question permits the model's reading."
+    ]
+  },
+  {
+    "call_id": "S002",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "financing activities the decrease in cash used in 2010 relative to 2009 was attributable to a decrease in commercial paper repayments , net of proceeds , proceeds from our share issuance to bm&fbovespa as well as the termination of the nymex securities lending program in 2009 ."
+        },
+        {
+          "location": "text_1",
+          "text": "the decrease was partially offset by the distribution to dow jones of $ 607.5 million related to index services as well as an increase in share repurchases of $ 548.3 million ."
+        },
+        {
+          "location": "text_2",
+          "text": "share repurchases increased in an effort to offset most of the dilution associated with the issuance of shares to bm&fbovespa ."
+        },
+        {
+          "location": "text_3",
+          "text": "the increase in cash used in 2009 relative to 2008 was due to new issuances of debt of $ 2.9 billion in 2008 in conjunction with our merger with nymex holdings compared with net debt reductions of $ 900.1 million in debt instruments ."
+        },
+        {
+          "location": "text_4",
+          "text": "the following table summarizes our debt outstanding as of december 31 , 2010: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "(in millions)",
+            "Par Value"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Term loan due 2011, interest equal to 3-month LIBOR plus 1.00%<sup>(1)</sup>",
+            "$420.5"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Fixed rate notes due August 2013, interest equal to 5.40%",
+            "750.0"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Fixed rate notes due February 2014, interest equal to 5.75%",
+            "750.0"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Fixed rate notes due March 2018, interest equal to 4.40%<sup>(2)</sup>",
+            "612.5"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_5",
+          "text": "fixed rate notes due march 2018 , interest equal to 4.40% ( 4.40 % ) ( 2 ) ."
+        },
+        {
+          "location": "text_6",
+          "text": "."
+        },
+        {
+          "location": "text_7",
+          "text": "."
+        },
+        {
+          "location": "text_8",
+          "text": "."
+        },
+        {
+          "location": "text_9",
+          "text": "."
+        },
+        {
+          "location": "text_10",
+          "text": "."
+        },
+        {
+          "location": "text_11",
+          "text": "."
+        },
+        {
+          "location": "text_12",
+          "text": "."
+        },
+        {
+          "location": "text_13",
+          "text": "."
+        },
+        {
+          "location": "text_14",
+          "text": "."
+        },
+        {
+          "location": "text_15",
+          "text": "."
+        },
+        {
+          "location": "text_16",
+          "text": "."
+        },
+        {
+          "location": "text_17",
+          "text": "."
+        },
+        {
+          "location": "text_18",
+          "text": "."
+        },
+        {
+          "location": "text_19",
+          "text": "."
+        },
+        {
+          "location": "text_20",
+          "text": "."
+        },
+        {
+          "location": "text_21",
+          "text": "."
+        },
+        {
+          "location": "text_22",
+          "text": "."
+        },
+        {
+          "location": "text_23",
+          "text": "."
+        },
+        {
+          "location": "text_24",
+          "text": "."
+        },
+        {
+          "location": "text_25",
+          "text": "."
+        },
+        {
+          "location": "text_26",
+          "text": "."
+        },
+        {
+          "location": "text_27",
+          "text": "."
+        },
+        {
+          "location": "text_28",
+          "text": "."
+        },
+        {
+          "location": "text_29",
+          "text": "."
+        },
+        {
+          "location": "text_30",
+          "text": "."
+        },
+        {
+          "location": "text_31",
+          "text": "."
+        },
+        {
+          "location": "text_32",
+          "text": "."
+        },
+        {
+          "location": "text_33",
+          "text": "."
+        },
+        {
+          "location": "text_34",
+          "text": "."
+        },
+        {
+          "location": "text_35",
+          "text": "."
+        },
+        {
+          "location": "text_36",
+          "text": "."
+        },
+        {
+          "location": "text_37",
+          "text": "."
+        },
+        {
+          "location": "text_38",
+          "text": "."
+        },
+        {
+          "location": "text_39",
+          "text": "612.5 ( 1 ) in september 2008 , the company entered into an interest rate swap agreement that modified the variable interest obligation associated with this loan so that the interest payable effectively became fixed at a rate of 4.72% ( 4.72 % ) beginning with the interest accrued after october 22 , 2008 ."
+        },
+        {
+          "location": "text_40",
+          "text": "the interest rate swap agreement was terminated on january 11 , 2011 when the loan was repaid ."
+        },
+        {
+          "location": "text_41",
+          "text": "( 2 ) in march 2010 , we completed an unregistered offering of fixed rate notes due 2018 ."
+        },
+        {
+          "location": "text_42",
+          "text": "net proceeds from the offering were used to fund a distribution to dow jones in conjunction with our investment in index services ."
+        },
+        {
+          "location": "text_43",
+          "text": "in february 2010 , we entered into a forward-starting interest rate swap agreement that modified the interest obligation associated with these notes so that the interest payable on the notes effectively became fixed at a rate of 4.46% ( 4.46 % ) beginning with the interest accrued after march 18 , 2010 ."
+        },
+        {
+          "location": "text_44",
+          "text": "we maintained a $ 1.4 billion senior credit facility with various financial institutions , including the $ 420.5 million term loan and a $ 945.5 million revolving credit facility ."
+        },
+        {
+          "location": "text_45",
+          "text": "the senior credit facility was terminated on january 11 , 2011 ."
+        },
+        {
+          "location": "text_46",
+          "text": "any commercial paper outstanding was backed by the revolving credit facility ."
+        },
+        {
+          "location": "text_47",
+          "text": "under our senior credit facility , we were required to maintain a consolidated net worth of at least $ 12.1 billion ."
+        },
+        {
+          "location": "text_48",
+          "text": "effective january 11 , 2011 , we entered into a new $ 1.0 billion multi-currency revolving senior credit facility with various financial institutions ."
+        },
+        {
+          "location": "text_49",
+          "text": "the proceeds from the revolving senior credit facility can be used for general corporate purposes , which includes providing liquidity for our clearing house ."
+        },
+        {
+          "location": "text_50",
+          "text": "as long as we are not in default under the new senior credit facility , we have the option to increase the facility from time to time by an aggregate amount of up to $ 1.8 billion with the consent of the agent and lenders providing the additional funds ."
+        },
+        {
+          "location": "text_51",
+          "text": "the new senior credit facility matures in january 2014 and is voluntarily prepayable from time to time without premium or penalty ."
+        },
+        {
+          "location": "text_52",
+          "text": "under our new credit facility , we are required to remain in compliance with a consolidated net worth test , as defined as our consolidated shareholders 2019 equity as of september 30 , 2010 , giving effect to share repurchases made and special dividends paid during the term of the agreement ( and in no event greater than $ 2.0 billion in aggregate ) , multiplied by 0.65 ."
+        },
+        {
+          "location": "text_53",
+          "text": "we maintain a 364-day fully secured , committed line of credit with a consortium of domestic and international banks to be used in certain situations by our clearing house ."
+        },
+        {
+          "location": "text_54",
+          "text": "we may use the proceeds to provide temporary liquidity in the unlikely event of a clearing firm default , in the event of a liquidity constraint or default by a depositary ( custodian for our collateral ) , or in the event of a temporary disruption with the domestic payments system that would delay payment of settlement variation between us and our clearing firms ."
+        },
+        {
+          "location": "text_55",
+          "text": "clearing firm guaranty fund contributions received in the form of u.s ."
+        },
+        {
+          "location": "text_56",
+          "text": "treasury securities , government agency securities or ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the ratio of the increase in cash in 2009 due to the insurance of debt compared to the reduction of debt instruments",
+    "human_answer": "3.22",
+    "reference_program": "divide(2.9, 900.1)",
+    "reference_execution_value": 0.00322,
+    "model_response": {
+      "answer": "3.2218642373",
+      "unit": "times",
+      "expression": "2900 / 900.1",
+      "explanation": "Debt issuances of $2,900 million divided by debt reductions of $900.1 million give the ratio."
+    },
+    "source_interpretations_random_order": [
+      "Reference definitely omits billion-to-million conversion, and model correctly forms the disclosed cross-year amount ratio. However, the question attributes the issuance to 2009 while the document assigns 2.9 billion to 2008. a correct dimensional calculation cannot establish an answer for a year whose issuance value is absent.",
+      "Text 3 compares $2.9 billion of debt issuances in 2008 with $900.1 million of net debt reductions when explaining the 2009 cash-use change. The model correctly converts the numerator to $2,900 million before dividing by $900.1 million. The reference omits this unit conversion."
+    ]
+  },
+  {
+    "call_id": "S015",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "in reporting environmental results , the company classifies its gross exposure into direct , assumed reinsurance , and london market ."
+        },
+        {
+          "location": "text_1",
+          "text": "the following table displays gross environmental reserves and other statistics by category as of december 31 , 2011 ."
+        },
+        {
+          "location": "text_2",
+          "text": "summary of environmental reserves as of december 31 , 2011 ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Total Reserves"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Gross [1] [2]",
+            ""
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Direct",
+            "$271"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Assumed Reinsurance",
+            "39"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "London Market",
+            "57"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Total",
+            "367"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Ceded",
+            "(47)"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Net",
+            "$320"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_3",
+          "text": "[1] the one year gross paid amount for total environmental claims is $ 58 , resulting in a one year gross survival ratio of 6.4 ."
+        },
+        {
+          "location": "text_4",
+          "text": "[2] the three year average gross paid amount for total environmental claims is $ 58 , resulting in a three year gross survival ratio of 6.4 ."
+        },
+        {
+          "location": "text_5",
+          "text": "during the second quarters of 2011 , 2010 and 2009 , the company completed its annual ground-up asbestos reserve evaluations ."
+        },
+        {
+          "location": "text_6",
+          "text": "as part of these evaluations , the company reviewed all of its open direct domestic insurance accounts exposed to asbestos liability , as well as assumed reinsurance accounts and its london market exposures for both direct insurance and assumed reinsurance ."
+        },
+        {
+          "location": "text_7",
+          "text": "based on this evaluation , the company strengthened its net asbestos reserves by $ 290 in second quarter 2011 ."
+        },
+        {
+          "location": "text_8",
+          "text": "during 2011 , for certain direct policyholders , the company experienced increases in claim frequency , severity and expense which were driven by mesothelioma claims , particularly against certain smaller , more peripheral insureds ."
+        },
+        {
+          "location": "text_9",
+          "text": "the company also experienced unfavorable development on its assumed reinsurance accounts driven largely by the same factors experienced by the direct policyholders ."
+        },
+        {
+          "location": "text_10",
+          "text": "during 2010 and 2009 , for certain direct policyholders , the company experienced increases in claim severity and expense ."
+        },
+        {
+          "location": "text_11",
+          "text": "increases in severity and expense were driven by litigation in certain jurisdictions and , to a lesser extent , development on primarily peripheral accounts ."
+        },
+        {
+          "location": "text_12",
+          "text": "the company also experienced unfavorable development on its assumed reinsurance accounts driven largely by the same factors experienced by the direct policyholders ."
+        },
+        {
+          "location": "text_13",
+          "text": "the net effect of these changes in 2010 and 2009 resulted in $ 169 and $ 138 increases in net asbestos reserves , respectively ."
+        },
+        {
+          "location": "text_14",
+          "text": "the company currently expects to continue to perform an evaluation of its asbestos liabilities annually ."
+        },
+        {
+          "location": "text_15",
+          "text": "the company divides its gross asbestos exposures into direct , assumed reinsurance and london market ."
+        },
+        {
+          "location": "text_16",
+          "text": "the company further divides its direct asbestos exposures into the following categories : major asbestos defendants ( the 201ctop 70 201d accounts in tillinghast 2019s published tiers 1 and 2 and wellington accounts ) , which are subdivided further as : structured settlements , wellington , other major asbestos defendants , accounts with future expected exposures greater than $ 2.5 , accounts with future expected exposures less than $ 2.5 , and unallocated ."
+        },
+        {
+          "location": "text_17",
+          "text": "2022 structured settlements are those accounts where the company has reached an agreement with the insured as to the amount and timing of the claim payments to be made to the insured ."
+        },
+        {
+          "location": "text_18",
+          "text": "2022 the wellington subcategory includes insureds that entered into the 201cwellington agreement 201d dated june 19 , 1985 ."
+        },
+        {
+          "location": "text_19",
+          "text": "the wellington agreement provided terms and conditions for how the signatory asbestos producers would access their coverage from the signatory insurers ."
+        },
+        {
+          "location": "text_20",
+          "text": "2022 the other major asbestos defendants subcategory represents insureds included in tiers 1 and 2 , as defined by tillinghast that are not wellington signatories and have not entered into structured settlements with the hartford ."
+        },
+        {
+          "location": "text_21",
+          "text": "the tier 1 and 2 classifications are meant to capture the insureds for which there is expected to be significant exposure to asbestos claims ."
+        },
+        {
+          "location": "text_22",
+          "text": "2022 accounts with future expected exposures greater or less than $ 2.5 include accounts that are not major asbestos defendants ."
+        },
+        {
+          "location": "text_23",
+          "text": "2022 the unallocated category includes an estimate of the reserves necessary for asbestos claims related to direct insureds that have not previously tendered asbestos claims to the company and exposures related to liability claims that may not be subject to an aggregate limit under the applicable policies ."
+        },
+        {
+          "location": "text_24",
+          "text": "an account may move between categories from one evaluation to the next ."
+        },
+        {
+          "location": "text_25",
+          "text": "for example , an account with future expected exposure of greater than $ 2.5 in one evaluation may be reevaluated due to changing conditions and recategorized as less than $ 2.5 in a subsequent evaluation or vice versa. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "in 2011 what was the summary of environmental reserves as of december 31 , 2011",
+    "human_answer": "18.1%",
+    "reference_program": "subtract(320, 271), divide(#0, 271)",
+    "reference_execution_value": 0.18081,
+    "model_response": {
+      "answer": "320",
+      "unit": "dollars",
+      "expression": "271 + 39 + 57 - 47",
+      "explanation": "Net environmental reserves equal direct, assumed reinsurance, and London market reserves less ceded reserves."
+    },
+    "source_interpretations_random_order": [
+      "For December 31, 2011, rows 2–7 support net reserves of 271 + 39 + 57 - 47 = 320 in the table's monetary scale. The question does not specify a metric or request the reference's comparison of net 320 with direct 271 using denominator 271. The net-reserve formula is valid, but the excerpt does not establish the dollar scale.",
+      "the question vaguely asks for a summary, so a correctly reconstructed net-reserve total is a reasonable single-number interpretation. The reference percentage is not requested, but the vague target does not justify asserting one uniquely required summary measure. Source monetary magnitude is not independently supplied."
+    ]
+  },
+  {
+    "call_id": "S024",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "entergy corporation and subsidiaries management 2019s financial discussion and analysis regulatory asset associated with new nuclear generation development costs as a result of a joint stipulation entered into with the mississippi public utilities staff , subsequently approved by the mpsc , in which entergy mississippi agreed not to pursue recovery of the costs deferred by an mpsc order in the new nuclear generation docket ."
+        },
+        {
+          "location": "text_1",
+          "text": "see note 2 to the financial statements for further discussion of the new nuclear generation development costs and the joint stipulation ."
+        },
+        {
+          "location": "text_2",
+          "text": "net revenue utility following is an analysis of the change in net revenue comparing 2015 to 2014 ."
+        },
+        {
+          "location": "text_3",
+          "text": "amount ( in millions ) ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Amount (In Millions)"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2014 net revenue",
+            "$5,735"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Retail electric price",
+            "187"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Volume/weather",
+            "95"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Louisiana business combination customer credits",
+            "(107)"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "MISO deferral",
+            "(35)"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Waterford 3 replacement steam generator provision",
+            "(32)"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Other",
+            "(14)"
+          ]
+        },
+        {
+          "row_index": 8,
+          "cells": [
+            "2015 net revenue",
+            "$5,829"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_4",
+          "text": "the retail electric price variance is primarily due to : 2022 formula rate plan increases at entergy louisiana , as approved by the lpsc , effective december 2014 and january 2015 ; 2022 an increase in energy efficiency rider revenue primarily due to increases in the energy efficiency rider at entergy arkansas , as approved by the apsc , effective july 2015 and july 2014 , and new energy efficiency riders at entergy louisiana and entergy mississippi that began in the fourth quarter 2014 ."
+        },
+        {
+          "location": "text_5",
+          "text": "energy efficiency revenues are largely offset by costs included in other operation and maintenance expenses and have a minimal effect on net income ; and 2022 an annual net rate increase at entergy mississippi of $ 16 million , effective february 2015 , as a result of the mpsc order in the june 2014 rate case ."
+        },
+        {
+          "location": "text_6",
+          "text": "see note 2 to the financial statements for a discussion of rate and regulatory proceedings ."
+        },
+        {
+          "location": "text_7",
+          "text": "the volume/weather variance is primarily due to an increase of 1402 gwh , or 1% ( 1 % ) , in billed electricity usage , including an increase in industrial usage and the effect of more favorable weather ."
+        },
+        {
+          "location": "text_8",
+          "text": "the increase in industrial sales was primarily due to expansion in the chemicals industry and the addition of new customers , partially offset by decreased demand primarily due to extended maintenance outages for existing chemicals customers ."
+        },
+        {
+          "location": "text_9",
+          "text": "the louisiana business combination customer credits variance is due to a regulatory liability of $ 107 million recorded by entergy in october 2015 as a result of the entergy gulf states louisiana and entergy louisiana business combination ."
+        },
+        {
+          "location": "text_10",
+          "text": "consistent with the terms of an agreement with the lpsc , electric customers of entergy louisiana will realize customer credits associated with the business combination ; accordingly , in october 2015 , entergy recorded a regulatory liability of $ 107 million ( $ 66 million net-of-tax ) ."
+        },
+        {
+          "location": "text_11",
+          "text": "see note 2 to the financial statements for further discussion of the business combination and customer credits. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "in october 2015 , what was the ratio of the entergy recorded a regulatory liability to the tax liability",
+    "human_answer": "62.12%",
+    "reference_program": "subtract(107, 66), divide(#0, 66)",
+    "reference_execution_value": 0.62121,
+    "model_response": {
+      "answer": "2.6097560975609756",
+      "unit": "ratio",
+      "expression": "107 / (107 - 66)",
+      "explanation": "The tax liability was $41 million, calculated as the $107 million regulatory liability less its $66 million net-of-tax amount."
+    },
+    "source_interpretations_random_order": [
+      "107 minus 66 establishes a 41 million tax effect, not a separately established tax liability. Model computes a defensible gross-to-tax-effect ratio but labels the tax effect as liability; reference computes a different ratio. The literal requested liability ratio is not established by the excerpt.",
+      "Text_10 gives the October 2015 regulatory liability as $107 million gross and $66 million net of tax, implying a $41 million tax effect. Interpreting that effect as the question's tax liability supports the model's requested gross-liability-to-tax ratio, 107/41. The reference instead calculates tax effect divided by the net-of-tax amount, 41/66."
+    ]
+  },
+  {
+    "call_id": "S061",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "entergy corporation and subsidiaries management 2019s financial discussion and analysis a result of the entergy louisiana and entergy gulf states louisiana business combination , results of operations for 2015 also include two items that occurred in october 2015 : 1 ) a deferred tax asset and resulting net increase in tax basis of approximately $ 334 million and 2 ) a regulatory liability of $ 107 million ( $ 66 million net-of-tax ) as a result of customer credits to be realized by electric customers of entergy louisiana , consistent with the terms of the stipulated settlement in the business combination proceeding ."
+        },
+        {
+          "location": "text_1",
+          "text": "see note 2 to the financial statements for further discussion of the business combination and customer credits ."
+        },
+        {
+          "location": "text_2",
+          "text": "results of operations for 2015 also include the sale in december 2015 of the 583 mw rhode island state energy center for a realized gain of $ 154 million ( $ 100 million net-of-tax ) on the sale and the $ 77 million ( $ 47 million net-of-tax ) write-off and regulatory charges to recognize that a portion of the assets associated with the waterford 3 replacement steam generator project is no longer probable of recovery ."
+        },
+        {
+          "location": "text_3",
+          "text": "see note 14 to the financial statements for further discussion of the rhode island state energy center sale ."
+        },
+        {
+          "location": "text_4",
+          "text": "see note 2 to the financial statements for further discussion of the waterford 3 write-off ."
+        },
+        {
+          "location": "text_5",
+          "text": "results of operations for 2014 include $ 154 million ( $ 100 million net-of-tax ) of charges related to vermont yankee primarily resulting from the effects of an updated decommissioning cost study completed in the third quarter 2014 along with reassessment of the assumptions regarding the timing of decommissioning cash flows and severance and employee retention costs ."
+        },
+        {
+          "location": "text_6",
+          "text": "see note 14 to the financial statements for further discussion of the charges ."
+        },
+        {
+          "location": "text_7",
+          "text": "results of operations for 2014 also include the $ 56.2 million ( $ 36.7 million net-of-tax ) write-off in 2014 of entergy mississippi 2019s regulatory asset associated with new nuclear generation development costs as a result of a joint stipulation entered into with the mississippi public utilities staff , subsequently approved by the mpsc , in which entergy mississippi agreed not to pursue recovery of the costs deferred by an mpsc order in the new nuclear generation docket ."
+        },
+        {
+          "location": "text_8",
+          "text": "see note 2 to the financial statements for further discussion of the new nuclear generation development costs and the joint stipulation ."
+        },
+        {
+          "location": "text_9",
+          "text": "net revenue utility following is an analysis of the change in net revenue comparing 2015 to 2014 ."
+        },
+        {
+          "location": "text_10",
+          "text": "amount ( in millions ) ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Amount (In Millions)"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2014 net revenue",
+            "$5,735"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Retail electric price",
+            "187"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Volume/weather",
+            "95"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Waterford 3 replacement steam generator provision",
+            "(32)"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "MISO deferral",
+            "(35)"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Louisiana business combination customer credits",
+            "(107)"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Other",
+            "(14)"
+          ]
+        },
+        {
+          "row_index": 8,
+          "cells": [
+            "2015 net revenue",
+            "$5,829"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_11",
+          "text": "the retail electric price variance is primarily due to : 2022 formula rate plan increases at entergy louisiana , as approved by the lpsc , effective december 2014 and january 2015 ; 2022 an increase in energy efficiency rider revenue primarily due to increases in the energy efficiency rider at entergy arkansas , as approved by the apsc , effective july 2015 and july 2014 , and new energy efficiency riders at entergy louisiana and entergy mississippi that began in the fourth quarter 2014 ; and 2022 an annual net rate increase at entergy mississippi of $ 16 million , effective february 2015 , as a result of the mpsc order in the june 2014 rate case ."
+        },
+        {
+          "location": "text_12",
+          "text": "see note 2 to the financial statements for a discussion of rate and regulatory proceedings. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "assuming there would not have been a sale of the 583 mw rhode island state energy center in 2015 . what would have net revenue be without this gain on sale?",
+    "human_answer": "",
+    "reference_program": "subtract(5829, 100)",
+    "reference_execution_value": 5729.0,
+    "model_response": {
+      "answer": "5675",
+      "unit": "million dollars",
+      "expression": "5829 - 154",
+      "explanation": "Subtracting the $154 million gain on sale from 2015 net revenue gives $5,675 million."
+    },
+    "source_interpretations_random_order": [
+      "Source distinguishes a 154 million pretax sale gain from its 100 million net-of-tax amount. Model subtracts the former; reference subtracts the latter. This is a tax-basis difference, not precision. The 5829 table is specifically utility net revenue and its bridge does not identify this asset-sale gain; the excerpt does not establish that either amount is included in that metric. Hence neither adjustment is certified as the correct counterfactual from this excerpt.",
+      "Under the question's assumed removal of the sale gain from 2015 net revenue, row 8 supplies $5,829 million and text_2 supplies the $154 million pretax gain. The model consistently subtracts that gain; the reference substitutes the $100 million after-tax amount."
+    ]
+  }
+]

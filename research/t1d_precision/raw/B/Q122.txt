@@ -1,0 +1,1 @@
+{"answer":"8.6390958909","unit":"percent","expression":"(572.93 - 527.37) / 527.37 * 100","low":"8.6371178004","high":"8.6410740189","reliable_digits":"3","explanation":"Each balance has rounding uncertainty of 0.005 billion, giving these bounds and a reliable increase of 8.64%."}

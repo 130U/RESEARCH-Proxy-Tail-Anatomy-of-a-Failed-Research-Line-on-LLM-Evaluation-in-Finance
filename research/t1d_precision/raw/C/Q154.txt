@@ -1,0 +1,1 @@
+{"answer":"5.8","unit":"billion dollars","expression":"17.5 - 11.7","low":"5.7","high":"5.9","reliable_digits":"1","explanation":"Each input is rounded to the nearest 0.1 billion, so the decline can range from 5.7 to 5.9 billion."}

@@ -1,0 +1,142 @@
+[
+  {
+    "call_id": "Q030",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The plan-expense disclosure gives $17.3 million for 2013 and $21.9 million for 2014; the Basic weighted-average shares outstanding row gives 156.6 million and 170.6 million shares. Expense per share is expense divided by shares, so 17.3/156.6 - 21.9/170.6 correctly gives 2013 minus 2014 in dollars per share. The reference reverses both divisions and produces shares per dollar."
+  },
+  {
+    "call_id": "Q057",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "The table contains year-end trade and other receivables, not 2013 total sales and payments. The model subtracts 2012 net receivables of $497.9 million from 2013 net receivables of $531.6 million; this $33.7 million change includes the $4.1 million reduction in the doubtful-account allowance. The reference uses gross balances of $546.5 million and $516.9 million, but neither balance change establishes sales less receipts without a receivables reconciliation and other movements. The excerpt is insufficient to determine the requested cash-versus-sales difference."
+  },
+  {
+    "call_id": "Q086",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The vested restricted-stock fair-value disclosure gives $4.1 for fiscal 2017 and $2.2 for 2018, in the source's monetary units. Asking for the decrease does not explicitly require a percentage. The model's 4.1 - 2.2 gives the positive monetary decrease of 1.9; the reference instead expresses signed change divided by the 2017 value of 4.1."
+  },
+  {
+    "call_id": "Q101",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The U.S. employee purchase-plan disclosure lists 556000, 439000 and 411636 shares issued in 2013, 2014 and 2015. The model explicitly interprets the question as the U.S. plan and correctly divides their sum by three years. The reference adds only 2015 and 2014 and never averages, so it cannot answer the stated 2013-2015 average. Separate U.K. issuances make geographic scope somewhat ambiguous, but do not rescue that reference formula."
+  },
+  {
+    "call_id": "Q114",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The EnLink sale disclosure gives a $2.6 billion pretax gain and a $2.2 billion after-tax gain, implying $0.4 billion tax. The model explicitly uses the conventional tax-rate denominator, the $2.6 billion pretax gain, giving 15.38%. The reference divides by the $2.2 billion after-tax gain. The wording 'on the net earnings' leaves some scope for that tax-to-net-gain ratio, but does not exclude the model's stated conventional tax-rate interpretation."
+  },
+  {
+    "call_id": "Q141",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The High column gives $31.16 in the last quarter of 2011, also the maximum of the four 2011 quarters, and $37.79 for January-March 2012. 'By how much' permits the dollar-per-share increase, 37.79 - 31.16 = $6.63. The reference adds division by the 2011 high to report a percentage, which the question does not explicitly require."
+  },
+  {
+    "call_id": "Q167",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The grant-date fair-value disclosure assigns $6.91 per share to fiscal 2006 and $8.75 to fiscal 2007. Growth from 2006 to 2007 is (8.75 - 6.91)/6.91, using the 2006 starting value. The reference reverses the years and divides by the 2007 ending value."
+  },
+  {
+    "call_id": "Q210",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The retained-earnings table, in thousands, lists net-of-tax adjustments of +91640, +2638 and -8349, totaling +85929. The question explicitly mentions the December 30, 2017 balance 'as adjusted,' 426932, so reporting the adjustments as 85929/426932 is a reasonable stated interpretation. The reference instead measures growth relative to the previously reported 341003. This is a denominator interpretation difference, not an alternative precision."
+  },
+  {
+    "call_id": "Q226",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The Net unrealized loss on available-for-sale securities row gives $5205 million of losses in 2008 and $1636 million in 2009. The model correctly measures the 2008-to-2009 change in loss magnitude as (1636 - 5205)/5205, a 68.57% decrease. Using signed balances gives the same conventional percentage change. The reference computes the reverse-year change with the 2009 balance as denominator. Both formulas use the table values, not the rounded $5.21/$1.64 billion narrative."
+  },
+  {
+    "call_id": "Q234",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The intangible-assets disclosure gives international slot and route authorities of $736 million at December 31, 2009 and $708 million at December 31, 2010. A percentage decline can be stated as the positive magnitude (736 - 708)/736, using the 2009 starting value. The reference reports the same decline as negative signed change."
+  },
+  {
+    "call_id": "Q249",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "At December 31, 2014, the narrative gives $1.3 billion of outstanding interest-rate swaps and $804 million of foreign-currency hedges. A dimensionless swaps-to-hedges ratio requires common units: 1300/804 = 1.6169. The reference divides the billion-denominated numeral directly by the million-denominated numeral, omitting the factor of 1000. This is unit conversion, not a different source precision."
+  },
+  {
+    "call_id": "Q287",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The financing disclosure states $48 million of issuance costs for the $7.0 billion November 2015 notes that repaid the acquisition facility. Costs as a percentage of issued principal are 48/7000 * 100 = 0.6857%. The reference's 48/7.0 mixes millions with billions and omits the required unit conversion; the model does not use another disclosure precision."
+  },
+  {
+    "call_id": "Q301",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The ATI 7.25% notes disclosure states that $74.9 million principal was repurchased in 2006 and that $400.0 million was outstanding at year-end 2005, declining to $325.1 million at year-end 2006. The portion paid off is naturally the positive fraction 74.9/400.0 = 18.725%. The reference reports the negative balance change divided by the same opening principal. The $77.3 million cash repurchase price is appropriately not substituted for retired principal."
+  },
+  {
+    "call_id": "Q316",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The December 31, 2011 environmental-reserves table lists Direct 271, Assumed Reinsurance 39 and London Market 57, for gross Total 367, less Ceded 47 to produce Net 320. Reporting this net total is a reasonable response to the vague request for a summary; the model's addition and subtraction match the table. The reference's (320 - 271)/271 compares net total with gross direct reserves without a requested percentage comparison. The excerpt does not supply a monetary scale multiplier, so the model's literal 'dollars' label cannot be independently verified."
+  },
+  {
+    "call_id": "Q321",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The Collateral pools underlying SSgA lending funds row, in billions, gives 31 at December 31, 2008 and 24 at December 31, 2009. The model correctly computes the chronological percent change as (24 - 31)/31. The reference reverses the subtraction and uses the 2009 ending value of 24 as denominator."
+  },
+  {
+    "call_id": "Q335",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The 2017-versus-2016 narrative says 2017 net interest income was $2.93 billion, 13% higher than 2016. Thus 2017 equals 1.13 times 2016, and 2.93/1.13 correctly recovers approximately $2.593 billion. The reference multiplies the 2017 value by 0.87, incorrectly applying a 13% decrease to reverse a 13% increase. The disclosed figures are rounded, but no alternative precision is used."
+  },
+  {
+    "call_id": "Q348",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The Peer Group total-return index increases from 161.90 in 2014 to 203.87 in 2015, with a $100 base investment in 2012 and dividends reinvested. Interpreting '2015 total return' as the annual percentage return supports (203.87 - 161.90)/161.90. The reference reports only the 41.97-dollar/index-point gain on the original investment. The wording does not specify monetary gain versus annual percentage or cumulative return."
+  },
+  {
+    "call_id": "Q352",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The business-acquisition capital-spending disclosure assigns $122 million to 2012, $56 million to 2011 and $34 million to 2010. The requested 2011-to-2012 difference is 122 - 56 = $66 million. The reference's 56 - 34 instead compares 2011 with 2010."
+  },
+  {
+    "call_id": "Q362",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The commercial-paper disclosure gives $932 million outstanding at December 31, 2014 and a weighted-average borrowing rate of 0.44 percent. Under the model's stated interpretation of 'weighted value' as principal multiplied by the borrowing rate, 932 * 0.44/100 = $4.1008 million is correct. The reference treats 0.44 percent as 0.44 rather than 0.0044, overstating that product by 100. The wording does not establish actual interest paid or a borrowing duration, so this is a rate-weighted amount, not verified period expense."
+  },
+  {
+    "call_id": "Q387",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "The October 2018 Opcity acquisition disclosure is cut off after an approximately $210 million total transaction value and '$182 million in cash, net of $7 million of cash.' It does not finish identifying the acquired cash or other consideration, or establish whether the total value is gross or net of that cash. The model assumes gross cash consideration is 182 + 7 and subtracts it from 210, while the reference simply subtracts 182. Moreover the question says noncash assets, whereas the model calculates noncash consideration. The missing transaction details prevent a unique supported value or confirmation of the model's formula."
+  }
+]

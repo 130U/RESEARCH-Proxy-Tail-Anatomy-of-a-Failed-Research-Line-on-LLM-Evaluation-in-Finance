@@ -1,0 +1,1 @@
+{"answer":"327","unit":"million dollars","expression":"353 + 6 - 32","low":"325.5","high":"328.5","reliable_digits":"2","explanation":"Reconstruction costs plus the stated transaction-cost allowance minus deferred tax benefits yield $327 million, with rounding uncertainty of $1.5 million."}

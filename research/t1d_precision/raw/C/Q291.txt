@@ -1,0 +1,1 @@
+{"answer":"5.54348412","unit":"percent","expression":"3087 / 55687 * 100","low":"5.54253648","high":"5.54443177","reliable_digits":"3","explanation":"CIB Markets net interest income is divided by managed net interest income, with bounds allowing each figure to vary by 0.5 million."}

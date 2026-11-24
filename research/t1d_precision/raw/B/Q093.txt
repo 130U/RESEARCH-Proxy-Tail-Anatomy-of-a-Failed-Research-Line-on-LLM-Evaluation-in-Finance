@@ -1,0 +1,1 @@
+{"answer":"-14.1614906832298","unit":"percent","expression":"(6.91 - 8.05) / 8.05 * 100","low":"-14.2768466790813","high":"-14.0459912989434","reliable_digits":"2","explanation":"The weighted average fair value decreased, with bounds allowing each displayed per-share value to vary by $0.005."}

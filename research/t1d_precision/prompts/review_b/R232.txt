@@ -1,0 +1,181 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R232",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "on a geographic basis , the 1% ( 1 % ) increase in net sales reflects higher net sales in north america and emea , partially offset by lower net sales in asia ."
+      },
+      {
+        "location": "text_1",
+        "text": "the increase in net sales in north america was driven primarily by higher sales of digital entertainment devices , partially offset by lower demand for iden infrastructure equipment driven by customer expenditures returning to historic trends compared to an exceptionally strong 2005 ."
+      },
+      {
+        "location": "text_2",
+        "text": "the increase in net sales in emea was driven primarily by higher sales of digital entertainment devices ."
+      },
+      {
+        "location": "text_3",
+        "text": "the decrease in net sales in asia was due , in part , to delays in the granting of 3g licenses in china that led service providers to slow their near-term capital investment , as well as competitive pricing pressure ."
+      },
+      {
+        "location": "text_4",
+        "text": "net sales in north america continued to comprise a significant portion of the segment 2019s business , accounting for approximately 56% ( 56 % ) of the segment 2019s total net sales in 2006 , compared to approximately 55% ( 55 % ) of the segment 2019s total net sales in 2005 ."
+      },
+      {
+        "location": "text_5",
+        "text": "the segment reported operating earnings of $ 787 million in 2006 , compared to operating earnings of $ 1.2 billion in 2005 ."
+      },
+      {
+        "location": "text_6",
+        "text": "the 36% ( 36 % ) decrease in operating earnings was primarily due to : ( i ) a decrease in gross margin , due to an unfavorable product/regional mix and competitive pricing in the wireless networks market , and ( ii ) an increase in other charges ( income ) from an increase in reorganization of business charges , primarily related to employee severance , and from a legal reserve ."
+      },
+      {
+        "location": "text_7",
+        "text": "as a percentage of net sales in 2006 as compared to 2005 , gross margin , sg&a expenses , r&d expenditures and operating margin all decreased ."
+      },
+      {
+        "location": "text_8",
+        "text": "in 2006 , net sales to the segment 2019s top five customers , which included sprint nextel , comcast corporation , verizon , kddi and china mobile , represented 45% ( 45 % ) of the segment 2019s total net sales ."
+      },
+      {
+        "location": "text_9",
+        "text": "the segment 2019s backlog was $ 3.2 billion at december 31 , 2006 , compared to $ 2.4 billion at december 31 , 2005 ."
+      },
+      {
+        "location": "text_10",
+        "text": "the increase in backlog is primarily due to strong orders for our digital and hd/dvr set-tops ."
+      },
+      {
+        "location": "text_11",
+        "text": "in the market for digital entertainment devices , demand for the segment 2019s products depends primarily on the level of capital spending by broadband operators for constructing , rebuilding or upgrading their communications systems , and for offering advanced services ."
+      },
+      {
+        "location": "text_12",
+        "text": "in 2006 , our digital video customers significantly increased their purchases of the segment 2019s products and services , primarily due to increased demand for digital video set-tops , particularly hd/dvr set-tops ."
+      },
+      {
+        "location": "text_13",
+        "text": "during 2006 , the segment completed a number of significant acquisitions , including : ( i ) kreatel communications ab , a leading developer of innovative ip-based digital set-tops and software , ( ii ) nextnet wireless , inc. , a former clearwire corporation subsidiary and a leading provider of ofdm-based non-line-of-sight ( 201cnlos 201d ) wireless broadband infrastructure equipment , ( iii ) broadbus technologies , inc. , a provider of technology solutions for television on demand , and ( iv ) vertasent llc , a software developer for managing technology elements for switched digital video networks ."
+      },
+      {
+        "location": "text_14",
+        "text": "these acquisitions did not have a material impact on the segment results in 2006 ."
+      },
+      {
+        "location": "text_15",
+        "text": "enterprise mobility solutions segment the enterprise mobility solutions segment designs , manufactures , sells , installs and services analog and digital two-way radio , voice and data communications products and systems for private networks , wireless broadband systems and end-to-end enterprise mobility solutions to a wide range of enterprise markets , including government and public safety agencies ( which , together with all sales to distributors of two-way communications products , are referred to as the 201cgovernment and public safety market 201d ) , as well as retail , utility , transportation , manufacturing , healthcare and other commercial customers ( which , collectively , are referred to as the 201ccommercial enterprise market 201d ) ."
+      },
+      {
+        "location": "text_16",
+        "text": "in 2007 , the segment 2019s net sales represented 21% ( 21 % ) of the company 2019s consolidated net sales , compared to 13% ( 13 % ) in 2006 and 14% ( 14 % ) in 2005 ."
+      },
+      {
+        "location": "text_17",
+        "text": "( dollars in millions ) 2007 2006 2005 2007 20142006 2006 20142005 years ended december 31 percent change ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "<i>Years Ended December 31</i>",
+          "<i>Percent Change</i>"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "<i>(Dollars in millions)</i>",
+          "<i>2007</i>",
+          "<i>2006</i>",
+          "<i>2005</i>",
+          "<i>2007—2006</i>",
+          "<i>2006—2005</i>"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Segment net sales",
+          "$7,729",
+          "$5,400",
+          "$5,038",
+          "43%",
+          "7%"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Operating earnings",
+          "1,213",
+          "958",
+          "860",
+          "27%",
+          "11%"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_18",
+        "text": "segment results 20142007 compared to 2006 in 2007 , the segment 2019s net sales increased 43% ( 43 % ) to $ 7.7 billion , compared to $ 5.4 billion in 2006 ."
+      },
+      {
+        "location": "text_19",
+        "text": "the 43% ( 43 % ) increase in net sales was primarily due to increased net sales in the commercial enterprise market , driven by the net sales from the symbol business acquired in january 2007 ."
+      },
+      {
+        "location": "text_20",
+        "text": "net sales in the government and public safety market increased 6% ( 6 % ) , primarily due to strong demand in north america ."
+      },
+      {
+        "location": "text_21",
+        "text": "on a geographic basis , net sales increased in all regions ."
+      },
+      {
+        "location": "text_22",
+        "text": "62 management 2019s discussion and analysis of financial condition and results of operations ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the average segment net sales from 2005 to 2007 in millions",
+  "reference_program": "add(7729, 5400), add(5038, #0), divide(#1, const_3)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "7729",
+      "raw": "7,729",
+      "location": "table_2:1",
+      "context": "Segment net sales | Years Ended December 31"
+    },
+    "x1": {
+      "program_token": "5400",
+      "raw": "5,400",
+      "location": "table_2:2",
+      "context": "Segment net sales | Percent Change"
+    },
+    "x2": {
+      "program_token": "5038",
+      "raw": "5,038",
+      "location": "table_2:3",
+      "context": "Segment net sales | "
+    }
+  }
+}

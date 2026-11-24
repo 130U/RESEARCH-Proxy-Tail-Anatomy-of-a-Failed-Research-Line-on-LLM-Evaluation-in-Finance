@@ -1,0 +1,71 @@
+{
+  "n_cohort": 196,
+  "n_reviewed_processed": 196,
+  "n_test": 1147,
+  "stage_status": {
+    "original": {
+      "witnessed_outside": 196
+    },
+    "duplicates": {
+      "witnessed_outside": 195,
+      "certified_inside": 1
+    },
+    "sums": {
+      "witnessed_outside": 195,
+      "certified_inside": 1
+    }
+  },
+  "stage_gold_excluded": {
+    "original": 0,
+    "duplicates": 0,
+    "sums": 0
+  },
+  "final": {
+    "retained": 139,
+    "semantic_uncertain": 20,
+    "semantic_invalid": 37
+  },
+  "sample40": {
+    "valid": 27,
+    "uncertain": 5,
+    "invalid": 8
+  },
+  "method_final": {
+    "linear_fractional": 134,
+    "affine": 57,
+    "nonlinear": 5
+  },
+  "exact_final_ranges": 196,
+  "by_category": {
+    "difference": {
+      "retained": 26,
+      "semantic_uncertain": 4,
+      "semantic_invalid": 5
+    },
+    "growth": {
+      "retained": 70,
+      "semantic_uncertain": 9,
+      "semantic_invalid": 11
+    },
+    "other": {
+      "retained": 4,
+      "semantic_invalid": 1
+    },
+    "ratio": {
+      "semantic_invalid": 18,
+      "retained": 29,
+      "semantic_uncertain": 5
+    },
+    "sum": {
+      "retained": 10,
+      "semantic_uncertain": 2,
+      "semantic_invalid": 2
+    }
+  },
+  "review_sha256": {
+    "a": "43453ca613b9c1c3a1bc881be8b3ee3a3924833a42ca62c1391c13685673efc7",
+    "b": "c6d487b8848a70098d4fb6b9551ed36d295d495c9691ca869cc5d065773cd96a"
+  },
+  "retained_percent_test": 12.118570183086312,
+  "gate": "retain"
+}

@@ -1,0 +1,1 @@
+{"answer":"50","unit":"percent","expression":"(0.4 / 0.8) * 100","low":"41.176470588235294","high":"60","reliable_digits":"0","explanation":"Canceled contracts comprise $0.4 million of the stated $0.8 million accrual balance, with bounds reflecting rounding to the nearest $0.1 million."}

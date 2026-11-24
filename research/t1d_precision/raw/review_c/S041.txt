@@ -1,0 +1,7 @@
+{
+    "call_id": "S041",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The question's wording, 'from to 20192018,' garbles the ratio order. Rows 3 and 2 give estimated amortization expense of $54 million for 2019 and $64 million for 2018. The model explicitly interprets the ratio as 2019 to 2018, using 64 as the denominator; the reference uses the reciprocal."
+  }

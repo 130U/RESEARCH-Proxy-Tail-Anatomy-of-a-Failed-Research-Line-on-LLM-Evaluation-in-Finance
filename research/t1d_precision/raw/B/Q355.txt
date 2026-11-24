@@ -1,0 +1,1 @@
+{"answer":"3.007518796992481","unit":"percent","expression":"(137 - 133) / 133 * 100","low":"2.247191011235955","high":"3.773584905660377","reliable_digits":"0","explanation":"Each expense is rounded to the nearest million, giving growth bounds that do not support even one reliable significant digit."}

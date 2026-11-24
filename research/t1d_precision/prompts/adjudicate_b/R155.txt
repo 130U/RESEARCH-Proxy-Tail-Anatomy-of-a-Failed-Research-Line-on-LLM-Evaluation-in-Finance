@@ -1,0 +1,185 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R155",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "the contracts were valued as of april 1 , 2002 , and an asset and a corresponding gain of $ 127 million , net of income taxes , was recorded as a cumulative effect of a change in accounting principle in the second quarter of 2002 ."
+      },
+      {
+        "location": "text_1",
+        "text": "the majority of the gain recorded relates to the warrior run contract , as the asset value of the deepwater contract on april 1 , 2002 , was less than $ 1 million ."
+      },
+      {
+        "location": "text_2",
+        "text": "the warrior run contract qualifies and was designated as a cash flow hedge as defined by sfas no ."
+      },
+      {
+        "location": "text_3",
+        "text": "133 and hedge accounting is applied for this contract subsequent to april 1 , 2002 ."
+      },
+      {
+        "location": "text_4",
+        "text": "the contract valuations were performed using current forward electricity and gas price quotes and current market data for other contract variables ."
+      },
+      {
+        "location": "text_5",
+        "text": "the forward curves used to value the contracts include certain assumptions , including projections of future electricity and gas prices in periods where future prices are not quoted ."
+      },
+      {
+        "location": "text_6",
+        "text": "fluctuations in market prices and their impact on the assumptions will cause the value of these contracts to change ."
+      },
+      {
+        "location": "text_7",
+        "text": "such fluctuations will increase the volatility of the company 2019s reported results of operations ."
+      },
+      {
+        "location": "text_8",
+        "text": "11 ."
+      },
+      {
+        "location": "text_9",
+        "text": "commitments , contingencies and risks operating leases 2014as of december 31 , 2002 , the company was obligated under long-term non-cancelable operating leases , primarily for office rental and site leases ."
+      },
+      {
+        "location": "text_10",
+        "text": "rental expense for operating leases , excluding amounts related to the sale/leaseback discussed below , was $ 31 million $ 32 million and $ 13 million in the years ended december 31 , 2002 , 2001and 2000 , respectively , including commitments of businesses classified as discontinued amounting to $ 6 million in 2002 , $ 16 million in 2001 and $ 6 million in 2000 ."
+      },
+      {
+        "location": "text_11",
+        "text": "the future minimum lease commitments under these leases are as follows ( in millions ) : discontinued total operations ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Total",
+          "Discontinued Operations"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2003",
+          "$30",
+          "$4"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2004",
+          "20",
+          "4"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2005",
+          "15",
+          "3"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "2006",
+          "11",
+          "1"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "2007",
+          "9",
+          "1"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Thereafter",
+          "84",
+          "1"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Total",
+          "$169",
+          "$14"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_12",
+        "text": "sale/leaseback 2014in may 1999 , a subsidiary of the company acquired six electric generating stations from new york state electric and gas ( 2018 2018nyseg 2019 2019 ) ."
+      },
+      {
+        "location": "text_13",
+        "text": "concurrently , the subsidiary sold two of the plants to an unrelated third party for $ 666 million and simultaneously entered into a leasing arrangement with the unrelated party ."
+      },
+      {
+        "location": "text_14",
+        "text": "this transaction has been accounted for as a sale/leaseback with operating lease treatment ."
+      },
+      {
+        "location": "text_15",
+        "text": "rental expense was $ 54 million , $ 58 million and $ 54 million in 2002 , 2001 and 2000 , respectively ."
+      },
+      {
+        "location": "text_16",
+        "text": "future minimum lease commitments are as follows ( in millions ) : in connection with the lease of the two power plants , the subsidiary is required to maintain a rent reserve account equal to the maximum semi-annual payment with respect to the sum of the basic rent ( other then deferrable basic rent ) and fixed charges expected to become due in the immediately succeeding three-year period ."
+      },
+      {
+        "location": "text_17",
+        "text": "at december 31 , 2002 , 2001 and 2000 , the amount deposited in the rent reserve account approximated ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "total discontinued operations represent what percentage of total future minimum lease commitments?",
+  "reference_program": "divide(14, 169)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "14",
+      "raw": "14",
+      "location": "table_7:2",
+      "context": "Total | Discontinued Operations"
+    },
+    "x1": {
+      "program_token": "169",
+      "raw": "169",
+      "location": "table_7:1",
+      "context": "Total | Total"
+    }
+  }
+}
+
+TWO SOURCE INTERPRETATIONS TO CONSIDER
+The order is random. Evaluate these reasons against the supplied source and give your own judgment using the same JSON schema. Their order carries no priority.
+[
+  "The $14 million discontinued-operations commitment and $169 million total are correctly selected, but their quotient is not converted to the requested percentage.",
+  "Discontinued-operation14m/all169m lease commitments matches; both columns sum over maturity buckets."
+]

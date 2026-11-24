@@ -1,0 +1,1 @@
+{"answer":"30.46875","unit":"percent","expression":"(3.9 / 12.8) * 100","low":"29.9610894941634","high":"30.9803921568627","reliable_digits":"1","explanation":"The exposure and unpaid principal balance each have rounding uncertainty of 0.05 billion, yielding the stated bounds."}

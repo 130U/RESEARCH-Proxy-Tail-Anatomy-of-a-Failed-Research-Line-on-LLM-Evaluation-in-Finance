@@ -1,0 +1,1 @@
+{"answer":"56.3","unit":"million dollars","expression":"10.6 + 11 + 11.2 + 11.6 + 11.9","low":"55.6","high":"57.0","reliable_digits":"1","explanation":"The five expected principal payments total $56.3 million, with combined rounding uncertainty of $0.7 million."}

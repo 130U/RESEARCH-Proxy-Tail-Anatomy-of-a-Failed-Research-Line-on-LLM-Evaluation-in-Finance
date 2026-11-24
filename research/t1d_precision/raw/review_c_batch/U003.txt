@@ -1,0 +1,114 @@
+[
+  {
+    "call_id": "S033",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Operating Leases row 1 gives fiscal 2013 payments of $1,473 thousand, the next fiscal year's payments as of March 31, 2012. Dividing by row 7 total payments of $4,218 thousand gives 34.92%. The reference incorrectly averages these amounts."
+  },
+  {
+    "call_id": "S034",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 18 gives $23 million of relevant lease obligations due in 2007. The 2007 Total debt denominator is $692 million in row 1; the reference instead uses $2,329 million from row 3, Purchase obligations."
+  },
+  {
+    "call_id": "S035",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 1, Indemnified securities financing, increases from $506,032 million in 2006 to $558,368 million in 2007. Percent change requires dividing the difference by the 2006 denominator, 506,032, and multiplying by 100. The reference only subtracts."
+  },
+  {
+    "call_id": "S036",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The question specifies no years. Row 3, Volatility factor, supports the model's stated 2014-to-2015 comparison: (26.2% - 28.8%) / 28.8% × 100. The reference instead compares 2013 to 2014 using 30.3% as its denominator."
+  },
+  {
+    "call_id": "S037",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 3 reports net unrealized losses of $5,205 million in 2008 and $1,636 million in 2009. The model correctly calculates the percentage decline in loss magnitude using the 2008 denominator of 5,205. The reference reverses the change and uses the 2009 denominator of -1,636."
+  },
+  {
+    "call_id": "S038",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "For the model's stated U.S. plan scope, text 5 reports 556,000 shares in 2013, 439,000 in 2014, and 411,636 in 2015. Their annual average requires all three amounts divided by three years. The reference adds only 2014 and 2015 and never divides."
+  },
+  {
+    "call_id": "S039",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Texts 1–2 disclose 2014 interest rate swaps of $1.3 billion and foreign currency hedges of $804 million. Converting the numerator to $1,300 million before dividing by the $804 million denominator gives 1.6169. The reference omits the unit conversion."
+  },
+  {
+    "call_id": "S040",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 2 gives anticipated natural gas purchases hedged of 60% through the first quarter of 2004 and 50% through the second quarter. The model reports the signed change, 50 - 60 = -10 percentage points; the reference reports the positive decrease magnitude. No denominator is needed."
+  },
+  {
+    "call_id": "S041",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The question's wording, 'from to 20192018,' garbles the ratio order. Rows 3 and 2 give estimated amortization expense of $54 million for 2019 and $64 million for 2018. The model explicitly interprets the ratio as 2019 to 2018, using 64 as the denominator; the reference uses the reciprocal."
+  },
+  {
+    "call_id": "S042",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "The question ends after 'represented by' and specifies neither an asset category nor a year. The reference selects row 4, 2010 Forward contract receivable of $11.8 million, over row 10, 2010 Total of $146.1 million, without support from the question. The model's abstention is substantively justified."
+  },
+  {
+    "call_id": "S043",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Texts 35–38 state that the relevant asset retirement obligations were $10 million in both 2006 and 2005, versus $9 million in 2004. The 2006 annual increase is therefore 10 - 10 = $0 million. The reference uses the 2004 amount as a denominator and computes a level ratio rather than an increase."
+  },
+  {
+    "call_id": "S044",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "For adoption on January 1, 2004, the Net Income column contains -54, +30, and +1, totaling -23 as shown in row 4. The reference omits row 1's -54 reserve impact. No denominator applies; the excerpt does not explicitly establish the model's million-dollar scale."
+  },
+  {
+    "call_id": "S045",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 16 gives vested restricted stock fair value of $4.1 in 2017 and $2.2 in 2018. The question asks for the decrease without specifying a percentage, so the absolute decrease of 1.9 is reasonable. The reference instead calculates signed percentage change using 4.1 as denominator; the excerpt does not explicitly state the monetary scale."
+  },
+  {
+    "call_id": "S046",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 0 reports $74.9 million principal repurchased during 2006, and text 2 gives $400.0 million outstanding at year-end 2005 and $325.1 million at year-end 2006. Dividing principal paid off by the opening $400.0 million denominator gives a positive 18.725% portion. The reference reports the equivalent signed balance decline."
+  },
+  {
+    "call_id": "S047",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 18 gives December 31, 2014 commercial paper borrowings of $932 million and a weighted-average borrowing rate of 0.44%. Under the stated interpretation of 'weighted value' as balance times rate, the model correctly converts 0.44% to 0.0044, producing $4.1008 million. The reference omits division by 100."
+  },
+  {
+    "call_id": "S048",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 1, Second generation tenant improvements, falls from $50,079 thousand in 2011 to $26,643 thousand in 2012. Using the 2011 denominator of 50,079, the model reports the positive percentage reduction of 46.80%; the reference reports the signed change of -46.80%."
+  }
+]

@@ -1,0 +1,1 @@
+{"answer":"17.1717339415681","unit":"percent","expression":"(917491 - 783031) / 783031 * 100","low":"17.1715952679","high":"17.1718726154","reliable_digits":"5","explanation":"Allowing each inventory figure to vary by 0.5 thousand gives these bounds, which both round to 17.172 percent at five significant digits."}

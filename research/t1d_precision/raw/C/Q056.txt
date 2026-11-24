@@ -1,0 +1,1 @@
+{"answer":"-32.1","unit":"billion dollars","expression":"336.5 - 368.6","low":"-32.2","high":"-32.0","reliable_digits":"2","explanation":"Net outflows decreased by 32.1 billion dollars; rounding each input by up to 0.05 billion gives these bounds."}

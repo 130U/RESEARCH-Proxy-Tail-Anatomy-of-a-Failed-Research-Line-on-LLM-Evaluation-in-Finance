@@ -1,0 +1,1 @@
+{"answer":"-7.3943661971831","unit":"percent","expression":"(26.3 - 28.4) / 28.4 * 100","low":"-7.73286467486819","high":"-7.05467372134039","reliable_digits":"1","explanation":"Expense decreased, with bounds calculated from rounding intervals of 26.25–26.35 million for 2005 and 28.35–28.45 million for 2004."}

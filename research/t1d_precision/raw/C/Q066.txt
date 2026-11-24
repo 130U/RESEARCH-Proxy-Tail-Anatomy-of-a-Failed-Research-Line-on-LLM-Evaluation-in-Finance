@@ -1,0 +1,1 @@
+{"answer":"1152","unit":"million shares","expression":"1328 - 176","low":"1151","high":"1153","reliable_digits":"3","explanation":"Subtracting the acquisition shares from the 2012 balance gives 1152 million, with each displayed input uncertain by 0.5 million."}

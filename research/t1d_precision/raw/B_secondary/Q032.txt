@@ -1,0 +1,1 @@
+{"answer":"-9.78520286396","unit":"percent","expression":"(378 - 419) / 419 * 100","low":"-10.01191895113","high":"-9.55794504182","reliable_digits":"1","explanation":"Payments fall from $419 million to $378 million; allowing each figure to vary by $0.5 million gives the stated bounds."}

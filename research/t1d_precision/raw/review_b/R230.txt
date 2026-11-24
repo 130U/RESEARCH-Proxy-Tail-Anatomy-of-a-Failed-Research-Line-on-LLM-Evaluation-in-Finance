@@ -1,0 +1,5 @@
+{
+    "review_id": "R230",
+    "verdict": "valid",
+    "reason": "The bindings identify the rounded 2016 Priceline and NASDAQ index measurements, and dividing 313.45 by 216.54 gives the requested dimensionless ratio."
+  }

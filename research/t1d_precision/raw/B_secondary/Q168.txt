@@ -1,0 +1,1 @@
+{"answer":"-17.5879396985","unit":"percent","expression":"(164 - 199) / 199 * 100","low":"-18.0451127820","high":"-17.1284634761","reliable_digits":"1","explanation":"The expense decreases by about 17.6%, with bounds based on each displayed expense being rounded to the nearest million dollars."}

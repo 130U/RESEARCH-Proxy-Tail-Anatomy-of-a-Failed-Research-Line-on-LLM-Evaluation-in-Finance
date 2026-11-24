@@ -1,0 +1,1 @@
+{"answer":"2.4207746479","unit":"percent","expression":"(165 / 6816) * 100","low":"2.4132619379","high":"2.4282884601","reliable_digits":"2","explanation":"Inventory divided by working capital gives the percentage; allowing each amount to vary by 0.5 million leaves two significant digits reliable."}

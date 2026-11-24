@@ -1,0 +1,12 @@
+{
+  "corrected_rows_checked": 5661,
+  "joint_witnesses_checked": 2339,
+  "witness_types": {
+    "strict_interior_corner": 2241,
+    "center_already_outside": 98
+  },
+  "dependency_identity_passed": true,
+  "cancellation_passed": true,
+  "large_gold_offsets": 98,
+  "percent_reference_normalized": 2076
+}

@@ -1,0 +1,1 @@
+{"answer":"60","unit":"percent","expression":"(24 - 15) / 15 * 100","low":"51.61290322580645","high":"68.96551724137931","reliable_digits":"0","explanation":"Allowing each gain to vary by 0.5 million gives this range, so even the first significant digit is not reliable."}

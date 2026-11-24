@@ -1,0 +1,1 @@
+{"answer":"150","unit":"percent","expression":"(10 - 4) / 4 * 100","low":"111.111111111111","high":"200","reliable_digits":"0","explanation":"The reserve increased from $4 million to $10 million; rounding permits an increase ranging from approximately 111.11% to 200%."}

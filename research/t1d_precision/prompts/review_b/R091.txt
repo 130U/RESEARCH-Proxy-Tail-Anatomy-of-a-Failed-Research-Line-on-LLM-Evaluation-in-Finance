@@ -1,0 +1,186 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R091",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "year ."
+      },
+      {
+        "location": "text_1",
+        "text": "beginning in 2013 , the ventures pay dividends on a quarterly basis ."
+      },
+      {
+        "location": "text_2",
+        "text": "in 2013 , 2012 and 2011 , we received cash dividends of $ 92 million , $ 83 million and $ 78 million , respectively ."
+      },
+      {
+        "location": "text_3",
+        "text": "in 2012 our nantong venture completed an expansion of its acetate flake and acetate tow capacity , each by 30000 tons ."
+      },
+      {
+        "location": "text_4",
+        "text": "we made contributions of $ 29 million from 2009 through 2012 related to the capacity expansion in nantong ."
+      },
+      {
+        "location": "text_5",
+        "text": "similar expansions since the ventures were formed have led to earnings growth and increased dividends for the company ."
+      },
+      {
+        "location": "text_6",
+        "text": "according to the euromonitor database services , china is estimated to have had a 42% ( 42 % ) share of the world's 2012 cigarette consumption ."
+      },
+      {
+        "location": "text_7",
+        "text": "cigarette consumption in china is expected to grow at a rate of 1.9% ( 1.9 % ) per year from 2012 through 2017 ."
+      },
+      {
+        "location": "text_8",
+        "text": "combined , these ventures are a leader in chinese domestic acetate production and we believe we are well positioned to supply chinese cigarette producers ."
+      },
+      {
+        "location": "text_9",
+        "text": "although our ownership interest in each of our cellulose derivatives ventures exceeds 20% ( 20 % ) , we account for these investments using the cost method of accounting because we determined that we cannot exercise significant influence over these entities due to local government investment in and influence over these entities , limitations on our involvement in the day-to-day operations and the present inability of the entities to provide timely financial information prepared in accordance with generally accepted accounting principles in the united states of america ( \"us gaap\" ) ."
+      },
+      {
+        "location": "text_10",
+        "text": "2022 other equity method investments infraservs ."
+      },
+      {
+        "location": "text_11",
+        "text": "we hold indirect ownership interests in several german infraserv groups that own and develop industrial parks and provide on-site general and administrative support to tenants ."
+      },
+      {
+        "location": "text_12",
+        "text": "our ownership interest in the equity investments in infraserv affiliates are as follows : as of december 31 , 2013 ( in percentages ) ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "As of December 31, 2013 (In percentages)"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "InfraServ GmbH & Co. Gendorf KG",
+          "39"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "InfraServ GmbH & Co. Knapsack KG",
+          "27"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "InfraServ GmbH & Co. Hoechst KG",
+          "32"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_13",
+        "text": "research and development our businesses are innovation-oriented and conduct research and development activities to develop new , and optimize existing , production technologies , as well as to develop commercially viable new products and applications ."
+      },
+      {
+        "location": "text_14",
+        "text": "we consider the amounts spent during each of the last three fiscal years on research and development activities to be sufficient to execute our current strategic initiatives ."
+      },
+      {
+        "location": "text_15",
+        "text": "intellectual property we attach importance to protecting our intellectual property , including through patents , trademarks , copyrights and product designs in order to preserve our investment in research and development , manufacturing and marketing ."
+      },
+      {
+        "location": "text_16",
+        "text": "patents may cover processes , products , intermediate products and product uses ."
+      },
+      {
+        "location": "text_17",
+        "text": "we also seek to register trademarks as a means of protecting the brand names of our company and products ."
+      },
+      {
+        "location": "text_18",
+        "text": "we protect our intellectual property against infringement and also seek to register design protection where appropriate ."
+      },
+      {
+        "location": "text_19",
+        "text": "patents ."
+      },
+      {
+        "location": "text_20",
+        "text": "in most industrial countries , patent protection exists for new substances and formulations , as well as for certain unique applications and production processes ."
+      },
+      {
+        "location": "text_21",
+        "text": "however , we do business in regions of the world where intellectual property protection may be limited and difficult to enforce ."
+      },
+      {
+        "location": "text_22",
+        "text": "we maintain strict information security policies and procedures wherever we do business ."
+      },
+      {
+        "location": "text_23",
+        "text": "such information security policies and procedures include data encryption , controls over the disclosure and safekeeping of confidential information , as well as employee awareness training ."
+      },
+      {
+        "location": "text_24",
+        "text": "moreover , we monitor competitive developments and defend against infringements on our intellectual property rights ."
+      },
+      {
+        "location": "text_25",
+        "text": "trademarks ."
+      },
+      {
+        "location": "text_26",
+        "text": "aoplus ae , aoplus ae2 , aoplus ae3 , ateva ae , avicor ae , britecoat ae , celanese ae , celanex ae , celcon ae , celfx 2122 , celstran ae , celvolit ae , clarifoil ae , compel ae , duroset ae , ecovae ae , factor ae , fortron ae , gur ae , hostaform ae , impet ae , mowilith ae , nutrinova ae , qorus 2122 , riteflex ae , sunett ae , tcx 2122 , thermx ae , tufcor ae , vandar ae , vantage ae , vantageplus 2122 , vantage ae2 , vectra ae , vinamul ae , vitaldose ae , zenite ae and certain other branded products and services named in this document are registered or reserved trademarks or service marks owned or licensed by celanese ."
+      },
+      {
+        "location": "text_27",
+        "text": "the foregoing is not intended to be an exhaustive or comprehensive list of all registered or reserved trademarks and service marks owned or licensed by celanese ."
+      },
+      {
+        "location": "text_28",
+        "text": "fortron ae is a registered trademark of fortron industries llc. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the growth rate in dividends received in 2013 compare to 2012?",
+  "reference_program": "subtract(92, 83), divide(#0, 83)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "92",
+      "raw": "92",
+      "location": "text_2:57",
+      "context": "in 2013 , 2012 and 2011 , we received cash dividends of $ 92 million , $ 83 million and $ 78 million , respectively ."
+    },
+    "x1": {
+      "program_token": "83",
+      "raw": "83",
+      "location": "text_2:72",
+      "context": "in 2013 , 2012 and 2011 , we received cash dividends of $ 92 million , $ 83 million and $ 78 million , respectively ."
+    }
+  }
+}

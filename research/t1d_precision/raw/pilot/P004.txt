@@ -1,0 +1,1 @@
+{"answer":"92.0279313355","unit":"percent","expression":"(3163 / 3437) * 100","low":"92","high":"92.0558707988","reliable_digits":"3","explanation":"Each debt figure has rounding uncertainty of ±$0.5 million, giving bounds of (3162.5/3437.5)*100 and (3163.5/3436.5)*100."}

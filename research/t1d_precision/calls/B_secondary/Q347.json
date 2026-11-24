@@ -1,0 +1,26 @@
+{
+  "group": "B_secondary",
+  "id": "Q347",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "fresh_session": true,
+  "prompt_file": "prompts/B_secondary/Q347.txt",
+  "started_utc": "2026-11-17T11:13:41.247857+00:00",
+  "status": "completed",
+  "returncode": 0,
+  "attempt_number": 1,
+  "completed_utc": "2026-11-17T11:14:05.766628+00:00",
+  "elapsed_seconds": 24.515,
+  "thread_id": "01a1e936-70aa-7e40-827d-38449028b775",
+  "usage": {
+    "input_tokens": 21998,
+    "cached_input_tokens": 20096,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 714,
+    "reasoning_output_tokens": 617
+  },
+  "event_item_types": [
+    "agent_message"
+  ],
+  "tool_use_observed": false
+}

@@ -1,0 +1,200 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R219",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "jpmorgan chase & co ."
+      },
+      {
+        "location": "text_1",
+        "text": "/ 2008 annual report 85 of $ 1.0 billion and is also required to notify the securities and exchange commission ( 201csec 201d ) in the event that tentative net capital is less than $ 5.0 billion in accordance with the market and credit risk standards of appendix e of the net capital rule ."
+      },
+      {
+        "location": "text_2",
+        "text": "as of december 31 , 2008 , jpmorgan securities had tentative net capital in excess of the minimum and the notification requirements ."
+      },
+      {
+        "location": "text_3",
+        "text": "on october 1 , 2008 , j.p ."
+      },
+      {
+        "location": "text_4",
+        "text": "morgan securities inc ."
+      },
+      {
+        "location": "text_5",
+        "text": "merged with and into bear , stearns & co ."
+      },
+      {
+        "location": "text_6",
+        "text": "inc. , and the surviving entity changed its name to j.p ."
+      },
+      {
+        "location": "text_7",
+        "text": "morgan securities inc ."
+      },
+      {
+        "location": "text_8",
+        "text": "j.p ."
+      },
+      {
+        "location": "text_9",
+        "text": "morgan clearing corp. , a subsidiary of jpmorgan securities provides clearing and settlement services ."
+      },
+      {
+        "location": "text_10",
+        "text": "at december 31 , 2008 , j.p ."
+      },
+      {
+        "location": "text_11",
+        "text": "morgan clearing corp . 2019s net capital , as defined by the net capital rule , of $ 4.7 billion exceeded the minimum requirement by $ 3.3 billion ."
+      },
+      {
+        "location": "text_12",
+        "text": "dividends on february 23 , 2009 , the board of directors reduced the firm's quar- terly common stock dividend from $ 0.38 to $ 0.05 per share , effective for the dividend payable april 30 , 2009 , to shareholders of record on april 6 , 2009 ."
+      },
+      {
+        "location": "text_13",
+        "text": "jpmorgan chase declared quarterly cash dividends on its common stock in the amount of $ 0.38 for each quarter of 2008 and the second , third and fourth quarters of 2007 , and $ 0.34 per share for the first quarter of 2007 and for each quarter of 2006 ."
+      },
+      {
+        "location": "text_14",
+        "text": "the firm 2019s common stock dividend policy reflects jpmorgan chase 2019s earnings outlook , desired dividend payout ratios , need to maintain an adequate capital level and alternative investment opportunities ."
+      },
+      {
+        "location": "text_15",
+        "text": "the firm 2019s ability to pay dividends is subject to restrictions ."
+      },
+      {
+        "location": "text_16",
+        "text": "for information regarding such restrictions , see page 84 and note 24 and note 29 on pages 205 2013206 and 211 , respectively , of this annual report and for additional information regarding the reduction of the dividend , see page 44 ."
+      },
+      {
+        "location": "text_17",
+        "text": "the following table shows the common dividend payout ratio based upon reported net income ."
+      },
+      {
+        "location": "text_18",
+        "text": "common dividend payout ratio ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "Year ended December 31,",
+          "2008",
+          "2007",
+          "2006"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Common dividend payout ratio",
+          "114%",
+          "34%",
+          "34%"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_19",
+        "text": "issuance the firm issued $ 6.0 billion and $ 1.8 billion of noncumulative per- petual preferred stock on april 23 , 2008 , and august 21 , 2008 , respectively ."
+      },
+      {
+        "location": "text_20",
+        "text": "pursuant to the capital purchase program , on october 28 , 2008 , the firm issued to the u.s ."
+      },
+      {
+        "location": "text_21",
+        "text": "treasury $ 25.0 billion of cumu- lative preferred stock and a warrant to purchase up to 88401697 shares of the firm 2019s common stock ."
+      },
+      {
+        "location": "text_22",
+        "text": "for additional information regarding preferred stock , see note 24 on pages 205 2013206 of this annual report ."
+      },
+      {
+        "location": "text_23",
+        "text": "on september 30 , 2008 , the firm issued $ 11.5 billion , or 284 million shares , of common stock at $ 40.50 per share ."
+      },
+      {
+        "location": "text_24",
+        "text": "for additional infor- mation regarding common stock , see note 25 on pages 206 2013207 of this annual report ."
+      },
+      {
+        "location": "text_25",
+        "text": "stock repurchases during the year ended december 31 , 2008 , the firm did not repur- chase any shares of its common stock ."
+      },
+      {
+        "location": "text_26",
+        "text": "during 2007 , under the respective stock repurchase programs then in effect , the firm repur- chased 168 million shares for $ 8.2 billion at an average price per share of $ 48.60 ."
+      },
+      {
+        "location": "text_27",
+        "text": "the board of directors approved in april 2007 , a stock repurchase program that authorizes the repurchase of up to $ 10.0 billion of the firm 2019s common shares , which superseded an $ 8.0 billion stock repur- chase program approved in 2006 ."
+      },
+      {
+        "location": "text_28",
+        "text": "the $ 10.0 billion authorization includes shares to be repurchased to offset issuances under the firm 2019s employee stock-based plans ."
+      },
+      {
+        "location": "text_29",
+        "text": "the actual number of shares that may be repurchased is subject to various factors , including market conditions ; legal considerations affecting the amount and timing of repurchase activity ; the firm 2019s capital position ( taking into account goodwill and intangibles ) ; internal capital generation ; and alternative potential investment opportunities ."
+      },
+      {
+        "location": "text_30",
+        "text": "the repurchase program does not include specific price targets or timetables ; may be executed through open market purchases or privately negotiated transactions , or utiliz- ing rule 10b5-1 programs ; and may be suspended at any time ."
+      },
+      {
+        "location": "text_31",
+        "text": "a rule 10b5-1 repurchase plan allows the firm to repurchase shares during periods when it would not otherwise be repurchasing com- mon stock 2013 for example , during internal trading 201cblack-out peri- ods . 201d all purchases under a rule 10b5-1 plan must be made accord- ing to a predefined plan that is established when the firm is not aware of material nonpublic information ."
+      },
+      {
+        "location": "text_32",
+        "text": "as of december 31 , 2008 , $ 6.2 billion of authorized repurchase capacity remained under the current stock repurchase program ."
+      },
+      {
+        "location": "text_33",
+        "text": "for a discussion of restrictions on stock repurchases , see capital purchase program on page 84 and note 24 on pages 205 2013206 of this annual report ."
+      },
+      {
+        "location": "text_34",
+        "text": "for additional information regarding repurchases of the firm 2019s equity securities , see part ii , item 5 , market for registrant 2019s common equity , related stockholder matters and issuer purchases of equity securities , on page 17 of jpmorgan chase 2019s 2008 form 10-k. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the minimum capital requirement as defined by the net capital rule in millions",
+  "reference_program": "subtract(4.7, 3.3)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "4.7",
+      "raw": "4.7",
+      "location": "text_11:84",
+      "context": "morgan clearing corp . 2019s net capital , as defined by the net capital rule , of $ 4.7 billion exceeded the minimum requirement by $ 3.3 billion ."
+    },
+    "x1": {
+      "program_token": "3.3",
+      "raw": "3.3",
+      "location": "text_11:134",
+      "context": "morgan clearing corp . 2019s net capital , as defined by the net capital rule , of $ 4.7 billion exceeded the minimum requirement by $ 3.3 billion ."
+    }
+  }
+}

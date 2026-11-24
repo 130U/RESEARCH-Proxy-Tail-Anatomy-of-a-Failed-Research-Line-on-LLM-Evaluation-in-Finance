@@ -1,0 +1,5 @@
+{
+    "review_id": "R253",
+    "verdict": "invalid",
+    "reason": "The 40-year endpoint is a specified depreciation-policy limit and must be treated as exact, even though dividing 100 by it gives the minimum straight-line percentage rate."
+  }

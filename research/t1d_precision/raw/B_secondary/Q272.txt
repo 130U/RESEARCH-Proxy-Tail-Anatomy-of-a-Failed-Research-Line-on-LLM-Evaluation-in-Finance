@@ -1,0 +1,1 @@
+{"answer":"218.5","unit":"US$ million","expression":"(265 + 172) / 2","low":"218","high":"219","reliable_digits":"2","explanation":"The midpoint averages the +100bp and +200bp earnings exposures, each rounded to the nearest US$ million."}

@@ -1,0 +1,1 @@
+{"answer":"38.6","unit":"ratio","expression":"19.3 / 0.5","low":"35","high":"43","reliable_digits":"1","explanation":"Dividing $19.3 million by $0.5 million gives 38.6, with rounding bounds of 19.25 / 0.55 and 19.35 / 0.45."}

@@ -1,0 +1,40 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+supplementary information on oil and gas producing activities ( unaudited ) c o n t i n u e d summary of changes in standardized measure of discounted future net cash flows relating to proved oil and gas reserves ( in millions ) 2004 2003 2002 sales and transfers of oil and gas produced , net of production , transportation , and administrative costs $ ( 2715 ) $ ( 2487 ) $ ( 1983 ) net changes in prices and production , transportation and administrative costs related to future production 950 1178 2795 .
+
+TABLE
+<i>(In millions)</i> | 2004 | 2003 | 2002
+Sales and transfers of oil and gas produced, net of production, transportation, and administrative costs | $(2,715) | $(2,487) | $(1,983)
+Net changes in prices and production, transportation and administrative costs related to future production | 950 | 1,178 | 2,795
+Extensions, discoveries and improved recovery, less related costs | 1,352 | 618 | 1,032
+Development costs incurred during the period | 711 | 802 | 499
+Changes in estimated future development costs | (556) | (478) | (297)
+Revisions of previous quantity estimates | 494 | 348 | 311
+Net changes in purchases and sales of minerals in place | 33 | (531) | 737
+Net change in exchanges of minerals in place | – | 403 | –
+Accretion of discount | 790 | 807 | 417
+Net change in income taxes | (529) | 65 | (1,288)
+Timing and other | (62) | (165) | 2
+Net change for the year | 468 | 560 | 2,225
+Beginning of year | 6,001 | 5,441 | 3,216
+End of year | $6,469 | $6,001 | $5,441
+Net change for the year from discontinued operations | $– | $(384) | $212
+
+.
+
+QUESTION
+what was the 2004 rate of decrease in development costs?

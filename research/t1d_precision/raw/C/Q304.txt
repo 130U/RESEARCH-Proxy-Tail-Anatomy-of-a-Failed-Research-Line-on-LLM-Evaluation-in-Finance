@@ -1,0 +1,1 @@
+{"answer":"8.352941176470588","unit":"percent","expression":"(850 - 779) / 850 * 100","low":"8.24014125956445","high":"8.46560846560847","reliable_digits":"1","explanation":"Allowing each borrowing figure to vary by 0.5 gives these bounds, supporting one reliable significant digit."}

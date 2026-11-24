@@ -1,0 +1,45 @@
+# T1 input sources and parseability
+
+Check date: 2026-11-16 (America/New_York). This file only records data preparation and structural checks; at this stage no hypothesis measurement of answer intervals, out-of-tolerance rates or continue/abandon was run.
+
+## Pinned inputs
+
+| Data | Pinned upstream version | Local location | Records actually read |
+|---|---|---|---:|
+| FinQA train | `0f16e2867befa6840783e58be38c9efb9229d742` | `data/finqa/train.json` | 6,251 |
+| FinQA dev | Same as above | `data/finqa/dev.json` | 883 |
+| FinQA public test | Same as above | `data/finqa/test.json` | 1,147 |
+| TAT-QA dev | `870accc41953dcde885aabeb963d94aabdc0fbc3` | `data/tatqa/dev.json` | 278 document groups, 1,668 questions |
+
+FinQA has 8,281 questions in total; the private test, which does not provide gold programs, was not downloaded. The counts above come from reading the JSON structure of the downloaded files; they are not research results. The pinned versions are confirmed by the official [FinQA commit](https://github.com/czyssrs/FinQA/commit/0f16e2867befa6840783e58be38c9efb9229d742) and [TAT-QA commit](https://github.com/NExTplusplus/TAT-QA/commit/870accc41953dcde885aabeb963d94aabdc0fbc3), respectively.
+
+The root of both official repositories provides an MIT License: FinQA is Copyright (c) 2021 Zhiyu Chen; TAT-QA is Copyright (c) 2021 Fengbin Zhu. The original license texts were saved with the downloads as `LICENSE` in each data directory, corresponding to [FinQA LICENSE](https://github.com/czyssrs/FinQA/blob/0f16e2867befa6840783e58be38c9efb9229d742/LICENSE) and [TAT-QA LICENSE](https://github.com/NExTplusplus/TAT-QA/blob/870accc41953dcde885aabeb963d94aabdc0fbc3/LICENSE). This deliverable commits the downloader and the derived analyses; the raw downloaded files are excluded by this directory's `.gitignore`.
+
+Running `python research/t1_rounding/download_inputs.py` from the repository root re-fetches the pinned versions above and the official evaluation source files. The downloader uses only the Python standard library; it downloads each file completely and checks that the JSON is readable before writing to disk; existing files are skipped. No model calls or paid APIs. The FinQA files are large and are downloaded from the official raw pinned-commit URLs; the first TAT-QA connection was interrupted, the re-download succeeded, and no incomplete file was kept.
+
+## FinQA: feasible, but numbers must be bound to their sources
+
+Each record contains `pre_text`, `post_text`, `table_ori`, `table`, `filename`, `id` and `qa`. `qa` contains `question`, `answer`, `program`, `program_re`, `steps`, `gold_inds`, `ann_table_rows`, `ann_text_rows`, `exe_ans`. There are also retrieval results, which cannot be treated as new source disclosures. [Official data](https://github.com/czyssrs/FinQA/tree/0f16e2867befa6840783e58be38c9efb9229d742/dataset)
+
+- `qa.answer` is a string in all three splits, which preserves human-answer formats such as `127.40` and `93.5%`; `qa.exe_ans` is mostly a float, with a few `yes` / `no`. The human answer format and the execution scale must be handled separately.
+- `table_ori` keeps the original table strings, including commas, parenthesized negatives, HTML, and trailing zeros such as `5.0`; `table` is a preprocessed representation. `pre_text` / `post_text` are already extracted and preprocessed text, not the verbatim layout of the original PDF. So this data preparation supports "the precision displayed in the document representation provided by the benchmark"; it cannot guarantee recovery of the full layout, trailing zeros or full-text information of the original PDF.
+- `gold_inds` and `ann_table_rows` mark supporting rows, but do not give a unique cell coordinate for each program operand. When the same value occurs several times in different years, rows or columns, one cannot assert from equal values alone that they are the same variable, nor treat multiple references to the same source as independent perturbations.
+- `const_*` is a DSL encoding and cannot always be interpreted as a mathematically exact constant. In the first example below, `const_5` actually stands for the reported displayed value `5.0`. Conversely, ratio conversions such as `const_100` and count constants for averaging should remain exact; they must be classified by use.
+- The displayed decimals of `steps[*].res` should not be used to reconstruct intermediate errors: the official executor does not round at each step, and calls `round(this_res, 5)` only on the final result. The human intermediate answers in `steps` and program execution are different layers.
+
+### Concrete pitfalls
+
+1. **A data-encoded constant is not an exact mathematical constant.** `V/2008/page_17.pdf-1` asks for American Express's average payment volume per transaction. The program is `divide(637, const_5)`; in the corresponding row of `table_ori`, Payments Volume is `637` (billions) and Total Transactions is `5.0` (billions); the human answer is `127.40` and the executed answer is `127.4`. Holding `const_5` fixed would miss the rounding uncertainty of the input denominator. [dev data](https://github.com/czyssrs/FinQA/blob/0f16e2867befa6840783e58be38c9efb9229d742/dataset/dev.json)
+2. **Percentage programs do not use a uniform scale.** In `C/2017/page_328.pdf-1`, the answer `93.5%` corresponds to `subtract(193.5, const_100), divide(#0, const_100)`, with executed answer `0.935`. In `DVN/2007/page_58.pdf-2`, the answer `24.69%` corresponds to `divide(60, 243), multiply(#0, const_100)`, with executed answer `24.69136`. One cannot uniformly divide every human answer containing `%` by 100 and compare it directly with the execution result. [dev data](https://github.com/czyssrs/FinQA/blob/0f16e2867befa6840783e58be38c9efb9229d742/dataset/dev.json)
+3. **Preprocessing pseudo-numbers.** In `DVN/2007/page_58.pdf-2`, the original cell for International NGLs is an em dash `—`, which `table` encodes as `2014`. Years, footnotes, missing-value symbols and HTML encodings must be excluded from perturbable financial quantities. [dev data](https://github.com/czyssrs/FinQA/blob/0f16e2867befa6840783e58be38c9efb9229d742/dataset/dev.json)
+4. **Parentheses and table operations.** `AES/2016/page_191.pdf-3` uses `table_average(settlements, none)`; the preprocessed rows are `-13 ( 13 )`, `-19 ( 19 )`, `-2 ( 2 )`. The official `process_row` strips `$` and truncates `(` and everything after it, giving negative numbers. After aligning with the official center value, intervals should be built from the original displayed digits in `table_ori`, rather than treating the numbers in parentheses as additional independent inputs. [dev data and official executor](https://github.com/czyssrs/FinQA/blob/0f16e2867befa6840783e58be38c9efb9229d742/code/evaluate/evaluate.py)
+
+The official DSL supports `add`, `subtract`, `multiply`, `divide`, `exp`, `greater` and `table_max`, `table_min`, `table_sum`, `table_average`. `#k` refers to the earlier step k; the first argument of a table operation is the row name, and the second is usually `none`. The final executed value is rounded to five decimals and compared for equality directly with `qa.exe_ans`; **it is not a 1% relative tolerance, nor rounding to the decimals of `qa.answer`**. T1's two scoring rule sets should be named additional audit conventions. [Official evaluate.py](https://github.com/czyssrs/FinQA/blob/0f16e2867befa6840783e58be38c9efb9229d742/code/evaluate/evaluate.py)
+
+## TAT-QA: the actual cost of the optional extension
+
+The dev set has 1,668 questions: `answer_type=arithmetic` 718, `span` 701, `multi-span` 217, `count` 32. Each document group contains `table`, `paragraphs`, `questions`; questions have fields such as `derivation`, `scale` and `rel_paragraphs`. The `derivation` of an arithmetic question is an infix expression, for example `44.1-56.7`, not FinQA's DSL. [Pinned dev set](https://github.com/NExTplusplus/TAT-QA/blob/870accc41953dcde885aabeb963d94aabdc0fbc3/dataset_raw/tatqa_dataset_dev.json)
+
+A concrete example: `eb787966-fa02-401f-bfaf-ccabf3828b23` asks for the change in Other in 2019 compared with 2018, with `derivation=44.1-56.7`, `answer=-12.6`, `scale=million`; the source table keeps the strings `44.1` and `56.7`. But arithmetic answers are usually JSON floats/ints, and Python `str(float)` cannot reliably recover the trailing zeros the authors originally intended to display. A TAT-QA extension would need a separate safe infix parser, scale normalization and source binding, and questions whose "gold displayed digits" cannot be recovered would have to be listed separately; precision must not be fabricated.
+
+The official TAT-QA metric and number-handling code are also saved locally for checking during analysis; one should not assume that its scoring matches FinQA's: [tatqa_metric.py](https://github.com/NExTplusplus/TAT-QA/blob/870accc41953dcde885aabeb963d94aabdc0fbc3/tatqa_metric.py), [tatqa_utils.py](https://github.com/NExTplusplus/TAT-QA/blob/870accc41953dcde885aabeb963d94aabdc0fbc3/tatqa_utils.py).

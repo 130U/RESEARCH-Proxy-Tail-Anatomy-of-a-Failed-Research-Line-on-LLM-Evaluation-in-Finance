@@ -1,0 +1,1 @@
+{"answer":"5.98792","unit":"percent","expression":"(438861 - 414067) / 414067 * 100","low":"5.98767109","high":"5.98816857","reliable_digits":"4","explanation":"Each total may vary by 0.5 million, and both resulting bounds round to 5.988%, supporting four significant digits."}

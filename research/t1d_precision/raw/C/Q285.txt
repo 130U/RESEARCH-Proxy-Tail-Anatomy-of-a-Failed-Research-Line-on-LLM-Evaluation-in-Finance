@@ -1,0 +1,1 @@
+{"answer":"38.81487107","unit":"million dollars","expression":"342313 * 113.39 / 1000000","low":"38.813159505","high":"38.816582635","reliable_digits":"4","explanation":"For the September 1–28 reporting period, multiply the exact share count by the average price, whose rounding uncertainty is ±$0.005."}

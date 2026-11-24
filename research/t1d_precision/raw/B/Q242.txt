@@ -1,0 +1,1 @@
+{"answer":"13.7847222222","unit":"percent","expression":"(3277 - 2880) / 2880 * 100","low":"13.7476132616","high":"13.8218440702","reliable_digits":"2","explanation":"Each cash-flow figure has rounding uncertainty of $0.5 million, giving these bounds and two reliable significant digits."}

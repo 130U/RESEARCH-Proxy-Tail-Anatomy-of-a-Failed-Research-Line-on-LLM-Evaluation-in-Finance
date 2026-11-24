@@ -1,0 +1,1 @@
+{"answer":"44.8409001511","unit":"percent","expression":"43319 / 96606 * 100","low":"44.8401505075","high":"44.8416498025","reliable_digits":"4","explanation":"Each revenue figure is rounded to the nearest million, giving the stated bounds and four reliable significant digits."}

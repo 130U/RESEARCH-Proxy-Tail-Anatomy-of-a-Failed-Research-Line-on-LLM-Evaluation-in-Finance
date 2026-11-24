@@ -1,0 +1,198 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R031",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "during the first quarter of fiscal 2010 , the company recorded an additional charge of $ 4.7 million related to this cost reduction action ."
+      },
+      {
+        "location": "text_1",
+        "text": "approximately $ 3.4 million of the charge related to lease obligation costs for the cambridge wafer fabrication facility , which the company ceased using in the first quarter of fiscal 2010 ."
+      },
+      {
+        "location": "text_2",
+        "text": "the remaining $ 1.3 million of the charge related to clean-up and closure costs that were expensed as incurred ."
+      },
+      {
+        "location": "text_3",
+        "text": "6 ."
+      },
+      {
+        "location": "text_4",
+        "text": "acquisitions in fiscal 2006 , the company acquired substantially all the outstanding stock of privately-held integrant technologies , inc ."
+      },
+      {
+        "location": "text_5",
+        "text": "( integrant ) of seoul , korea ."
+      },
+      {
+        "location": "text_6",
+        "text": "the acquisition enabled the company to enter the mobile tv market and strengthened its presence in the asian region ."
+      },
+      {
+        "location": "text_7",
+        "text": "the company paid $ 8.4 million related to the purchase of shares from the founder of integrant during the period from july 2007 through july 2009 ."
+      },
+      {
+        "location": "text_8",
+        "text": "the company recorded these payments as additional goodwill ."
+      },
+      {
+        "location": "text_9",
+        "text": "in fiscal 2006 , the company acquired all the outstanding stock of privately-held audioasics a/s ( audioasics ) of roskilde , denmark ."
+      },
+      {
+        "location": "text_10",
+        "text": "the acquisition of audioasics allows the company to continue developing low-power audio solutions , while expanding its presence in the nordic and eastern european regions ."
+      },
+      {
+        "location": "text_11",
+        "text": "the company paid additional cash payments of $ 3.1 million during fiscal 2009 for the achievement of revenue-based milestones during the period from october 2006 through january 2009 , which were recorded as additional goodwill ."
+      },
+      {
+        "location": "text_12",
+        "text": "in addition , the company paid $ 3.2 million during fiscal 2009 based on the achievement of technological milestones during the period from october 2006 through january 2009 , which were recorded as compensation expense in fiscal 2008 ."
+      },
+      {
+        "location": "text_13",
+        "text": "all revenue and technological milestones related to this acquisition have been met and no additional payments will be made ."
+      },
+      {
+        "location": "text_14",
+        "text": "the company has not provided pro forma results of operations for integrant and audioasics herein as they were not material to the company on either an individual or an aggregate basis ."
+      },
+      {
+        "location": "text_15",
+        "text": "the company included the results of operations of each acquisition in its consolidated statement of income from the date of such acquisition ."
+      },
+      {
+        "location": "text_16",
+        "text": "7 ."
+      },
+      {
+        "location": "text_17",
+        "text": "deferred compensation plan investments investments in the analog devices , inc ."
+      },
+      {
+        "location": "text_18",
+        "text": "deferred compensation plan ( the deferred compensation plan ) are classified as trading ."
+      },
+      {
+        "location": "text_19",
+        "text": "the components of the investments as of october 30 , 2010 and october 31 , 2009 were as follows: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2010",
+          "2009"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Money market funds",
+          "$1,840",
+          "$1,730"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Mutual funds",
+          "6,850",
+          "6,213"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Total Deferred Compensation Plan investments — short and long-term",
+          "$8,690",
+          "$7,943"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_20",
+        "text": "the fair values of these investments are based on published market quotes on october 30 , 2010 and october 31 , 2009 , respectively ."
+      },
+      {
+        "location": "text_21",
+        "text": "adjustments to the fair value of , and income pertaining to , deferred compensation plan investments are recorded in operating expenses ."
+      },
+      {
+        "location": "text_22",
+        "text": "gross realized and unrealized gains and losses from trading securities were not material in fiscal 2010 , 2009 or 2008 ."
+      },
+      {
+        "location": "text_23",
+        "text": "the company has recorded a corresponding liability for amounts owed to the deferred compensation plan participants ( see note 10 ) ."
+      },
+      {
+        "location": "text_24",
+        "text": "these investments are specifically designated as available to the company solely for the purpose of paying benefits under the deferred compensation plan ."
+      },
+      {
+        "location": "text_25",
+        "text": "however , in the event the company became insolvent , the investments would be available to all unsecured general creditors ."
+      },
+      {
+        "location": "text_26",
+        "text": "8 ."
+      },
+      {
+        "location": "text_27",
+        "text": "other investments other investments consist of equity securities and other long-term investments ."
+      },
+      {
+        "location": "text_28",
+        "text": "investments are stated at fair value , which is based on market quotes or on a cost-basis , dependent on the nature of the investment , as appropriate ."
+      },
+      {
+        "location": "text_29",
+        "text": "adjustments to the fair value of investments classified as available-for-sale are recorded as an increase or decrease analog devices , inc ."
+      },
+      {
+        "location": "text_30",
+        "text": "notes to consolidated financial statements 2014 ( continued ) ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the growth rate in the balance of mutual funds in 2010?",
+  "reference_program": "subtract(6850, 6213), divide(#0, 6213)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "6850",
+      "raw": "6,850",
+      "location": "table_2:1",
+      "context": "Mutual funds | 2010"
+    },
+    "x1": {
+      "program_token": "6213",
+      "raw": "6,213",
+      "location": "table_2:2",
+      "context": "Mutual funds | 2009"
+    }
+  }
+}

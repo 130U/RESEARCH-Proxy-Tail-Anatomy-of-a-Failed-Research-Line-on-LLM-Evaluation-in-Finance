@@ -1,0 +1,196 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R160",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "concentration of credit risk financial instruments that potentially subject us to concentrations of credit risk consist of cash and cash equivalents , trade accounts receivable and derivative instruments ."
+      },
+      {
+        "location": "text_1",
+        "text": "we place our cash and cash equivalents with high quality financial institutions ."
+      },
+      {
+        "location": "text_2",
+        "text": "such balances may be in excess of fdic insured limits ."
+      },
+      {
+        "location": "text_3",
+        "text": "to manage the related credit exposure , we continually monitor the credit worthiness of the financial institutions where we have deposits ."
+      },
+      {
+        "location": "text_4",
+        "text": "concentrations of credit risk with respect to trade accounts receivable are limited due to the wide variety of customers and markets in which we provide services , as well as the dispersion of our operations across many geographic areas ."
+      },
+      {
+        "location": "text_5",
+        "text": "we provide services to commercial , industrial , municipal and residential customers in the united states and puerto rico ."
+      },
+      {
+        "location": "text_6",
+        "text": "we perform ongoing credit evaluations of our customers , but do not require collateral to support customer receivables ."
+      },
+      {
+        "location": "text_7",
+        "text": "we establish an allowance for doubtful accounts based on various factors including the credit risk of specific customers , age of receivables outstanding , historical trends , economic conditions and other information ."
+      },
+      {
+        "location": "text_8",
+        "text": "no customer exceeded 5% ( 5 % ) of our outstanding accounts receivable balance at december 31 , 2010 or 2009 ."
+      },
+      {
+        "location": "text_9",
+        "text": "accounts receivable , net of allowance for doubtful accounts accounts receivable represent receivables from customers for collection , transfer , recycling , disposal and other services ."
+      },
+      {
+        "location": "text_10",
+        "text": "our receivables are recorded when billed or when the related revenue is earned , if earlier , and represent claims against third parties that will be settled in cash ."
+      },
+      {
+        "location": "text_11",
+        "text": "the carrying value of our receivables , net of the allowance for doubtful accounts , represents their estimated net realizable value ."
+      },
+      {
+        "location": "text_12",
+        "text": "provisions for doubtful accounts are evaluated on a monthly basis and are recorded based on our historical collection experience , the age of the receivables , specific customer information and economic conditions ."
+      },
+      {
+        "location": "text_13",
+        "text": "we also review outstanding balances on an account-specific basis ."
+      },
+      {
+        "location": "text_14",
+        "text": "in general , reserves are provided for accounts receivable in excess of ninety days old ."
+      },
+      {
+        "location": "text_15",
+        "text": "past due receivable balances are written-off when our collection efforts have been unsuccess- ful in collecting amounts due ."
+      },
+      {
+        "location": "text_16",
+        "text": "the following table reflects the activity in our allowance for doubtful accounts for the years ended december 31 , 2010 , 2009 and 2008: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2010",
+          "2009",
+          "2008"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Balance at beginning of year",
+          "$55.2",
+          "$65.7",
+          "$14.7"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Additions charged to expense",
+          "23.6",
+          "27.3",
+          "36.5"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Accounts written-off",
+          "(27.9)",
+          "(37.8)",
+          "(12.7)"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Acquisitions",
+          "-",
+          "-",
+          "27.2"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Balance at end of year",
+          "$50.9",
+          "$55.2",
+          "$65.7"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_17",
+        "text": "in 2008 , subsequent to the allied acquisition , we recorded a provision for doubtful accounts of $ 14.2 million to adjust the allowance acquired from allied to conform to republic 2019s accounting policies ."
+      },
+      {
+        "location": "text_18",
+        "text": "we also recorded $ 5.4 million to provide for specific bankruptcy exposures in 2008 ."
+      },
+      {
+        "location": "text_19",
+        "text": "restricted cash and restricted marketable securities as of december 31 , 2010 , we had $ 172.8 million of restricted cash and restricted marketable securities ."
+      },
+      {
+        "location": "text_20",
+        "text": "we obtain funds through the issuance of tax-exempt bonds for the purpose of financing qualifying expenditures at our landfills , transfer stations , and collection and recycling facilities ."
+      },
+      {
+        "location": "text_21",
+        "text": "the funds are deposited directly into trust accounts by the bonding authorities at the time of issuance ."
+      },
+      {
+        "location": "text_22",
+        "text": "as the use of these funds is contractually restricted , and we do not have the ability to use these funds for general operating purposes , they are classified as restricted cash in our consolidated balance sheets ."
+      },
+      {
+        "location": "text_23",
+        "text": "in the normal course of business , we may be required to provide financial assurance to governmental agencies and a variety of other entities in connection with municipal residential collection contracts , closure or post- republic services , inc ."
+      },
+      {
+        "location": "text_24",
+        "text": "notes to consolidated financial statements , continued ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "as of december 31 , 2010 what was the ratio of the restricted cash and restricted marketable securities to the allowance for doubtful accounts",
+  "reference_program": "divide(172.8, 50.9)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "172.8",
+      "raw": "172.8",
+      "location": "text_19:88",
+      "context": "restricted cash and restricted marketable securities as of december 31 , 2010 , we had $ 172.8 million of restricted cash and restricted marketable securities ."
+    },
+    "x1": {
+      "program_token": "50.9",
+      "raw": "50.9",
+      "location": "table_5:1",
+      "context": "Balance at end of year | 2010"
+    }
+  }
+}

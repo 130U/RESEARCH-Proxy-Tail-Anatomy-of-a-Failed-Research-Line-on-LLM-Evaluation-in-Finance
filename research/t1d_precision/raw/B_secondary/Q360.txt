@@ -1,0 +1,1 @@
+{"answer":"251599.67","unit":"thousand dollars","expression":"4,999 * 50.33","low":"251574.675","high":"251624.665","reliable_digits":"4","explanation":"The share count is exact; allowing the per-share fair value to range from $50.325 to $50.335 gives these bounds, which agree to four significant digits when rounded."}

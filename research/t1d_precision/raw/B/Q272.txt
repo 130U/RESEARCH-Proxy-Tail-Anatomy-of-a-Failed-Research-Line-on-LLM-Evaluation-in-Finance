@@ -1,0 +1,1 @@
+{"answer":"218.5","unit":"US$ million","expression":"(172 + 265) / 2","low":"218","high":"219","reliable_digits":"2","explanation":"The midpoint averages the 2005 exposures for +100bp and +200bp, each rounded to the nearest US$ million."}

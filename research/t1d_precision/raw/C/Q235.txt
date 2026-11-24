@@ -1,0 +1,1 @@
+{"answer":"8.2840236686","unit":"percent","expression":"(14 / 169) * 100","low":"7.9646017699","high":"8.6053412463","reliable_digits":"1","explanation":"Each total is rounded to the nearest million, giving bounds of (13.5 / 169.5) * 100 and (14.5 / 168.5) * 100."}

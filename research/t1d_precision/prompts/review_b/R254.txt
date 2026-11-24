@@ -1,0 +1,155 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R254",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "entergy louisiana , inc ."
+      },
+      {
+        "location": "text_1",
+        "text": "management's financial discussion and analysis results of operations net income 2004 compared to 2003 net income decreased $ 18.7 million primarily due to lower net revenue , partially offset by lower other operation and maintenance expenses ."
+      },
+      {
+        "location": "text_2",
+        "text": "2003 compared to 2002 net income increased slightly primarily due to higher net revenue and lower interest charges , almost entirely offset by higher other operation and maintenance expenses , higher depreciation and amortization expenses , and higher taxes other than income taxes ."
+      },
+      {
+        "location": "text_3",
+        "text": "net revenue 2004 compared to 2003 net revenue , which is entergy louisiana's measure of gross margin , consists of operating revenues net of : 1 ) fuel , fuel-related , and purchased power expenses and 2 ) other regulatory credits ."
+      },
+      {
+        "location": "text_4",
+        "text": "following is an analysis of the change in net revenue comparing 2004 to 2003. ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "(In Millions)"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2003 net revenue",
+          "$973.7"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Price applied to unbilled sales",
+          "(31.9)"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Deferred fuel cost revisions",
+          "(29.4)"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Rate refund provisions",
+          "(12.2)"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Volume/weather",
+          "17.0"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Summer capacity charges",
+          "11.8"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Other",
+          "2.3"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "2004 net revenue",
+          "$931.3"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_5",
+        "text": "the price applied to the unbilled sales variance is due to a decrease in the fuel price included in unbilled sales in 2004 caused primarily by the effect of nuclear plant outages in 2003 on average fuel costs ."
+      },
+      {
+        "location": "text_6",
+        "text": "the deferred fuel cost revisions variance resulted from a revised unbilled sales pricing estimate made in the first quarter of 2003 to more closely align the fuel component of that pricing with expected recoverable fuel costs ."
+      },
+      {
+        "location": "text_7",
+        "text": "rate refund provisions caused a decrease in net revenue due to additional provisions recorded in 2004 compared to 2003 for potential rate actions and refunds ."
+      },
+      {
+        "location": "text_8",
+        "text": "the volume/weather variance is due to a total increase of 620 gwh in weather-adjusted usage in all sectors , partially offset by the effect of milder weather on billed sales in the residential and commercial sectors ."
+      },
+      {
+        "location": "text_9",
+        "text": "the summer capacity charges variance is due to the amortization in 2003 of deferred capacity charges for the summer of 2001 compared to the absence of the amortization in 2004 ."
+      },
+      {
+        "location": "text_10",
+        "text": "the amortization of these capacity charges began in august 2002 and ended in july 2003. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the decrease in net income as a percentage of the the decrease in net revenue from 2003 to 2004?",
+  "reference_program": "subtract(973.7, 931.3), divide(18.7, #0)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "973.7",
+      "raw": "973.7",
+      "location": "table_1:1",
+      "context": "2003 net revenue | (In Millions)"
+    },
+    "x1": {
+      "program_token": "931.3",
+      "raw": "931.3",
+      "location": "table_8:1",
+      "context": "2004 net revenue | (In Millions)"
+    },
+    "x2": {
+      "program_token": "18.7",
+      "raw": "18.7",
+      "location": "text_1:124",
+      "context": "management's financial discussion and analysis results of operations net income 2004 compared to 2003 net income decreased $ 18.7 million primarily due to lower net revenue , partially offset by lower other operation and maintenance expenses ."
+    }
+  }
+}

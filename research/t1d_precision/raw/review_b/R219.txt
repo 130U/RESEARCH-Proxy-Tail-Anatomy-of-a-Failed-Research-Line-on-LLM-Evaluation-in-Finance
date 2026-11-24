@@ -1,0 +1,5 @@
+{
+    "review_id": "R219",
+    "verdict": "invalid",
+    "reason": "Both bound amounts are in billions of dollars, so their subtraction requires conversion to millions to answer the question in its requested units."
+  }

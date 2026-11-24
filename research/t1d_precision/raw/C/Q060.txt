@@ -1,0 +1,1 @@
+{"answer":"12","unit":"percent","expression":"(84 - 75) / 75 * 100","low":"10.5960264901","high":"13.4228187919","reliable_digits":"1","explanation":"Rental expense increased from $75 million to $84 million; allowing each figure to vary by $0.5 million gives the stated bounds."}

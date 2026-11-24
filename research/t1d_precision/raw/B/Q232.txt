@@ -1,0 +1,1 @@
+{"answer":"0.84375","unit":"ratio","expression":"54 / 64","low":"0.8294573643410853","high":"0.8582677165354331","reliable_digits":"0","explanation":"For 2019 divided by 2018, rounding permits ratios from 53.5/64.5 to 54.5/63.5, which do not round identically even at one significant digit."}

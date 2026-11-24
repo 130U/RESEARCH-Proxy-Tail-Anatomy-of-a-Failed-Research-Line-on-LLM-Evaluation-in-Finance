@@ -1,0 +1,1 @@
+{"answer":"93.3012048192771","unit":"index points","expression":"88 + (88 - 83) / 83 * 88","low":"91.6916167664671","high":"94.9363636363636","reliable_digits":"1","explanation":"Interpreting the question as repeating the proportional increase from 2008 to 2009, the bounds allow half-point rounding of both indices."}

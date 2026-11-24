@@ -1,0 +1,3579 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only a JSON array, with one object for each supplied material in the supplied order, using its anonymous call_id and the requested fields.
+
+Assess each material independently. Do not infer a common answer or prevalence from the batch. Do not combine items or omit any item.
+
+MATERIALS
+[
+  {
+    "call_id": "S017",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "westrock company notes to consolidated financial statements fffd ( continued ) a reconciliation of the beginning and ending amount of gross unrecognized tax benefits is as follows ( in millions ) : ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2018",
+            "2017",
+            "2016"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Balance at beginning of fiscal year",
+            "$148.9",
+            "$166.8",
+            "$106.6"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Additions related to purchase accounting<sup>(1)</sup>",
+            "3.4",
+            "7.7",
+            "16.5"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Additions for tax positions taken in current year",
+            "3.1",
+            "5.0",
+            "30.3"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Additions for tax positions taken in prior fiscal years",
+            "18.0",
+            "15.2",
+            "20.6"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Reductions for tax positions taken in prior fiscal years",
+            "(5.3)",
+            "(25.6)",
+            "(9.7)"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Reductions due to settlement<sup>(2)</sup>",
+            "(29.4)",
+            "(14.1)",
+            "(1.3)"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "(Reductions) additions for currency translation adjustments",
+            "(9.6)",
+            "2.0",
+            "7.0"
+          ]
+        },
+        {
+          "row_index": 8,
+          "cells": [
+            "Reductions as a result of a lapse of the applicable statute oflimitations",
+            "(2.0)",
+            "(8.1)",
+            "(3.2)"
+          ]
+        },
+        {
+          "row_index": 9,
+          "cells": [
+            "Balance at end of fiscal year",
+            "$127.1",
+            "$148.9",
+            "$166.8"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_1",
+          "text": "( 1 ) amounts in fiscal 2018 and 2017 relate to the mps acquisition ."
+        },
+        {
+          "location": "text_2",
+          "text": "adjustments in fiscal 2016 relate to the combination and the sp fiber acquisition ."
+        },
+        {
+          "location": "text_3",
+          "text": "( 2 ) amounts in fiscal 2018 relate to the settlement of state audit examinations and federal and state amended returns filed related to affirmative adjustments for which a there was a reserve ."
+        },
+        {
+          "location": "text_4",
+          "text": "amounts in fiscal 2017 relate to the settlement of federal and state audit examinations with taxing authorities ."
+        },
+        {
+          "location": "text_5",
+          "text": "as of september 30 , 2018 and 2017 , the total amount of unrecognized tax benefits was approximately $ 127.1 million and $ 148.9 million , respectively , exclusive of interest and penalties ."
+        },
+        {
+          "location": "text_6",
+          "text": "of these balances , as of september 30 , 2018 and 2017 , if we were to prevail on all unrecognized tax benefits recorded , approximately $ 108.7 million and $ 138.0 million , respectively , would benefit the effective tax rate ."
+        },
+        {
+          "location": "text_7",
+          "text": "we regularly evaluate , assess and adjust the related liabilities in light of changing facts and circumstances , which could cause the effective tax rate to fluctuate from period to period ."
+        },
+        {
+          "location": "text_8",
+          "text": "we recognize estimated interest and penalties related to unrecognized tax benefits in income tax expense in the consolidated statements of operations ."
+        },
+        {
+          "location": "text_9",
+          "text": "as of september 30 , 2018 , we had liabilities of $ 70.4 million related to estimated interest and penalties for unrecognized tax benefits ."
+        },
+        {
+          "location": "text_10",
+          "text": "as of september 30 , 2017 , we had liabilities of $ 81.7 million , net of indirect benefits , related to estimated interest and penalties for unrecognized tax benefits ."
+        },
+        {
+          "location": "text_11",
+          "text": "our results of operations for the fiscal year ended september 30 , 2018 , 2017 and 2016 include expense of $ 5.8 million , $ 7.4 million and $ 2.9 million , respectively , net of indirect benefits , related to estimated interest and penalties with respect to the liability for unrecognized tax benefits ."
+        },
+        {
+          "location": "text_12",
+          "text": "as of september 30 , 2018 , it is reasonably possible that our unrecognized tax benefits will decrease by up to $ 5.5 million in the next twelve months due to expiration of various statues of limitations and settlement of issues ."
+        },
+        {
+          "location": "text_13",
+          "text": "we file federal , state and local income tax returns in the u.s ."
+        },
+        {
+          "location": "text_14",
+          "text": "and various foreign jurisdictions ."
+        },
+        {
+          "location": "text_15",
+          "text": "with few exceptions , we are no longer subject to u.s ."
+        },
+        {
+          "location": "text_16",
+          "text": "federal and state and local income tax examinations by tax authorities for years prior to fiscal 2015 and fiscal 2008 , respectively ."
+        },
+        {
+          "location": "text_17",
+          "text": "we are no longer subject to non-u.s ."
+        },
+        {
+          "location": "text_18",
+          "text": "income tax examinations by tax authorities for years prior to fiscal 2011 , except for brazil for which we are not subject to tax examinations for years prior to 2005 ."
+        },
+        {
+          "location": "text_19",
+          "text": "while we believe our tax positions are appropriate , they are subject to audit or other modifications and there can be no assurance that any modifications will not materially and adversely affect our results of operations , financial condition or cash flows ."
+        },
+        {
+          "location": "text_20",
+          "text": "note 6 ."
+        },
+        {
+          "location": "text_21",
+          "text": "segment information we report our financial results of operations in the following three reportable segments : corrugated packaging , which consists of our containerboard mill and corrugated packaging operations , as well as our recycling operations ; consumer packaging , which consists of consumer mills , folding carton , beverage , merchandising displays and partition operations ; and land and development , which sells real estate primarily in the charleston , sc region ."
+        },
+        {
+          "location": "text_22",
+          "text": "following the combination and until the completion of the separation , our financial results of operations had a fourth reportable segment , specialty chemicals ."
+        },
+        {
+          "location": "text_23",
+          "text": "prior to the hh&b sale , our consumer packaging segment included hh&b ."
+        },
+        {
+          "location": "text_24",
+          "text": "certain income and expenses are not allocated to our segments and , thus , the information that ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what percent would the balance by the end of 2018 increase if the unrecognized tax benefits were included?",
+    "human_answer": "194.1%",
+    "reference_program": "add(108.7, 138.0), add(#0, 127.1), subtract(#1, 127.1), divide(#2, 127.1)",
+    "reference_execution_value": 1.94099,
+    "model_response": {
+      "answer": "55.39",
+      "unit": "percent",
+      "expression": "70.4 / 127.1 * 100",
+      "explanation": "Including the $70.4 million of related interest and penalties would increase the $127.1 million year-end balance by approximately 55.39%."
+    }
+  },
+  {
+    "call_id": "S018",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "annual maturities as of december 31 , 2006 are scheduled as follows: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "2007",
+            "$2.6"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2008<sup>1</sup>",
+            "2.8"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2009",
+            "257.0"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2010",
+            "240.9"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2011",
+            "500.0"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Thereafter",
+            "1,247.9"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Total long-term debt",
+            "$2,251.2"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_1",
+          "text": "1 in addition , holders of our $ 400.0 4.50% ( 4.50 % ) notes may require us to repurchase their 4.50% ( 4.50 % ) notes for cash at par in march 2008 ."
+        },
+        {
+          "location": "text_2",
+          "text": "these notes will mature in 2023 if not converted or repurchased ."
+        },
+        {
+          "location": "text_3",
+          "text": "redemption of long-term debt in august 2005 , we redeemed the remainder of our 7.875% ( 7.875 % ) senior unsecured notes with an aggregate principal amount of $ 250.0 at maturity for a total cost of $ 258.6 , which included the principal amount of the notes , accrued interest to the redemption date , and a prepayment penalty of $ 1.4 ."
+        },
+        {
+          "location": "text_4",
+          "text": "to redeem these notes we used the proceeds from the sale and issuance in july 2005 of $ 250.0 floating rate senior unsecured notes due 2008 ."
+        },
+        {
+          "location": "text_5",
+          "text": "floating rate senior unsecured notes in december 2006 , we exchanged all of our $ 250.0 floating rate notes due 2008 for $ 250.0 aggregate principal amount floating rate notes due 2010 ."
+        },
+        {
+          "location": "text_6",
+          "text": "the new floating rate notes mature on november 15 , 2010 and bear interest at a per annum rate equal to three-month libor plus 200 basis points , 125 basis points less than the interest rate on the old floating rate notes ."
+        },
+        {
+          "location": "text_7",
+          "text": "in connection with the exchange , we made an early participation payment of $ 41.25 ( actual amount ) in cash per $ 1000 ( actual amount ) principal amount of old floating rate notes for a total payment of $ 10.3 ."
+        },
+        {
+          "location": "text_8",
+          "text": "in accordance with eitf issue no ."
+        },
+        {
+          "location": "text_9",
+          "text": "96-19 , debtor 2019s accounting for a modification or exchange of debt instruments ( 201ceitf 96-19 201d ) , this transaction is treated as an exchange of debt for accounting purposes because the present value of the remaining cash flows under the terms of the original instrument are not substantially different from those of the new instrument ."
+        },
+        {
+          "location": "text_10",
+          "text": "the new floating rate notes are reflected on our consolidated balance sheet net of the $ 10.3 early participation payment , which is amortized over the life of the new floating rate notes as a discount , using an effective interest method , and recorded in interest expense ."
+        },
+        {
+          "location": "text_11",
+          "text": "direct fees associated with the exchange of $ 3.5 were reflected in interest expense ."
+        },
+        {
+          "location": "text_12",
+          "text": "4.25% ( 4.25 % ) and 4.50% ( 4.50 % ) convertible senior notes in november 2006 , we exchanged $ 400.0 of our 4.50% ( 4.50 % ) convertible senior notes due 2023 ( the 201c4.50% ( 201c4.50 % ) notes 201d ) for $ 400.0 aggregate principal amount of 4.25% ( 4.25 % ) convertible senior notes due 2023 ( the 201c4.25% ( 201c4.25 % ) notes 201d ) ."
+        },
+        {
+          "location": "text_13",
+          "text": "as required by eitf 96-19 , this exchange is treated as an extinguishment of the 4.50% ( 4.50 % ) notes and an issuance of 4.25% ( 4.25 % ) notes for accounting purposes because the present value of the remaining cash flows plus the fair value of the embedded conversion option under the terms of the original instrument are substantially different from those of the new instrument ."
+        },
+        {
+          "location": "text_14",
+          "text": "as a result , the 4.25% ( 4.25 % ) notes are reflected on our consolidated balance sheet at their fair value at issuance , or $ 477.0 ."
+        },
+        {
+          "location": "text_15",
+          "text": "we recorded a non-cash charge in the fourth quarter of 2006 of $ 77.0 reflecting the difference between the fair value of the new debt and the carrying value of the old debt ."
+        },
+        {
+          "location": "text_16",
+          "text": "the difference between fair value and carrying value will be amortized through march 15 , 2012 , which is the first date holders may require us to repurchase the 4.25% ( 4.25 % ) notes , resulting in a reduction of reported interest expense in future periods ."
+        },
+        {
+          "location": "text_17",
+          "text": "we also recorded a non-cash charge of $ 3.8 for the extinguishment of unamortized debt issuance costs related to the exchanged 4.50% ( 4.50 % ) notes ."
+        },
+        {
+          "location": "text_18",
+          "text": "our 4.25% ( 4.25 % ) notes are convertible into our common stock at a conversion price of $ 12.42 per share , subject to adjustment in specified circumstances including any payment of cash dividends on our common stock ."
+        },
+        {
+          "location": "text_19",
+          "text": "the conversion rate of the new notes is also subject to adjustment for certain events arising from stock splits and combinations , stock dividends , certain cash dividends and certain other actions by us that modify our capital notes to consolidated financial statements 2014 ( continued ) ( amounts in millions , except per share amounts ) %%transmsg*** transmitting job : y31000 pcn : 072000000 ***%%pcmsg|72 |00009|yes|no|02/28/2007 01:12|0|0|page is valid , no graphics -- color : d| ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what percent increase in long-term debt did the floating rate notes maturing in 2010?",
+    "human_answer": "107.6%",
+    "reference_program": "subtract(500.0, 240.9), divide(#0, 240.9)",
+    "reference_execution_value": 1.07555,
+    "model_response": {
+      "answer": "10.70",
+      "unit": "percent",
+      "expression": "240.9 / 2251.2 * 100",
+      "explanation": "The debt maturing in 2010 represents approximately 10.70% of total long-term debt."
+    }
+  },
+  {
+    "call_id": "S019",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "2012 ppg annual report and form 10-k 27 operations in 2011 compared to 2010 , but the increase was reduced by cash used to fund an increase in working capital of $ 212 million driven by our sales growth in 2011 ."
+        },
+        {
+          "location": "text_1",
+          "text": "operating working capital is a subset of total working capital and represents ( 1 ) trade receivables-net of the allowance for doubtful accounts , plus ( 2 ) inventories on a first- in , first-out ( 201cfifo 201d ) basis , less ( 3 ) trade creditors 2019 liabilities ."
+        },
+        {
+          "location": "text_2",
+          "text": "see note 3 , 201cworking capital detail 201d under item 8 of this form 10-k for further information related to the components of the company 2019s operating working capital ."
+        },
+        {
+          "location": "text_3",
+          "text": "we believe operating working capital represents the key components of working capital under the operating control of our businesses ."
+        },
+        {
+          "location": "text_4",
+          "text": "operating working capital at december 31 , 2012 and 2011 was $ 2.9 billion and $ 2.7 billion , respectively ."
+        },
+        {
+          "location": "text_5",
+          "text": "a key metric we use to measure our working capital management is operating working capital as a percentage of sales ( fourth quarter sales annualized ) . ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "(Millions, except percentages)",
+            "2012",
+            "2011"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Trade Receivables, net",
+            "$2,568",
+            "$2,512"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Inventories, FIFO",
+            "1,930",
+            "1,839"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Trade Creditor's Liabilities",
+            "1,620",
+            "1,612"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Operating Working Capital",
+            "$2,878",
+            "$2,739"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Operating Working Capital as % of Sales",
+            "19.7%",
+            "19.5%"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_6",
+          "text": "operating working capital at december 31 , 2012 increased $ 139 million compared with the prior year end level ; however , excluding the impact of currency and acquisitions , the change was a decrease of $ 21 million during the year ended december 31 , 2012 ."
+        },
+        {
+          "location": "text_7",
+          "text": "this decrease was the net result of decreases in all components of operating working capital ."
+        },
+        {
+          "location": "text_8",
+          "text": "trade receivables from customers , net , as a percentage of fourth quarter sales , annualized , for 2012 was 17.6% ( 17.6 % ) , down slightly from 17.9% ( 17.9 % ) for 2011 ."
+        },
+        {
+          "location": "text_9",
+          "text": "days sales outstanding was 61 days in 2012 , a one day improvement from 2011 ."
+        },
+        {
+          "location": "text_10",
+          "text": "inventories on a fifo basis as a percentage of fourth quarter sales , annualized , for 2012 was 13.2% ( 13.2 % ) up slightly from 13.1% ( 13.1 % ) in 2011 ."
+        },
+        {
+          "location": "text_11",
+          "text": "inventory turnover was 4.8 times in 2012 and 5.0 times in 2011 ."
+        },
+        {
+          "location": "text_12",
+          "text": "total capital spending , including acquisitions , was $ 533 million , $ 446 million and $ 341 million in 2012 , 2011 , and 2010 , respectively ."
+        },
+        {
+          "location": "text_13",
+          "text": "spending related to modernization and productivity improvements , expansion of existing businesses and environmental control projects was $ 411 million , $ 390 million and $ 307 million in 2012 , 2011 , and 2010 , respectively , and is expected to be in the range of $ 350-$ 450 million during 2013 ."
+        },
+        {
+          "location": "text_14",
+          "text": "capital spending , excluding acquisitions , as a percentage of sales was 2.7% ( 2.7 % ) , 2.6% ( 2.6 % ) and 2.3% ( 2.3 % ) in 2012 , 2011 and 2010 , respectively ."
+        },
+        {
+          "location": "text_15",
+          "text": "capital spending related to business acquisitions amounted to $ 122 million , $ 56 million , and $ 34 million in 2012 , 2011 and 2010 , respectively ."
+        },
+        {
+          "location": "text_16",
+          "text": "a primary focus for the corporation in 2013 will continue to be prudent cash deployment focused on profitable earnings growth including pursuing opportunities for additional strategic acquisitions ."
+        },
+        {
+          "location": "text_17",
+          "text": "in january 2013 , ppg received $ 900 million in cash proceeds in connection with the closing of the separation of its commodity chemicals business and subsequent merger of the subsidiary holding the ppg commodity chemicals business with a subsidiary of georgia gulf ."
+        },
+        {
+          "location": "text_18",
+          "text": "refer to note 25 , 201cseparation and merger transaction 201d for financial information regarding the separation of the commodity chemicals business ."
+        },
+        {
+          "location": "text_19",
+          "text": "in december 2012 , the company reached a definitive agreement to acquire the north american architectural coatings business of akzo nobel , n.v. , amsterdam , in a deal valued at $ 1.05 billion ."
+        },
+        {
+          "location": "text_20",
+          "text": "the transaction has been approved by the boards of directors of both companies and is expected to close in the first half of 2013 , subject to regulatory approvals ."
+        },
+        {
+          "location": "text_21",
+          "text": "in december 2012 , the company acquired spraylat corp. , a privately-owned industrial coatings company based in pelham , n.y ."
+        },
+        {
+          "location": "text_22",
+          "text": "in january 2012 , the company completed the previously announced acquisitions of colpisa , a colombian producer of automotive oem and refinish coatings , and dyrup , a european architectural coatings company ."
+        },
+        {
+          "location": "text_23",
+          "text": "the total cost of 2012 acquisitions , including assumed debt , was $ 288 million ."
+        },
+        {
+          "location": "text_24",
+          "text": "dividends paid to shareholders totaled $ 358 million , $ 355 million and $ 360 million in 2012 , 2011 and 2010 , respectively ."
+        },
+        {
+          "location": "text_25",
+          "text": "ppg has paid uninterrupted annual dividends since 1899 , and 2012 marked the 41st consecutive year of increased annual dividend payments to shareholders ."
+        },
+        {
+          "location": "text_26",
+          "text": "we did not have a mandatory contribution to our u.s ."
+        },
+        {
+          "location": "text_27",
+          "text": "defined benefit pension plans in 2012 and we did not make a voluntary contribution to these plans ."
+        },
+        {
+          "location": "text_28",
+          "text": "in 2011 and 2010 , we made voluntary contributions to our u.s ."
+        },
+        {
+          "location": "text_29",
+          "text": "defined benefit pension plans of $ 50 million and $ 250 million , respectively ."
+        },
+        {
+          "location": "text_30",
+          "text": "we do not expect to make a contribution to our u.s ."
+        },
+        {
+          "location": "text_31",
+          "text": "defined benefit pension plans in 2013 ."
+        },
+        {
+          "location": "text_32",
+          "text": "contributions were made to our non-u.s ."
+        },
+        {
+          "location": "text_33",
+          "text": "defined benefit pension plans of $ 81 million , $ 71 million and $ 87 million for 2012 , 2011 and 2010 , respectively , some of which were required by local funding requirements ."
+        },
+        {
+          "location": "text_34",
+          "text": "we expect to make mandatory contributions to our non-u.s ."
+        },
+        {
+          "location": "text_35",
+          "text": "plans in 2013 in the range of approximately $ 75 million to $ 100 million ."
+        },
+        {
+          "location": "text_36",
+          "text": "the company 2019s share repurchase activity in 2012 , 2011 and 2010 was 1 million shares at a cost of $ 92 million , 10.2 million shares at a cost of $ 858 million and 8.1 million shares at a cost of $ 586 million , respectively ."
+        },
+        {
+          "location": "text_37",
+          "text": "no ppg stock was purchased in the last nine months of 2012 during the completion of the separation of its commodity chemicals business and subsequent merger of the subsidiary holding the ppg commodity chemicals business with a subsidiary of georgia gulf ."
+        },
+        {
+          "location": "text_38",
+          "text": "the company reinitiated our share repurchase activity in the first quarter of 2013 ."
+        },
+        {
+          "location": "text_39",
+          "text": "we anticipate spending between $ 500 million and $ 750 million for share repurchases during 2013 ."
+        },
+        {
+          "location": "text_40",
+          "text": "we can repurchase nearly 8 million shares under the current authorization from the board of directors ."
+        },
+        {
+          "location": "text_41",
+          "text": "in september 2012 , ppg entered into a five-year credit agreement ( the \"credit agreement\" ) with several banks and financial institutions as further discussed in note 8 , \"debt and bank credit agreements and leases\" ."
+        },
+        {
+          "location": "text_42",
+          "text": "the credit agreement provides for a $ 1.2 billion unsecured revolving credit facility ."
+        },
+        {
+          "location": "text_43",
+          "text": "in connection with entering into this credit agreement , the table of contents ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the difference in millions of capital spending related to business acquisitions from 2011 to 2012?",
+    "human_answer": "22",
+    "reference_program": "subtract(56, 34)",
+    "reference_execution_value": 22.0,
+    "model_response": {
+      "answer": "66",
+      "unit": "million dollars",
+      "expression": "122 - 56",
+      "explanation": "Capital spending related to business acquisitions increased by $66 million from 2011 to 2012."
+    }
+  },
+  {
+    "call_id": "S020",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "american tower corporation and subsidiaries notes to consolidated financial statements 2014 ( continued ) the 7.50% ( 7.50 % ) notes mature on may 1 , 2012 and interest is payable semi-annually in arrears on may 1 and november 1 each year beginning may 1 , 2004 ."
+        },
+        {
+          "location": "text_1",
+          "text": "the company may redeem the 7.50% ( 7.50 % ) notes after may 1 , 2008 ."
+        },
+        {
+          "location": "text_2",
+          "text": "the initial redemption price on the 7.50% ( 7.50 % ) notes is 103.750% ( 103.750 % ) of the principal amount , subject to a ratable decline after may 1 of the following year to 100% ( 100 % ) of the principal amount in 2010 and thereafter ."
+        },
+        {
+          "location": "text_3",
+          "text": "the company may also redeem up to 35% ( 35 % ) of the 7.50% ( 7.50 % ) notes any time prior to february 1 , 2007 ( at a price equal to 107.50% ( 107.50 % ) of the principal amount of the notes plus accrued and unpaid interest , if any ) , with the net cash proceeds of certain public equity offerings within sixty days after the closing of any such offering ."
+        },
+        {
+          "location": "text_4",
+          "text": "the 7.50% ( 7.50 % ) notes rank equally with the 5.0% ( 5.0 % ) convertible notes and its 93 20448% ( 20448 % ) notes and are structurally and effectively junior to indebtedness outstanding under the credit facilities , the ati 12.25% ( 12.25 % ) notes and the ati 7.25% ( 7.25 % ) notes ."
+        },
+        {
+          "location": "text_5",
+          "text": "the indenture for the 7.50% ( 7.50 % ) notes contains certain covenants that restrict the company 2019s ability to incur more debt ; guarantee indebtedness ; issue preferred stock ; pay dividends ; make certain investments ; merge , consolidate or sell assets ; enter into transactions with affiliates ; and enter into sale leaseback transactions ."
+        },
+        {
+          "location": "text_6",
+          "text": "6.25% ( 6.25 % ) notes redemption 2014in february 2004 , the company completed the redemption of all of its outstanding $ 212.7 million principal amount of 6.25% ( 6.25 % ) notes ."
+        },
+        {
+          "location": "text_7",
+          "text": "the 6.25% ( 6.25 % ) notes were redeemed pursuant to the terms of the indenture at 102.083% ( 102.083 % ) of the principal amount plus unpaid and accrued interest ."
+        },
+        {
+          "location": "text_8",
+          "text": "the total aggregate redemption price was $ 221.9 million , including $ 4.8 million in accrued interest ."
+        },
+        {
+          "location": "text_9",
+          "text": "the company will record a charge of $ 7.1 million in the first quarter of 2004 from the loss on redemption and write-off of deferred financing fees ."
+        },
+        {
+          "location": "text_10",
+          "text": "other debt repurchases 2014from january 1 , 2004 to march 11 , 2004 , the company repurchased $ 36.2 million principal amount of its 5.0% ( 5.0 % ) notes for approximately $ 36.1 million in cash and made a $ 21.0 million voluntary prepayment of term loan a under its credit facilities ."
+        },
+        {
+          "location": "text_11",
+          "text": "giving effect to the issuance of the 7.50% ( 7.50 % ) notes and the use of the net proceeds to redeem all of the outstanding 6.25% ( 6.25 % ) notes ; repurchases of $ 36.2 million principal amount of the 5.0% ( 5.0 % ) notes ; and a voluntary prepayment of $ 21.0 million of the term a loan under the credit facilities ; the company 2019s aggregate principal payments of long- term debt , including capital leases , for the next five years and thereafter are as follows ( in thousands ) : year ending december 31 ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "2004",
+            "$73,684"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2005",
+            "109,435"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2006",
+            "145,107"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2007",
+            "688,077"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2008",
+            "808,043"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Thereafter",
+            "1,875,760"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Total cash obligations",
+            "3,700,106"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Accreted value of original issue discount of the ATI 12.25% Notes",
+            "(339,601)"
+          ]
+        },
+        {
+          "row_index": 8,
+          "cells": [
+            "Accreted value of the related warrants",
+            "(44,247)"
+          ]
+        },
+        {
+          "row_index": 9,
+          "cells": [
+            "Total",
+            "$3,316,258"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_12",
+          "text": "atc mexico holding 2014in january 2004 , mr ."
+        },
+        {
+          "location": "text_13",
+          "text": "gearon exercised his previously disclosed right to require the company to purchase his 8.7% ( 8.7 % ) interest in atc mexico ."
+        },
+        {
+          "location": "text_14",
+          "text": "giving effect to the january 2004 exercise of options described below , the company owns an 88% ( 88 % ) interest in atc mexico , which is the subsidiary through which the company conducts its mexico operations ."
+        },
+        {
+          "location": "text_15",
+          "text": "the purchase price for mr ."
+        },
+        {
+          "location": "text_16",
+          "text": "gearon 2019s interest in atc mexico is subject to review by an independent financial advisor , and is payable in cash or shares of the company 2019s class a common stock , at the company 2019s option ."
+        },
+        {
+          "location": "text_17",
+          "text": "the company intends to pay the purchase price in shares of its class a common stock , and closing is expected to occur in the second quarter of 2004 ."
+        },
+        {
+          "location": "text_18",
+          "text": "in addition , the company expects that payment of a portion of the purchase price will be contingent upon atc mexico meeting certain performance objectives. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the interest rate on the redeemed 6.25 notes in 2004",
+    "human_answer": "2.3%",
+    "reference_program": "divide(4.8, 212.7)",
+    "reference_execution_value": 0.02257,
+    "model_response": {
+      "answer": "6.25",
+      "unit": "percent",
+      "expression": "6.25 * 1",
+      "explanation": "The notes redeemed in February 2004 carried a 6.25% interest rate."
+    }
+  },
+  {
+    "call_id": "S021",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "required to maintain a fhlb stock investment currently equal to the lesser of : a percentage of 0.2% ( 0.2 % ) of total bank assets ; or a dollar cap amount of $ 25 million ."
+        },
+        {
+          "location": "text_1",
+          "text": "additionally , the bank must maintain an activity based stock investment which is currently equal to 4.5% ( 4.5 % ) of the bank 2019s outstanding advances at the time of borrowing ."
+        },
+        {
+          "location": "text_2",
+          "text": "on a quarterly basis the fhlb atlanta evaluates excess activity based stock holdings for its members and makes a determination regarding quarterly redemption of any excess activity based stock positions ."
+        },
+        {
+          "location": "text_3",
+          "text": "the company had an investment in fhlb stock of $ 140.2 million and $ 164.4 million at december 31 , 2011 and 2010 , respectively ."
+        },
+        {
+          "location": "text_4",
+          "text": "the company must also maintain qualified collateral as a percent of its advances , which varies based on the collateral type , and is further adjusted by the outcome of the most recent annual collateral audit and by fhlb 2019s internal ranking of the bank 2019s creditworthiness ."
+        },
+        {
+          "location": "text_5",
+          "text": "these advances are secured by a pool of mortgage loans and mortgage-backed securities ."
+        },
+        {
+          "location": "text_6",
+          "text": "at december 31 , 2011 and 2010 , the company pledged loans with a lendable value of $ 5.0 billion and $ 5.6 billion , respectively , of the one- to four-family and home equity loans as collateral in support of both its advances and unused borrowing lines ."
+        },
+        {
+          "location": "text_7",
+          "text": "during the year ended december 31 , 2009 , the company paid down in advance of maturity $ 1.6 billion of its fhlb advances ."
+        },
+        {
+          "location": "text_8",
+          "text": "the company recorded a loss on the early extinguishment of fhlb advances of $ 50.6 million for the year ended december 31 , 2009 ."
+        },
+        {
+          "location": "text_9",
+          "text": "this loss is recorded in the gains ( losses ) on early extinguishment of debt line item in the consolidated statement of income ( loss ) ."
+        },
+        {
+          "location": "text_10",
+          "text": "the company did not have any similar transactions for the years ended december 31 , 2011 and 2010 ."
+        },
+        {
+          "location": "text_11",
+          "text": "other borrowings 2014etbh raised capital in the past through the formation of trusts , which sell trust preferred securities in the capital markets ."
+        },
+        {
+          "location": "text_12",
+          "text": "the capital securities must be redeemed in whole at the due date , which is generally 30 years after issuance ."
+        },
+        {
+          "location": "text_13",
+          "text": "each trust issued floating rate cumulative preferred securities ( 201ctrust preferred securities 201d ) , at par with a liquidation amount of $ 1000 per capital security ."
+        },
+        {
+          "location": "text_14",
+          "text": "the trusts used the proceeds from the sale of issuances to purchase floating rate junior subordinated debentures ( 201csubordinated debentures 201d ) issued by etbh , which guarantees the trust obligations and contributed proceeds from the sale of its subordinated debentures to e*trade bank in the form of a capital contribution ."
+        },
+        {
+          "location": "text_15",
+          "text": "the most recent issuance of trust preferred securities occurred in 2007 ."
+        },
+        {
+          "location": "text_16",
+          "text": "the face values of outstanding trusts at december 31 , 2011 are shown below ( dollars in thousands ) : trusts face value maturity date annual interest rate ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "Trusts",
+            "Face Value",
+            "Maturity Date",
+            "Annual Interest Rate"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "ETBH Capital Trust II",
+            "$5,000",
+            "2031",
+            "10.25%"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "ETBH Capital Trust I",
+            "20,000",
+            "2031",
+            "3.75% above 6-month LIBOR"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "ETBH Capital Trust V, VI, VIII",
+            "51,000",
+            "2032",
+            "3.25%-3.65% above 3-month LIBOR"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "ETBH Capital Trust VII, IX—XII",
+            "65,000",
+            "2033",
+            "3.00%-3.30% above 3-month LIBOR"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "ETBH Capital Trust XIII—XVIII, XX",
+            "77,000",
+            "2034",
+            "2.45%-2.90% above 3-month LIBOR"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "ETBH Capital Trust XIX, XXI, XXII",
+            "60,000",
+            "2035",
+            "2.20%-2.40% above 3-month LIBOR"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "ETBH Capital Trust XXIII—XXIV",
+            "45,000",
+            "2036",
+            "2.10% above 3-month LIBOR"
+          ]
+        },
+        {
+          "row_index": 8,
+          "cells": [
+            "ETBH Capital Trust XXV—XXX",
+            "110,000",
+            "2037",
+            "1.90%-2.00% above 3-month LIBOR"
+          ]
+        },
+        {
+          "row_index": 9,
+          "cells": [
+            "Total",
+            "$433,000",
+            "",
+            ""
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_17",
+          "text": "as of december 31 , 2011 and 2010 , other borrowings also included $ 2.3 million and $ 19.3 million , respectively , of collateral pledged to the bank by its derivatives counterparties to reduce credit exposure to changes in market value ."
+        },
+        {
+          "location": "text_18",
+          "text": "as of december 31 , 2010 , other borrowings also included $ 0.5 million of overnight and other short-term borrowings in connection with the federal reserve bank 2019s treasury , tax and loan programs ."
+        },
+        {
+          "location": "text_19",
+          "text": "the company pledged $ 0.8 million of securities to secure these borrowings from the federal reserve bank as of december 31 , 2010. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "as of december 31 , 2010 , what was the ratio of collateral pledged to the bank by its derivatives counterparties to overnight and other short-term borrowings",
+    "human_answer": "4.6",
+    "reference_program": "divide(2.3, 0.5)",
+    "reference_execution_value": 4.6,
+    "model_response": {
+      "answer": "38.6",
+      "unit": "ratio",
+      "expression": "19.3 / 0.5",
+      "explanation": "The ratio is $19.3 million of pledged collateral divided by $0.5 million of overnight and other short-term borrowings."
+    }
+  },
+  {
+    "call_id": "S022",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "humana inc ."
+        },
+        {
+          "location": "text_1",
+          "text": "notes to consolidated financial statements 2014 ( continued ) amortization expense for other intangible assets was approximately $ 75 million in 2017 , $ 77 million in 2016 , and $ 93 million in 2015 ."
+        },
+        {
+          "location": "text_2",
+          "text": "the following table presents our estimate of amortization expense for each of the five next succeeding fiscal years: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "(in millions)"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "For the years ending December 31,",
+            ""
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2018",
+            "$64"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2019",
+            "54"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2020",
+            "52"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "2021",
+            "19"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "2022",
+            "16"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_3",
+          "text": "."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percent of the decline in amortization expense for other intangible assets from 2016 to 2017",
+    "human_answer": "-2.6%",
+    "reference_program": "subtract(75, 77), divide(#0, 77)",
+    "reference_execution_value": -0.02597,
+    "model_response": {
+      "answer": "2.5974025974025974",
+      "unit": "percent",
+      "expression": "(77-75)/77*100",
+      "explanation": "Amortization expense declined from $77 million in 2016 to $75 million in 2017."
+    }
+  },
+  {
+    "call_id": "S023",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "the following table summarizes the short-term borrowing activity for awcc for the years ended december 31: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2017",
+            "2016"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Average borrowings",
+            "$779",
+            "$850"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Maximum borrowings outstanding",
+            "1,135",
+            "1,016"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Weighted average interest rates, computed on daily basis",
+            "1.24%",
+            "0.78%"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Weighted average interest rates, as of December 31",
+            "1.61%",
+            "0.98%"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_1",
+          "text": "the credit facility requires the company to maintain a ratio of consolidated debt to consolidated capitalization of not more than 0.70 to 1.00 ."
+        },
+        {
+          "location": "text_2",
+          "text": "the ratio as of december 31 , 2017 was 0.59 to 1.00 ."
+        },
+        {
+          "location": "text_3",
+          "text": "none of the company 2019s borrowings are subject to default or prepayment as a result of a downgrading of securities , although such a downgrading could increase fees and interest charges under the company 2019s credit facility ."
+        },
+        {
+          "location": "text_4",
+          "text": "as part of the normal course of business , the company routinely enters contracts for the purchase and sale of water , energy , fuels and other services ."
+        },
+        {
+          "location": "text_5",
+          "text": "these contracts either contain express provisions or otherwise permit the company and its counterparties to demand adequate assurance of future performance when there are reasonable grounds for doing so ."
+        },
+        {
+          "location": "text_6",
+          "text": "in accordance with the contracts and applicable contract law , if the company is downgraded by a credit rating agency , especially if such downgrade is to a level below investment grade , it is possible that a counterparty would attempt to rely on such a downgrade as a basis for making a demand for adequate assurance of future performance ."
+        },
+        {
+          "location": "text_7",
+          "text": "depending on the company 2019s net position with the counterparty , the demand could be for the posting of collateral ."
+        },
+        {
+          "location": "text_8",
+          "text": "in the absence of expressly agreed provisions that specify the collateral that must be provided , the obligation to supply the collateral requested will be a function of the facts and circumstances of the company 2019s situation at the time of the demand ."
+        },
+        {
+          "location": "text_9",
+          "text": "if the company can reasonably claim that it is willing and financially able to perform its obligations , it may be possible that no collateral would need to be posted or that only an amount equal to two or three months of future payments should be sufficient ."
+        },
+        {
+          "location": "text_10",
+          "text": "the company does not expect to post any collateral which will have a material adverse impact on the company 2019s results of operations , financial position or cash flows ."
+        },
+        {
+          "location": "text_11",
+          "text": "note 12 : general taxes the following table summarizes the components of general tax expense for the years ended december 31 : 2017 2016 2015 gross receipts and franchise ."
+        },
+        {
+          "location": "text_12",
+          "text": "."
+        },
+        {
+          "location": "text_13",
+          "text": "."
+        },
+        {
+          "location": "text_14",
+          "text": "."
+        },
+        {
+          "location": "text_15",
+          "text": "."
+        },
+        {
+          "location": "text_16",
+          "text": "."
+        },
+        {
+          "location": "text_17",
+          "text": "."
+        },
+        {
+          "location": "text_18",
+          "text": "."
+        },
+        {
+          "location": "text_19",
+          "text": "."
+        },
+        {
+          "location": "text_20",
+          "text": "."
+        },
+        {
+          "location": "text_21",
+          "text": "."
+        },
+        {
+          "location": "text_22",
+          "text": "."
+        },
+        {
+          "location": "text_23",
+          "text": "."
+        },
+        {
+          "location": "text_24",
+          "text": "."
+        },
+        {
+          "location": "text_25",
+          "text": "."
+        },
+        {
+          "location": "text_26",
+          "text": "."
+        },
+        {
+          "location": "text_27",
+          "text": "."
+        },
+        {
+          "location": "text_28",
+          "text": "."
+        },
+        {
+          "location": "text_29",
+          "text": "."
+        },
+        {
+          "location": "text_30",
+          "text": "."
+        },
+        {
+          "location": "text_31",
+          "text": "."
+        },
+        {
+          "location": "text_32",
+          "text": "."
+        },
+        {
+          "location": "text_33",
+          "text": "."
+        },
+        {
+          "location": "text_34",
+          "text": "."
+        },
+        {
+          "location": "text_35",
+          "text": "."
+        },
+        {
+          "location": "text_36",
+          "text": "."
+        },
+        {
+          "location": "text_37",
+          "text": "."
+        },
+        {
+          "location": "text_38",
+          "text": "."
+        },
+        {
+          "location": "text_39",
+          "text": "."
+        },
+        {
+          "location": "text_40",
+          "text": "."
+        },
+        {
+          "location": "text_41",
+          "text": "."
+        },
+        {
+          "location": "text_42",
+          "text": "."
+        },
+        {
+          "location": "text_43",
+          "text": "."
+        },
+        {
+          "location": "text_44",
+          "text": "."
+        },
+        {
+          "location": "text_45",
+          "text": "."
+        },
+        {
+          "location": "text_46",
+          "text": "."
+        },
+        {
+          "location": "text_47",
+          "text": "."
+        },
+        {
+          "location": "text_48",
+          "text": "."
+        },
+        {
+          "location": "text_49",
+          "text": "."
+        },
+        {
+          "location": "text_50",
+          "text": "."
+        },
+        {
+          "location": "text_51",
+          "text": "."
+        },
+        {
+          "location": "text_52",
+          "text": "."
+        },
+        {
+          "location": "text_53",
+          "text": "$ 110 $ 106 $ 99 property and capital stock ."
+        },
+        {
+          "location": "text_54",
+          "text": "."
+        },
+        {
+          "location": "text_55",
+          "text": "."
+        },
+        {
+          "location": "text_56",
+          "text": "."
+        },
+        {
+          "location": "text_57",
+          "text": "."
+        },
+        {
+          "location": "text_58",
+          "text": "."
+        },
+        {
+          "location": "text_59",
+          "text": "."
+        },
+        {
+          "location": "text_60",
+          "text": "."
+        },
+        {
+          "location": "text_61",
+          "text": "."
+        },
+        {
+          "location": "text_62",
+          "text": "."
+        },
+        {
+          "location": "text_63",
+          "text": "."
+        },
+        {
+          "location": "text_64",
+          "text": "."
+        },
+        {
+          "location": "text_65",
+          "text": "."
+        },
+        {
+          "location": "text_66",
+          "text": "."
+        },
+        {
+          "location": "text_67",
+          "text": "."
+        },
+        {
+          "location": "text_68",
+          "text": "."
+        },
+        {
+          "location": "text_69",
+          "text": "."
+        },
+        {
+          "location": "text_70",
+          "text": "."
+        },
+        {
+          "location": "text_71",
+          "text": "."
+        },
+        {
+          "location": "text_72",
+          "text": "."
+        },
+        {
+          "location": "text_73",
+          "text": "."
+        },
+        {
+          "location": "text_74",
+          "text": "."
+        },
+        {
+          "location": "text_75",
+          "text": "."
+        },
+        {
+          "location": "text_76",
+          "text": "."
+        },
+        {
+          "location": "text_77",
+          "text": "."
+        },
+        {
+          "location": "text_78",
+          "text": "."
+        },
+        {
+          "location": "text_79",
+          "text": "."
+        },
+        {
+          "location": "text_80",
+          "text": "."
+        },
+        {
+          "location": "text_81",
+          "text": "."
+        },
+        {
+          "location": "text_82",
+          "text": "."
+        },
+        {
+          "location": "text_83",
+          "text": "."
+        },
+        {
+          "location": "text_84",
+          "text": "."
+        },
+        {
+          "location": "text_85",
+          "text": "."
+        },
+        {
+          "location": "text_86",
+          "text": "."
+        },
+        {
+          "location": "text_87",
+          "text": "."
+        },
+        {
+          "location": "text_88",
+          "text": "."
+        },
+        {
+          "location": "text_89",
+          "text": "."
+        },
+        {
+          "location": "text_90",
+          "text": "."
+        },
+        {
+          "location": "text_91",
+          "text": "."
+        },
+        {
+          "location": "text_92",
+          "text": "."
+        },
+        {
+          "location": "text_93",
+          "text": "."
+        },
+        {
+          "location": "text_94",
+          "text": "."
+        },
+        {
+          "location": "text_95",
+          "text": "."
+        },
+        {
+          "location": "text_96",
+          "text": "."
+        },
+        {
+          "location": "text_97",
+          "text": "105 106 98 payroll ."
+        },
+        {
+          "location": "text_98",
+          "text": "."
+        },
+        {
+          "location": "text_99",
+          "text": "."
+        },
+        {
+          "location": "text_100",
+          "text": "."
+        },
+        {
+          "location": "text_101",
+          "text": "."
+        },
+        {
+          "location": "text_102",
+          "text": "."
+        },
+        {
+          "location": "text_103",
+          "text": "."
+        },
+        {
+          "location": "text_104",
+          "text": "."
+        },
+        {
+          "location": "text_105",
+          "text": "."
+        },
+        {
+          "location": "text_106",
+          "text": "."
+        },
+        {
+          "location": "text_107",
+          "text": "."
+        },
+        {
+          "location": "text_108",
+          "text": "."
+        },
+        {
+          "location": "text_109",
+          "text": "."
+        },
+        {
+          "location": "text_110",
+          "text": "."
+        },
+        {
+          "location": "text_111",
+          "text": "."
+        },
+        {
+          "location": "text_112",
+          "text": "."
+        },
+        {
+          "location": "text_113",
+          "text": "."
+        },
+        {
+          "location": "text_114",
+          "text": "."
+        },
+        {
+          "location": "text_115",
+          "text": "."
+        },
+        {
+          "location": "text_116",
+          "text": "."
+        },
+        {
+          "location": "text_117",
+          "text": "."
+        },
+        {
+          "location": "text_118",
+          "text": "."
+        },
+        {
+          "location": "text_119",
+          "text": "."
+        },
+        {
+          "location": "text_120",
+          "text": "."
+        },
+        {
+          "location": "text_121",
+          "text": "."
+        },
+        {
+          "location": "text_122",
+          "text": "."
+        },
+        {
+          "location": "text_123",
+          "text": "."
+        },
+        {
+          "location": "text_124",
+          "text": "."
+        },
+        {
+          "location": "text_125",
+          "text": "."
+        },
+        {
+          "location": "text_126",
+          "text": "."
+        },
+        {
+          "location": "text_127",
+          "text": "."
+        },
+        {
+          "location": "text_128",
+          "text": "."
+        },
+        {
+          "location": "text_129",
+          "text": "."
+        },
+        {
+          "location": "text_130",
+          "text": "."
+        },
+        {
+          "location": "text_131",
+          "text": "."
+        },
+        {
+          "location": "text_132",
+          "text": "."
+        },
+        {
+          "location": "text_133",
+          "text": "."
+        },
+        {
+          "location": "text_134",
+          "text": "."
+        },
+        {
+          "location": "text_135",
+          "text": "."
+        },
+        {
+          "location": "text_136",
+          "text": "."
+        },
+        {
+          "location": "text_137",
+          "text": "."
+        },
+        {
+          "location": "text_138",
+          "text": "."
+        },
+        {
+          "location": "text_139",
+          "text": "."
+        },
+        {
+          "location": "text_140",
+          "text": "."
+        },
+        {
+          "location": "text_141",
+          "text": "."
+        },
+        {
+          "location": "text_142",
+          "text": "."
+        },
+        {
+          "location": "text_143",
+          "text": "."
+        },
+        {
+          "location": "text_144",
+          "text": "."
+        },
+        {
+          "location": "text_145",
+          "text": "."
+        },
+        {
+          "location": "text_146",
+          "text": "."
+        },
+        {
+          "location": "text_147",
+          "text": "."
+        },
+        {
+          "location": "text_148",
+          "text": "."
+        },
+        {
+          "location": "text_149",
+          "text": "."
+        },
+        {
+          "location": "text_150",
+          "text": "."
+        },
+        {
+          "location": "text_151",
+          "text": "."
+        },
+        {
+          "location": "text_152",
+          "text": "."
+        },
+        {
+          "location": "text_153",
+          "text": "."
+        },
+        {
+          "location": "text_154",
+          "text": "."
+        },
+        {
+          "location": "text_155",
+          "text": "."
+        },
+        {
+          "location": "text_156",
+          "text": "31 32 31 other general ."
+        },
+        {
+          "location": "text_157",
+          "text": "."
+        },
+        {
+          "location": "text_158",
+          "text": "."
+        },
+        {
+          "location": "text_159",
+          "text": "."
+        },
+        {
+          "location": "text_160",
+          "text": "."
+        },
+        {
+          "location": "text_161",
+          "text": "."
+        },
+        {
+          "location": "text_162",
+          "text": "."
+        },
+        {
+          "location": "text_163",
+          "text": "."
+        },
+        {
+          "location": "text_164",
+          "text": "."
+        },
+        {
+          "location": "text_165",
+          "text": "."
+        },
+        {
+          "location": "text_166",
+          "text": "."
+        },
+        {
+          "location": "text_167",
+          "text": "."
+        },
+        {
+          "location": "text_168",
+          "text": "."
+        },
+        {
+          "location": "text_169",
+          "text": "."
+        },
+        {
+          "location": "text_170",
+          "text": "."
+        },
+        {
+          "location": "text_171",
+          "text": "."
+        },
+        {
+          "location": "text_172",
+          "text": "."
+        },
+        {
+          "location": "text_173",
+          "text": "."
+        },
+        {
+          "location": "text_174",
+          "text": "."
+        },
+        {
+          "location": "text_175",
+          "text": "."
+        },
+        {
+          "location": "text_176",
+          "text": "."
+        },
+        {
+          "location": "text_177",
+          "text": "."
+        },
+        {
+          "location": "text_178",
+          "text": "."
+        },
+        {
+          "location": "text_179",
+          "text": "."
+        },
+        {
+          "location": "text_180",
+          "text": "."
+        },
+        {
+          "location": "text_181",
+          "text": "."
+        },
+        {
+          "location": "text_182",
+          "text": "."
+        },
+        {
+          "location": "text_183",
+          "text": "."
+        },
+        {
+          "location": "text_184",
+          "text": "."
+        },
+        {
+          "location": "text_185",
+          "text": "."
+        },
+        {
+          "location": "text_186",
+          "text": "."
+        },
+        {
+          "location": "text_187",
+          "text": "."
+        },
+        {
+          "location": "text_188",
+          "text": "."
+        },
+        {
+          "location": "text_189",
+          "text": "."
+        },
+        {
+          "location": "text_190",
+          "text": "."
+        },
+        {
+          "location": "text_191",
+          "text": "."
+        },
+        {
+          "location": "text_192",
+          "text": "."
+        },
+        {
+          "location": "text_193",
+          "text": "."
+        },
+        {
+          "location": "text_194",
+          "text": "."
+        },
+        {
+          "location": "text_195",
+          "text": "."
+        },
+        {
+          "location": "text_196",
+          "text": "."
+        },
+        {
+          "location": "text_197",
+          "text": "."
+        },
+        {
+          "location": "text_198",
+          "text": "."
+        },
+        {
+          "location": "text_199",
+          "text": "."
+        },
+        {
+          "location": "text_200",
+          "text": "."
+        },
+        {
+          "location": "text_201",
+          "text": "."
+        },
+        {
+          "location": "text_202",
+          "text": "."
+        },
+        {
+          "location": "text_203",
+          "text": "."
+        },
+        {
+          "location": "text_204",
+          "text": "."
+        },
+        {
+          "location": "text_205",
+          "text": "."
+        },
+        {
+          "location": "text_206",
+          "text": "."
+        },
+        {
+          "location": "text_207",
+          "text": "."
+        },
+        {
+          "location": "text_208",
+          "text": "."
+        },
+        {
+          "location": "text_209",
+          "text": "."
+        },
+        {
+          "location": "text_210",
+          "text": "13 14 15 total general taxes ."
+        },
+        {
+          "location": "text_211",
+          "text": "."
+        },
+        {
+          "location": "text_212",
+          "text": "."
+        },
+        {
+          "location": "text_213",
+          "text": "."
+        },
+        {
+          "location": "text_214",
+          "text": "."
+        },
+        {
+          "location": "text_215",
+          "text": "."
+        },
+        {
+          "location": "text_216",
+          "text": "."
+        },
+        {
+          "location": "text_217",
+          "text": "."
+        },
+        {
+          "location": "text_218",
+          "text": "."
+        },
+        {
+          "location": "text_219",
+          "text": "."
+        },
+        {
+          "location": "text_220",
+          "text": "."
+        },
+        {
+          "location": "text_221",
+          "text": "."
+        },
+        {
+          "location": "text_222",
+          "text": "."
+        },
+        {
+          "location": "text_223",
+          "text": "."
+        },
+        {
+          "location": "text_224",
+          "text": "."
+        },
+        {
+          "location": "text_225",
+          "text": "."
+        },
+        {
+          "location": "text_226",
+          "text": "."
+        },
+        {
+          "location": "text_227",
+          "text": "."
+        },
+        {
+          "location": "text_228",
+          "text": "."
+        },
+        {
+          "location": "text_229",
+          "text": "."
+        },
+        {
+          "location": "text_230",
+          "text": "."
+        },
+        {
+          "location": "text_231",
+          "text": "."
+        },
+        {
+          "location": "text_232",
+          "text": "."
+        },
+        {
+          "location": "text_233",
+          "text": "."
+        },
+        {
+          "location": "text_234",
+          "text": "."
+        },
+        {
+          "location": "text_235",
+          "text": "."
+        },
+        {
+          "location": "text_236",
+          "text": "."
+        },
+        {
+          "location": "text_237",
+          "text": "."
+        },
+        {
+          "location": "text_238",
+          "text": "."
+        },
+        {
+          "location": "text_239",
+          "text": "."
+        },
+        {
+          "location": "text_240",
+          "text": "."
+        },
+        {
+          "location": "text_241",
+          "text": "."
+        },
+        {
+          "location": "text_242",
+          "text": "."
+        },
+        {
+          "location": "text_243",
+          "text": "."
+        },
+        {
+          "location": "text_244",
+          "text": "."
+        },
+        {
+          "location": "text_245",
+          "text": "."
+        },
+        {
+          "location": "text_246",
+          "text": "."
+        },
+        {
+          "location": "text_247",
+          "text": "."
+        },
+        {
+          "location": "text_248",
+          "text": "."
+        },
+        {
+          "location": "text_249",
+          "text": "."
+        },
+        {
+          "location": "text_250",
+          "text": "."
+        },
+        {
+          "location": "text_251",
+          "text": "."
+        },
+        {
+          "location": "text_252",
+          "text": "."
+        },
+        {
+          "location": "text_253",
+          "text": "."
+        },
+        {
+          "location": "text_254",
+          "text": "."
+        },
+        {
+          "location": "text_255",
+          "text": "."
+        },
+        {
+          "location": "text_256",
+          "text": "."
+        },
+        {
+          "location": "text_257",
+          "text": "."
+        },
+        {
+          "location": "text_258",
+          "text": "."
+        },
+        {
+          "location": "text_259",
+          "text": "."
+        },
+        {
+          "location": "text_260",
+          "text": "$ 259 $ 258 $ 243 ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "by what percentage did average borrowings decrease from 2016 to 2017?",
+    "human_answer": "-8.4%",
+    "reference_program": "subtract(779, 850), divide(#0, 850)",
+    "reference_execution_value": -0.08353,
+    "model_response": {
+      "answer": "8.352941176470588",
+      "unit": "percent",
+      "expression": "(850 - 779) / 850 * 100",
+      "explanation": "Average borrowings decreased by 71 from the 2016 base of 850."
+    }
+  },
+  {
+    "call_id": "S024",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "entergy corporation and subsidiaries management 2019s financial discussion and analysis regulatory asset associated with new nuclear generation development costs as a result of a joint stipulation entered into with the mississippi public utilities staff , subsequently approved by the mpsc , in which entergy mississippi agreed not to pursue recovery of the costs deferred by an mpsc order in the new nuclear generation docket ."
+        },
+        {
+          "location": "text_1",
+          "text": "see note 2 to the financial statements for further discussion of the new nuclear generation development costs and the joint stipulation ."
+        },
+        {
+          "location": "text_2",
+          "text": "net revenue utility following is an analysis of the change in net revenue comparing 2015 to 2014 ."
+        },
+        {
+          "location": "text_3",
+          "text": "amount ( in millions ) ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Amount (In Millions)"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2014 net revenue",
+            "$5,735"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Retail electric price",
+            "187"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Volume/weather",
+            "95"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Louisiana business combination customer credits",
+            "(107)"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "MISO deferral",
+            "(35)"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Waterford 3 replacement steam generator provision",
+            "(32)"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Other",
+            "(14)"
+          ]
+        },
+        {
+          "row_index": 8,
+          "cells": [
+            "2015 net revenue",
+            "$5,829"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_4",
+          "text": "the retail electric price variance is primarily due to : 2022 formula rate plan increases at entergy louisiana , as approved by the lpsc , effective december 2014 and january 2015 ; 2022 an increase in energy efficiency rider revenue primarily due to increases in the energy efficiency rider at entergy arkansas , as approved by the apsc , effective july 2015 and july 2014 , and new energy efficiency riders at entergy louisiana and entergy mississippi that began in the fourth quarter 2014 ."
+        },
+        {
+          "location": "text_5",
+          "text": "energy efficiency revenues are largely offset by costs included in other operation and maintenance expenses and have a minimal effect on net income ; and 2022 an annual net rate increase at entergy mississippi of $ 16 million , effective february 2015 , as a result of the mpsc order in the june 2014 rate case ."
+        },
+        {
+          "location": "text_6",
+          "text": "see note 2 to the financial statements for a discussion of rate and regulatory proceedings ."
+        },
+        {
+          "location": "text_7",
+          "text": "the volume/weather variance is primarily due to an increase of 1402 gwh , or 1% ( 1 % ) , in billed electricity usage , including an increase in industrial usage and the effect of more favorable weather ."
+        },
+        {
+          "location": "text_8",
+          "text": "the increase in industrial sales was primarily due to expansion in the chemicals industry and the addition of new customers , partially offset by decreased demand primarily due to extended maintenance outages for existing chemicals customers ."
+        },
+        {
+          "location": "text_9",
+          "text": "the louisiana business combination customer credits variance is due to a regulatory liability of $ 107 million recorded by entergy in october 2015 as a result of the entergy gulf states louisiana and entergy louisiana business combination ."
+        },
+        {
+          "location": "text_10",
+          "text": "consistent with the terms of an agreement with the lpsc , electric customers of entergy louisiana will realize customer credits associated with the business combination ; accordingly , in october 2015 , entergy recorded a regulatory liability of $ 107 million ( $ 66 million net-of-tax ) ."
+        },
+        {
+          "location": "text_11",
+          "text": "see note 2 to the financial statements for further discussion of the business combination and customer credits. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "in october 2015 , what was the ratio of the entergy recorded a regulatory liability to the tax liability",
+    "human_answer": "62.12%",
+    "reference_program": "subtract(107, 66), divide(#0, 66)",
+    "reference_execution_value": 0.62121,
+    "model_response": {
+      "answer": "2.6097560975609756",
+      "unit": "ratio",
+      "expression": "107 / (107 - 66)",
+      "explanation": "The tax liability was $41 million, calculated as the $107 million regulatory liability less its $66 million net-of-tax amount."
+    }
+  },
+  {
+    "call_id": "S025",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "american airlines , inc ."
+        },
+        {
+          "location": "text_1",
+          "text": "notes to consolidated financial statements 2014 ( continued ) temporary , targeted funding relief ( subject to certain terms and conditions ) for single employer and multiemployer pension plans that suffered significant losses in asset value due to the steep market slide in 2008 ."
+        },
+        {
+          "location": "text_2",
+          "text": "under the relief act , the company 2019s 2010 minimum required contribution to its defined benefit pension plans was reduced from $ 525 million to approximately $ 460 million ."
+        },
+        {
+          "location": "text_3",
+          "text": "the following benefit payments , which reflect expected future service as appropriate , are expected to be paid : retiree medical pension and other ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Pension",
+            "Retiree Medical   and Other"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2011",
+            "574",
+            "173"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2012",
+            "602",
+            "170"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2013",
+            "665",
+            "169"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2014",
+            "729",
+            "170"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "2015",
+            "785",
+            "173"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "2016 — 2020",
+            "4,959",
+            "989"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_4",
+          "text": "during 2008 , amr recorded a settlement charge totaling $ 103 million related to lump sum distributions from the company 2019s defined benefit pension plans to pilots who retired ."
+        },
+        {
+          "location": "text_5",
+          "text": "pursuant to u.s ."
+        },
+        {
+          "location": "text_6",
+          "text": "gaap , the use of settlement accounting is required if , for a given year , the cost of all settlements exceeds , or is expected to exceed , the sum of the service cost and interest cost components of net periodic pension expense for a plan ."
+        },
+        {
+          "location": "text_7",
+          "text": "under settlement accounting , unrecognized plan gains or losses must be recognized immediately in proportion to the percentage reduction of the plan 2019s projected benefit obligation ."
+        },
+        {
+          "location": "text_8",
+          "text": "11 ."
+        },
+        {
+          "location": "text_9",
+          "text": "intangible assets the company has recorded international slot and route authorities of $ 708 million and $ 736 million as of december 31 , 2010 and 2009 , respectively ."
+        },
+        {
+          "location": "text_10",
+          "text": "the company considers these assets indefinite life assets and as a result , they are not amortized but instead are tested for impairment annually or more frequently if events or changes in circumstances indicate that the asset might be impaired ."
+        },
+        {
+          "location": "text_11",
+          "text": "such triggering events may include significant changes to the company 2019s network or capacity , or the implementation of open skies agreements in countries where the company operates flights ."
+        },
+        {
+          "location": "text_12",
+          "text": "in the fourth quarter of 2010 , the company performed its annual impairment testing on international slots and routes , at which time the net carrying value was reassessed for recoverability ."
+        },
+        {
+          "location": "text_13",
+          "text": "it was determined through this annual impairment testing that the fair value of certain international routes in latin america was less than the carrying value ."
+        },
+        {
+          "location": "text_14",
+          "text": "thus , the company incurred an impairment charge of $ 28 million to write down the values of these and certain other slots and routes ."
+        },
+        {
+          "location": "text_15",
+          "text": "as there is minimal market activity for the valuation of routes and international slots and landing rights , the company measures fair value with inputs using the income approach ."
+        },
+        {
+          "location": "text_16",
+          "text": "the income approach uses valuation techniques , such as future cash flows , to convert future amounts to a single present discounted amount ."
+        },
+        {
+          "location": "text_17",
+          "text": "the inputs utilized for these valuations are unobservable and reflect the company 2019s assumptions about market participants and what they would use to value the routes and accordingly are considered level 3 in the fair value hierarchy ."
+        },
+        {
+          "location": "text_18",
+          "text": "the company 2019s unobservable inputs are developed based on the best information available as of december 31 ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what is the percentage decrease in the minimum contribution to benefit pension plans due to the relied act?",
+    "human_answer": "-14.0%",
+    "reference_program": "subtract(460, 525), divide(#0, 525)",
+    "reference_execution_value": -0.12381,
+    "model_response": {
+      "answer": "12.380952380952381",
+      "unit": "percent",
+      "expression": "(525 - 460) / 525 * 100",
+      "explanation": "The minimum required contribution decreased from $525 million to approximately $460 million."
+    }
+  },
+  {
+    "call_id": "S026",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "entergy mississippi , inc ."
+        },
+        {
+          "location": "text_1",
+          "text": "management 2019s financial discussion and analysis results of operations net income 2017 compared to 2016 net income increased $ 0.8 million primarily due to higher other income , lower other operation and maintenance expenses , and lower interest expense , substantially offset by higher depreciation and amortization expenses and a higher effective income tax rate ."
+        },
+        {
+          "location": "text_2",
+          "text": "2016 compared to 2015 net income increased $ 16.5 million primarily due to lower other operation and maintenance expenses , higher net revenues , and a lower effective income tax rate , partially offset by higher depreciation and amortization expenses ."
+        },
+        {
+          "location": "text_3",
+          "text": "net revenue 2017 compared to 2016 net revenue consists of operating revenues net of : 1 ) fuel , fuel-related expenses , and gas purchased for resale , 2 ) purchased power expenses , and 3 ) other regulatory credits ."
+        },
+        {
+          "location": "text_4",
+          "text": "following is an analysis of the change in net revenue comparing 2017 to 2016 ."
+        },
+        {
+          "location": "text_5",
+          "text": "amount ( in millions ) ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Amount (In Millions)"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2016 net revenue",
+            "$705.4"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Volume/weather",
+            "(18.2)"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Retail electric price",
+            "13.5"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Other",
+            "2.4"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "2017 net revenue",
+            "$703.1"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_6",
+          "text": "the volume/weather variance is primarily due to the effect of less favorable weather on residential and commercial sales ."
+        },
+        {
+          "location": "text_7",
+          "text": "the retail electric price variance is primarily due to a $ 19.4 million net annual increase in rates , effective with the first billing cycle of july 2016 , and an increase in the energy efficiency rider , effective with the first billing cycle of february 2017 , each as approved by the mpsc ."
+        },
+        {
+          "location": "text_8",
+          "text": "the increase was partially offset by decreased storm damage rider revenues due to resetting the storm damage provision to zero beginning with the november 2016 billing cycle ."
+        },
+        {
+          "location": "text_9",
+          "text": "entergy mississippi resumed billing the storm damage rider effective with the september 2017 billing cycle ."
+        },
+        {
+          "location": "text_10",
+          "text": "see note 2 to the financial statements for more discussion of the formula rate plan and the storm damage rider. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what percent did net revenue decrease between 2016 and 2017?",
+    "human_answer": ".33%",
+    "reference_program": "divide(705.4, 703.1), subtract(#0, const_1)",
+    "reference_execution_value": 0.00327,
+    "model_response": {
+      "answer": "0.33",
+      "unit": "percent",
+      "expression": "(705.4 - 703.1) / 705.4 * 100",
+      "explanation": "Net revenue decreased by $2.3 million, approximately 0.33% of 2016 net revenue."
+    }
+  },
+  {
+    "call_id": "S027",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "entity transfers of inventory , the income tax effects will continue to be deferred until the inventory has been sold to a third party ."
+        },
+        {
+          "location": "text_1",
+          "text": "cadence adopted the new standard on the first day of fiscal 2018 using the modified retrospective transition approach and recorded a cumulative-effect adjustment to decrease retained earnings in the amount of $ 8.3 million ."
+        },
+        {
+          "location": "text_2",
+          "text": "the cumulative-effect adjustment includes the write-off of income tax consequences deferred from prior intra-entity transfers involving assets other than inventory and new deferred tax assets for amounts not recognized under u.s ."
+        },
+        {
+          "location": "text_3",
+          "text": "gaap ."
+        },
+        {
+          "location": "text_4",
+          "text": "we anticipate the potential for increased volatility in future effective tax rates from the adoption of this guidance ."
+        },
+        {
+          "location": "text_5",
+          "text": "stock-based compensation in may 2017 , the fasb issued asu 2017-09 , 201ccompensation 2014stock compensation ( topic 718 ) : scope of modification accounting , 201d that provides guidance about which changes to the terms or conditions of a share-based payment award require an entity to apply modification accounting ."
+        },
+        {
+          "location": "text_6",
+          "text": "cadence adopted the standard on the first day of fiscal 2018 ."
+        },
+        {
+          "location": "text_7",
+          "text": "the adoption of this standard did not impact cadence 2019s consolidated financial statements or the related disclosures ."
+        },
+        {
+          "location": "text_8",
+          "text": "cumulative effect adjustments to retained earnings the following table presents the cumulative effect adjustments , net of income tax effects , to beginning retained earnings for new accounting standards adopted by cadence on the first day of fiscal 2018 : retained earnings ( in thousands ) ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Retained Earnings (In thousands)"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Balance, December 30, 2017, as previously reported",
+            "$341,003"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Cumulative effect adjustment from the adoption of new accounting standards:",
+            ""
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Revenue from Contracts with Customers (Topic 606)*",
+            "91,640"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Financial Instruments—Overall (Subtopic 825-10): Recognition and Measurement of Financial Assets and Financial Liabilities",
+            "2,638"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Income taxes (Topic 740): Intra-entity Transfers of Assets Other Than Inventory",
+            "(8,349)"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Balance, December 30, 2017, as adjusted",
+            "426,932"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Net Income",
+            "345,777"
+          ]
+        },
+        {
+          "row_index": 8,
+          "cells": [
+            "Balance, December 29, 2018",
+            "$772,709"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_9",
+          "text": "* the cumulative effect adjustment from the adoption of revenue from contracts with customers ( topic 606 ) is presented net of the related income tax effect of $ 17.5 million ."
+        },
+        {
+          "location": "text_10",
+          "text": "new accounting standards not yet adopted leases in february 2016 , the fasb issued asu 2016-02 , 201cleases ( topic 842 ) , 201d requiring , among other things , the recognition of lease liabilities and corresponding right-of-use assets on the balance sheet by lessees for all leases with a term longer than 12 months ."
+        },
+        {
+          "location": "text_11",
+          "text": "the new standard is effective for cadence in the first quarter of fiscal 2019 ."
+        },
+        {
+          "location": "text_12",
+          "text": "a modified retrospective approach is required , applying the new standard to leases existing as of the date of initial application ."
+        },
+        {
+          "location": "text_13",
+          "text": "an entity may choose to apply the standard as of either its effective date or the beginning of the earliest comparative period presented in the financial statements ."
+        },
+        {
+          "location": "text_14",
+          "text": "cadence adopted the new standard on december 30 , 2018 , the first day of fiscal 2019 , and used the effective date as the date of initial application ."
+        },
+        {
+          "location": "text_15",
+          "text": "consequently , financial information will not be updated and the disclosures required under the new standard will not be provided for dates and periods prior to the first quarter of fiscal 2019 ."
+        },
+        {
+          "location": "text_16",
+          "text": "cadence elected certain practical expedients permitted under the transition guidance within the new standard , which among other things , allowed cadence to carry forward its prior conclusions about lease identification and classification. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what is the percentage net effect of the cumulative effect adjustments , net of income tax effects , to beginning retained earnings for new accounting standards adopted by cadence on the retained earnings balance as adjusted for december 30 , 2017?",
+    "human_answer": "25%",
+    "reference_program": "subtract(426932, 341003), divide(#0, 341003)",
+    "reference_execution_value": 0.25199,
+    "model_response": {
+      "answer": "20.13",
+      "unit": "percent",
+      "expression": "(91640 + 2638 - 8349) / 426932 * 100",
+      "explanation": "The net cumulative adjustments of 85,929 thousand represent approximately 20.13% of adjusted beginning retained earnings."
+    }
+  },
+  {
+    "call_id": "S028",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "debt issuance costs : debt issuance costs are reflected as a direct deduction of our long-term debt balance on the consolidated balance sheets ."
+        },
+        {
+          "location": "text_1",
+          "text": "we incurred debt issuance costs of $ 15 million in 2018 and $ 53 million in 2016 ."
+        },
+        {
+          "location": "text_2",
+          "text": "debt issuance costs in 2017 were insignificant ."
+        },
+        {
+          "location": "text_3",
+          "text": "unamortized debt issuance costs were $ 115 million at december 29 , 2018 , $ 114 million at december 30 , 2017 , and $ 124 million at december 31 , 2016 ."
+        },
+        {
+          "location": "text_4",
+          "text": "amortization of debt issuance costs was $ 16 million in 2018 , $ 16 million in 2017 , and $ 14 million in 2016 ."
+        },
+        {
+          "location": "text_5",
+          "text": "debt premium : unamortized debt premiums are presented on the consolidated balance sheets as a direct addition to the carrying amount of debt ."
+        },
+        {
+          "location": "text_6",
+          "text": "unamortized debt premium , net , was $ 430 million at december 29 , 2018 and $ 505 million at december 30 , 2017 ."
+        },
+        {
+          "location": "text_7",
+          "text": "amortization of our debt premium , net , was $ 65 million in 2018 , $ 81 million in 2017 , and $ 88 million in 2016 ."
+        },
+        {
+          "location": "text_8",
+          "text": "debt repayments : in july and august 2018 , we repaid $ 2.7 billion aggregate principal amount of senior notes that matured in the period ."
+        },
+        {
+          "location": "text_9",
+          "text": "we funded these long-term debt repayments primarily with proceeds from the new notes issued in june 2018 ."
+        },
+        {
+          "location": "text_10",
+          "text": "additionally , in june 2017 , we repaid $ 2.0 billion aggregate principal amount of senior notes that matured in the period ."
+        },
+        {
+          "location": "text_11",
+          "text": "we funded these long-term debt repayments primarily with cash on hand and our commercial paper programs ."
+        },
+        {
+          "location": "text_12",
+          "text": "fair value of debt : at december 29 , 2018 , the aggregate fair value of our total debt was $ 30.1 billion as compared with a carrying value of $ 31.2 billion ."
+        },
+        {
+          "location": "text_13",
+          "text": "at december 30 , 2017 , the aggregate fair value of our total debt was $ 33.0 billion as compared with a carrying value of $ 31.5 billion ."
+        },
+        {
+          "location": "text_14",
+          "text": "our short-term debt and commercial paper had carrying values that approximated their fair values at december 29 , 2018 and december 30 , 2017 ."
+        },
+        {
+          "location": "text_15",
+          "text": "we determined the fair value of our long-term debt using level 2 inputs ."
+        },
+        {
+          "location": "text_16",
+          "text": "fair values are generally estimated based on quoted market prices for identical or similar instruments ."
+        },
+        {
+          "location": "text_17",
+          "text": "note 20 ."
+        },
+        {
+          "location": "text_18",
+          "text": "capital stock preferred stock our second amended and restated certificate of incorporation authorizes the issuance of up to 920000 shares of preferred stock ."
+        },
+        {
+          "location": "text_19",
+          "text": "on june 7 , 2016 , we redeemed all 80000 outstanding shares of our series a preferred stock for $ 8.3 billion ."
+        },
+        {
+          "location": "text_20",
+          "text": "we funded this redemption primarily through the issuance of long-term debt in may 2016 , as well as other sources of liquidity , including our u.s ."
+        },
+        {
+          "location": "text_21",
+          "text": "commercial paper program , u.s ."
+        },
+        {
+          "location": "text_22",
+          "text": "securitization program , and cash on hand ."
+        },
+        {
+          "location": "text_23",
+          "text": "in connection with the redemption , all series a preferred stock was canceled and automatically retired ."
+        },
+        {
+          "location": "text_24",
+          "text": "common stock our second amended and restated certificate of incorporation authorizes the issuance of up to 5.0 billion shares of common stock ."
+        },
+        {
+          "location": "text_25",
+          "text": "shares of common stock issued , in treasury , and outstanding were ( in millions of shares ) : shares issued treasury shares shares outstanding ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Shares Issued",
+            "Treasury Shares",
+            "Shares Outstanding"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Balance at January 3, 2016",
+            "1,214",
+            "—",
+            "1,214"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Exercise of stock options, issuance of other stock awards, and other",
+            "5",
+            "(2)",
+            "3"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Balance at December 31, 2016",
+            "1,219",
+            "(2)",
+            "1,217"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Exercise of stock options, issuance of other stock awards, and other",
+            "2",
+            "—",
+            "2"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Balance at December 30, 2017",
+            "1,221",
+            "(2)",
+            "1,219"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Exercise of stock options, issuance of other stock awards, and other",
+            "3",
+            "(2)",
+            "1"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Balance at December 29, 2018",
+            "1,224",
+            "(4)",
+            "1,220"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_26",
+          "text": "."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "in july and august 2018 , what percent of debt carrying debt in december did they pay off?",
+    "human_answer": "7.96%",
+    "reference_program": "add(31.2, 2.7), divide(2.7, #0)",
+    "reference_execution_value": 0.07965,
+    "model_response": {
+      "answer": "8.653846153846154",
+      "unit": "percent",
+      "expression": "(2.7 / 31.2) * 100",
+      "explanation": "The $2.7 billion repayment was 8.653846153846154 percent of the $31.2 billion debt carrying value in December 2018."
+    }
+  },
+  {
+    "call_id": "S029",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "the goldman sachs group , inc ."
+        },
+        {
+          "location": "text_1",
+          "text": "and subsidiaries management 2019s discussion and analysis commissions and fees in the consolidated statements of earnings were $ 3.20 billion for 2018 , 5% ( 5 % ) higher than 2017 , reflecting an increase in our listed cash equity and futures volumes , generally consistent with market volumes ."
+        },
+        {
+          "location": "text_2",
+          "text": "market making revenues in the consolidated statements of earnings were $ 9.45 billion for 2018 , 23% ( 23 % ) higher than 2017 , due to significantly higher revenues in equity products , interest rate products and commodities ."
+        },
+        {
+          "location": "text_3",
+          "text": "these increases were partially offset by significantly lower results in mortgages and lower revenues in credit products ."
+        },
+        {
+          "location": "text_4",
+          "text": "other principal transactions revenues in the consolidated statements of earnings were $ 5.82 billion for 2018 , 2% ( 2 % ) lower than 2017 , reflecting net losses from investments in public equities compared with net gains in the prior year , partially offset by significantly higher net gains from investments in private equities , driven by company-specific events , including sales , and corporate performance ."
+        },
+        {
+          "location": "text_5",
+          "text": "net interest income ."
+        },
+        {
+          "location": "text_6",
+          "text": "net interest income in the consolidated statements of earnings was $ 3.77 billion for 2018 , 28% ( 28 % ) higher than 2017 , reflecting an increase in interest income primarily due to the impact of higher interest rates on collateralized agreements , other interest-earning assets and deposits with banks , increases in total average loans receivable and financial instruments owned , and higher yields on financial instruments owned and loans receivable ."
+        },
+        {
+          "location": "text_7",
+          "text": "the increase in interest income was partially offset by higher interest expense primarily due to the impact of higher interest rates on other interest-bearing liabilities , collateralized financings , deposits and long-term borrowings , and increases in total average long-term borrowings and deposits ."
+        },
+        {
+          "location": "text_8",
+          "text": "see 201cstatistical disclosures 2014 distribution of assets , liabilities and shareholders 2019 equity 201d for further information about our sources of net interest income ."
+        },
+        {
+          "location": "text_9",
+          "text": "2017 versus 2016 net revenues in the consolidated statements of earnings were $ 32.73 billion for 2017 , 6% ( 6 % ) higher than 2016 , due to significantly higher other principal transactions revenues , and higher investment banking revenues , investment management revenues and net interest income ."
+        },
+        {
+          "location": "text_10",
+          "text": "these increases were partially offset by significantly lower market making revenues and lower commissions and fees ."
+        },
+        {
+          "location": "text_11",
+          "text": "non-interest revenues ."
+        },
+        {
+          "location": "text_12",
+          "text": "investment banking revenues in the consolidated statements of earnings were $ 7.37 billion for 2017 , 18% ( 18 % ) higher than 2016 ."
+        },
+        {
+          "location": "text_13",
+          "text": "revenues in financial advisory were higher compared with 2016 , reflecting an increase in completed mergers and acquisitions transactions ."
+        },
+        {
+          "location": "text_14",
+          "text": "revenues in underwriting were significantly higher compared with 2016 , due to significantly higher revenues in both debt underwriting , primarily reflecting an increase in industry-wide leveraged finance activity , and equity underwriting , reflecting an increase in industry-wide secondary offerings ."
+        },
+        {
+          "location": "text_15",
+          "text": "investment management revenues in the consolidated statements of earnings were $ 5.80 billion for 2017 , 7% ( 7 % ) higher than 2016 , due to higher management and other fees , reflecting higher average assets under supervision , and higher transaction revenues ."
+        },
+        {
+          "location": "text_16",
+          "text": "commissions and fees in the consolidated statements of earnings were $ 3.05 billion for 2017 , 5% ( 5 % ) lower than 2016 , reflecting a decline in our listed cash equity volumes in the u.s ."
+        },
+        {
+          "location": "text_17",
+          "text": "market volumes in the u.s ."
+        },
+        {
+          "location": "text_18",
+          "text": "also declined ."
+        },
+        {
+          "location": "text_19",
+          "text": "market making revenues in the consolidated statements of earnings were $ 7.66 billion for 2017 , 23% ( 23 % ) lower than 2016 , due to significantly lower revenues in commodities , currencies , credit products , interest rate products and equity derivative products ."
+        },
+        {
+          "location": "text_20",
+          "text": "these results were partially offset by significantly higher revenues in equity cash products and significantly improved results in mortgages ."
+        },
+        {
+          "location": "text_21",
+          "text": "other principal transactions revenues in the consolidated statements of earnings were $ 5.91 billion for 2017 , 75% ( 75 % ) higher than 2016 , primarily reflecting a significant increase in net gains from private equities , which were positively impacted by company-specific events and corporate performance ."
+        },
+        {
+          "location": "text_22",
+          "text": "in addition , net gains from public equities were significantly higher , as global equity prices increased during the year ."
+        },
+        {
+          "location": "text_23",
+          "text": "net interest income ."
+        },
+        {
+          "location": "text_24",
+          "text": "net interest income in the consolidated statements of earnings was $ 2.93 billion for 2017 , 13% ( 13 % ) higher than 2016 , reflecting an increase in interest income primarily due to the impact of higher interest rates on collateralized agreements , higher interest income from loans receivable due to higher yields and an increase in total average loans receivable , an increase in total average financial instruments owned , and the impact of higher interest rates on other interest-earning assets and deposits with banks ."
+        },
+        {
+          "location": "text_25",
+          "text": "the increase in interest income was partially offset by higher interest expense primarily due to the impact of higher interest rates on other interest-bearing liabilities , an increase in total average long-term borrowings , and the impact of higher interest rates on interest-bearing deposits , short-term borrowings and collateralized financings ."
+        },
+        {
+          "location": "text_26",
+          "text": "see 201cstatistical disclosures 2014 distribution of assets , liabilities and shareholders 2019 equity 201d for further information about our sources of net interest income ."
+        },
+        {
+          "location": "text_27",
+          "text": "provision for credit losses provision for credit losses consists of provision for credit losses on loans receivable and lending commitments held for investment ."
+        },
+        {
+          "location": "text_28",
+          "text": "see note 9 to the consolidated financial statements for further information about the provision for credit losses ."
+        },
+        {
+          "location": "text_29",
+          "text": "the table below presents the provision for credit losses. ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Year Ended December"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "<i>$ in millions</i>",
+            "2018",
+            "2017",
+            "2016"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Provision for credit losses",
+            "$674",
+            "$657",
+            "$182"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_30",
+          "text": "goldman sachs 2018 form 10-k 53 ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was net interest income in the consolidated statements of earnings in billions for 2016?",
+    "human_answer": "2.55",
+    "reference_program": "subtract(const_100, 13), divide(#0, const_100), multiply(#1, 2.93)",
+    "reference_execution_value": 2.5491,
+    "model_response": {
+      "answer": "2.592920353982301",
+      "unit": "billion dollars",
+      "expression": "2.93 / (1 + 13 / 100)",
+      "explanation": "Dividing 2017 net interest income by 1.13 reverses its 13% increase over 2016."
+    }
+  },
+  {
+    "call_id": "S030",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "based on the results of the second step of testing , at december 31 , 2008 , the company recorded a $ 9.6 billion pretax ( $ 8.7 billion after-tax ) goodwill impairment charge in the fourth quarter of 2008 , representing most of the goodwill allocated to these reporting units ."
+        },
+        {
+          "location": "text_1",
+          "text": "the primary cause for the goodwill impairment at december 31 , 2008 in the above reporting units was rapid deterioration in the financial markets , as well as in the global economic outlook particularly during the period beginning mid-november through year-end 2008 ."
+        },
+        {
+          "location": "text_2",
+          "text": "the more significant fair value adjustments in the pro forma purchase price allocation in the second step of testing were to fair value loans and debt and were made to identify and value identifiable intangibles ."
+        },
+        {
+          "location": "text_3",
+          "text": "the adjustments to measure the assets , liabilities and intangibles were for the purpose of measuring the implied fair value of goodwill and such adjustments are not reflected in the consolidated balance sheet ."
+        },
+        {
+          "location": "text_4",
+          "text": "the following table shows reporting units with goodwill balances and the excess of fair value as a percentage over allocated book value as of december 31 , 2009 ."
+        },
+        {
+          "location": "text_5",
+          "text": "in millions of dollars reporting unit ( 1 ) fair value as a % (  % ) of allocated book value goodwill ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "Reporting unit(1)",
+            "Fair value as a % of allocated book value",
+            "Goodwill"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "North America Regional Consumer Banking",
+            "174%",
+            "$2,453"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "EMEA Regional Consumer Banking",
+            "163",
+            "255"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Asia Regional Consumer Banking",
+            "303",
+            "5,533"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Latin America Regional Consumer Banking",
+            "215",
+            "1,352"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Securities and Banking",
+            "203",
+            "8,784"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Transaction Services",
+            "2,079",
+            "1,573"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Brokerage and Asset Management",
+            "161",
+            "759"
+          ]
+        },
+        {
+          "row_index": 8,
+          "cells": [
+            "Local Consumer Lending—Cards",
+            "112",
+            "4,683"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_6",
+          "text": "( 1 ) local consumer lending 2014other is excluded from the table as there is no goodwill allocated to it ."
+        },
+        {
+          "location": "text_7",
+          "text": "while no impairment was noted in step one of the company 2019s local consumer lending 2014cards reporting unit impairment test at november 30 , 2009 , goodwill present in that reporting unit may be particularly sensitive to further deterioration in economic conditions ."
+        },
+        {
+          "location": "text_8",
+          "text": "under the market approach for valuing this reporting unit , the earnings multiples and transaction multiples were selected from multiples obtained using data from guideline companies and acquisitions ."
+        },
+        {
+          "location": "text_9",
+          "text": "the selection of the actual multiple considers operating performance and financial condition such as return on equity and net income growth of local consumer lending 2014cards as compared to the guideline companies and acquisitions ."
+        },
+        {
+          "location": "text_10",
+          "text": "for the valuation under the income approach , the company utilized a discount rate , which it believes reflects the risk and uncertainty related to the projected cash flows , and selected 2012 as the terminal year ."
+        },
+        {
+          "location": "text_11",
+          "text": "small deterioration in the assumptions used in the valuations , in particular the discount rate and growth rate assumptions used in the net income projections , could significantly affect the company 2019s impairment evaluation and , hence , results ."
+        },
+        {
+          "location": "text_12",
+          "text": "if the future were to differ adversely from management 2019s best estimate of key economic assumptions and associated cash flows were to decrease by a small margin , the company could potentially experience future material impairment charges with respect to $ 4683 million of goodwill remaining in our local consumer lending 2014 cards reporting unit ."
+        },
+        {
+          "location": "text_13",
+          "text": "any such charges , by themselves , would not negatively affect the company 2019s tier 1 , tier 1 common and total capital regulatory ratios , its tangible common equity or the company 2019s liquidity position. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the tax rate applied applied to the goodwill impairment charge in the fourth quarter of 2008",
+    "human_answer": "10.3%",
+    "reference_program": "subtract(9.6, 8.7), divide(#0, 8.7)",
+    "reference_execution_value": 0.10345,
+    "model_response": {
+      "answer": "9.375",
+      "unit": "percent",
+      "expression": "(9.6 - 8.7) / 9.6 * 100",
+      "explanation": "The tax rate equals the tax benefit divided by the pretax goodwill impairment charge."
+    }
+  },
+  {
+    "call_id": "S031",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "entergy corporation and subsidiaries notes to financial statements rate of 2.04% ( 2.04 % ) ."
+        },
+        {
+          "location": "text_1",
+          "text": "although the principal amount is not due until the date given in the tables above , entergy louisiana investment recovery funding expects to make principal payments on the bonds over the next five years in the amounts of $ 21.7 million for 2017 , $ 22.3 million for 2018 , $ 22.7 million for 2019 , $ 23.2 million for 2020 , and $ 11 million for 2021 ."
+        },
+        {
+          "location": "text_2",
+          "text": "with the proceeds , entergy louisiana investment recovery funding purchased from entergy louisiana the investment recovery property , which is the right to recover from customers through an investment recovery charge amounts sufficient to service the bonds ."
+        },
+        {
+          "location": "text_3",
+          "text": "in accordance with the financing order , entergy louisiana will apply the proceeds it received from the sale of the investment recovery property as a reimbursement for previously-incurred investment recovery costs ."
+        },
+        {
+          "location": "text_4",
+          "text": "the investment recovery property is reflected as a regulatory asset on the consolidated entergy louisiana balance sheet ."
+        },
+        {
+          "location": "text_5",
+          "text": "the creditors of entergy louisiana do not have recourse to the assets or revenues of entergy louisiana investment recovery funding , including the investment recovery property , and the creditors of entergy louisiana investment recovery funding do not have recourse to the assets or revenues of entergy louisiana ."
+        },
+        {
+          "location": "text_6",
+          "text": "entergy louisiana has no payment obligations to entergy louisiana investment recovery funding except to remit investment recovery charge collections ."
+        },
+        {
+          "location": "text_7",
+          "text": "entergy new orleans securitization bonds - hurricane isaac in may 2015 the city council issued a financing order authorizing the issuance of securitization bonds to recover entergy new orleans 2019s hurricane isaac storm restoration costs of $ 31.8 million , including carrying costs , the costs of funding and replenishing the storm recovery reserve in the amount of $ 63.9 million , and approximately $ 3 million of up-front financing costs associated with the securitization ."
+        },
+        {
+          "location": "text_8",
+          "text": "in july 2015 , entergy new orleans storm recovery funding i , l.l.c. , a company wholly owned and consolidated by entergy new orleans , issued $ 98.7 million of storm cost recovery bonds ."
+        },
+        {
+          "location": "text_9",
+          "text": "the bonds have a coupon of 2.67% ( 2.67 % ) ."
+        },
+        {
+          "location": "text_10",
+          "text": "although the principal amount is not due until the date given in the tables above , entergy new orleans storm recovery funding expects to make principal payments on the bonds over the next five years in the amounts of $ 10.6 million for 2017 , $ 11 million for 2018 , $ 11.2 million for 2019 , $ 11.6 million for 2020 , and $ 11.9 million for 2021 ."
+        },
+        {
+          "location": "text_11",
+          "text": "with the proceeds , entergy new orleans storm recovery funding purchased from entergy new orleans the storm recovery property , which is the right to recover from customers through a storm recovery charge amounts sufficient to service the securitization bonds ."
+        },
+        {
+          "location": "text_12",
+          "text": "the storm recovery property is reflected as a regulatory asset on the consolidated entergy new orleans balance sheet ."
+        },
+        {
+          "location": "text_13",
+          "text": "the creditors of entergy new orleans do not have recourse to the assets or revenues of entergy new orleans storm recovery funding , including the storm recovery property , and the creditors of entergy new orleans storm recovery funding do not have recourse to the assets or revenues of entergy new orleans ."
+        },
+        {
+          "location": "text_14",
+          "text": "entergy new orleans has no payment obligations to entergy new orleans storm recovery funding except to remit storm recovery charge collections ."
+        },
+        {
+          "location": "text_15",
+          "text": "entergy texas securitization bonds - hurricane rita in april 2007 the puct issued a financing order authorizing the issuance of securitization bonds to recover $ 353 million of entergy texas 2019s hurricane rita reconstruction costs and up to $ 6 million of transaction costs , offset by $ 32 million of related deferred income tax benefits ."
+        },
+        {
+          "location": "text_16",
+          "text": "in june 2007 , entergy gulf states reconstruction funding i , llc , a company that is now wholly-owned and consolidated by entergy texas , issued $ 329.5 million of senior secured transition bonds ( securitization bonds ) as follows : amount ( in thousands ) ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Amount (In Thousands)"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Senior Secured Transition Bonds, Series A:",
+            ""
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Tranche A-1 (5.51%) due October 2013",
+            "$93,500"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Tranche A-2 (5.79%) due October 2018",
+            "121,600"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Tranche A-3 (5.93%) due June 2022",
+            "114,400"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Total senior secured transition bonds",
+            "$329,500"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_17",
+          "text": "."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what are the payments for the next three years on the entergy new orleans storm recovery bonds ( in millions? )",
+    "human_answer": "44.4",
+    "reference_program": "add(10.6, 11)",
+    "reference_execution_value": 21.6,
+    "model_response": {
+      "answer": "32.8",
+      "unit": "million dollars",
+      "expression": "10.6 + 11 + 11.2",
+      "explanation": "The scheduled principal payments for 2017, 2018, and 2019 total $32.8 million."
+    }
+  },
+  {
+    "call_id": "S032",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "investment securities table 11 : details of investment securities ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "December 31, 2012",
+            "December 31, 2011"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "In millions",
+            "Amortized Cost",
+            "Fair Value",
+            "Amortized Cost",
+            "Fair Value"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Total securities available for sale (a)",
+            "$49,447",
+            "$51,052",
+            "$48,609",
+            "$48,568"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Total securities held to maturity",
+            "10,354",
+            "10,860",
+            "12,066",
+            "12,450"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Total securities",
+            "$59,801",
+            "$61,912",
+            "$60,675",
+            "$61,018"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_1",
+          "text": "( a ) includes $ 367 million of both amortized cost and fair value of securities classified as corporate stocks and other at december 31 , 2012 ."
+        },
+        {
+          "location": "text_2",
+          "text": "comparably , at december 31 , 2011 , the amortized cost and fair value of corporate stocks and other was $ 368 million ."
+        },
+        {
+          "location": "text_3",
+          "text": "the remainder of securities available for sale were debt securities ."
+        },
+        {
+          "location": "text_4",
+          "text": "the carrying amount of investment securities totaled $ 61.4 billion at december 31 , 2012 , which was made up of $ 51.0 billion of securities available for sale carried at fair value and $ 10.4 billion of securities held to maturity carried at amortized cost ."
+        },
+        {
+          "location": "text_5",
+          "text": "comparably , at december 31 , 2011 , the carrying value of investment securities totaled $ 60.6 billion of which $ 48.6 billion represented securities available for sale carried at fair value and $ 12.0 billion of securities held to maturity carried at amortized cost ."
+        },
+        {
+          "location": "text_6",
+          "text": "the increase in carrying amount between the periods primarily reflected an increase of $ 2.0 billion in available for sale asset-backed securities , which was primarily due to net purchase activity , and an increase of $ .6 billion in available for sale non-agency residential mortgage-backed securities due to increases in fair value at december 31 , 2012 ."
+        },
+        {
+          "location": "text_7",
+          "text": "these increases were partially offset by a $ 1.7 billion decrease in held to maturity debt securities due to principal payments ."
+        },
+        {
+          "location": "text_8",
+          "text": "investment securities represented 20% ( 20 % ) of total assets at december 31 , 2012 and 22% ( 22 % ) at december 31 , 2011 ."
+        },
+        {
+          "location": "text_9",
+          "text": "we evaluate our portfolio of investment securities in light of changing market conditions and other factors and , where appropriate , take steps intended to improve our overall positioning ."
+        },
+        {
+          "location": "text_10",
+          "text": "we consider the portfolio to be well-diversified and of high quality ."
+        },
+        {
+          "location": "text_11",
+          "text": "u.s ."
+        },
+        {
+          "location": "text_12",
+          "text": "treasury and government agencies , agency residential mortgage-backed and agency commercial mortgage-backed securities collectively represented 59% ( 59 % ) of the investment securities portfolio at december 31 , 2012 ."
+        },
+        {
+          "location": "text_13",
+          "text": "at december 31 , 2012 , the securities available for sale portfolio included a net unrealized gain of $ 1.6 billion , which represented the difference between fair value and amortized cost ."
+        },
+        {
+          "location": "text_14",
+          "text": "the comparable amount at december 31 , 2011 was a net unrealized loss of $ 41 million ."
+        },
+        {
+          "location": "text_15",
+          "text": "the fair value of investment securities is impacted by interest rates , credit spreads , market volatility and liquidity conditions ."
+        },
+        {
+          "location": "text_16",
+          "text": "the fair value of investment securities generally decreases when interest rates increase and vice versa ."
+        },
+        {
+          "location": "text_17",
+          "text": "in addition , the fair value generally decreases when credit spreads widen and vice versa ."
+        },
+        {
+          "location": "text_18",
+          "text": "the improvement in the net unrealized gain as compared with a loss at december 31 , 2011 was primarily due to improvement in the value of non-agency residential mortgage- backed securities , which had a decrease in net unrealized losses of $ 1.1 billion , and lower market interest rates ."
+        },
+        {
+          "location": "text_19",
+          "text": "net unrealized gains and losses in the securities available for sale portfolio are included in shareholders 2019 equity as accumulated other comprehensive income or loss from continuing operations , net of tax , on our consolidated balance sheet ."
+        },
+        {
+          "location": "text_20",
+          "text": "additional information regarding our investment securities is included in note 8 investment securities and note 9 fair value in our notes to consolidated financial statements included in item 8 of this report ."
+        },
+        {
+          "location": "text_21",
+          "text": "unrealized gains and losses on available for sale securities do not impact liquidity or risk-based capital under currently effective capital rules ."
+        },
+        {
+          "location": "text_22",
+          "text": "however , reductions in the credit ratings of these securities could have an impact on the liquidity of the securities or the determination of risk- weighted assets which could reduce our regulatory capital ratios under currently effective capital rules ."
+        },
+        {
+          "location": "text_23",
+          "text": "in addition , the amount representing the credit-related portion of otti on available for sale securities would reduce our earnings and regulatory capital ratios ."
+        },
+        {
+          "location": "text_24",
+          "text": "the expected weighted-average life of investment securities ( excluding corporate stocks and other ) was 4.0 years at december 31 , 2012 and 3.7 years at december 31 , 2011 ."
+        },
+        {
+          "location": "text_25",
+          "text": "we estimate that , at december 31 , 2012 , the effective duration of investment securities was 2.3 years for an immediate 50 basis points parallel increase in interest rates and 2.2 years for an immediate 50 basis points parallel decrease in interest rates ."
+        },
+        {
+          "location": "text_26",
+          "text": "comparable amounts at december 31 , 2011 were 2.6 years and 2.4 years , respectively ."
+        },
+        {
+          "location": "text_27",
+          "text": "the following table provides detail regarding the vintage , current credit rating , and fico score of the underlying collateral at origination , where available , for residential mortgage-backed , commercial mortgage-backed and other asset-backed securities held in the available for sale and held to maturity portfolios : 46 the pnc financial services group , inc ."
+        },
+        {
+          "location": "text_28",
+          "text": "2013 form 10-k ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what would the fair value of total securities available for sale be without the fair value of securities classified as corporate stocks as of december 31 , 2012?",
+    "human_answer": "61545",
+    "reference_program": "subtract(61912, 367)",
+    "reference_execution_value": 61545.0,
+    "model_response": {
+      "answer": "50685",
+      "unit": "million dollars",
+      "expression": "51052 - 367",
+      "explanation": "Subtract the $367 million fair value of corporate stocks and other from the $51,052 million total fair value of securities available for sale."
+    }
+  }
+]

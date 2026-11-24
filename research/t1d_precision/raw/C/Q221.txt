@@ -1,0 +1,1 @@
+{"answer":"4.7297297297","unit":"percent","expression":"(155 - 148) / 148 * 100","low":"4.0404040404","high":"5.4237288136","reliable_digits":"0","explanation":"Each payment is rounded to the nearest million, giving a growth range wide enough that the first significant digit is unreliable."}

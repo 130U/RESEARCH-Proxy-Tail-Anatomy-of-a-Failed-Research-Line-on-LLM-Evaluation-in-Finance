@@ -1,0 +1,5 @@
+{
+    "review_id": "R020",
+    "verdict": "invalid",
+    "reason": "The calculation uses $56 million for 2011 and $34 million for 2010, whereas the requested 2011-to-2012 change requires $122 million minus $56 million."
+  }

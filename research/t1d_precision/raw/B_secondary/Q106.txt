@@ -1,0 +1,1 @@
+{"answer":"24.74402730375427","unit":"percent","expression":"145 / 586 * 100","low":"24.63768115942029","high":"24.85055508112724","reliable_digits":"2","explanation":"The bounds allow rounding of ±0.5 thousand acres in both figures; two significant digits are reliable."}

@@ -1,0 +1,1 @@
+{"answer":"0.4","unit":"million dollars","expression":"0.3 + 0.1","low":"0.30","high":"0.50","reliable_digits":"0","explanation":"Each component is rounded to the nearest 0.1 million, so their sum has rounding bounds of 0.30 to 0.50 million."}

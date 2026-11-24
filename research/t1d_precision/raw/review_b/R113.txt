@@ -1,0 +1,5 @@
+{
+    "review_id": "R113",
+    "verdict": "valid",
+    "reason": "The source identifies rounded amounts of $57 million affecting the effective tax rate and $70 million in total year-end unrecognized tax benefits, so 57/70 gives the requested portion despite the binding context's erroneous $53."
+  }

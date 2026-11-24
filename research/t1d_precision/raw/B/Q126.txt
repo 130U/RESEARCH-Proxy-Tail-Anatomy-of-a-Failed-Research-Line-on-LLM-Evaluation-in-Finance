@@ -1,0 +1,1 @@
+{"answer":"-2.8281133818","unit":"percent","expression":"(377,677 - 388,669) / 388,669 * 100","low":"-2.8283670316","high":"-2.8278597313","reliable_digits":"4","explanation":"Liabilities decreased; allowing each displayed total to vary by 0.5 million gives these bounds, which agree when rounded to four significant digits."}

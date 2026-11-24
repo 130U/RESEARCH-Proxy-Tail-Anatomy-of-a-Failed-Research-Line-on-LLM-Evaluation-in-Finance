@@ -1,0 +1,1 @@
+{"answer":"-65.04794161","unit":"percent","expression":"(7327 - 20963) / 20963 * 100","low":"-65.05116035","high":"-65.04472272","reliable_digits":"2","explanation":"Employee separation liabilities decreased; the bounds allow each displayed liability to vary by 0.5 thousand dollars."}

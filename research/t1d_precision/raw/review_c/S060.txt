@@ -1,0 +1,7 @@
+{
+    "call_id": "S060",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The 2018 Peer Group row 3 rises from 151.16 in 2016 to 177.26 in 2017, expressed as investment values based on an initial $100. Growth correctly divides the 26.10 increase by the starting 151.16 value. The reference performs a second subtraction instead of division."
+  }

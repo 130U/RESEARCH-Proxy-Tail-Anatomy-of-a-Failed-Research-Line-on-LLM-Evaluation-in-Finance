@@ -1,0 +1,1 @@
+{"answer":"38.6","unit":"ratio","expression":"19.3 / 0.5","low":"35","high":"43","reliable_digits":"1","explanation":"The rounding bounds give 19.25/0.55 = 35 and 19.35/0.45 = 43, both rounding to 40 at one significant digit."}

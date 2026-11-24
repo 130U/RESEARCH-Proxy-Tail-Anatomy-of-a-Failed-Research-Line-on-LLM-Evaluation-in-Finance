@@ -1,0 +1,1 @@
+{"answer":"26.4285714286","unit":"million dollars","expression":"37 / 1.4","low":"25.1724137931","high":"27.7777777778","reliable_digits":"1","explanation":"Annual recognition is 37 / 1.4, with rounding bounds of 36.5 / 1.45 and 37.5 / 1.35 million dollars."}

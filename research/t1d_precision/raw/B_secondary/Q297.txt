@@ -1,0 +1,1 @@
+{"answer":"3.221864237306966","unit":"times","expression":"(2.9 * 1000) / 900.1","low":"3.166138976837194","high":"3.277595689128382","reliable_digits":"1","explanation":"Debt issuance of $2.9 billion divided by debt reductions of $900.1 million gives the ratio, with bounds reflecting the displayed rounding."}

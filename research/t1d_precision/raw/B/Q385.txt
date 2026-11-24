@@ -1,0 +1,1 @@
+{"answer":"606.4516129032258","unit":"million dollars","expression":"47.0 / (7.75 / 100)","low":"605.4158607350097","high":"607.4887023886378","reliable_digits":"2","explanation":"Assuming the U.S. plan’s 7.75% rate applies to the total expected return, assets equal expected return divided by that rate."}

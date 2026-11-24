@@ -1,0 +1,1 @@
+{"answer":"3.8043478260869565","unit":"percent","expression":"(736 - 708) / 736 * 100","low":"3.6709721278042148","high":"3.9375424304141208","reliable_digits":"1","explanation":"Each reported amount can vary by $0.5 million, producing these bounds and supporting one reliable significant digit."}

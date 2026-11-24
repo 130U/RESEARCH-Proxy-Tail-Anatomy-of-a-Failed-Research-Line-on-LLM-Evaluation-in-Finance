@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R145",
+    "verdict": "invalid",
+    "reason": "The calculation adds only the 2017 and 2018 principal payments and omits the $11.2 million payment for 2019 required for the next three years."
+  },
+  {
+    "review_id": "R146",
+    "verdict": "valid",
+    "reason": "The source identifies rounded R&D expenses of $119 million for 2015 and $86 million for 2014, and their subtraction gives the requested net change in millions."
+  },
+  {
+    "review_id": "R147",
+    "verdict": "invalid",
+    "reason": "The calculation divides the 2014 swaps amount in billions by the hedges amount in millions without converting them to common units."
+  },
+  {
+    "review_id": "R148",
+    "verdict": "invalid",
+    "reason": "The bound $1.6 billion and $1.2 billion amounts are anticipated capital expenditures for 2019 and 2020, not expenditures for 2017 and 2018."
+  },
+  {
+    "review_id": "R149",
+    "verdict": "valid",
+    "reason": "The rounded expenses of $15.6 million for 2001 and $21.1 million for 2000 are correctly bound, and the calculation uses the 2000 denominator and converts the change to percent."
+  },
+  {
+    "review_id": "R150",
+    "verdict": "valid",
+    "reason": "The source explicitly approximates both the $897 million backlog and its 50 percent fixed-price share, whose multiplication gives the requested amount in millions."
+  },
+  {
+    "review_id": "R151",
+    "verdict": "invalid",
+    "reason": "The approximate balances and 2005 denominator are correct, but the calculation returns a fractional change without converting it to the requested percentage."
+  },
+  {
+    "review_id": "R152",
+    "verdict": "valid",
+    "reason": "The December 31, 2009 aggregate cost of $2.5 billion and fair value of $1.6 billion are rounded financial amounts correctly divided in the requested order."
+  },
+  {
+    "review_id": "R153",
+    "verdict": "invalid",
+    "reason": "The rounded capitalized-interest amounts are correctly bound to 2018 and 2017, but the calculation returns a fraction without converting it to percent."
+  },
+  {
+    "review_id": "R154",
+    "verdict": "valid",
+    "reason": "The calculation correctly sums the rounded R&D expenses of $78 million, $119 million and $86 million for 2016, 2015 and 2014."
+  },
+  {
+    "review_id": "R155",
+    "verdict": "invalid",
+    "reason": "The $14 million discontinued-operations commitment and $169 million total are correctly selected, but their quotient is not converted to the requested percentage."
+  },
+  {
+    "review_id": "R156",
+    "verdict": "valid",
+    "reason": "The $63 and $51 figures are rounded average historical costs per share for 2006 and 2005, and the calculation correctly measures growth relative to 2005."
+  },
+  {
+    "review_id": "R157",
+    "verdict": "valid",
+    "reason": "The table gives the rounded 2013 liability as $177,947 and the text excludes $242 of 2013 interest and penalties, so adding these amounts answers the question."
+  },
+  {
+    "review_id": "R158",
+    "verdict": "invalid",
+    "reason": "The calculation divides $48 million of issuance costs by $7.0 billion of notes without harmonizing units or converting the resulting ratio to percent."
+  },
+  {
+    "review_id": "R159",
+    "verdict": "valid",
+    "reason": "The table's rounded $473.6 million total assets acquired comprises tangible and identifiable intangible assets, so subtracting $139.8 million and dividing by that total gives the requested portion."
+  },
+  {
+    "review_id": "R160",
+    "verdict": "uncertain",
+    "reason": "The $172.8 million restricted-assets balance and 2010 allowance entry are correctly selected, but the excerpt does not establish the allowance table's monetary scale."
+  }
+]

@@ -1,0 +1,1 @@
+{"answer":"-8095","unit":"thousand dollars","expression":"772 - 8867","low":"-8096","high":"-8094","reliable_digits":"3","explanation":"Subtracting the opening accrual from the closing accrual gives the decrease; each balance has rounding uncertainty of 0.5 thousand dollars."}

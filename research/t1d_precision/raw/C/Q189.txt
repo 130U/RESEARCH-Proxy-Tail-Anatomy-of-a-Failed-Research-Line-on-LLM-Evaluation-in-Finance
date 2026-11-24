@@ -1,0 +1,1 @@
+{"answer":"-3.64963503649635","unit":"percent","expression":"(132 - 137) / 137 * 100","low":"-4.36363636363636","high":"-2.93040293040293","reliable_digits":"0","explanation":"Each expense is rounded to the nearest million, so the possible decline ranges from 2.93% to 4.36%, leaving no significant digit reliable."}

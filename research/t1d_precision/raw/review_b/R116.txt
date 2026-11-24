@@ -1,0 +1,5 @@
+{
+    "review_id": "R116",
+    "verdict": "valid",
+    "reason": "The bound values are AWCC's rounded average borrowings for 2017 and 2016, and subtracting 850 from 779 before dividing by 850 expresses the decrease as a negative relative change."
+  }

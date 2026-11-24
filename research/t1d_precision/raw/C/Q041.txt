@@ -1,0 +1,1 @@
+{"answer":"13.6058776346","unit":"percent","expression":"(434814 - 382739) / 382739 * 100","low":"13.605598585983","high":"13.606156684002","reliable_digits":"5","explanation":"Allowing each commitment amount to vary by 0.5 million gives these bounds, both of which round to 13.606% at five significant digits."}

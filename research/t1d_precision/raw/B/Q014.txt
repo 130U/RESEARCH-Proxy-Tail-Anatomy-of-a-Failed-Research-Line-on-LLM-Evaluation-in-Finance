@@ -1,0 +1,1 @@
+{"answer":"26.341463414634146","unit":"percent","expression":"54 / (64 + 54 + 52 + 19 + 16) * 100","low":"25.907990314769976","high":"26.78132678132678","reliable_digits":"1","explanation":"The 2019 share uses the five-year estimated total, with bounds allowing each displayed amount to vary by $0.5 million."}

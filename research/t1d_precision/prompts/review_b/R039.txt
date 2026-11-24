@@ -1,0 +1,200 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R039",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "united parcel service , inc ."
+      },
+      {
+        "location": "text_1",
+        "text": "and subsidiaries notes to consolidated financial statements 2014 ( continued ) ups class b common stock on the first or the last day of each quarterly period ."
+      },
+      {
+        "location": "text_2",
+        "text": "employees purchased 1.8 , 1.9 , and 2.0 million shares at average prices of $ 64.20 , $ 66.64 , and $ 64.54 per share during 2007 , 2006 , and 2005 , respectively ."
+      },
+      {
+        "location": "text_3",
+        "text": "compensation cost is measured for the fair value of employees 2019 purchase rights under our discounted employee stock purchase plan using the black-scholes option pricing model ."
+      },
+      {
+        "location": "text_4",
+        "text": "the weighted average assumptions used and the calculated weighted average fair value of employees 2019 purchase rights granted , are as follows: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2007",
+          "2006",
+          "2005"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Expected dividend yield",
+          "2.13%",
+          "1.79%",
+          "1.62%"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Risk-free interest rate",
+          "4.60%",
+          "4.59%",
+          "2.84%"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Expected life in years",
+          "0.25",
+          "0.25",
+          "0.25"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Expected volatility",
+          "16.26%",
+          "15.92%",
+          "15.46%"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Weighted average fair value of purchase rights*",
+          "$9.80",
+          "$10.30",
+          "$9.46"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_5",
+        "text": "* includes the 10% ( 10 % ) discount from the market price ."
+      },
+      {
+        "location": "text_6",
+        "text": "expected volatilities are based on the historical price volatility on our publicly-traded class b shares ."
+      },
+      {
+        "location": "text_7",
+        "text": "the expected dividend yield is based on the recent historical dividend yields for our stock , taking into account changes in dividend policy ."
+      },
+      {
+        "location": "text_8",
+        "text": "the risk-free interest rate is based on the term structure of interest rates on u.s ."
+      },
+      {
+        "location": "text_9",
+        "text": "treasury securities at the time of the option grant ."
+      },
+      {
+        "location": "text_10",
+        "text": "the expected life represents the three month option period applicable to the purchase rights ."
+      },
+      {
+        "location": "text_11",
+        "text": "note 12 ."
+      },
+      {
+        "location": "text_12",
+        "text": "segment and geographic information we report our operations in three segments : u.s ."
+      },
+      {
+        "location": "text_13",
+        "text": "domestic package operations , international package operations , and supply chain & freight operations ."
+      },
+      {
+        "location": "text_14",
+        "text": "package operations represent our most significant business and are broken down into regional operations around the world ."
+      },
+      {
+        "location": "text_15",
+        "text": "regional operations managers are responsible for both domestic and export operations within their geographic area ."
+      },
+      {
+        "location": "text_16",
+        "text": "u.s ."
+      },
+      {
+        "location": "text_17",
+        "text": "domestic package domestic package operations include the time-definite delivery of letters , documents , and packages throughout the united states ."
+      },
+      {
+        "location": "text_18",
+        "text": "international package international package operations include delivery to more than 200 countries and territories worldwide , including shipments wholly outside the united states , as well as shipments with either origin or distribution outside the united states ."
+      },
+      {
+        "location": "text_19",
+        "text": "our international package reporting segment includes the operations of our europe , asia , and americas operating segments ."
+      },
+      {
+        "location": "text_20",
+        "text": "supply chain & freight supply chain & freight includes our forwarding and logistics operations , ups freight , and other aggregated business units ."
+      },
+      {
+        "location": "text_21",
+        "text": "our forwarding and logistics business provides services in more than 175 countries and territories worldwide , and includes supply chain design and management , freight distribution , customs brokerage , mail and consulting services ."
+      },
+      {
+        "location": "text_22",
+        "text": "ups freight offers a variety of ltl and tl services to customers in north america ."
+      },
+      {
+        "location": "text_23",
+        "text": "other aggregated business units within this segment include mail boxes , etc ."
+      },
+      {
+        "location": "text_24",
+        "text": "( the franchisor of mail boxes , etc ."
+      },
+      {
+        "location": "text_25",
+        "text": "and the ups store ) and ups capital. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the total cash inflow from the stock purchases of employees in 2007 , ( in millions ) ?",
+  "reference_program": "multiply(1.8, 64.20)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "1.8",
+      "raw": "1.8",
+      "location": "text_2:20",
+      "context": "employees purchased 1.8 , 1.9 , and 2.0 million shares at average prices of $ 64.20 , $ 66.64 , and $ 64.54 per share during 2007 , 2006 , and 2005 , respectively ."
+    },
+    "x1": {
+      "program_token": "64.20",
+      "raw": "64.20",
+      "location": "text_2:77",
+      "context": "employees purchased 1.8 , 1.9 , and 2.0 million shares at average prices of $ 64.20 , $ 66.64 , and $ 64.54 per share during 2007 , 2006 , and 2005 , respectively ."
+    }
+  }
+}

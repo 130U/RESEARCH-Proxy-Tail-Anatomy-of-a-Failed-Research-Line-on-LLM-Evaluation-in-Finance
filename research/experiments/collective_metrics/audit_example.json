@@ -1,0 +1,13 @@
+{
+  "input_kind": "head_predictions",
+  "provenance": "constructed mathematical example; audit findings are hypothetical, not collected data",
+  "votes_by_example_and_head": [[0, 1], [1, 0], [0, 1], [1, 0]],
+  "labels": [0, 0, 1, 1],
+  "classes": 2,
+  "audit": {
+    "population": 20,
+    "sample_size": 16,
+    "findings": 0,
+    "alpha": "1/20"
+  }
+}

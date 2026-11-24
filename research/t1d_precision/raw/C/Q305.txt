@@ -1,0 +1,1 @@
+{"answer":"14.0903221560433","unit":"times","expression":"2140954 / 151945","low":"14.0903221560433","high":"14.0903221560433","reliable_digits":"15","explanation":"Both security counts are exact, so the ratio has no input-rounding uncertainty; all 15 reported significant digits are reliable."}

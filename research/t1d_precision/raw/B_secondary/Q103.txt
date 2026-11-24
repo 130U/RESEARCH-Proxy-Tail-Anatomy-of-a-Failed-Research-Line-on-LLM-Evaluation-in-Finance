@@ -1,0 +1,1 @@
+{"answer":"26.460317460317","unit":"percent","expression":"(79.67 - 63.00) / 63.00 * 100","low":"26.442345845568","high":"26.478291927931","reliable_digits":"2","explanation":"ROI is the percentage increase from 2008 to 2009; allowing each displayed value to vary by 0.005 gives these bounds."}

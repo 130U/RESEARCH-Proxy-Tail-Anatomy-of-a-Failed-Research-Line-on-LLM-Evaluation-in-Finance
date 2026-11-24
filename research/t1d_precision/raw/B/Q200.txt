@@ -1,0 +1,1 @@
+{"answer":"-3.4375","unit":"percent","expression":"(3.09 - 3.20) / 3.20 * 100","low":"-3.74414976599064","high":"-3.12989045383412","reliable_digits":"0","explanation":"Prices rounded to the nearest cent permit growth rates that round to either -3% or -4% at one significant digit."}

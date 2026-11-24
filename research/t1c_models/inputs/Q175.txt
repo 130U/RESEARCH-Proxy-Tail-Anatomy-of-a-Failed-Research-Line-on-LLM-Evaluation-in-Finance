@@ -1,0 +1,40 @@
+Solve the financial question using only the document below. Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Do not use external sources or tools. Your expression must use numbers and arithmetic operators (+, -, *, /, parentheses) and evaluate to your answer in the stated unit. Do not include explanatory prose outside the JSON.
+Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "explanation": "one brief sentence"}
+
+DOCUMENT
+notes to consolidated financial statements see notes 6 and 7 for further information about fair value measurements of cash instruments and derivatives , respectively , included in 201cfinancial instruments owned , at fair value 201d and 201cfinancial instruments sold , but not yet purchased , at fair value , 201d and note 8 for further information about fair value measurements of other financial assets and financial liabilities accounted for at fair value under the fair value option .
+the table below presents financial assets and financial liabilities accounted for at fair value under the fair value option or in accordance with other u.s .
+gaap .
+in the table below , cash collateral and counterparty netting represents the impact on derivatives of netting across levels of the fair value hierarchy .
+netting among positions classified in the same level is included in that level. .
+
+TABLE
+ | As of December
+<i>$ in millions</i> | 2013 | 2012
+Total level 1 financial assets | $156,030 | $ 190,737
+Total level 2 financial assets | 499,480 | 502,293
+Total level 3 financial assets | 40,013 | 47,095
+Cash collateral and counterparty netting | (95,350) | (101,612)
+Total financial assets at fair value | $600,173 | $ 638,513
+Total assets<sup>1</sup> | $911,507 | $ 938,555
+Total level 3 financial assets as a percentage of Total assets | 4.4% | 5.0%
+Total level 3 financial assets as a percentage of Total financial assets at fair value | 6.7% | 7.4%
+Total level 1 financialliabilities | $ 68,412 | $ 65,994
+Total level 2 financial liabilities | 300,583 | 318,764
+Total level 3 financial liabilities | 12,046 | 25,679
+Cash collateral and counterparty netting | (25,868) | (32,760)
+Total financial liabilities at fair value | $355,173 | $ 377,677
+Total level 3 financial liabilities as a percentage of Total financial liabilities at fairvalue | 3.4% | 6.8%
+
+1 .
+includes approximately $ 890 billion and $ 915 billion as of december 2013 and december 2012 , respectively , that is carried at fair value or at amounts that generally approximate fair value .
+level 3 financial assets as of december 2013 decreased compared with december 2012 , primarily reflecting a decrease in derivative assets , bank loans and bridge loans , and loans and securities backed by commercial real estate .
+the decrease in derivative assets primarily reflected a decline in credit derivative assets , principally due to settlements and unrealized losses .
+the decrease in bank loans and bridge loans , and loans and securities backed by commercial real estate primarily reflected settlements and sales , partially offset by purchases and transfers into level 3 .
+level 3 financial liabilities as of december 2013 decreased compared with december 2012 , primarily reflecting a decrease in other liabilities and accrued expenses , principally due to the sale of a majority stake in the firm 2019s european insurance business in december 2013 .
+see notes 6 , 7 and 8 for further information about level 3 cash instruments , derivatives and other financial assets and financial liabilities accounted for at fair value under the fair value option , respectively , including information about significant unrealized gains and losses , and transfers in and out of level 3 .
+124 goldman sachs 2013 annual report .
+
+QUESTION
+what is the growth rate in total financial liabilities at fair value in 2013?

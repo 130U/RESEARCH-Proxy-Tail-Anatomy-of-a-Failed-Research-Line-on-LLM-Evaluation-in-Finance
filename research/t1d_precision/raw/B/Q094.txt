@@ -1,0 +1,1 @@
+{"answer":"27.27272727272727","unit":"percent","expression":"(11.2 - 8.8) / 8.8 * 100","low":"25.98870056497175","high":"28.57142857142857","reliable_digits":"1","explanation":"Allowing each receivable to vary by $0.05 million gives these bounds, which agree to one significant digit."}

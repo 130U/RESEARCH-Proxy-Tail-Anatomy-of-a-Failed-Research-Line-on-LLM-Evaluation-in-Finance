@@ -1,0 +1,1 @@
+{"answer":"10.2526959601","unit":"percent","expression":"(6,850 - 6,213) / 6,213 * 100","low":"10.2357769373","high":"10.2696177062","reliable_digits":"2","explanation":"Growth equals the increase divided by the 2009 balance; allowing each balance to vary by 0.5 gives these bounds and two reliably rounded significant digits."}

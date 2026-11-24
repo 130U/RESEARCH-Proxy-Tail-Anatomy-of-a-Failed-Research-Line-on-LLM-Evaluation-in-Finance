@@ -1,0 +1,5 @@
+{
+    "review_id": "R252",
+    "verdict": "valid",
+    "reason": "The source assigns rounded matching contributions of $2.6 million to 2008 and $1.4 million to 2007, and subtraction correctly gives the change in millions."
+  }

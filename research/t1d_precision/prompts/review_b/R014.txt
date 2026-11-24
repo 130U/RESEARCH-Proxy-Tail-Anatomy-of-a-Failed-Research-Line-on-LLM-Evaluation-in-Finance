@@ -1,0 +1,234 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R014",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "february 2018 which had no remaining authority ."
+      },
+      {
+        "location": "text_1",
+        "text": "at december 31 , 2018 , we had remaining authority to issue up to $ 6.0 billion of debt securities under our shelf registration ."
+      },
+      {
+        "location": "text_2",
+        "text": "receivables securitization facility 2013 as of december 31 , 2018 , and 2017 , we recorded $ 400 million and $ 500 million , respectively , of borrowings under our receivables facility , as secured debt ."
+      },
+      {
+        "location": "text_3",
+        "text": "( see further discussion of our receivables securitization facility in note 11 ) ."
+      },
+      {
+        "location": "text_4",
+        "text": "16 ."
+      },
+      {
+        "location": "text_5",
+        "text": "variable interest entities we have entered into various lease transactions in which the structure of the leases contain variable interest entities ( vies ) ."
+      },
+      {
+        "location": "text_6",
+        "text": "these vies were created solely for the purpose of doing lease transactions ( principally involving railroad equipment and facilities ) and have no other activities , assets or liabilities outside of the lease transactions ."
+      },
+      {
+        "location": "text_7",
+        "text": "within these lease arrangements , we have the right to purchase some or all of the assets at fixed prices ."
+      },
+      {
+        "location": "text_8",
+        "text": "depending on market conditions , fixed-price purchase options available in the leases could potentially provide benefits to us ; however , these benefits are not expected to be significant ."
+      },
+      {
+        "location": "text_9",
+        "text": "we maintain and operate the assets based on contractual obligations within the lease arrangements , which set specific guidelines consistent within the railroad industry ."
+      },
+      {
+        "location": "text_10",
+        "text": "as such , we have no control over activities that could materially impact the fair value of the leased assets ."
+      },
+      {
+        "location": "text_11",
+        "text": "we do not hold the power to direct the activities of the vies and , therefore , do not control the ongoing activities that have a significant impact on the economic performance of the vies ."
+      },
+      {
+        "location": "text_12",
+        "text": "additionally , we do not have the obligation to absorb losses of the vies or the right to receive benefits of the vies that could potentially be significant to the vies ."
+      },
+      {
+        "location": "text_13",
+        "text": "we are not considered to be the primary beneficiary and do not consolidate these vies because our actions and decisions do not have the most significant effect on the vie 2019s performance and our fixed-price purchase options are not considered to be potentially significant to the vies ."
+      },
+      {
+        "location": "text_14",
+        "text": "the future minimum lease payments associated with the vie leases totaled $ 1.7 billion as of december 31 , 2018 ."
+      },
+      {
+        "location": "text_15",
+        "text": "17 ."
+      },
+      {
+        "location": "text_16",
+        "text": "leases we lease certain locomotives , freight cars , and other property ."
+      },
+      {
+        "location": "text_17",
+        "text": "the consolidated statements of financial position as of december 31 , 2018 , and 2017 included $ 1454 million , net of $ 912 million of accumulated depreciation , and $ 1635 million , net of $ 953 million of accumulated depreciation , respectively , for properties held under capital leases ."
+      },
+      {
+        "location": "text_18",
+        "text": "a charge to income resulting from the depreciation for assets held under capital leases is included within depreciation expense in our consolidated statements of income ."
+      },
+      {
+        "location": "text_19",
+        "text": "future minimum lease payments for operating and capital leases with initial or remaining non-cancelable lease terms in excess of one year as of december 31 , 2018 , were as follows : millions operating leases capital leases ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "Millions",
+          "OperatingLeases",
+          "CapitalLeases"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2019",
+          "$419",
+          "$148"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2020",
+          "378",
+          "155"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2021",
+          "303",
+          "159"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "2022",
+          "272",
+          "142"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "2023",
+          "234",
+          "94"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Later years",
+          "1,040",
+          "200"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Total minimum lease payments",
+          "$2,646",
+          "$898"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Amount representing interest",
+          "N/A",
+          "(144)"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Present value of minimum lease payments",
+          "N/A",
+          "$754"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_20",
+        "text": "approximately 97% ( 97 % ) of capital lease payments relate to locomotives ."
+      },
+      {
+        "location": "text_21",
+        "text": "rent expense for operating leases with terms exceeding one month was $ 397 million in 2018 , $ 480 million in 2017 , and $ 535 million in 2016 ."
+      },
+      {
+        "location": "text_22",
+        "text": "when cash rental payments are not made on a straight-line basis , we recognize variable rental expense on a straight-line basis over the lease term ."
+      },
+      {
+        "location": "text_23",
+        "text": "contingent rentals and sub-rentals are not significant ."
+      },
+      {
+        "location": "text_24",
+        "text": "18 ."
+      },
+      {
+        "location": "text_25",
+        "text": "commitments and contingencies asserted and unasserted claims 2013 various claims and lawsuits are pending against us and certain of our subsidiaries ."
+      },
+      {
+        "location": "text_26",
+        "text": "we cannot fully determine the effect of all asserted and unasserted claims on our consolidated results of operations , financial condition , or liquidity ."
+      },
+      {
+        "location": "text_27",
+        "text": "to the extent possible , we have recorded ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the 2019 to 2020 projected growth rate for capital lease payments?",
+  "reference_program": "subtract(155, 148), divide(#0, 148)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "155",
+      "raw": "155",
+      "location": "table_2:2",
+      "context": "2020 | CapitalLeases"
+    },
+    "x1": {
+      "program_token": "148",
+      "raw": "148",
+      "location": "table_1:2",
+      "context": "2019 | CapitalLeases"
+    }
+  }
+}

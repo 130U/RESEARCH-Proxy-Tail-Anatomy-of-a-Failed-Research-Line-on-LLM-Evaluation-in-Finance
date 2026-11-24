@@ -1,0 +1,1 @@
+{"answer":"2.147751606","unit":"times","expression":"100.3 / 46.7","low":"2.144385026738","high":"2.151125401929","reliable_digits":"1","explanation":"Allowing each displayed balance to vary by 0.05 gives these bounds; only one significant digit rounds consistently across the interval."}

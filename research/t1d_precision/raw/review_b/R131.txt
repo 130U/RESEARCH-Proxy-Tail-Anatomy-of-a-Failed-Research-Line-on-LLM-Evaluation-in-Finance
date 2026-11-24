@@ -1,0 +1,5 @@
+{
+    "review_id": "R131",
+    "verdict": "invalid",
+    "reason": "The calculation divides weighted-average shares by plan expenses, producing shares per dollar instead of the requested dollars expensed per share."
+  }

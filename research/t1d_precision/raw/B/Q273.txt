@@ -1,0 +1,1 @@
+{"answer":"-8095","unit":"thousand dollars","expression":"772 - 8,867","low":"-8096","high":"-8094","reliable_digits":"2","explanation":"Each balance has rounding uncertainty of 0.5 thousand dollars, giving this decrease an uncertainty of 1 thousand dollars and two consistently rounded significant digits."}

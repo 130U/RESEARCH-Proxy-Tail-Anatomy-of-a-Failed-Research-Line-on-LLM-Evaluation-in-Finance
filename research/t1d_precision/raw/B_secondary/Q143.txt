@@ -1,0 +1,1 @@
+{"answer":"93.33333333333333","unit":"percent","expression":"(2.9 - 1.5) / 1.5 * 100","low":"83.87096774193548","high":"103.44827586206897","reliable_digits":"0","explanation":"Each dividend yield is rounded to 0.1 percentage point, so the possible growth range does not preserve even the first significant digit."}

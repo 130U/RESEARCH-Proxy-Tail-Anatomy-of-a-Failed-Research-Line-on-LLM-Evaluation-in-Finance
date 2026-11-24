@@ -1,0 +1,1 @@
+{"answer":"35.03067484662577","unit":"percent","expression":"(57100 / 163000) * 100","low":"35.03026064337226","high":"35.031089052420406","reliable_digits":"4","explanation":"The footnote gives 57100 occupied square feet out of 163000 total, each rounded to the nearest square foot."}

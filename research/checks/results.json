@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "source_level": "our_experiment_mathematical_sanity_check_only",
+  "source_sha256": "8bd53c936f9530ea8711fc4582ccba76095c4a5bc5e06604fdc690375d2ce465",
+  "base_commit": "8e4dd0b33c95ac2ac1a6015eba6f2dfafe5c1254",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "seed": 20261115,
+  "elapsed_seconds": 1.6052614000000176,
+  "peak_memory_measured": false,
+  "gpu_used": false,
+  "training_tokens": 0,
+  "vote_margin_certified_cases_exhaustively_checked": 439,
+  "tie_counterexample": {
+    "m": 2,
+    "k": 1,
+    "votes": [
+      0,
+      0
+    ],
+    "reachable": [
+      0
+    ]
+  },
+  "nonrobust_but_informative_accuracy": {
+    "votes": [
+      0,
+      0,
+      1,
+      1,
+      2
+    ],
+    "k": 1,
+    "reachable": [
+      0,
+      1
+    ],
+    "true_label": 2,
+    "interval": [
+      0,
+      0
+    ]
+  },
+  "linear_head_certificate": {
+    "artifact_kind": "conditional_exact_rational_linear_head_certificate",
+    "trained_model": false,
+    "assumptions": [
+      "h(g,c) = dot(weights,g) + b(c)",
+      "c and ordinal thresholds remain fixed under numeric interventions",
+      "ordered thresholds and logistic cumulative link",
+      "real-valued function semantics; float evaluation separately sanity-checked"
+    ],
+    "weights": [
+      "1/4",
+      "-1/2",
+      "1/8"
+    ],
+    "lambda": "1/2",
+    "h_lipschitz_l1": "1/2",
+    "monotone_coordinates_zero_based": [
+      0,
+      1
+    ],
+    "eta_partial_derivatives": [
+      "3/4",
+      "0",
+      "1/8"
+    ],
+    "per_class_probability_partial_abs_bound": "1/4"
+  },
+  "invalid_structural_input_rejected": true,
+  "numeric_points": 100000,
+  "maximum_abs_probability_derivative": 0.18749999907837767,
+  "minimum_monotone_tail_change": -1.1102230246251565e-16,
+  "maximum_probability_sum_error": 1.1102230246251565e-16,
+  "exact_rational_unit_cases": 27,
+  "coupling_grid": {
+    "denominator": 12,
+    "marginal_counts": [
+      3,
+      6,
+      9
+    ],
+    "mass_tables_considered": 50388,
+    "feasible_mass_tables": 50,
+    "comonotone_es": {
+      "0": "3/2",
+      "1/2": "5/2",
+      "9/10": "3"
+    },
+    "all_real_couplings_enumerated": false
+  },
+  "var_counterexample": {
+    "beta": "1/2",
+    "comonotone": 0,
+    "antimonotone": 1
+  },
+  "limitations": [
+    "no model training or real financial data",
+    "no parser correctness claim",
+    "finite checks are not universal proofs",
+    "floating sigmoid evaluation is not interval-arithmetic verified"
+  ]
+}

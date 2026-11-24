@@ -1,0 +1,1 @@
+{"answer":"1.6390584133","unit":"percent","expression":"(5829 - 5735) / 5735 * 100","low":"1.6214802546","high":"1.6566396373","reliable_digits":"1","explanation":"Net revenue increased by $94 million; allowing each revenue figure to vary by $0.5 million gives the stated bounds and one reliable significant digit."}

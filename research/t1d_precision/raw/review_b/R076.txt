@@ -1,0 +1,5 @@
+{
+    "review_id": "R076",
+    "verdict": "valid",
+    "reason": "The reported aggregate facility amounts support rounding, and converting the $1.4 billion senior facility to millions before dividing $945.5 million by it gives the requested estimated share."
+  }

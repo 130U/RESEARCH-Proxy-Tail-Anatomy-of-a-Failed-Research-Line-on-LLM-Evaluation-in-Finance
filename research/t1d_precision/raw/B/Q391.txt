@@ -1,0 +1,1 @@
+{"answer":"6","unit":"million dollars","expression":"10 - 4","low":"5","high":"7","reliable_digits":"0","explanation":"Each reserve is rounded to the nearest million dollars, allowing the increase to range from 5 to 7 million dollars."}

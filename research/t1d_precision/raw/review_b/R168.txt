@@ -1,0 +1,5 @@
+{
+    "review_id": "R168",
+    "verdict": "invalid",
+    "reason": "The calculation divides gross London Market reserves of $57 by net total reserves of $320 without allocating ceded reserves to determine London's net contribution."
+  }

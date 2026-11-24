@@ -1,0 +1,1 @@
+{"answer":"0.970873786407767","unit":"percent","expression":"(270.4 - 267.8) / 267.8 * 100","low":"0.933358222885944","high":"1.008403361344538","reliable_digits":"0","explanation":"Net interest expense increased, but rounding uncertainty means even the result rounded to one significant digit is not fixed."}

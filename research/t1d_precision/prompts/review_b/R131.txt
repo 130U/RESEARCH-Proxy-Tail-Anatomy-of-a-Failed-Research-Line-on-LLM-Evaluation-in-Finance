@@ -1,0 +1,201 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R131",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "table of contents cdw corporation and subsidiaries notes to consolidated financial statements which the company realized the benefits of the deductions ."
+      },
+      {
+        "location": "text_1",
+        "text": "this arrangement has been accounted for as contingent consideration ."
+      },
+      {
+        "location": "text_2",
+        "text": "pre-2009 business combinations were accounted for under a former accounting standard which , among other aspects , precluded the recognition of certain contingent consideration as of the business combination date ."
+      },
+      {
+        "location": "text_3",
+        "text": "instead , under the former accounting standard , contingent consideration is accounted for as additional purchase price ( goodwill ) at the time the contingency is resolved ."
+      },
+      {
+        "location": "text_4",
+        "text": "as of december 31 , 2013 , the company accrued $ 20.9 million related to this arrangement within other current liabilities , as the company realized the tax benefit of the compensation deductions during the 2013 tax year ."
+      },
+      {
+        "location": "text_5",
+        "text": "the company made the related cash contribution during the first quarter of 2014 ."
+      },
+      {
+        "location": "text_6",
+        "text": "12 ."
+      },
+      {
+        "location": "text_7",
+        "text": "earnings per share the numerator for both basic and diluted earnings per share is net income ."
+      },
+      {
+        "location": "text_8",
+        "text": "the denominator for basic earnings per share is the weighted-average shares outstanding during the period ."
+      },
+      {
+        "location": "text_9",
+        "text": "a reconciliation of basic weighted-average shares outstanding to diluted weighted-average shares outstanding is as follows: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Years Ended December 31,"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "(in millions)",
+          "2015",
+          "2014",
+          "2013<sup>(1)</sup>"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Basic weighted-average shares outstanding",
+          "170.3",
+          "170.6",
+          "156.6"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Effect of dilutive securities<sup>(2)</sup>",
+          "1.5",
+          "2.2",
+          "2.1"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Diluted weighted-average shares outstanding<sup>(3)</sup>",
+          "171.8",
+          "172.8",
+          "158.7"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_10",
+        "text": "effect of dilutive securities ( 2 ) 1.5 2.2 2.1 diluted weighted-average shares outstanding ( 3 ) 171.8 172.8 158.7 ( 1 ) the 2013 basic weighted-average shares outstanding was impacted by common stock issued during the ipo and the underwriters 2019 exercise in full of the overallotment option granted to them in connection with the ipo ."
+      },
+      {
+        "location": "text_11",
+        "text": "as the common stock was issued on july 2 , 2013 and july 31 , 2013 , respectively , the shares are only partially reflected in the 2013 basic weighted-average shares outstanding ."
+      },
+      {
+        "location": "text_12",
+        "text": "such shares are fully reflected in the 2015 and 2014 basic weighted-average shares outstanding ."
+      },
+      {
+        "location": "text_13",
+        "text": "for additional discussion of the ipo , see note 10 ( stockholders 2019 equity ) ."
+      },
+      {
+        "location": "text_14",
+        "text": "( 2 ) the dilutive effect of outstanding stock options , restricted stock units , restricted stock , coworker stock purchase plan units and mpk plan units is reflected in the diluted weighted-average shares outstanding using the treasury stock method ."
+      },
+      {
+        "location": "text_15",
+        "text": "( 3 ) there were 0.4 million potential common shares excluded from the diluted weighted-average shares outstanding for the year ended december 31 , 2015 , and there was an insignificant amount of potential common shares excluded from the diluted weighted-average shares outstanding for the years ended december 31 , 2014 and 2013 , as their inclusion would have had an anti-dilutive effect ."
+      },
+      {
+        "location": "text_16",
+        "text": "13 ."
+      },
+      {
+        "location": "text_17",
+        "text": "coworker retirement and other compensation benefits profit sharing plan and other savings plans the company has a profit sharing plan that includes a salary reduction feature established under the internal revenue code section 401 ( k ) covering substantially all coworkers in the united states ."
+      },
+      {
+        "location": "text_18",
+        "text": "in addition , coworkers outside the u.s ."
+      },
+      {
+        "location": "text_19",
+        "text": "participate in other savings plans ."
+      },
+      {
+        "location": "text_20",
+        "text": "company contributions to the profit sharing and other savings plans are made in cash and determined at the discretion of the board of directors ."
+      },
+      {
+        "location": "text_21",
+        "text": "for the years ended december 31 , 2015 , 2014 and 2013 , the amounts expensed for these plans were $ 19.8 million , $ 21.9 million and $ 17.3 million , respectively ."
+      },
+      {
+        "location": "text_22",
+        "text": "coworker stock purchase plan on january 1 , 2014 , the first offering period under the company 2019s coworker stock purchase plan ( the 201ccspp 201d ) commenced ."
+      },
+      {
+        "location": "text_23",
+        "text": "the cspp provides the opportunity for eligible coworkers to acquire shares of the company 2019s common stock at a 5% ( 5 % ) discount from the closing market price on the final day of the offering period ."
+      },
+      {
+        "location": "text_24",
+        "text": "there is no compensation expense associated with the cspp ."
+      },
+      {
+        "location": "text_25",
+        "text": "restricted debt unit plan on march 10 , 2010 , the company established the restricted debt unit plan ( the 201crdu plan 201d ) , an unfunded nonqualified deferred compensation plan. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "how much more money was expensed per outstanding basic weighted-average share in the year ended dec 31 , 2013 compared to the year ended dec 31 , 2014?",
+  "reference_program": "divide(156.6, 17.3), divide(170.6, 21.9), subtract(#0, #1)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "156.6",
+      "raw": "156.6",
+      "location": "table_2:3",
+      "context": "Basic weighted-average shares outstanding | "
+    },
+    "x1": {
+      "program_token": "17.3",
+      "raw": "17.3",
+      "location": "text_21:136",
+      "context": "for the years ended december 31 , 2015 , 2014 and 2013 , the amounts expensed for these plans were $ 19.8 million , $ 21.9 million and $ 17.3 million , respectively ."
+    },
+    "x2": {
+      "program_token": "170.6",
+      "raw": "170.6",
+      "location": "table_2:2",
+      "context": "Basic weighted-average shares outstanding | "
+    },
+    "x3": {
+      "program_token": "21.9",
+      "raw": "21.9",
+      "location": "text_21:117",
+      "context": "for the years ended december 31 , 2015 , 2014 and 2013 , the amounts expensed for these plans were $ 19.8 million , $ 21.9 million and $ 17.3 million , respectively ."
+    }
+  }
+}

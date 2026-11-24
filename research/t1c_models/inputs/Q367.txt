@@ -1,0 +1,34 @@
+Solve the financial question using only the document below. Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Do not use external sources or tools. Your expression must use numbers and arithmetic operators (+, -, *, /, parentheses) and evaluate to your answer in the stated unit. Do not include explanatory prose outside the JSON.
+Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "explanation": "one brief sentence"}
+
+DOCUMENT
+table of contents part ii item 5 .
+market for registrant 2019s common equity , related stockholder matters and issuer purchases of equity securities .
+price range our common stock trades on the nasdaq global select market under the symbol 201cmktx 201d .
+the range of closing price information for our common stock , as reported by nasdaq , was as follows : on february 20 , 2013 , the last reported closing price of our common stock on the nasdaq global select market was $ 39.60 .
+holders there were 33 holders of record of our common stock as of february 20 , 2013 .
+dividend policy we initiated a regular quarterly dividend in the fourth quarter of 2009 .
+during 2012 and 2011 , we paid quarterly cash dividends of $ 0.11 per share and $ 0.09 per share , respectively .
+on december 27 , 2012 , we paid a special dividend of $ 1.30 per share .
+in january 2013 , our board of directors approved a quarterly cash dividend of $ 0.13 per share payable on february 28 , 2013 to stockholders of record as of the close of business on february 14 , 2013 .
+any future declaration and payment of dividends will be at the sole discretion of our board of directors .
+the board of directors may take into account such matters as general business conditions , our financial results , capital requirements , and contractual , legal , and regulatory restrictions on the payment of dividends to our stockholders or by our subsidiaries to the parent and any other such factors as the board of directors may deem relevant .
+recent sales of unregistered securities securities authorized for issuance under equity compensation plans please see the section entitled 201cequity compensation plan information 201d in item 12. .
+
+TABLE
+2012: | High | Low
+January 1, 2012 to March 31, 2012 | $37.79 | $29.26
+April 1, 2012 to June 30, 2012 | $37.65 | $26.22
+July 1, 2012 to September 30, 2012 | $34.00 | $26.88
+October 1, 2012 to December 31, 2012 | $35.30 | $29.00
+2011: | High | Low
+January 1, 2011 to March 31, 2011 | $24.19 | $19.78
+April 1, 2011 to June 30, 2011 | $25.22 | $21.00
+July 1, 2011 to September 30, 2011 | $30.75 | $23.41
+October 1, 2011 to December 31, 2011 | $31.16 | $24.57
+
+.
+
+QUESTION
+for the period of october 1 2011 to december 31 2011 , what was the difference between high and low share price?

@@ -1,0 +1,1180 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only a JSON array, with one object for each supplied material in the supplied order. Each object must use exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+Assess each material independently. Do not infer a common answer or prevalence from the batch. Do not combine items or omit any item.
+Each material includes two source interpretations in random order. Evaluate their reasons against that material and give your own judgment. Their order carries no priority.
+
+MATERIALS
+[
+  {
+    "review_id": "R200",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "intangible asset amortization expense amounted to $ 12 million , $ 4 million and $ 4 million for the years ended december 31 , 2018 , 2017 and 2016 , respectively ."
+        },
+        {
+          "location": "text_1",
+          "text": "estimated amortization expense for the next five years subsequent to december 31 , 2018 is as follows: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Amount"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2019",
+            "$15"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2020",
+            "13"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2021",
+            "11"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2022",
+            "10"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "2023",
+            "7"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_2",
+          "text": "note 9 : shareholders 2019 equity common stock under the dividend reinvestment and direct stock purchase plan ( the 201cdrip 201d ) , shareholders may reinvest cash dividends and purchase additional company common stock , up to certain limits , through the plan administrator without commission fees ."
+        },
+        {
+          "location": "text_3",
+          "text": "shares purchased by participants through the drip may be newly issued shares , treasury shares , or at the company 2019s election , shares purchased by the plan administrator in the open market or in privately negotiated transactions ."
+        },
+        {
+          "location": "text_4",
+          "text": "purchases generally will be made and credited to drip accounts once each week ."
+        },
+        {
+          "location": "text_5",
+          "text": "as of december 31 , 2018 , there were approximately 4.2 million shares available for future issuance under the drip ."
+        },
+        {
+          "location": "text_6",
+          "text": "anti-dilutive stock repurchase program in february 2015 , the company 2019s board of directors authorized an anti-dilutive stock repurchase program , which allowed the company to purchase up to 10 million shares of its outstanding common stock over an unrestricted period of time ."
+        },
+        {
+          "location": "text_7",
+          "text": "the company repurchased 0.6 million shares and 0.7 million shares of common stock in the open market at an aggregate cost of $ 45 million and $ 54 million under this program for the years ended december 31 , 2018 and 2017 , respectively ."
+        },
+        {
+          "location": "text_8",
+          "text": "as of december 31 , 2018 , there were 5.5 million shares of common stock available for purchase under the program. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "at what price per share did awk repurchase its shares of common stock in 2017?",
+    "reference_program": "divide(54, 0.7)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "54",
+        "raw": "54",
+        "location": "text_7:143",
+        "context": "the company repurchased 0.6 million shares and 0.7 million shares of common stock in the open market at an aggregate cost of $ 45 million and $ 54 million under this program for the years ended december 31 , 2018 and 2017 , respectively ."
+      },
+      "x1": {
+        "program_token": "0.7",
+        "raw": "0.7",
+        "location": "text_7:47",
+        "context": "the company repurchased 0.6 million shares and 0.7 million shares of common stock in the open market at an aggregate cost of $ 45 million and $ 54 million under this program for the years ended december 31 , 2018 and 2017 , respectively ."
+      }
+    },
+    "source_interpretations_random_order": [
+      "2017repurchase cost54m/shares0.7million yields dollars/share; scaled shares are rounded counts.",
+      "The rounded 2017 aggregate cost and scaled share volume support an average repurchase price, but the excerpt does not identify the company as AWK."
+    ]
+  },
+  {
+    "review_id": "R202",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "with these types of uncapped damage provisions are fairly rare , but individual contracts could still represent meaningful risk ."
+        },
+        {
+          "location": "text_1",
+          "text": "there is a possibility that a damage claim by a counterparty to one of these contracts could result in expenses to the company that are far in excess of the revenue received from the counterparty in connection with the contract ."
+        },
+        {
+          "location": "text_2",
+          "text": "indemnification provisions : in addition , the company may provide indemnifications for losses that result from the breach of general warranties contained in certain commercial , intellectual property and divestiture agreements ."
+        },
+        {
+          "location": "text_3",
+          "text": "historically , the company has not made significant payments under these agreements , nor have there been significant claims asserted against the company ."
+        },
+        {
+          "location": "text_4",
+          "text": "however , there is an increasing risk in relation to intellectual property indemnities given the current legal climate ."
+        },
+        {
+          "location": "text_5",
+          "text": "in indemnification cases , payment by the company is conditioned on the other party making a claim pursuant to the procedures specified in the particular contract , which procedures typically allow the company to challenge the other party 2019s claims ."
+        },
+        {
+          "location": "text_6",
+          "text": "further , the company 2019s obligations under these agreements for indemnification based on breach of representations and warranties are generally limited in terms of duration , typically not more than 24 months , and for amounts not in excess of the contract value , and in some instances the company may have recourse against third parties for certain payments made by the company ."
+        },
+        {
+          "location": "text_7",
+          "text": "legal matters : the company is a defendant in various lawsuits , claims and actions , which arise in the normal course of business ."
+        },
+        {
+          "location": "text_8",
+          "text": "these include actions relating to products , contracts and securities , as well as matters initiated by third parties or motorola relating to infringements of patents , violations of licensing arrangements and other intellectual property-related matters ."
+        },
+        {
+          "location": "text_9",
+          "text": "in the opinion of management , the ultimate disposition of these matters will not have a material adverse effect on the company 2019s consolidated financial position , liquidity or results of operations ."
+        },
+        {
+          "location": "text_10",
+          "text": "segment information the following commentary should be read in conjunction with the financial results of each reporting segment as detailed in note 12 , 201cinformation by segment and geographic region , 201d to the company 2019s consolidated financial statements ."
+        },
+        {
+          "location": "text_11",
+          "text": "net sales and operating results for the company 2019s three operating segments for 2008 , 2007 and 2006 are presented below ."
+        },
+        {
+          "location": "text_12",
+          "text": "mobile devices segment the mobile devices segment designs , manufactures , sells and services wireless handsets with integrated software and accessory products , and licenses intellectual property ."
+        },
+        {
+          "location": "text_13",
+          "text": "in 2008 , the segment 2019s net sales represented 40% ( 40 % ) of the company 2019s consolidated net sales , compared to 52% ( 52 % ) in 2007 and 66% ( 66 % ) in 2006 ."
+        },
+        {
+          "location": "text_14",
+          "text": "( dollars in millions ) 2008 2007 2006 2008 20142007 2007 20142006 years ended december 31 percent change ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "<i>Years Ended December 31</i>",
+            "<i>Percent Change</i>"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "<i>(Dollars in millions)</i>",
+            "<i>2008</i>",
+            "<i>2007</i>",
+            "<i>2006</i>",
+            "<i>2008—2007</i>",
+            "<i>2007—2006</i>"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Segment net sales",
+            "$12,099",
+            "$18,988",
+            "$28,383",
+            "(36)%",
+            "(33)%"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Operating earnings (loss)",
+            "(2,199)",
+            "(1,201)",
+            "2,690",
+            "83%",
+            "***"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_15",
+          "text": "*** percentage change is not meaningful ."
+        },
+        {
+          "location": "text_16",
+          "text": "segment results 20142008 compared to 2007 in 2008 , the segment 2019s net sales were $ 12.1 billion , a decrease of 36% ( 36 % ) compared to net sales of $ 19.0 billion in 2007 ."
+        },
+        {
+          "location": "text_17",
+          "text": "the 36% ( 36 % ) decrease in net sales was primarily driven by a 37% ( 37 % ) decrease in unit shipments ."
+        },
+        {
+          "location": "text_18",
+          "text": "the segment 2019s net sales were negatively impacted by the segment 2019s limited product offerings in critical market segments , particularly 3g products , including smartphones , as well as very low-tier products ."
+        },
+        {
+          "location": "text_19",
+          "text": "in addition , the segment 2019s net sales were impacted by the global economic downturn in the second half of 2008 , which resulted in the slowing of end user demand ."
+        },
+        {
+          "location": "text_20",
+          "text": "on a product technology basis , net sales decreased substantially for gsm and cdma technologies and , to a lesser extent , decreased for iden and 3g technologies ."
+        },
+        {
+          "location": "text_21",
+          "text": "on a geographic basis , net sales decreased substantially in north america , the europe , middle east and africa region ( 201cemea 201d ) and asia and , to a lesser extent , decreased in latin america ."
+        },
+        {
+          "location": "text_22",
+          "text": "the segment incurred an operating loss of $ 2.2 billion in 2008 , compared to an operating loss of $ 1.2 billion in 2007 ."
+        },
+        {
+          "location": "text_23",
+          "text": "the increase in the operating loss was primarily due to a decrease in gross margin , driven by : ( i ) a 36% ( 36 % ) decrease in net sales , ( ii ) excess inventory and other related charges of $ 370 million in 2008 due to a decision to 61management 2019s discussion and analysis of financial condition and results of operations %%transmsg*** transmitting job : c49054 pcn : 064000000 ***%%pcmsg|61 |00028|yes|no|02/24/2009 12:31|0|0|page is valid , no graphics -- color : n| ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percentage decline in the operating loss from 2007 to 2008",
+    "reference_program": "subtract(1.2, 2.2), divide(#0, 1.2)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "1.2",
+        "raw": "1.2",
+        "location": "text_22:100",
+        "context": "the segment incurred an operating loss of $ 2.2 billion in 2008 , compared to an operating loss of $ 1.2 billion in 2007 ."
+      },
+      "x1": {
+        "program_token": "2.2",
+        "raw": "2.2",
+        "location": "text_22:43",
+        "context": "the segment incurred an operating loss of $ 2.2 billion in 2008 , compared to an operating loss of $ 1.2 billion in 2007 ."
+      }
+    },
+    "source_interpretations_random_order": [
+      "Text describes loss magnitudes 1.2 billion (2007), 2.2 billion (2008), and table supplies precise signed losses -1201/-2199 million. Program computes negative growth of the loss magnitude; question calls it decline although loss increased. Preserve this as semantic uncertainty and record tighter duplicates independently.",
+      "The rounded loss magnitudes of $1.2 billion and $2.2 billion correctly produce a negative percentage decline, indicating that the operating loss actually increased."
+    ]
+  },
+  {
+    "review_id": "R222",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "table of contents seasonality our business experiences seasonality that varies by product line ."
+        },
+        {
+          "location": "text_1",
+          "text": "because more construction and do-it-yourself projects occur during the second and third calendar quarters of each year in the northern hemisphere , our security product sales , typically , are higher in those quarters than in the first and fourth calendar quarters ."
+        },
+        {
+          "location": "text_2",
+          "text": "however , our interflex business typically experiences higher sales in the fourth calendar quarter due to project timing ."
+        },
+        {
+          "location": "text_3",
+          "text": "revenue by quarter for the years ended december 31 , 2015 , 2014 and 2013 are as follows: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "First Quarter",
+            "Second Quarter",
+            "Third Quarter",
+            "Fourth Quarter"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2015",
+            "22%",
+            "25%",
+            "26%",
+            "27%"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2014",
+            "22%",
+            "25%",
+            "26%",
+            "27%"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2013",
+            "23%",
+            "26%",
+            "26%",
+            "25%"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_4",
+          "text": "2015 fourth quarter revenue includes the full-quarter impact of the acquisitions of simonsvoss , axa and milre ."
+        },
+        {
+          "location": "text_5",
+          "text": "employees as of december 31 , 2015 , we had more than 9400 employees , approximately 26% ( 26 % ) of whom have the terms of their employment covered under collective bargaining agreements ."
+        },
+        {
+          "location": "text_6",
+          "text": "this includes non-management european employees who are represented by national and local works councils ."
+        },
+        {
+          "location": "text_7",
+          "text": "environmental regulation we have a dedicated environmental program that is designed to reduce the utilization and generation of hazardous materials during the manufacturing process as well as to remediate identified environmental concerns ."
+        },
+        {
+          "location": "text_8",
+          "text": "as to the latter , we are currently engaged in site investigations and remediation activities to address environmental cleanup from past operations at current and former manufacturing facilities ."
+        },
+        {
+          "location": "text_9",
+          "text": "we are sometimes a party to environmental lawsuits and claims and have received notices of potential violations of environmental laws and regulations from the u.s ."
+        },
+        {
+          "location": "text_10",
+          "text": "environmental protection agency ( the \"epa\" ) and similar state authorities ."
+        },
+        {
+          "location": "text_11",
+          "text": "we have also been identified as a potentially responsible party ( \"prp\" ) for cleanup costs associated with off-site waste disposal at federal superfund and state remediation sites ."
+        },
+        {
+          "location": "text_12",
+          "text": "for all such sites , there are other prps and , in most instances , our involvement is minimal ."
+        },
+        {
+          "location": "text_13",
+          "text": "in estimating our liability , we have assumed that we will not bear the entire cost of remediation of any site to the exclusion of other prps who may be jointly and severally liable ."
+        },
+        {
+          "location": "text_14",
+          "text": "the ability of other prps to participate has been taken into account , based on our understanding of the parties 2019 financial condition and probable contributions on a per site basis ."
+        },
+        {
+          "location": "text_15",
+          "text": "additional lawsuits and claims involving environmental matters are likely to arise from time to time in the future ."
+        },
+        {
+          "location": "text_16",
+          "text": "we incurred $ 4.4 million , $ 2.9 million , and $ 2.1 million of expenses during the years ended december 31 , 2015 , 2014 , and 2013 , respectively , for environmental remediation at sites presently or formerly owned or leased by us ."
+        },
+        {
+          "location": "text_17",
+          "text": "as of december 31 , 2015 and 2014 , we have recorded reserves for environmental matters of $ 15.2 million and $ 8.8 million ."
+        },
+        {
+          "location": "text_18",
+          "text": "of these amounts $ 2.8 million and $ 2.4 million , respectively , relate to remediation of sites previously disposed by us ."
+        },
+        {
+          "location": "text_19",
+          "text": "given the evolving nature of environmental laws , regulations and technology , the ultimate cost of future compliance is uncertain ."
+        },
+        {
+          "location": "text_20",
+          "text": "available information we are required to file annual , quarterly , and current reports , proxy statements , and other documents with the u.s ."
+        },
+        {
+          "location": "text_21",
+          "text": "securities and exchange commission ( \"sec\" ) ."
+        },
+        {
+          "location": "text_22",
+          "text": "the public may read and copy any materials filed with the sec at the sec 2019s public reference room at 100 f street , n.e. , washington , d.c ."
+        },
+        {
+          "location": "text_23",
+          "text": "20549 ."
+        },
+        {
+          "location": "text_24",
+          "text": "the public may obtain information on the operation of the public reference room by calling the sec at 1-800-sec-0330 ."
+        },
+        {
+          "location": "text_25",
+          "text": "also , the sec maintains an internet website that contains reports , proxy and information statements , and other information regarding issuers that file electronically with the sec ."
+        },
+        {
+          "location": "text_26",
+          "text": "the public can obtain any documents that are filed by us at http://www.sec.gov ."
+        },
+        {
+          "location": "text_27",
+          "text": "in addition , this annual report on form 10-k , as well as future quarterly reports on form 10-q , current reports on form 8-k and any amendments to all of the foregoing reports , are made available free of charge on our internet website ( http://www.allegion.com ) as soon as reasonably practicable after such reports are electronically filed with or furnished to the sec ."
+        },
+        {
+          "location": "text_28",
+          "text": "the contents of our website are not incorporated by reference in this report. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "considering the year 2015 , what is the percentage of reserves for environmental matters related to remediation of sites?",
+    "reference_program": "divide(2.8, 15.2)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "2.8",
+        "raw": "2.8",
+        "location": "text_18:18",
+        "context": "of these amounts $ 2.8 million and $ 2.4 million , respectively , relate to remediation of sites previously disposed by us ."
+      },
+      "x1": {
+        "program_token": "15.2",
+        "raw": "15.2",
+        "location": "text_17:92",
+        "context": "as of december 31 , 2015 and 2014 , we have recorded reserves for environmental matters of $ 15.2 million and $ 8.8 million ."
+      }
+    },
+    "source_interpretations_random_order": [
+      "The $2.8 million numerator covers remediation of previously disposed sites specifically, while the question does not clarify whether it means that subset or remediation of all sites.",
+      "2015 disposed-site remediation2.8m is subset of15.2m reserve;2014 amounts and expenses are distinct."
+    ]
+  },
+  {
+    "review_id": "R233",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "value using an appropriate discount rate ."
+        },
+        {
+          "location": "text_1",
+          "text": "projected cash flow is discounted at a required rate of return that reflects the relative risk of achieving the cash flow and the time value of money ."
+        },
+        {
+          "location": "text_2",
+          "text": "the market approach is a valuation technique that uses prices and other relevant information generated by market transactions involving identical or comparable assets , liabilities , or a group of assets and liabilities ."
+        },
+        {
+          "location": "text_3",
+          "text": "valuation techniques consistent with the market approach often use market multiples derived from a set of comparables ."
+        },
+        {
+          "location": "text_4",
+          "text": "the cost approach , which estimates value by determining the current cost of replacing an asset with another of equivalent economic utility , was used , as appropriate , for property , plant and equipment ."
+        },
+        {
+          "location": "text_5",
+          "text": "the cost to replace a given asset reflects the estimated reproduction or replacement cost for the property , less an allowance for loss in value due to depreciation ."
+        },
+        {
+          "location": "text_6",
+          "text": "the preliminary purchase price allocation resulted in the recognition of $ 2.8 billion of goodwill , all of which is expected to be amortizable for tax purposes ."
+        },
+        {
+          "location": "text_7",
+          "text": "all of the goodwill was assigned to our mst business segment ."
+        },
+        {
+          "location": "text_8",
+          "text": "the goodwill recognized is attributable to expected revenue synergies generated by the integration of our products and technologies with those of sikorsky , costs synergies resulting from the consolidation or elimination of certain functions , and intangible assets that do not qualify for separate recognition , such as the assembled workforce of sikorsky ."
+        },
+        {
+          "location": "text_9",
+          "text": "determining the fair value of assets acquired and liabilities assumed requires the exercise of significant judgments , including the amount and timing of expected future cash flows , long-term growth rates and discount rates ."
+        },
+        {
+          "location": "text_10",
+          "text": "the cash flows employed in the dcf analyses are based on our best estimate of future sales , earnings and cash flows after considering factors such as general market conditions , customer budgets , existing firm orders , expected future orders , contracts with suppliers , labor agreements , changes in working capital , long term business plans and recent operating performance ."
+        },
+        {
+          "location": "text_11",
+          "text": "use of different estimates and judgments could yield different results ."
+        },
+        {
+          "location": "text_12",
+          "text": "impact to 2015 financial results sikorsky 2019s financial results have been included in our consolidated financial results only for the period from the november 6 , 2015 acquisition date through december 31 , 2015 ."
+        },
+        {
+          "location": "text_13",
+          "text": "as a result , our consolidated financial results for the year ended december 31 , 2015 do not reflect a full year of sikorsky 2019s results ."
+        },
+        {
+          "location": "text_14",
+          "text": "from the november 6 , 2015 acquisition date through december 31 , 2015 , sikorsky generated net sales of approximately $ 400 million and operating loss of approximately $ 45 million , inclusive of intangible amortization and adjustments required to account for the acquisition ."
+        },
+        {
+          "location": "text_15",
+          "text": "we incurred approximately $ 38 million of non-recoverable transaction costs associated with the sikorsky acquisition in 2015 that were expensed as incurred ."
+        },
+        {
+          "location": "text_16",
+          "text": "these costs are included in 201cother income , net 201d on our consolidated statements of earnings ."
+        },
+        {
+          "location": "text_17",
+          "text": "we also incurred approximately $ 48 million in costs associated with issuing the $ 7.0 billion november 2015 notes used to repay all outstanding borrowings under the 364-day facility used to finance the acquisition ."
+        },
+        {
+          "location": "text_18",
+          "text": "the financing costs were recorded as a reduction of debt and will be amortized to interest expense over the term of the related debt ."
+        },
+        {
+          "location": "text_19",
+          "text": "supplemental pro forma financial information ( unaudited ) the following table presents summarized unaudited pro forma financial information as if sikorsky had been included in our financial results for the entire years in 2015 and 2014 ( in millions ) : ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2015",
+            "2014"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Net Sales",
+            "$50,962",
+            "$53,023"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Net Earnings from continuing operations",
+            "3,538",
+            "3,480"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Basic earnings per common share from continuing operations",
+            "11.40",
+            "10.99"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Diluted earnings per common share from continuing operations",
+            "11.24",
+            "10.79"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_20",
+          "text": "the unaudited supplemental pro forma financial data above has been calculated after applying our accounting policies and adjusting the historical results of sikorsky with pro forma adjustments , net of tax , that assume the acquisition occurred on january 1 , 2014 ."
+        },
+        {
+          "location": "text_21",
+          "text": "significant pro forma adjustments include the recognition of additional amortization expense related to acquired intangible assets and additional interest expense related to the short-term debt used to finance the acquisition ."
+        },
+        {
+          "location": "text_22",
+          "text": "these adjustments assume the application of fair value adjustments to intangibles and the debt issuance occurred on january 1 , 2014 and are as follows : amortization expense of $ 125 million and $ 148 million in 2015 and 2014 , respectively ; and interest expense $ 42 million and $ 48 million in 2015 and 2014 , respectively ."
+        },
+        {
+          "location": "text_23",
+          "text": "in addition , significant nonrecurring adjustments include the elimination of a $ 72 million pension curtailment loss , net of tax , recognized in 2015 and the elimination of a $ 58 million income tax charge related to historic earnings of foreign subsidiaries recognized by sikorsky in 2015. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percentage change in net earnings from continuing operations from 2014 to 2015?",
+    "reference_program": "subtract(3538, 3480), divide(#0, 3480)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "3538",
+        "raw": "3,538",
+        "location": "table_2:1",
+        "context": "Net Earnings from continuing operations | 2015"
+      },
+      "x1": {
+        "program_token": "3480",
+        "raw": "3,480",
+        "location": "table_2:2",
+        "context": "Net Earnings from continuing operations | 2014"
+      }
+    },
+    "source_interpretations_random_order": [
+      "Table is unaudited pro forma continuing-operations earnings and supplies 3538 and 3480 million for 2015 and 2014. Program is correct within the displayed pro forma scope; no finer duplicate earnings number appears.",
+      "The rounded pro forma net earnings are correctly bound to 2015 and 2014, but the calculation returns fractional change without converting it to the requested percentage."
+    ]
+  },
+  {
+    "review_id": "R239",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "2007 annual report 61 warranties : snap-on provides product warranties for specific product lines and accrues for estimated future warranty costs in the period in which the sale is recorded ."
+        },
+        {
+          "location": "text_1",
+          "text": "see note 15 for further information on warranties ."
+        },
+        {
+          "location": "text_2",
+          "text": "minority interests and equity earnings ( loss ) of unconsolidated affiliates : 201cminority interests and equity earnings ( loss ) , net of tax 201d on the accompanying consolidated statements of earnings is comprised of the following : ( amounts in millions ) 2007 2006 2005 ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "<i>(Amounts in millions)</i>",
+            "2007",
+            "2006",
+            "2005"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Minority interests",
+            "$(4.9)",
+            "$(3.7)",
+            "$(3.5)"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Equity earnings (loss), net of tax",
+            "2.4",
+            "—",
+            "2.1"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Total",
+            "$(2.5)",
+            "$(3.7)",
+            "$(1.4)"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_3",
+          "text": "minority interests in consolidated subsidiaries of $ 17.3 million as of december 29 , 2007 , and $ 16.8 million as of december 30 , 2006 , are included in 201cother long-term liabilities 201d on the accompanying consolidated balance sheets ."
+        },
+        {
+          "location": "text_4",
+          "text": "investments in unconsolidated affiliates of $ 30.7 million as of december 29 , 2007 , and $ 30.6 million as of december 30 , 2006 , are included in 201cother assets 201d on the accompanying consolidated balance sheets ."
+        },
+        {
+          "location": "text_5",
+          "text": "foreign currency translation : the financial statements of snap-on 2019s foreign subsidiaries are translated into u.s ."
+        },
+        {
+          "location": "text_6",
+          "text": "dollars in accordance with sfas no ."
+        },
+        {
+          "location": "text_7",
+          "text": "52 , 201cforeign currency translation . 201d assets and liabilities of foreign subsidiaries are translated at current rates of exchange , and income and expense items are translated at the average exchange rate for the period ."
+        },
+        {
+          "location": "text_8",
+          "text": "the resulting translation adjustments are recorded directly into 201caccumulated other comprehensive income ( loss ) 201d on the accompanying consolidated balance sheets ."
+        },
+        {
+          "location": "text_9",
+          "text": "foreign exchange transactions resulted in pretax losses of $ 1.7 million in 2007 and $ 1.2 million in 2006 , and a pretax gain of $ 0.7 million in 2005 ."
+        },
+        {
+          "location": "text_10",
+          "text": "foreign exchange transaction gains and losses are reported in 201cother income ( expense ) - net 201d on the accompanying consolidated statements of earnings ."
+        },
+        {
+          "location": "text_11",
+          "text": "income taxes : in the ordinary course of business there is inherent uncertainty in quantifying income tax positions ."
+        },
+        {
+          "location": "text_12",
+          "text": "we assess income tax positions and record tax benefits for all years subject to examination based upon management 2019s evaluation of the facts , circumstances and information available at the reporting dates ."
+        },
+        {
+          "location": "text_13",
+          "text": "for those tax positions where it is more-likely-than-not that a tax benefit will be sustained , we record the largest amount of tax benefit with a greater than 50% ( 50 % ) likelihood of being realized upon ultimate settlement with a taxing authority that has full knowledge of all relevant information ."
+        },
+        {
+          "location": "text_14",
+          "text": "for those income tax positions where it is not more-likely-than-not that a tax benefit will be sustained , no tax benefit is recognized in the financial statements ."
+        },
+        {
+          "location": "text_15",
+          "text": "when applicable , associated interest and penalties are recognized as a component of income tax expense ."
+        },
+        {
+          "location": "text_16",
+          "text": "accrued interest and penalties are included within the related tax liability in the accompanying consolidated balance sheets ."
+        },
+        {
+          "location": "text_17",
+          "text": "deferred income taxes are provided for temporary differences arising from differences in bases of assets and liabilities for tax and financial reporting purposes ."
+        },
+        {
+          "location": "text_18",
+          "text": "deferred income taxes are recorded on temporary differences using enacted tax rates in effect for the year in which the temporary differences are expected to reverse ."
+        },
+        {
+          "location": "text_19",
+          "text": "the effect of a change in tax rates on deferred tax assets and liabilities is recognized in income in the period that includes the enactment date ."
+        },
+        {
+          "location": "text_20",
+          "text": "see note 8 for further information on income taxes ."
+        },
+        {
+          "location": "text_21",
+          "text": "per share data : basic earnings per share calculations were computed by dividing net earnings by the corresponding weighted-average number of common shares outstanding for the period ."
+        },
+        {
+          "location": "text_22",
+          "text": "the dilutive effect of the potential exercise of outstanding options to purchase common shares is calculated using the treasury stock method ."
+        },
+        {
+          "location": "text_23",
+          "text": "snap-on had dilutive shares as of year-end 2007 , 2006 and 2005 , of 731442 shares , 911697 shares and 584222 shares , respectively ."
+        },
+        {
+          "location": "text_24",
+          "text": "options to purchase 493544 shares , 23000 shares and 612892 shares of snap-on common stock for the fiscal years ended 2007 , 2006 and 2005 , respectively , were not included in the computation of diluted earnings per share as the exercise prices of the options were greater than the average market price of the common stock for the respective year and , as a result , the effect on earnings per share would be anti-dilutive ."
+        },
+        {
+          "location": "text_25",
+          "text": "stock-based compensation : effective january 1 , 2006 , the company adopted sfas no ."
+        },
+        {
+          "location": "text_26",
+          "text": "123 ( r ) , 201cshare-based payment , 201d using the modified prospective method ."
+        },
+        {
+          "location": "text_27",
+          "text": "sfas no ."
+        },
+        {
+          "location": "text_28",
+          "text": "123 ( r ) requires entities to recognize the cost of employee services in exchange for awards of equity instruments based on the grant-date fair value of those awards ( with limited exceptions ) ."
+        },
+        {
+          "location": "text_29",
+          "text": "that cost , based on the estimated number of awards that are expected to vest , is recognized over the period during which the employee is required to provide the service in exchange for the award ."
+        },
+        {
+          "location": "text_30",
+          "text": "no compensation cost is recognized for awards for which employees do not render the requisite service ."
+        },
+        {
+          "location": "text_31",
+          "text": "upon adoption , the grant-date fair value of employee share options ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percentage change in the in pretax losses related to foreign exchange transactions in 2007",
+    "reference_program": "subtract(1.7, 1.2), divide(#0, 1.2)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "1.7",
+        "raw": "1.7",
+        "location": "text_9:60",
+        "context": "foreign exchange transactions resulted in pretax losses of $ 1.7 million in 2007 and $ 1.2 million in 2006 , and a pretax gain of $ 0.7 million in 2005 ."
+      },
+      "x1": {
+        "program_token": "1.2",
+        "raw": "1.2",
+        "location": "text_9:86",
+        "context": "foreign exchange transactions resulted in pretax losses of $ 1.7 million in 2007 and $ 1.2 million in 2006 , and a pretax gain of $ 0.7 million in 2005 ."
+      }
+    },
+    "source_interpretations_random_order": [
+      "Post_text[6] gives pretax foreign-exchange losses1.7million(2007) and1.2million(2006). Growth of positive loss magnitudes is faithful; neither table minority-interest losses nor2005 exchange gain is a duplicate.",
+      "The rounded foreign exchange loss amounts correctly refer to 2007 and 2006, but the calculation returns fractional growth without multiplying by 100 for percentage change."
+    ]
+  },
+  {
+    "review_id": "R250",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "american airlines , inc ."
+        },
+        {
+          "location": "text_1",
+          "text": "notes to consolidated financial statements 2014 ( continued ) temporary , targeted funding relief ( subject to certain terms and conditions ) for single employer and multiemployer pension plans that suffered significant losses in asset value due to the steep market slide in 2008 ."
+        },
+        {
+          "location": "text_2",
+          "text": "under the relief act , the company 2019s 2010 minimum required contribution to its defined benefit pension plans was reduced from $ 525 million to approximately $ 460 million ."
+        },
+        {
+          "location": "text_3",
+          "text": "the following benefit payments , which reflect expected future service as appropriate , are expected to be paid : retiree medical pension and other ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Pension",
+            "Retiree Medical   and Other"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2011",
+            "574",
+            "173"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2012",
+            "602",
+            "170"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2013",
+            "665",
+            "169"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2014",
+            "729",
+            "170"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "2015",
+            "785",
+            "173"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "2016 — 2020",
+            "4,959",
+            "989"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_4",
+          "text": "during 2008 , amr recorded a settlement charge totaling $ 103 million related to lump sum distributions from the company 2019s defined benefit pension plans to pilots who retired ."
+        },
+        {
+          "location": "text_5",
+          "text": "pursuant to u.s ."
+        },
+        {
+          "location": "text_6",
+          "text": "gaap , the use of settlement accounting is required if , for a given year , the cost of all settlements exceeds , or is expected to exceed , the sum of the service cost and interest cost components of net periodic pension expense for a plan ."
+        },
+        {
+          "location": "text_7",
+          "text": "under settlement accounting , unrecognized plan gains or losses must be recognized immediately in proportion to the percentage reduction of the plan 2019s projected benefit obligation ."
+        },
+        {
+          "location": "text_8",
+          "text": "11 ."
+        },
+        {
+          "location": "text_9",
+          "text": "intangible assets the company has recorded international slot and route authorities of $ 708 million and $ 736 million as of december 31 , 2010 and 2009 , respectively ."
+        },
+        {
+          "location": "text_10",
+          "text": "the company considers these assets indefinite life assets and as a result , they are not amortized but instead are tested for impairment annually or more frequently if events or changes in circumstances indicate that the asset might be impaired ."
+        },
+        {
+          "location": "text_11",
+          "text": "such triggering events may include significant changes to the company 2019s network or capacity , or the implementation of open skies agreements in countries where the company operates flights ."
+        },
+        {
+          "location": "text_12",
+          "text": "in the fourth quarter of 2010 , the company performed its annual impairment testing on international slots and routes , at which time the net carrying value was reassessed for recoverability ."
+        },
+        {
+          "location": "text_13",
+          "text": "it was determined through this annual impairment testing that the fair value of certain international routes in latin america was less than the carrying value ."
+        },
+        {
+          "location": "text_14",
+          "text": "thus , the company incurred an impairment charge of $ 28 million to write down the values of these and certain other slots and routes ."
+        },
+        {
+          "location": "text_15",
+          "text": "as there is minimal market activity for the valuation of routes and international slots and landing rights , the company measures fair value with inputs using the income approach ."
+        },
+        {
+          "location": "text_16",
+          "text": "the income approach uses valuation techniques , such as future cash flows , to convert future amounts to a single present discounted amount ."
+        },
+        {
+          "location": "text_17",
+          "text": "the inputs utilized for these valuations are unobservable and reflect the company 2019s assumptions about market participants and what they would use to value the routes and accordingly are considered level 3 in the fair value hierarchy ."
+        },
+        {
+          "location": "text_18",
+          "text": "the company 2019s unobservable inputs are developed based on the best information available as of december 31 ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what is the percentage decrease in the minimum contribution to benefit pension plans due to the relied act?",
+    "reference_program": "subtract(460, 525), divide(#0, 525)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "460",
+        "raw": "460",
+        "location": "text_2:162",
+        "context": "under the relief act , the company 2019s 2010 minimum required contribution to its defined benefit pension plans was reduced from $ 525 million to approximately $ 460 million ."
+      },
+      "x1": {
+        "program_token": "525",
+        "raw": "525",
+        "location": "text_2:131",
+        "context": "under the relief act , the company 2019s 2010 minimum required contribution to its defined benefit pension plans was reduced from $ 525 million to approximately $ 460 million ."
+      }
+    },
+    "source_interpretations_random_order": [
+      "2010 pension minimum contributions are monetary estimates; approximately460m has no more precise disclosure here. Statutory minimum does not make a reported million-dollar aggregate exact.",
+      "Although the contribution amounts are correctly bound, subtracting 525 from 460 produces a negative change rather than the requested positive percentage decrease."
+    ]
+  },
+  {
+    "review_id": "R251",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "united parcel service , inc ."
+        },
+        {
+          "location": "text_1",
+          "text": "and subsidiaries notes to consolidated financial statements 8.375% ( 8.375 % ) debentures the 8.375% ( 8.375 % ) debentures consist of two separate tranches , as follows : 2022 $ 276 million of the debentures have a maturity of april 1 , 2030 ."
+        },
+        {
+          "location": "text_2",
+          "text": "these debentures have an 8.375% ( 8.375 % ) interest rate until april 1 , 2020 , and , thereafter , the interest rate will be 7.62% ( 7.62 % ) for the final 10 years ."
+        },
+        {
+          "location": "text_3",
+          "text": "these debentures are redeemable in whole or in part at our option at any time ."
+        },
+        {
+          "location": "text_4",
+          "text": "the redemption price is equal to the greater of 100% ( 100 % ) of the principal amount and accrued interest , or the sum of the present values of the remaining scheduled payout of principal and interest thereon discounted to the date of redemption ( at a benchmark treasury yield plus five basis points ) plus accrued interest ."
+        },
+        {
+          "location": "text_5",
+          "text": "2022 $ 424 million of the debentures have a maturity of april 1 , 2020 ."
+        },
+        {
+          "location": "text_6",
+          "text": "these debentures are not subject to redemption prior to maturity ."
+        },
+        {
+          "location": "text_7",
+          "text": "interest is payable semiannually in april and october for both tranches and neither tranche is subject to sinking fund requirements ."
+        },
+        {
+          "location": "text_8",
+          "text": "we subsequently entered into interest rate swaps on the 2020 debentures , which effectively converted the fixed interest rates on the debentures to variable libor-based interest rates ."
+        },
+        {
+          "location": "text_9",
+          "text": "the average interest rate payable on the 2020 debentures , including the impact of the interest rate swaps , for 2016 and 2015 was 5.43% ( 5.43 % ) and 5.04% ( 5.04 % ) , respectively ."
+        },
+        {
+          "location": "text_10",
+          "text": "floating rate senior notes the floating rate senior notes bear interest at either one or three-month libor , less a spread ranging from 30 to 45 basis points ."
+        },
+        {
+          "location": "text_11",
+          "text": "the average interest rate for 2016 and 2015 was 0.21% ( 0.21 % ) and 0.01% ( 0.01 % ) , respectively ."
+        },
+        {
+          "location": "text_12",
+          "text": "these notes are callable at various times after 30 years at a stated percentage of par value , and putable by the note holders at various times after 10 years at a stated percentage of par value ."
+        },
+        {
+          "location": "text_13",
+          "text": "the notes have maturities ranging from 2049 through 2066 ."
+        },
+        {
+          "location": "text_14",
+          "text": "in march , june and august 2016 , we issued floating rate senior notes in principal balances of $ 118 , $ 74 and $ 35 million , respectively ."
+        },
+        {
+          "location": "text_15",
+          "text": "these notes bear interest at three-month libor less 30 basis points and mature in 2066 ."
+        },
+        {
+          "location": "text_16",
+          "text": "capital lease obligations we have certain property , plant and equipment subject to capital leases ."
+        },
+        {
+          "location": "text_17",
+          "text": "some of the obligations associated with these capital leases have been legally defeased ."
+        },
+        {
+          "location": "text_18",
+          "text": "the recorded value of our property , plant and equipment subject to capital leases is as follows as of december 31 ( in millions ) : ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2016",
+            "2015"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Vehicles",
+            "$68",
+            "$74"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Aircraft",
+            "2,291",
+            "2,289"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Buildings",
+            "190",
+            "207"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Accumulated amortization",
+            "(896)",
+            "(849)"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Property, plant and equipment subject to capital leases",
+            "$1,653",
+            "$1,721"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_19",
+          "text": "these capital lease obligations have principal payments due at various dates from 2017 through 3005. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the change in millions of vehicles from 2015 to 2016?",
+    "reference_program": "subtract(68, 74)",
+    "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+    "input_bindings": {
+      "x0": {
+        "program_token": "68",
+        "raw": "68",
+        "location": "table_1:1",
+        "context": "Vehicles | 2016"
+      },
+      "x1": {
+        "program_token": "74",
+        "raw": "74",
+        "location": "table_1:2",
+        "context": "Vehicles | 2015"
+      }
+    },
+    "source_interpretations_random_order": [
+      "Vehicles68/74 are recorded leased-asset values in million dollars, not millions of physical vehicles. Question uses the table monetary context; interpret as value change. Net leased PP&E equals three asset categories plus signed accumulated amortization.",
+      "The $68 million and $74 million figures measure recorded vehicle asset values under capital leases, so their difference does not measure millions of vehicles."
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+{"answer":"21","unit":"million dollars","expression":"210 - (182 + 7)","low":"19.5","high":"22.5","reliable_digits":"1","explanation":"Subtract gross cash consideration, including the acquired cash, from the total transaction value."}

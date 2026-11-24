@@ -1,0 +1,1 @@
+{"answer":"91300","unit":"square feet","expression":"19,600 + 13,900 + 57,800","low":"91298.5","high":"91301.5","reliable_digits":"4","explanation":"Sum the listed office sizes in Boston, Southborough and Woburn, allowing each figure to vary by half a square foot."}

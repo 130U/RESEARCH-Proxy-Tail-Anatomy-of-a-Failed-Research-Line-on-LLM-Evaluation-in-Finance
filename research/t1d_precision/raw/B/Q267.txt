@@ -1,0 +1,1 @@
+{"answer":"9.864188706218727","unit":"percent","expression":"(153.7 - 139.9) / 139.9 * 100","low":"9.789210432297249","high":"9.939220593493028","reliable_digits":"1","explanation":"Allowing each reported hedge amount to vary by $0.05 million gives these bounds, which agree when rounded to one significant digit."}

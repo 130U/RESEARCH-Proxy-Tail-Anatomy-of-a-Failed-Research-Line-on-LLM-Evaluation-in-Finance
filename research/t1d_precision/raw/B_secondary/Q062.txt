@@ -1,0 +1,1 @@
+{"answer":"29.4573643410853","unit":"percent","expression":"38 / 129 * 100","low":"28.957528957529","high":"29.9610894941634","reliable_digits":"1","explanation":"Euro and total amounts can vary by 0.5 million from their displayed values, giving bounds of 37.5 / 129.5 * 100 and 38.5 / 128.5 * 100."}

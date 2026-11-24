@@ -1,0 +1,1 @@
+{"answer":"25.593824228","unit":"percent","expression":"(211.5 - 168.4) / 168.4 * 100","low":"25.526862570","high":"25.660825661","reliable_digits":"2","explanation":"Each expense is rounded to the nearest $0.1 million, so varying each by $0.05 million gives these bounds and supports two reliable significant digits."}

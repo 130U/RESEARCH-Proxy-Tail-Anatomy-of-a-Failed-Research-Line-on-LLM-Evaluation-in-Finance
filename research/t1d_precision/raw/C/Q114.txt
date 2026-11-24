@@ -1,0 +1,1 @@
+{"answer":"15.3846153846","unit":"percent","expression":"(2.6 - 2.2) / 2.6 * 100","low":"11.7647058824","high":"18.8679245283","reliable_digits":"0","explanation":"The implied tax rate is the gain's tax expense divided by its pre-tax amount; rounding makes even the first significant digit unreliable."}

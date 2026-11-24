@@ -1,0 +1,2891 @@
+{
+  "purpose": "Blind inputs for within-model ranking aggregation and pairwise comparison; preparation only",
+  "source_path": "<workspace>\\130U-FinLLM-certifiable\\research\\private\\real_baseline\\test.jsonl",
+  "excluded_pilot_metadata_path": "<workspace>\\130U-FinLLM-certifiable\\research\\private\\agent_tail_pilot\\metadata.json",
+  "text_field": "Unmodified input_text: [ENTITY] target newline [TITLE] headline",
+  "sampling": "Uniform 32-family sample without replacement after excluding all earlier 128 families; one uniform member per selected family, sorted by original ID before drawing",
+  "population_samples": 2107,
+  "population_families": 1570,
+  "excluded_family_count": 128,
+  "eligible_family_count": 1442,
+  "selected_samples": 32,
+  "selected_families": 32,
+  "excluded_family_intersection_n": 0,
+  "family_seed": 20261119,
+  "within_family_seed": 20261120,
+  "rank_order_seeds": {
+    "rank_order1.jsonl": 20261121,
+    "rank_order2.jsonl": 20261122,
+    "rank_order3.jsonl": 20261123,
+    "rank_order4.jsonl": 20261124,
+    "rank_order5.jsonl": 20261125,
+    "rank_order6.jsonl": 20261126,
+    "rank_order7.jsonl": 20261127,
+    "rank_order8.jsonl": 20261128
+  },
+  "rank_panels": {
+    "1": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "2": [
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "panel_orientation_seeds": {
+    "1": 20261129,
+    "2": 20261130
+  },
+  "pair_input_shuffle_seeds": {
+    "pair_panel1_a.json": {
+      "pair_order": 20261131,
+      "document_order": 20261135
+    },
+    "pair_panel1_b.json": {
+      "pair_order": 20261132,
+      "document_order": 20261136
+    },
+    "pair_panel2_a.json": {
+      "pair_order": 20261133,
+      "document_order": 20261137
+    },
+    "pair_panel2_b.json": {
+      "pair_order": 20261134,
+      "document_order": 20261138
+    }
+  },
+  "canonical_pair_rule": "Lexicographic unordered combinations of S0001..S0032, numbered E0001..E0496",
+  "canonical_pairs": [
+    {
+      "pair_id": "E0001",
+      "first": "S0001",
+      "second": "S0002"
+    },
+    {
+      "pair_id": "E0002",
+      "first": "S0001",
+      "second": "S0003"
+    },
+    {
+      "pair_id": "E0003",
+      "first": "S0001",
+      "second": "S0004"
+    },
+    {
+      "pair_id": "E0004",
+      "first": "S0001",
+      "second": "S0005"
+    },
+    {
+      "pair_id": "E0005",
+      "first": "S0001",
+      "second": "S0006"
+    },
+    {
+      "pair_id": "E0006",
+      "first": "S0001",
+      "second": "S0007"
+    },
+    {
+      "pair_id": "E0007",
+      "first": "S0001",
+      "second": "S0008"
+    },
+    {
+      "pair_id": "E0008",
+      "first": "S0001",
+      "second": "S0009"
+    },
+    {
+      "pair_id": "E0009",
+      "first": "S0001",
+      "second": "S0010"
+    },
+    {
+      "pair_id": "E0010",
+      "first": "S0001",
+      "second": "S0011"
+    },
+    {
+      "pair_id": "E0011",
+      "first": "S0001",
+      "second": "S0012"
+    },
+    {
+      "pair_id": "E0012",
+      "first": "S0001",
+      "second": "S0013"
+    },
+    {
+      "pair_id": "E0013",
+      "first": "S0001",
+      "second": "S0014"
+    },
+    {
+      "pair_id": "E0014",
+      "first": "S0001",
+      "second": "S0015"
+    },
+    {
+      "pair_id": "E0015",
+      "first": "S0001",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0016",
+      "first": "S0001",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0017",
+      "first": "S0001",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0018",
+      "first": "S0001",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0019",
+      "first": "S0001",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0020",
+      "first": "S0001",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0021",
+      "first": "S0001",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0022",
+      "first": "S0001",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0023",
+      "first": "S0001",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0024",
+      "first": "S0001",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0025",
+      "first": "S0001",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0026",
+      "first": "S0001",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0027",
+      "first": "S0001",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0028",
+      "first": "S0001",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0029",
+      "first": "S0001",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0030",
+      "first": "S0001",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0031",
+      "first": "S0001",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0032",
+      "first": "S0002",
+      "second": "S0003"
+    },
+    {
+      "pair_id": "E0033",
+      "first": "S0002",
+      "second": "S0004"
+    },
+    {
+      "pair_id": "E0034",
+      "first": "S0002",
+      "second": "S0005"
+    },
+    {
+      "pair_id": "E0035",
+      "first": "S0002",
+      "second": "S0006"
+    },
+    {
+      "pair_id": "E0036",
+      "first": "S0002",
+      "second": "S0007"
+    },
+    {
+      "pair_id": "E0037",
+      "first": "S0002",
+      "second": "S0008"
+    },
+    {
+      "pair_id": "E0038",
+      "first": "S0002",
+      "second": "S0009"
+    },
+    {
+      "pair_id": "E0039",
+      "first": "S0002",
+      "second": "S0010"
+    },
+    {
+      "pair_id": "E0040",
+      "first": "S0002",
+      "second": "S0011"
+    },
+    {
+      "pair_id": "E0041",
+      "first": "S0002",
+      "second": "S0012"
+    },
+    {
+      "pair_id": "E0042",
+      "first": "S0002",
+      "second": "S0013"
+    },
+    {
+      "pair_id": "E0043",
+      "first": "S0002",
+      "second": "S0014"
+    },
+    {
+      "pair_id": "E0044",
+      "first": "S0002",
+      "second": "S0015"
+    },
+    {
+      "pair_id": "E0045",
+      "first": "S0002",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0046",
+      "first": "S0002",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0047",
+      "first": "S0002",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0048",
+      "first": "S0002",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0049",
+      "first": "S0002",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0050",
+      "first": "S0002",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0051",
+      "first": "S0002",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0052",
+      "first": "S0002",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0053",
+      "first": "S0002",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0054",
+      "first": "S0002",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0055",
+      "first": "S0002",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0056",
+      "first": "S0002",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0057",
+      "first": "S0002",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0058",
+      "first": "S0002",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0059",
+      "first": "S0002",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0060",
+      "first": "S0002",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0061",
+      "first": "S0002",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0062",
+      "first": "S0003",
+      "second": "S0004"
+    },
+    {
+      "pair_id": "E0063",
+      "first": "S0003",
+      "second": "S0005"
+    },
+    {
+      "pair_id": "E0064",
+      "first": "S0003",
+      "second": "S0006"
+    },
+    {
+      "pair_id": "E0065",
+      "first": "S0003",
+      "second": "S0007"
+    },
+    {
+      "pair_id": "E0066",
+      "first": "S0003",
+      "second": "S0008"
+    },
+    {
+      "pair_id": "E0067",
+      "first": "S0003",
+      "second": "S0009"
+    },
+    {
+      "pair_id": "E0068",
+      "first": "S0003",
+      "second": "S0010"
+    },
+    {
+      "pair_id": "E0069",
+      "first": "S0003",
+      "second": "S0011"
+    },
+    {
+      "pair_id": "E0070",
+      "first": "S0003",
+      "second": "S0012"
+    },
+    {
+      "pair_id": "E0071",
+      "first": "S0003",
+      "second": "S0013"
+    },
+    {
+      "pair_id": "E0072",
+      "first": "S0003",
+      "second": "S0014"
+    },
+    {
+      "pair_id": "E0073",
+      "first": "S0003",
+      "second": "S0015"
+    },
+    {
+      "pair_id": "E0074",
+      "first": "S0003",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0075",
+      "first": "S0003",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0076",
+      "first": "S0003",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0077",
+      "first": "S0003",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0078",
+      "first": "S0003",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0079",
+      "first": "S0003",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0080",
+      "first": "S0003",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0081",
+      "first": "S0003",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0082",
+      "first": "S0003",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0083",
+      "first": "S0003",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0084",
+      "first": "S0003",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0085",
+      "first": "S0003",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0086",
+      "first": "S0003",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0087",
+      "first": "S0003",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0088",
+      "first": "S0003",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0089",
+      "first": "S0003",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0090",
+      "first": "S0003",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0091",
+      "first": "S0004",
+      "second": "S0005"
+    },
+    {
+      "pair_id": "E0092",
+      "first": "S0004",
+      "second": "S0006"
+    },
+    {
+      "pair_id": "E0093",
+      "first": "S0004",
+      "second": "S0007"
+    },
+    {
+      "pair_id": "E0094",
+      "first": "S0004",
+      "second": "S0008"
+    },
+    {
+      "pair_id": "E0095",
+      "first": "S0004",
+      "second": "S0009"
+    },
+    {
+      "pair_id": "E0096",
+      "first": "S0004",
+      "second": "S0010"
+    },
+    {
+      "pair_id": "E0097",
+      "first": "S0004",
+      "second": "S0011"
+    },
+    {
+      "pair_id": "E0098",
+      "first": "S0004",
+      "second": "S0012"
+    },
+    {
+      "pair_id": "E0099",
+      "first": "S0004",
+      "second": "S0013"
+    },
+    {
+      "pair_id": "E0100",
+      "first": "S0004",
+      "second": "S0014"
+    },
+    {
+      "pair_id": "E0101",
+      "first": "S0004",
+      "second": "S0015"
+    },
+    {
+      "pair_id": "E0102",
+      "first": "S0004",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0103",
+      "first": "S0004",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0104",
+      "first": "S0004",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0105",
+      "first": "S0004",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0106",
+      "first": "S0004",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0107",
+      "first": "S0004",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0108",
+      "first": "S0004",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0109",
+      "first": "S0004",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0110",
+      "first": "S0004",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0111",
+      "first": "S0004",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0112",
+      "first": "S0004",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0113",
+      "first": "S0004",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0114",
+      "first": "S0004",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0115",
+      "first": "S0004",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0116",
+      "first": "S0004",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0117",
+      "first": "S0004",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0118",
+      "first": "S0004",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0119",
+      "first": "S0005",
+      "second": "S0006"
+    },
+    {
+      "pair_id": "E0120",
+      "first": "S0005",
+      "second": "S0007"
+    },
+    {
+      "pair_id": "E0121",
+      "first": "S0005",
+      "second": "S0008"
+    },
+    {
+      "pair_id": "E0122",
+      "first": "S0005",
+      "second": "S0009"
+    },
+    {
+      "pair_id": "E0123",
+      "first": "S0005",
+      "second": "S0010"
+    },
+    {
+      "pair_id": "E0124",
+      "first": "S0005",
+      "second": "S0011"
+    },
+    {
+      "pair_id": "E0125",
+      "first": "S0005",
+      "second": "S0012"
+    },
+    {
+      "pair_id": "E0126",
+      "first": "S0005",
+      "second": "S0013"
+    },
+    {
+      "pair_id": "E0127",
+      "first": "S0005",
+      "second": "S0014"
+    },
+    {
+      "pair_id": "E0128",
+      "first": "S0005",
+      "second": "S0015"
+    },
+    {
+      "pair_id": "E0129",
+      "first": "S0005",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0130",
+      "first": "S0005",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0131",
+      "first": "S0005",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0132",
+      "first": "S0005",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0133",
+      "first": "S0005",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0134",
+      "first": "S0005",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0135",
+      "first": "S0005",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0136",
+      "first": "S0005",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0137",
+      "first": "S0005",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0138",
+      "first": "S0005",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0139",
+      "first": "S0005",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0140",
+      "first": "S0005",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0141",
+      "first": "S0005",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0142",
+      "first": "S0005",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0143",
+      "first": "S0005",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0144",
+      "first": "S0005",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0145",
+      "first": "S0005",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0146",
+      "first": "S0006",
+      "second": "S0007"
+    },
+    {
+      "pair_id": "E0147",
+      "first": "S0006",
+      "second": "S0008"
+    },
+    {
+      "pair_id": "E0148",
+      "first": "S0006",
+      "second": "S0009"
+    },
+    {
+      "pair_id": "E0149",
+      "first": "S0006",
+      "second": "S0010"
+    },
+    {
+      "pair_id": "E0150",
+      "first": "S0006",
+      "second": "S0011"
+    },
+    {
+      "pair_id": "E0151",
+      "first": "S0006",
+      "second": "S0012"
+    },
+    {
+      "pair_id": "E0152",
+      "first": "S0006",
+      "second": "S0013"
+    },
+    {
+      "pair_id": "E0153",
+      "first": "S0006",
+      "second": "S0014"
+    },
+    {
+      "pair_id": "E0154",
+      "first": "S0006",
+      "second": "S0015"
+    },
+    {
+      "pair_id": "E0155",
+      "first": "S0006",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0156",
+      "first": "S0006",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0157",
+      "first": "S0006",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0158",
+      "first": "S0006",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0159",
+      "first": "S0006",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0160",
+      "first": "S0006",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0161",
+      "first": "S0006",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0162",
+      "first": "S0006",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0163",
+      "first": "S0006",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0164",
+      "first": "S0006",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0165",
+      "first": "S0006",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0166",
+      "first": "S0006",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0167",
+      "first": "S0006",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0168",
+      "first": "S0006",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0169",
+      "first": "S0006",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0170",
+      "first": "S0006",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0171",
+      "first": "S0006",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0172",
+      "first": "S0007",
+      "second": "S0008"
+    },
+    {
+      "pair_id": "E0173",
+      "first": "S0007",
+      "second": "S0009"
+    },
+    {
+      "pair_id": "E0174",
+      "first": "S0007",
+      "second": "S0010"
+    },
+    {
+      "pair_id": "E0175",
+      "first": "S0007",
+      "second": "S0011"
+    },
+    {
+      "pair_id": "E0176",
+      "first": "S0007",
+      "second": "S0012"
+    },
+    {
+      "pair_id": "E0177",
+      "first": "S0007",
+      "second": "S0013"
+    },
+    {
+      "pair_id": "E0178",
+      "first": "S0007",
+      "second": "S0014"
+    },
+    {
+      "pair_id": "E0179",
+      "first": "S0007",
+      "second": "S0015"
+    },
+    {
+      "pair_id": "E0180",
+      "first": "S0007",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0181",
+      "first": "S0007",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0182",
+      "first": "S0007",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0183",
+      "first": "S0007",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0184",
+      "first": "S0007",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0185",
+      "first": "S0007",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0186",
+      "first": "S0007",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0187",
+      "first": "S0007",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0188",
+      "first": "S0007",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0189",
+      "first": "S0007",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0190",
+      "first": "S0007",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0191",
+      "first": "S0007",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0192",
+      "first": "S0007",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0193",
+      "first": "S0007",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0194",
+      "first": "S0007",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0195",
+      "first": "S0007",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0196",
+      "first": "S0007",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0197",
+      "first": "S0008",
+      "second": "S0009"
+    },
+    {
+      "pair_id": "E0198",
+      "first": "S0008",
+      "second": "S0010"
+    },
+    {
+      "pair_id": "E0199",
+      "first": "S0008",
+      "second": "S0011"
+    },
+    {
+      "pair_id": "E0200",
+      "first": "S0008",
+      "second": "S0012"
+    },
+    {
+      "pair_id": "E0201",
+      "first": "S0008",
+      "second": "S0013"
+    },
+    {
+      "pair_id": "E0202",
+      "first": "S0008",
+      "second": "S0014"
+    },
+    {
+      "pair_id": "E0203",
+      "first": "S0008",
+      "second": "S0015"
+    },
+    {
+      "pair_id": "E0204",
+      "first": "S0008",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0205",
+      "first": "S0008",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0206",
+      "first": "S0008",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0207",
+      "first": "S0008",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0208",
+      "first": "S0008",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0209",
+      "first": "S0008",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0210",
+      "first": "S0008",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0211",
+      "first": "S0008",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0212",
+      "first": "S0008",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0213",
+      "first": "S0008",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0214",
+      "first": "S0008",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0215",
+      "first": "S0008",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0216",
+      "first": "S0008",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0217",
+      "first": "S0008",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0218",
+      "first": "S0008",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0219",
+      "first": "S0008",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0220",
+      "first": "S0008",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0221",
+      "first": "S0009",
+      "second": "S0010"
+    },
+    {
+      "pair_id": "E0222",
+      "first": "S0009",
+      "second": "S0011"
+    },
+    {
+      "pair_id": "E0223",
+      "first": "S0009",
+      "second": "S0012"
+    },
+    {
+      "pair_id": "E0224",
+      "first": "S0009",
+      "second": "S0013"
+    },
+    {
+      "pair_id": "E0225",
+      "first": "S0009",
+      "second": "S0014"
+    },
+    {
+      "pair_id": "E0226",
+      "first": "S0009",
+      "second": "S0015"
+    },
+    {
+      "pair_id": "E0227",
+      "first": "S0009",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0228",
+      "first": "S0009",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0229",
+      "first": "S0009",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0230",
+      "first": "S0009",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0231",
+      "first": "S0009",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0232",
+      "first": "S0009",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0233",
+      "first": "S0009",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0234",
+      "first": "S0009",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0235",
+      "first": "S0009",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0236",
+      "first": "S0009",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0237",
+      "first": "S0009",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0238",
+      "first": "S0009",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0239",
+      "first": "S0009",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0240",
+      "first": "S0009",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0241",
+      "first": "S0009",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0242",
+      "first": "S0009",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0243",
+      "first": "S0009",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0244",
+      "first": "S0010",
+      "second": "S0011"
+    },
+    {
+      "pair_id": "E0245",
+      "first": "S0010",
+      "second": "S0012"
+    },
+    {
+      "pair_id": "E0246",
+      "first": "S0010",
+      "second": "S0013"
+    },
+    {
+      "pair_id": "E0247",
+      "first": "S0010",
+      "second": "S0014"
+    },
+    {
+      "pair_id": "E0248",
+      "first": "S0010",
+      "second": "S0015"
+    },
+    {
+      "pair_id": "E0249",
+      "first": "S0010",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0250",
+      "first": "S0010",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0251",
+      "first": "S0010",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0252",
+      "first": "S0010",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0253",
+      "first": "S0010",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0254",
+      "first": "S0010",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0255",
+      "first": "S0010",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0256",
+      "first": "S0010",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0257",
+      "first": "S0010",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0258",
+      "first": "S0010",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0259",
+      "first": "S0010",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0260",
+      "first": "S0010",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0261",
+      "first": "S0010",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0262",
+      "first": "S0010",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0263",
+      "first": "S0010",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0264",
+      "first": "S0010",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0265",
+      "first": "S0010",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0266",
+      "first": "S0011",
+      "second": "S0012"
+    },
+    {
+      "pair_id": "E0267",
+      "first": "S0011",
+      "second": "S0013"
+    },
+    {
+      "pair_id": "E0268",
+      "first": "S0011",
+      "second": "S0014"
+    },
+    {
+      "pair_id": "E0269",
+      "first": "S0011",
+      "second": "S0015"
+    },
+    {
+      "pair_id": "E0270",
+      "first": "S0011",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0271",
+      "first": "S0011",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0272",
+      "first": "S0011",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0273",
+      "first": "S0011",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0274",
+      "first": "S0011",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0275",
+      "first": "S0011",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0276",
+      "first": "S0011",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0277",
+      "first": "S0011",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0278",
+      "first": "S0011",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0279",
+      "first": "S0011",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0280",
+      "first": "S0011",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0281",
+      "first": "S0011",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0282",
+      "first": "S0011",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0283",
+      "first": "S0011",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0284",
+      "first": "S0011",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0285",
+      "first": "S0011",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0286",
+      "first": "S0011",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0287",
+      "first": "S0012",
+      "second": "S0013"
+    },
+    {
+      "pair_id": "E0288",
+      "first": "S0012",
+      "second": "S0014"
+    },
+    {
+      "pair_id": "E0289",
+      "first": "S0012",
+      "second": "S0015"
+    },
+    {
+      "pair_id": "E0290",
+      "first": "S0012",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0291",
+      "first": "S0012",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0292",
+      "first": "S0012",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0293",
+      "first": "S0012",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0294",
+      "first": "S0012",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0295",
+      "first": "S0012",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0296",
+      "first": "S0012",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0297",
+      "first": "S0012",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0298",
+      "first": "S0012",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0299",
+      "first": "S0012",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0300",
+      "first": "S0012",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0301",
+      "first": "S0012",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0302",
+      "first": "S0012",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0303",
+      "first": "S0012",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0304",
+      "first": "S0012",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0305",
+      "first": "S0012",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0306",
+      "first": "S0012",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0307",
+      "first": "S0013",
+      "second": "S0014"
+    },
+    {
+      "pair_id": "E0308",
+      "first": "S0013",
+      "second": "S0015"
+    },
+    {
+      "pair_id": "E0309",
+      "first": "S0013",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0310",
+      "first": "S0013",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0311",
+      "first": "S0013",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0312",
+      "first": "S0013",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0313",
+      "first": "S0013",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0314",
+      "first": "S0013",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0315",
+      "first": "S0013",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0316",
+      "first": "S0013",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0317",
+      "first": "S0013",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0318",
+      "first": "S0013",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0319",
+      "first": "S0013",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0320",
+      "first": "S0013",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0321",
+      "first": "S0013",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0322",
+      "first": "S0013",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0323",
+      "first": "S0013",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0324",
+      "first": "S0013",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0325",
+      "first": "S0013",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0326",
+      "first": "S0014",
+      "second": "S0015"
+    },
+    {
+      "pair_id": "E0327",
+      "first": "S0014",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0328",
+      "first": "S0014",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0329",
+      "first": "S0014",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0330",
+      "first": "S0014",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0331",
+      "first": "S0014",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0332",
+      "first": "S0014",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0333",
+      "first": "S0014",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0334",
+      "first": "S0014",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0335",
+      "first": "S0014",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0336",
+      "first": "S0014",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0337",
+      "first": "S0014",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0338",
+      "first": "S0014",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0339",
+      "first": "S0014",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0340",
+      "first": "S0014",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0341",
+      "first": "S0014",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0342",
+      "first": "S0014",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0343",
+      "first": "S0014",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0344",
+      "first": "S0015",
+      "second": "S0016"
+    },
+    {
+      "pair_id": "E0345",
+      "first": "S0015",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0346",
+      "first": "S0015",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0347",
+      "first": "S0015",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0348",
+      "first": "S0015",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0349",
+      "first": "S0015",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0350",
+      "first": "S0015",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0351",
+      "first": "S0015",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0352",
+      "first": "S0015",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0353",
+      "first": "S0015",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0354",
+      "first": "S0015",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0355",
+      "first": "S0015",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0356",
+      "first": "S0015",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0357",
+      "first": "S0015",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0358",
+      "first": "S0015",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0359",
+      "first": "S0015",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0360",
+      "first": "S0015",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0361",
+      "first": "S0016",
+      "second": "S0017"
+    },
+    {
+      "pair_id": "E0362",
+      "first": "S0016",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0363",
+      "first": "S0016",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0364",
+      "first": "S0016",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0365",
+      "first": "S0016",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0366",
+      "first": "S0016",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0367",
+      "first": "S0016",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0368",
+      "first": "S0016",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0369",
+      "first": "S0016",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0370",
+      "first": "S0016",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0371",
+      "first": "S0016",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0372",
+      "first": "S0016",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0373",
+      "first": "S0016",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0374",
+      "first": "S0016",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0375",
+      "first": "S0016",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0376",
+      "first": "S0016",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0377",
+      "first": "S0017",
+      "second": "S0018"
+    },
+    {
+      "pair_id": "E0378",
+      "first": "S0017",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0379",
+      "first": "S0017",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0380",
+      "first": "S0017",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0381",
+      "first": "S0017",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0382",
+      "first": "S0017",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0383",
+      "first": "S0017",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0384",
+      "first": "S0017",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0385",
+      "first": "S0017",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0386",
+      "first": "S0017",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0387",
+      "first": "S0017",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0388",
+      "first": "S0017",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0389",
+      "first": "S0017",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0390",
+      "first": "S0017",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0391",
+      "first": "S0017",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0392",
+      "first": "S0018",
+      "second": "S0019"
+    },
+    {
+      "pair_id": "E0393",
+      "first": "S0018",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0394",
+      "first": "S0018",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0395",
+      "first": "S0018",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0396",
+      "first": "S0018",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0397",
+      "first": "S0018",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0398",
+      "first": "S0018",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0399",
+      "first": "S0018",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0400",
+      "first": "S0018",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0401",
+      "first": "S0018",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0402",
+      "first": "S0018",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0403",
+      "first": "S0018",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0404",
+      "first": "S0018",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0405",
+      "first": "S0018",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0406",
+      "first": "S0019",
+      "second": "S0020"
+    },
+    {
+      "pair_id": "E0407",
+      "first": "S0019",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0408",
+      "first": "S0019",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0409",
+      "first": "S0019",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0410",
+      "first": "S0019",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0411",
+      "first": "S0019",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0412",
+      "first": "S0019",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0413",
+      "first": "S0019",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0414",
+      "first": "S0019",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0415",
+      "first": "S0019",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0416",
+      "first": "S0019",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0417",
+      "first": "S0019",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0418",
+      "first": "S0019",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0419",
+      "first": "S0020",
+      "second": "S0021"
+    },
+    {
+      "pair_id": "E0420",
+      "first": "S0020",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0421",
+      "first": "S0020",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0422",
+      "first": "S0020",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0423",
+      "first": "S0020",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0424",
+      "first": "S0020",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0425",
+      "first": "S0020",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0426",
+      "first": "S0020",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0427",
+      "first": "S0020",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0428",
+      "first": "S0020",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0429",
+      "first": "S0020",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0430",
+      "first": "S0020",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0431",
+      "first": "S0021",
+      "second": "S0022"
+    },
+    {
+      "pair_id": "E0432",
+      "first": "S0021",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0433",
+      "first": "S0021",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0434",
+      "first": "S0021",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0435",
+      "first": "S0021",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0436",
+      "first": "S0021",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0437",
+      "first": "S0021",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0438",
+      "first": "S0021",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0439",
+      "first": "S0021",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0440",
+      "first": "S0021",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0441",
+      "first": "S0021",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0442",
+      "first": "S0022",
+      "second": "S0023"
+    },
+    {
+      "pair_id": "E0443",
+      "first": "S0022",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0444",
+      "first": "S0022",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0445",
+      "first": "S0022",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0446",
+      "first": "S0022",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0447",
+      "first": "S0022",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0448",
+      "first": "S0022",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0449",
+      "first": "S0022",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0450",
+      "first": "S0022",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0451",
+      "first": "S0022",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0452",
+      "first": "S0023",
+      "second": "S0024"
+    },
+    {
+      "pair_id": "E0453",
+      "first": "S0023",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0454",
+      "first": "S0023",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0455",
+      "first": "S0023",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0456",
+      "first": "S0023",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0457",
+      "first": "S0023",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0458",
+      "first": "S0023",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0459",
+      "first": "S0023",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0460",
+      "first": "S0023",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0461",
+      "first": "S0024",
+      "second": "S0025"
+    },
+    {
+      "pair_id": "E0462",
+      "first": "S0024",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0463",
+      "first": "S0024",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0464",
+      "first": "S0024",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0465",
+      "first": "S0024",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0466",
+      "first": "S0024",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0467",
+      "first": "S0024",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0468",
+      "first": "S0024",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0469",
+      "first": "S0025",
+      "second": "S0026"
+    },
+    {
+      "pair_id": "E0470",
+      "first": "S0025",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0471",
+      "first": "S0025",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0472",
+      "first": "S0025",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0473",
+      "first": "S0025",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0474",
+      "first": "S0025",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0475",
+      "first": "S0025",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0476",
+      "first": "S0026",
+      "second": "S0027"
+    },
+    {
+      "pair_id": "E0477",
+      "first": "S0026",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0478",
+      "first": "S0026",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0479",
+      "first": "S0026",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0480",
+      "first": "S0026",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0481",
+      "first": "S0026",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0482",
+      "first": "S0027",
+      "second": "S0028"
+    },
+    {
+      "pair_id": "E0483",
+      "first": "S0027",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0484",
+      "first": "S0027",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0485",
+      "first": "S0027",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0486",
+      "first": "S0027",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0487",
+      "first": "S0028",
+      "second": "S0029"
+    },
+    {
+      "pair_id": "E0488",
+      "first": "S0028",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0489",
+      "first": "S0028",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0490",
+      "first": "S0028",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0491",
+      "first": "S0029",
+      "second": "S0030"
+    },
+    {
+      "pair_id": "E0492",
+      "first": "S0029",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0493",
+      "first": "S0029",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0494",
+      "first": "S0030",
+      "second": "S0031"
+    },
+    {
+      "pair_id": "E0495",
+      "first": "S0030",
+      "second": "S0032"
+    },
+    {
+      "pair_id": "E0496",
+      "first": "S0031",
+      "second": "S0032"
+    }
+  ],
+  "orientation_rule": "Independent random left/right assignment by panel for a; b exactly reverses each stable pair ID. Separate pseudorandom streams shuffle pair and document order within each file",
+  "all_models_share_inputs": true,
+  "labels_or_predictions_used": false,
+  "family_caveat": "Lexical connected components, not proven independent semantic events",
+  "characters": {
+    "unit": "Unicode code points including markers and newline",
+    "minimum": 58,
+    "maximum": 120,
+    "total": 2697
+  },
+  "mapping": [
+    {
+      "blind_id": "S0001",
+      "original_id": "sample_880d3a391f028db427d3a799e2c36a6e5d5dce64fabcd5de88d3a359cf43fd46",
+      "family_id": "family_ac8039145c6e8b91cbc4fb58e88ef87fd65ee924ede3c5b6eafa94c6f94bca70",
+      "source_line": 1117,
+      "original_source_ids": [
+        "3600",
+        "8774"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "S0002",
+      "original_id": "sample_50a68ddf592938803bd901a03b29a62ad15020d5e1510e776c53ba1b0da1b0fa",
+      "family_id": "family_b8406ea0a843c6c77c7ba493e9c48ac462b1eddfc3382cd1470fba54ff30bb2d",
+      "source_line": 627,
+      "original_source_ids": [
+        "622"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0003",
+      "original_id": "sample_705d22cbe73c69ed9e2d5b5e9e00f46c1b5c9c51a13b384acda767bcc62dccb1",
+      "family_id": "family_dd0b42c5ca3d0ac5fee18eaf37a844bb60c2914624db25d99c17a361eaabd636",
+      "source_line": 897,
+      "original_source_ids": [
+        "3697"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0004",
+      "original_id": "sample_2cc00ae0496a4e94ad5fc76e1b469d858d3e7e4950172a47cd2f5f85d1ce0648",
+      "family_id": "family_513243837155981a83fb3a7e9dceff4cdafcadd4a56bf726fede60ada39003fb",
+      "source_line": 358,
+      "original_source_ids": [
+        "2196"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0005",
+      "original_id": "sample_9549db36543fa745cca29b61308796bac08f2415afee6afabc506c2248a18b5d",
+      "family_id": "family_05c2f1793c6b0368234aefb164cadd97f09ebf20d0bebfb1698e7f405d7acf1f",
+      "source_line": 1231,
+      "original_source_ids": [
+        "578"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0006",
+      "original_id": "sample_e094697a1f4fe27f554e529092f01dfe64bfa492183de05038a6809c02eacdfd",
+      "family_id": "family_5fb3f08c99d5d2017e8d0f51f9c60280fa1bc9b95e7e78841db5f021a9c4361c",
+      "source_line": 1855,
+      "original_source_ids": [
+        "7691"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "S0007",
+      "original_id": "sample_0a21aae68e436d82e343de26f28b1748d9ea860d3e41124c4fe71a28d04b2749",
+      "family_id": "family_cb762552be1c44d0970c8842fec7fab4a4235524c7ba30c20548808c7ec7af9e",
+      "source_line": 74,
+      "original_source_ids": [
+        "1915"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "S0008",
+      "original_id": "sample_c74a65ed6782f26804f81089e96c757bcfb3a4a6073e28cd581bd92d2b4d25dd",
+      "family_id": "family_fbd5c8ae36ed30acad5d53b048da8c94f30bc8b1ae6debe6ba58be8e868a757e",
+      "source_line": 1643,
+      "original_source_ids": [
+        "3996"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0009",
+      "original_id": "sample_cac7be6d9be31ecd297da99fcbc2dc37f28dafb4ade734653094f0364ae9a0fe",
+      "family_id": "family_9c479ff6eb983ee3ffa4bd7f7311457bda07dd6724e08b57b502e79f464fd700",
+      "source_line": 1664,
+      "original_source_ids": [
+        "9342"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0010",
+      "original_id": "sample_4219fa0325ee6d3afcdab5f02e6b18fb046198d0ca263b9a1b8f916f22fd880b",
+      "family_id": "family_81fc4a4763432cc0e274e049d4ebabd2f1143cbd6843913ff42e4ac264c21ded",
+      "source_line": 534,
+      "original_source_ids": [
+        "10301"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "S0011",
+      "original_id": "sample_f1fa06aab62aeca686e02b4781170725dffc61f971224f9cd46eb0e4c5e5971c",
+      "family_id": "family_12fac65b7f9792cf7e4c90c3289b79aa1a12761e82c3696d26efcbf7d45e9aae",
+      "source_line": 1980,
+      "original_source_ids": [
+        "7565"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "S0012",
+      "original_id": "sample_1468d01a4ac113a728ab20d89611f8080a881840d2c70a2f8fb24182d587eea5",
+      "family_id": "family_66963a3b2f18969d65e641ce9136bd6e07cd11cec19a8c544a5f3e1405565ab4",
+      "source_line": 162,
+      "original_source_ids": [
+        "2518"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "S0013",
+      "original_id": "sample_d752be94a0e01420a5b8aadf140fe70b696f1e15f214ea25a52332bb81d31369",
+      "family_id": "family_dcceb3fdcf0f0ed415657b3e051d7aa0a8bbd6159de85a63dda67664bccafde5",
+      "source_line": 1768,
+      "original_source_ids": [
+        "10646"
+      ],
+      "family_size_in_test": 3
+    },
+    {
+      "blind_id": "S0014",
+      "original_id": "sample_b1f6a2e2e45c88a75433e5f24c0f2b50c632f8a3e991e820db93684dca715bfc",
+      "family_id": "family_1099292c7c6340ed1eb0cbf2057038e56ea7481c8698cf0f21284c4814620798",
+      "source_line": 1468,
+      "original_source_ids": [
+        "6360"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0015",
+      "original_id": "sample_1a56770256b9d5603da5927962e009e5336b5308c60e6d0145747219bcc6e81c",
+      "family_id": "family_f5c3f478de3acbf8f418c302acb042590c8465a9984f738758b472867245c04c",
+      "source_line": 212,
+      "original_source_ids": [
+        "218"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0016",
+      "original_id": "sample_88f57062fbed949ffde8aafb11d993d4ed77c86b59eac7a262bf601278458516",
+      "family_id": "family_f2cc8f69308d82f0fc5f7ed298cbff991e53faeeff2add2a8941f654531d99c1",
+      "source_line": 1128,
+      "original_source_ids": [
+        "6781"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0017",
+      "original_id": "sample_8d9fcc20b3f8495799bb31775a490a757c0872d8c68f85b1c7e182f8e0641193",
+      "family_id": "family_4319043b1dae762d6a731be469d94b294b84b573d5264f0406252b95a9a0ffcf",
+      "source_line": 1173,
+      "original_source_ids": [
+        "5853"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0018",
+      "original_id": "sample_e2b0baa2ddf068ac96675e2064dea3571b8895887f49209b155caa16791947b3",
+      "family_id": "family_693aa5c7fba07e3d336fe6391ee12d247794104622d68a950300f15081138752",
+      "source_line": 1872,
+      "original_source_ids": [
+        "931"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0019",
+      "original_id": "sample_42a6dd2769cd741689167a72fa2844f06ccfaeaa0ff7718575f8663f92c8053b",
+      "family_id": "family_07584d9a56c7e3b6a57ac3524e7cb1888ac8e4ec75f9268768f6d0d96c33ebfc",
+      "source_line": 536,
+      "original_source_ids": [
+        "5080"
+      ],
+      "family_size_in_test": 3
+    },
+    {
+      "blind_id": "S0020",
+      "original_id": "sample_6703b0831bcd7458c76bc461286585e08f97a22368bbe1512eb39072993f7c42",
+      "family_id": "family_dbe34daa8d9b8e3c636e6bc9c2fe812c866ac3640bdf73db52c288f50777fce5",
+      "source_line": 802,
+      "original_source_ids": [
+        "10219"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "S0021",
+      "original_id": "sample_98594dfa627669fa8b95eb0b19be42fb2840375d66d255b42f17e16e5f30810a",
+      "family_id": "family_ae004524324c166937c1ac9ede9e7c9fde07e73f33329629dbebfabc85cdc999",
+      "source_line": 1257,
+      "original_source_ids": [
+        "7990"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0022",
+      "original_id": "sample_16617fb05b02d2ee1661e4983753fb47dc150b03e9cb52325d173615fe2e3960",
+      "family_id": "family_b53de64abbc0c9bb653c4d64de5f3f38e0baa31f3b42a7f8346f6e2ef57247f5",
+      "source_line": 181,
+      "original_source_ids": [
+        "10059"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0023",
+      "original_id": "sample_47deda2aad1b77763091a66bb8fc018710313d8b4d361a70bce94053f258329a",
+      "family_id": "family_78399650cac431893edafdce45317612965adcbc49dd1baff34fbe14261f3c0d",
+      "source_line": 566,
+      "original_source_ids": [
+        "4280"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0024",
+      "original_id": "sample_74da9a729e12068bed8856f7cfaedad904192a61ccc023aa5fd7cec0c779718d",
+      "family_id": "family_6db08d0ecf724b62325abc1949dcc422caa4aa7bfffa5b6ffeb24497f7718c1a",
+      "source_line": 942,
+      "original_source_ids": [
+        "3347"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0025",
+      "original_id": "sample_97f0b98917d6bf2a05b2a8dac592cb6b20fcc842d8916fa3b05ae7d54c240408",
+      "family_id": "family_ca45e18e398756422c53d507015d84d1eaec52010be29f217b0c045366e81caa",
+      "source_line": 1252,
+      "original_source_ids": [
+        "5210"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "S0026",
+      "original_id": "sample_58336337a44e7f026bc8f3906e8810440635b10225cdd9620167cabd3e4abb05",
+      "family_id": "family_c59196b010fe38a5a05ae263c6fd331b78e38a109d86a9350148a62ab0d163ab",
+      "source_line": 678,
+      "original_source_ids": [
+        "8112"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0027",
+      "original_id": "sample_125dcb2c868bb7a52ee95338232fea1f40ecde043d8e7ac6624d633c9b481f36",
+      "family_id": "family_13ddc5026e8abb36c9e7117afb248a14b1452095d13ee78d39a1be87083ab3cd",
+      "source_line": 149,
+      "original_source_ids": [
+        "2882"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0028",
+      "original_id": "sample_3c0641584bb2e834c3394e4ee0e169c7415f3fc7ddc842e671551c30b1543083",
+      "family_id": "family_026c324162b42174fa93c519aefa991beeca9dfaea41422b1740792f829be29c",
+      "source_line": 485,
+      "original_source_ids": [
+        "6197"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0029",
+      "original_id": "sample_6007dbe0b7dd7425b6b13ca4ffc50d754bcec57ccdbef7cd2f5e54cf0f53895f",
+      "family_id": "family_576fc3ce20a71e590dcb1d23bc75d418aecb738c4141778eaaf14f6c79062540",
+      "source_line": 740,
+      "original_source_ids": [
+        "100"
+      ],
+      "family_size_in_test": 1
+    },
+    {
+      "blind_id": "S0030",
+      "original_id": "sample_4b380d7914c257a7bbc3b26f67bf062737a3e578488fb9c146b8da4372f39e76",
+      "family_id": "family_5504b689e33660d1f9d54c27b888dbfb127756f0c607162862a7b7de9cc51abe",
+      "source_line": 593,
+      "original_source_ids": [
+        "10176"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "S0031",
+      "original_id": "sample_bac7bf68ca2f6cf9f39ca0e9182ea26926eb5d93c77ae95fdafca65788429a73",
+      "family_id": "family_ab632f8b3530720b9839ba886c772ddb94eb8fd06d093b067892e969d3257cf1",
+      "source_line": 1538,
+      "original_source_ids": [
+        "5035"
+      ],
+      "family_size_in_test": 2
+    },
+    {
+      "blind_id": "S0032",
+      "original_id": "sample_9ddc729f1e7090b4cc778757dde4d2a0dd94e2d5ead2c6b6280c57e5f8589ad6",
+      "family_id": "family_15a40731c1c3303beffe7547b9ead1bb6c7547019f4a95939131ee377a44b359",
+      "source_line": 1311,
+      "original_source_ids": [
+        "7914"
+      ],
+      "family_size_in_test": 1
+    }
+  ],
+  "pair_batching": {
+    "batch_count": 4,
+    "pairs_per_batch": 124,
+    "panel_assignment_seeds": {
+      "1": 20261201,
+      "2": 20261202
+    },
+    "same_pair_ID_set_for_a_b_batch": true,
+    "oversized_attempts": {
+      "luna_panel1_a": "could not complete; no output",
+      "sol_panel1_a": "stopped after reading; no output"
+    }
+  }
+}

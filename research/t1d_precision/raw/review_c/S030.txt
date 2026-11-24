@@ -1,0 +1,7 @@
+{
+    "call_id": "S030",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_0 reports a fourth-quarter 2008 goodwill impairment of $9.6 billion pretax and $8.7 billion after tax. The implied tax benefit is $0.9 billion, and the applied tax rate uses the pretax $9.6 billion denominator, yielding 9.375%. The reference incorrectly divides by the after-tax $8.7 billion."
+  }

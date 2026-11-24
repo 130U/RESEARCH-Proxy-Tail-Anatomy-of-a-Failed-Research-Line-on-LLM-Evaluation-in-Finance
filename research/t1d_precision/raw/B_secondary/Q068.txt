@@ -1,0 +1,1 @@
+{"answer":"313.1147540983607","unit":"percent","expression":"(25.2 - 6.1) / 6.1 * 100","low":"308.9430894308943","high":"317.3553719008264","reliable_digits":"1","explanation":"Each expense total is rounded to the nearest 0.1 million; the resulting percent-change range supports one reliable significant digit."}

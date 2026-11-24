@@ -1,0 +1,171 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R178",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "abiomed , inc ."
+      },
+      {
+        "location": "text_1",
+        "text": "and subsidiaries notes to consolidated financial statements 2014 ( continued ) note 14 ."
+      },
+      {
+        "location": "text_2",
+        "text": "income taxes ( continued ) and transition and defines the criteria that must be met for the benefits of a tax position to be recognized ."
+      },
+      {
+        "location": "text_3",
+        "text": "as a result of its adoption of fin no ."
+      },
+      {
+        "location": "text_4",
+        "text": "48 , the company has recorded the cumulative effect of the change in accounting principle of $ 0.3 million as a decrease to opening retained earnings and an increase to other long-term liabilities as of april 1 , 2007 ."
+      },
+      {
+        "location": "text_5",
+        "text": "this adjustment relates to state nexus for failure to file tax returns in various states for the years ended march 31 , 2003 , 2004 , and 2005 ."
+      },
+      {
+        "location": "text_6",
+        "text": "the company has initiated a voluntary disclosure plan ."
+      },
+      {
+        "location": "text_7",
+        "text": "the company has elected to recognize interest and/or penalties related to income tax matters in income tax expense in its consolidated statements of operations ."
+      },
+      {
+        "location": "text_8",
+        "text": "as of april 1 , 2007 , accrued interest was not significant and was recorded as part of the $ 0.3 million adjustment to the opening balance of retained earnings ."
+      },
+      {
+        "location": "text_9",
+        "text": "as of march 31 , 2008 , no penalties have been accrued which is consistent with the company 2019s discussions with states in connection with the company 2019s voluntary disclosure plan ."
+      },
+      {
+        "location": "text_10",
+        "text": "on a quarterly basis , the company accrues for the effects of uncertain tax positions and the related potential penalties and interest ."
+      },
+      {
+        "location": "text_11",
+        "text": "the company has recorded a liability for unrecognized tax benefits in other liabilities including accrued interest , of $ 0.2 million at march 31 , 2008 ."
+      },
+      {
+        "location": "text_12",
+        "text": "it is reasonably possible that the amount of the unrecognized tax benefit with respect to certain of the unrecognized tax positions will increase or decrease during the next 12 months ; however , it is not expected that the change will have a significant effect on the company 2019s results of operations or financial position ."
+      },
+      {
+        "location": "text_13",
+        "text": "a reconciliation of the beginning and ending balance of unrecognized tax benefits , excluding accrued interest recorded at march 31 , 2008 ( in thousands ) is as follows: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "Balance at April 1, 2007",
+          "$224"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Reductions for tax positions for closing of the applicable statute of limitations",
+          "(56)"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Balance at March 31, 2008",
+          "$168"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_14",
+        "text": "the company and its subsidiaries are subject to u.s ."
+      },
+      {
+        "location": "text_15",
+        "text": "federal income tax , as well as income tax of multiple state and foreign jurisdictions ."
+      },
+      {
+        "location": "text_16",
+        "text": "the company has accumulated significant losses since its inception in 1981 ."
+      },
+      {
+        "location": "text_17",
+        "text": "all tax years remain subject to examination by major tax jurisdictions , including the federal government and the commonwealth of massachusetts ."
+      },
+      {
+        "location": "text_18",
+        "text": "however , since the company has net operating loss and tax credit carry forwards which may be utilized in future years to offset taxable income , those years may also be subject to review by relevant taxing authorities if the carry forwards are utilized ."
+      },
+      {
+        "location": "text_19",
+        "text": "note 15 ."
+      },
+      {
+        "location": "text_20",
+        "text": "commitments and contingencies the company 2019s acquisition of impella provides that abiomed may be required to make additional contingent payments to impella 2019s former shareholders as follows : 2022 upon fda approval of the impella 2.5 device , a payment of $ 5583333 , and 2022 upon fda approval of the impella 5.0 device , a payment of $ 5583333 if the average market price per share of abiomed 2019s common stock , as determined in accordance with the purchase agreement , as of the date of one of these milestones is achieved is $ 22 or more , no additional contingent consideration will be required with respect to that milestone ."
+      },
+      {
+        "location": "text_21",
+        "text": "if the average market price is between $ 18 and $ 22 on the date of the company 2019s achievement of a milestone , the relevant milestone payment will be reduced ratably ."
+      },
+      {
+        "location": "text_22",
+        "text": "these milestone payments may be made , at the company 2019s option , with cash or stock or by a combination of cash or stock , except that no more than an aggregate of approximately $ 9.4 million of these milestone payments may be made in the form of stock ."
+      },
+      {
+        "location": "text_23",
+        "text": "if any of these contingent payments are made , they will result in an increase in the carrying value of goodwill ."
+      },
+      {
+        "location": "text_24",
+        "text": "in june 2008 , the company received 510 ( k ) clearance of its impella 2.5 , triggering an obligation to pay $ 5.6 million of contingent payments related to the may 2005 acquisition of impella ."
+      },
+      {
+        "location": "text_25",
+        "text": "these contingent payments may be made , at the company 2019s option , with cash , or stock or by a combination of cash or stock under circumstances described in the purchase agreement related to the company 2019s impella acquisition , except that approximately $ 1.8 million of the remaining $ 11.2 million potential contingent payments must be made in cash ."
+      },
+      {
+        "location": "text_26",
+        "text": "it is the company 2019s intent to satisfy the impella 2.5 510 ( k ) clearance contingent payment through issuance of common shares of company stock. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the maximum percentage of the june 2008 , contingent consideration for impella that must be satisfied in cash ? t",
+  "reference_program": "divide(1.8, 5.6)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "1.8",
+      "raw": "1.8",
+      "location": "text_25:262",
+      "context": "these contingent payments may be made , at the company 2019s option , with cash , or stock or by a combination of cash or stock under circumstances described in the purchase agreement related to the company 2019s impella acquisition , except that approximately $ 1.8 million of the remaining $ 11.2 million potential contingent payments must be made in cash ."
+    },
+    "x1": {
+      "program_token": "5.6",
+      "raw": "5.6",
+      "location": "text_24:110",
+      "context": "in june 2008 , the company received 510 ( k ) clearance of its impella 2.5 , triggering an obligation to pay $ 5.6 million of contingent payments related to the may 2005 acquisition of impella ."
+    }
+  }
+}

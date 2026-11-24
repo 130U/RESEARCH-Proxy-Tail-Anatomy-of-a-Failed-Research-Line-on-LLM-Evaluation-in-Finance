@@ -1,0 +1,1 @@
+{"answer":"8.4153774027","unit":"percent","expression":"35.9 / 426.6 * 100","low":"8.4026719794","high":"8.4280858047","reliable_digits":"2","explanation":"Allowing each revenue figure to vary by 0.05 million gives these bounds, which both round to 8.4 percent."}

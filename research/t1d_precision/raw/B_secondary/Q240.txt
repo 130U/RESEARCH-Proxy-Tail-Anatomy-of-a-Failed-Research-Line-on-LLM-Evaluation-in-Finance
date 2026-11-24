@@ -1,0 +1,1 @@
+{"answer":"60.8","unit":"percent","expression":"(201-125)/125*100","low":"59.7609561753","high":"61.8473895582","reliable_digits":"1","explanation":"HUM increased from 125 to 201; allowing each displayed value to vary by 0.5 gives the stated bounds."}

@@ -1,0 +1,1 @@
+{"answer":"3.8043478261","unit":"percent","expression":"(736 - 708) / 736 * 100","low":"3.6709721278","high":"3.9375424304","reliable_digits":"1","explanation":"Each amount has rounding uncertainty of $0.5 million, giving bounds of 27 / 735.5 * 100 and 29 / 736.5 * 100 and one reliable significant digit."}

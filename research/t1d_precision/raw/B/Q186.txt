@@ -1,0 +1,1 @@
+{"answer":"2.147751605995717","unit":"times","expression":"100.3 / 46.7","low":"2.144385026737968","high":"2.151125401929260","reliable_digits":"1","explanation":"Using the year-end allowance, the bounds are 100.25/46.75 and 100.35/46.65; only one significant digit rounds consistently throughout this range."}

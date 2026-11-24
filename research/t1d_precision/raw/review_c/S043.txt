@@ -1,0 +1,7 @@
+{
+    "call_id": "S043",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Texts 35–38 state that the relevant asset retirement obligations were $10 million in both 2006 and 2005, versus $9 million in 2004. The 2006 annual increase is therefore 10 - 10 = $0 million. The reference uses the 2004 amount as a denominator and computes a level ratio rather than an increase."
+  }

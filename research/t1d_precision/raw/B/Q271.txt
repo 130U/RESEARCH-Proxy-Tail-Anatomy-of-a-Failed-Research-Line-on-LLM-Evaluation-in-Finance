@@ -1,0 +1,1 @@
+{"answer":"290395","unit":"million dollars","expression":"(318,063 + 110,457) - (60,224 + 77,901)","low":"290393","high":"290397","reliable_digits":"4","explanation":"Trading assets minus trading liabilities gives implied equity; the rounding range is ±2 million, with four significant digits rounding consistently throughout."}

@@ -1,0 +1,1 @@
+{"answer":"2.633333333333333","unit":"million dollars","expression":"(1.0 + 2.3 + 4.6) / 3","low":"2.583333333333333","high":"2.683333333333333","reliable_digits":"1","explanation":"Each annual figure is rounded to the nearest 0.1 million, giving the average a rounding uncertainty of 0.05 million."}

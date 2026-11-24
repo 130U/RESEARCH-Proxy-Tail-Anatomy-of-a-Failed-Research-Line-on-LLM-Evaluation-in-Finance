@@ -1,0 +1,42 @@
+[
+  {
+    "review_id": "R151",
+    "verdict": "valid",
+    "reason": "The explicitly approximate $5.8 million February 2006 and $6.3 million January 2005 balances are correctly bound, and the calculation gives their percentage change in fractional form using the 2005 baseline."
+  },
+  {
+    "review_id": "R153",
+    "verdict": "valid",
+    "reason": "The rounded capitalized-interest aggregates of $30.4 million for 2018 and $29.0 million for 2017 are correctly selected, and the calculation expresses their percentage change in fractional form."
+  },
+  {
+    "review_id": "R155",
+    "verdict": "valid",
+    "reason": "The $14 million discontinued-operations commitments and $169 million overall commitments are rounded monetary totals from the same schedule, and their ratio gives the requested percentage share in fractional form."
+  },
+  {
+    "review_id": "R167",
+    "verdict": "valid",
+    "reason": "The 3.5% and 5.3% figures are rounded weighted-average borrowing rates for 2011 and 2010, and the calculation correctly expresses the decline as a signed relative change using 2010 as the baseline."
+  },
+  {
+    "review_id": "R168",
+    "verdict": "invalid",
+    "reason": "The London Market amount of 57 is explicitly gross, whereas the total of 320 is net of ceded reserves, so their ratio does not establish London's share of net reserves."
+  },
+  {
+    "review_id": "R178",
+    "verdict": "invalid",
+    "reason": "The $5.6 million June obligation restates the explicitly fixed $5,583,333 contractual milestone payment, so treating that contractual amount as an independently rounded financial input is unjustified."
+  },
+  {
+    "review_id": "R191",
+    "verdict": "valid",
+    "reason": "The approximately 60% coverage through the first quarter and 50% through the second are rounded anticipated-purchase coverage estimates, and their subtraction gives the 10-percentage-point decline magnitude."
+  },
+  {
+    "review_id": "R193",
+    "verdict": "uncertain",
+    "reason": "The inputs correctly identify rounded 2018–2022 amortization estimates, but the excerpt does not establish that their five-year sum is the 'total amortization expense' intended by the question."
+  }
+]

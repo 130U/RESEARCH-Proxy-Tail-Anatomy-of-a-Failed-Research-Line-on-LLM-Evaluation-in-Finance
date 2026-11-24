@@ -1,0 +1,1 @@
+{"answer":"58.9743589744","unit":"percent","expression":"(1.24 - 0.78) / 0.78 * 100","low":"57.3248407643","high":"60.6451612903","reliable_digits":"1","explanation":"Each displayed interest rate has rounding uncertainty of 0.005 percentage points, giving the stated bounds on the percentage increase."}

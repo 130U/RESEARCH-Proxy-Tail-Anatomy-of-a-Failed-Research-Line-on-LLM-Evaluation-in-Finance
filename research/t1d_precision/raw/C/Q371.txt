@@ -1,0 +1,1 @@
+{"answer":"21.86398","unit":"USD per share","expression":"(9 * 1000000) / 411636","low":"20.64931","high":"23.07864","reliable_digits":"1","explanation":"This calculates compensation expense per issued share; the actual average purchase price is not disclosed."}

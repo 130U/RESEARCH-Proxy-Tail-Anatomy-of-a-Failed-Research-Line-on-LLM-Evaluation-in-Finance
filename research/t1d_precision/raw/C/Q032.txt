@@ -1,0 +1,1 @@
+{"answer":"-9.785202864","unit":"percent","expression":"(378 - 419) / 419 * 100","low":"-10.011918951","high":"-9.557945042","reliable_digits":"1","explanation":"Each payment can vary by $0.5 million, yielding these growth-rate bounds and one reliable significant digit."}

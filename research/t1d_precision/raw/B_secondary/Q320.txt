@@ -1,0 +1,1 @@
+{"answer":"4.555555555555556","unit":"ratio","expression":"82 / 18","low":"4.405405405405405","high":"4.714285714285714","reliable_digits":"0","explanation":"The rounded percentages allow ratios from 81.5/18.5 to 82.5/17.5, spanning values that round to either 4 or 5 at one significant digit."}

@@ -1,0 +1,1 @@
+{"answer":"-17.5214776632","unit":"percent","expression":"(19201 - 23280) / 23280 * 100","low":"-17.5253950731","high":"-17.5175583685","reliable_digits":"3","explanation":"The reported totals imply a 17.5% decrease, with bounds allowing each total to vary by 0.5 million due to rounding."}

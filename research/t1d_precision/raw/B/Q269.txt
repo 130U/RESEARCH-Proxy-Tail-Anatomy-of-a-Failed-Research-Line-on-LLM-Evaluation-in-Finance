@@ -1,0 +1,1 @@
+{"answer":"51.28205128205128","unit":"percent","expression":"34 / 66.3 * 100","low":"50.48982667671439","high":"52.07547169811321","reliable_digits":"1","explanation":"Approximately $34 million of the $66.3 million net deferred loss is subject to amortization, with rounding bounds of ±$0.5 million and ±$0.05 million, respectively."}

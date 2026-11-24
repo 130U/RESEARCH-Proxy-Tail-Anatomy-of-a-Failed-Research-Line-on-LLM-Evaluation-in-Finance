@@ -1,0 +1,20 @@
+{
+  "review_id": "R167",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "first",
+      "original_reason": "Pre_text[20] supplies weighted-average borrowing rates3.5%(2011),5.3%(2010). Underlying individual advances have fixed rates, but the reported weighted average is a calculated quantity. Signed percentage decline is valid.",
+      "display_reason": "Pre_text[20] supplies weighted-average borrowing rates3.5%(2011),5.3%(2010). Underlying individual advances have fixed rates, but the reported weighted average is a calculated quantity. Signed percentage decline is valid.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "second",
+      "original_reason": "Although the rounded weighted average rates are correctly bound, subtracting 5.3 from 3.5 produces a negative percentage change rather than the requested positive percentage decrease.",
+      "display_reason": "Although the rounded weighted average rates are correctly bound, subtracting 5.3 from 3.5 produces a negative percentage change rather than the requested positive percentage decrease.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

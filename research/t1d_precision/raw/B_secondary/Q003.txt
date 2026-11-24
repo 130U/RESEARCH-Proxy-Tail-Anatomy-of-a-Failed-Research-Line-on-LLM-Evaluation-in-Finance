@@ -1,0 +1,1 @@
+{"answer":"2.933333333333333","unit":"percent","expression":"(2.1 + 3.7 + 3.0) / 3","low":"2.883333333333333","high":"2.983333333333333","reliable_digits":"1","explanation":"The three annual state tax rates, net of federal benefit, each have rounding uncertainty of 0.05 percentage points."}

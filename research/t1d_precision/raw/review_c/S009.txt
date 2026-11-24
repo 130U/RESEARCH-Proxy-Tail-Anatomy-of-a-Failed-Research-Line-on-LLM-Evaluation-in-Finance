@@ -1,0 +1,7 @@
+{
+    "call_id": "S009",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 9 reports international slot and route authorities of $736 million at December 31, 2009 and $708 million at December 31, 2010. Both calculations use the correct $736 million starting denominator. The model reports the positive percentage decline magnitude; the reference reports signed change."
+  }

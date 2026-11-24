@@ -1,0 +1,1 @@
+{"answer":"-3.4375","unit":"percent","expression":"(3.09 - 3.20) / 3.20 * 100","low":"-3.7441497660","high":"-3.1298904538","reliable_digits":"1","explanation":"Each price has rounding uncertainty of $0.005, giving about 9% relative uncertainty in the calculated decrease."}

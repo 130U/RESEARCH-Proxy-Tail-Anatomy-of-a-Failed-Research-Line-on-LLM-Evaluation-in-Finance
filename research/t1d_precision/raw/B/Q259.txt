@@ -1,0 +1,1 @@
+{"answer":"17.75147928994083","unit":"percent","expression":"30 / 169 * 100","low":"17.4041297935103","high":"18.1008902077151","reliable_digits":"1","explanation":"Divide the 2003 commitment by total commitments; allowing each figure to vary by $0.5 million gives the bounds and one reliable significant digit."}

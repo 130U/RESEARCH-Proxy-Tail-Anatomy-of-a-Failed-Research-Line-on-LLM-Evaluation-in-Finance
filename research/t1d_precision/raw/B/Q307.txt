@@ -1,0 +1,1 @@
+{"answer":"4.74025974025974","unit":"times","expression":"36.5 / 7.7","low":"4.703225806451613","high":"4.777777777777778","reliable_digits":"1","explanation":"Using the loss magnitude, the rounding bounds are 36.45/7.75 and 36.55/7.65; only one significant digit rounds consistently across this interval."}

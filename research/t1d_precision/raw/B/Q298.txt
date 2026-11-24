@@ -1,0 +1,1 @@
+{"answer":"2.163136548","unit":"percent","expression":"(4.8 / 221.9) * 100","low":"2.140121649","high":"2.186161821","reliable_digits":"1","explanation":"Accrued interest divided by total redemption gives this percentage, with bounds allowing each amount to vary by $0.05 million."}

@@ -1,0 +1,1 @@
+{"answer":"9.8641887062","unit":"percent","expression":"(153.7 - 139.9) / 139.9 * 100","low":"9.7892104323","high":"9.9392205935","reliable_digits":"2","explanation":"Each hedge amount has rounding uncertainty of ±0.05 million, giving a percentage increase with less than 1% relative uncertainty."}

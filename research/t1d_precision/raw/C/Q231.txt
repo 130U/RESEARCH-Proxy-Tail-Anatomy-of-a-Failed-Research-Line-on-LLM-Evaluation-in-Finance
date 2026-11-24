@@ -1,0 +1,1 @@
+{"answer":"58665","unit":"millions of dollars","expression":"(384102 + 121417) - (381415 + 65439)","low":"58663","high":"58667","reliable_digits":"4","explanation":"Adding both trading asset categories for each year gives an increase of 58665 million, with rounding uncertainty of ±2 million."}

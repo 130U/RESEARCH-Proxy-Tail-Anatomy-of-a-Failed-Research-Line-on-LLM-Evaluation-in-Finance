@@ -1,0 +1,64 @@
+{
+  "total_dois": 4,
+  "verified": [],
+  "failed": [
+    "10.3390/chemistry6040043",
+    "10.18653/v1/2025.acl-long.766",
+    "10.1145/3677052.3698682",
+    "10.48550/arxiv.2609.00065"
+  ],
+  "metadata_unavailable": [],
+  "metadata": {},
+  "errors": {
+    "10.3390/chemistry6040043": {
+      "doi": "10.3390/chemistry6040043",
+      "status": "inconclusive",
+      "error": "Sandbox denied the local HTTP proxy connection; no DOI registry response was received."
+    },
+    "10.18653/v1/2025.acl-long.766": {
+      "doi": "10.18653/v1/2025.acl-long.766",
+      "status": "inconclusive",
+      "error": "Sandbox denied the local HTTP proxy connection; no DOI registry response was received."
+    },
+    "10.1145/3677052.3698682": {
+      "doi": "10.1145/3677052.3698682",
+      "status": "inconclusive",
+      "error": "Sandbox denied the local HTTP proxy connection; no DOI registry response was received."
+    },
+    "10.48550/arxiv.2609.00065": {
+      "doi": "10.48550/arxiv.2609.00065",
+      "status": "inconclusive",
+      "error": "Sandbox denied the local HTTP proxy connection; no DOI registry response was received."
+    }
+  },
+  "missing": [],
+  "inconclusive": [
+    "10.3390/chemistry6040043",
+    "10.18653/v1/2025.acl-long.766",
+    "10.1145/3677052.3698682",
+    "10.48550/arxiv.2609.00065"
+  ],
+  "verification_scope": "DOI registration and Crossref metadata, not claim support or retraction screening",
+  "manual_identity_checks": [
+    {
+      "doi": "10.3390/chemistry6040043",
+      "source": "https://www.mdpi.com/2624-8549/6/4/43",
+      "status": "Publisher title, authors, year and DOI verified in page body"
+    },
+    {
+      "doi": "10.18653/v1/2025.acl-long.766",
+      "source": "https://aclanthology.org/2025.acl-long.766/",
+      "status": "ACL title, authors, year and DOI verified"
+    },
+    {
+      "doi": "10.1145/3677052.3698682",
+      "source": "https://arxiv.org/html/2410.13959",
+      "status": "Author manuscript metadata verified; registry request inconclusive"
+    },
+    {
+      "doi": "10.48550/arXiv.2609.00065",
+      "source": "https://arxiv.org/abs/2609.00065",
+      "status": "arXiv title, authors, date, DOI and current version verified"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"answer":"41.379310344827586","unit":"percent","expression":"12 / 29 * 100","low":"38.98305084745763","high":"43.85964912280702","reliable_digits":"1","explanation":"Dividing the potentially earnings-impacting benefits by total benefits gives the percentage; allowing each amount to vary by $0.5 million leaves one reliable significant digit."}

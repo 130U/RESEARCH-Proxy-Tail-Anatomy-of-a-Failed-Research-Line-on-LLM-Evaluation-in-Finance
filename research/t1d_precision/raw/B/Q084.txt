@@ -1,0 +1,1 @@
+{"answer":"-9.027777777777778","unit":"percent","expression":"(26.2 - 28.8) / 28.8 * 100","low":"-9.358752166377816","high":"-8.695652173913043","reliable_digits":"1","explanation":"Interpreting the question as the change from 2014 to 2015, each volatility factor is rounded to 0.1 percentage point."}

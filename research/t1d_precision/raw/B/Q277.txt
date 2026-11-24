@@ -1,0 +1,1 @@
+{"answer":"21.8641390205","unit":"percent","expression":"(692 / 3165) * 100","low":"21.8448902227","high":"21.8833939011","reliable_digits":"2","explanation":"Debt repayments divided by total 2007 obligations gives the share; allowing each amount to vary by $0.5 million leaves two significant digits reliably rounded."}

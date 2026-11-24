@@ -1,0 +1,142 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R108",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "the remaining change in other expense was driven primarily by changes on foreign currency exchange instruments as further discussed in note 7 in 201citem 8 ."
+      },
+      {
+        "location": "text_1",
+        "text": "financial statements and supplementary data 201d of this report ."
+      },
+      {
+        "location": "text_2",
+        "text": "income taxes ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2018",
+          "2017"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Current expense (benefit)",
+          "$(70)",
+          "$112"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Deferred expense (benefit)",
+          "226",
+          "(97)"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Total expense",
+          "$156",
+          "$15"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Effective income tax rate",
+          "17%",
+          "2%"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_3",
+        "text": "for discussion on income taxes , see note 8 in 201citem 8 ."
+      },
+      {
+        "location": "text_4",
+        "text": "financial statements and supplementary data 201d of this report ."
+      },
+      {
+        "location": "text_5",
+        "text": "discontinued operations discontinued operations net earnings increased primarily due to the gain on the sale of our aggregate ownership interests in enlink and the general partner of $ 2.6 billion ( $ 2.2 billion after-tax ) ."
+      },
+      {
+        "location": "text_6",
+        "text": "for discussion on discontinued operations , see note 19 in 201citem 8 ."
+      },
+      {
+        "location": "text_7",
+        "text": "financial statements and supplementary data 201d of this report 201d of this report ."
+      },
+      {
+        "location": "text_8",
+        "text": "results of operations 2013 2017 vs ."
+      },
+      {
+        "location": "text_9",
+        "text": "2016 the graph below shows the change in net earnings from 2016 to 2017 ."
+      },
+      {
+        "location": "text_10",
+        "text": "the material changes are further discussed by category on the following pages ."
+      },
+      {
+        "location": "text_11",
+        "text": "to facilitate the review , these numbers are being presented before consideration of earnings attributable to noncontrolling interests ."
+      },
+      {
+        "location": "text_12",
+        "text": "$ 1308 ( $ 165 ) ( $ 4 ) $ 1 $ 63 $ 400 ( $ 397 ) $ 126 $ 1204 ( $ 1458 ) $ 1078 2016 upstream operations marketing operations exploration expenses dd&a g&a financing costs , net other ( 1 ) income discontinued operations net earnings ( 1 ) other in the table above includes asset impairments , asset dispositions , restructuring and transaction costs and other expenses ."
+      },
+      {
+        "location": "text_13",
+        "text": "the graph below presents the drivers of the upstream operations change presented above , with additional details and discussion of the drivers following the graph ."
+      },
+      {
+        "location": "text_14",
+        "text": "( $ 427 ) ( $ 427 ) $ 1395$ 1 395 $ 2176$ 2 176 $ 3484 2016 production volumes field prices hedging 2017 upstream operations expenses ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the percentage increase in total expense from 2017 to 2018?",
+  "reference_program": "subtract(156, 15), divide(#0, 15), multiply(#1, const_100)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "156",
+      "raw": "156",
+      "location": "table_3:1",
+      "context": "Total expense | 2018"
+    },
+    "x1": {
+      "program_token": "15",
+      "raw": "15",
+      "location": "table_3:2",
+      "context": "Total expense | 2017"
+    }
+  }
+}

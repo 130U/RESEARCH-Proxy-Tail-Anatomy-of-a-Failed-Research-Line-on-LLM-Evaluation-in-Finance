@@ -1,0 +1,1 @@
+{"answer":"0.2994350282485876","unit":"ratio","expression":"5.3 / 17.7","low":"0.2957746478873239","high":"0.3031161473087819","reliable_digits":"2","explanation":"The bounds are 5.25 / 17.75 and 5.35 / 17.65, both rounding to 0.30 at two significant digits."}

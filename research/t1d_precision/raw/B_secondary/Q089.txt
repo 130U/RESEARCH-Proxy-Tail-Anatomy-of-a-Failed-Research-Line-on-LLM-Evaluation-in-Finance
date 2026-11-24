@@ -1,0 +1,1 @@
+{"answer":"40.8788774003","unit":"percent","expression":"3321 / 8124 * 100","low":"40.8702073974","high":"40.8875484705","reliable_digits":"3","explanation":"Allowing each balance to vary by 0.5 million gives these bounds; both round to 40.9% at three significant digits."}

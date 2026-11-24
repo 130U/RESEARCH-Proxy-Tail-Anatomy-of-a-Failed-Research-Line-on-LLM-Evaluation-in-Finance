@@ -1,0 +1,9 @@
+Solve the financial question using only the document below. Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Do not use external sources or tools. Your expression must use numbers and arithmetic operators (+, -, *, /, parentheses) and evaluate to your answer in the stated unit. Do not include explanatory prose outside the JSON.
+Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "explanation": "one brief sentence"}
+
+DOCUMENT
+{document}
+
+QUESTION
+{question}

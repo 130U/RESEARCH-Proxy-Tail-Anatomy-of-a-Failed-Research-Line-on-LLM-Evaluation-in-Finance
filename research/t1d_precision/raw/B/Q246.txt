@@ -1,0 +1,1 @@
+{"answer":"32.8","unit":"million dollars","expression":"10.6 + 11 + 11.2","low":"32.2","high":"33.4","reliable_digits":"1","explanation":"The expected principal payments for 2017–2019 are summed, with bounds reflecting rounding to the displayed precision."}

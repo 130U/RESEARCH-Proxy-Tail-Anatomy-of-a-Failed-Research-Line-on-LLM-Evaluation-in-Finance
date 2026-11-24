@@ -1,0 +1,102 @@
+{
+  "revision": "eba43610fe3cb57a3e5773cd6c037da1f8992ad5",
+  "retrieved_utc": "2026-10-09",
+  "headlines": 10753,
+  "unique_headlines": 10686,
+  "target_annotations_including_regex_recovery": 14405,
+  "label_counts_including_regex_recovery": {
+    "neutral": 5517,
+    "positive": 5074,
+    "negative": 3814
+  },
+  "unique_targets_including_regex_recovery": 4274,
+  "entities_per_headline_including_regex_recovery": {
+    "1": 7906,
+    "2": 2223,
+    "3": 484,
+    "5": 32,
+    "4": 104,
+    "6": 3,
+    "7": 1
+  },
+  "targets_not_literal_substring_including_regex_recovery": 19,
+  "python_literal_parse_failure_count": 13,
+  "python_literal_parse_failures": [
+    {
+      "source_id": "3615",
+      "original": "{'Sebi': 'neutral', 'Osian's Art Fund': 'neutral'}"
+    },
+    {
+      "source_id": "3783",
+      "original": "{'Tata Steel UK': 'negative', 'Moody's': 'neutral'}"
+    },
+    {
+      "source_id": "4909",
+      "original": "{'Sun Pharma': 'positive', 'Dr Reddy's Labs': 'positive'}"
+    },
+    {
+      "source_id": "5014",
+      "original": "{'Sun Pharma': 'positive', 'Dr. Reddy's': 'positive'}"
+    },
+    {
+      "source_id": "5321",
+      "original": "{'IOC': 'negative', 'BPCL': 'negative', 'HPCL': 'negative', 'Moody's': 'neutral'}"
+    },
+    {
+      "source_id": "7226",
+      "original": "{'BP': 'positive', 'Britain's FTSE': 'positive'}"
+    },
+    {
+      "source_id": "8167",
+      "original": "{'Nikkei': 'positive', 'BOJ': 'neutral', 'Moody's': 'neutral'}"
+    },
+    {
+      "source_id": "8202",
+      "original": "{'Samsung': 'positive', 'Barron's': 'neutral'}"
+    },
+    {
+      "source_id": "9624",
+      "original": "{'Citic Securities': 'negative', 'China's central bank': 'neutral'}"
+    },
+    {
+      "source_id": "9824",
+      "original": "{'Diageo': 'negative', 'BAE': 'negative', 'UK's FTSE': 'negative'}"
+    },
+    {
+      "source_id": "10269",
+      "original": "{'Sun Pharma': 'negative', 'Dr Reddy's Laboratories': 'negative'}"
+    },
+    {
+      "source_id": "10355",
+      "original": "{'Axis Bank': 'positive', 'HDFC Bank': 'positive', 'ICICI Bank': 'positive', 'Moody's': 'neutral'}"
+    },
+    {
+      "source_id": "10621",
+      "original": "{'Ranbaxy': 'positive', 'Dr. Reddy's': 'positive', 'Cadila': 'positive', 'HSBC': 'neutral'}"
+    }
+  ],
+  "schema": [
+    "S No.",
+    "Title",
+    "Decisions",
+    "Words"
+  ],
+  "files": {
+    "entity_list_comprehensive.csv": {
+      "bytes": 90424,
+      "sha256": "6ace045edc54c90bc0695ee5a78afec9f7a5294844ccfd0c9e85a14aeea4916b"
+    },
+    "LICENSE": {
+      "bytes": 1110,
+      "sha256": "961d32986ac3fa2fe2e55ebc7bbae1ba8d632412e98493d73bdf59f0ad8fc65f"
+    },
+    "README.md": {
+      "bytes": 48,
+      "sha256": "543e1779ccb4e13b23107b3c4443891f581041d56adf676daa8db173c730e03a"
+    },
+    "SEntFiN.csv": {
+      "bytes": 1118162,
+      "sha256": "570af7ba58f724f3fcc414dd5ba80da5b1a3b342134d76c6ebdf53a32c54a92f"
+    }
+  }
+}

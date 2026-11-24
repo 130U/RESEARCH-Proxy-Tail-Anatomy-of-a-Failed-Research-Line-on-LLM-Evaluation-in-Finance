@@ -1,0 +1,20 @@
+{
+  "review_id": "R251",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "first",
+      "original_reason": "Vehicles68/74 are recorded leased-asset values in million dollars, not millions of physical vehicles. Question uses the table monetary context; interpret as value change. Net leased PP&E equals three asset categories plus signed accumulated amortization.",
+      "display_reason": "Vehicles68/74 are recorded leased-asset values in million dollars, not millions of physical vehicles. Question uses the table monetary context; interpret as value change. Net leased PP&E equals three asset categories plus signed accumulated amortization.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "second",
+      "original_reason": "The $68 million and $74 million figures measure recorded vehicle asset values under capital leases, so their difference does not measure millions of vehicles.",
+      "display_reason": "The $68 million and $74 million figures measure recorded vehicle asset values under capital leases, so their difference does not measure millions of vehicles.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

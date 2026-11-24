@@ -1,0 +1,1 @@
+{"answer":"0.3384912959","unit":"percent","expression":"(2075 - 2068) / 2068 * 100","low":"0.2900652647","high":"0.3869407497","reliable_digits":"0","explanation":"Each balance has rounding uncertainty of $0.5 million, allowing growth from 6/2068.5 to 8/2067.5 and leaving the first significant digit uncertain."}

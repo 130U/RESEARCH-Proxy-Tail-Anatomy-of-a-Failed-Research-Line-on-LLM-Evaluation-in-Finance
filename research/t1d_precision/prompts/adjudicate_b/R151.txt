@@ -1,0 +1,182 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R151",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "notes to consolidated financial statements for the years ended february 3 , 2006 , january 28 , 2005 , and january 30 , 2004 , gross realized gains and losses on the sales of available-for-sale securities were not mate- rial ."
+      },
+      {
+        "location": "text_1",
+        "text": "the cost of securities sold is based upon the specific identification method ."
+      },
+      {
+        "location": "text_2",
+        "text": "merchandise inventories inventories are stated at the lower of cost or market with cost determined using the retail last-in , first-out ( 201clifo 201d ) method ."
+      },
+      {
+        "location": "text_3",
+        "text": "the excess of current cost over lifo cost was approximately $ 5.8 million at february 3 , 2006 and $ 6.3 million at january 28 , 2005 ."
+      },
+      {
+        "location": "text_4",
+        "text": "current cost is deter- mined using the retail first-in , first-out method ."
+      },
+      {
+        "location": "text_5",
+        "text": "lifo reserves decreased $ 0.5 million and $ 0.2 million in 2005 and 2004 , respectively , and increased $ 0.7 million in 2003 ."
+      },
+      {
+        "location": "text_6",
+        "text": "costs directly associated with warehousing and distribu- tion are capitalized into inventory ."
+      },
+      {
+        "location": "text_7",
+        "text": "in 2005 , the company expanded the number of inven- tory departments it utilizes for its gross profit calculation from 10 to 23 ."
+      },
+      {
+        "location": "text_8",
+        "text": "the impact of this change in estimate on the company 2019s consolidated 2005 results of operations was an estimated reduction of gross profit and a corre- sponding decrease to inventory , at cost , of $ 5.2 million ."
+      },
+      {
+        "location": "text_9",
+        "text": "store pre-opening costs pre-opening costs related to new store openings and the construction periods are expensed as incurred ."
+      },
+      {
+        "location": "text_10",
+        "text": "property and equipment property and equipment are recorded at cost ."
+      },
+      {
+        "location": "text_11",
+        "text": "the company provides for depreciation and amortization on a straight-line basis over the following estimated useful lives: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "Land improvements",
+          "20"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Buildings",
+          "39-40"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Furniture, fixtures and equipment",
+          "3-10"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_12",
+        "text": "improvements of leased properties are amortized over the shorter of the life of the applicable lease term or the estimated useful life of the asset ."
+      },
+      {
+        "location": "text_13",
+        "text": "impairment of long-lived assets when indicators of impairment are present , the company evaluates the carrying value of long-lived assets , other than goodwill , in relation to the operating perform- ance and future cash flows or the appraised values of the underlying assets ."
+      },
+      {
+        "location": "text_14",
+        "text": "the company may adjust the net book value of the underlying assets based upon such cash flow analysis compared to the book value and may also consid- er appraised values ."
+      },
+      {
+        "location": "text_15",
+        "text": "assets to be disposed of are adjusted to the fair value less the cost to sell if less than the book value ."
+      },
+      {
+        "location": "text_16",
+        "text": "the company recorded impairment charges of approximately $ 0.5 million and $ 0.6 million in 2004 and 2003 , respectively , and $ 4.7 million prior to 2003 to reduce the carrying value of its homerville , georgia dc ( which was sold in 2004 ) ."
+      },
+      {
+        "location": "text_17",
+        "text": "the company also recorded impair- ment charges of approximately $ 0.6 million in 2005 and $ 0.2 million in each of 2004 and 2003 to reduce the carrying value of certain of its stores 2019 assets as deemed necessary due to negative sales trends and cash flows at these locations ."
+      },
+      {
+        "location": "text_18",
+        "text": "these charges are included in sg&a expense ."
+      },
+      {
+        "location": "text_19",
+        "text": "other assets other assets consist primarily of long-term invest- ments , debt issuance costs which are amortized over the life of the related obligations , utility and security deposits , life insurance policies and goodwill ."
+      },
+      {
+        "location": "text_20",
+        "text": "vendor rebates the company records vendor rebates , primarily con- sisting of new store allowances , volume purchase rebates and promotional allowances , when realized ."
+      },
+      {
+        "location": "text_21",
+        "text": "the rebates are recorded as a reduction to inventory purchases , at cost , which has the effect of reducing cost of goods sold , as prescribed by emerging issues task force ( 201ceitf 201d ) issue no ."
+      },
+      {
+        "location": "text_22",
+        "text": "02-16 , 201caccounting by a customer ( including a reseller ) for certain consideration received from a vendor 201d ."
+      },
+      {
+        "location": "text_23",
+        "text": "rent expense rent expense is recognized over the term of the lease ."
+      },
+      {
+        "location": "text_24",
+        "text": "the company records minimum rental expense on a straight-line basis over the base , non-cancelable lease term commencing on the date that the company takes physical possession of the property from the landlord , which normally includes a period prior to store opening to make necessary leasehold improvements and install store fixtures ."
+      },
+      {
+        "location": "text_25",
+        "text": "when a lease contains a predetermined fixed escalation of the minimum rent , the company recognizes the related rent expense on a straight-line basis and records the difference between the recognized rental expense and the amounts payable under the lease as deferred rent ."
+      },
+      {
+        "location": "text_26",
+        "text": "the company also receives tenant allowances , which are recorded in deferred incentive rent and are amortized as a reduction to rent expense over the term of the lease ."
+      },
+      {
+        "location": "text_27",
+        "text": "any difference between the calculated expense and the amounts actually paid are reflected as a liability in accrued expenses and other in the consolidated balance sheets and totaled approximately $ 25.0 million ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percentage change in the excess of current cost over lifo cost was approximately between 2006 and 2005 .",
+  "reference_program": "subtract(5.8, 6.3), divide(#0, 6.3)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "5.8",
+      "raw": "5.8",
+      "location": "text_3:61",
+      "context": "the excess of current cost over lifo cost was approximately $ 5.8 million at february 3 , 2006 and $ 6.3 million at january 28 , 2005 ."
+    },
+    "x1": {
+      "program_token": "6.3",
+      "raw": "6.3",
+      "location": "text_3:100",
+      "context": "the excess of current cost over lifo cost was approximately $ 5.8 million at february 3 , 2006 and $ 6.3 million at january 28 , 2005 ."
+    }
+  }
+}
+
+TWO SOURCE INTERPRETATIONS TO CONSIDER
+The order is random. Evaluate these reasons against the supplied source and give your own judgment using the same JSON schema. Their order carries no priority.
+[
+  "Feb2006/Jan2005 LIFO excess5.8/6.3m matches. Fiscal2005 separately disclosed0.5m reserve decrease constrains difference.",
+  "The approximate balances and 2005 denominator are correct, but the calculation returns a fractional change without converting it to the requested percentage."
+]

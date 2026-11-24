@@ -1,0 +1,7 @@
+{
+    "call_id": "S067",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_21 gives expenses of $17.3 million for 2013 and $21.9 million for 2014; row 2 gives corresponding basic weighted-average shares of 156.6 million and 170.6 million. Expense per share requires those share counts as denominators, supporting 17.3/156.6−21.9/170.6 in dollars per share. The reference reverses both ratios, yielding shares per dollar."
+  }

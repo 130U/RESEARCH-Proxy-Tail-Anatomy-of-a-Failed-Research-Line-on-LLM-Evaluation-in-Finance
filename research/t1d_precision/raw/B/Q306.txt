@@ -1,0 +1,1 @@
+{"answer":"75","unit":"dollars per share","expression":"45 / 0.6","low":"74.16666666666667","high":"75.83333333333333","reliable_digits":"1","explanation":"The $45 million cost ranges from $44.5 million to $45.5 million, while the count of 0.6 million shares is exact."}

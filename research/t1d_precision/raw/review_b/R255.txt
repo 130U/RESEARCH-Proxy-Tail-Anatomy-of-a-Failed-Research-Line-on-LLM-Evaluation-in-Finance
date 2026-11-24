@@ -1,0 +1,5 @@
+{
+    "review_id": "R255",
+    "verdict": "valid",
+    "reason": "The source identifies 28.9% and 27.8% as rounded weighted-average volatility assumptions for 2013 and 2012, and the calculation correctly measures change relative to 2012."
+  }

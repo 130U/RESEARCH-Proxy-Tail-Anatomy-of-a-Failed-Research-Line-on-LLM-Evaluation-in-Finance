@@ -1,0 +1,1 @@
+{"answer":"-10.8189929892","unit":"percent","expression":"(559.7 - 627.6) / 627.6 * 100","low":"-10.8340635705","high":"-10.8039200064","reliable_digits":"3","explanation":"Operating cash flow decreased; allowing each reported amount to vary by $0.05 million gives these bounds and supports three significant digits."}

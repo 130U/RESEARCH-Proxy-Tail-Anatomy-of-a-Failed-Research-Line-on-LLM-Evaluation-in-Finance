@@ -1,0 +1,1 @@
+{"answer":"31.32382085","unit":"million dollars","expression":"(766801 * 40.85) / 1000000","low":"31.319986845","high":"31.327654855","reliable_digits":"3","explanation":"The 766,801 shares awaiting issuance are exact; the $40.85 weighted-average exercise price has rounding uncertainty of $0.005 in either direction."}

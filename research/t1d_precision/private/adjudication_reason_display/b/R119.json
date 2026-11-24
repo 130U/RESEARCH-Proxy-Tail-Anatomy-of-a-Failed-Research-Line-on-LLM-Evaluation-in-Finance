@@ -1,0 +1,20 @@
+{
+  "review_id": "R119",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "second",
+      "original_reason": "The $23 billion denominator represents only Verus acquisition inflows rather than total 2017 AUS net inflows, so 20/23 does not answer the question as written.",
+      "display_reason": "The $23 billion denominator represents only Verus acquisition inflows rather than total 2017 AUS net inflows, so 20/23 does not answer the question as written.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "first",
+      "original_reason": "Question conflates long-term AUS and liquidity products and refers to total net inflows, whereas 20/23 measures the acquisition-specific long-term component of Verus inflows. Full-year long-term net inflows are 42 and liquidity -13 in post_text[23:25]. Scope is ambiguous; not retained as a clean question.",
+      "display_reason": "Question conflates long-term AUS and liquidity products and refers to total net inflows, whereas 20/23 measures the acquisition-specific long-term component of Verus inflows. Full-year long-term net inflows are 42 and liquidity -13 in post_text[23:25]. Scope is ambiguous; not retained as a clean question.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

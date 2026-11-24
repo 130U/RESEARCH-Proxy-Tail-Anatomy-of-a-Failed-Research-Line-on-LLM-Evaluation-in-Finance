@@ -1,0 +1,1 @@
+{"answer":"1.4383561644","unit":"ratio","expression":"21 / 14.6","low":"1.3993174061","high":"1.4776632302","reliable_digits":"1","explanation":"Rounding gives a minimum of 20.5 / 14.65 and a maximum of 21.5 / 14.55, supporting one reliable significant digit."}

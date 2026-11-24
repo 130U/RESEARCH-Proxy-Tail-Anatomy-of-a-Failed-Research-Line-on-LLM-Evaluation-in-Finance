@@ -1,0 +1,51 @@
+[
+  {
+    "call_id": "Q125",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "reviewer": "root adjudication after group-blind source_early review",
+    "reason": "Adopt the independent review's more cautious classification. The question asks broadly for the percentage effect of hedges, without fixing a percentage-reduction baseline. Model measures the 104-to-87 sensitivity reduction against 104; reference measures the difference against 87. Both denominators are identifiable, and ambiguity is more defensible than a definite reference-error claim. Original root and independent judgments are retained."
+  },
+  {
+    "call_id": "Q182",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "reviewer": "root adjudication after group-blind source_early review",
+    "reason": "The unrecognized-tax-benefit balance already contains the category the question asks to add. Model computes addition of separately excluded interest and penalties, whereas reference combines benefit subsets across years. Neither interpretation is uniquely established. Adopt null formula validity rather than a definitive false judgment because the requested counterfactual itself is contradictory."
+  },
+  {
+    "call_id": "Q297",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "reviewer": "root adjudication after group-blind source_early review",
+    "reason": "Reference definitely omits billion-to-million conversion, and model correctly forms the disclosed cross-year amount ratio. However, the question attributes the issuance to 2009 while the document assigns 2.9 billion to 2008. Adopt the independent review's unresolved classification: a correct dimensional calculation cannot establish an answer for a year whose issuance value is absent."
+  },
+  {
+    "call_id": "Q316",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "reviewer": "root adjudication after group-blind source_final_b review",
+    "reason": "Adopt the independent review: the question vaguely asks for a summary, so a correctly reconstructed net-reserve total is a reasonable single-number interpretation. The reference percentage is not requested, but the vague target does not justify asserting one uniquely required summary measure. Source monetary magnitude is not independently supplied."
+  },
+  {
+    "call_id": "Q329",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "reviewer": "root adjudication after group-blind source_final_a review",
+    "reason": "Adopt the independent review after rechecking the explicitly named December carrying value. The document supplies 31.2 billion for that denominator. Adding repaid 2.7 creates an undisclosed 33.9 measure; new June borrowing financed the repayment, so the addition cannot be treated as an established starting debt balance. Model correctly uses the named December amount."
+  },
+  {
+    "call_id": "Q361",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "reviewer": "root adjudication after group-blind source_final_a review",
+    "reason": "Adopt the independent review: 107 minus 66 establishes a 41 million tax effect, not a separately established tax liability. Model computes a defensible gross-to-tax-effect ratio but labels the tax effect as liability; reference computes a different ratio. The literal requested liability ratio is not established by the excerpt."
+  },
+  {
+    "call_id": "Q385",
+    "primary_cause": "unresolved",
+    "formula_valid": false,
+    "reviewer": "root adjudication after group-blind source_final_a review",
+    "reason": "Retain unresolved total-asset identification, but adopt a false formula-validity flag: dividing all-plan expected return by the U.S.-only rate mixes explicitly different scopes. The sensitivity table may identify a return-calculation base under further assumptions, not a uniquely established total-asset balance for the requested date. The reference is also unsupported."
+  }
+]

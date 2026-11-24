@@ -1,0 +1,1 @@
+{"answer":"30.46875","unit":"percent","expression":"(3.9 / 12.8) * 100","low":"29.961089494163424","high":"30.980392156862745","reliable_digits":"1","explanation":"Each amount is rounded to the nearest 0.1 billion, yielding the stated bounds and one reliable significant digit."}

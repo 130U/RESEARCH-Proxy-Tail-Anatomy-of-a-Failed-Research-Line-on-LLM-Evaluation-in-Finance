@@ -1,0 +1,1 @@
+{"answer":"41.4285714286","unit":"percent","expression":"(29.7 - 21.0) / 21.0 * 100","low":"40.8551068884","high":"42.0047732697","reliable_digits":"1","explanation":"Each figure can vary by 0.05, producing the stated bounds and supporting one reliable significant digit."}

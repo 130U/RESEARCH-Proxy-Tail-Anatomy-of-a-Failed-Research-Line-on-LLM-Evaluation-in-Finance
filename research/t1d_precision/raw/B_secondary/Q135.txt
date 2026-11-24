@@ -1,0 +1,1 @@
+{"answer":"6.41025641025641","unit":"percent","expression":"(83 - 78) / 78 * 100","low":"5.095541401273885","high":"7.741935483870968","reliable_digits":"0","explanation":"Dividends increased from $78 million to $83 million; rounding to the nearest million leaves even the first significant digit uncertain."}

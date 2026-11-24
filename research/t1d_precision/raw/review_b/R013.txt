@@ -1,0 +1,5 @@
+{
+    "review_id": "R013",
+    "verdict": "valid",
+    "reason": "The rounded net-revenue amounts correctly bind 2011 and 2010, and subtracting $5,051 million from $4,904 million before dividing by the 2010 base gives the requested change."
+  }

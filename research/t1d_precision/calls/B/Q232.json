@@ -1,0 +1,25 @@
+{
+  "group": "B",
+  "id": "Q232",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "fresh_session": true,
+  "prompt_file": "prompts/B/Q232.txt",
+  "started_utc": "2026-11-17T07:43:03.830044+00:00",
+  "status": "completed",
+  "returncode": 0,
+  "completed_utc": "2026-11-17T07:43:46.091005+00:00",
+  "elapsed_seconds": 42.25,
+  "thread_id": "01a1e875-9ba9-7180-a6e1-2db0c485399a",
+  "usage": {
+    "input_tokens": 16833,
+    "cached_input_tokens": 15488,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1006,
+    "reasoning_output_tokens": 905
+  },
+  "event_item_types": [
+    "agent_message"
+  ],
+  "tool_use_observed": false
+}

@@ -1,0 +1,1 @@
+{"answer":"11.0294117647","unit":"percent","expression":"(151 - 136) / 136 * 100","low":"10.2564102564","high":"11.8081180812","reliable_digits":"1","explanation":"Each reserve is rounded to the nearest million, so the bounds use (150.5 - 136.5) / 136.5 * 100 and (151.5 - 135.5) / 135.5 * 100."}

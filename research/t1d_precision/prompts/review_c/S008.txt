@@ -1,0 +1,240 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S008",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "american tower corporation and subsidiaries notes to consolidated financial statements 2014 ( continued ) 3.00% ( 3.00 % ) convertible notes 2014during the years ended december 31 , 2008 and 2007 , the company issued an aggregate of approximately 8.9 million and 973 shares of common stock , respectively , upon conversion of $ 182.8 million and $ 0.02 million principal amount , respectively , of 3.00% ( 3.00 % ) notes ."
+      },
+      {
+        "location": "text_1",
+        "text": "pursuant to the terms of the indenture , holders of the 3.00% ( 3.00 % ) notes are entitled to receive 48.7805 shares of common stock for every $ 1000 principal amount of notes converted ."
+      },
+      {
+        "location": "text_2",
+        "text": "in connection with the conversions in 2008 , the company paid such holders an aggregate of approximately $ 4.7 million , calculated based on the discounted value of the future interest payments on the notes , which is reflected in loss on retirement of long-term obligations in the accompanying consolidated statement of operations for the year ended december 31 , 2008 ."
+      },
+      {
+        "location": "text_3",
+        "text": "14 ."
+      },
+      {
+        "location": "text_4",
+        "text": "impairments , net loss on sale of long-lived assets , restructuring and merger related expense the significant components reflected in impairments , net loss on sale of long-lived assets , restructuring and merger related expense in the accompanying consolidated statements of operations include the following : impairments and net loss on sale of long-lived assets 2014during the years ended december 31 , 2008 , 2007 and 2006 , the company recorded impairments and net loss on sale of long-lived assets ( primarily related to its rental and management segment ) of $ 11.2 million , $ 9.2 million and $ 2.6 million , respectively ."
+      },
+      {
+        "location": "text_5",
+        "text": "during the years ended december 31 , 2008 , 2007 and 2006 respectively , the company recorded net losses associated with the sales of certain non-core towers and other assets , as well as impairment charges to write-down certain assets to net realizable value after an indicator of impairment had been identified ."
+      },
+      {
+        "location": "text_6",
+        "text": "as a result , the company recorded net losses and impairments of approximately $ 10.5 million , $ 7.1 million and $ 2.0 million for the years ended december 31 , 2008 , 2007 and 2006 , respectively ."
+      },
+      {
+        "location": "text_7",
+        "text": "the net loss for the year ended december 31 , 2008 is comprised of net losses from asset sales and other impairments of $ 10.7 million , offset by gains from asset sales of $ 0.2 million ."
+      },
+      {
+        "location": "text_8",
+        "text": "the net loss for the year ended december 31 , 2007 is comprised of net losses from asset sales and other impairments of $ 7.8 million , offset by gains from asset sales of $ 0.7 million ."
+      },
+      {
+        "location": "text_9",
+        "text": "merger related expense 2014during the year ended december 31 , 2005 , the company assumed certain obligations , as a result of the merger with spectrasite , inc. , primarily related to employee separation costs of former spectrasite employees ."
+      },
+      {
+        "location": "text_10",
+        "text": "severance payments made to former spectrasite , inc ."
+      },
+      {
+        "location": "text_11",
+        "text": "employees were subject to plans and agreements established by spectrasite , inc ."
+      },
+      {
+        "location": "text_12",
+        "text": "and assumed by the company in connection with the merger ."
+      },
+      {
+        "location": "text_13",
+        "text": "these costs were recognized as an assumed liability in the purchase price allocation ."
+      },
+      {
+        "location": "text_14",
+        "text": "in addition , the company also incurred certain merger related costs for additional employee retention and separation costs incurred during the year ended december 31 , 2006 ."
+      },
+      {
+        "location": "text_15",
+        "text": "the following table displays the activity with respect to this accrued liability for the years ended december 31 , 2008 , 2007 and 2006 ( in thousands ) : liability december 31 , expense 2006 cash payments other liability december 31 , expense 2007 cash payments other liability december 31 , expense 2008 cash payments other liability december 31 , employee separations ."
+      },
+      {
+        "location": "text_16",
+        "text": "."
+      },
+      {
+        "location": "text_17",
+        "text": "."
+      },
+      {
+        "location": "text_18",
+        "text": "."
+      },
+      {
+        "location": "text_19",
+        "text": "$ 20963 $ 496 $ ( 12389 ) $ ( 1743 ) $ 7327 $ 633 $ ( 6110 ) $ ( 304 ) $ 1546 $ 284 $ ( 1901 ) $ 71 2014 as of december 31 , 2008 , the company had paid all of these merger related liabilities. ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Liability  as of December 31, 2005",
+          "2006 Expense",
+          "2006 Cash Payments",
+          "Other",
+          "Liability  as of December 31, 2006",
+          "2007 Expense",
+          "2007 Cash Payments",
+          "Other",
+          "Liability  as of December 31, 2007",
+          "2008 Expense",
+          "2008 Cash Payments",
+          "Other",
+          "Liability  as of December 31, 2008"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Employee separations",
+          "$20,963",
+          "$496",
+          "$(12,389)",
+          "$(1,743)",
+          "$7,327",
+          "$633",
+          "$(6,110)",
+          "$(304)",
+          "$1,546",
+          "$284",
+          "$(1,901)",
+          "$71",
+          "—"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_20",
+        "text": "american tower corporation and subsidiaries notes to consolidated financial statements 2014 ( continued ) 3.00% ( 3.00 % ) convertible notes 2014during the years ended december 31 , 2008 and 2007 , the company issued an aggregate of approximately 8.9 million and 973 shares of common stock , respectively , upon conversion of $ 182.8 million and $ 0.02 million principal amount , respectively , of 3.00% ( 3.00 % ) notes ."
+      },
+      {
+        "location": "text_21",
+        "text": "pursuant to the terms of the indenture , holders of the 3.00% ( 3.00 % ) notes are entitled to receive 48.7805 shares of common stock for every $ 1000 principal amount of notes converted ."
+      },
+      {
+        "location": "text_22",
+        "text": "in connection with the conversions in 2008 , the company paid such holders an aggregate of approximately $ 4.7 million , calculated based on the discounted value of the future interest payments on the notes , which is reflected in loss on retirement of long-term obligations in the accompanying consolidated statement of operations for the year ended december 31 , 2008 ."
+      },
+      {
+        "location": "text_23",
+        "text": "14 ."
+      },
+      {
+        "location": "text_24",
+        "text": "impairments , net loss on sale of long-lived assets , restructuring and merger related expense the significant components reflected in impairments , net loss on sale of long-lived assets , restructuring and merger related expense in the accompanying consolidated statements of operations include the following : impairments and net loss on sale of long-lived assets 2014during the years ended december 31 , 2008 , 2007 and 2006 , the company recorded impairments and net loss on sale of long-lived assets ( primarily related to its rental and management segment ) of $ 11.2 million , $ 9.2 million and $ 2.6 million , respectively ."
+      },
+      {
+        "location": "text_25",
+        "text": "during the years ended december 31 , 2008 , 2007 and 2006 respectively , the company recorded net losses associated with the sales of certain non-core towers and other assets , as well as impairment charges to write-down certain assets to net realizable value after an indicator of impairment had been identified ."
+      },
+      {
+        "location": "text_26",
+        "text": "as a result , the company recorded net losses and impairments of approximately $ 10.5 million , $ 7.1 million and $ 2.0 million for the years ended december 31 , 2008 , 2007 and 2006 , respectively ."
+      },
+      {
+        "location": "text_27",
+        "text": "the net loss for the year ended december 31 , 2008 is comprised of net losses from asset sales and other impairments of $ 10.7 million , offset by gains from asset sales of $ 0.2 million ."
+      },
+      {
+        "location": "text_28",
+        "text": "the net loss for the year ended december 31 , 2007 is comprised of net losses from asset sales and other impairments of $ 7.8 million , offset by gains from asset sales of $ 0.7 million ."
+      },
+      {
+        "location": "text_29",
+        "text": "merger related expense 2014during the year ended december 31 , 2005 , the company assumed certain obligations , as a result of the merger with spectrasite , inc. , primarily related to employee separation costs of former spectrasite employees ."
+      },
+      {
+        "location": "text_30",
+        "text": "severance payments made to former spectrasite , inc ."
+      },
+      {
+        "location": "text_31",
+        "text": "employees were subject to plans and agreements established by spectrasite , inc ."
+      },
+      {
+        "location": "text_32",
+        "text": "and assumed by the company in connection with the merger ."
+      },
+      {
+        "location": "text_33",
+        "text": "these costs were recognized as an assumed liability in the purchase price allocation ."
+      },
+      {
+        "location": "text_34",
+        "text": "in addition , the company also incurred certain merger related costs for additional employee retention and separation costs incurred during the year ended december 31 , 2006 ."
+      },
+      {
+        "location": "text_35",
+        "text": "the following table displays the activity with respect to this accrued liability for the years ended december 31 , 2008 , 2007 and 2006 ( in thousands ) : liability december 31 , expense 2006 cash payments other liability december 31 , expense 2007 cash payments other liability december 31 , expense 2008 cash payments other liability december 31 , employee separations ."
+      },
+      {
+        "location": "text_36",
+        "text": "."
+      },
+      {
+        "location": "text_37",
+        "text": "."
+      },
+      {
+        "location": "text_38",
+        "text": "."
+      },
+      {
+        "location": "text_39",
+        "text": "$ 20963 $ 496 $ ( 12389 ) $ ( 1743 ) $ 7327 $ 633 $ ( 6110 ) $ ( 304 ) $ 1546 $ 284 $ ( 1901 ) $ 71 2014 as of december 31 , 2008 , the company had paid all of these merger related liabilities. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "in 2006 what was percentage change in the employee separations liabilities",
+  "human_answer": "-65.1%",
+  "reference_program": "subtract(7327, 20963)",
+  "reference_execution_value": -13636.0,
+  "model_response": {
+    "answer": "-65.05",
+    "unit": "percent",
+    "expression": "(7327 - 20963) / 20963 * 100",
+    "explanation": "Employee separation liabilities decreased by approximately 65.05% in 2006."
+  }
+}

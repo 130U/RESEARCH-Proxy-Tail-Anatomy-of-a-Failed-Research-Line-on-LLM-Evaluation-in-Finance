@@ -1,0 +1,282 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R084",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "management 2019s discussion and analysis 68 jpmorgan chase & co./2014 annual report consolidated results of operations the following section provides a comparative discussion of jpmorgan chase 2019s consolidated results of operations on a reported basis for the three-year period ended december 31 , 2014 ."
+      },
+      {
+        "location": "text_1",
+        "text": "factors that relate primarily to a single business segment are discussed in more detail within that business segment ."
+      },
+      {
+        "location": "text_2",
+        "text": "for a discussion of the critical accounting estimates used by the firm that affect the consolidated results of operations , see pages 161 2013165 ."
+      },
+      {
+        "location": "text_3",
+        "text": "revenue year ended december 31 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "(in millions)",
+          "2014",
+          "2013",
+          "2012"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Investment banking fees",
+          "$6,542",
+          "$6,354",
+          "$5,808"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Principal transactions<sup>(a)</sup>",
+          "10,531",
+          "10,141",
+          "5,536"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Lending- and deposit-related fees",
+          "5,801",
+          "5,945",
+          "6,196"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Asset management, administration and commissions",
+          "15,931",
+          "15,106",
+          "13,868"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Securities gains",
+          "77",
+          "667",
+          "2,110"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Mortgage fees and related income",
+          "3,563",
+          "5,205",
+          "8,687"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Card income",
+          "6,020",
+          "6,022",
+          "5,658"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Other income<sup>(b)</sup>",
+          "2,106",
+          "3,847",
+          "4,258"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Noninterest revenue",
+          "50,571",
+          "53,287",
+          "52,121"
+        ]
+      },
+      {
+        "row_index": 10,
+        "cells": [
+          "Net interest income",
+          "43,634",
+          "43,319",
+          "44,910"
+        ]
+      },
+      {
+        "row_index": 11,
+        "cells": [
+          "Total net revenue",
+          "$94,205",
+          "$96,606",
+          "$97,031"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_4",
+        "text": "( a ) included funding valuation adjustments ( ( 201cfva 201d ) effective 2013 ) ) and debit valuation adjustments ( 201cdva 201d ) on over-the-counter ( 201cotc 201d ) derivatives and structured notes , measured at fair value ."
+      },
+      {
+        "location": "text_5",
+        "text": "fva and dva gains/ ( losses ) were $ 468 million and $ ( 1.9 ) billion for the years ended december 31 , 2014 and 2013 , respectively ."
+      },
+      {
+        "location": "text_6",
+        "text": "dva losses were ( $ 930 ) million for the year ended december 31 , 2012 ."
+      },
+      {
+        "location": "text_7",
+        "text": "( b ) included operating lease income of $ 1.7 billion , $ 1.5 billion and $ 1.3 billion for the years ended december 31 , 2014 , 2013 and 2012 , respectively ."
+      },
+      {
+        "location": "text_8",
+        "text": "2014 compared with 2013 total net revenue for 2014 was down by $ 2.4 billion , or 2% ( 2 % ) , compared with the prior year , predominantly due to lower mortgage fees and related income , and lower other income ."
+      },
+      {
+        "location": "text_9",
+        "text": "the decrease was partially offset by higher asset management , administration and commissions revenue ."
+      },
+      {
+        "location": "text_10",
+        "text": "investment banking fees increased compared with the prior year , due to higher advisory and equity underwriting fees , largely offset by lower debt underwriting fees ."
+      },
+      {
+        "location": "text_11",
+        "text": "the increase in advisory fees was driven by the combined impact of a greater share of fees for completed transactions , and growth in industry-wide fee levels ."
+      },
+      {
+        "location": "text_12",
+        "text": "the increase in equity underwriting fees was driven by higher industry-wide issuance ."
+      },
+      {
+        "location": "text_13",
+        "text": "the decrease in debt underwriting fees was primarily related to lower bond underwriting compared with a stronger prior year , and lower loan syndication fees on lower industry-wide fee levels ."
+      },
+      {
+        "location": "text_14",
+        "text": "investment banking fee share and industry-wide data are sourced from dealogic , an external vendor ."
+      },
+      {
+        "location": "text_15",
+        "text": "for additional information on investment banking fees , see cib segment results on pages 92 201396 , cb segment results on pages 97 201399 , and note 7 ."
+      },
+      {
+        "location": "text_16",
+        "text": "principal transactions revenue , which consists of revenue primarily from the firm 2019s client-driven market-making and private equity investing activities , increased compared with the prior year as the prior year included a $ 1.5 billion loss related to the implementation of the fva framework for otc derivatives and structured notes ."
+      },
+      {
+        "location": "text_17",
+        "text": "the increase was also due to higher private equity gains as a result of higher net gains on sales ."
+      },
+      {
+        "location": "text_18",
+        "text": "the increase was partially offset by lower fixed income markets revenue in cib , primarily driven by credit- related and rates products , as well as the impact of business simplification initiatives ."
+      },
+      {
+        "location": "text_19",
+        "text": "for additional information on principal transactions revenue , see cib and corporate segment results on pages 92 201396 and pages 103 2013104 , respectively , and note 7 ."
+      },
+      {
+        "location": "text_20",
+        "text": "lending- and deposit-related fees decreased compared with the prior year , reflecting the impact of business simplification initiatives and lower trade finance revenue in cib ."
+      },
+      {
+        "location": "text_21",
+        "text": "for additional information on lending- and deposit- related fees , see the segment results for ccb on pages 81 2013 91 , cib on pages 92 201396 and cb on pages 97 201399 ."
+      },
+      {
+        "location": "text_22",
+        "text": "asset management , administration and commissions revenue increased compared with the prior year , reflecting higher asset management fees driven by net client inflows and the effect of higher market levels in am and ccb ."
+      },
+      {
+        "location": "text_23",
+        "text": "the increase was offset partially by lower commissions and other fee revenue in ccb as a result of the exit of a non-core product in the second half of 2013 ."
+      },
+      {
+        "location": "text_24",
+        "text": "for additional information on these fees and commissions , see the segment discussions of ccb on pages 81 201391 , am on pages 100 2013102 , and note 7 ."
+      },
+      {
+        "location": "text_25",
+        "text": "securities gains decreased compared with the prior year , reflecting lower repositioning activity related to the firm 2019s investment securities portfolio ."
+      },
+      {
+        "location": "text_26",
+        "text": "for additional information , see the corporate segment discussion on pages 103 2013104 and note 12 ."
+      },
+      {
+        "location": "text_27",
+        "text": "mortgage fees and related income decreased compared with the prior year ."
+      },
+      {
+        "location": "text_28",
+        "text": "the decrease was predominantly due to lower net production revenue driven by lower volumes due to higher levels of mortgage interest rates , and tighter margins ."
+      },
+      {
+        "location": "text_29",
+        "text": "the decline in net production revenue was partially offset by a lower loss on the risk management of mortgage servicing rights ( 201cmsrs 201d ) ."
+      },
+      {
+        "location": "text_30",
+        "text": "for additional information , see the segment discussion of ccb on pages 85 201387 and note 17 ."
+      },
+      {
+        "location": "text_31",
+        "text": "card income remained relatively flat but included higher net interchange income on credit and debit cards due to growth in sales volume , offset by higher amortization of new account origination costs ."
+      },
+      {
+        "location": "text_32",
+        "text": "for additional information on credit card income , see ccb segment results on pages 81 201391. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what percentage of total net revenue was due to net interest income in 2014?",
+  "reference_program": "divide(43634, 94205)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "43634",
+      "raw": "43,634",
+      "location": "table_10:1",
+      "context": "Net interest income | 2014"
+    },
+    "x1": {
+      "program_token": "94205",
+      "raw": "94,205",
+      "location": "table_11:1",
+      "context": "Total net revenue | 2014"
+    }
+  }
+}

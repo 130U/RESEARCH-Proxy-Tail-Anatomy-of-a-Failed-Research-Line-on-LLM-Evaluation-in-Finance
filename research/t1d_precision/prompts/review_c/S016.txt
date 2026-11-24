@@ -1,0 +1,234 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S016",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "a reconciliation of the beginning and ending amount of unrecognized tax benefits is as follows: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2013",
+          "2012",
+          "2011"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Balance January 1",
+          "$4,425",
+          "$4,277",
+          "$4,919"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Additions related to current year positions",
+          "320",
+          "496",
+          "695"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Additions related to prior year positions",
+          "177",
+          "58",
+          "145"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Reductions for tax positions of prior years<sup>(1)</sup>",
+          "(747)",
+          "(320)",
+          "(1,223)"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Settlements",
+          "(603)",
+          "(67)",
+          "(259)"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Lapse of statute of limitations",
+          "(69)",
+          "(19)",
+          "—"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Balance December 31",
+          "$3,503",
+          "$4,425",
+          "$4,277"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_1",
+        "text": "( 1 ) amounts reflect the settlements with the irs and cra as discussed below ."
+      },
+      {
+        "location": "text_2",
+        "text": "if the company were to recognize the unrecognized tax benefits of $ 3.5 billion at december 31 , 2013 , the income tax provision would reflect a favorable net impact of $ 3.3 billion ."
+      },
+      {
+        "location": "text_3",
+        "text": "the company is under examination by numerous tax authorities in various jurisdictions globally ."
+      },
+      {
+        "location": "text_4",
+        "text": "the company believes that it is reasonably possible that the total amount of unrecognized tax benefits as of december 31 , 2013 could decrease by up to $ 128 million in the next 12 months as a result of various audit closures , settlements or the expiration of the statute of limitations ."
+      },
+      {
+        "location": "text_5",
+        "text": "the ultimate finalization of the company 2019s examinations with relevant taxing authorities can include formal administrative and legal proceedings , which could have a significant impact on the timing of the reversal of unrecognized tax benefits ."
+      },
+      {
+        "location": "text_6",
+        "text": "the company believes that its reserves for uncertain tax positions are adequate to cover existing risks or exposures ."
+      },
+      {
+        "location": "text_7",
+        "text": "interest and penalties associated with uncertain tax positions amounted to a benefit of $ 319 million in 2013 , $ 88 million in 2012 and $ 95 million in 2011 ."
+      },
+      {
+        "location": "text_8",
+        "text": "these amounts reflect the beneficial impacts of various tax settlements , including those discussed below ."
+      },
+      {
+        "location": "text_9",
+        "text": "liabilities for accrued interest and penalties were $ 665 million and $ 1.2 billion as of december 31 , 2013 and 2012 , respectively ."
+      },
+      {
+        "location": "text_10",
+        "text": "in 2013 , the internal revenue service ( 201cirs 201d ) finalized its examination of schering-plough 2019s 2007-2009 tax years ."
+      },
+      {
+        "location": "text_11",
+        "text": "the company 2019s unrecognized tax benefits for the years under examination exceeded the adjustments related to this examination period and therefore the company recorded a net $ 165 million tax provision benefit in 2013 ."
+      },
+      {
+        "location": "text_12",
+        "text": "in 2010 , the irs finalized its examination of schering-plough 2019s 2003-2006 tax years ."
+      },
+      {
+        "location": "text_13",
+        "text": "in this audit cycle , the company reached an agreement with the irs on an adjustment to income related to intercompany pricing matters ."
+      },
+      {
+        "location": "text_14",
+        "text": "this income adjustment mostly reduced nols and other tax credit carryforwards ."
+      },
+      {
+        "location": "text_15",
+        "text": "the company 2019s reserves for uncertain tax positions were adequate to cover all adjustments related to this examination period ."
+      },
+      {
+        "location": "text_16",
+        "text": "additionally , as previously disclosed , the company was seeking resolution of one issue raised during this examination through the irs administrative appeals process ."
+      },
+      {
+        "location": "text_17",
+        "text": "in 2013 , the company recorded an out-of-period net tax benefit of $ 160 million related to this issue , which was settled in the fourth quarter of 2012 , with final resolution relating to interest owed being reached in the first quarter of 2013 ."
+      },
+      {
+        "location": "text_18",
+        "text": "the company 2019s unrecognized tax benefits related to this issue exceeded the settlement amount ."
+      },
+      {
+        "location": "text_19",
+        "text": "management has concluded that the exclusion of this benefit is not material to current or prior year financial statements ."
+      },
+      {
+        "location": "text_20",
+        "text": "as previously disclosed , the canada revenue agency ( the 201ccra 201d ) had proposed adjustments for 1999 and 2000 relating to intercompany pricing matters and , in july 2011 , the cra issued assessments for other miscellaneous audit issues for tax years 2001-2004 ."
+      },
+      {
+        "location": "text_21",
+        "text": "in 2012 , merck and the cra reached a settlement for these years that calls for merck to pay additional canadian tax of approximately $ 65 million ."
+      },
+      {
+        "location": "text_22",
+        "text": "the company 2019s unrecognized tax benefits related to these matters exceeded the settlement amount and therefore the company recorded a net $ 112 million tax provision benefit in 2012 ."
+      },
+      {
+        "location": "text_23",
+        "text": "a portion of the taxes paid is expected to be creditable for u.s ."
+      },
+      {
+        "location": "text_24",
+        "text": "tax purposes ."
+      },
+      {
+        "location": "text_25",
+        "text": "the company had previously established reserves for these matters ."
+      },
+      {
+        "location": "text_26",
+        "text": "the resolution of these matters did not have a material effect on the company 2019s results of operations , financial position or liquidity ."
+      },
+      {
+        "location": "text_27",
+        "text": "in 2011 , the irs concluded its examination of merck 2019s 2002-2005 federal income tax returns and as a result the company was required to make net payments of approximately $ 465 million ."
+      },
+      {
+        "location": "text_28",
+        "text": "the company 2019s unrecognized tax benefits for the years under examination exceeded the adjustments related to this examination period and therefore the company recorded a net $ 700 million tax provision benefit in 2011 ."
+      },
+      {
+        "location": "text_29",
+        "text": "this net benefit reflects the decrease of unrecognized tax benefits for the years under examination partially offset by increases to unrecognized tax benefits for years subsequent table of contents ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percentual decrease observed in the liabilities for accrued interest and penalties during 2012 and 2013?",
+  "human_answer": "44.59%",
+  "reference_program": "multiply(1.2, const_1000), subtract(665, #0), divide(#1, #0)",
+  "reference_execution_value": -0.44583,
+  "model_response": {
+    "answer": "44.5833333333333",
+    "unit": "percent",
+    "expression": "(1200 - 665) / 1200 * 100",
+    "explanation": "Liabilities decreased from $1,200 million in 2012 to $665 million in 2013."
+  }
+}

@@ -1,0 +1,5 @@
+{
+    "review_id": "R117",
+    "verdict": "invalid",
+    "reason": "Although the three rounded diluted weighted-average share amounts are correctly bound, the program adds three to their sum instead of dividing the sum by three."
+  }

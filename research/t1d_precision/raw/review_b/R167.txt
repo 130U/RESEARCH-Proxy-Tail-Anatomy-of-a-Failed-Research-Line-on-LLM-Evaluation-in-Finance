@@ -1,0 +1,5 @@
+{
+    "review_id": "R167",
+    "verdict": "invalid",
+    "reason": "Although the rounded weighted average rates are correctly bound, subtracting 5.3 from 3.5 produces a negative percentage change rather than the requested positive percentage decrease."
+  }

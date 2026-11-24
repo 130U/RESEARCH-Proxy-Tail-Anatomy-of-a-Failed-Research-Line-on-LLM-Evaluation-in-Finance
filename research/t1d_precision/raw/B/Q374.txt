@@ -1,0 +1,1 @@
+{"answer":"10.4","unit":"times","expression":"156 / 15","low":"10.032258064516129","high":"10.793103448275862","reliable_digits":"1","explanation":"The ratio is 2018 total tax expense divided by 2017 total tax expense; rounding permits bounds of 155.5/15.5 and 156.5/14.5."}

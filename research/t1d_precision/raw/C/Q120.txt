@@ -1,0 +1,1 @@
+{"answer":"22.0064724919","unit":"percent","expression":"1088 / 4944 * 100","low":"21.9941348974","high":"22.0188125822","reliable_digits":"3","explanation":"Allowing each amount to vary by 0.5 million gives these bounds, which both round to 22.0% at three significant digits."}

@@ -1,0 +1,1 @@
+{"answer":"9.582963620231","unit":"percent","expression":"10.8 / 112.7 * 100","low":"9.534368070953","high":"9.631602308034","reliable_digits":"1","explanation":"Stock issue costs are divided by reported net proceeds; allowing each amount to vary by $0.05 million gives these bounds."}

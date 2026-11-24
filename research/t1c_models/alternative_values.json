@@ -1,0 +1,164 @@
+[
+  {
+    "call_id": "Q185",
+    "id": "AAL/2015/page_114.pdf-1",
+    "substitutions": [
+      {
+        "old": "1733",
+        "new": "1700",
+        "prior_review": "part1 candidate 1",
+        "direction": "coarse_for_fine"
+      }
+    ],
+    "alternative_value_exact": "340/531",
+    "alternative_value_decimal": 0.64030131826742,
+    "source": "T1 fixed prior source-identity reviews; not by itself proof that a model used these sources"
+  },
+  {
+    "call_id": "Q273",
+    "id": "ADBE/1999/page_64.pdf-3",
+    "substitutions": [
+      {
+        "old": "772",
+        "new": "800",
+        "prior_review": "part1 candidate 3",
+        "direction": "coarse_for_fine"
+      }
+    ],
+    "alternative_value_exact": "-8067",
+    "alternative_value_decimal": -8067.0,
+    "source": "T1 fixed prior source-identity reviews; not by itself proof that a model used these sources"
+  },
+  {
+    "call_id": "Q345",
+    "id": "ADBE/1999/page_64.pdf-2",
+    "substitutions": [
+      {
+        "old": "0.8",
+        "new": "0.772",
+        "prior_review": "part1 candidate 3",
+        "direction": "fine_for_coarse"
+      }
+    ],
+    "alternative_value_exact": "100/193",
+    "alternative_value_decimal": 0.5181347150259067,
+    "source": "T1 fixed prior source-identity reviews; not by itself proof that a model used these sources"
+  },
+  {
+    "call_id": "Q290",
+    "id": "BLL/2010/page_35.pdf-2",
+    "substitutions": [
+      {
+        "old": "634.9",
+        "new": "635",
+        "prior_review": "part1 candidate 15",
+        "direction": "coarse_for_fine"
+      }
+    ],
+    "alternative_value_exact": "-633/1270",
+    "alternative_value_decimal": -0.4984251968503937,
+    "source": "T1 fixed prior source-identity reviews; not by itself proof that a model used these sources"
+  },
+  {
+    "call_id": "Q022",
+    "id": "BLL/2010/page_35.pdf-3",
+    "substitutions": [
+      {
+        "old": "634.9",
+        "new": "635",
+        "prior_review": "part1 candidate 15",
+        "direction": "coarse_for_fine"
+      }
+    ],
+    "alternative_value_exact": "-502/3677",
+    "alternative_value_decimal": -0.13652434049496873,
+    "source": "T1 fixed prior source-identity reviews; not by itself proof that a model used these sources"
+  },
+  {
+    "call_id": "Q082",
+    "id": "GS/2014/page_40.pdf-1",
+    "substitutions": [
+      {
+        "old": "22469",
+        "new": "22470",
+        "prior_review": "part2 candidate 31",
+        "direction": "coarse_for_fine",
+        "source_reason": "The second header row of the original table confirms 2013 Total operating expenses; the full text gives 22.47 billion for 2013, the same quantity as 22469 million."
+      }
+    ],
+    "alternative_value_exact": "-299/22470",
+    "alternative_value_decimal": -0.01330663106364041,
+    "source": "T1 fixed prior source-identity reviews; not by itself proof that a model used these sources"
+  },
+  {
+    "call_id": "Q082",
+    "id": "GS/2014/page_40.pdf-1",
+    "substitutions": [
+      {
+        "old": "22171",
+        "new": "22170",
+        "prior_review": "part2 candidate 30",
+        "direction": "coarse_for_fine",
+        "source_reason": "The second header row of the original table confirms 2014 Total operating expenses; the full text gives 22.17 billion for 2014, the same quantity as 22171 million."
+      }
+    ],
+    "alternative_value_exact": "-299/22469",
+    "alternative_value_decimal": -0.013307223285415462,
+    "source": "T1 fixed prior source-identity reviews; not by itself proof that a model used these sources"
+  },
+  {
+    "call_id": "Q082",
+    "id": "GS/2014/page_40.pdf-1",
+    "substitutions": [
+      {
+        "old": "22171",
+        "new": "22170",
+        "prior_review": "part2 candidate 30",
+        "direction": "coarse_for_fine",
+        "source_reason": "The second header row of the original table confirms 2014 Total operating expenses; the full text gives 22.17 billion for 2014, the same quantity as 22171 million."
+      },
+      {
+        "old": "22469",
+        "new": "22470",
+        "prior_review": "part2 candidate 31",
+        "direction": "coarse_for_fine",
+        "source_reason": "The second header row of the original table confirms 2013 Total operating expenses; the full text gives 22.47 billion for 2013, the same quantity as 22469 million."
+      }
+    ],
+    "alternative_value_exact": "-10/749",
+    "alternative_value_decimal": -0.01335113484646195,
+    "source": "T1 fixed prior source-identity reviews; not by itself proof that a model used these sources"
+  },
+  {
+    "call_id": "Q242",
+    "id": "UNP/2007/page_25.pdf-2",
+    "substitutions": [
+      {
+        "old": "3277",
+        "new": "3300",
+        "prior_review": "part2 candidate 51",
+        "direction": "coarse_for_fine",
+        "source_reason": "Table 2007 Cash provided by operating activities 3277 million agrees with full-text 2007 cash generated by operating activities 3.3 billion."
+      }
+    ],
+    "alternative_value_exact": "7/48",
+    "alternative_value_decimal": 0.14583333333333334,
+    "source": "T1 fixed prior source-identity reviews; not by itself proof that a model used these sources"
+  },
+  {
+    "call_id": "Q213",
+    "id": "UNP/2011/page_24.pdf-4",
+    "substitutions": [
+      {
+        "old": "1917",
+        "new": "1900",
+        "prior_review": "part2 candidate 54",
+        "direction": "coarse_for_fine",
+        "source_reason": "Table 2011 Free cash flow 1917 million agrees with full-text 2011 free cash flow 1.9 billion. The 2001 in the question text may be a typo; compared 1917 with 1415 following the gold program; the question semantics were not certified."
+      }
+    ],
+    "alternative_value_exact": "97/283",
+    "alternative_value_decimal": 0.34275618374558303,
+    "source": "T1 fixed prior source-identity reviews; not by itself proof that a model used these sources"
+  }
+]

@@ -1,0 +1,5 @@
+{
+    "review_id": "R055",
+    "verdict": "valid",
+    "reason": "The source reports 2012 aggregate repurchases in millions of shares and dollars, so dividing the rounded $92 million cost by 1 million shares gives average dollars per share."
+  }

@@ -1,0 +1,1 @@
+{"answer":"6.41025641025641","unit":"percent","expression":"(83 - 78) / 78 * 100","low":"5.095541401273885","high":"7.741935483870968","reliable_digits":"0","explanation":"Each dividend figure has rounding uncertainty of $0.5 million, so the growth rate's first significant digit is not reliable."}

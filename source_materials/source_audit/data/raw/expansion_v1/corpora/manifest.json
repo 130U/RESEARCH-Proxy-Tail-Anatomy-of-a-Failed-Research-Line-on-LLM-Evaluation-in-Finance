@@ -1,0 +1,1123 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "retrieved_at": "2026-10-11T10:39:20.795698+00:00",
+  "contract": {
+    "contract_version": 1,
+    "limits": {
+      "general_max_bytes": 200000000,
+      "max_general_documents": 50000,
+      "max_finance_documents": 128,
+      "finance_max_bytes": 12000000
+    },
+    "finance_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "wiki_dataset": "wikimedia/wikipedia",
+    "wiki_revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+    "wiki_config": "20231101.en",
+    "fed_calendar": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "fed_history": "https://www.federalreserve.gov/monetarypolicy/fomc_historical_year.htm"
+  },
+  "limits": {
+    "general_max_bytes": 200000000,
+    "max_general_documents": 50000,
+    "max_finance_documents": 128,
+    "finance_max_bytes": 12000000
+  },
+  "rights_review": "docs/research/expanded_corpus_sources_20261011.md",
+  "extractor_sha256": "d27f21a5f7939444ac7bfebc5a3fcf562050904549c1555dfc1e0fabe7fa16db",
+  "candidates_only": true,
+  "note": "No labels inferred. Preparation must exclude original seed/evaluation groups before tokenization.",
+  "general": {
+    "source_rows": 28486,
+    "documents": 28486,
+    "bytes": 199996572,
+    "skipped": 0,
+    "sha256": "5b2b8def467868f177afd438c27ba4254fe41d746a5bbabb4bbbf3046769d547",
+    "file": "general_candidate.jsonl",
+    "dataset": "wikimedia/wikipedia",
+    "revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+    "config": "20231101.en",
+    "selection": "bounded source-order prefix; seed overlap is excluded during preparation; not a representative random sample"
+  },
+  "finance": {
+    "file": "finance_candidate.jsonl",
+    "documents": 120,
+    "bytes": 6977681,
+    "sha256": "5a9b357c4b979b5e85dc7622e28c5793068baeb67a48abbd218e81e7d8219a0a",
+    "calendar_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "history_url": "https://www.federalreserve.gov/monetarypolicy/fomc_historical_year.htm",
+    "years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "discovered": 120,
+    "discovery_snapshots": [
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "file": "source_snapshots/fomc_calendar.html",
+        "bytes": 165751,
+        "sha256": "17d8272a56ffca7be4351f14670e354c18d09220ae16ea911f869d1cdc389232"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomc_historical_year.htm",
+        "file": "source_snapshots/fomc_historical_year.html",
+        "bytes": 89803,
+        "sha256": "4a304dd2d1d6f06b23505832a2282fec82deb545870dc67409449e7ac43269e0"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2011.htm",
+        "file": "source_snapshots/fomc_history_2011.html",
+        "bytes": 98227,
+        "sha256": "e789e7fe307bb4ee5df214e968dfad9e6ab84f9fc80c9787ea97e2367e658c17"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2012.htm",
+        "file": "source_snapshots/fomc_history_2012.html",
+        "bytes": 98148,
+        "sha256": "37541338b6fb3c7b4cd35d081702def3800b6466fbbe74131303524985a27ff2"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2013.htm",
+        "file": "source_snapshots/fomc_history_2013.html",
+        "bytes": 95809,
+        "sha256": "ba50eb5f72ac195352c20ffd5e41740959e67be3148cdd2ff8195e382d0b273c"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2014.htm",
+        "file": "source_snapshots/fomc_history_2014.html",
+        "bytes": 96089,
+        "sha256": "f7884e7ea187da00a29b98e6176e0ef650793c116aa5ab2b244f32779e4c0d02"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2015.htm",
+        "file": "source_snapshots/fomc_history_2015.html",
+        "bytes": 95241,
+        "sha256": "3049655954ed1f375097b700735f992b2746e7dae866dfe4ea5566babf918a2a"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2016.htm",
+        "file": "source_snapshots/fomc_history_2016.html",
+        "bytes": 95829,
+        "sha256": "b450fce970fd2facd4e08792b861072816c80b33a2888b00a364f0db357133dc"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2017.htm",
+        "file": "source_snapshots/fomc_history_2017.html",
+        "bytes": 95200,
+        "sha256": "4bbd4fa3f1e7d1a1451b0bfbb6fa50a5f903d6123a7eaa6d39d60d41df6730a5"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2018.htm",
+        "file": "source_snapshots/fomc_history_2018.html",
+        "bytes": 95705,
+        "sha256": "b609ac0e3957c71da43032741276879c28811fdd0bf3c136b6724465046a6793"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2019.htm",
+        "file": "source_snapshots/fomc_history_2019.html",
+        "bytes": 97344,
+        "sha256": "2537b8c2d797cce7c410afaf2db8146028e95439de7c37a58557002889f75e10"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm",
+        "file": "source_snapshots/fomc_history_2020.html",
+        "bytes": 98555,
+        "sha256": "0949fb4a279e0c553e3fedd160f1337943abf3f49c083315d7927c104e63bcf7"
+      }
+    ],
+    "admitted": [
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20110126.htm",
+        "meeting_date": "2011-01-26",
+        "published_at": "2011-02-16",
+        "html_snapshot": "source_snapshots/2011-01-26.html",
+        "html_sha256": "7e37b9d3ca578a38cb0d0e93bc00d7de83a59e31c3c7c80de6b5c09843cf0d39",
+        "text_sha256": "fc28ee466d7b38e88d8fccf524076920028db7bd16bca8074330c61fdda1b516"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20110315.htm",
+        "meeting_date": "2011-03-15",
+        "published_at": "2011-04-05",
+        "html_snapshot": "source_snapshots/2011-03-15.html",
+        "html_sha256": "a8abde6941d1358a75e8d3212e89679c40db77e8118dcc7daf5aa2720954cf2b",
+        "text_sha256": "f7a928c375a3483ad1f1b1c7e8575c2303e787a0774007ee41c76da4de9e68d8"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20110427.htm",
+        "meeting_date": "2011-04-27",
+        "published_at": "2011-05-18",
+        "html_snapshot": "source_snapshots/2011-04-27.html",
+        "html_sha256": "2a6e16c6408c5e8b85a6bceb60bc43a95ab285289d487d92600224946dcb9633",
+        "text_sha256": "034765c912faa4c7657fce25433ab33c38ecbbc847e6a28bdc2506209db726a3"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20110622.htm",
+        "meeting_date": "2011-06-22",
+        "published_at": "2011-07-12",
+        "html_snapshot": "source_snapshots/2011-06-22.html",
+        "html_sha256": "1ff22136266ffd3f5abf38a1173caf61607de37c29140066d0c6b021a2f11227",
+        "text_sha256": "72191745667ca43259302e76296a5c7fa047dee21fde87c84c8ae032c70cd7bd"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20110809.htm",
+        "meeting_date": "2011-08-09",
+        "published_at": "2011-08-30",
+        "html_snapshot": "source_snapshots/2011-08-09.html",
+        "html_sha256": "bae10c3fcc7e7d81a40f065e79791580fa1a1351c74d1369d055a423bd8276de",
+        "text_sha256": "b71eea7783d4c8376b883c38f2ea942ad19310ce323f09560812bfa010498522"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20110921.htm",
+        "meeting_date": "2011-09-21",
+        "published_at": "2011-10-12",
+        "html_snapshot": "source_snapshots/2011-09-21.html",
+        "html_sha256": "1459a84e7f5e3bcaa547169a9f74e611197a18e348de047bd6fbd50758dbb145",
+        "text_sha256": "884bbd5b34b34abaa0011479c3f924f9e596cb451bf103a6b4aad351b7050169"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20111102.htm",
+        "meeting_date": "2011-11-02",
+        "published_at": "2011-11-22",
+        "html_snapshot": "source_snapshots/2011-11-02.html",
+        "html_sha256": "b256cceb82a4b7651c011e595aa11f574d848fb83eb667542ca7fe0b9e3ee58d",
+        "text_sha256": "c96f6bb523f618f7a16d4d75b9843ba0564645598f653b7b24c8746bd9386c4b"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20111213.htm",
+        "meeting_date": "2011-12-13",
+        "published_at": "2012-01-03",
+        "html_snapshot": "source_snapshots/2011-12-13.html",
+        "html_sha256": "d108b299521b6f5d25d1827ae79dce50311d3aae4e219c66bee4c15ed15c1f05",
+        "text_sha256": "f06130d1cb93db3542b03b9a3ae722545ad3c847599aebe862b996838cac9c6c"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20120125.htm",
+        "meeting_date": "2012-01-25",
+        "published_at": "2012-02-15",
+        "html_snapshot": "source_snapshots/2012-01-25.html",
+        "html_sha256": "d18e6fb03761ad7d9d4b1085f7f88e6a528f7a997080709866ca4aac6041d90d",
+        "text_sha256": "e0866778eba4c15ff7855e646e445917108789e023cb4a79ffbb00cece707a9c"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20120313.htm",
+        "meeting_date": "2012-03-13",
+        "published_at": "2012-04-03",
+        "html_snapshot": "source_snapshots/2012-03-13.html",
+        "html_sha256": "73133d615aed4c267a8d2e04a006e3210325f8a934ee144595e0bffd9664dbfe",
+        "text_sha256": "da332ed7402173a125e46ef362003b10b833ede3821b190c5e5784ceba705ba0"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20120425.htm",
+        "meeting_date": "2012-04-25",
+        "published_at": "2012-05-16",
+        "html_snapshot": "source_snapshots/2012-04-25.html",
+        "html_sha256": "3c161cfc0af1e5f1b158d63544baf031d322bf37e02ab0f453dada974e825fde",
+        "text_sha256": "bcaa49e0854b999f5ea0526efa20afb02181c183fb10809315992296b72e6d27"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20120620.htm",
+        "meeting_date": "2012-06-20",
+        "published_at": "2012-07-11",
+        "html_snapshot": "source_snapshots/2012-06-20.html",
+        "html_sha256": "d10fe7f1657fbf238e3d7a33eec20e314815ec5886f28d8c6ad12b266c260810",
+        "text_sha256": "6cac7c8073e4d4a8ceb8af4ce1332c2d47b5840cebe8671ae925d4be3a9d32b0"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20120801.htm",
+        "meeting_date": "2012-08-01",
+        "published_at": "2012-08-22",
+        "html_snapshot": "source_snapshots/2012-08-01.html",
+        "html_sha256": "5ccf8fedb8f0ff70d7e489d8aecd977101b48fed894558b492fa9eef6719e9d8",
+        "text_sha256": "e4d0bb81fcb123497bfd17bde198539953fb40b1f47e511835e6dbaad7107010"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20120913.htm",
+        "meeting_date": "2012-09-13",
+        "published_at": "2012-10-04",
+        "html_snapshot": "source_snapshots/2012-09-13.html",
+        "html_sha256": "2708b75b6f7b8087241815cd66abe66d5f650780a362834b70fb2a5d76267cba",
+        "text_sha256": "94589dc44dd4fa950446f51e594c9ee3c05c3789603ae70eda6d27f908ec30d3"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20121024.htm",
+        "meeting_date": "2012-10-24",
+        "published_at": "2012-11-14",
+        "html_snapshot": "source_snapshots/2012-10-24.html",
+        "html_sha256": "2ccebd5d79522d5116acd7abb5739e8101a622db2689f28140b12a6e02844cfe",
+        "text_sha256": "40830792e97015e1f3c709c41c50de925ae70412d3067c7027530ca5f8c0d644"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20121212.htm",
+        "meeting_date": "2012-12-12",
+        "published_at": "2013-01-03",
+        "html_snapshot": "source_snapshots/2012-12-12.html",
+        "html_sha256": "ddd2f91e5b504a43e7e32842ac2bb9e208d9c0c44bec054cf0a3a5dc9dd24fca",
+        "text_sha256": "c502d368c4c36c89ad5ad49032eafee1c10d24f89114f03c23f739e14eb0266e"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20130130.htm",
+        "meeting_date": "2013-01-30",
+        "published_at": "2013-02-20",
+        "html_snapshot": "source_snapshots/2013-01-30.html",
+        "html_sha256": "f476445a59d63ccad4e4102297ac780a4a7f8a97fed8249172fbd0435cc17784",
+        "text_sha256": "c9267494f33928210d6af85b5d2be26fe867e3eecd7088e26e1438db511563ac"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20130320.htm",
+        "meeting_date": "2013-03-20",
+        "published_at": "2013-04-10",
+        "html_snapshot": "source_snapshots/2013-03-20.html",
+        "html_sha256": "38aff4f8f1733b4a79ef13f27c04b42b6ac9a04dd64bd2b4529eba8da9241579",
+        "text_sha256": "81ec307ee6e76293e271db50d1252b74680950180d7e0725a907ebb9533d965c"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20130501.htm",
+        "meeting_date": "2013-05-01",
+        "published_at": "2013-05-22",
+        "html_snapshot": "source_snapshots/2013-05-01.html",
+        "html_sha256": "80aa978b97e7da9bba4ce7ddfadb016e14ed9249758ae9cc2570ae15bb731742",
+        "text_sha256": "6a6a8d96d3ba5266f28f5632535b3223f444d48eb40806fd98a22c368808ad0a"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20130619.htm",
+        "meeting_date": "2013-06-19",
+        "published_at": "2013-07-10",
+        "html_snapshot": "source_snapshots/2013-06-19.html",
+        "html_sha256": "1bbd2270ef4990029074153998e5e6b475f33646d3d13ab83cdc335f86b3f141",
+        "text_sha256": "f96a87acc40e6645e0b046564cf4311cb83470072863a243a83cb8f6396c63bc"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20130731.htm",
+        "meeting_date": "2013-07-31",
+        "published_at": "2013-08-21",
+        "html_snapshot": "source_snapshots/2013-07-31.html",
+        "html_sha256": "a9a9c46a4244a1a5b36f6274e6f90606c643b60d9ed617c6260f36c574fa2c09",
+        "text_sha256": "c1dac3d76f1ef14ae013862d2bbcbfde50ad212ffea29977cd54d07701315005"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20130918.htm",
+        "meeting_date": "2013-09-18",
+        "published_at": "2013-10-09",
+        "html_snapshot": "source_snapshots/2013-09-18.html",
+        "html_sha256": "846bd30d9f8c2579ee8f2fd275a47510824c26d24b1126f6a5cec27d3a255fa9",
+        "text_sha256": "d498b4fa65b3ea136c8f84c0e388aa548c7b52788da8648c1a6e66063880a346"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20131030.htm",
+        "meeting_date": "2013-10-30",
+        "published_at": "2013-11-20",
+        "html_snapshot": "source_snapshots/2013-10-30.html",
+        "html_sha256": "a8471bd5e11da319c5934deb9c31dcd9cf354bc4db7870ce420703e997428fae",
+        "text_sha256": "63148efe9478df41d1ddbb55496f37d99e110b4ce248b64e7b5c63c91a4c543d"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20131218.htm",
+        "meeting_date": "2013-12-18",
+        "published_at": "2014-01-08",
+        "html_snapshot": "source_snapshots/2013-12-18.html",
+        "html_sha256": "ded742e61a25e2c2bc80688da3a38a5fd83edf284642c568adbde02e17e6b877",
+        "text_sha256": "7ba064e2be7a981e1b1be04e5e7595c6b07bb7f8e0adc90e0e72d01b9b9c8481"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20140129.htm",
+        "meeting_date": "2014-01-29",
+        "published_at": "2014-02-19",
+        "html_snapshot": "source_snapshots/2014-01-29.html",
+        "html_sha256": "b5d085a2270bfb4ef229c1bf2909158629a90de0b21a7b423a71ebacbb176a02",
+        "text_sha256": "f48c87fe53bae9da5403c71f6b050f13b11dc6f02a2c416c23779d5ae74b23c6"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20140319.htm",
+        "meeting_date": "2014-03-19",
+        "published_at": "2014-04-09",
+        "html_snapshot": "source_snapshots/2014-03-19.html",
+        "html_sha256": "c918bf17a55055cd9422c608adb29a4fc0148a35d9dc97656159703bbee4370c",
+        "text_sha256": "d404a4aa5a60181d8fee0c203f3fdcc09741e27c57a5669dc835bec26bcde516"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20140430.htm",
+        "meeting_date": "2014-04-30",
+        "published_at": "2014-05-21",
+        "html_snapshot": "source_snapshots/2014-04-30.html",
+        "html_sha256": "89796ffe2550460bbbd019a70efb936ac3924e802984c7928cc67cabe85d497c",
+        "text_sha256": "05feb5cdb695648d73d6b897beec9890d6ed7e511f9c8b157fcda51fe9b7a067"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20140618.htm",
+        "meeting_date": "2014-06-18",
+        "published_at": "2014-07-09",
+        "html_snapshot": "source_snapshots/2014-06-18.html",
+        "html_sha256": "d5a0b32543de3e1ad8be18dc0fc97a1565243acb80395323d6e49e3cf915597d",
+        "text_sha256": "4058b4ee4686e403541b52e53f603dc7317fe7db8a11fe791c6cd8b02752fa14"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20140730.htm",
+        "meeting_date": "2014-07-30",
+        "published_at": "2014-08-20",
+        "html_snapshot": "source_snapshots/2014-07-30.html",
+        "html_sha256": "b683f54e3e71f763448d8c3557efd5f041a3253d025cfe158d10bf427b0be495",
+        "text_sha256": "4c59232dbcbce8b03462586c63e463fa7692bb2dc5ba5de2998a99915d18b376"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20140917.htm",
+        "meeting_date": "2014-09-17",
+        "published_at": "2014-10-08",
+        "html_snapshot": "source_snapshots/2014-09-17.html",
+        "html_sha256": "f4858419b4473295df53277303c0e9458b3364f942a5b3dd191e3b5a2cb8551a",
+        "text_sha256": "6b22cb11e4f73981e6a5a6c8e4050466fbe984f992fc2efae2f4a6db39f3b3e6"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20141029.htm",
+        "meeting_date": "2014-10-29",
+        "published_at": "2014-11-19",
+        "html_snapshot": "source_snapshots/2014-10-29.html",
+        "html_sha256": "e29487871b1ff44c0795c792b8334091a10ee0dab3bc10ba5d3f34dd09b474b3",
+        "text_sha256": "df1e89303087768875ed4f619a2c81821ba6451aec33f65f3271f6b3e7ed3d1c"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20141217.htm",
+        "meeting_date": "2014-12-17",
+        "published_at": "2015-01-07",
+        "html_snapshot": "source_snapshots/2014-12-17.html",
+        "html_sha256": "02a8ab6b4908e8ad4908035bee8023199f1daf87cb1c046ca5f5511419d22f11",
+        "text_sha256": "7dc521bb46cbbe3e89e7700461bb44e326dc87553440f875498547101c2f91b8"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20150128.htm",
+        "meeting_date": "2015-01-28",
+        "published_at": "2015-02-18",
+        "html_snapshot": "source_snapshots/2015-01-28.html",
+        "html_sha256": "76bcd13dc5673dfa01f6041420e56941077fa085a05b2d25bd0266512186e31d",
+        "text_sha256": "e20e79f1b8539977f26827eee8e1c6d55c13ae55f9b9b8b0fd0fc995044031c3"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20150318.htm",
+        "meeting_date": "2015-03-18",
+        "published_at": "2015-04-08",
+        "html_snapshot": "source_snapshots/2015-03-18.html",
+        "html_sha256": "0fcd072f8421cbb1b8f94709f4a8d3532a88d990b17b6c6e153336b90aa6822f",
+        "text_sha256": "cdadcc1eba00632f36325d45c81f1f93700c09586f3bac9e6168a1ada7fc42f8"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20150429.htm",
+        "meeting_date": "2015-04-29",
+        "published_at": "2015-05-20",
+        "html_snapshot": "source_snapshots/2015-04-29.html",
+        "html_sha256": "edc854a01809cc1d3c26fd1286e156918fb9968848e634800c1eb7baa9c80029",
+        "text_sha256": "dbd3838ca92c5baa1e046b9ba06d8fee7ebf30f394f902c77ba8ce3c05cff9c5"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20150617.htm",
+        "meeting_date": "2015-06-17",
+        "published_at": "2015-07-08",
+        "html_snapshot": "source_snapshots/2015-06-17.html",
+        "html_sha256": "938875bb5a77a75f00ec5528f2bd3d67d21913a8be527727397bc42528adf741",
+        "text_sha256": "0e7f5767c1229b551fd8202d0ad0e601c2a524d362e7910592de9e933a57f0c3"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20150729.htm",
+        "meeting_date": "2015-07-29",
+        "published_at": "2015-08-19",
+        "html_snapshot": "source_snapshots/2015-07-29.html",
+        "html_sha256": "1a67b76c629b36c6792e76b4fbb3a1f15f4c6229eaa6c2547b15209bf3da8739",
+        "text_sha256": "88ad7c04b917a0553182652122f14b41c250b3376a7ae79f3d619a7ae295e683"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20150917.htm",
+        "meeting_date": "2015-09-17",
+        "published_at": "2015-10-08",
+        "html_snapshot": "source_snapshots/2015-09-17.html",
+        "html_sha256": "46e7c00ebc089249b0d8548dc2db7ea96e1430a32932daa854fdfa19af43adb0",
+        "text_sha256": "69cad00ab669cc52dcef219165c63ab96234ef06fa5cdcd62303af56c8670242"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20151028.htm",
+        "meeting_date": "2015-10-28",
+        "published_at": "2015-11-18",
+        "html_snapshot": "source_snapshots/2015-10-28.html",
+        "html_sha256": "c9c4a31d91a10091d82ba9e13eae9ed2768d8677a45a47d898731bbbf1526ef8",
+        "text_sha256": "6b996c15b2cdc22bb53a5a4a445d1e81a68bcdc0e563f8754bc4ad123c0825ee"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20151216.htm",
+        "meeting_date": "2015-12-16",
+        "published_at": "2016-01-06",
+        "html_snapshot": "source_snapshots/2015-12-16.html",
+        "html_sha256": "da6b757406a08d9bf67e428a9083ed826fee1f8ff2d9048a38977478ae28c716",
+        "text_sha256": "8e1d8e545f5f66bc4065e29334ae93a0929f042b293c85db5ab673a4fbbfaa4b"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20160127.htm",
+        "meeting_date": "2016-01-27",
+        "published_at": "2016-02-17",
+        "html_snapshot": "source_snapshots/2016-01-27.html",
+        "html_sha256": "0094fe747dd95c02bee63dd5d9cac940167ed34b931127f6c41311fc71b3537b",
+        "text_sha256": "c5bdc33fa23cc98e5e1e1786a0875c5d8e0dccbffefc37e05d65d443a3bcdda8"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20160316.htm",
+        "meeting_date": "2016-03-16",
+        "published_at": "2016-04-06",
+        "html_snapshot": "source_snapshots/2016-03-16.html",
+        "html_sha256": "343b7885d19c5de112a48d16dd97536516521437036fd38c470c7dcb2724c077",
+        "text_sha256": "069c4a9b9656d9d878383884fd414ce8c5cc9fe24ab11d5ea1a9790a5fe357b8"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20160427.htm",
+        "meeting_date": "2016-04-27",
+        "published_at": "2016-05-18",
+        "html_snapshot": "source_snapshots/2016-04-27.html",
+        "html_sha256": "2f04b632636bc25c80a6a0e188869f5761cd4ced3c0e792b1008f6fac1495868",
+        "text_sha256": "ec0f3b8ddd2d50de62969d8df52cb2919ff248ad852272a89b30c0f6f14133ce"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20160615.htm",
+        "meeting_date": "2016-06-15",
+        "published_at": "2016-07-06",
+        "html_snapshot": "source_snapshots/2016-06-15.html",
+        "html_sha256": "75de86fd19b93e9f1ad642954f27a5d3b8121cf81b8f14a3ea9a04429f5bed5b",
+        "text_sha256": "eb186160b41f2f43875d5b4945ec69513488da93f88fca61f91b47803271a081"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20160727.htm",
+        "meeting_date": "2016-07-27",
+        "published_at": "2016-08-17",
+        "html_snapshot": "source_snapshots/2016-07-27.html",
+        "html_sha256": "9c5b24916e5c2a24474d49f0ed62bf3d79083e0507433daa2c531406468f966b",
+        "text_sha256": "aeda19568fa97830027a343666bc041d494e8c00ccdc8d9d971a470566585aef"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20160921.htm",
+        "meeting_date": "2016-09-21",
+        "published_at": "2016-10-12",
+        "html_snapshot": "source_snapshots/2016-09-21.html",
+        "html_sha256": "e793548d3c833d5f7687e03026a4abb0ebc0bddb9b2a259586752aea8d043afb",
+        "text_sha256": "ceea53b1a571f783bbb5dc0e90b012459a09d48b784efe98f59020f930d9959d"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20161102.htm",
+        "meeting_date": "2016-11-02",
+        "published_at": "2016-11-23",
+        "html_snapshot": "source_snapshots/2016-11-02.html",
+        "html_sha256": "32af7cbd095ec1b92ef3ab9212cb8bb86a98738c3570af8051d7a9eb763eaa3d",
+        "text_sha256": "9fdfa2da785812af255443dfc207f30c6d75d88c0fc16eb25cf5453c3f501a08"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20161214.htm",
+        "meeting_date": "2016-12-14",
+        "published_at": "2017-01-04",
+        "html_snapshot": "source_snapshots/2016-12-14.html",
+        "html_sha256": "fc2905dce021edf7fd9f658eb40e45e9b635b58a8e10106e6f4639214d13f386",
+        "text_sha256": "3474203c026910b4195f485bdacabb8183c08ead3747253ab8ab5465d16b8c25"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20170201.htm",
+        "meeting_date": "2017-02-01",
+        "published_at": "2017-02-22",
+        "html_snapshot": "source_snapshots/2017-02-01.html",
+        "html_sha256": "866fcae15d980e6ce289ad6f199653bcf539bfc604134e137b9c5f5188ec7dd7",
+        "text_sha256": "a96d58f5adf416ab9fccad4b8cef1f393536d28faabc6b2f66a739ba33161b61"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20170315.htm",
+        "meeting_date": "2017-03-15",
+        "published_at": "2017-04-05",
+        "html_snapshot": "source_snapshots/2017-03-15.html",
+        "html_sha256": "b2555f5fe6ad876baa3a2a6c17d426634bd3e7b77b896e00c2c89f23604eacad",
+        "text_sha256": "2ff13e0c1aa90fdf47f62ae8d08df10f6027fa70d96a1e221ddcb4e16a2a0e57"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20170503.htm",
+        "meeting_date": "2017-05-03",
+        "published_at": "2017-05-24",
+        "html_snapshot": "source_snapshots/2017-05-03.html",
+        "html_sha256": "46b450ea392806df27557c7c55b6d7cb81019368919e5cb32905591c23598ac5",
+        "text_sha256": "1b9d469e2f5031ece31e6167540fc3ecfa5a451da273e02d58bdc8239cfbd326"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20170614.htm",
+        "meeting_date": "2017-06-14",
+        "published_at": "2017-07-05",
+        "html_snapshot": "source_snapshots/2017-06-14.html",
+        "html_sha256": "10464f4b3395d28ceaddcb8acf578d3fc7e5802bff6b075b0136bcfcf2930aa8",
+        "text_sha256": "6d7a828881e5da79f591e036790cb7664a4758d74a3954b2a20b7a51b72b28a8"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20170726.htm",
+        "meeting_date": "2017-07-26",
+        "published_at": "2017-08-16",
+        "html_snapshot": "source_snapshots/2017-07-26.html",
+        "html_sha256": "c008be1d21e0e29363247f088f74b2ae0088f48e78956db58f14a6d1216fb0d5",
+        "text_sha256": "a7f695b3b760c828970d6a4d3bc463afb8e5af4e14b51fa63f7e3a7a47061cc1"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20170920.htm",
+        "meeting_date": "2017-09-20",
+        "published_at": "2017-10-11",
+        "html_snapshot": "source_snapshots/2017-09-20.html",
+        "html_sha256": "5e460ba972fd1616f621bc1a048f2b9d8d353df875141afbe55737411b558a47",
+        "text_sha256": "6afeaa03bd4566f671ff2dc62fa0a25b89294e71e007bb4a5a4c381404a18840"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20171101.htm",
+        "meeting_date": "2017-11-01",
+        "published_at": "2017-11-22",
+        "html_snapshot": "source_snapshots/2017-11-01.html",
+        "html_sha256": "29bc17e55202c66d53090947d8776b0a1d506347e3668f7c3952f6240eb7496f",
+        "text_sha256": "bca8e0cf5f702b45613ab5efd1c9427b0482f1a7ca6c3739cee2dc08f3375170"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20171213.htm",
+        "meeting_date": "2017-12-13",
+        "published_at": "2018-01-03",
+        "html_snapshot": "source_snapshots/2017-12-13.html",
+        "html_sha256": "33be69d61df1292d921b72c1c239f7c514c8107e88c0e901545eae7f91aa087f",
+        "text_sha256": "7fe578903206b42af76750723c7eed5e3a1eb337fd741e14d1704c24032e117a"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20180131.htm",
+        "meeting_date": "2018-01-31",
+        "published_at": "2018-02-21",
+        "html_snapshot": "source_snapshots/2018-01-31.html",
+        "html_sha256": "09d5555a4fe5b669ddf29224553bf0ab65fd77cc74a17bdc92cf246f5f0e6bfa",
+        "text_sha256": "af03fc7b4ae8c27e053e3ddeb6459ad99908184a41f1d3bd2e611bb5fcb247e6"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20180321.htm",
+        "meeting_date": "2018-03-21",
+        "published_at": "2018-04-11",
+        "html_snapshot": "source_snapshots/2018-03-21.html",
+        "html_sha256": "336c62cc1052a966980419e865c84fd304bcc5421e1ba7c4f6aa576613ef04b0",
+        "text_sha256": "c49cb11e29395235e245aa0ccb672848d86d3a94d5657e350139698c146ac6b4"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20180502.htm",
+        "meeting_date": "2018-05-02",
+        "published_at": "2018-05-23",
+        "html_snapshot": "source_snapshots/2018-05-02.html",
+        "html_sha256": "ec272b07bf3faf97c26077dd37cd8b4d7b70b410759de9b5bbba209e89f5e2f6",
+        "text_sha256": "9d140a413530ba4cba8adee2f8646eb734e753df581b8dece6f30939260f4884"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20180613.htm",
+        "meeting_date": "2018-06-13",
+        "published_at": "2018-07-05",
+        "html_snapshot": "source_snapshots/2018-06-13.html",
+        "html_sha256": "75d6c43cf512017eb7b9d673aa9b6a1b769e532a7349bf55db8ce7487875e359",
+        "text_sha256": "bb171780b52beed9af2abb79d673249ed9b0734abb4a26731ab3b81f132d3c52"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20180801.htm",
+        "meeting_date": "2018-08-01",
+        "published_at": "2018-08-22",
+        "html_snapshot": "source_snapshots/2018-08-01.html",
+        "html_sha256": "48be348cfc2b705f32eb6b7bf41add49b910bf7f2b90edf755a8c057334e5ed5",
+        "text_sha256": "bc9eb5d7431371ccf969a59463b85bb81636bec9ba35620925fca8cf8d32e81d"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20180926.htm",
+        "meeting_date": "2018-09-26",
+        "published_at": "2018-10-17",
+        "html_snapshot": "source_snapshots/2018-09-26.html",
+        "html_sha256": "949c183ec4529584a36b06244859025b2d360d6d8b1fb2e30e5318f50305efda",
+        "text_sha256": "9b4b90e3bcde0fbbd1aaae72069cd75beca701549e97db871059c8958ce411a3"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20181108.htm",
+        "meeting_date": "2018-11-08",
+        "published_at": "2018-11-29",
+        "html_snapshot": "source_snapshots/2018-11-08.html",
+        "html_sha256": "ba5d54a2109eb6421a3f5060a8fdedf641e1a4ebcd4fe096fde513b0d901fdc1",
+        "text_sha256": "da5b94ad380cd9d862977f2ada353c007bb5720aac18acd5545fd33efdd906ba"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20181219.htm",
+        "meeting_date": "2018-12-19",
+        "published_at": "2019-01-09",
+        "html_snapshot": "source_snapshots/2018-12-19.html",
+        "html_sha256": "07ca6f49cac098f4744a88bd67e807f970bd6275fa91cabc12f4bd991d8eca5c",
+        "text_sha256": "717624c758a9b0e499cdd9d49afb34ef7b87c651dde4b547051b26d58c3f6177"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20190130.htm",
+        "meeting_date": "2019-01-30",
+        "published_at": "2019-02-20",
+        "html_snapshot": "source_snapshots/2019-01-30.html",
+        "html_sha256": "9de802e03d307df65c7b8a8a7a2a73d95ce2c4a27b2dab26ca61f43a168a4a48",
+        "text_sha256": "8b953ebb93950fbc459224eb2c1c2263c00b6060965b63cf6835211460b8333e"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20190320.htm",
+        "meeting_date": "2019-03-20",
+        "published_at": "2019-04-10",
+        "html_snapshot": "source_snapshots/2019-03-20.html",
+        "html_sha256": "039f1d3b4838ab1f0844cfd354878802d9621c760ab5fefdbf76ba32d42170b0",
+        "text_sha256": "063099d909d4e75de0db78d90a80ca536313b99e5659c5e3575d7bc53b4f111f"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20190501.htm",
+        "meeting_date": "2019-05-01",
+        "published_at": "2019-05-22",
+        "html_snapshot": "source_snapshots/2019-05-01.html",
+        "html_sha256": "804812706b79c58735207147b620034a8eacbd2ff1f0b325115b270643a31677",
+        "text_sha256": "766dcefa1f469c1a83caba4da9ea80fbcf9e9e4215d28d0c0d2169c98cf83c72"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20190619.htm",
+        "meeting_date": "2019-06-19",
+        "published_at": "2019-07-10",
+        "html_snapshot": "source_snapshots/2019-06-19.html",
+        "html_sha256": "ddb680d0cd1995fa8aac2d76fa65e5d879f8099acd430bbbbe249ff132a22962",
+        "text_sha256": "097ddd8217d2cd4163ac42a34279f1508c7212e8212dd4a5df9d3143728aa455"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20190731.htm",
+        "meeting_date": "2019-07-31",
+        "published_at": "2019-08-21",
+        "html_snapshot": "source_snapshots/2019-07-31.html",
+        "html_sha256": "b8fc88629473eae51423f67f3a679f2083642ba820aebaf2b96289bd9b78db70",
+        "text_sha256": "4d686cc5c51e858af7f7560483088ae48899d7a5c8aae74b83c605c7cecc6660"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20190918.htm",
+        "meeting_date": "2019-09-18",
+        "published_at": "2019-10-09",
+        "html_snapshot": "source_snapshots/2019-09-18.html",
+        "html_sha256": "62662c9b8341f7a6f331570c074667c3cbd1ea31df82fec18ed01ca9d7862b5e",
+        "text_sha256": "bce9066baf3494fdf061cb961d0d897a7b92405df72917fc9fa5698a62b22899"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20191030.htm",
+        "meeting_date": "2019-10-30",
+        "published_at": "2019-11-20",
+        "html_snapshot": "source_snapshots/2019-10-30.html",
+        "html_sha256": "8d727847db1140ad0a24f998ae7854b51feba7f50985ad7593aca6a02077f7f6",
+        "text_sha256": "2832ed7f7a55cf3319d0a3b3222dbb29794a90eaf07b1910b65024ae6f195a9d"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20191211.htm",
+        "meeting_date": "2019-12-11",
+        "published_at": "2020-01-03",
+        "html_snapshot": "source_snapshots/2019-12-11.html",
+        "html_sha256": "1684ed6da213662cc416dd042e4defa95d331d779269238cb75e4f7f10fbbe46",
+        "text_sha256": "a08cdc999c66aed56dcbf51774b8be59d71e2c2c698185c1896e09c4fbad3b53"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20200129.htm",
+        "meeting_date": "2020-01-29",
+        "published_at": "2020-02-19",
+        "html_snapshot": "source_snapshots/2020-01-29.html",
+        "html_sha256": "5ca69ced4825823ed2bc62c4c048f5295fbf94c0ea45a286b59bb397b84992be",
+        "text_sha256": "a337c9891c3c43730d6f4b9c567e9124c72b8f508d815651264c2363374996db"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20200315.htm",
+        "meeting_date": "2020-03-15",
+        "published_at": "2020-04-08",
+        "html_snapshot": "source_snapshots/2020-03-15.html",
+        "html_sha256": "0a48aa811c8431724b72128ecbf6d6bccd68a0ad8dd50a4f7b66dee0363d6694",
+        "text_sha256": "b9c9e316dbf7a976046711bdab95ef00095f7a45699bd6f4bc8f90bad8316ca1"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20200429.htm",
+        "meeting_date": "2020-04-29",
+        "published_at": "2020-05-20",
+        "html_snapshot": "source_snapshots/2020-04-29.html",
+        "html_sha256": "baec13ab6c90d625f6a4d552277dfed5f95700afbb840bbb9dff6f6f003316df",
+        "text_sha256": "00fe70ff30c920a3d2196e90e30d4d4fa5e319370654a278d66830c2290cf06d"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20200610.htm",
+        "meeting_date": "2020-06-10",
+        "published_at": "2020-07-01",
+        "html_snapshot": "source_snapshots/2020-06-10.html",
+        "html_sha256": "f071a83af0315f819e9e45020b131c43a2169e90ff198f2d31a4672b458e11b1",
+        "text_sha256": "07aa9ee8cfbf6d378588ce3e7e591ed0069fd20a52a7e245eb68210dce5c9a1b"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20200729.htm",
+        "meeting_date": "2020-07-29",
+        "published_at": "2020-08-19",
+        "html_snapshot": "source_snapshots/2020-07-29.html",
+        "html_sha256": "359a0674159eb42ac91e0a666c548317fb314740df7718a448de87057cb1a3be",
+        "text_sha256": "63df7ef12fa0d4955854d197468ad878fff33a3229e81e11c65440a1a392cb57"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20200916.htm",
+        "meeting_date": "2020-09-16",
+        "published_at": "2020-10-07",
+        "html_snapshot": "source_snapshots/2020-09-16.html",
+        "html_sha256": "c754b871f66da243a2bbf2e781c5e138a5272f0b7f233f3d76da5f59e2c01554",
+        "text_sha256": "5c2754f0425731a4f053d146ccd92cfd4c446b7e54dca32cda4c27f57c7a5068"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20201105.htm",
+        "meeting_date": "2020-11-05",
+        "published_at": "2020-11-25",
+        "html_snapshot": "source_snapshots/2020-11-05.html",
+        "html_sha256": "f05f3ffaf63e50508a7927f6bc96f9cf8f353b94746f861e94e9745fdf9fdd4e",
+        "text_sha256": "851fe656a1dec8459e8a767aadad4b9e31c7f818cbefa77530e415ab282454a1"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20201216.htm",
+        "meeting_date": "2020-12-16",
+        "published_at": "2021-01-06",
+        "html_snapshot": "source_snapshots/2020-12-16.html",
+        "html_sha256": "cc77de232f5740c17c1257c39cff00c2597cb29083025ebb162ac8c96791632e",
+        "text_sha256": "2611bad09e9264674c4be177bbff8accd7fa668c5e217890cf5d7207a1b4be39"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20210127.htm",
+        "meeting_date": "2021-01-27",
+        "published_at": "2021-02-17",
+        "html_snapshot": "source_snapshots/2021-01-27.html",
+        "html_sha256": "8cc645c32e94a83b2c6783908764bd04747fbeb854881cbf4cd7f16b92b2525f",
+        "text_sha256": "108232f3b21862aea047b792e9f5beb505965fa3b5fd482e357efbb06c7cdbd0"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20210317.htm",
+        "meeting_date": "2021-03-17",
+        "published_at": "2021-04-07",
+        "html_snapshot": "source_snapshots/2021-03-17.html",
+        "html_sha256": "0eaa06f0520a7f617ef4cee8ec4d77c09aba800e6b8bc033f8e0c462530c7d9d",
+        "text_sha256": "fd62976992adffa3861419660dca299f9fe34dbadee15b2108e20c6852e63597"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20210428.htm",
+        "meeting_date": "2021-04-28",
+        "published_at": "2021-05-19",
+        "html_snapshot": "source_snapshots/2021-04-28.html",
+        "html_sha256": "aa9568220f26d37965fb8b92ffe62b836cb82dc522ccf5e6531c0e9bf27e65c5",
+        "text_sha256": "c6ca54b95ef0e01cef42dc2dc5fe0b7daccc3c0c6712e8c463ba2433b1f6fcf5"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20210616.htm",
+        "meeting_date": "2021-06-16",
+        "published_at": "2021-07-07",
+        "html_snapshot": "source_snapshots/2021-06-16.html",
+        "html_sha256": "5764b7e5af6fb38796e617207e85eb030cd072624e24ce478e40dc50f82ebdf5",
+        "text_sha256": "9b1b4fc7233083a0da4e775224ded677016bfb1c30a7658e41a447cf542685db"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20210728.htm",
+        "meeting_date": "2021-07-28",
+        "published_at": "2021-08-18",
+        "html_snapshot": "source_snapshots/2021-07-28.html",
+        "html_sha256": "2372a182a927acd2a36169e33fd80afb7640a5fef2cf8571bfd06291136f73da",
+        "text_sha256": "0fb6e3a17242373f643550018681e49d4ec77c19dffd7baee4e3f3bcdc3e604a"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20210922.htm",
+        "meeting_date": "2021-09-22",
+        "published_at": "2021-10-13",
+        "html_snapshot": "source_snapshots/2021-09-22.html",
+        "html_sha256": "b277af559f7adadc436f98f219af2920c79564d5b4b82e4aca93b4a561bc4275",
+        "text_sha256": "6158de28f3c86c9b5aec945d5ad2198b7447a024e072ec7ec6ae3d201910125f"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20211103.htm",
+        "meeting_date": "2021-11-03",
+        "published_at": "2021-11-24",
+        "html_snapshot": "source_snapshots/2021-11-03.html",
+        "html_sha256": "552d4bf63c8a253da10a64bfe01beb67be3c93e203c2d71f2bf6f21dfc818b0d",
+        "text_sha256": "495d8fc7a616c41d958085586b17aae96d65653159520694e28d1a16f50e6a2a"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20211215.htm",
+        "meeting_date": "2021-12-15",
+        "published_at": "2022-01-05",
+        "html_snapshot": "source_snapshots/2021-12-15.html",
+        "html_sha256": "097c0e722609672d0d59f622a13485bb8c162be2939765f67a7fba24c7e3e141",
+        "text_sha256": "49cf60466775e281d3f180677a75e35f34872b10d0fcd204ac701669a2fb9020"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20220126.htm",
+        "meeting_date": "2022-01-26",
+        "published_at": "2022-02-16",
+        "html_snapshot": "source_snapshots/2022-01-26.html",
+        "html_sha256": "afd982b085ff7fb468c0239526f920f211d0b132fb4c02bd9850eeae897d6a69",
+        "text_sha256": "4ef039f8cf7838711b9f624c5876cc10b2c4a5daf57392098c65cbd957ee8a73"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20220316.htm",
+        "meeting_date": "2022-03-16",
+        "published_at": "2022-04-06",
+        "html_snapshot": "source_snapshots/2022-03-16.html",
+        "html_sha256": "388e5430f4c53b0b2fd0b34ff58d7c9d0b80be0ed3c6b555a8c0269a5b29217f",
+        "text_sha256": "f92bf68219f4db49026937866a3860a69100981d03f425f02cbccb0537b6b278"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20220504.htm",
+        "meeting_date": "2022-05-04",
+        "published_at": "2022-05-25",
+        "html_snapshot": "source_snapshots/2022-05-04.html",
+        "html_sha256": "fe1f8f3d5bbe2753b413e5416eeca43d19483e1c6793c89e24c6c7e010429be8",
+        "text_sha256": "471084dd3d0b89f1d3e007cd8ef539e833d5a10f720e286fd7de869c52fdf6d1"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20220615.htm",
+        "meeting_date": "2022-06-15",
+        "published_at": "2022-07-06",
+        "html_snapshot": "source_snapshots/2022-06-15.html",
+        "html_sha256": "4f3cc485b5146053feabcde4f7ed063ec564a6376d009f3dcb341b384fcc906d",
+        "text_sha256": "6ad17740022bd949ceca14ddc9588503da5ae480c127bff0218fb6d8c11dde5f"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20220727.htm",
+        "meeting_date": "2022-07-27",
+        "published_at": "2022-08-17",
+        "html_snapshot": "source_snapshots/2022-07-27.html",
+        "html_sha256": "eb4f5b1687a1b4b55283b9714108d80ec34129c245634f3d30f4e0111d3c8f0b",
+        "text_sha256": "6631d3c68aba5d9380003ca17f873ac4ac8d35917229d9952d91eb6ccf0c7744"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20220921.htm",
+        "meeting_date": "2022-09-21",
+        "published_at": "2022-10-12",
+        "html_snapshot": "source_snapshots/2022-09-21.html",
+        "html_sha256": "bc3327d4a56b83467d185d94e48b7dd0220cebc72649e06ae77ea086f1dbfcd4",
+        "text_sha256": "453a2c4c0b586f9f11e88a7e0597aa3b6d4a81d7f000fcdd0f9d3c43e64dc886"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20221102.htm",
+        "meeting_date": "2022-11-02",
+        "published_at": "2022-11-23",
+        "html_snapshot": "source_snapshots/2022-11-02.html",
+        "html_sha256": "dfb2a03add9ccc6681eb01b45b7f6ae1925a2ea005253ff4c0c279e5a7dc950c",
+        "text_sha256": "a0f771bd036aab2751b96ec1f53e8c9713ed705f585a6607ea26de6439e178cf"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20221214.htm",
+        "meeting_date": "2022-12-14",
+        "published_at": "2023-01-04",
+        "html_snapshot": "source_snapshots/2022-12-14.html",
+        "html_sha256": "143c22d7ca0bd004a0d0ac8c4691ba912463f6e88d8fc1d7bddc5a8aaa2dc322",
+        "text_sha256": "25697716100c2d3013e6cfcb4c1e6ca58f79c0ea21754a3204f1c680003e8287"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20230201.htm",
+        "meeting_date": "2023-02-01",
+        "published_at": "2023-02-22",
+        "html_snapshot": "source_snapshots/2023-02-01.html",
+        "html_sha256": "e19d1ae49b4595e467339e819dae15eecaa2c4deba924cc75b5cd7c8541eb803",
+        "text_sha256": "fe900b4ab44ab5abf864d68266c5ed0fb32227c792026063ead216461e590de4"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20230322.htm",
+        "meeting_date": "2023-03-22",
+        "published_at": "2023-04-12",
+        "html_snapshot": "source_snapshots/2023-03-22.html",
+        "html_sha256": "1e63d582a1fad8e9271b3eec6d46c6e642b820e0589353ff9f4bb9a296808cf0",
+        "text_sha256": "48a04b23661c560587d288eefa5bc9ef78a3c7006d96415c4e86cf7654a487ba"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20230503.htm",
+        "meeting_date": "2023-05-03",
+        "published_at": "2023-05-24",
+        "html_snapshot": "source_snapshots/2023-05-03.html",
+        "html_sha256": "c04f2901b79bb6435a0cd86f41e20cbb60873ed468dd97dba984d756352dda3f",
+        "text_sha256": "6a2891e4798c5f47ff4c86bbd0a423dda0bb49c8a123b17c8d4587ff02f1eeb9"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20230614.htm",
+        "meeting_date": "2023-06-14",
+        "published_at": "2023-07-05",
+        "html_snapshot": "source_snapshots/2023-06-14.html",
+        "html_sha256": "1132649ca91a33ce14e353ec9b39af70ee9a5323c4715f3bc298ba5d9ca44c17",
+        "text_sha256": "8f7bc7a5d724cb09df5190c0bfdad8944adb76a318637d0f9afa8a035059eb73"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20230726.htm",
+        "meeting_date": "2023-07-26",
+        "published_at": "2023-08-16",
+        "html_snapshot": "source_snapshots/2023-07-26.html",
+        "html_sha256": "61e066ed4c1b08eaacb6186df2701e45785b7269ddc35460504557eea8740ac3",
+        "text_sha256": "1cb28c59c061b10534048e667901b0c59368bf062e27b4eb6b00b063c91a1805"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20230920.htm",
+        "meeting_date": "2023-09-20",
+        "published_at": "2023-10-11",
+        "html_snapshot": "source_snapshots/2023-09-20.html",
+        "html_sha256": "b21c4c1914997ad1d3f0bb011ef7c4a83b80a2df8c1806b06e4493629af07ff4",
+        "text_sha256": "6865eaf0a9533058eafabda8da7d3c7acd33ead7a73b20cfb509a5420d499f5a"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20231101.htm",
+        "meeting_date": "2023-11-01",
+        "published_at": "2023-11-21",
+        "html_snapshot": "source_snapshots/2023-11-01.html",
+        "html_sha256": "acf0ed88b26f5608049873ae7072a716134f55c48e9d3bc79e892b704e620f8f",
+        "text_sha256": "503caf259c9dc5f6e0f8b0df122d23de15a2dd8c74f9e450ea612c5af9323f06"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20231213.htm",
+        "meeting_date": "2023-12-13",
+        "published_at": "2024-01-03",
+        "html_snapshot": "source_snapshots/2023-12-13.html",
+        "html_sha256": "c6f06c88aaf179b1130e00c449777bcbe980c7951e1e0f38b1204dc18e80535f",
+        "text_sha256": "15d1073c6b107bbec2dba89a4e7896b9b89894248c5ea07cb2eaac006a76b305"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20240131.htm",
+        "meeting_date": "2024-01-31",
+        "published_at": "2024-02-21",
+        "html_snapshot": "source_snapshots/2024-01-31.html",
+        "html_sha256": "ab7306f3d257f1e567b74de5733de62b61fabbb2b91ed6afcb2323401b3bff4f",
+        "text_sha256": "c66ae1b63879d191164362f4bc9d83243d4f0b06db0725b750e2a646ff47915a"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20240320.htm",
+        "meeting_date": "2024-03-20",
+        "published_at": "2024-04-10",
+        "html_snapshot": "source_snapshots/2024-03-20.html",
+        "html_sha256": "995ce2e280b594d59c4200cc371993a0b5d67f2a6c3aa9e30617acc24c0ac1b9",
+        "text_sha256": "58ff1605d7b00c432b14aa426d11941c79f45b83a0ec9446218fb15669cde1f5"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20240501.htm",
+        "meeting_date": "2024-05-01",
+        "published_at": "2024-05-22",
+        "html_snapshot": "source_snapshots/2024-05-01.html",
+        "html_sha256": "c5b5e1e9be78d46433b77cd196e6505a22d5e518cef696e8211e641a4590b4b7",
+        "text_sha256": "b0d518637b64baa49a3495e9017fab1f775167cbffcd18736abf9c1c960b1a5f"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20240612.htm",
+        "meeting_date": "2024-06-12",
+        "published_at": "2024-07-03",
+        "html_snapshot": "source_snapshots/2024-06-12.html",
+        "html_sha256": "910abe2d269ff4873ba12dbd621a4d9dc4c61ca826297157d8da64a4e2e6b691",
+        "text_sha256": "d2a2a0aab60898d8939a46e4a11cb9f639eebc221643c5b16472440ff3d26dbf"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20240731.htm",
+        "meeting_date": "2024-07-31",
+        "published_at": "2024-08-21",
+        "html_snapshot": "source_snapshots/2024-07-31.html",
+        "html_sha256": "7dcc889732dd6bcc3defc45bf1e4b3e3ff5acbf0692f9711e07ff7adacf696d5",
+        "text_sha256": "561f2ff78c77e16c2e47afc494c2d027c3ad703dae89e2fabbdc1f1b9546d514"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20240918.htm",
+        "meeting_date": "2024-09-18",
+        "published_at": "2024-10-09",
+        "html_snapshot": "source_snapshots/2024-09-18.html",
+        "html_sha256": "781de7a0cb31e816c079f57ecaa93243732cd65778588b1f23dfd3c8a2a84528",
+        "text_sha256": "5354d3bb904655b22ea63de070feaa7a6e3d6d6f669f1af11dee48d6d37d7ff8"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20241107.htm",
+        "meeting_date": "2024-11-07",
+        "published_at": "2024-11-26",
+        "html_snapshot": "source_snapshots/2024-11-07.html",
+        "html_sha256": "f82bf1baa3d6fe9c43d4b2477ce43d2a2b8341d30dabe6df38fc81f9726aa08b",
+        "text_sha256": "8ecd10ed9b457d7b8fff0317e0283e923b2d53fc2ab617f23ceaf09ff562019b"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20241218.htm",
+        "meeting_date": "2024-12-18",
+        "published_at": "2025-01-08",
+        "html_snapshot": "source_snapshots/2024-12-18.html",
+        "html_sha256": "ed4a49cc5c4d506aa62969de83ca708f216103a11a5ed5899f5af807f875b690",
+        "text_sha256": "ac89865ac08e83fe1489d4cfc3533742b44029e130fb39348900262f2f55bcc2"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20250129.htm",
+        "meeting_date": "2025-01-29",
+        "published_at": "2025-02-19",
+        "html_snapshot": "source_snapshots/2025-01-29.html",
+        "html_sha256": "fbeed53ba4298b030d00e0972b7bdef6cedcc3c3b85c2473e6e0fa9e351150f8",
+        "text_sha256": "ba6fd5461b5717e058d202d0a9728edd9ad3476cefaba997b447acbca3069bcf"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20250319.htm",
+        "meeting_date": "2025-03-19",
+        "published_at": "2025-04-09",
+        "html_snapshot": "source_snapshots/2025-03-19.html",
+        "html_sha256": "c8bf9802661afdece98f3b70878fa5b8e78b873d208f5a5af21849ec733fdf0e",
+        "text_sha256": "758311bb413d8584f2725ff830393320ebf9afd3ddd0d762d105dc2a278762a8"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20250507.htm",
+        "meeting_date": "2025-05-07",
+        "published_at": "2025-05-28",
+        "html_snapshot": "source_snapshots/2025-05-07.html",
+        "html_sha256": "5568881f8857d98bd8d82d6dff4e473b2059ef5938d44de07698c9cc5460c912",
+        "text_sha256": "00494f6cc34a271e115a5f79f3ba5999a3ae7118bda071a8d6f8d26366e531a6"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20250618.htm",
+        "meeting_date": "2025-06-18",
+        "published_at": "2025-07-09",
+        "html_snapshot": "source_snapshots/2025-06-18.html",
+        "html_sha256": "17b6d4212ad4173dbe93e6c7d8cbc377e319a5fa28553bdc6d6a100289008bdf",
+        "text_sha256": "226d779c38142ce2b7b65cafad790662219c80d030f0157b00acada23a922c8e"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20250730.htm",
+        "meeting_date": "2025-07-30",
+        "published_at": "2025-08-20",
+        "html_snapshot": "source_snapshots/2025-07-30.html",
+        "html_sha256": "cbb04c8f93768fa7311af5d19418c659a35dbcd2ddc9922eb9be72e03c9ef404",
+        "text_sha256": "fe153dd7517bc74b063b4f6a326931bd6f0889c133a337eab87a1f82d0579dfc"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20250917.htm",
+        "meeting_date": "2025-09-17",
+        "published_at": "2025-10-08",
+        "html_snapshot": "source_snapshots/2025-09-17.html",
+        "html_sha256": "be559188da58149f617e75c07b82e96054aa6113fc145e6910a0e740ddfa4143",
+        "text_sha256": "c5afc705b2a3f19f35bf93966824b2e178e1383efa838a345f3ba5cec7c79db5"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20251029.htm",
+        "meeting_date": "2025-10-29",
+        "published_at": "2025-11-19",
+        "html_snapshot": "source_snapshots/2025-10-29.html",
+        "html_sha256": "9ee69bba7cfd13381a683420aa5f34ac2179e93f5d02f39eae8fda4a9dacd0da",
+        "text_sha256": "44148361316bf05b94bc78d573539803f3e50deb05b3421509d0894be782d82b"
+      },
+      {
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20251210.htm",
+        "meeting_date": "2025-12-10",
+        "published_at": "2025-12-30",
+        "html_snapshot": "source_snapshots/2025-12-10.html",
+        "html_sha256": "c7ffa291eab22a1dcbc06381881e12c603f7ed030631567b5002c0e560b1b67d",
+        "text_sha256": "9deae6333a74c448ce99bb070bf29703c5256cd5f09a118eca9636e9bb3c60b6"
+      }
+    ],
+    "skipped": [],
+    "note": "Macro-finance language corpus; no stance labels; unique tokens must be measured after seed/evaluation exclusion"
+  },
+  "completed_at": "2026-10-11T10:42:25.249898+00:00"
+}

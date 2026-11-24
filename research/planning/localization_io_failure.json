@@ -1,0 +1,4994 @@
+{
+  "recorded_utc": "2026-11-16T07:53:26.583822+00:00",
+  "context": "Unified reproduction step 12 failed during an atomic replacement; the original cause is not proved to be the file-sync client.",
+  "original_result_sha256": "8db5ebad9eb4dd6ea6372c3e84a13049996d139bba0f8bf33d1bfbfc5b157564",
+  "original_runner_sha256": "efa7756219f2231e53f6a6105a756b6d960f05310d6d0e8ac7476ce8a7da5d4c",
+  "failed_case_ids": [
+    "star-L10-N10",
+    "star-L10-N20",
+    "sharpness-N4",
+    "sharpness-N8",
+    "sharpness-N16",
+    "sharpness-N32"
+  ],
+  "first_unpersisted_case_id": "star-L10-N10",
+  "worker_error_full": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 333, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 270, in main\n    return _worker()\n           ^^^^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 244, in _worker\n    _write(state)\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 54, in _write\n    temporary.replace(OUTPUT)\n  File \"<runtime>\\dependencies\\python\\Lib\\pathlib.py\", line 1376, in replace\n    os.replace(self, target)\nPermissionError: [WinError 5] Access is denied.: '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json.tmp' -> '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json'",
+  "original_result_snapshot": {
+    "status": "incomplete_or_changed_inputs",
+    "research_status": "exploratory artificial mathematical comparisons",
+    "created_utc": "2026-11-16T07:50:43.398850+00:00",
+    "alpha_exact": "1/20",
+    "target_accuracy_interval_exact": [
+      "9/10",
+      "1"
+    ],
+    "unit_costs": true,
+    "real_audit_performed": false,
+    "model_trained": false,
+    "network_used": false,
+    "protocol": "research/planning/LOCALIZATION_PROTOCOL.md",
+    "runtime": {
+      "python": "3.12.14",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    "budget": {
+      "wall_seconds": 60,
+      "per_exact_optimization": {
+        "max_total_population": 10000,
+        "max_strata": 128,
+        "max_scalar_bits": 4096,
+        "max_risk_calls": 250000,
+        "max_risk_steps": 2000000,
+        "max_dp_transitions": 200000,
+        "max_search_nodes": 500000,
+        "max_designs": 250000
+      },
+      "peak_memory_measured": false,
+      "peak_memory_bytes": null
+    },
+    "source_sha256": {
+      "research/planning/LOCALIZATION_PROTOCOL.md": "6b96b5377f5a28d30d150c0ad4ac44cd1731cb18b03972375924ff5f803aa566",
+      "research/planning/total_count_design.py": "ac0d7f2b753c5747146aa36f4abd1b920d0d9568ec556f83186d68418c5aa209",
+      "research/planning/test_total_count_design.py": "c968de5b009a4d5511a21c5fa74f831dbb66cb1c8e9b6362d9458b0f64634c81",
+      "research/planning/run_localization.py": "efa7756219f2231e53f6a6105a756b6d960f05310d6d0e8ac7476ce8a7da5d4c",
+      "research/planning/threshold_design.py": "2eddf0a0d29621ecafedbdb23d31aebfe141f6fa63a2a4bb3a1a144ca508e8f1",
+      "research/planning/threshold_results.json": "73f9625f54091efee48f817f551247d6fd2a6e724da64d1a2f42f4bb29423537"
+    },
+    "cases": [
+      {
+        "case_id": "threshold-r2-N2",
+        "family": "threshold",
+        "N": 2,
+        "d": 3,
+        "k": 2,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            2,
+            2,
+            2
+          ],
+          "cost_exact": "6",
+          "risk_exact": "0",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            0,
+            2,
+            2
+          ],
+          "audit_count": 4,
+          "cost_exact": "4",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            2,
+            2
+          ],
+          "audit_count": 4,
+          "cost_exact": "4",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 10,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            1,
+            2,
+            2
+          ],
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "audit_count": 5,
+          "lower_bounds": [
+            1,
+            1,
+            1
+          ],
+          "counts": {
+            "risk_calls": 11,
+            "risk_steps": 21,
+            "dp_transitions": 0,
+            "search_nodes": 7,
+            "designs": 3
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "4",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "1/5",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "5/4",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000338
+      },
+      {
+        "case_id": "threshold-r2-N5",
+        "family": "threshold",
+        "N": 5,
+        "d": 3,
+        "k": 2,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            4,
+            4,
+            4
+          ],
+          "cost_exact": "12",
+          "risk_exact": "1/25",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            0,
+            5,
+            5
+          ],
+          "audit_count": 10,
+          "cost_exact": "10",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            5,
+            5
+          ],
+          "audit_count": 10,
+          "cost_exact": "10",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            5,
+            5,
+            5
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 56,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            4,
+            4,
+            4
+          ],
+          "cost_exact": "12",
+          "risk_exact": "1/25",
+          "audit_count": 12,
+          "lower_bounds": [
+            4,
+            4,
+            4
+          ],
+          "counts": {
+            "risk_calls": 13,
+            "risk_steps": 26,
+            "dp_transitions": 0,
+            "search_nodes": 1,
+            "designs": 0
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "10",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "1/6",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "6/5",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.00027
+      },
+      {
+        "case_id": "threshold-r2-N10",
+        "family": "threshold",
+        "N": 10,
+        "d": 3,
+        "k": 2,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "cost_exact": "24",
+          "risk_exact": "1/25",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            0,
+            10,
+            10
+          ],
+          "audit_count": 20,
+          "cost_exact": "20",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            10,
+            10
+          ],
+          "audit_count": 20,
+          "cost_exact": "20",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            10,
+            10,
+            10
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 286,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "cost_exact": "24",
+          "risk_exact": "1/25",
+          "audit_count": 24,
+          "lower_bounds": [
+            8,
+            8,
+            8
+          ],
+          "counts": {
+            "risk_calls": 13,
+            "risk_steps": 26,
+            "dp_transitions": 0,
+            "search_nodes": 1,
+            "designs": 0
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "20",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "1/6",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "6/5",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000247
+      },
+      {
+        "case_id": "threshold-r2-N20",
+        "family": "threshold",
+        "N": 20,
+        "d": 3,
+        "k": 2,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            16,
+            16,
+            16
+          ],
+          "cost_exact": "48",
+          "risk_exact": "1/25",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            0,
+            19,
+            19
+          ],
+          "audit_count": 38,
+          "cost_exact": "38",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            19,
+            19
+          ],
+          "audit_count": 38,
+          "cost_exact": "38",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            20,
+            20,
+            20
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 1771,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            16,
+            16,
+            16
+          ],
+          "cost_exact": "48",
+          "risk_exact": "1/25",
+          "audit_count": 48,
+          "lower_bounds": [
+            16,
+            16,
+            16
+          ],
+          "counts": {
+            "risk_calls": 21,
+            "risk_steps": 42,
+            "dp_transitions": 0,
+            "search_nodes": 1,
+            "designs": 0
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "38",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "5/24",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "24/19",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000288
+      },
+      {
+        "case_id": "threshold-r3-N2",
+        "family": "threshold",
+        "N": 2,
+        "d": 5,
+        "k": 3,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "cost_exact": "10",
+          "risk_exact": "0",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            0,
+            0,
+            2,
+            2,
+            2
+          ],
+          "audit_count": 6,
+          "cost_exact": "6",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            2,
+            2,
+            2
+          ],
+          "audit_count": 6,
+          "cost_exact": "6",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 3,
+          "certified_total_upper": 2,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 21,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            0,
+            2,
+            2,
+            2,
+            2
+          ],
+          "cost_exact": "8",
+          "risk_exact": "0",
+          "audit_count": 8,
+          "lower_bounds": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "counts": {
+            "risk_calls": 20,
+            "risk_steps": 58,
+            "dp_transitions": 0,
+            "search_nodes": 44,
+            "designs": 18
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "6",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "1/4",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "4/3",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000881
+      },
+      {
+        "case_id": "threshold-r3-N5",
+        "family": "threshold",
+        "N": 5,
+        "d": 5,
+        "k": 3,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "cost_exact": "20",
+          "risk_exact": "1/125",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            0,
+            0,
+            5,
+            5,
+            5
+          ],
+          "audit_count": 15,
+          "cost_exact": "15",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            5,
+            5,
+            5
+          ],
+          "audit_count": 15,
+          "cost_exact": "15",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 3,
+          "certified_total_upper": 2,
+          "alpha_exact": "1/20",
+          "populations": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 252,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            3,
+            3,
+            4,
+            4,
+            4
+          ],
+          "cost_exact": "18",
+          "risk_exact": "1/25",
+          "audit_count": 18,
+          "lower_bounds": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "counts": {
+            "risk_calls": 26,
+            "risk_steps": 73,
+            "dp_transitions": 0,
+            "search_nodes": 16,
+            "designs": 7
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "15",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "1/6",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "6/5",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000521
+      },
+      {
+        "case_id": "threshold-r3-N10",
+        "family": "threshold",
+        "N": 10,
+        "d": 5,
+        "k": 3,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "cost_exact": "35",
+          "risk_exact": "27/1000",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            0,
+            0,
+            10,
+            10,
+            10
+          ],
+          "audit_count": 30,
+          "cost_exact": "30",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            10,
+            10,
+            10
+          ],
+          "audit_count": 30,
+          "cost_exact": "30",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 3,
+          "certified_total_upper": 2,
+          "alpha_exact": "1/20",
+          "populations": [
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 3003,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            6,
+            7,
+            7,
+            7,
+            7
+          ],
+          "cost_exact": "34",
+          "risk_exact": "1/25",
+          "audit_count": 34,
+          "lower_bounds": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "counts": {
+            "risk_calls": 37,
+            "risk_steps": 111,
+            "dp_transitions": 0,
+            "search_nodes": 24,
+            "designs": 12
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "30",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "2/17",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "17/15",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.002463
+      },
+      {
+        "case_id": "threshold-r3-N20",
+        "family": "threshold",
+        "N": 20,
+        "d": 5,
+        "k": 3,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            13,
+            13,
+            13,
+            13,
+            13
+          ],
+          "cost_exact": "65",
+          "risk_exact": "343/8000",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            0,
+            0,
+            19,
+            19,
+            19
+          ],
+          "audit_count": 57,
+          "cost_exact": "57",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            19,
+            19,
+            19
+          ],
+          "audit_count": 57,
+          "cost_exact": "57",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 3,
+          "certified_total_upper": 2,
+          "alpha_exact": "1/20",
+          "populations": [
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 53130,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            13,
+            13,
+            13,
+            13,
+            13
+          ],
+          "cost_exact": "65",
+          "risk_exact": "343/8000",
+          "audit_count": 65,
+          "lower_bounds": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "counts": {
+            "risk_calls": 42,
+            "risk_steps": 126,
+            "dp_transitions": 0,
+            "search_nodes": 24,
+            "designs": 12
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "57",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "8/65",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "65/57",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000763
+      },
+      {
+        "case_id": "threshold-r4-N2",
+        "family": "threshold",
+        "N": 2,
+        "d": 7,
+        "k": 4,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "cost_exact": "14",
+          "risk_exact": "0",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            2
+          ],
+          "audit_count": 8,
+          "cost_exact": "8",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            2
+          ],
+          "audit_count": 8,
+          "cost_exact": "8",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 4,
+          "certified_total_upper": 3,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 36,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            0,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "cost_exact": "11",
+          "risk_exact": "0",
+          "audit_count": 11,
+          "lower_bounds": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "counts": {
+            "risk_calls": 33,
+            "risk_steps": 129,
+            "dp_transitions": 0,
+            "search_nodes": 92,
+            "designs": 31
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "8",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "3/11",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "11/8",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.001509
+      },
+      {
+        "case_id": "threshold-r4-N5",
+        "family": "threshold",
+        "N": 5,
+        "d": 7,
+        "k": 4,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "cost_exact": "21",
+          "risk_exact": "16/625",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            0,
+            0,
+            0,
+            5,
+            5,
+            5,
+            5
+          ],
+          "audit_count": 20,
+          "cost_exact": "20",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            0,
+            5,
+            5,
+            5,
+            5
+          ],
+          "audit_count": 20,
+          "cost_exact": "20",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 4,
+          "certified_total_upper": 3,
+          "alpha_exact": "1/20",
+          "populations": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 792,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "cost_exact": "20",
+          "risk_exact": "6/125",
+          "audit_count": 20,
+          "lower_bounds": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "counts": {
+            "risk_calls": 41,
+            "risk_steps": 164,
+            "dp_transitions": 0,
+            "search_nodes": 51,
+            "designs": 23
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "20",
+        "strong_simple_choice": "tie",
+        "direct_saving_vs_total_exact": "0",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "1",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.001168
+      },
+      {
+        "case_id": "threshold-r4-N10",
+        "family": "threshold",
+        "N": 10,
+        "d": 7,
+        "k": 4,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "cost_exact": "42",
+          "risk_exact": "16/625",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            3,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "audit_count": 39,
+          "cost_exact": "39",
+          "risk_exact": "28/625",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            0,
+            10,
+            10,
+            10,
+            10
+          ],
+          "audit_count": 40,
+          "cost_exact": "40",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 4,
+          "certified_total_upper": 3,
+          "alpha_exact": "1/20",
+          "populations": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 19448,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            5,
+            5,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "cost_exact": "40",
+          "risk_exact": "4/81",
+          "audit_count": 40,
+          "lower_bounds": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "counts": {
+            "risk_calls": 53,
+            "risk_steps": 212,
+            "dp_transitions": 0,
+            "search_nodes": 50,
+            "designs": 27
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "40",
+        "strong_simple_choice": "tie",
+        "direct_saving_vs_total_exact": "1/40",
+        "direct_saving_vs_strong_simple_exact": "1/40",
+        "total_over_direct_ratio_exact": "40/39",
+        "strong_simple_over_direct_ratio_exact": "40/39",
+        "elapsed_seconds": 0.001314
+      },
+      {
+        "case_id": "threshold-r4-N20",
+        "family": "threshold",
+        "N": 20,
+        "d": 7,
+        "k": 4,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            11,
+            11,
+            11,
+            11,
+            11,
+            11,
+            11
+          ],
+          "cost_exact": "77",
+          "risk_exact": "6561/160000",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            0,
+            0,
+            0,
+            19,
+            19,
+            19,
+            19
+          ],
+          "audit_count": 76,
+          "cost_exact": "76",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            0,
+            19,
+            19,
+            19,
+            19
+          ],
+          "audit_count": 76,
+          "cost_exact": "76",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 4,
+          "certified_total_upper": 3,
+          "alpha_exact": "1/20",
+          "populations": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 888030,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            10,
+            11,
+            11,
+            11,
+            11,
+            11,
+            11
+          ],
+          "cost_exact": "76",
+          "risk_exact": "729/15200",
+          "audit_count": 76,
+          "lower_bounds": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "counts": {
+            "risk_calls": 64,
+            "risk_steps": 256,
+            "dp_transitions": 0,
+            "search_nodes": 58,
+            "designs": 30
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "76",
+        "strong_simple_choice": "tie",
+        "direct_saving_vs_total_exact": "0",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "1",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.001524
+      },
+      {
+        "case_id": "threshold-r5-N2",
+        "family": "threshold",
+        "N": 2,
+        "d": 9,
+        "k": 5,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cost_exact": "9",
+          "risk_exact": "1/32",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "audit_count": 9,
+          "cost_exact": "9",
+          "risk_exact": "1/32",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "audit_count": 10,
+          "cost_exact": "10",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 5,
+          "certified_total_upper": 4,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 55,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cost_exact": "9",
+          "risk_exact": "1/32",
+          "audit_count": 9,
+          "lower_bounds": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "counts": {
+            "risk_calls": 28,
+            "risk_steps": 140,
+            "dp_transitions": 0,
+            "search_nodes": 76,
+            "designs": 25
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "9",
+        "strong_simple_choice": "total_count",
+        "direct_saving_vs_total_exact": "0",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "1",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.001273
+      },
+      {
+        "case_id": "threshold-r5-N5",
+        "family": "threshold",
+        "N": 5,
+        "d": 9,
+        "k": 5,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "cost_exact": "27",
+          "risk_exact": "32/3125",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            0,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "audit_count": 23,
+          "cost_exact": "23",
+          "risk_exact": "24/625",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            0,
+            0,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "audit_count": 25,
+          "cost_exact": "25",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 5,
+          "certified_total_upper": 4,
+          "alpha_exact": "1/20",
+          "populations": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 2002,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "cost_exact": "25",
+          "risk_exact": "9/250",
+          "audit_count": 25,
+          "lower_bounds": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "counts": {
+            "risk_calls": 365,
+            "risk_steps": 1816,
+            "dp_transitions": 0,
+            "search_nodes": 700,
+            "designs": 334
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "25",
+        "strong_simple_choice": "tie",
+        "direct_saving_vs_total_exact": "2/25",
+        "direct_saving_vs_strong_simple_exact": "2/25",
+        "total_over_direct_ratio_exact": "25/23",
+        "strong_simple_over_direct_ratio_exact": "25/23",
+        "elapsed_seconds": 0.016166
+      },
+      {
+        "case_id": "threshold-r5-N10",
+        "family": "threshold",
+        "N": 10,
+        "d": 9,
+        "k": 5,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "cost_exact": "45",
+          "risk_exact": "1/32",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            2,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "audit_count": 42,
+          "cost_exact": "42",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            0,
+            0,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "audit_count": 50,
+          "cost_exact": "50",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 5,
+          "certified_total_upper": 4,
+          "alpha_exact": "1/20",
+          "populations": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 92378,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            4,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "cost_exact": "44",
+          "risk_exact": "1/24",
+          "audit_count": 44,
+          "lower_bounds": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "counts": {
+            "risk_calls": 104,
+            "risk_steps": 520,
+            "dp_transitions": 0,
+            "search_nodes": 120,
+            "designs": 64
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "44",
+        "strong_simple_choice": "total_count",
+        "direct_saving_vs_total_exact": "1/22",
+        "direct_saving_vs_strong_simple_exact": "1/22",
+        "total_over_direct_ratio_exact": "22/21",
+        "strong_simple_over_direct_ratio_exact": "22/21",
+        "elapsed_seconds": 0.006342
+      },
+      {
+        "case_id": "threshold-r5-N20",
+        "family": "threshold",
+        "N": 20,
+        "d": 9,
+        "k": 5,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "cost_exact": "90",
+          "risk_exact": "1/32",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            4,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "audit_count": 84,
+          "cost_exact": "84",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            0,
+            0,
+            19,
+            19,
+            19,
+            19,
+            19
+          ],
+          "audit_count": 95,
+          "cost_exact": "95",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 5,
+          "certified_total_upper": 4,
+          "alpha_exact": "1/20",
+          "populations": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 10015005,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            9,
+            9,
+            9,
+            9,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "cost_exact": "86",
+          "risk_exact": "14641/304000",
+          "audit_count": 86,
+          "lower_bounds": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9
+          ],
+          "counts": {
+            "risk_calls": 95,
+            "risk_steps": 475,
+            "dp_transitions": 0,
+            "search_nodes": 88,
+            "designs": 54
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "86",
+        "strong_simple_choice": "total_count",
+        "direct_saving_vs_total_exact": "1/43",
+        "direct_saving_vs_strong_simple_exact": "1/43",
+        "total_over_direct_ratio_exact": "43/42",
+        "strong_simple_over_direct_ratio_exact": "43/42",
+        "elapsed_seconds": 0.003252
+      },
+      {
+        "case_id": "threshold-r6-N2",
+        "family": "threshold",
+        "N": 2,
+        "d": 11,
+        "k": 6,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cost_exact": "11",
+          "risk_exact": "1/64",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "audit_count": 10,
+          "cost_exact": "10",
+          "risk_exact": "1/32",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "audit_count": 12,
+          "cost_exact": "12",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 6,
+          "certified_total_upper": 5,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 78,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cost_exact": "11",
+          "risk_exact": "1/64",
+          "audit_count": 11,
+          "lower_bounds": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "counts": {
+            "risk_calls": 39,
+            "risk_steps": 234,
+            "dp_transitions": 0,
+            "search_nodes": 122,
+            "designs": 36
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "11",
+        "strong_simple_choice": "total_count",
+        "direct_saving_vs_total_exact": "1/11",
+        "direct_saving_vs_strong_simple_exact": "1/11",
+        "total_over_direct_ratio_exact": "11/10",
+        "strong_simple_over_direct_ratio_exact": "11/10",
+        "elapsed_seconds": 0.002797
+      },
+      {
+        "case_id": "threshold-r6-N5",
+        "family": "threshold",
+        "N": 5,
+        "d": 11,
+        "k": 6,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "cost_exact": "22",
+          "risk_exact": "729/15625",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "audit_count": 22,
+          "cost_exact": "22",
+          "risk_exact": "729/15625",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "audit_count": 30,
+          "cost_exact": "30",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 6,
+          "certified_total_upper": 5,
+          "alpha_exact": "1/20",
+          "populations": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 4368,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "cost_exact": "22",
+          "risk_exact": "729/15625",
+          "audit_count": 22,
+          "lower_bounds": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "counts": {
+            "risk_calls": 1116,
+            "risk_steps": 6696,
+            "dp_transitions": 0,
+            "search_nodes": 2147,
+            "designs": 1113
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "22",
+        "strong_simple_choice": "total_count",
+        "direct_saving_vs_total_exact": "0",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "1",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.058803
+      },
+      {
+        "case_id": "threshold-r6-N10",
+        "family": "threshold",
+        "N": 10,
+        "d": 11,
+        "k": 6,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "cost_exact": "44",
+          "risk_exact": "729/15625",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "audit_count": 44,
+          "cost_exact": "44",
+          "risk_exact": "729/15625",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "audit_count": 60,
+          "cost_exact": "60",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 6,
+          "certified_total_upper": 5,
+          "alpha_exact": "1/20",
+          "populations": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 352716,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "cost_exact": "44",
+          "risk_exact": "729/15625",
+          "audit_count": 44,
+          "lower_bounds": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "counts": {
+            "risk_calls": 181,
+            "risk_steps": 1086,
+            "dp_transitions": 0,
+            "search_nodes": 236,
+            "designs": 132
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "44",
+        "strong_simple_choice": "total_count",
+        "direct_saving_vs_total_exact": "0",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "1",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.007874
+      },
+      {
+        "case_id": "threshold-r6-N20",
+        "family": "threshold",
+        "N": 20,
+        "d": 11,
+        "k": 6,
+        "status": "optimal_comparison",
+        "old_balanced_total_count": {
+          "samples": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "cost_exact": "88",
+          "risk_exact": "729/15625",
+          "optimality": "balanced class only"
+        },
+        "direct": {
+          "samples": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "audit_count": 88,
+          "cost_exact": "88",
+          "risk_exact": "729/15625",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "threshold_results.json: imported optimum; returned allocation risk recomputed"
+        },
+        "box": {
+          "samples": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            19,
+            19,
+            19,
+            19,
+            19,
+            19
+          ],
+          "audit_count": 114,
+          "cost_exact": "114",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "frozen JSON plus strongest joint-zero box formula"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 6,
+          "certified_total_upper": 5,
+          "alpha_exact": "1/20",
+          "populations": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 84672315,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "cost_exact": "88",
+          "risk_exact": "729/15625",
+          "audit_count": 88,
+          "lower_bounds": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "counts": {
+            "risk_calls": 199,
+            "risk_steps": 1194,
+            "dp_transitions": 0,
+            "search_nodes": 243,
+            "designs": 139
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "88",
+        "strong_simple_choice": "total_count",
+        "direct_saving_vs_total_exact": "0",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "1",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.007595
+      },
+      {
+        "case_id": "and-d2-N2",
+        "family": "and",
+        "N": 2,
+        "d": 2,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            2,
+            0
+          ],
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            2,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            2,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "and_closed_form": {
+          "kappa": 5,
+          "cost_exact": "3",
+          "matches": true
+        },
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 6,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            1,
+            2
+          ],
+          "cost_exact": "3",
+          "risk_exact": "0",
+          "audit_count": 3,
+          "lower_bounds": [
+            1,
+            1
+          ],
+          "counts": {
+            "risk_calls": 8,
+            "risk_steps": 15,
+            "dp_transitions": 0,
+            "search_nodes": 4,
+            "designs": 2
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "2",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "1/3",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "3/2",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000213
+      },
+      {
+        "case_id": "and-d3-N2",
+        "family": "and",
+        "N": 2,
+        "d": 3,
+        "k": 3,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            2,
+            0,
+            0
+          ],
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            2,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            2,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "and_closed_form": {
+          "kappa": 5,
+          "cost_exact": "4",
+          "matches": true
+        },
+        "total_count": {
+          "k": 3,
+          "certified_total_upper": 2,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 10,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            0,
+            2,
+            2
+          ],
+          "cost_exact": "4",
+          "risk_exact": "0",
+          "audit_count": 4,
+          "lower_bounds": [
+            0,
+            0,
+            0
+          ],
+          "counts": {
+            "risk_calls": 9,
+            "risk_steps": 25,
+            "dp_transitions": 0,
+            "search_nodes": 14,
+            "designs": 7
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "2",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "1/2",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "2",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000366
+      },
+      {
+        "case_id": "and-d4-N2",
+        "family": "and",
+        "N": 2,
+        "d": 4,
+        "k": 4,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "and_closed_form": {
+          "kappa": 5,
+          "cost_exact": "5",
+          "matches": true
+        },
+        "total_count": {
+          "k": 4,
+          "certified_total_upper": 3,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 15,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            0,
+            1,
+            2,
+            2
+          ],
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "audit_count": 5,
+          "lower_bounds": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "counts": {
+            "risk_calls": 12,
+            "risk_steps": 45,
+            "dp_transitions": 0,
+            "search_nodes": 22,
+            "designs": 10
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "2",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "3/5",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "5/2",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000393
+      },
+      {
+        "case_id": "and-d5-N2",
+        "family": "and",
+        "N": 2,
+        "d": 5,
+        "k": 5,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "and_closed_form": {
+          "kappa": 5,
+          "cost_exact": "5",
+          "matches": true
+        },
+        "total_count": {
+          "k": 5,
+          "certified_total_upper": 4,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 21,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cost_exact": "5",
+          "risk_exact": "1/32",
+          "audit_count": 5,
+          "lower_bounds": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "counts": {
+            "risk_calls": 12,
+            "risk_steps": 60,
+            "dp_transitions": 0,
+            "search_nodes": 21,
+            "designs": 9
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "2",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "3/5",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "5/2",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000579
+      },
+      {
+        "case_id": "and-d6-N2",
+        "family": "and",
+        "N": 2,
+        "d": 6,
+        "k": 6,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "and_closed_form": {
+          "kappa": 5,
+          "cost_exact": "6",
+          "matches": true
+        },
+        "total_count": {
+          "k": 6,
+          "certified_total_upper": 5,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 28,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cost_exact": "6",
+          "risk_exact": "1/64",
+          "audit_count": 6,
+          "lower_bounds": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "counts": {
+            "risk_calls": 15,
+            "risk_steps": 90,
+            "dp_transitions": 0,
+            "search_nodes": 30,
+            "designs": 12
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "2",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "2/3",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "3",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.001269
+      },
+      {
+        "case_id": "and-d8-N2",
+        "family": "and",
+        "N": 2,
+        "d": 8,
+        "k": 8,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "and_closed_form": {
+          "kappa": 5,
+          "cost_exact": "7",
+          "matches": true
+        },
+        "total_count": {
+          "k": 8,
+          "certified_total_upper": 7,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 45,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cost_exact": "7",
+          "risk_exact": "1/64",
+          "audit_count": 7,
+          "lower_bounds": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "counts": {
+            "risk_calls": 23,
+            "risk_steps": 184,
+            "dp_transitions": 0,
+            "search_nodes": 57,
+            "designs": 20
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "2",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "5/7",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "7/2",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.001477
+      },
+      {
+        "case_id": "and-d12-N2",
+        "family": "and",
+        "N": 2,
+        "d": 12,
+        "k": 12,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "and_closed_form": {
+          "kappa": 5,
+          "cost_exact": "9",
+          "matches": true
+        },
+        "total_count": {
+          "k": 12,
+          "certified_total_upper": 11,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 91,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cost_exact": "9",
+          "risk_exact": "1/64",
+          "audit_count": 9,
+          "lower_bounds": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "counts": {
+            "risk_calls": 40,
+            "risk_steps": 480,
+            "dp_transitions": 0,
+            "search_nodes": 124,
+            "designs": 37
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "2",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "7/9",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "9/2",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.002844
+      },
+      {
+        "case_id": "and-d20-N2",
+        "family": "and",
+        "N": 2,
+        "d": 20,
+        "k": 20,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md LV5: census one stratum is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "and_closed_form": {
+          "kappa": 5,
+          "cost_exact": "13",
+          "matches": true
+        },
+        "total_count": {
+          "k": 20,
+          "certified_total_upper": 19,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 231,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cost_exact": "13",
+          "risk_exact": "1/64",
+          "audit_count": 13,
+          "lower_bounds": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "counts": {
+            "risk_calls": 86,
+            "risk_steps": 1720,
+            "dp_transitions": 0,
+            "search_nodes": 386,
+            "designs": 83
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "2",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "11/13",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "13/2",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.009246
+      },
+      {
+        "case_id": "star-L1-N2",
+        "family": "star",
+        "N": 2,
+        "d": 2,
+        "leaves": 1,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            2,
+            0
+          ],
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            2,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            2,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 6,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            1,
+            2
+          ],
+          "cost_exact": "3",
+          "risk_exact": "0",
+          "audit_count": 3,
+          "lower_bounds": [
+            1,
+            1
+          ],
+          "counts": {
+            "risk_calls": 8,
+            "risk_steps": 15,
+            "dp_transitions": 0,
+            "search_nodes": 4,
+            "designs": 2
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "2",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "1/3",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "3/2",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000181
+      },
+      {
+        "case_id": "star-L1-N5",
+        "family": "star",
+        "N": 5,
+        "d": 2,
+        "leaves": 1,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            5,
+            0
+          ],
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            5,
+            0
+          ],
+          "audit_count": 5,
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            5,
+            0
+          ],
+          "audit_count": 5,
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            5,
+            5
+          ],
+          "costs_exact": [
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 21,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            4,
+            4
+          ],
+          "cost_exact": "8",
+          "risk_exact": "1/25",
+          "audit_count": 8,
+          "lower_bounds": [
+            4,
+            4
+          ],
+          "counts": {
+            "risk_calls": 10,
+            "risk_steps": 20,
+            "dp_transitions": 0,
+            "search_nodes": 1,
+            "designs": 0
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "5",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "3/8",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "8/5",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000181
+      },
+      {
+        "case_id": "star-L1-N10",
+        "family": "star",
+        "N": 10,
+        "d": 2,
+        "leaves": 1,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            10,
+            0
+          ],
+          "cost_exact": "10",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            10,
+            0
+          ],
+          "audit_count": 10,
+          "cost_exact": "10",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            10,
+            0
+          ],
+          "audit_count": 10,
+          "cost_exact": "10",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            10,
+            10
+          ],
+          "costs_exact": [
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 66,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            8,
+            8
+          ],
+          "cost_exact": "16",
+          "risk_exact": "1/25",
+          "audit_count": 16,
+          "lower_bounds": [
+            8,
+            8
+          ],
+          "counts": {
+            "risk_calls": 10,
+            "risk_steps": 20,
+            "dp_transitions": 0,
+            "search_nodes": 1,
+            "designs": 0
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "10",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "3/8",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "8/5",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000177
+      },
+      {
+        "case_id": "star-L1-N20",
+        "family": "star",
+        "N": 20,
+        "d": 2,
+        "leaves": 1,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            19,
+            0
+          ],
+          "cost_exact": "19",
+          "risk_exact": "1/20",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            19,
+            0
+          ],
+          "audit_count": 19,
+          "cost_exact": "19",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            19,
+            0
+          ],
+          "audit_count": 19,
+          "cost_exact": "19",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            20,
+            20
+          ],
+          "costs_exact": [
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 231,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            16,
+            16
+          ],
+          "cost_exact": "32",
+          "risk_exact": "1/25",
+          "audit_count": 32,
+          "lower_bounds": [
+            16,
+            16
+          ],
+          "counts": {
+            "risk_calls": 16,
+            "risk_steps": 32,
+            "dp_transitions": 0,
+            "search_nodes": 1,
+            "designs": 0
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "19",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "13/32",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "32/19",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000205
+      },
+      {
+        "case_id": "star-L2-N2",
+        "family": "star",
+        "N": 2,
+        "d": 3,
+        "leaves": 2,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            2,
+            0,
+            0
+          ],
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            2,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            2,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 10,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            1,
+            2,
+            2
+          ],
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "audit_count": 5,
+          "lower_bounds": [
+            1,
+            1,
+            1
+          ],
+          "counts": {
+            "risk_calls": 11,
+            "risk_steps": 21,
+            "dp_transitions": 0,
+            "search_nodes": 7,
+            "designs": 3
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "2",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "3/5",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "5/2",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000225
+      },
+      {
+        "case_id": "star-L2-N5",
+        "family": "star",
+        "N": 5,
+        "d": 3,
+        "leaves": 2,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            5,
+            0,
+            0
+          ],
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            5,
+            0,
+            0
+          ],
+          "audit_count": 5,
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            5,
+            0,
+            0
+          ],
+          "audit_count": 5,
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            5,
+            5,
+            5
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 56,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            4,
+            4,
+            4
+          ],
+          "cost_exact": "12",
+          "risk_exact": "1/25",
+          "audit_count": 12,
+          "lower_bounds": [
+            4,
+            4,
+            4
+          ],
+          "counts": {
+            "risk_calls": 13,
+            "risk_steps": 26,
+            "dp_transitions": 0,
+            "search_nodes": 1,
+            "designs": 0
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "5",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "7/12",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "12/5",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.00029
+      },
+      {
+        "case_id": "star-L2-N10",
+        "family": "star",
+        "N": 10,
+        "d": 3,
+        "leaves": 2,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            10,
+            0,
+            0
+          ],
+          "cost_exact": "10",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            10,
+            0,
+            0
+          ],
+          "audit_count": 10,
+          "cost_exact": "10",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            10,
+            0,
+            0
+          ],
+          "audit_count": 10,
+          "cost_exact": "10",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            10,
+            10,
+            10
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 286,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            8,
+            8,
+            8
+          ],
+          "cost_exact": "24",
+          "risk_exact": "1/25",
+          "audit_count": 24,
+          "lower_bounds": [
+            8,
+            8,
+            8
+          ],
+          "counts": {
+            "risk_calls": 13,
+            "risk_steps": 26,
+            "dp_transitions": 0,
+            "search_nodes": 1,
+            "designs": 0
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "10",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "7/12",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "12/5",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000206
+      },
+      {
+        "case_id": "star-L2-N20",
+        "family": "star",
+        "N": 20,
+        "d": 3,
+        "leaves": 2,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            19,
+            0,
+            0
+          ],
+          "cost_exact": "19",
+          "risk_exact": "1/20",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            19,
+            0,
+            0
+          ],
+          "audit_count": 19,
+          "cost_exact": "19",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            19,
+            0,
+            0
+          ],
+          "audit_count": 19,
+          "cost_exact": "19",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            20,
+            20,
+            20
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 1771,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            16,
+            16,
+            16
+          ],
+          "cost_exact": "48",
+          "risk_exact": "1/25",
+          "audit_count": 48,
+          "lower_bounds": [
+            16,
+            16,
+            16
+          ],
+          "counts": {
+            "risk_calls": 21,
+            "risk_steps": 42,
+            "dp_transitions": 0,
+            "search_nodes": 1,
+            "designs": 0
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "19",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "29/48",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "48/19",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000261
+      },
+      {
+        "case_id": "star-L5-N2",
+        "family": "star",
+        "N": 2,
+        "d": 6,
+        "leaves": 5,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 28,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "cost_exact": "11",
+          "risk_exact": "0",
+          "audit_count": 11,
+          "lower_bounds": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "counts": {
+            "risk_calls": 20,
+            "risk_steps": 39,
+            "dp_transitions": 0,
+            "search_nodes": 22,
+            "designs": 6
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "2",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "9/11",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "11/2",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000354
+      },
+      {
+        "case_id": "star-L5-N5",
+        "family": "star",
+        "N": 5,
+        "d": 6,
+        "leaves": 5,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 5,
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 5,
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 462,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "cost_exact": "24",
+          "risk_exact": "1/25",
+          "audit_count": 24,
+          "lower_bounds": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "counts": {
+            "risk_calls": 22,
+            "risk_steps": 44,
+            "dp_transitions": 0,
+            "search_nodes": 1,
+            "designs": 0
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "5",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "19/24",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "24/5",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000276
+      },
+      {
+        "case_id": "star-L5-N10",
+        "family": "star",
+        "N": 10,
+        "d": 6,
+        "leaves": 5,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            10,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost_exact": "10",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            10,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 10,
+          "cost_exact": "10",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            10,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 10,
+          "cost_exact": "10",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 8008,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "cost_exact": "48",
+          "risk_exact": "1/25",
+          "audit_count": 48,
+          "lower_bounds": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "counts": {
+            "risk_calls": 22,
+            "risk_steps": 44,
+            "dp_transitions": 0,
+            "search_nodes": 1,
+            "designs": 0
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "10",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "19/24",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "24/5",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000289
+      },
+      {
+        "case_id": "star-L5-N20",
+        "family": "star",
+        "N": 20,
+        "d": 6,
+        "leaves": 5,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            19,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost_exact": "19",
+          "risk_exact": "1/20",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            19,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 19,
+          "cost_exact": "19",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            19,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 19,
+          "cost_exact": "19",
+          "risk_exact": "1/20",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 230230,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            16
+          ],
+          "cost_exact": "96",
+          "risk_exact": "1/25",
+          "audit_count": 96,
+          "lower_bounds": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            16
+          ],
+          "counts": {
+            "risk_calls": 36,
+            "risk_steps": 72,
+            "dp_transitions": 0,
+            "search_nodes": 1,
+            "designs": 0
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "19",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "77/96",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "96/19",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000363
+      },
+      {
+        "case_id": "star-L10-N2",
+        "family": "star",
+        "N": 2,
+        "d": 11,
+        "leaves": 10,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 2,
+          "cost_exact": "2",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 78,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "cost_exact": "21",
+          "risk_exact": "0",
+          "audit_count": 21,
+          "lower_bounds": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "counts": {
+            "risk_calls": 35,
+            "risk_steps": 69,
+            "dp_transitions": 0,
+            "search_nodes": 67,
+            "designs": 11
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "2",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "19/21",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "21/2",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000819
+      },
+      {
+        "case_id": "star-L10-N5",
+        "family": "star",
+        "N": 5,
+        "d": 11,
+        "leaves": 10,
+        "k": 2,
+        "status": "optimal_comparison",
+        "simple_local_clean_gate": {
+          "samples": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "optimal": true
+        },
+        "direct": {
+          "samples": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 5,
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "box": {
+          "samples": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "audit_count": 5,
+          "cost_exact": "5",
+          "risk_exact": "0",
+          "optimality": "exact optimum in stated fixed-allocation class",
+          "evidence_source": "localization_value.md section 7: center-clean gate is direct and box optimal"
+        },
+        "every_stratum_in_a_minimal_harmful_configuration": true,
+        "total_count": {
+          "k": 2,
+          "certified_total_upper": 1,
+          "alpha_exact": "1/20",
+          "populations": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "costs_exact": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "search": "sorted_all_d_coordinates",
+          "unpruned_allocation_count": 4368,
+          "optimality": "global among fixed per-stratum uniform zero-finding total-count procedures",
+          "status": "optimal",
+          "samples": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "cost_exact": "44",
+          "risk_exact": "1/25",
+          "audit_count": 44,
+          "lower_bounds": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "counts": {
+            "risk_calls": 37,
+            "risk_steps": 74,
+            "dp_transitions": 0,
+            "search_nodes": 1,
+            "designs": 0
+          },
+          "returned_risk_verified_by_independent_dp": true
+        },
+        "strong_simple_cost_exact": "5",
+        "strong_simple_choice": "box",
+        "direct_saving_vs_total_exact": "39/44",
+        "direct_saving_vs_strong_simple_exact": "0",
+        "total_over_direct_ratio_exact": "44/5",
+        "strong_simple_over_direct_ratio_exact": "1",
+        "elapsed_seconds": 0.000393
+      },
+      {
+        "case_id": "star-L10-N10",
+        "family": "star",
+        "N": 10,
+        "d": 11,
+        "leaves": 10,
+        "k": 2,
+        "status": "worker_failed",
+        "error": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 333, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 270, in main\n    return _worker()\n           ^^^^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 244, in _worker\n    _write(state)\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 54, in _write\n    temporary.replace(OUTPUT)\n  File \"<runtime>\\dependencies\\python\\Lib\\pathlib.py\", line 1376, in replace\n    os.replace(self, target)\nPermissionError: [WinError 5] Access is denied.: '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json.tmp' -> '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json'",
+        "globally_exact_costs_computed": false
+      },
+      {
+        "case_id": "star-L10-N20",
+        "family": "star",
+        "N": 20,
+        "d": 11,
+        "leaves": 10,
+        "k": 2,
+        "status": "worker_failed",
+        "error": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 333, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 270, in main\n    return _worker()\n           ^^^^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 244, in _worker\n    _write(state)\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 54, in _write\n    temporary.replace(OUTPUT)\n  File \"<runtime>\\dependencies\\python\\Lib\\pathlib.py\", line 1376, in replace\n    os.replace(self, target)\nPermissionError: [WinError 5] Access is denied.: '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json.tmp' -> '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json'",
+        "globally_exact_costs_computed": false
+      },
+      {
+        "case_id": "sharpness-N4",
+        "family": "sharpness_bounds",
+        "N": 4,
+        "d": 31,
+        "k": 16,
+        "r": 16,
+        "status": "worker_failed",
+        "error": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 333, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 270, in main\n    return _worker()\n           ^^^^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 244, in _worker\n    _write(state)\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 54, in _write\n    temporary.replace(OUTPUT)\n  File \"<runtime>\\dependencies\\python\\Lib\\pathlib.py\", line 1376, in replace\n    os.replace(self, target)\nPermissionError: [WinError 5] Access is denied.: '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json.tmp' -> '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json'",
+        "globally_exact_costs_computed": false
+      },
+      {
+        "case_id": "sharpness-N8",
+        "family": "sharpness_bounds",
+        "N": 8,
+        "d": 127,
+        "k": 64,
+        "r": 64,
+        "status": "worker_failed",
+        "error": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 333, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 270, in main\n    return _worker()\n           ^^^^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 244, in _worker\n    _write(state)\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 54, in _write\n    temporary.replace(OUTPUT)\n  File \"<runtime>\\dependencies\\python\\Lib\\pathlib.py\", line 1376, in replace\n    os.replace(self, target)\nPermissionError: [WinError 5] Access is denied.: '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json.tmp' -> '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json'",
+        "globally_exact_costs_computed": false
+      },
+      {
+        "case_id": "sharpness-N16",
+        "family": "sharpness_bounds",
+        "N": 16,
+        "d": 511,
+        "k": 256,
+        "r": 256,
+        "status": "worker_failed",
+        "error": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 333, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 270, in main\n    return _worker()\n           ^^^^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 244, in _worker\n    _write(state)\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 54, in _write\n    temporary.replace(OUTPUT)\n  File \"<runtime>\\dependencies\\python\\Lib\\pathlib.py\", line 1376, in replace\n    os.replace(self, target)\nPermissionError: [WinError 5] Access is denied.: '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json.tmp' -> '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json'",
+        "globally_exact_costs_computed": false
+      },
+      {
+        "case_id": "sharpness-N32",
+        "family": "sharpness_bounds",
+        "N": 32,
+        "d": 2047,
+        "k": 1024,
+        "r": 1024,
+        "status": "worker_failed",
+        "error": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 333, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 270, in main\n    return _worker()\n           ^^^^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 244, in _worker\n    _write(state)\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 54, in _write\n    temporary.replace(OUTPUT)\n  File \"<runtime>\\dependencies\\python\\Lib\\pathlib.py\", line 1376, in replace\n    os.replace(self, target)\nPermissionError: [WinError 5] Access is denied.: '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json.tmp' -> '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json'",
+        "globally_exact_costs_computed": false
+      }
+    ],
+    "proof_note_at_start": {
+      "path": "research/theory/localization_value.md",
+      "sha256": "3187fd0cfb9b39e9ff797b295557841fc59b16fd1e09d3f385edb076bea2015f",
+      "role": "supporting derivation under concurrent editorial review; not read as executable input"
+    },
+    "limitations": [
+      "All populations, vote structures and contamination hypotheses are artificial mathematical inputs.",
+      "Total-count optimum is over fixed stratified uniform zero-finding procedures, not adaptive audits.",
+      "The simple comparator is chosen before audit results: min(strongest safe box, strongest total-count gate).",
+      "Sharpness rows contain bounds and feasible constructions, not computed global optima.",
+      "This extension is exploratory; original threshold cases and favorable comparisons were already seen.",
+      "No historical certificate, model utility, novelty, or G0/G1 passage follows from these checks."
+    ],
+    "elapsed_seconds": 1.248278,
+    "wall_timeout": false,
+    "worker_return_code": 1,
+    "source_sha256_after": {
+      "research/planning/LOCALIZATION_PROTOCOL.md": "6b96b5377f5a28d30d150c0ad4ac44cd1731cb18b03972375924ff5f803aa566",
+      "research/planning/total_count_design.py": "ac0d7f2b753c5747146aa36f4abd1b920d0d9568ec556f83186d68418c5aa209",
+      "research/planning/test_total_count_design.py": "c968de5b009a4d5511a21c5fa74f831dbb66cb1c8e9b6362d9458b0f64634c81",
+      "research/planning/run_localization.py": "efa7756219f2231e53f6a6105a756b6d960f05310d6d0e8ac7476ce8a7da5d4c",
+      "research/planning/threshold_design.py": "2eddf0a0d29621ecafedbdb23d31aebfe141f6fa63a2a4bb3a1a144ca508e8f1",
+      "research/planning/threshold_results.json": "73f9625f54091efee48f817f551247d6fd2a6e724da64d1a2f42f4bb29423537"
+    },
+    "sources_unchanged_during_run": true,
+    "summaries": {
+      "threshold": {
+        "planned": 20,
+        "complete": 20,
+        "strict_direct_gain_vs_total": 14,
+        "strict_direct_gain_vs_strong_simple": 5,
+        "median_saving_vs_total_exact": "47/550",
+        "maximum_saving_vs_total_exact": "3/11",
+        "median_saving_vs_strong_simple_exact": "0",
+        "maximum_saving_vs_strong_simple_exact": "1/11"
+      },
+      "and": {
+        "planned": 8,
+        "complete": 8,
+        "strict_direct_gain_vs_total": 8,
+        "strict_direct_gain_vs_strong_simple": 0,
+        "median_saving_vs_total_exact": "19/30",
+        "maximum_saving_vs_total_exact": "11/13",
+        "median_saving_vs_strong_simple_exact": "0",
+        "maximum_saving_vs_strong_simple_exact": "0"
+      },
+      "star": {
+        "planned": 16,
+        "complete": 14,
+        "strict_direct_gain_vs_total": 14,
+        "strict_direct_gain_vs_strong_simple": 0
+      }
+    },
+    "worker_error": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 333, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 270, in main\n    return _worker()\n           ^^^^^^^^^\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 244, in _worker\n    _write(state)\n  File \"<workspace>\\130U-FinLLM-certifiable\\research\\planning\\run_localization.py\", line 54, in _write\n    temporary.replace(OUTPUT)\n  File \"<runtime>\\dependencies\\python\\Lib\\pathlib.py\", line 1376, in replace\n    os.replace(self, target)\nPermissionError: [WinError 5] Access is denied.: '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json.tmp' -> '<workspace>\\\\130U-FinLLM-certifiable\\\\research\\\\planning\\\\localization_results.json'"
+  }
+}

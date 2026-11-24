@@ -1,0 +1,5 @@
+{
+    "review_id": "R063",
+    "verdict": "invalid",
+    "reason": "The calculation divides the revenue decrease by 2017 revenue, whereas the percentage decrease from 2016 must use 2016 revenue as its denominator."
+  }

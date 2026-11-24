@@ -1,0 +1,1 @@
+{"answer":"313.1147540984","unit":"percent","expression":"(25.2 - 6.1) / 6.1 * 100","low":"308.9430894309","high":"317.3553719008","reliable_digits":"1","explanation":"Each expense total is rounded within 0.05 million; the minimum uses 25.15 and 6.15, and the maximum uses 25.25 and 6.05."}

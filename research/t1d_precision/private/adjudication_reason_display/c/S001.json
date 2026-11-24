@@ -1,0 +1,20 @@
+{
+  "review_id": "S001",
+  "kind": "c",
+  "display_order": [
+    {
+      "source_round": "first",
+      "original_reason": "The table gives 2010 employee-related costs 105 and total 2010 restructuring costs 156. Model computes the employee share of that year's aggregate. Gold denominator 190 is the employee-related total across 2010 and 2011, not aggregate restructuring costs (which are 289 across both years). Thus gold uses a different category/period denominator unsupported by the requested 2010 share.",
+      "display_reason": "The table gives 2010 employee-related costs 105 and total 2010 restructuring costs 156. Model computes the employee share of that year's aggregate. Gold denominator 190 is the employee-related total across 2010 and 2011, not aggregate restructuring costs (which are 289 across both years). Thus gold uses a different category/period denominator unsupported by the requested 2010 share.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "second",
+      "original_reason": "Row 1 reports 2010 employee-related costs of $105 million and total restructuring costs of $156 million. The model reasonably uses the 2010 total as denominator. The reference instead uses $190 million, the employee-related total across 2010–2011 in row 3; the question permits the model's reading.",
+      "display_reason": "Row 1 reports 2010 employee-related costs of $105 million and total restructuring costs of $156 million. The model reasonably uses the 2010 total as denominator. The reference instead uses $190 million, the employee-related total across 2010–2011 in row 3; the question permits the model's reading.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

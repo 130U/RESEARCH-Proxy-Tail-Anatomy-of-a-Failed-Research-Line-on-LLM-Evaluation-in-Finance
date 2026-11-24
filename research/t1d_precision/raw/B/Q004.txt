@@ -1,0 +1,1 @@
+{"answer":"1723732.78","unit":"dollars","expression":"45686 * 37.73","low":"1723504.35","high":"1723961.21","reliable_digits":"4","explanation":"The exact 45,686 shares multiplied by the average price of $37.73 gives the total cost; rounding the price to cents implies uncertainty of $228.43."}

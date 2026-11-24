@@ -1,0 +1,211 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R033",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "at its catlettsburg , kentucky refinery , map has completed the approximately $ 440 million multi-year integrated investment program to upgrade product yield realizations and reduce fixed and variable manufacturing expenses ."
+      },
+      {
+        "location": "text_1",
+        "text": "this program involves the expansion , conversion and retirement of certain refinery processing units that , in addition to improving profitability , will allow the refinery to begin producing low-sulfur ( tier 2 ) gasoline ."
+      },
+      {
+        "location": "text_2",
+        "text": "project startup was in the first quarter of 2004 ."
+      },
+      {
+        "location": "text_3",
+        "text": "in the fourth quarter of 2003 , map commenced approximately $ 300 million in new capital projects for its 74000 bpd detroit , michigan refinery ."
+      },
+      {
+        "location": "text_4",
+        "text": "one of the projects , a $ 110 million expansion project , is expected to raise the crude oil capacity at the refinery by 35 percent to 100000 bpd ."
+      },
+      {
+        "location": "text_5",
+        "text": "other projects are expected to enable the refinery to produce new clean fuels and further control regulated air emissions ."
+      },
+      {
+        "location": "text_6",
+        "text": "completion of the projects is scheduled for the fourth quarter of 2005 ."
+      },
+      {
+        "location": "text_7",
+        "text": "marathon will loan map the funds necessary for these upgrade and expansion projects ."
+      },
+      {
+        "location": "text_8",
+        "text": "marketing in 2003 , map 2019s refined product sales volumes ( excluding matching buy/sell transactions ) totaled 19.8 billion gallons ( 1293000 bpd ) ."
+      },
+      {
+        "location": "text_9",
+        "text": "excluding sales related to matching buy/sell transactions , the wholesale distribution of petroleum products to private brand marketers and to large commercial and industrial consumers , primarily located in the midwest , the upper great plains and the southeast , and sales in the spot market , accounted for approximately 70 percent of map 2019s refined product sales volumes in 2003 ."
+      },
+      {
+        "location": "text_10",
+        "text": "approximately 50 percent of map 2019s gasoline volumes and 91 percent of its distillate volumes were sold on a wholesale or spot market basis to independent unbranded customers or other wholesalers in 2003 ."
+      },
+      {
+        "location": "text_11",
+        "text": "approximately half of map 2019s propane is sold into the home heating markets and industrial consumers purchase the balance ."
+      },
+      {
+        "location": "text_12",
+        "text": "propylene , cumene , aromatics , aliphatics , and sulfur are marketed to customers in the chemical industry ."
+      },
+      {
+        "location": "text_13",
+        "text": "base lube oils and slack wax are sold throughout the united states ."
+      },
+      {
+        "location": "text_14",
+        "text": "pitch is also sold domestically , but approximately 13 percent of pitch products are exported into growing markets in canada , mexico , india , and south america ."
+      },
+      {
+        "location": "text_15",
+        "text": "map markets asphalt through owned and leased terminals throughout the midwest and southeast ."
+      },
+      {
+        "location": "text_16",
+        "text": "the map customer base includes approximately 900 asphalt-paving contractors , government entities ( states , counties , cities and townships ) and asphalt roofing shingle manufacturers ."
+      },
+      {
+        "location": "text_17",
+        "text": "the following table sets forth the volume of map 2019s consolidated refined product sales by product group for each of the last three years : refined product sales ( thousands of barrels per day ) 2003 2002 2001 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "<i>(Thousands of Barrels per Day)</i>",
+          "2003",
+          "2002",
+          "2001"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Gasoline",
+          "776",
+          "773",
+          "748"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Distillates",
+          "365",
+          "346",
+          "345"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Propane",
+          "21",
+          "22",
+          "21"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Feedstocks and Special Products",
+          "97",
+          "82",
+          "71"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Heavy Fuel Oil",
+          "24",
+          "20",
+          "41"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Asphalt",
+          "74",
+          "75",
+          "78"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "TOTAL",
+          "1,357",
+          "1,318",
+          "1,304"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Matching Buy/Sell Volumes included in above",
+          "64",
+          "71",
+          "45"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_18",
+        "text": "map sells reformulated gasoline in parts of its marketing territory , primarily chicago , illinois ; louisville , kentucky ; northern kentucky ; and milwaukee , wisconsin ."
+      },
+      {
+        "location": "text_19",
+        "text": "map also sells low-vapor-pressure gasoline in nine states ."
+      },
+      {
+        "location": "text_20",
+        "text": "as of december 31 , 2003 , map supplied petroleum products to approximately 3900 marathon and ashland branded retail outlets located primarily in michigan , ohio , indiana , kentucky and illinois ."
+      },
+      {
+        "location": "text_21",
+        "text": "branded retail outlets are also located in florida , georgia , wisconsin , west virginia , minnesota , tennessee , virginia , pennsylvania , north carolina , south carolina and alabama. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was map's 3 year growth of gasoline production?",
+  "reference_program": "subtract(776, 748), divide(#0, 748)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "776",
+      "raw": "776",
+      "location": "table_1:1",
+      "context": "Gasoline | 2003"
+    },
+    "x1": {
+      "program_token": "748",
+      "raw": "748",
+      "location": "table_1:3",
+      "context": "Gasoline | 2001"
+    }
+  }
+}

@@ -1,0 +1,8237 @@
+{
+  "GIS/2017/page_31.pdf-4": [
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "2": "Long-term debt (a)",
+        "3": "Accrued interest",
+        "4": "Operating leases (b)",
+        "5": "Capital leases",
+        "6": "Purchase obligations (c)",
+        "7": "Total contractual obligations"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/10",
+        "3/10"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Long-term debt (a)",
+        "3": "Accrued interest",
+        "4": "Operating leases (b)",
+        "5": "Capital leases",
+        "6": "Purchase obligations (c)",
+        "8": "Other long-term obligations (d)",
+        "9": "Total long-term obligations"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "7": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "7": "Total contractual obligations",
+        "8": "Other long-term obligations (d)",
+        "9": "Total long-term obligations"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20"
+      ]
+    }
+  ],
+  "GPN/2013/page_87.pdf-1": [],
+  "GPN/2013/page_87.pdf-2": [],
+  "GS/2014/page_165.pdf-2": [
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "2": "Compensation and benefits",
+        "3": "Noncontrolling interests<sup>1</sup>",
+        "4": "Income tax-related liabilities",
+        "5": "Employee interests in consolidated funds",
+        "6": "Subordinated liabilities issued by consolidated VIEs",
+        "7": "Accrued expenses and other",
+        "8": "Total"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2",
+        "7/2"
+      ]
+    }
+  ],
+  "GS/2018/page_78.pdf-4": [
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "2": "Alternative investments",
+        "3": "Equity",
+        "4": "Fixed income",
+        "5": "Total long-term AUS"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2",
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "2": "Alternative investments",
+        "3": "Equity",
+        "4": "Fixed income",
+        "6": "Liquidity products",
+        "7": "Total AUS"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2",
+        "5/2",
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "5": "Total long-term AUS",
+        "6": "Liquidity products",
+        "7": "Total AUS"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2",
+        "3/2"
+      ]
+    }
+  ],
+  "HIG/2004/page_140.pdf-1": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Establishing GMDB and other benefit reserves for annuity contracts",
+        "2": "Reclassifying certain separate accounts to general account",
+        "4": "Total cumulative effect of adoption"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Establishing GMDB and other benefit reserves for annuity contracts",
+        "2": "Reclassifying certain separate accounts to general account",
+        "3": "Other",
+        "4": "Total cumulative effect of adoption"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    }
+  ],
+  "HIG/2004/page_140.pdf-3": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Establishing GMDB and other benefit reserves for annuity contracts",
+        "2": "Reclassifying certain separate accounts to general account",
+        "4": "Total cumulative effect of adoption"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Establishing GMDB and other benefit reserves for annuity contracts",
+        "2": "Reclassifying certain separate accounts to general account",
+        "3": "Other",
+        "4": "Total cumulative effect of adoption"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    }
+  ],
+  "HIG/2011/page_53.pdf-1": [
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Direct",
+        "3": "Assumed Reinsurance",
+        "4": "London Market",
+        "5": "Total"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Direct",
+        "3": "Assumed Reinsurance",
+        "4": "London Market",
+        "6": "Ceded",
+        "7": "Net"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": 1,
+        "5": -1,
+        "6": 1,
+        "7": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "3": "Assumed Reinsurance",
+        "4": "London Market",
+        "5": "Total",
+        "6": "Ceded",
+        "7": "Net"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "5": "Total",
+        "6": "Ceded",
+        "7": "Net"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2"
+      ]
+    }
+  ],
+  "HIG/2011/page_53.pdf-2": [
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Direct",
+        "3": "Assumed Reinsurance",
+        "4": "London Market",
+        "5": "Total"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Direct",
+        "3": "Assumed Reinsurance",
+        "4": "London Market",
+        "6": "Ceded",
+        "7": "Net"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": 1,
+        "5": -1,
+        "6": 1,
+        "7": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "3": "Assumed Reinsurance",
+        "4": "London Market",
+        "5": "Total",
+        "6": "Ceded",
+        "7": "Net"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "5": "Total",
+        "6": "Ceded",
+        "7": "Net"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2"
+      ]
+    }
+  ],
+  "HIG/2011/page_53.pdf-4": [
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Direct",
+        "3": "Assumed Reinsurance",
+        "4": "London Market",
+        "5": "Total"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Direct",
+        "3": "Assumed Reinsurance",
+        "4": "London Market",
+        "6": "Ceded",
+        "7": "Net"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": 1,
+        "5": -1,
+        "6": 1,
+        "7": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "3": "Assumed Reinsurance",
+        "4": "London Market",
+        "5": "Total",
+        "6": "Ceded",
+        "7": "Net"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "5": "Total",
+        "6": "Ceded",
+        "7": "Net"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2"
+      ]
+    }
+  ],
+  "HII/2015/page_88.pdf-1": [],
+  "HUM/2009/page_105.pdf-2": [],
+  "HUM/2014/page_44.pdf-1": [],
+  "HUM/2017/page_118.pdf-1": [],
+  "HUM/2017/page_118.pdf-2": [],
+  "HUM/2017/page_118.pdf-3": [],
+  "ILMN/2008/page_86.pdf-2": [
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "2": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Balance at December 31, 2007",
+        "1": "Increases related to current year tax positions",
+        "2": "Balance at December 28, 2008"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2"
+      ]
+    }
+  ],
+  "ILMN/2008/page_86.pdf-4": [
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "2": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Balance at December 31, 2007",
+        "1": "Increases related to current year tax positions",
+        "2": "Balance at December 28, 2008"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2"
+      ]
+    }
+  ],
+  "IP/2006/page_38.pdf-3": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1
+      },
+      "columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "labels": {
+        "1": "Total debt (a)",
+        "2": "Lease obligations (b)",
+        "3": "Purchase obligations (c,d)",
+        "4": "Total"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ]
+    }
+  ],
+  "IP/2009/page_84.pdf-1": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1
+      },
+      "columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "labels": {
+        "1": "Lease obligations",
+        "2": "Purchase obligations (a)",
+        "3": "Total"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2",
+        "3/2",
+        "3/2",
+        "3/2",
+        "3/2"
+      ]
+    }
+  ],
+  "IP/2009/page_84.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1
+      },
+      "columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "labels": {
+        "1": "Lease obligations",
+        "2": "Purchase obligations (a)",
+        "3": "Total"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2",
+        "3/2",
+        "3/2",
+        "3/2",
+        "3/2"
+      ]
+    }
+  ],
+  "IP/2009/page_84.pdf-4": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1
+      },
+      "columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "labels": {
+        "1": "Lease obligations",
+        "2": "Purchase obligations (a)",
+        "3": "Total"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2",
+        "3/2",
+        "3/2",
+        "3/2",
+        "3/2"
+      ]
+    }
+  ],
+  "IPG/2006/page_77.pdf-1": [
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "2007",
+        "1": "2008<sup>1</sup>",
+        "2": "2009",
+        "3": "2010",
+        "4": "2011",
+        "5": "Thereafter",
+        "6": "Total long-term debt"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    }
+  ],
+  "JPM/2003/page_106.pdf-2": [],
+  "JPM/2003/page_106.pdf-4": [],
+  "JPM/2008/page_117.pdf-1": [],
+  "JPM/2008/page_117.pdf-2": [],
+  "JPM/2008/page_87.pdf-2": [],
+  "KHC/2018/page_132.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "1": "Balance at January 3, 2016",
+        "2": "Exercise of stock options, issuance of other stock awards, and other",
+        "3": "Balance at December 31, 2016"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1,
+        "4": 1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "1": "Balance at January 3, 2016",
+        "2": "Exercise of stock options, issuance of other stock awards, and other",
+        "3": "Balance at December 31, 2016",
+        "4": "Exercise of stock options, issuance of other stock awards, and other"
+      },
+      "residuals": [
+        "2",
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": -1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "1": "Balance at January 3, 2016",
+        "2": "Exercise of stock options, issuance of other stock awards, and other",
+        "4": "Exercise of stock options, issuance of other stock awards, and other",
+        "5": "Balance at December 30, 2017"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "1": "Balance at January 3, 2016",
+        "2": "Exercise of stock options, issuance of other stock awards, and other",
+        "4": "Exercise of stock options, issuance of other stock awards, and other",
+        "6": "Exercise of stock options, issuance of other stock awards, and other",
+        "7": "Balance at December 29, 2018"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2",
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "5": -1,
+        "6": 1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "1": "Balance at January 3, 2016",
+        "2": "Exercise of stock options, issuance of other stock awards, and other",
+        "5": "Balance at December 30, 2017",
+        "6": "Exercise of stock options, issuance of other stock awards, and other"
+      },
+      "residuals": [
+        "1",
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "1": "Balance at January 3, 2016",
+        "2": "Exercise of stock options, issuance of other stock awards, and other",
+        "6": "Exercise of stock options, issuance of other stock awards, and other",
+        "7": "Balance at December 29, 2018"
+      },
+      "residuals": [
+        "-2",
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "3": -1,
+        "4": 1,
+        "6": 1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "1": "Balance at January 3, 2016",
+        "3": "Balance at December 31, 2016",
+        "4": "Exercise of stock options, issuance of other stock awards, and other",
+        "6": "Exercise of stock options, issuance of other stock awards, and other"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "4": 1,
+        "5": -1,
+        "6": 1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "1": "Balance at January 3, 2016",
+        "4": "Exercise of stock options, issuance of other stock awards, and other",
+        "5": "Balance at December 30, 2017",
+        "6": "Exercise of stock options, issuance of other stock awards, and other"
+      },
+      "residuals": [
+        "-2",
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "2": "Exercise of stock options, issuance of other stock awards, and other",
+        "3": "Balance at December 31, 2016",
+        "7": "Balance at December 29, 2018"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2",
+        "3/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "4": -1,
+        "6": -1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "2": "Exercise of stock options, issuance of other stock awards, and other",
+        "4": "Exercise of stock options, issuance of other stock awards, and other",
+        "6": "Exercise of stock options, issuance of other stock awards, and other"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "2": "Exercise of stock options, issuance of other stock awards, and other",
+        "3": "Balance at December 31, 2016",
+        "4": "Exercise of stock options, issuance of other stock awards, and other",
+        "7": "Balance at December 29, 2018"
+      },
+      "residuals": [
+        "2",
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": 1,
+        "5": -1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "3": "Balance at December 31, 2016",
+        "4": "Exercise of stock options, issuance of other stock awards, and other",
+        "5": "Balance at December 30, 2017"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "3": "Balance at December 31, 2016",
+        "4": "Exercise of stock options, issuance of other stock awards, and other",
+        "6": "Exercise of stock options, issuance of other stock awards, and other",
+        "7": "Balance at December 29, 2018"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "4": 1,
+        "5": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "4": "Exercise of stock options, issuance of other stock awards, and other",
+        "5": "Balance at December 30, 2017",
+        "7": "Balance at December 29, 2018"
+      },
+      "residuals": [
+        "-1",
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2"
+      ]
+    },
+    {
+      "rows": {
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "4": "Exercise of stock options, issuance of other stock awards, and other",
+        "5": "Balance at December 30, 2017",
+        "6": "Exercise of stock options, issuance of other stock awards, and other",
+        "7": "Balance at December 29, 2018"
+      },
+      "residuals": [
+        "2",
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "5": "Balance at December 30, 2017",
+        "6": "Exercise of stock options, issuance of other stock awards, and other",
+        "7": "Balance at December 29, 2018"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2",
+        "3/2"
+      ]
+    }
+  ],
+  "LMT/2014/page_77.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "1": "Weighted average common shares outstanding for basic computations",
+        "2": "Weighted average dilutive effect of equity awards",
+        "3": "Weighted average common shares outstanding for diluted computations"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20",
+        "3/20",
+        "3/20"
+      ]
+    }
+  ],
+  "LMT/2014/page_77.pdf-3": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "1": "Weighted average common shares outstanding for basic computations",
+        "2": "Weighted average dilutive effect of equity awards",
+        "3": "Weighted average common shares outstanding for diluted computations"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20",
+        "3/20",
+        "3/20"
+      ]
+    }
+  ],
+  "LMT/2014/page_77.pdf-4": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "1": "Weighted average common shares outstanding for basic computations",
+        "2": "Weighted average dilutive effect of equity awards",
+        "3": "Weighted average common shares outstanding for diluted computations"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20",
+        "3/20",
+        "3/20"
+      ]
+    }
+  ],
+  "LMT/2015/page_89.pdf-2": [],
+  "LMT/2015/page_89.pdf-3": [],
+  "LMT/2015/page_89.pdf-4": [],
+  "MAR/2004/page_45.pdf-1": [],
+  "MAR/2004/page_45.pdf-2": [],
+  "MAS/2012/page_26.pdf-1": [],
+  "MRK/2013/page_125.pdf-4": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Balance January 1",
+        "2": "Additions related to current year positions",
+        "3": "Additions related to prior year positions",
+        "4": "Reductions for tax positions of prior years<sup>(1)</sup>",
+        "5": "Settlements",
+        "6": "Lapse of statute of limitations",
+        "7": "Balance December 31"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2",
+        "7/2"
+      ]
+    }
+  ],
+  "MRO/2003/page_45.pdf-3": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "1": "Gasoline",
+        "2": "Distillates",
+        "3": "Propane",
+        "4": "Feedstocks and Special Products",
+        "5": "Heavy Fuel Oil",
+        "6": "Asphalt",
+        "7": "TOTAL"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2",
+        "7/2",
+        "7/2"
+      ]
+    }
+  ],
+  "MRO/2003/page_84.pdf-1": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Mitigate price risk",
+        "2": "Protect carrying values of excess inventories",
+        "3": "Protect margin on fixed price sales",
+        "4": "Protect crack spread values",
+        "5": "Trading activities",
+        "6": "Total net derivative losses"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "6": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Mitigate price risk",
+        "2": "Protect carrying values of excess inventories",
+        "3": "Protect margin on fixed price sales",
+        "6": "Total net derivative losses"
+      },
+      "residuals": [
+        "-2",
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    }
+  ],
+  "MRO/2003/page_84.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Mitigate price risk",
+        "2": "Protect carrying values of excess inventories",
+        "3": "Protect margin on fixed price sales",
+        "4": "Protect crack spread values",
+        "5": "Trading activities",
+        "6": "Total net derivative losses"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "6": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Mitigate price risk",
+        "2": "Protect carrying values of excess inventories",
+        "3": "Protect margin on fixed price sales",
+        "6": "Total net derivative losses"
+      },
+      "residuals": [
+        "-2",
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    }
+  ],
+  "MRO/2003/page_84.pdf-3": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Mitigate price risk",
+        "2": "Protect carrying values of excess inventories",
+        "3": "Protect margin on fixed price sales",
+        "4": "Protect crack spread values",
+        "5": "Trading activities",
+        "6": "Total net derivative losses"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "6": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Mitigate price risk",
+        "2": "Protect carrying values of excess inventories",
+        "3": "Protect margin on fixed price sales",
+        "6": "Total net derivative losses"
+      },
+      "residuals": [
+        "-2",
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    }
+  ],
+  "MRO/2004/page_125.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "Sales and transfers of oil and gas produced, net of production, transportation, and administrative costs",
+        "2": "Net changes in prices and production, transportation and administrative costs related to future production",
+        "3": "Extensions, discoveries and improved recovery, less related costs",
+        "4": "Development costs incurred during the period",
+        "5": "Changes in estimated future development costs",
+        "6": "Revisions of previous quantity estimates",
+        "7": "Net changes in purchases and sales of minerals in place",
+        "8": "Net change in exchanges of minerals in place",
+        "9": "Accretion of discount",
+        "10": "Net change in income taxes",
+        "11": "Timing and other",
+        "12": "Net change for the year"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "6"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "6": -1,
+        "8": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "Sales and transfers of oil and gas produced, net of production, transportation, and administrative costs",
+        "2": "Net changes in prices and production, transportation and administrative costs related to future production",
+        "3": "Extensions, discoveries and improved recovery, less related costs",
+        "4": "Development costs incurred during the period",
+        "6": "Revisions of previous quantity estimates",
+        "8": "Net change in exchanges of minerals in place",
+        "11": "Timing and other"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "6": 1,
+        "8": -1,
+        "12": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "Sales and transfers of oil and gas produced, net of production, transportation, and administrative costs",
+        "2": "Net changes in prices and production, transportation and administrative costs related to future production",
+        "4": "Development costs incurred during the period",
+        "6": "Revisions of previous quantity estimates",
+        "8": "Net change in exchanges of minerals in place",
+        "12": "Net change for the year"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "6": 1,
+        "8": 1,
+        "9": -1,
+        "12": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "Sales and transfers of oil and gas produced, net of production, transportation, and administrative costs",
+        "2": "Net changes in prices and production, transportation and administrative costs related to future production",
+        "4": "Development costs incurred during the period",
+        "6": "Revisions of previous quantity estimates",
+        "8": "Net change in exchanges of minerals in place",
+        "9": "Accretion of discount",
+        "12": "Net change for the year"
+      },
+      "residuals": [
+        "-3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "6": 1,
+        "8": -1,
+        "9": 1,
+        "12": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "Sales and transfers of oil and gas produced, net of production, transportation, and administrative costs",
+        "2": "Net changes in prices and production, transportation and administrative costs related to future production",
+        "6": "Revisions of previous quantity estimates",
+        "8": "Net change in exchanges of minerals in place",
+        "9": "Accretion of discount",
+        "12": "Net change for the year"
+      },
+      "residuals": [
+        "3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "6": 1,
+        "8": 1,
+        "13": -1,
+        "14": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "Sales and transfers of oil and gas produced, net of production, transportation, and administrative costs",
+        "2": "Net changes in prices and production, transportation and administrative costs related to future production",
+        "6": "Revisions of previous quantity estimates",
+        "8": "Net change in exchanges of minerals in place",
+        "13": "Beginning of year",
+        "14": "End of year"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "3": 1,
+        "4": 1,
+        "5": -1,
+        "6": 1,
+        "8": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "Sales and transfers of oil and gas produced, net of production, transportation, and administrative costs",
+        "3": "Extensions, discoveries and improved recovery, less related costs",
+        "4": "Development costs incurred during the period",
+        "5": "Changes in estimated future development costs",
+        "6": "Revisions of previous quantity estimates",
+        "8": "Net change in exchanges of minerals in place",
+        "11": "Timing and other"
+      },
+      "residuals": [
+        "-3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "3": 1,
+        "5": -1,
+        "6": 1,
+        "8": 1,
+        "9": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "Sales and transfers of oil and gas produced, net of production, transportation, and administrative costs",
+        "3": "Extensions, discoveries and improved recovery, less related costs",
+        "5": "Changes in estimated future development costs",
+        "6": "Revisions of previous quantity estimates",
+        "8": "Net change in exchanges of minerals in place",
+        "9": "Accretion of discount",
+        "11": "Timing and other"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "3": 1,
+        "6": 1,
+        "8": 1,
+        "12": 1,
+        "13": -1,
+        "14": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "Sales and transfers of oil and gas produced, net of production, transportation, and administrative costs",
+        "3": "Extensions, discoveries and improved recovery, less related costs",
+        "6": "Revisions of previous quantity estimates",
+        "8": "Net change in exchanges of minerals in place",
+        "12": "Net change for the year",
+        "13": "Beginning of year",
+        "14": "End of year"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "6": 1,
+        "7": -1,
+        "8": 1,
+        "9": 1,
+        "11": 1,
+        "12": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "Sales and transfers of oil and gas produced, net of production, transportation, and administrative costs",
+        "6": "Revisions of previous quantity estimates",
+        "7": "Net changes in purchases and sales of minerals in place",
+        "8": "Net change in exchanges of minerals in place",
+        "9": "Accretion of discount",
+        "11": "Timing and other",
+        "12": "Net change for the year"
+      },
+      "residuals": [
+        "-3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": -1,
+        "4": -1,
+        "5": -1,
+        "8": -1,
+        "11": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "2": "Net changes in prices and production, transportation and administrative costs related to future production",
+        "3": "Extensions, discoveries and improved recovery, less related costs",
+        "4": "Development costs incurred during the period",
+        "5": "Changes in estimated future development costs",
+        "8": "Net change in exchanges of minerals in place",
+        "11": "Timing and other"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": -1,
+        "5": 1,
+        "8": 1,
+        "10": 1,
+        "11": 1,
+        "15": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "2": "Net changes in prices and production, transportation and administrative costs related to future production",
+        "3": "Extensions, discoveries and improved recovery, less related costs",
+        "5": "Changes in estimated future development costs",
+        "8": "Net change in exchanges of minerals in place",
+        "10": "Net change in income taxes",
+        "11": "Timing and other",
+        "15": "Net change for the year from discontinued operations"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "7": 1,
+        "8": -1,
+        "15": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "2": "Net changes in prices and production, transportation and administrative costs related to future production",
+        "3": "Extensions, discoveries and improved recovery, less related costs",
+        "5": "Changes in estimated future development costs",
+        "7": "Net changes in purchases and sales of minerals in place",
+        "8": "Net change in exchanges of minerals in place",
+        "15": "Net change for the year from discontinued operations"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "7": 1,
+        "8": 1,
+        "9": -1,
+        "15": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "2": "Net changes in prices and production, transportation and administrative costs related to future production",
+        "3": "Extensions, discoveries and improved recovery, less related costs",
+        "5": "Changes in estimated future development costs",
+        "7": "Net changes in purchases and sales of minerals in place",
+        "8": "Net change in exchanges of minerals in place",
+        "9": "Accretion of discount",
+        "15": "Net change for the year from discontinued operations"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": -1,
+        "5": -1,
+        "7": -1,
+        "8": -1,
+        "9": -1,
+        "15": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "3": "Extensions, discoveries and improved recovery, less related costs",
+        "4": "Development costs incurred during the period",
+        "5": "Changes in estimated future development costs",
+        "7": "Net changes in purchases and sales of minerals in place",
+        "8": "Net change in exchanges of minerals in place",
+        "9": "Accretion of discount",
+        "15": "Net change for the year from discontinued operations"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "6": -1,
+        "7": -1,
+        "8": -1,
+        "11": -1,
+        "12": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "3": "Extensions, discoveries and improved recovery, less related costs",
+        "6": "Revisions of previous quantity estimates",
+        "7": "Net changes in purchases and sales of minerals in place",
+        "8": "Net change in exchanges of minerals in place",
+        "11": "Timing and other",
+        "12": "Net change for the year"
+      },
+      "residuals": [
+        "3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": -1,
+        "5": 1,
+        "8": 1,
+        "9": 1,
+        "11": 1,
+        "15": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "3": "Extensions, discoveries and improved recovery, less related costs",
+        "4": "Development costs incurred during the period",
+        "5": "Changes in estimated future development costs",
+        "8": "Net change in exchanges of minerals in place",
+        "9": "Accretion of discount",
+        "11": "Timing and other",
+        "15": "Net change for the year from discontinued operations"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": 1,
+        "7": 1,
+        "8": -1,
+        "10": 1,
+        "11": 1,
+        "15": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "3": "Extensions, discoveries and improved recovery, less related costs",
+        "4": "Development costs incurred during the period",
+        "7": "Net changes in purchases and sales of minerals in place",
+        "8": "Net change in exchanges of minerals in place",
+        "10": "Net change in income taxes",
+        "11": "Timing and other",
+        "15": "Net change for the year from discontinued operations"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "4": 1,
+        "5": 1,
+        "8": -1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "15": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "4": "Development costs incurred during the period",
+        "5": "Changes in estimated future development costs",
+        "8": "Net change in exchanges of minerals in place",
+        "10": "Net change in income taxes",
+        "11": "Timing and other",
+        "12": "Net change for the year",
+        "15": "Net change for the year from discontinued operations"
+      },
+      "residuals": [
+        "-3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "4": 1,
+        "5": 1,
+        "8": 1,
+        "11": 1,
+        "12": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "4": "Development costs incurred during the period",
+        "5": "Changes in estimated future development costs",
+        "8": "Net change in exchanges of minerals in place",
+        "11": "Timing and other",
+        "12": "Net change for the year"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "4": 1,
+        "5": 1,
+        "8": 1,
+        "11": 1,
+        "13": 1,
+        "14": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "4": "Development costs incurred during the period",
+        "5": "Changes in estimated future development costs",
+        "8": "Net change in exchanges of minerals in place",
+        "11": "Timing and other",
+        "13": "Beginning of year",
+        "14": "End of year"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "5": 1,
+        "6": -1,
+        "8": 1,
+        "9": 1,
+        "15": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "5": "Changes in estimated future development costs",
+        "6": "Revisions of previous quantity estimates",
+        "8": "Net change in exchanges of minerals in place",
+        "9": "Accretion of discount",
+        "15": "Net change for the year from discontinued operations"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "5": 1,
+        "8": -1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "15": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "5": "Changes in estimated future development costs",
+        "8": "Net change in exchanges of minerals in place",
+        "9": "Accretion of discount",
+        "10": "Net change in income taxes",
+        "11": "Timing and other",
+        "12": "Net change for the year",
+        "15": "Net change for the year from discontinued operations"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "5": 1,
+        "8": 1,
+        "10": 1,
+        "11": 1,
+        "13": -1,
+        "14": 1,
+        "15": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "5": "Changes in estimated future development costs",
+        "8": "Net change in exchanges of minerals in place",
+        "10": "Net change in income taxes",
+        "11": "Timing and other",
+        "13": "Beginning of year",
+        "14": "End of year",
+        "15": "Net change for the year from discontinued operations"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "11": -1,
+        "15": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "6": "Revisions of previous quantity estimates",
+        "7": "Net changes in purchases and sales of minerals in place",
+        "8": "Net change in exchanges of minerals in place",
+        "11": "Timing and other",
+        "15": "Net change for the year from discontinued operations"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "12": 1,
+        "13": 1,
+        "14": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "12": "Net change for the year",
+        "13": "Beginning of year",
+        "14": "End of year"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2",
+        "3/2"
+      ]
+    }
+  ],
+  "MRO/2007/page_136.pdf-2": [],
+  "MSI/2008/page_69.pdf-2": [],
+  "MSI/2014/page_76.pdf-1": [],
+  "NCLH/2018/page_64.pdf-1": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "labels": {
+        "1": "Long-term debt (1)",
+        "2": "Operating leases (2)",
+        "3": "Ship construction contracts (3)",
+        "4": "Port facilities (4)",
+        "5": "Interest (5)",
+        "6": "Other (6)",
+        "7": "Total (7)"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2",
+        "7/2",
+        "7/2",
+        "7/2",
+        "7/2"
+      ]
+    }
+  ],
+  "NCLH/2018/page_64.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "labels": {
+        "1": "Long-term debt (1)",
+        "2": "Operating leases (2)",
+        "3": "Ship construction contracts (3)",
+        "4": "Port facilities (4)",
+        "5": "Interest (5)",
+        "6": "Other (6)",
+        "7": "Total (7)"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2",
+        "7/2",
+        "7/2",
+        "7/2",
+        "7/2"
+      ]
+    }
+  ],
+  "NCLH/2018/page_97.pdf-1": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "2019",
+        "2": "2020",
+        "3": "2021",
+        "4": "2022",
+        "5": "2023",
+        "6": "Thereafter",
+        "7": "Total"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    }
+  ],
+  "NCLH/2018/page_97.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "2019",
+        "2": "2020",
+        "3": "2021",
+        "4": "2022",
+        "5": "2023",
+        "6": "Thereafter",
+        "7": "Total"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    }
+  ],
+  "NWS/2017/page_119.pdf-1": [
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1,
+        "8": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "1": "Other current assets",
+        "2": "Intangible assets",
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "8": "Current liabilities"
+      },
+      "residuals": [
+        "3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "1": "Other current assets",
+        "2": "Intangible assets",
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "5": "Other non-current assets",
+        "6": "Total assets acquired"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "4": -1,
+        "5": 1,
+        "10": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "1": "Other current assets",
+        "2": "Intangible assets",
+        "4": "Goodwill",
+        "5": "Other non-current assets",
+        "10": "Borrowings"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "4": -1,
+        "5": 1,
+        "10": 1,
+        "11": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "1": "Other current assets",
+        "2": "Intangible assets",
+        "4": "Goodwill",
+        "5": "Other non-current assets",
+        "10": "Borrowings",
+        "11": "Other non-current liabilities"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "3": 1,
+        "4": 1,
+        "6": -1,
+        "8": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "1": "Other current assets",
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "6": "Total assets acquired",
+        "8": "Current liabilities",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "3": 1,
+        "4": 1,
+        "6": -1,
+        "9": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "1": "Other current assets",
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "6": "Total assets acquired",
+        "9": "Deferred income taxes",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "3": 1,
+        "4": 1,
+        "8": 1,
+        "11": 1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "1": "Other current assets",
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "8": "Current liabilities",
+        "11": "Other non-current liabilities",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "3": 1,
+        "4": 1,
+        "8": 1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "1": "Other current assets",
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "8": "Current liabilities",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "3": 1,
+        "4": 1,
+        "9": 1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "1": "Other current assets",
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "9": "Deferred income taxes",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "4": -1,
+        "8": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "1": "Other current assets",
+        "4": "Goodwill",
+        "8": "Current liabilities",
+        "10": "Borrowings",
+        "11": "Other non-current liabilities",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "4": -1,
+        "8": 1,
+        "10": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "1": "Other current assets",
+        "4": "Goodwill",
+        "8": "Current liabilities",
+        "10": "Borrowings",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "-3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "4": -1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "1": "Other current assets",
+        "4": "Goodwill",
+        "9": "Deferred income taxes",
+        "10": "Borrowings",
+        "11": "Other non-current liabilities",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "4": -1,
+        "9": 1,
+        "10": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "1": "Other current assets",
+        "4": "Goodwill",
+        "9": "Deferred income taxes",
+        "10": "Borrowings",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "4": 1,
+        "5": 1,
+        "10": 1,
+        "11": 1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "1": "Other current assets",
+        "4": "Goodwill",
+        "5": "Other non-current assets",
+        "10": "Borrowings",
+        "11": "Other non-current liabilities",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "-3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1,
+        "5": 1,
+        "11": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "2": "Intangible assets",
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "5": "Other non-current assets",
+        "11": "Other non-current liabilities"
+      },
+      "residuals": [
+        "-3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "2": 1,
+        "3": 1,
+        "8": 1,
+        "10": 1,
+        "12": 1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "2": "Intangible assets",
+        "3": "Deferred income taxes",
+        "8": "Current liabilities",
+        "10": "Borrowings",
+        "12": "Total liabilities assumed",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "2": 1,
+        "3": 1,
+        "9": 1,
+        "10": 1,
+        "12": 1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "2": "Intangible assets",
+        "3": "Deferred income taxes",
+        "9": "Deferred income taxes",
+        "10": "Borrowings",
+        "12": "Total liabilities assumed",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "2": 1,
+        "4": -1,
+        "8": 1,
+        "9": 1,
+        "10": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "2": "Intangible assets",
+        "4": "Goodwill",
+        "8": "Current liabilities",
+        "9": "Deferred income taxes",
+        "10": "Borrowings"
+      },
+      "residuals": [
+        "3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1,
+        "8": 1,
+        "10": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "2": "Intangible assets",
+        "4": "Goodwill",
+        "5": "Other non-current assets",
+        "6": "Total assets acquired",
+        "8": "Current liabilities",
+        "10": "Borrowings"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1,
+        "9": 1,
+        "10": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "2": "Intangible assets",
+        "4": "Goodwill",
+        "5": "Other non-current assets",
+        "6": "Total assets acquired",
+        "9": "Deferred income taxes",
+        "10": "Borrowings"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "3": 1,
+        "4": -1,
+        "9": 1,
+        "11": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "9": "Deferred income taxes",
+        "11": "Other non-current liabilities",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "4": 1,
+        "6": -1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "4": "Goodwill",
+        "6": "Total assets acquired",
+        "8": "Current liabilities",
+        "9": "Deferred income taxes",
+        "10": "Borrowings",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "4": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "4": "Goodwill",
+        "8": "Current liabilities",
+        "9": "Deferred income taxes",
+        "10": "Borrowings",
+        "11": "Other non-current liabilities",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "4": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "4": "Goodwill",
+        "8": "Current liabilities",
+        "9": "Deferred income taxes",
+        "10": "Borrowings",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "4": 1,
+        "12": 1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "4": "Goodwill",
+        "12": "Total liabilities assumed",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "5": 1,
+        "6": -1,
+        "9": 1,
+        "11": 1,
+        "13": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "5": "Other non-current assets",
+        "6": "Total assets acquired",
+        "9": "Deferred income taxes",
+        "11": "Other non-current liabilities",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "5": 1,
+        "9": 1,
+        "11": 1,
+        "12": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "Cash",
+        "5": "Other non-current assets",
+        "9": "Deferred income taxes",
+        "11": "Other non-current liabilities",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "6": -1,
+        "8": 1,
+        "10": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Other current assets",
+        "2": "Intangible assets",
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "6": "Total assets acquired",
+        "8": "Current liabilities",
+        "10": "Borrowings"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": -1,
+        "5": 1,
+        "11": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Other current assets",
+        "2": "Intangible assets",
+        "4": "Goodwill",
+        "5": "Other non-current assets",
+        "11": "Other non-current liabilities",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "3": -1,
+        "5": 1,
+        "9": 1,
+        "11": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Other current assets",
+        "3": "Deferred income taxes",
+        "5": "Other non-current assets",
+        "9": "Deferred income taxes",
+        "11": "Other non-current liabilities"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "3": 1,
+        "6": -1,
+        "8": 1,
+        "11": 1,
+        "13": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Other current assets",
+        "3": "Deferred income taxes",
+        "6": "Total assets acquired",
+        "8": "Current liabilities",
+        "11": "Other non-current liabilities",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "3": 1,
+        "6": -1,
+        "9": 1,
+        "11": 1,
+        "13": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Other current assets",
+        "3": "Deferred income taxes",
+        "6": "Total assets acquired",
+        "9": "Deferred income taxes",
+        "11": "Other non-current liabilities",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "3": 1,
+        "6": -1,
+        "9": 1,
+        "13": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Other current assets",
+        "3": "Deferred income taxes",
+        "6": "Total assets acquired",
+        "9": "Deferred income taxes",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "3": 1,
+        "8": 1,
+        "11": 1,
+        "12": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Other current assets",
+        "3": "Deferred income taxes",
+        "8": "Current liabilities",
+        "11": "Other non-current liabilities",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "3": 1,
+        "9": 1,
+        "11": 1,
+        "12": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Other current assets",
+        "3": "Deferred income taxes",
+        "9": "Deferred income taxes",
+        "11": "Other non-current liabilities",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "3": 1,
+        "9": 1,
+        "12": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Other current assets",
+        "3": "Deferred income taxes",
+        "9": "Deferred income taxes",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "8": 1,
+        "9": 1,
+        "10": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Other current assets",
+        "8": "Current liabilities",
+        "9": "Deferred income taxes",
+        "10": "Borrowings"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": -1,
+        "8": 1,
+        "10": 1,
+        "11": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Intangible assets",
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "8": "Current liabilities",
+        "10": "Borrowings",
+        "11": "Other non-current liabilities"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": -1,
+        "9": 1,
+        "10": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Intangible assets",
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "9": "Deferred income taxes",
+        "10": "Borrowings"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": -1,
+        "9": 1,
+        "10": 1,
+        "11": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Intangible assets",
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "9": "Deferred income taxes",
+        "10": "Borrowings",
+        "11": "Other non-current liabilities"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "4": -1,
+        "8": 1,
+        "9": 1,
+        "11": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Intangible assets",
+        "4": "Goodwill",
+        "8": "Current liabilities",
+        "9": "Deferred income taxes",
+        "11": "Other non-current liabilities",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "4": -1,
+        "8": 1,
+        "9": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Intangible assets",
+        "4": "Goodwill",
+        "8": "Current liabilities",
+        "9": "Deferred income taxes",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1,
+        "8": 1,
+        "11": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Intangible assets",
+        "4": "Goodwill",
+        "5": "Other non-current assets",
+        "6": "Total assets acquired",
+        "8": "Current liabilities",
+        "11": "Other non-current liabilities",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1,
+        "9": 1,
+        "11": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Intangible assets",
+        "4": "Goodwill",
+        "5": "Other non-current assets",
+        "6": "Total assets acquired",
+        "9": "Deferred income taxes",
+        "11": "Other non-current liabilities",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1,
+        "9": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Intangible assets",
+        "4": "Goodwill",
+        "5": "Other non-current assets",
+        "6": "Total assets acquired",
+        "9": "Deferred income taxes",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "-3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "8": 1,
+        "11": 1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Intangible assets",
+        "4": "Goodwill",
+        "5": "Other non-current assets",
+        "8": "Current liabilities",
+        "11": "Other non-current liabilities",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "9": 1,
+        "11": 1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Intangible assets",
+        "4": "Goodwill",
+        "5": "Other non-current assets",
+        "9": "Deferred income taxes",
+        "11": "Other non-current liabilities",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": 1,
+        "6": -1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "6": "Total assets acquired",
+        "9": "Deferred income taxes",
+        "10": "Borrowings",
+        "11": "Other non-current liabilities",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "-3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "3": "Deferred income taxes",
+        "4": "Goodwill",
+        "9": "Deferred income taxes",
+        "10": "Borrowings",
+        "11": "Other non-current liabilities",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "-3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "4": 1,
+        "8": 1,
+        "9": 1,
+        "11": 1,
+        "12": 1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "4": "Goodwill",
+        "8": "Current liabilities",
+        "9": "Deferred income taxes",
+        "11": "Other non-current liabilities",
+        "12": "Total liabilities assumed",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "6": 1,
+        "8": -1,
+        "9": -1,
+        "10": -1,
+        "11": -1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "6": "Total assets acquired",
+        "8": "Current liabilities",
+        "9": "Deferred income taxes",
+        "10": "Borrowings",
+        "11": "Other non-current liabilities",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "6": 1,
+        "12": -1,
+        "13": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "6": "Total assets acquired",
+        "12": "Total liabilities assumed",
+        "13": "Net assets acquired"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2"
+      ]
+    },
+    {
+      "rows": {
+        "8": 1,
+        "9": -1,
+        "11": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "8": "Current liabilities",
+        "9": "Deferred income taxes",
+        "11": "Other non-current liabilities"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2"
+      ]
+    },
+    {
+      "rows": {
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "8": "Current liabilities",
+        "9": "Deferred income taxes",
+        "10": "Borrowings",
+        "11": "Other non-current liabilities",
+        "12": "Total liabilities assumed"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    }
+  ],
+  "NWS/2019/page_116.pdf-1": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance as of July 1, 2018",
+        "2": "Deferral of revenue",
+        "3": "Recognition of deferred revenue<sup>(a)</sup>",
+        "4": "Other",
+        "5": "Balance as of June 30, 2019"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    }
+  ],
+  "PM/2017/page_32.pdf-1": [],
+  "PNC/2007/page_92.pdf-1": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Commercial",
+        "2": "Commercial real estate",
+        "3": "Consumer",
+        "4": "Residential mortgage",
+        "5": "Lease financing",
+        "6": "Other",
+        "7": "Total loans"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2",
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "7": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "7": "Total loans",
+        "8": "Unearned income",
+        "9": "Total loans, net of unearned income"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2"
+      ]
+    }
+  ],
+  "PNC/2012/page_100.pdf-1": [],
+  "PNC/2012/page_247.pdf-1": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "January 1",
+        "2": "Reserve adjustments, net",
+        "3": "Losses \u2013 loan repurchases and settlements",
+        "4": "December 31"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    }
+  ],
+  "PNC/2012/page_247.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "January 1",
+        "2": "Reserve adjustments, net",
+        "3": "Losses \u2013 loan repurchases and settlements",
+        "4": "December 31"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    }
+  ],
+  "PNC/2012/page_247.pdf-4": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "January 1",
+        "2": "Reserve adjustments, net",
+        "3": "Losses \u2013 loan repurchases and settlements",
+        "4": "December 31"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    }
+  ],
+  "PNC/2012/page_68.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Commercial mortgages at fair value",
+        "2": "Commercial mortgages at lower of cost or market",
+        "3": "Total commercial mortgages"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Commercial mortgages at fair value",
+        "2": "Commercial mortgages at lower of cost or market",
+        "4": "Residential mortgages at fair value",
+        "5": "Residential mortgages at lower of cost or market",
+        "7": "Other",
+        "8": "Total"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3",
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "6": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Commercial mortgages at fair value",
+        "2": "Commercial mortgages at lower of cost or market",
+        "6": "Total residential mortgages",
+        "7": "Other",
+        "8": "Total"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2",
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "3": "Total commercial mortgages",
+        "4": "Residential mortgages at fair value",
+        "5": "Residential mortgages at lower of cost or market",
+        "7": "Other",
+        "8": "Total"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2",
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "6": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "3": "Total commercial mortgages",
+        "6": "Total residential mortgages",
+        "7": "Other",
+        "8": "Total"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "4": 1,
+        "5": 1,
+        "6": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "4": "Residential mortgages at fair value",
+        "5": "Residential mortgages at lower of cost or market",
+        "6": "Total residential mortgages"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2"
+      ]
+    }
+  ],
+  "PNC/2014/page_111.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "BlackRock",
+        "2": "Tax credit investments (a)",
+        "3": "Private equity",
+        "4": "Visa",
+        "5": "Other",
+        "6": "Total"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3",
+        "3"
+      ]
+    }
+  ],
+  "PPG/2006/page_42.pdf-2": [],
+  "PPG/2006/page_42.pdf-3": [],
+  "PPG/2006/page_42.pdf-4": [],
+  "PPG/2008/page_52.pdf-3": [
+    {
+      "rows": {
+        "1": 1,
+        "2": -1,
+        "3": -1,
+        "4": -1,
+        "5": -1,
+        "6": -1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "-3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": -1,
+        "3": -1,
+        "5": -1,
+        "6": -1,
+        "7": -1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": -1,
+        "3": -1,
+        "5": -1,
+        "7": -1,
+        "8": -1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "7": "Settlements",
+        "8": "Currency",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": -1,
+        "4": -1,
+        "5": -1,
+        "6": -1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": -1,
+        "4": -1,
+        "5": -1,
+        "8": -1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "8": "Currency",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": -1,
+        "5": -1,
+        "7": -1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "7": "Settlements",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "5": -1,
+        "6": -1,
+        "8": -1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "8": "Currency",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "8": "Currency",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "9/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "4"
+      ],
+      "allowed_rounding_halfwidths": [
+        "4"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "6": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "8": "Currency",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "1",
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2",
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "6": 1,
+        "7": 1,
+        "9": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "1",
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3",
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "7": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "7": "Settlements",
+        "8": "Currency",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "7": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "7": "Settlements",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "8": "Currency",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "5": -1,
+        "6": -1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "8": "Currency"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": -1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "8": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "8": "Currency"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": -1,
+        "5": 1,
+        "6": 1,
+        "7": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": -1,
+        "5": 1,
+        "7": 1,
+        "8": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1,
+        "7": 1,
+        "8": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "-3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1,
+        "7": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "3": "Additions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "4": 1,
+        "7": -1,
+        "8": 1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "4": "Reductions for tax positions of prior years",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2"
+      ]
+    },
+    {
+      "rows": {
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "8": "Currency"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "5": 1,
+        "6": -1,
+        "7": 1,
+        "8": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    }
+  ],
+  "PPG/2008/page_52.pdf-4": [
+    {
+      "rows": {
+        "1": 1,
+        "2": -1,
+        "3": -1,
+        "4": -1,
+        "5": -1,
+        "6": -1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "-3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": -1,
+        "3": -1,
+        "5": -1,
+        "6": -1,
+        "7": -1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": -1,
+        "3": -1,
+        "5": -1,
+        "7": -1,
+        "8": -1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "7": "Settlements",
+        "8": "Currency",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": -1,
+        "4": -1,
+        "5": -1,
+        "6": -1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": -1,
+        "4": -1,
+        "5": -1,
+        "8": -1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "8": "Currency",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": -1,
+        "5": -1,
+        "7": -1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "7": "Settlements",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "5": -1,
+        "6": -1,
+        "8": -1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "8": "Currency",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "8": "Currency",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "9/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "4"
+      ],
+      "allowed_rounding_halfwidths": [
+        "4"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "6": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "8": "Currency",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "1",
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2",
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "6": 1,
+        "7": 1,
+        "9": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "1",
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3",
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "-1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "7": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "2": "Additions based on tax positions related to the current year",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "7": "Settlements",
+        "8": "Currency",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "7": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "7": "Settlements",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "Balance at January 1",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "8": "Currency",
+        "9": "<i></i> <i>Balance at December 31</i>"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "5": -1,
+        "6": -1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "8": "Currency"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": -1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "8": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "8": "Currency"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": -1,
+        "5": 1,
+        "6": 1,
+        "7": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": -1,
+        "5": 1,
+        "7": 1,
+        "8": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1,
+        "7": 1,
+        "8": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "-3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "3": "Additions for tax positions of prior years",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "3"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1,
+        "7": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Additions based on tax positions related to the current year",
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "3": "Additions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "4": 1,
+        "7": -1,
+        "8": 1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "4": "Reductions for tax positions of prior years",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2"
+      ]
+    },
+    {
+      "rows": {
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "4": "Reductions for tax positions of prior years",
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "8": "Currency"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "5": 1,
+        "6": -1,
+        "7": 1,
+        "8": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "5": "Pre-acquisition unrecognized tax benefits",
+        "6": "Reductions for expiration of the applicable statute of limitations",
+        "7": "Settlements",
+        "8": "Currency"
+      },
+      "residuals": [
+        "1"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    }
+  ],
+  "PPG/2012/page_29.pdf-2": [],
+  "PPG/2012/page_29.pdf-3": [],
+  "PPG/2012/page_29.pdf-4": [],
+  "PPG/2018/page_85.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "New Jersey Chrome",
+        "2": "Glass and chemical",
+        "3": "Other",
+        "4": "Total"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    }
+  ],
+  "RSG/2009/page_140.pdf-1": [],
+  "RSG/2012/page_93.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "1": "Balance at beginning of year",
+        "2": "Additions charged to expense",
+        "3": "Accounts written-off",
+        "4": "Balance at end of year"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/5",
+        "1/5",
+        "1/5"
+      ]
+    }
+  ],
+  "RSG/2013/page_123.pdf-1": [],
+  "RSG/2013/page_123.pdf-2": [],
+  "RSG/2018/page_135.pdf-1": [],
+  "RSG/2018/page_135.pdf-2": [],
+  "SLG/2011/page_91.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Balance at beginning of year",
+        "2": "Granted",
+        "3": "Cancelled",
+        "4": "Balance at end of year"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    }
+  ],
+  "SLG/2011/page_91.pdf-4": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Balance at beginning of year",
+        "2": "Granted",
+        "3": "Cancelled",
+        "4": "Balance at end of year"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2"
+      ]
+    }
+  ],
+  "SNA/2007/page_69.pdf-1": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "1": "Minority interests",
+        "2": "Equity earnings (loss), net of tax",
+        "3": "Total"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20",
+        "3/20"
+      ]
+    }
+  ],
+  "SNA/2007/page_69.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1
+      },
+      "columns": [
+        1,
+        3
+      ],
+      "labels": {
+        "1": "Minority interests",
+        "2": "Equity earnings (loss), net of tax",
+        "3": "Total"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20",
+        "3/20"
+      ]
+    }
+  ],
+  "SNA/2013/page_83.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Income taxes",
+        "2": "Accrued restructuring",
+        "3": "Accrued warranty",
+        "4": "Deferred subscription revenue",
+        "5": "Accrued property, payroll and other taxes",
+        "6": "Accrued selling and promotion expense",
+        "7": "Other",
+        "8": "Total other accrued liabilities"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2/5",
+        "2/5"
+      ]
+    }
+  ],
+  "SNA/2013/page_83.pdf-3": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Income taxes",
+        "2": "Accrued restructuring",
+        "3": "Accrued warranty",
+        "4": "Deferred subscription revenue",
+        "5": "Accrued property, payroll and other taxes",
+        "6": "Accrued selling and promotion expense",
+        "7": "Other",
+        "8": "Total other accrued liabilities"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2/5",
+        "2/5"
+      ]
+    }
+  ],
+  "STT/2006/page_95.pdf-4": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "1": "Foreign currency translation",
+        "2": "Unrealized gain (loss) on hedges of net investments in non-U.S. subsidiaries",
+        "3": "Unrealized loss on available-for-sale securities",
+        "4": "Minimum pension liability",
+        "5": "Unrealized loss on cash flow hedges",
+        "6": "Total"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3",
+        "3",
+        "3"
+      ]
+    }
+  ],
+  "STT/2009/page_25.pdf-2": [],
+  "STT/2014/page_54.pdf-2": [],
+  "UA/2011/page_69.pdf-1": [
+    {
+      "rows": {
+        "0": 1,
+        "5": -1,
+        "7": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "2012",
+        "5": "Total scheduled maturities of long term debt",
+        "7": "Long term debt obligations"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "5": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "2012",
+        "1": "2013 (1)",
+        "2": "2014",
+        "3": "2015",
+        "5": "Total scheduled maturities of long term debt"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "0": "2012",
+        "1": "2013 (1)",
+        "2": "2014",
+        "3": "2015",
+        "6": "Less current maturities of long term debt",
+        "7": "Long term debt obligations"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "7": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "2013 (1)",
+        "2": "2014",
+        "3": "2015",
+        "7": "Long term debt obligations"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "5": "Total scheduled maturities of long term debt",
+        "6": "Less current maturities of long term debt",
+        "7": "Long term debt obligations"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2"
+      ]
+    }
+  ],
+  "UNP/2007/page_25.pdf-3": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "1": "Cash provided by operating activities",
+        "2": "Cash used in investing activities",
+        "3": "Dividends paid",
+        "4": "Free cash flow"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2",
+        "2",
+        "2"
+      ]
+    }
+  ],
+  "UNP/2009/page_35.pdf-1": [],
+  "UNP/2018/page_74.pdf-1": [
+    {
+      "rows": {
+        "1": 1,
+        "5": -1,
+        "6": -1,
+        "8": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "2019",
+        "5": "2023",
+        "6": "Later years",
+        "8": "Amount representing interest"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1,
+        "8": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "2019",
+        "2": "2020",
+        "3": "2021",
+        "8": "Amount representing interest"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "2019",
+        "2": "2020",
+        "3": "2021",
+        "4": "2022",
+        "5": "2023",
+        "6": "Later years",
+        "7": "Total minimum lease payments"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2",
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "6": 1,
+        "9": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "2019",
+        "2": "2020",
+        "3": "2021",
+        "5": "2023",
+        "6": "Later years",
+        "9": "Present value of minimum lease payments"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "4": 1,
+        "7": -1,
+        "8": 1,
+        "9": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "2019",
+        "4": "2022",
+        "7": "Total minimum lease payments",
+        "8": "Amount representing interest",
+        "9": "Present value of minimum lease payments"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": -1,
+        "4": -1,
+        "8": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "2": "2020",
+        "3": "2021",
+        "4": "2022",
+        "8": "Amount representing interest"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "7": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "7": "Total minimum lease payments",
+        "8": "Amount representing interest",
+        "9": "Present value of minimum lease payments"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2"
+      ]
+    }
+  ],
+  "UNP/2018/page_74.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "5": -1,
+        "6": -1,
+        "8": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "2019",
+        "5": "2023",
+        "6": "Later years",
+        "8": "Amount representing interest"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1,
+        "8": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "2019",
+        "2": "2020",
+        "3": "2021",
+        "8": "Amount representing interest"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "2019",
+        "2": "2020",
+        "3": "2021",
+        "4": "2022",
+        "5": "2023",
+        "6": "Later years",
+        "7": "Total minimum lease payments"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/2",
+        "7/2"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "6": 1,
+        "9": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "2019",
+        "2": "2020",
+        "3": "2021",
+        "5": "2023",
+        "6": "Later years",
+        "9": "Present value of minimum lease payments"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "4": 1,
+        "7": -1,
+        "8": 1,
+        "9": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "2019",
+        "4": "2022",
+        "7": "Total minimum lease payments",
+        "8": "Amount representing interest",
+        "9": "Present value of minimum lease payments"
+      },
+      "residuals": [
+        "2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": -1,
+        "4": -1,
+        "8": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "2": "2020",
+        "3": "2021",
+        "4": "2022",
+        "8": "Amount representing interest"
+      },
+      "residuals": [
+        "-2"
+      ],
+      "allowed_rounding_halfwidths": [
+        "2"
+      ]
+    },
+    {
+      "rows": {
+        "7": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "7": "Total minimum lease payments",
+        "8": "Amount representing interest",
+        "9": "Present value of minimum lease payments"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2"
+      ]
+    }
+  ],
+  "UPS/2007/page_98.pdf-1": [],
+  "UPS/2016/page_114.pdf-1": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Vehicles",
+        "2": "Aircraft",
+        "3": "Buildings",
+        "4": "Accumulated amortization",
+        "5": "Property, plant and equipment subject to capital leases"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2",
+        "5/2"
+      ]
+    }
+  ],
+  "UPS/2016/page_114.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Vehicles",
+        "2": "Aircraft",
+        "3": "Buildings",
+        "4": "Accumulated amortization",
+        "5": "Property, plant and equipment subject to capital leases"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2",
+        "5/2"
+      ]
+    }
+  ],
+  "VRTX/2006/page_111.pdf-1": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "1": "Furniture and equipment",
+        "2": "Leasehold improvements",
+        "3": "Computers",
+        "4": "Software",
+        "5": "Total property and equipment, gross"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "5/2",
+        "5/2"
+      ]
+    },
+    {
+      "rows": {
+        "5": 1,
+        "6": -1,
+        "7": -1
+      },
+      "columns": [
+        1,
+        2
+      ],
+      "labels": {
+        "5": "Total property and equipment, gross",
+        "6": "Less accumulated depreciation and amortization",
+        "7": "Total property and equipment, net"
+      },
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/2",
+        "3/2"
+      ]
+    }
+  ],
+  "ZBH/2007/page_67.pdf-1": [
+    {
+      "rows": {
+        "1": 1,
+        "8": -1,
+        "9": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "8": "Distributor acquisitions",
+        "9": "Sales agent and lease contract terminations"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "8": -1,
+        "10": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "8": "Distributor acquisitions",
+        "10": "Other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1,
+        "5": 1,
+        "7": 1,
+        "10": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "5": "In-process research & development",
+        "7": "Facility and employee relocation",
+        "10": "Other",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1,
+        "5": 1,
+        "7": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "7": "Facility and employee relocation",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": -1,
+        "7": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "7": "Facility and employee relocation",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1,
+        "10": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "10": "Other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "7": "Facility and employee relocation"
+      },
+      "residuals": [
+        "3/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "4": "Information technology integration",
+        "8": "Distributor acquisitions"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/4"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "7": 1,
+        "9": -1,
+        "10": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "5": "In-process research & development",
+        "7": "Facility and employee relocation",
+        "9": "Sales agent and lease contract terminations",
+        "10": "Other"
+      },
+      "residuals": [
+        "1/5"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "8": "Distributor acquisitions",
+        "9": "Sales agent and lease contract terminations"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/4"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": -1,
+        "5": 1,
+        "7": 1,
+        "10": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "7": "Facility and employee relocation",
+        "10": "Other",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "1/5"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": -1,
+        "8": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "8": "Distributor acquisitions"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/4"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1,
+        "7": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "7": "Facility and employee relocation",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "7": 1,
+        "9": -1,
+        "10": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "7": "Facility and employee relocation",
+        "9": "Sales agent and lease contract terminations",
+        "10": "Other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "5": -1,
+        "6": 1,
+        "7": 1,
+        "10": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "7": "Facility and employee relocation",
+        "10": "Other",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "5": 1,
+        "6": -1,
+        "9": 1,
+        "10": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "9": "Sales agent and lease contract terminations",
+        "10": "Other",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "5": 1,
+        "6": -1,
+        "10": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "10": "Other",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "-3/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/10"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1,
+        "9": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "7": "Facility and employee relocation",
+        "9": "Sales agent and lease contract terminations",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "3/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "7": "Facility and employee relocation",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/10"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "4": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "4": "Information technology integration",
+        "8": "Distributor acquisitions",
+        "9": "Sales agent and lease contract terminations"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/5"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": -1,
+        "5": -1,
+        "6": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "5": "In-process research & development",
+        "6": "Integration personnel"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/5"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": -1,
+        "5": -1,
+        "6": -1,
+        "9": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "9": "Sales agent and lease contract terminations"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/4"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "4": -1,
+        "5": -1,
+        "6": -1,
+        "9": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "2": "Consulting and professional fees",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "9": "Sales agent and lease contract terminations"
+      },
+      "residuals": [
+        "1/5"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/4"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "5": -1,
+        "6": -1,
+        "10": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "2": "Consulting and professional fees",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "10": "Other"
+      },
+      "residuals": [
+        "-1/5"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/5"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "8": 1,
+        "10": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Consulting and professional fees",
+        "8": "Distributor acquisitions",
+        "10": "Other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "5": -1,
+        "8": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "5": "In-process research & development",
+        "8": "Distributor acquisitions"
+      },
+      "residuals": [
+        "1/5"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/5"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": 1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "3": "Employee severance and retention",
+        "4": "Information technology integration",
+        "8": "Distributor acquisitions"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "3": "Employee severance and retention",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "8": "Distributor acquisitions",
+        "9": "Sales agent and lease contract terminations",
+        "10": "Other",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "1/5"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    }
+  ],
+  "ZBH/2007/page_67.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "8": -1,
+        "9": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "8": "Distributor acquisitions",
+        "9": "Sales agent and lease contract terminations"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "8": -1,
+        "10": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "8": "Distributor acquisitions",
+        "10": "Other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1,
+        "5": 1,
+        "7": 1,
+        "10": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "5": "In-process research & development",
+        "7": "Facility and employee relocation",
+        "10": "Other",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": -1,
+        "5": 1,
+        "7": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "7": "Facility and employee relocation",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": -1,
+        "7": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "7": "Facility and employee relocation",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1,
+        "10": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "10": "Other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "7": "Facility and employee relocation"
+      },
+      "residuals": [
+        "3/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "4": "Information technology integration",
+        "8": "Distributor acquisitions"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/4"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "5": 1,
+        "7": 1,
+        "9": -1,
+        "10": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "5": "In-process research & development",
+        "7": "Facility and employee relocation",
+        "9": "Sales agent and lease contract terminations",
+        "10": "Other"
+      },
+      "residuals": [
+        "1/5"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "8": "Distributor acquisitions",
+        "9": "Sales agent and lease contract terminations"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/4"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": -1,
+        "5": 1,
+        "7": 1,
+        "10": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "7": "Facility and employee relocation",
+        "10": "Other",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "1/5"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": -1,
+        "8": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "8": "Distributor acquisitions"
+      },
+      "residuals": [
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/4"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "6": -1,
+        "7": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "7": "Facility and employee relocation",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1,
+        "7": 1,
+        "9": -1,
+        "10": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "7": "Facility and employee relocation",
+        "9": "Sales agent and lease contract terminations",
+        "10": "Other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "5": -1,
+        "6": 1,
+        "7": 1,
+        "10": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "7": "Facility and employee relocation",
+        "10": "Other",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "5": 1,
+        "6": -1,
+        "9": 1,
+        "10": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "9": "Sales agent and lease contract terminations",
+        "10": "Other",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "5": 1,
+        "6": -1,
+        "10": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "10": "Other",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "-3/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/10"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1,
+        "9": 1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "7": "Facility and employee relocation",
+        "9": "Sales agent and lease contract terminations",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "3/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "5": 1,
+        "6": 1,
+        "7": -1,
+        "11": 1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "2": "Consulting and professional fees",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "7": "Facility and employee relocation",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/10"
+      ]
+    },
+    {
+      "rows": {
+        "1": 1,
+        "4": 1,
+        "8": 1,
+        "9": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "1": "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+        "4": "Information technology integration",
+        "8": "Distributor acquisitions",
+        "9": "Sales agent and lease contract terminations"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/5"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": -1,
+        "5": -1,
+        "6": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "5": "In-process research & development",
+        "6": "Integration personnel"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/5"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": -1,
+        "5": -1,
+        "6": -1,
+        "9": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "9": "Sales agent and lease contract terminations"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/4"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "4": -1,
+        "5": -1,
+        "6": -1,
+        "9": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "2": "Consulting and professional fees",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "9": "Sales agent and lease contract terminations"
+      },
+      "residuals": [
+        "1/5"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/4"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "5": -1,
+        "6": -1,
+        "10": -1
+      },
+      "columns": [
+        2
+      ],
+      "labels": {
+        "2": "Consulting and professional fees",
+        "5": "In-process research & development",
+        "6": "Integration personnel",
+        "10": "Other"
+      },
+      "residuals": [
+        "-1/5"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/5"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "8": 1,
+        "10": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Consulting and professional fees",
+        "8": "Distributor acquisitions",
+        "10": "Other"
+      },
+      "residuals": [
+        "-1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20"
+      ]
+    },
+    {
+      "rows": {
+        "2": 1,
+        "3": 1,
+        "5": -1,
+        "8": 1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "2": "Consulting and professional fees",
+        "3": "Employee severance and retention",
+        "5": "In-process research & development",
+        "8": "Distributor acquisitions"
+      },
+      "residuals": [
+        "1/5"
+      ],
+      "allowed_rounding_halfwidths": [
+        "1/5"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": 1,
+        "8": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "3": "Employee severance and retention",
+        "4": "Information technology integration",
+        "8": "Distributor acquisitions"
+      },
+      "residuals": [
+        "1/10"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20"
+      ]
+    },
+    {
+      "rows": {
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": -1
+      },
+      "columns": [
+        1
+      ],
+      "labels": {
+        "3": "Employee severance and retention",
+        "4": "Information technology integration",
+        "5": "In-process research & development",
+        "8": "Distributor acquisitions",
+        "9": "Sales agent and lease contract terminations",
+        "10": "Other",
+        "11": "Acquisition, integration and other"
+      },
+      "residuals": [
+        "1/5"
+      ],
+      "allowed_rounding_halfwidths": [
+        "7/20"
+      ]
+    }
+  ],
+  "ZBH/2015/page_57.pdf-2": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "1": "Total expense, pre-tax",
+        "2": "Tax benefit related to awards",
+        "3": "Total expense, net of tax"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20",
+        "3/20",
+        "3/20"
+      ]
+    }
+  ],
+  "ZBH/2015/page_57.pdf-3": [
+    {
+      "rows": {
+        "1": 1,
+        "2": 1,
+        "3": -1
+      },
+      "columns": [
+        1,
+        2,
+        3
+      ],
+      "labels": {
+        "1": "Total expense, pre-tax",
+        "2": "Tax benefit related to awards",
+        "3": "Total expense, net of tax"
+      },
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "allowed_rounding_halfwidths": [
+        "3/20",
+        "3/20",
+        "3/20"
+      ]
+    }
+  ]
+}

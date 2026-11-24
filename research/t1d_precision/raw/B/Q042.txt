@@ -1,0 +1,1 @@
+{"answer":"13.6212624585","unit":"percent","expression":"(342 - 301) / 301 * 100","low":"13.2669983416","high":"13.9767054908","reliable_digits":"1","explanation":"Allowing each carrying value to vary by $0.5 million gives this range, supporting one reliable significant digit."}

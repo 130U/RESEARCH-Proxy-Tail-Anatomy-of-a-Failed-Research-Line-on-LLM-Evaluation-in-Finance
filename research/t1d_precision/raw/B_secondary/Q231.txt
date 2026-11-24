@@ -1,0 +1,1 @@
+{"answer":"58665","unit":"million dollars","expression":"(384102 + 121417) - (381415 + 65439)","low":"58663","high":"58667","reliable_digits":"3","explanation":"Each balance is rounded to the nearest million, giving uncertainty of up to 2 million in the increase and three reliable significant digits."}

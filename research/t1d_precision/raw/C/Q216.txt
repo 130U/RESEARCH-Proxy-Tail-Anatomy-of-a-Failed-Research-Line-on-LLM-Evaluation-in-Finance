@@ -1,0 +1,1 @@
+{"answer":"7.42663206","unit":"percent","expression":"(161.43 - 150.27) / 150.27 * 100","low":"7.41973049","high":"7.43353409","reliable_digits":"2","explanation":"Allowing each input to vary by 0.005 gives these bounds, which agree when rounded to two significant digits."}

@@ -1,0 +1,178 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R115",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "on april 19 , 2018 , we took delivery of norwegian bliss ."
+      },
+      {
+        "location": "text_1",
+        "text": "to finance the payment due upon delivery , we had export financing in place for 80% ( 80 % ) of the contract price ."
+      },
+      {
+        "location": "text_2",
+        "text": "the associated $ 850.0 million term loan bears interest at a fixed rate of 3.92% ( 3.92 % ) with a maturity date of april 19 , 2030 ."
+      },
+      {
+        "location": "text_3",
+        "text": "principal and interest payments are payable semiannually ."
+      },
+      {
+        "location": "text_4",
+        "text": "on april 4 , 2018 , we redeemed $ 135.0 million principal amount of the $ 700.0 million aggregate principal amount of outstanding 4.75% ( 4.75 % ) senior notes due 2021 ( the 201cnotes 201d ) at a price equal to 100% ( 100 % ) of the principal amount of the notes being redeemed and paid the premium of $ 5.1 million and accrued interest of $ 1.9 million ."
+      },
+      {
+        "location": "text_5",
+        "text": "the redemption also resulted in a write off of $ 1.2 million of certain fees ."
+      },
+      {
+        "location": "text_6",
+        "text": "following the partial redemption , $ 565.0 million aggregate principal amount of notes remained outstanding ."
+      },
+      {
+        "location": "text_7",
+        "text": "interest expense , net for the year ended december 31 , 2018 was $ 270.4 million which included $ 31.4 million of amortization of deferred financing fees and a $ 6.3 million loss on extinguishment of debt ."
+      },
+      {
+        "location": "text_8",
+        "text": "interest expense , net for the year ended december 31 , 2017 was $ 267.8 million which included $ 32.5 million of amortization of deferred financing fees and a $ 23.9 million loss on extinguishment of debt ."
+      },
+      {
+        "location": "text_9",
+        "text": "interest expense , net for the year ended december 31 , 2016 was $ 276.9 million which included $ 34.7 million of amortization of deferred financing fees and a $ 27.7 million loss on extinguishment of debt ."
+      },
+      {
+        "location": "text_10",
+        "text": "certain of our debt agreements contain covenants that , among other things , require us to maintain a minimum level of liquidity , as well as limit our net funded debt-to-capital ratio , and maintain certain other ratios and restrict our ability to pay dividends ."
+      },
+      {
+        "location": "text_11",
+        "text": "substantially all of our ships and other property and equipment are pledged as collateral for certain of our debt ."
+      },
+      {
+        "location": "text_12",
+        "text": "we believe we were in compliance with our covenants as of december 31 , 2018 ."
+      },
+      {
+        "location": "text_13",
+        "text": "the following are scheduled principal repayments on long-term debt including capital lease obligations as of december 31 , 2018 for each of the next five years ( in thousands ) : ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "Year",
+          "Amount"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2019",
+          "$681,218"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2020",
+          "682,556"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2021",
+          "2,549,621"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "2022",
+          "494,186"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "2023",
+          "434,902"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Thereafter",
+          "1,767,383"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Total",
+          "$6,609,866"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_14",
+        "text": "we had an accrued interest liability of $ 37.2 million and $ 31.9 million as of december 31 , 2018 and 2017 , respectively ."
+      },
+      {
+        "location": "text_15",
+        "text": "8 ."
+      },
+      {
+        "location": "text_16",
+        "text": "related party disclosures transactions with genting hk and apollo in december 2018 , as part of a public equity offering of nclh 2019s ordinary shares owned by apollo and genting hk , nclh repurchased 1683168 of its ordinary shares sold in the offering for approximately $ 85.0 million pursuant to its new repurchase program ."
+      },
+      {
+        "location": "text_17",
+        "text": "in march 2018 , as part of a public equity offering of nclh 2019s ordinary shares owned by apollo and genting hk , nclh repurchased 4722312 of its ordinary shares sold in the offering for approximately $ 263.5 million pursuant to its then existing share repurchase program ."
+      },
+      {
+        "location": "text_18",
+        "text": "in june 2012 , we exercised our option with genting hk to purchase norwegian sky ."
+      },
+      {
+        "location": "text_19",
+        "text": "we paid the total amount of $ 259.3 million to genting hk in connection with the norwegian sky purchase agreement as of december 31 , 2016 and no further payments are due. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the percentage change in net interest expense in 2018 compare to 2017?",
+  "reference_program": "subtract(270.4, 267.8), divide(#0, 267.8)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "270.4",
+      "raw": "270.4",
+      "location": "text_7:66",
+      "context": "interest expense , net for the year ended december 31 , 2018 was $ 270.4 million which included $ 31.4 million of amortization of deferred financing fees and a $ 6.3 million loss on extinguishment of debt ."
+    },
+    "x1": {
+      "program_token": "267.8",
+      "raw": "267.8",
+      "location": "text_8:66",
+      "context": "interest expense , net for the year ended december 31 , 2017 was $ 267.8 million which included $ 32.5 million of amortization of deferred financing fees and a $ 23.9 million loss on extinguishment of debt ."
+    }
+  }
+}

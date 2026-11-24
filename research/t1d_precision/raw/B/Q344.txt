@@ -1,0 +1,1 @@
+{"answer":"5.9879198294","unit":"percent","expression":"(438861 - 414067) / 414067 * 100","low":"5.9876710923","high":"5.9881685671","reliable_digits":"4","explanation":"Each asset total is rounded to the nearest million; the resulting bounds both round to 5.988% at four significant digits."}

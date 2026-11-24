@@ -1,0 +1,1 @@
+{"answer":"22.15764863","unit":"percent","expression":"(182.87 - 149.70) / 149.70 * 100","low":"22.15022878","high":"22.16506897","reliable_digits":"3","explanation":"ROI divides the increase by the 2005 value; allowing each displayed value to vary by 0.005 gives these bounds."}

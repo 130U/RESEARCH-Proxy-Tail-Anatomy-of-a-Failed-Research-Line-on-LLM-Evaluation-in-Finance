@@ -1,0 +1,1 @@
+{"answer":"-44.5717403164","unit":"percent","expression":"(5,080 - 9,165) / 9,165 * 100","low":"-44.5802193006","high":"-44.5632604070","reliable_digits":"3","explanation":"Allowing each displayed gain to vary by 0.5 gives these bounds, which both round to a 44.6% decrease."}

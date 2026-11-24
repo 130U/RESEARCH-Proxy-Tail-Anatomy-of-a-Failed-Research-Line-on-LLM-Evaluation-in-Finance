@@ -1,0 +1,192 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R161",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "2007 duke realty corporation annual report54 recognition and account for the continued operations of the property by applying the finance , installment or cost recovery methods , as appropriate , until the full accrual sales criteria are met ."
+      },
+      {
+        "location": "text_1",
+        "text": "estimated future costs to be incurred after completion of each sale are included in the determination of the gain on sales ."
+      },
+      {
+        "location": "text_2",
+        "text": "gains from sales of depreciated property are included in discontinued operations and the proceeds from the sale of these held-for-rental properties are classified in the investing activities section of the consolidated statements of cash flows ."
+      },
+      {
+        "location": "text_3",
+        "text": "gains or losses from our sale of properties that were developed or repositioned with the intent to sell and not for long-term rental are classified as gain on sale of service operation properties in the consolidated statements of operations ."
+      },
+      {
+        "location": "text_4",
+        "text": "all activities and proceeds received from the development and sale of these buildings are classified in the operating activities section of the consolidated statements of cash flows ."
+      },
+      {
+        "location": "text_5",
+        "text": "net income per common share basic net income per common share is computed by dividing net income available for common shareholders by the weighted average number of common shares outstanding for the period ."
+      },
+      {
+        "location": "text_6",
+        "text": "diluted net income per common share is computed by dividing the sum of net income available for common shareholders and the minority interest in earnings allocable to units not owned by us , by the sum of the weighted average number of common shares outstanding and minority units outstanding , including any dilutive potential common equivalents for the period ."
+      },
+      {
+        "location": "text_7",
+        "text": "the following table reconciles the components of basic and diluted net income per common share ( in thousands ) : ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2007",
+          "2006",
+          "2005"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Basic net income available for common shareholders",
+          "$217,692",
+          "$145,095",
+          "$309,183"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Minority interest in earnings of common unitholders",
+          "14,399",
+          "14,238",
+          "29,649"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Diluted net income available for common shareholders",
+          "$232,091",
+          "$159,333",
+          "$338,832"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Weighted average number of common shares outstanding",
+          "139,255",
+          "134,883",
+          "141,508"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Weighted average partnership Units outstanding",
+          "9,204",
+          "13,186",
+          "13,551"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Dilutive shares for stock-based compensation plans (1)",
+          "1,155",
+          "1,324",
+          "818"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Weighted average number of common shares and potential dilutive common equivalents",
+          "149,614",
+          "149,393",
+          "155,877"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_8",
+        "text": "weighted average number of common shares and potential dilutive common equivalents 149614 149393 155877 ( 1 ) excludes the effect of outstanding stock options , as well as the exchangeable senior notes ( 201cexchangeable notes 201d ) issued in 2006 , that have an anti-dilutive effect on earnings per share for the periods presented ."
+      },
+      {
+        "location": "text_9",
+        "text": "a joint venture partner in one of our unconsolidated companies has the option to convert a portion of its ownership in the joint venture to our common shares ."
+      },
+      {
+        "location": "text_10",
+        "text": "the effect of this option on earnings per share was anti-dilutive for the years ended december 31 , 2007 , 2006 and 2005 ."
+      },
+      {
+        "location": "text_11",
+        "text": "federal income taxes we have elected to be taxed as a real estate investment trust ( 201creit 201d ) under the internal revenue code ."
+      },
+      {
+        "location": "text_12",
+        "text": "to qualify as a reit , we must meet a number of organizational and operational requirements , including a requirement to distribute at least 90% ( 90 % ) of our adjusted taxable income to our stockholders ."
+      },
+      {
+        "location": "text_13",
+        "text": "management intends to continue to adhere to these requirements and to maintain our reit status ."
+      },
+      {
+        "location": "text_14",
+        "text": "as a reit , we are entitled to a tax deduction for some or all of the dividends we pay to shareholders ."
+      },
+      {
+        "location": "text_15",
+        "text": "accordingly , we generally will not be subject to federal income taxes as long as we distribute an amount equal to or in excess of our taxable income currently to shareholders ."
+      },
+      {
+        "location": "text_16",
+        "text": "we are also generally subject to federal income taxes on any taxable income that is not currently distributed to its shareholders ."
+      },
+      {
+        "location": "text_17",
+        "text": "if we fail to qualify as a reit in any taxable year , we will be subject to federal income taxes and may not be able to qualify as a reit for four subsequent taxable years. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the average basic net income available for common shareholders from 2005 to 2007",
+  "reference_program": "add(217692, 145095), add(309183, #0), divide(#1, const_3)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "217692",
+      "raw": "217,692",
+      "location": "table_1:1",
+      "context": "Basic net income available for common shareholders | 2007"
+    },
+    "x1": {
+      "program_token": "145095",
+      "raw": "145,095",
+      "location": "table_1:2",
+      "context": "Basic net income available for common shareholders | 2006"
+    },
+    "x2": {
+      "program_token": "309183",
+      "raw": "309,183",
+      "location": "table_1:3",
+      "context": "Basic net income available for common shareholders | 2005"
+    }
+  }
+}

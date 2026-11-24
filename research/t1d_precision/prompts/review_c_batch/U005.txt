@@ -1,0 +1,692 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only a JSON array, with one object for each supplied material in the supplied order, using its anonymous call_id and the requested fields.
+
+Assess each material independently. Do not infer a common answer or prevalence from the batch. Do not combine items or omit any item.
+
+MATERIALS
+[
+  {
+    "call_id": "S065",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "republic services , inc ."
+        },
+        {
+          "location": "text_1",
+          "text": "notes to consolidated financial statements 2014 ( continued ) we determine the discount rate used in the measurement of our obligations based on a model that matches the timing and amount of expected benefit payments to maturities of high quality bonds priced as of the plan measurement date ."
+        },
+        {
+          "location": "text_2",
+          "text": "when that timing does not correspond to a published high-quality bond rate , our model uses an expected yield curve to determine an appropriate current discount rate ."
+        },
+        {
+          "location": "text_3",
+          "text": "the yields on the bonds are used to derive a discount rate for the liability ."
+        },
+        {
+          "location": "text_4",
+          "text": "the term of our obligation , based on the expected retirement dates of our workforce , is approximately seven years ."
+        },
+        {
+          "location": "text_5",
+          "text": "in developing our expected rate of return assumption , we have evaluated the actual historical performance and long-term return projections of the plan assets , which give consideration to the asset mix and the anticipated timing of the plan outflows ."
+        },
+        {
+          "location": "text_6",
+          "text": "we employ a total return investment approach whereby a mix of equity and fixed income investments are used to maximize the long-term return of plan assets for what we consider a prudent level of risk ."
+        },
+        {
+          "location": "text_7",
+          "text": "the intent of this strategy is to minimize plan expenses by outperforming plan liabilities over the long run ."
+        },
+        {
+          "location": "text_8",
+          "text": "risk tolerance is established through careful consideration of plan liabilities , plan funded status and our financial condition ."
+        },
+        {
+          "location": "text_9",
+          "text": "the investment portfolio contains a diversified blend of equity and fixed income investments ."
+        },
+        {
+          "location": "text_10",
+          "text": "furthermore , equity investments are diversified across u.s ."
+        },
+        {
+          "location": "text_11",
+          "text": "and non-u.s ."
+        },
+        {
+          "location": "text_12",
+          "text": "stocks as well as growth , value , and small and large capitalizations ."
+        },
+        {
+          "location": "text_13",
+          "text": "derivatives may be used to gain market exposure in an efficient and timely manner ; however , derivatives may not be used to leverage the portfolio beyond the market value of the underlying investments ."
+        },
+        {
+          "location": "text_14",
+          "text": "investment risk is measured and monitored on an ongoing basis through annual liability measurements , periodic asset and liability studies , and quarterly investment portfolio reviews ."
+        },
+        {
+          "location": "text_15",
+          "text": "the following table summarizes our target asset allocation as of december 31 , 2018 and the actual asset allocation as of december 31 , 2018 and 2017 for our plan : december 31 , target allocation december 31 , actual allocation december 31 , actual allocation ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "December 31, 2018 TargetAssetAllocation",
+            "December 31, 2018 ActualAssetAllocation",
+            "December 31, 2017 ActualAssetAllocation"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Debt securities",
+            "82%",
+            "83%",
+            "70%"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Equity securities",
+            "18",
+            "17",
+            "30"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Total",
+            "100%",
+            "100%",
+            "100%"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_16",
+          "text": "asset allocations are reviewed and rebalanced periodically based on funded status ."
+        },
+        {
+          "location": "text_17",
+          "text": "for 2019 , the investment strategy for plan assets is to maintain a broadly diversified portfolio designed to achieve our target of an average long-term rate of return of 5.20% ( 5.20 % ) ."
+        },
+        {
+          "location": "text_18",
+          "text": "while we believe we can achieve a long-term average return of 5.20% ( 5.20 % ) , we cannot be certain that the portfolio will perform to our expectations ."
+        },
+        {
+          "location": "text_19",
+          "text": "assets are strategically allocated among debt and equity portfolios to achieve a diversification level that reduces fluctuations in investment returns ."
+        },
+        {
+          "location": "text_20",
+          "text": "asset allocation target ranges and strategies are reviewed periodically with the assistance of an independent external consulting firm. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percentage decline in the equity from 2017 to 2018 actual",
+    "human_answer": "",
+    "reference_program": "subtract(17, 30), divide(#0, 30)",
+    "reference_execution_value": -0.43333,
+    "model_response": {
+      "answer": "43.33",
+      "unit": "percent",
+      "expression": "(30 - 17) / 30 * 100",
+      "explanation": "Equity allocation declined from 30% to 17%, a 43.33% decrease rounded to two decimal places."
+    }
+  },
+  {
+    "call_id": "S066",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "notes to consolidated financial statements for the years ended february 3 , 2006 , january 28 , 2005 , and january 30 , 2004 , gross realized gains and losses on the sales of available-for-sale securities were not mate- rial ."
+        },
+        {
+          "location": "text_1",
+          "text": "the cost of securities sold is based upon the specific identification method ."
+        },
+        {
+          "location": "text_2",
+          "text": "merchandise inventories inventories are stated at the lower of cost or market with cost determined using the retail last-in , first-out ( 201clifo 201d ) method ."
+        },
+        {
+          "location": "text_3",
+          "text": "the excess of current cost over lifo cost was approximately $ 5.8 million at february 3 , 2006 and $ 6.3 million at january 28 , 2005 ."
+        },
+        {
+          "location": "text_4",
+          "text": "current cost is deter- mined using the retail first-in , first-out method ."
+        },
+        {
+          "location": "text_5",
+          "text": "lifo reserves decreased $ 0.5 million and $ 0.2 million in 2005 and 2004 , respectively , and increased $ 0.7 million in 2003 ."
+        },
+        {
+          "location": "text_6",
+          "text": "costs directly associated with warehousing and distribu- tion are capitalized into inventory ."
+        },
+        {
+          "location": "text_7",
+          "text": "in 2005 , the company expanded the number of inven- tory departments it utilizes for its gross profit calculation from 10 to 23 ."
+        },
+        {
+          "location": "text_8",
+          "text": "the impact of this change in estimate on the company 2019s consolidated 2005 results of operations was an estimated reduction of gross profit and a corre- sponding decrease to inventory , at cost , of $ 5.2 million ."
+        },
+        {
+          "location": "text_9",
+          "text": "store pre-opening costs pre-opening costs related to new store openings and the construction periods are expensed as incurred ."
+        },
+        {
+          "location": "text_10",
+          "text": "property and equipment property and equipment are recorded at cost ."
+        },
+        {
+          "location": "text_11",
+          "text": "the company provides for depreciation and amortization on a straight-line basis over the following estimated useful lives: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "Land improvements",
+            "20"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Buildings",
+            "39-40"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Furniture, fixtures and equipment",
+            "3-10"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_12",
+          "text": "improvements of leased properties are amortized over the shorter of the life of the applicable lease term or the estimated useful life of the asset ."
+        },
+        {
+          "location": "text_13",
+          "text": "impairment of long-lived assets when indicators of impairment are present , the company evaluates the carrying value of long-lived assets , other than goodwill , in relation to the operating perform- ance and future cash flows or the appraised values of the underlying assets ."
+        },
+        {
+          "location": "text_14",
+          "text": "the company may adjust the net book value of the underlying assets based upon such cash flow analysis compared to the book value and may also consid- er appraised values ."
+        },
+        {
+          "location": "text_15",
+          "text": "assets to be disposed of are adjusted to the fair value less the cost to sell if less than the book value ."
+        },
+        {
+          "location": "text_16",
+          "text": "the company recorded impairment charges of approximately $ 0.5 million and $ 0.6 million in 2004 and 2003 , respectively , and $ 4.7 million prior to 2003 to reduce the carrying value of its homerville , georgia dc ( which was sold in 2004 ) ."
+        },
+        {
+          "location": "text_17",
+          "text": "the company also recorded impair- ment charges of approximately $ 0.6 million in 2005 and $ 0.2 million in each of 2004 and 2003 to reduce the carrying value of certain of its stores 2019 assets as deemed necessary due to negative sales trends and cash flows at these locations ."
+        },
+        {
+          "location": "text_18",
+          "text": "these charges are included in sg&a expense ."
+        },
+        {
+          "location": "text_19",
+          "text": "other assets other assets consist primarily of long-term invest- ments , debt issuance costs which are amortized over the life of the related obligations , utility and security deposits , life insurance policies and goodwill ."
+        },
+        {
+          "location": "text_20",
+          "text": "vendor rebates the company records vendor rebates , primarily con- sisting of new store allowances , volume purchase rebates and promotional allowances , when realized ."
+        },
+        {
+          "location": "text_21",
+          "text": "the rebates are recorded as a reduction to inventory purchases , at cost , which has the effect of reducing cost of goods sold , as prescribed by emerging issues task force ( 201ceitf 201d ) issue no ."
+        },
+        {
+          "location": "text_22",
+          "text": "02-16 , 201caccounting by a customer ( including a reseller ) for certain consideration received from a vendor 201d ."
+        },
+        {
+          "location": "text_23",
+          "text": "rent expense rent expense is recognized over the term of the lease ."
+        },
+        {
+          "location": "text_24",
+          "text": "the company records minimum rental expense on a straight-line basis over the base , non-cancelable lease term commencing on the date that the company takes physical possession of the property from the landlord , which normally includes a period prior to store opening to make necessary leasehold improvements and install store fixtures ."
+        },
+        {
+          "location": "text_25",
+          "text": "when a lease contains a predetermined fixed escalation of the minimum rent , the company recognizes the related rent expense on a straight-line basis and records the difference between the recognized rental expense and the amounts payable under the lease as deferred rent ."
+        },
+        {
+          "location": "text_26",
+          "text": "the company also receives tenant allowances , which are recorded in deferred incentive rent and are amortized as a reduction to rent expense over the term of the lease ."
+        },
+        {
+          "location": "text_27",
+          "text": "any difference between the calculated expense and the amounts actually paid are reflected as a liability in accrued expenses and other in the consolidated balance sheets and totaled approximately $ 25.0 million ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what is the cost difference over lifo in the last two years?",
+    "human_answer": "12.1",
+    "reference_program": "add(5.8, 6.3)",
+    "reference_execution_value": 12.1,
+    "model_response": {
+      "answer": "-0.5",
+      "unit": "million dollars",
+      "expression": "5.8 - 6.3",
+      "explanation": "The excess of current cost over LIFO cost decreased by $0.5 million from 2005 to 2006."
+    }
+  },
+  {
+    "call_id": "S067",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "table of contents cdw corporation and subsidiaries notes to consolidated financial statements which the company realized the benefits of the deductions ."
+        },
+        {
+          "location": "text_1",
+          "text": "this arrangement has been accounted for as contingent consideration ."
+        },
+        {
+          "location": "text_2",
+          "text": "pre-2009 business combinations were accounted for under a former accounting standard which , among other aspects , precluded the recognition of certain contingent consideration as of the business combination date ."
+        },
+        {
+          "location": "text_3",
+          "text": "instead , under the former accounting standard , contingent consideration is accounted for as additional purchase price ( goodwill ) at the time the contingency is resolved ."
+        },
+        {
+          "location": "text_4",
+          "text": "as of december 31 , 2013 , the company accrued $ 20.9 million related to this arrangement within other current liabilities , as the company realized the tax benefit of the compensation deductions during the 2013 tax year ."
+        },
+        {
+          "location": "text_5",
+          "text": "the company made the related cash contribution during the first quarter of 2014 ."
+        },
+        {
+          "location": "text_6",
+          "text": "12 ."
+        },
+        {
+          "location": "text_7",
+          "text": "earnings per share the numerator for both basic and diluted earnings per share is net income ."
+        },
+        {
+          "location": "text_8",
+          "text": "the denominator for basic earnings per share is the weighted-average shares outstanding during the period ."
+        },
+        {
+          "location": "text_9",
+          "text": "a reconciliation of basic weighted-average shares outstanding to diluted weighted-average shares outstanding is as follows: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "Years Ended December 31,"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "(in millions)",
+            "2015",
+            "2014",
+            "2013<sup>(1)</sup>"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Basic weighted-average shares outstanding",
+            "170.3",
+            "170.6",
+            "156.6"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Effect of dilutive securities<sup>(2)</sup>",
+            "1.5",
+            "2.2",
+            "2.1"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Diluted weighted-average shares outstanding<sup>(3)</sup>",
+            "171.8",
+            "172.8",
+            "158.7"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_10",
+          "text": "effect of dilutive securities ( 2 ) 1.5 2.2 2.1 diluted weighted-average shares outstanding ( 3 ) 171.8 172.8 158.7 ( 1 ) the 2013 basic weighted-average shares outstanding was impacted by common stock issued during the ipo and the underwriters 2019 exercise in full of the overallotment option granted to them in connection with the ipo ."
+        },
+        {
+          "location": "text_11",
+          "text": "as the common stock was issued on july 2 , 2013 and july 31 , 2013 , respectively , the shares are only partially reflected in the 2013 basic weighted-average shares outstanding ."
+        },
+        {
+          "location": "text_12",
+          "text": "such shares are fully reflected in the 2015 and 2014 basic weighted-average shares outstanding ."
+        },
+        {
+          "location": "text_13",
+          "text": "for additional discussion of the ipo , see note 10 ( stockholders 2019 equity ) ."
+        },
+        {
+          "location": "text_14",
+          "text": "( 2 ) the dilutive effect of outstanding stock options , restricted stock units , restricted stock , coworker stock purchase plan units and mpk plan units is reflected in the diluted weighted-average shares outstanding using the treasury stock method ."
+        },
+        {
+          "location": "text_15",
+          "text": "( 3 ) there were 0.4 million potential common shares excluded from the diluted weighted-average shares outstanding for the year ended december 31 , 2015 , and there was an insignificant amount of potential common shares excluded from the diluted weighted-average shares outstanding for the years ended december 31 , 2014 and 2013 , as their inclusion would have had an anti-dilutive effect ."
+        },
+        {
+          "location": "text_16",
+          "text": "13 ."
+        },
+        {
+          "location": "text_17",
+          "text": "coworker retirement and other compensation benefits profit sharing plan and other savings plans the company has a profit sharing plan that includes a salary reduction feature established under the internal revenue code section 401 ( k ) covering substantially all coworkers in the united states ."
+        },
+        {
+          "location": "text_18",
+          "text": "in addition , coworkers outside the u.s ."
+        },
+        {
+          "location": "text_19",
+          "text": "participate in other savings plans ."
+        },
+        {
+          "location": "text_20",
+          "text": "company contributions to the profit sharing and other savings plans are made in cash and determined at the discretion of the board of directors ."
+        },
+        {
+          "location": "text_21",
+          "text": "for the years ended december 31 , 2015 , 2014 and 2013 , the amounts expensed for these plans were $ 19.8 million , $ 21.9 million and $ 17.3 million , respectively ."
+        },
+        {
+          "location": "text_22",
+          "text": "coworker stock purchase plan on january 1 , 2014 , the first offering period under the company 2019s coworker stock purchase plan ( the 201ccspp 201d ) commenced ."
+        },
+        {
+          "location": "text_23",
+          "text": "the cspp provides the opportunity for eligible coworkers to acquire shares of the company 2019s common stock at a 5% ( 5 % ) discount from the closing market price on the final day of the offering period ."
+        },
+        {
+          "location": "text_24",
+          "text": "there is no compensation expense associated with the cspp ."
+        },
+        {
+          "location": "text_25",
+          "text": "restricted debt unit plan on march 10 , 2010 , the company established the restricted debt unit plan ( the 201crdu plan 201d ) , an unfunded nonqualified deferred compensation plan. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "how much more money was expensed per outstanding basic weighted-average share in the year ended dec 31 , 2013 compared to the year ended dec 31 , 2014?",
+    "human_answer": "1.26",
+    "reference_program": "divide(156.6, 17.3), divide(170.6, 21.9), subtract(#0, #1)",
+    "reference_execution_value": 1.26207,
+    "model_response": {
+      "answer": "-0.0178979157",
+      "unit": "dollars per basic weighted-average share",
+      "expression": "(17.3 / 156.6) - (21.9 / 170.6)",
+      "explanation": "The amount expensed per basic weighted-average share was approximately $0.0179 lower in 2013 than in 2014."
+    }
+  },
+  {
+    "call_id": "S068",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "facility due 2013 relates to leverage ( ratio of debt to operating income before depreciation and amortization ) ."
+        },
+        {
+          "location": "text_1",
+          "text": "as of december 31 , 2008 , we met this financial covenant by a significant margin ."
+        },
+        {
+          "location": "text_2",
+          "text": "our ability to comply with this financial covenant in the future does not depend on further debt reduction or on improved operating results ."
+        },
+        {
+          "location": "text_3",
+          "text": "share repurchase and dividends as of december 31 , 2008 , we had approximately $ 4.1 billion of availability remaining under our share repurchase authorization ."
+        },
+        {
+          "location": "text_4",
+          "text": "we have previously indicated our plan to fully use our remaining share repurchase authorization by the end of 2009 , subject to market conditions ."
+        },
+        {
+          "location": "text_5",
+          "text": "however , as previously disclosed , due to difficult economic conditions and instability in the capital markets , it is unlikely that we will complete our share repurchase authorization by the end of 2009 as previously planned ."
+        },
+        {
+          "location": "text_6",
+          "text": "share repurchases ( in billions ) 20072006 our board of directors declared a dividend of $ 0.0625 per share for each quarter in 2008 totaling approximately $ 727 million ."
+        },
+        {
+          "location": "text_7",
+          "text": "we paid approximately $ 547 million of dividends in 2008 ."
+        },
+        {
+          "location": "text_8",
+          "text": "we expect to continue to pay quarterly dividends , though each subsequent dividend is subject to approval by our board of directors ."
+        },
+        {
+          "location": "text_9",
+          "text": "we did not declare or pay any cash dividends in 2007 or 2006 ."
+        },
+        {
+          "location": "text_10",
+          "text": "investing activities net cash used in investing activities consists primarily of cash paid for capital expenditures , acquisitions and investments , partially offset by proceeds from sales of investments ."
+        },
+        {
+          "location": "text_11",
+          "text": "capital expenditures our most significant recurring investing activity has been capital expenditures in our cable segment and we expect that this will con- tinue in the future ."
+        },
+        {
+          "location": "text_12",
+          "text": "a significant portion of our capital expenditures is based on the level of customer growth and the technology being deployed ."
+        },
+        {
+          "location": "text_13",
+          "text": "the table below summarizes the capital expenditures we incurred in our cable segment from 2006 through 2008. ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "Year ended December 31 (in millions)",
+            "2008",
+            "2007",
+            "2006"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Customer premises equipment<sup>(a)</sup>",
+            "$3,147",
+            "$3,164",
+            "$2,321"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Scalable infrastructure<sup>(b)</sup>",
+            "1,024",
+            "1,014",
+            "906"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Line extensions<sup>(c)</sup>",
+            "212",
+            "352",
+            "275"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Support capital<sup>(d)</sup>",
+            "522",
+            "792",
+            "435"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Upgrades (capacity expansion)<sup>(e)</sup>",
+            "407",
+            "520",
+            "307"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Business services<sup>(f)</sup>",
+            "233",
+            "151",
+            "—"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Total",
+            "$5,545",
+            "$5,993",
+            "$4,244"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_14",
+          "text": "( a ) customer premises equipment ( 201ccpe 201d ) includes costs incurred to connect our services at the customer 2019s home ."
+        },
+        {
+          "location": "text_15",
+          "text": "the equipment deployed typically includes stan- dard digital set-top boxes , hd set-top boxes , digital video recorders , remote controls and modems ."
+        },
+        {
+          "location": "text_16",
+          "text": "cpe also includes the cost of installing this equipment for new customers as well as the material and labor cost incurred to install the cable that connects a customer 2019s dwelling to the network ."
+        },
+        {
+          "location": "text_17",
+          "text": "( b ) scalable infrastructure includes costs incurred to secure growth in customers or revenue units or to provide service enhancements , other than those related to cpe ."
+        },
+        {
+          "location": "text_18",
+          "text": "scalable infrastructure includes equipment that controls signal reception , processing and transmission throughout our distribution network , as well as equipment that controls and communicates with the cpe residing within a customer 2019s home ."
+        },
+        {
+          "location": "text_19",
+          "text": "also included in scalable infrastructure is certain equipment necessary for content aggregation and distribution ( video on demand equipment ) and equipment necessary to provide certain video , high-speed internet and digital phone service features ( e.g. , voice mail and e-mail ) ."
+        },
+        {
+          "location": "text_20",
+          "text": "( c ) line extensions include the costs of extending our distribution network into new service areas ."
+        },
+        {
+          "location": "text_21",
+          "text": "these costs typically include network design , the purchase and installation of fiber-optic and coaxial cable , and certain electronic equipment ."
+        },
+        {
+          "location": "text_22",
+          "text": "( d ) support capital includes costs associated with the replacement or enhancement of non-network assets due to technical or physical obsolescence and wear-out ."
+        },
+        {
+          "location": "text_23",
+          "text": "these costs typically include vehicles , computer and office equipment , furniture and fixtures , tools , and test equipment ."
+        },
+        {
+          "location": "text_24",
+          "text": "( e ) upgrades include costs to enhance or replace existing portions of our cable net- work , including recurring betterments ."
+        },
+        {
+          "location": "text_25",
+          "text": "( f ) business services include the costs incurred related to the rollout of our services to small and medium-sized businesses ."
+        },
+        {
+          "location": "text_26",
+          "text": "the equipment typically includes high-speed internet modems and phone modems and the cost of installing this equipment for new customers as well as materials and labor incurred to install the cable that connects a customer 2019s business to the closest point of the main distribution net- comcast 2008 annual report on form 10-k 32 ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percent of the capital expenditures we incurred in our cable segment in 2006 for the customer premise equipment",
+    "human_answer": "56.8%",
+    "reference_program": "divide(3147, 5545)",
+    "reference_execution_value": 0.56754,
+    "model_response": {
+      "answer": "54.69",
+      "unit": "percent",
+      "expression": "2321 / 4244 * 100",
+      "explanation": "Customer premises equipment accounted for 54.69% of cable segment capital expenditures in 2006, rounded to two decimal places."
+    }
+  }
+]

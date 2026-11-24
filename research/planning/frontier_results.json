@@ -1,0 +1,628 @@
+{
+  "status": "mathematical_design_only",
+  "date": "2026-11-15",
+  "source": "hypothetical population sizes and handwritten vote counts, not SEC measurements",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "alpha_exact": "1/20",
+  "scenarios": [
+    {
+      "name": "assumed_m11",
+      "N": 1000,
+      "votes": [
+        [
+          11,
+          0,
+          0
+        ],
+        [
+          8,
+          2,
+          1
+        ],
+        [
+          6,
+          5,
+          0
+        ],
+        [
+          4,
+          4,
+          3
+        ],
+        [
+          0,
+          11,
+          0
+        ],
+        [
+          3,
+          2,
+          6
+        ]
+      ],
+      "frontier": [
+        {
+          "N": 1000,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "1/6",
+          "evaluation_points": 6,
+          "required_certified_points": 1,
+          "budget_B": 5,
+          "minimum_n_if_zero_findings": 393,
+          "zero_finding_upper": 5,
+          "upper_at_n_minus_one": 6,
+          "certified_points_if_zero_findings": 2,
+          "coverage_if_zero_findings_exact": "1/3",
+          "gate_probability_exact": "22589867352899/456057766330500",
+          "gate_probability_at_n_minus_one_exact": "5703753883124/114014441582625",
+          "shards": 11,
+          "classes": 3,
+          "winners": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "radii": [
+            5,
+            3,
+            0,
+            0,
+            5,
+            1
+          ]
+        },
+        {
+          "N": 1000,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "1/3",
+          "evaluation_points": 6,
+          "required_certified_points": 2,
+          "budget_B": 5,
+          "minimum_n_if_zero_findings": 393,
+          "zero_finding_upper": 5,
+          "upper_at_n_minus_one": 6,
+          "certified_points_if_zero_findings": 2,
+          "coverage_if_zero_findings_exact": "1/3",
+          "gate_probability_exact": "22589867352899/456057766330500",
+          "gate_probability_at_n_minus_one_exact": "5703753883124/114014441582625",
+          "shards": 11,
+          "classes": 3,
+          "winners": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "radii": [
+            5,
+            3,
+            0,
+            0,
+            5,
+            1
+          ]
+        },
+        {
+          "N": 1000,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "1/2",
+          "evaluation_points": 6,
+          "required_certified_points": 3,
+          "budget_B": 3,
+          "minimum_n_if_zero_findings": 527,
+          "zero_finding_upper": 3,
+          "upper_at_n_minus_one": 4,
+          "certified_points_if_zero_findings": 3,
+          "coverage_if_zero_findings_exact": "1/2",
+          "gate_probability_exact": "205925753/4141712475",
+          "gate_probability_at_n_minus_one_exact": "346130521/6902854125",
+          "shards": 11,
+          "classes": 3,
+          "winners": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "radii": [
+            5,
+            3,
+            0,
+            0,
+            5,
+            1
+          ]
+        },
+        {
+          "N": 1000,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "2/3",
+          "evaluation_points": 6,
+          "required_certified_points": 4,
+          "budget_B": 1,
+          "minimum_n_if_zero_findings": 777,
+          "zero_finding_upper": 1,
+          "upper_at_n_minus_one": 2,
+          "certified_points_if_zero_findings": 4,
+          "coverage_if_zero_findings_exact": "2/3",
+          "gate_probability_exact": "223/4500",
+          "gate_probability_at_n_minus_one_exact": "6244/124875",
+          "shards": 11,
+          "classes": 3,
+          "winners": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "radii": [
+            5,
+            3,
+            0,
+            0,
+            5,
+            1
+          ]
+        },
+        {
+          "N": 1000,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "5/6",
+          "evaluation_points": 6,
+          "required_certified_points": 5,
+          "budget_B": 0,
+          "minimum_n_if_zero_findings": 950,
+          "zero_finding_upper": 0,
+          "upper_at_n_minus_one": 1,
+          "certified_points_if_zero_findings": 6,
+          "coverage_if_zero_findings_exact": "1",
+          "gate_probability_exact": "1/20",
+          "gate_probability_at_n_minus_one_exact": "51/1000",
+          "shards": 11,
+          "classes": 3,
+          "winners": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "radii": [
+            5,
+            3,
+            0,
+            0,
+            5,
+            1
+          ]
+        },
+        {
+          "N": 1000,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "1",
+          "evaluation_points": 6,
+          "required_certified_points": 6,
+          "budget_B": 0,
+          "minimum_n_if_zero_findings": 950,
+          "zero_finding_upper": 0,
+          "upper_at_n_minus_one": 1,
+          "certified_points_if_zero_findings": 6,
+          "coverage_if_zero_findings_exact": "1",
+          "gate_probability_exact": "1/20",
+          "gate_probability_at_n_minus_one_exact": "51/1000",
+          "shards": 11,
+          "classes": 3,
+          "winners": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "radii": [
+            5,
+            3,
+            0,
+            0,
+            5,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "assumed_m31",
+      "N": 10000,
+      "votes": [
+        [
+          31,
+          0,
+          0
+        ],
+        [
+          24,
+          4,
+          3
+        ],
+        [
+          18,
+          12,
+          1
+        ],
+        [
+          11,
+          10,
+          10
+        ],
+        [
+          0,
+          31,
+          0
+        ],
+        [
+          6,
+          5,
+          20
+        ]
+      ],
+      "frontier": [
+        {
+          "N": 10000,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "1/6",
+          "evaluation_points": 6,
+          "required_certified_points": 1,
+          "budget_B": 15,
+          "minimum_n_if_zero_findings": 1707,
+          "zero_finding_upper": 15,
+          "upper_at_n_minus_one": 16,
+          "certified_points_if_zero_findings": 2,
+          "coverage_if_zero_findings_exact": "1/3",
+          "gate_probability_exact": "310036415774953741296418728700537854628786/6210120226383789843668054196655590499358125",
+          "gate_probability_at_n_minus_one_exact": "28239605882376796440867325614907651895398/564556384216708167606186745150508227214375",
+          "shards": 31,
+          "classes": 3,
+          "winners": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "radii": [
+            15,
+            10,
+            3,
+            0,
+            15,
+            6
+          ]
+        },
+        {
+          "N": 10000,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "1/3",
+          "evaluation_points": 6,
+          "required_certified_points": 2,
+          "budget_B": 15,
+          "minimum_n_if_zero_findings": 1707,
+          "zero_finding_upper": 15,
+          "upper_at_n_minus_one": 16,
+          "certified_points_if_zero_findings": 2,
+          "coverage_if_zero_findings_exact": "1/3",
+          "gate_probability_exact": "310036415774953741296418728700537854628786/6210120226383789843668054196655590499358125",
+          "gate_probability_at_n_minus_one_exact": "28239605882376796440867325614907651895398/564556384216708167606186745150508227214375",
+          "shards": 31,
+          "classes": 3,
+          "winners": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "radii": [
+            15,
+            10,
+            3,
+            0,
+            15,
+            6
+          ]
+        },
+        {
+          "N": 10000,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "1/2",
+          "evaluation_points": 6,
+          "required_certified_points": 3,
+          "budget_B": 10,
+          "minimum_n_if_zero_findings": 2383,
+          "zero_finding_upper": 10,
+          "upper_at_n_minus_one": 11,
+          "certified_points_if_zero_findings": 3,
+          "coverage_if_zero_findings_exact": "1/2",
+          "gate_probability_exact": "2422700546548460725832770476422/48464542528111847743782147473125",
+          "gate_probability_at_n_minus_one_exact": "186631066159773627624293873956/3728041732931680595675549805625",
+          "shards": 31,
+          "classes": 3,
+          "winners": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "radii": [
+            15,
+            10,
+            3,
+            0,
+            15,
+            6
+          ]
+        },
+        {
+          "N": 10000,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "2/3",
+          "evaluation_points": 6,
+          "required_certified_points": 4,
+          "budget_B": 6,
+          "minimum_n_if_zero_findings": 3481,
+          "zero_finding_upper": 6,
+          "upper_at_n_minus_one": 7,
+          "certified_points_if_zero_findings": 4,
+          "coverage_if_zero_findings_exact": "2/3",
+          "gate_probability_exact": "19077462204201903999/381716558362160890000",
+          "gate_probability_at_n_minus_one_exact": "6206839000568683337/124057881467702289250",
+          "shards": 31,
+          "classes": 3,
+          "winners": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "radii": [
+            15,
+            10,
+            3,
+            0,
+            15,
+            6
+          ]
+        },
+        {
+          "N": 10000,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "5/6",
+          "evaluation_points": 6,
+          "required_certified_points": 5,
+          "budget_B": 3,
+          "minimum_n_if_zero_findings": 5271,
+          "zero_finding_upper": 3,
+          "upper_at_n_minus_one": 4,
+          "certified_points_if_zero_findings": 5,
+          "coverage_if_zero_findings_exact": "5/6",
+          "gate_probability_exact": "10406024980313/208208356248750",
+          "gate_probability_at_n_minus_one_exact": "189360589993/3785606477250",
+          "shards": 31,
+          "classes": 3,
+          "winners": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "radii": [
+            15,
+            10,
+            3,
+            0,
+            15,
+            6
+          ]
+        },
+        {
+          "N": 10000,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "1",
+          "evaluation_points": 6,
+          "required_certified_points": 6,
+          "budget_B": 0,
+          "minimum_n_if_zero_findings": 9500,
+          "zero_finding_upper": 0,
+          "upper_at_n_minus_one": 1,
+          "certified_points_if_zero_findings": 6,
+          "coverage_if_zero_findings_exact": "1",
+          "gate_probability_exact": "1/20",
+          "gate_probability_at_n_minus_one_exact": "501/10000",
+          "shards": 31,
+          "classes": 3,
+          "winners": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "radii": [
+            15,
+            10,
+            3,
+            0,
+            15,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tie_favourable_m2",
+      "N": 20,
+      "votes": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "frontier": [
+        {
+          "N": 20,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "1/2",
+          "evaluation_points": 2,
+          "required_certified_points": 1,
+          "budget_B": 1,
+          "minimum_n_if_zero_findings": 16,
+          "zero_finding_upper": 1,
+          "upper_at_n_minus_one": 2,
+          "certified_points_if_zero_findings": 1,
+          "coverage_if_zero_findings_exact": "1/2",
+          "gate_probability_exact": "3/95",
+          "gate_probability_at_n_minus_one_exact": "1/19",
+          "shards": 2,
+          "classes": 2,
+          "winners": [
+            0,
+            1
+          ],
+          "radii": [
+            1,
+            0
+          ]
+        },
+        {
+          "N": 20,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "1",
+          "evaluation_points": 2,
+          "required_certified_points": 2,
+          "budget_B": 0,
+          "minimum_n_if_zero_findings": 19,
+          "zero_finding_upper": 0,
+          "upper_at_n_minus_one": 1,
+          "certified_points_if_zero_findings": 2,
+          "coverage_if_zero_findings_exact": "1",
+          "gate_probability_exact": "1/20",
+          "gate_probability_at_n_minus_one_exact": "1/10",
+          "shards": 2,
+          "classes": 2,
+          "winners": [
+            0,
+            1
+          ],
+          "radii": [
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "empty_edge_population",
+      "N": 0,
+      "votes": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "frontier": [
+        {
+          "N": 0,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "1/2",
+          "evaluation_points": 2,
+          "required_certified_points": 1,
+          "budget_B": 1,
+          "minimum_n_if_zero_findings": 0,
+          "zero_finding_upper": 0,
+          "upper_at_n_minus_one": null,
+          "certified_points_if_zero_findings": 2,
+          "coverage_if_zero_findings_exact": "1",
+          "gate_probability_exact": null,
+          "gate_probability_at_n_minus_one_exact": null,
+          "shards": 2,
+          "classes": 2,
+          "winners": [
+            0,
+            1
+          ],
+          "radii": [
+            1,
+            0
+          ]
+        },
+        {
+          "N": 0,
+          "alpha_exact": "1/20",
+          "target_coverage_exact": "1",
+          "evaluation_points": 2,
+          "required_certified_points": 2,
+          "budget_B": 0,
+          "minimum_n_if_zero_findings": 0,
+          "zero_finding_upper": 0,
+          "upper_at_n_minus_one": null,
+          "certified_points_if_zero_findings": 2,
+          "coverage_if_zero_findings_exact": "1",
+          "gate_probability_exact": null,
+          "gate_probability_at_n_minus_one_exact": null,
+          "shards": 2,
+          "classes": 2,
+          "winners": [
+            0,
+            1
+          ],
+          "radii": [
+            1,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "assumptions": [
+    "model, population, shard rule, vote matrix and audit design fixed before sampling",
+    "uniform sample without replacement and correct audit labels",
+    "clean comparator differs only by deleting suspicious records with stable IDs",
+    "trusted shared core and deterministic shard-local training",
+    "fixed-n plan conditional on future zero findings; not guaranteed to observe zero"
+  ],
+  "limitations": [
+    "not a real-data certificate or model experiment",
+    "not anytime-valid",
+    "for x>0 recompute audit_upper at actual x; do not keep using the zero-finding plan",
+    "coverage is pointwise label robustness, not task accuracy or statistic-interval usefulness"
+  ],
+  "elapsed_seconds": 0.7387827999991714
+}

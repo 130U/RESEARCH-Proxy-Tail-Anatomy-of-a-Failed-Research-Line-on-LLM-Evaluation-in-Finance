@@ -1,0 +1,1 @@
+{"answer":"-27.5471698113","unit":"percent","expression":"(9.60 - 13.25) / 13.25 * 100","low":"-27.6122218031","high":"-27.4820687052","reliable_digits":"1","explanation":"Allowing each fair value to vary by $0.005 gives these bounds, which agree only when rounded to one significant digit."}

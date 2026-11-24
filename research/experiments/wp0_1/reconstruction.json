@@ -1,0 +1,326 @@
+{
+  "experiment": "wp0_1",
+  "input_level": "public report of user-supplied run logs",
+  "computation_level": "our experiment",
+  "source_sha256": "635fc058c30a933b77326414b17be522b082cbd4b0aaa7536de570eab075450f",
+  "seed": 130,
+  "replicates_per_matrix": 100000,
+  "numpy": "2.5.3",
+  "python": "3.12.14",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "elapsed_seconds": 1.1087656000017887,
+  "method": "IID row percentile bootstrap; not event-cluster bootstrap",
+  "selection_adjustment": false,
+  "paired_baseline_test": "not identified from reported aggregates",
+  "matrices": [
+    {
+      "matrix_id": 1,
+      "matrix": [
+        [
+          5,
+          1,
+          4
+        ],
+        [
+          6,
+          62,
+          8
+        ],
+        [
+          0,
+          3,
+          12
+        ]
+      ],
+      "metrics": {
+        "accuracy": {
+          "estimate": 0.7821782178217822,
+          "lower": 0.7029702970297029,
+          "upper": 0.8613861386138614
+        },
+        "macro_f1": {
+          "estimate": 0.6549381760649365,
+          "lower": 0.520935756478983,
+          "upper": 0.7696131912637788
+        },
+        "bearish_precision": {
+          "estimate": 0.45454545454545453,
+          "lower": 0.14285714285714285,
+          "upper": 0.7692307692307693
+        },
+        "bearish_recall": {
+          "estimate": 0.5,
+          "lower": 0.16666666666666666,
+          "upper": 0.8333333333333334
+        },
+        "bearish_f1": {
+          "estimate": 0.47619047619047616,
+          "lower": 0.15384615384615385,
+          "upper": 0.7142857142857143
+        },
+        "neutral_precision": {
+          "estimate": 0.9393939393939394,
+          "lower": 0.875,
+          "upper": 0.9859154929577465
+        },
+        "neutral_recall": {
+          "estimate": 0.8157894736842105,
+          "lower": 0.7246376811594203,
+          "upper": 0.8987341772151899
+        },
+        "neutral_f1": {
+          "estimate": 0.8732394366197183,
+          "lower": 0.8091603053435115,
+          "upper": 0.9264705882352942
+        },
+        "bullish_precision": {
+          "estimate": 0.5,
+          "lower": 0.2962962962962963,
+          "upper": 0.7058823529411765
+        },
+        "bullish_recall": {
+          "estimate": 0.8,
+          "lower": 0.5714285714285714,
+          "upper": 1.0
+        },
+        "bullish_f1": {
+          "estimate": 0.6153846153846154,
+          "lower": 0.4117647058823529,
+          "upper": 0.7796610169491526
+        }
+      }
+    },
+    {
+      "matrix_id": 2,
+      "matrix": [
+        [
+          5,
+          2,
+          3
+        ],
+        [
+          5,
+          62,
+          9
+        ],
+        [
+          1,
+          2,
+          12
+        ]
+      ],
+      "metrics": {
+        "accuracy": {
+          "estimate": 0.7821782178217822,
+          "lower": 0.7029702970297029,
+          "upper": 0.8613861386138614
+        },
+        "macro_f1": {
+          "estimate": 0.6549381760649365,
+          "lower": 0.5210705574796667,
+          "upper": 0.7683930359192245
+        },
+        "bearish_precision": {
+          "estimate": 0.45454545454545453,
+          "lower": 0.14285714285714285,
+          "upper": 0.7692307692307693
+        },
+        "bearish_recall": {
+          "estimate": 0.5,
+          "lower": 0.16666666666666666,
+          "upper": 0.8333333333333334
+        },
+        "bearish_f1": {
+          "estimate": 0.47619047619047616,
+          "lower": 0.16666666666666666,
+          "upper": 0.7142857142857143
+        },
+        "neutral_precision": {
+          "estimate": 0.9393939393939394,
+          "lower": 0.875,
+          "upper": 0.9859154929577465
+        },
+        "neutral_recall": {
+          "estimate": 0.8157894736842105,
+          "lower": 0.7246376811594203,
+          "upper": 0.8987341772151899
+        },
+        "neutral_f1": {
+          "estimate": 0.8732394366197183,
+          "lower": 0.8091603053435115,
+          "upper": 0.9261744966442953
+        },
+        "bullish_precision": {
+          "estimate": 0.5,
+          "lower": 0.29411764705882354,
+          "upper": 0.7037037037037037
+        },
+        "bullish_recall": {
+          "estimate": 0.8,
+          "lower": 0.5714285714285714,
+          "upper": 1.0
+        },
+        "bullish_f1": {
+          "estimate": 0.6153846153846154,
+          "lower": 0.41025641025641024,
+          "upper": 0.7777777777777778
+        }
+      }
+    },
+    {
+      "matrix_id": 3,
+      "matrix": [
+        [
+          5,
+          3,
+          2
+        ],
+        [
+          4,
+          62,
+          10
+        ],
+        [
+          2,
+          1,
+          12
+        ]
+      ],
+      "metrics": {
+        "accuracy": {
+          "estimate": 0.7821782178217822,
+          "lower": 0.7029702970297029,
+          "upper": 0.8613861386138614
+        },
+        "macro_f1": {
+          "estimate": 0.6549381760649365,
+          "lower": 0.5208826151151202,
+          "upper": 0.7692824967563378
+        },
+        "bearish_precision": {
+          "estimate": 0.45454545454545453,
+          "lower": 0.14285714285714285,
+          "upper": 0.7777777777777778
+        },
+        "bearish_recall": {
+          "estimate": 0.5,
+          "lower": 0.16666666666666666,
+          "upper": 0.8333333333333334
+        },
+        "bearish_f1": {
+          "estimate": 0.47619047619047616,
+          "lower": 0.15384615384615385,
+          "upper": 0.72
+        },
+        "neutral_precision": {
+          "estimate": 0.9393939393939394,
+          "lower": 0.875,
+          "upper": 0.9859154929577465
+        },
+        "neutral_recall": {
+          "estimate": 0.8157894736842105,
+          "lower": 0.725,
+          "upper": 0.9
+        },
+        "neutral_f1": {
+          "estimate": 0.8732394366197183,
+          "lower": 0.8099173553719008,
+          "upper": 0.9271523178807947
+        },
+        "bullish_precision": {
+          "estimate": 0.5,
+          "lower": 0.2962962962962963,
+          "upper": 0.7037037037037037
+        },
+        "bullish_recall": {
+          "estimate": 0.8,
+          "lower": 0.5714285714285714,
+          "upper": 1.0
+        },
+        "bullish_f1": {
+          "estimate": 0.6153846153846154,
+          "lower": 0.4117647058823529,
+          "upper": 0.7777777777777778
+        }
+      }
+    },
+    {
+      "matrix_id": 4,
+      "matrix": [
+        [
+          5,
+          4,
+          1
+        ],
+        [
+          3,
+          62,
+          11
+        ],
+        [
+          3,
+          0,
+          12
+        ]
+      ],
+      "metrics": {
+        "accuracy": {
+          "estimate": 0.7821782178217822,
+          "lower": 0.7029702970297029,
+          "upper": 0.8613861386138614
+        },
+        "macro_f1": {
+          "estimate": 0.6549381760649365,
+          "lower": 0.5209571503731562,
+          "upper": 0.7691781145257146
+        },
+        "bearish_precision": {
+          "estimate": 0.45454545454545453,
+          "lower": 0.14285714285714285,
+          "upper": 0.7777777777777778
+        },
+        "bearish_recall": {
+          "estimate": 0.5,
+          "lower": 0.16666666666666666,
+          "upper": 0.8333333333333334
+        },
+        "bearish_f1": {
+          "estimate": 0.47619047619047616,
+          "lower": 0.15384615384615385,
+          "upper": 0.7142857142857143
+        },
+        "neutral_precision": {
+          "estimate": 0.9393939393939394,
+          "lower": 0.8767123287671232,
+          "upper": 0.9859154929577465
+        },
+        "neutral_recall": {
+          "estimate": 0.8157894736842105,
+          "lower": 0.725,
+          "upper": 0.9
+        },
+        "neutral_f1": {
+          "estimate": 0.8732394366197183,
+          "lower": 0.8095238095238095,
+          "upper": 0.9271523178807947
+        },
+        "bullish_precision": {
+          "estimate": 0.5,
+          "lower": 0.2962962962962963,
+          "upper": 0.7037037037037037
+        },
+        "bullish_recall": {
+          "estimate": 0.8,
+          "lower": 0.5714285714285714,
+          "upper": 1.0
+        },
+        "bullish_f1": {
+          "estimate": 0.6153846153846154,
+          "lower": 0.4090909090909091,
+          "upper": 0.7777777777777778
+        }
+      }
+    }
+  ]
+}

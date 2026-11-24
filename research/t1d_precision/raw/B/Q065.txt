@@ -1,0 +1,1 @@
+{"answer":"126.06735105056126","unit":"percent","expression":"(235.63 - 104.23) / 104.23 * 100","low":"126.05171007818871","high":"126.08299352362677","reliable_digits":"4","explanation":"This compares the ending cumulative investment values; the document covers September 2008–December 2011, not five years."}

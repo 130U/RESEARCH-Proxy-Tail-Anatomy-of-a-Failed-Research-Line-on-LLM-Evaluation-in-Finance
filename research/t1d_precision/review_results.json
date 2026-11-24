@@ -1,0 +1,321 @@
+{
+  "seed": 20261117,
+  "bootstrap_draws": 10000,
+  "bootstrap_unit": "document/page; resample all judgments on a page together",
+  "complete": true,
+  "review_b": {
+    "expected_witness": 196,
+    "expected_control": 60,
+    "first_valid_n": 139,
+    "agreement": {
+      "n": 196,
+      "count": 173,
+      "estimate": 0.8826530612244898,
+      "ci95": [
+        0.8412698412698413,
+        0.9222797927461139
+      ],
+      "pages": 123,
+      "labels": [
+        "valid",
+        "invalid",
+        "uncertain"
+      ],
+      "confusion_matrix": [
+        [
+          123,
+          10,
+          6
+        ],
+        [
+          1,
+          36,
+          0
+        ],
+        [
+          2,
+          4,
+          14
+        ]
+      ],
+      "kappa": 0.7583101007934806,
+      "kappa_ci95": [
+        0.6710997131921611,
+        0.8365539420391696
+      ],
+      "kappa_valid_bootstrap_draws": 10000
+    },
+    "strict_valid_n": 123,
+    "strict_valid_fraction": {
+      "n": 196,
+      "count": 123,
+      "estimate": 0.6275510204081632,
+      "ci95": [
+        0.5567010309278351,
+        0.696078431372549
+      ],
+      "pages": 123
+    },
+    "majority_valid_n": 132,
+    "majority_valid_fraction": {
+      "n": 196,
+      "count": 132,
+      "estimate": 0.673469387755102,
+      "ci95": [
+        0.605,
+        0.7384615384615385
+      ],
+      "pages": 123
+    },
+    "second_label_counts": {
+      "witness": {
+        "valid": 126,
+        "invalid": 50,
+        "uncertain": 20
+      },
+      "control": {
+        "uncertain": 5,
+        "valid": 42,
+        "invalid": 13
+      }
+    },
+    "second_invalid_or_uncertain": {
+      "witness": {
+        "n": 196,
+        "count": 70,
+        "estimate": 0.35714285714285715,
+        "ci95": [
+          0.29081632653061223,
+          0.42648298083278235
+        ],
+        "pages": 123
+      },
+      "control": {
+        "n": 60,
+        "count": 18,
+        "estimate": 0.3,
+        "ci95": [
+          0.18181818181818182,
+          0.423728813559322
+        ],
+        "pages": 54
+      }
+    },
+    "retained_denominator_test": 1147,
+    "strict_fraction_of_test": 0.10723626852659111,
+    "strict_fraction_of_test_ci95": [
+      0.09512938279150451,
+      0.1189462707489273
+    ],
+    "majority_fraction_of_test": 0.11508282476024412,
+    "majority_fraction_of_test_ci95": [
+      0.10338273757628597,
+      0.12618871973710682
+    ],
+    "stable_first_labels_available": false,
+    "majority_convention": "Only disagreements receive a third judgment; two agreeing original judgments already establish a majority. Stable controls have no first judgment and are excluded from paired agreement and retention counts.",
+    "complete": true,
+    "second_status_counts": {
+      "ok": 256
+    },
+    "second_missing_or_invalid": [],
+    "disagreements": [
+      "R021",
+      "R025",
+      "R040",
+      "R092",
+      "R093",
+      "R112",
+      "R119",
+      "R141",
+      "R151",
+      "R153",
+      "R155",
+      "R167",
+      "R168",
+      "R178",
+      "R191",
+      "R193",
+      "R200",
+      "R202",
+      "R222",
+      "R233",
+      "R239",
+      "R250",
+      "R251"
+    ],
+    "third_missing_or_invalid": [],
+    "third_status_counts": {
+      "not_required": 233,
+      "ok": 23
+    },
+    "adjudication_display_reason_changed_ids": [],
+    "adjudication_origin_blinding_limitation_ids": []
+  },
+  "review_c": {
+    "expected": 68,
+    "agreement": {
+      "n": 68,
+      "count": 63,
+      "estimate": 0.9264705882352942,
+      "ci95": [
+        0.8615384615384616,
+        0.9852941176470589
+      ],
+      "pages": 65,
+      "labels": [
+        "alternative_source_precision",
+        "reasonable_alternative",
+        "reference_error",
+        "true_error",
+        "unresolved",
+        "invalid_format"
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          23,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          32,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "kappa": 0.8783106657122406,
+      "kappa_ci95": [
+        0.7655045261923094,
+        0.9745373145415797
+      ],
+      "kappa_valid_bootstrap_draws": 10000
+    },
+    "all_fields_agreement": {
+      "n": 68,
+      "count": 63,
+      "estimate": 0.9264705882352942,
+      "ci95": [
+        0.8615384615384616,
+        0.9852941176470589
+      ],
+      "pages": 65
+    },
+    "first_cause_counts": {
+      "reference_error": 33,
+      "unresolved": 11,
+      "reasonable_alternative": 24
+    },
+    "second_cause_counts": {
+      "reasonable_alternative": 24,
+      "reference_error": 35,
+      "unresolved": 9
+    },
+    "strict_cause_counts": {
+      "reference_error": 32,
+      "reasonable_alternative": 23,
+      "unresolved": 8
+    },
+    "first_label_source": "T1C final source attribution: review_*.json overlaid with adjudication.json; this preserves the prior final published categories rather than reusing its unadjudicated preliminary labels.",
+    "reference_error_strict_fraction_of_all_reviewed": {
+      "n": 68,
+      "count": 32,
+      "estimate": 0.47058823529411764,
+      "ci95": [
+        0.34782608695652173,
+        0.5970149253731343
+      ],
+      "pages": 65
+    },
+    "reference_error_fraction_of_agreed_causes": {
+      "n": 63,
+      "count": 32,
+      "estimate": 0.5079365079365079,
+      "ci95": [
+        0.3787878787878788,
+        0.639344262295082
+      ],
+      "pages": 60
+    },
+    "reasonable_alternative_strict_fraction_of_all_reviewed": {
+      "n": 68,
+      "count": 23,
+      "estimate": 0.3382352941176471,
+      "ci95": [
+        0.21739130434782608,
+        0.4626865671641791
+      ],
+      "pages": 65
+    },
+    "reasonable_alternative_fraction_of_agreed_causes": {
+      "n": 63,
+      "count": 23,
+      "estimate": 0.36507936507936506,
+      "ci95": [
+        0.23809523809523808,
+        0.49230769230769234
+      ],
+      "pages": 60
+    },
+    "complete": true,
+    "second_status_counts": {
+      "ok": 68
+    },
+    "second_missing_or_invalid": [],
+    "disagreements": [
+      "S001",
+      "S002",
+      "S015",
+      "S024",
+      "S061"
+    ],
+    "third_missing_or_invalid": [],
+    "third_status_counts": {
+      "ok": 5,
+      "not_required": 63
+    },
+    "adjudication_display_reason_changed_ids": [
+      "S002",
+      "S015",
+      "S024"
+    ],
+    "adjudication_origin_blinding_limitation_ids": []
+  }
+}

@@ -1,0 +1,571 @@
+{
+  "date": "2026-11-16",
+  "timezone": "America/New_York",
+  "python": "3.12.14",
+  "input_sha256": "c70541849d0c31b697ed5046cc7aa85c727e7a3d5d334bfd481ced42c949b83c",
+  "n_all": 8281,
+  "n_analyzed": 5337,
+  "n_unanalyzed": 2944,
+  "interpretation": "Conditional on T1 source binding and independent half-unit rounding boxes. Not an official FinQA scoring rule.",
+  "rule": "abs(center-gold) + sum(abs(gradient_i)*h_i) > tau*abs(gold)",
+  "mentor_replication": {
+    "n": 1425,
+    "correct": 1394,
+    "accuracy": 0.9782456140350877,
+    "errors": 31,
+    "definition": "T1 analyzed; category growth; exactly 2 bound inputs; T1 non-unresolved; raw unconverted center difference / sum halfwidths",
+    "bins": [
+      {
+        "lower": 0,
+        "upper": 60,
+        "n": 453,
+        "outside": 451,
+        "fraction": 0.9955849889624724
+      },
+      {
+        "lower": 60,
+        "upper": 100,
+        "n": 99,
+        "outside": 99,
+        "fraction": 1.0
+      },
+      {
+        "lower": 100,
+        "upper": 150,
+        "n": 83,
+        "outside": 16,
+        "fraction": 0.1927710843373494
+      },
+      {
+        "lower": 150,
+        "upper": 300,
+        "n": 144,
+        "outside": 6,
+        "fraction": 0.041666666666666664
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "n": 646,
+        "outside": 7,
+        "fraction": 0.010835913312693499
+      }
+    ],
+    "error_reasons": {
+      "Omits the finite growth factor (1+g/2) and the nonlinear denominator correction; not the small-growth limit": 24,
+      "Raw inputs have different units; direct subtraction skips the program's unit conversion": 5,
+      "Program is not a growth rate of two numbers; the original category's structural label is too broad": 2
+    }
+  },
+  "canonical_growth_n": 1427,
+  "strict_original_growth_n": 1307,
+  "canonical_simple_rule": {
+    "n": 1427,
+    "true_positive": 554,
+    "false_positive": 5,
+    "true_negative": 844,
+    "false_negative": 24,
+    "accuracy": 0.979677645409951,
+    "unresolved": 0
+  },
+  "first_order_by_tau": {
+    "0.001": {
+      "n": 5337,
+      "true_positive": 3113,
+      "false_positive": 1,
+      "true_negative": 2222,
+      "false_negative": 1,
+      "accuracy": 0.9996252576353757,
+      "unresolved": 0
+    },
+    "0.005": {
+      "n": 5337,
+      "true_positive": 1924,
+      "false_positive": 0,
+      "true_negative": 3413,
+      "false_negative": 0,
+      "accuracy": 1.0,
+      "unresolved": 0
+    },
+    "0.01": {
+      "n": 5337,
+      "true_positive": 1469,
+      "false_positive": 0,
+      "true_negative": 3868,
+      "false_negative": 0,
+      "accuracy": 1.0,
+      "unresolved": 0
+    },
+    "0.02": {
+      "n": 5337,
+      "true_positive": 984,
+      "false_positive": 0,
+      "true_negative": 4351,
+      "false_negative": 2,
+      "accuracy": 0.9996252576353757,
+      "unresolved": 0
+    },
+    "0.05": {
+      "n": 5337,
+      "true_positive": 526,
+      "false_positive": 0,
+      "true_negative": 4810,
+      "false_negative": 1,
+      "accuracy": 0.9998126288176878,
+      "unresolved": 0
+    }
+  },
+  "centered_first_order_errors": 1,
+  "by_category": {
+    "difference": {
+      "n": 872,
+      "against_t1": {
+        "n": 870,
+        "true_positive": 332,
+        "false_positive": 0,
+        "true_negative": 538,
+        "false_negative": 0,
+        "accuracy": 1.0,
+        "unresolved": 2
+      },
+      "against_recomputed": {
+        "n": 872,
+        "true_positive": 332,
+        "false_positive": 0,
+        "true_negative": 540,
+        "false_negative": 0,
+        "accuracy": 1.0,
+        "unresolved": 0
+      },
+      "range_methods": {
+        "monotone_interval_derivatives": 872
+      }
+    },
+    "growth": {
+      "n": 1458,
+      "against_t1": {
+        "n": 1449,
+        "true_positive": 585,
+        "false_positive": 0,
+        "true_negative": 864,
+        "false_negative": 0,
+        "accuracy": 1.0,
+        "unresolved": 9
+      },
+      "against_recomputed": {
+        "n": 1458,
+        "true_positive": 585,
+        "false_positive": 0,
+        "true_negative": 873,
+        "false_negative": 0,
+        "accuracy": 1.0,
+        "unresolved": 0
+      },
+      "range_methods": {
+        "monotone_interval_derivatives": 1458
+      }
+    },
+    "other": {
+      "n": 74,
+      "against_t1": {
+        "n": 74,
+        "true_positive": 16,
+        "false_positive": 0,
+        "true_negative": 58,
+        "false_negative": 0,
+        "accuracy": 1.0,
+        "unresolved": 0
+      },
+      "against_recomputed": {
+        "n": 74,
+        "true_positive": 16,
+        "false_positive": 0,
+        "true_negative": 58,
+        "false_negative": 0,
+        "accuracy": 1.0,
+        "unresolved": 0
+      },
+      "range_methods": {
+        "monotone_interval_derivatives": 74
+      }
+    },
+    "ratio": {
+      "n": 2538,
+      "against_t1": {
+        "n": 2534,
+        "true_positive": 459,
+        "false_positive": 0,
+        "true_negative": 2075,
+        "false_negative": 0,
+        "accuracy": 1.0,
+        "unresolved": 4
+      },
+      "against_recomputed": {
+        "n": 2538,
+        "true_positive": 459,
+        "false_positive": 0,
+        "true_negative": 2079,
+        "false_negative": 0,
+        "accuracy": 1.0,
+        "unresolved": 0
+      },
+      "range_methods": {
+        "monotone_interval_derivatives": 2531,
+        "coordinatewise_linear_fractional": 7
+      }
+    },
+    "sum": {
+      "n": 395,
+      "against_t1": {
+        "n": 395,
+        "true_positive": 77,
+        "false_positive": 0,
+        "true_negative": 318,
+        "false_negative": 0,
+        "accuracy": 1.0,
+        "unresolved": 0
+      },
+      "against_recomputed": {
+        "n": 395,
+        "true_positive": 77,
+        "false_positive": 0,
+        "true_negative": 318,
+        "false_negative": 0,
+        "accuracy": 1.0,
+        "unresolved": 0
+      },
+      "range_methods": {
+        "monotone_interval_derivatives": 395
+      }
+    }
+  },
+  "range_methods": {
+    "monotone_interval_derivatives": 5330,
+    "coordinatewise_linear_fractional": 7
+  },
+  "t1_certificate_contradictions": [],
+  "recomputed_status_counts": {
+    "outside": 1469,
+    "inside": 3868
+  },
+  "resolved_original_unresolved": [
+    {
+      "id": "CE/2016/page_19.pdf-4",
+      "status": "inside",
+      "method": "monotone_interval_derivatives"
+    },
+    {
+      "id": "DRE/2008/page_46.pdf-4",
+      "status": "inside",
+      "method": "monotone_interval_derivatives"
+    },
+    {
+      "id": "ANSS/2012/page_93.pdf-2",
+      "status": "inside",
+      "method": "monotone_interval_derivatives"
+    },
+    {
+      "id": "AON/2007/page_184.pdf-1",
+      "status": "inside",
+      "method": "monotone_interval_derivatives"
+    },
+    {
+      "id": "JPM/2007/page_119.pdf-3",
+      "status": "inside",
+      "method": "coordinatewise_linear_fractional"
+    },
+    {
+      "id": "ECL/2017/page_57.pdf-3",
+      "status": "inside",
+      "method": "monotone_interval_derivatives"
+    },
+    {
+      "id": "CME/2012/page_103.pdf-1",
+      "status": "inside",
+      "method": "monotone_interval_derivatives"
+    },
+    {
+      "id": "PNC/2009/page_68.pdf-2",
+      "status": "inside",
+      "method": "monotone_interval_derivatives"
+    },
+    {
+      "id": "PPG/2013/page_54.pdf-1",
+      "status": "inside",
+      "method": "monotone_interval_derivatives"
+    },
+    {
+      "id": "GPN/2015/page_82.pdf-3",
+      "status": "inside",
+      "method": "monotone_interval_derivatives"
+    },
+    {
+      "id": "JPM/2012/page_110.pdf-3",
+      "status": "inside",
+      "method": "monotone_interval_derivatives"
+    },
+    {
+      "id": "C/2008/page_193.pdf-2",
+      "status": "inside",
+      "method": "monotone_interval_derivatives"
+    },
+    {
+      "id": "PNC/2009/page_133.pdf-3",
+      "status": "inside",
+      "method": "monotone_interval_derivatives"
+    },
+    {
+      "id": "C/2009/page_248.pdf-2",
+      "status": "inside",
+      "method": "monotone_interval_derivatives"
+    },
+    {
+      "id": "CAT/2017/page_69.pdf-2",
+      "status": "inside",
+      "method": "monotone_interval_derivatives"
+    }
+  ],
+  "first_order_error_count": 0,
+  "tolerance_curve": [
+    {
+      "split": "all",
+      "tau": 0.001,
+      "analyzed_n": 5337,
+      "all_questions_n": 8281,
+      "outside": 3114,
+      "inside": 2223,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.5834738617200674,
+      "outside_fraction_all_questions": 0.3760415408767057,
+      "upper_fraction_analyzed": 0.5834738617200674
+    },
+    {
+      "split": "all",
+      "tau": 0.005,
+      "analyzed_n": 5337,
+      "all_questions_n": 8281,
+      "outside": 1924,
+      "inside": 3413,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.3605021547685966,
+      "outside_fraction_all_questions": 0.23233908948194662,
+      "upper_fraction_analyzed": 0.3605021547685966
+    },
+    {
+      "split": "all",
+      "tau": 0.01,
+      "analyzed_n": 5337,
+      "all_questions_n": 8281,
+      "outside": 1469,
+      "inside": 3868,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.2752482668165636,
+      "outside_fraction_all_questions": 0.17739403453689168,
+      "upper_fraction_analyzed": 0.2752482668165636
+    },
+    {
+      "split": "all",
+      "tau": 0.02,
+      "analyzed_n": 5337,
+      "all_questions_n": 8281,
+      "outside": 986,
+      "inside": 4351,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.18474798575979015,
+      "outside_fraction_all_questions": 0.11906774544137182,
+      "upper_fraction_analyzed": 0.18474798575979015
+    },
+    {
+      "split": "all",
+      "tau": 0.05,
+      "analyzed_n": 5337,
+      "all_questions_n": 8281,
+      "outside": 527,
+      "inside": 4810,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.09874461307850853,
+      "outside_fraction_all_questions": 0.06363965704625045,
+      "upper_fraction_analyzed": 0.09874461307850853
+    },
+    {
+      "split": "train",
+      "tau": 0.001,
+      "analyzed_n": 4018,
+      "all_questions_n": 6251,
+      "outside": 2362,
+      "inside": 1656,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.5878546540567446,
+      "outside_fraction_all_questions": 0.3778595424732043,
+      "upper_fraction_analyzed": 0.5878546540567446
+    },
+    {
+      "split": "train",
+      "tau": 0.005,
+      "analyzed_n": 4018,
+      "all_questions_n": 6251,
+      "outside": 1453,
+      "inside": 2565,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.36162269785963164,
+      "outside_fraction_all_questions": 0.23244280915053592,
+      "upper_fraction_analyzed": 0.36162269785963164
+    },
+    {
+      "split": "train",
+      "tau": 0.01,
+      "analyzed_n": 4018,
+      "all_questions_n": 6251,
+      "outside": 1109,
+      "inside": 2909,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.27600796416127427,
+      "outside_fraction_all_questions": 0.1774116141417373,
+      "upper_fraction_analyzed": 0.27600796416127427
+    },
+    {
+      "split": "train",
+      "tau": 0.02,
+      "analyzed_n": 4018,
+      "all_questions_n": 6251,
+      "outside": 725,
+      "inside": 3293,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.18043802887008462,
+      "outside_fraction_all_questions": 0.11598144296912494,
+      "upper_fraction_analyzed": 0.18043802887008462
+    },
+    {
+      "split": "train",
+      "tau": 0.05,
+      "analyzed_n": 4018,
+      "all_questions_n": 6251,
+      "outside": 391,
+      "inside": 3627,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.0973120955699353,
+      "outside_fraction_all_questions": 0.0625499920012798,
+      "upper_fraction_analyzed": 0.0973120955699353
+    },
+    {
+      "split": "dev",
+      "tau": 0.001,
+      "analyzed_n": 588,
+      "all_questions_n": 883,
+      "outside": 345,
+      "inside": 243,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.5867346938775511,
+      "outside_fraction_all_questions": 0.39071347678369195,
+      "upper_fraction_analyzed": 0.5867346938775511
+    },
+    {
+      "split": "dev",
+      "tau": 0.005,
+      "analyzed_n": 588,
+      "all_questions_n": 883,
+      "outside": 216,
+      "inside": 372,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.3673469387755102,
+      "outside_fraction_all_questions": 0.24462061155152887,
+      "upper_fraction_analyzed": 0.3673469387755102
+    },
+    {
+      "split": "dev",
+      "tau": 0.01,
+      "analyzed_n": 588,
+      "all_questions_n": 883,
+      "outside": 164,
+      "inside": 424,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.2789115646258503,
+      "outside_fraction_all_questions": 0.1857304643261608,
+      "upper_fraction_analyzed": 0.2789115646258503
+    },
+    {
+      "split": "dev",
+      "tau": 0.02,
+      "analyzed_n": 588,
+      "all_questions_n": 883,
+      "outside": 123,
+      "inside": 465,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.20918367346938777,
+      "outside_fraction_all_questions": 0.1392978482446206,
+      "upper_fraction_analyzed": 0.20918367346938777
+    },
+    {
+      "split": "dev",
+      "tau": 0.05,
+      "analyzed_n": 588,
+      "all_questions_n": 883,
+      "outside": 65,
+      "inside": 523,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.11054421768707483,
+      "outside_fraction_all_questions": 0.07361268403171008,
+      "upper_fraction_analyzed": 0.11054421768707483
+    },
+    {
+      "split": "test",
+      "tau": 0.001,
+      "analyzed_n": 731,
+      "all_questions_n": 1147,
+      "outside": 407,
+      "inside": 324,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.5567715458276333,
+      "outside_fraction_all_questions": 0.3548387096774194,
+      "upper_fraction_analyzed": 0.5567715458276333
+    },
+    {
+      "split": "test",
+      "tau": 0.005,
+      "analyzed_n": 731,
+      "all_questions_n": 1147,
+      "outside": 255,
+      "inside": 476,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.3488372093023256,
+      "outside_fraction_all_questions": 0.22231909328683522,
+      "upper_fraction_analyzed": 0.3488372093023256
+    },
+    {
+      "split": "test",
+      "tau": 0.01,
+      "analyzed_n": 731,
+      "all_questions_n": 1147,
+      "outside": 196,
+      "inside": 535,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.26812585499316005,
+      "outside_fraction_all_questions": 0.17088055797733218,
+      "upper_fraction_analyzed": 0.26812585499316005
+    },
+    {
+      "split": "test",
+      "tau": 0.02,
+      "analyzed_n": 731,
+      "all_questions_n": 1147,
+      "outside": 138,
+      "inside": 593,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.18878248974008208,
+      "outside_fraction_all_questions": 0.12031386224934612,
+      "upper_fraction_analyzed": 0.18878248974008208
+    },
+    {
+      "split": "test",
+      "tau": 0.05,
+      "analyzed_n": 731,
+      "all_questions_n": 1147,
+      "outside": 71,
+      "inside": 660,
+      "unresolved": 0,
+      "outside_fraction_analyzed": 0.09712722298221614,
+      "outside_fraction_all_questions": 0.06190061028770706,
+      "upper_fraction_analyzed": 0.09712722298221614
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"answer":"-53.0179918746","unit":"percent","expression":"(161.9 - 344.6) / 344.6 * 100","low":"-53.0393152474","high":"-52.9966623132","reliable_digits":"3","explanation":"Allowing each debt figure to vary by $0.05 million gives these bounds, which both round to a 53.0% decrease."}

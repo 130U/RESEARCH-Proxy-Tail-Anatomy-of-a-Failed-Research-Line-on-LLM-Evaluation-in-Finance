@@ -1,0 +1,20 @@
+{
+  "review_id": "R112",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "second",
+      "original_reason": "The rounded figures and growth formula correctly describe Utility net revenue, but the excerpt does not establish whether the question intends that business scope or Entergy Corporation overall.",
+      "display_reason": "The rounded figures and growth formula correctly describe Utility net revenue, but the excerpt does not establish whether the question intends that business scope or Entergy Corporation overall.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "first",
+      "original_reason": "2015/2014Entergy revenue growth matches full bridge; repeated economic facts from prior report remain separate benchmark context.",
+      "display_reason": "2015/2014Entergy revenue growth matches full bridge; repeated economic facts from prior report remain separate benchmark context.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

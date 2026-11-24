@@ -1,0 +1,21 @@
+{
+  "group": "pilot",
+  "id": "P001",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "fresh_session": true,
+  "prompt_file": "prompts/pilot/P001.txt",
+  "status": "completed",
+  "thread_id": "01a1e824-d366-7da1-8cb7-dd3664d02840",
+  "tool_use_observed": false,
+  "event_item_types": [
+    "agent_message"
+  ],
+  "usage": {
+    "input_tokens": 18041,
+    "cached_input_tokens": 8704,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 905,
+    "reasoning_output_tokens": 810
+  }
+}

@@ -1,0 +1,202 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R248",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "corporate/other corporate/other includes treasury results , unallocated corporate expenses , offsets to certain line-item reclassifications reported in the business segments ( inter-segment eliminations ) , the results of discontinued operations and unallocated taxes ."
+      },
+      {
+        "location": "text_1",
+        "text": "in millions of dollars 2008 2007 2006 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "<i>In millions of dollars</i>",
+          "2008",
+          "2007",
+          "2006"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Net interest revenue",
+          "$(1,288)",
+          "$(461)",
+          "$(345)"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Non-interest revenue",
+          "438",
+          "(291)",
+          "(599)"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Revenues, net of interest expense",
+          "$(850)",
+          "$(752)",
+          "$(944)"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Operating expenses",
+          "526",
+          "1,830",
+          "202"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Provisions for loan losses and for benefits and claims",
+          "1",
+          "(2)",
+          "4"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Loss from continuing operations before taxes and minority interest",
+          "$(1,377)",
+          "$(2,580)",
+          "$(1,150)"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Income tax benefits",
+          "(421)",
+          "(922)",
+          "(498)"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Minority interest, net of taxes",
+          "(2)",
+          "3",
+          "2"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Loss from continuing operations",
+          "$(954)",
+          "$(1,661)",
+          "$(654)"
+        ]
+      },
+      {
+        "row_index": 10,
+        "cells": [
+          "Income from discontinued operations",
+          "4,410",
+          "628",
+          "1,087"
+        ]
+      },
+      {
+        "row_index": 11,
+        "cells": [
+          "Net income (loss)",
+          "$3,456",
+          "$(1,033)",
+          "$433"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_2",
+        "text": "2008 vs ."
+      },
+      {
+        "location": "text_3",
+        "text": "2007 revenues , net of interest expense declined primarily due to the gain in 2007 on the sale of certain corporate-owned assets and higher inter-segment eliminations partially offset by improved treasury hedging activities ."
+      },
+      {
+        "location": "text_4",
+        "text": "operating expenses declined primarily due to lower restructuring charges in the current year as well as reductions in incentive compensation and benefits expense ."
+      },
+      {
+        "location": "text_5",
+        "text": "discontinued operations represent the sale of citigroup 2019s german retail banking operations and citicapital ."
+      },
+      {
+        "location": "text_6",
+        "text": "see note 3 to the consolidated financial statements on page 136 for a more detailed discussion ."
+      },
+      {
+        "location": "text_7",
+        "text": "2007 vs ."
+      },
+      {
+        "location": "text_8",
+        "text": "2006 revenues , net of interest expense improved primarily due to improved treasury results and a gain on the sale of certain corporate-owned assets , partially offset by higher inter-segment eliminations ."
+      },
+      {
+        "location": "text_9",
+        "text": "operating expenses increased primarily due to restructuring charges , increased staffing , technology and other unallocated expenses , partially offset by higher inter-segment eliminations ."
+      },
+      {
+        "location": "text_10",
+        "text": "income tax benefits increased due to a higher pretax loss in 2007 , offset by a prior-year tax reserve release of $ 69 million relating to the resolution of the 2006 tax audits ."
+      },
+      {
+        "location": "text_11",
+        "text": "discontinued operations represent the operations in the sale of the asset management business and the sale of the life insurance and annuities business ."
+      },
+      {
+        "location": "text_12",
+        "text": "for 2006 , income from discontinued operations included gains and tax benefits relating to the final settlement of the life insurance and annuities and asset management sale transactions and a gain from the sale of the asset management business in poland , as well as a tax reserve release of $ 76 million relating to the resolution of the 2006 tax audits. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percentage change in non-interest revenue from 2006 to 2007?",
+  "reference_program": "subtract(-291, -599), divide(#0, -599)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "-291",
+      "raw": "291",
+      "location": "table_2:2",
+      "context": "Non-interest revenue | 2007"
+    },
+    "x1": {
+      "program_token": "-599",
+      "raw": "599",
+      "location": "table_2:3",
+      "context": "Non-interest revenue | 2006"
+    }
+  }
+}

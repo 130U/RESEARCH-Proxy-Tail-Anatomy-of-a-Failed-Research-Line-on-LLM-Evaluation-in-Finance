@@ -1,0 +1,7 @@
+{
+    "call_id": "S013",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": true,
+    "reason": "Row 3 reports operating losses of $1,201 million in 2007 and $2,199 million in 2008; text 22 rounds these to $1.2 billion and $2.2 billion. The model uses the finer figures and the 2007 loss-magnitude denominator of $1,201 million. It reasonably corrects the question's decline premise by reporting increased loss magnitude; precision alone does not explain the sign difference."
+  }

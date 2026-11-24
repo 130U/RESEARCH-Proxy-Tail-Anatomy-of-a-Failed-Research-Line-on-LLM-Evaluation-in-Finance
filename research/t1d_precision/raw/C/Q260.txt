@@ -1,0 +1,1 @@
+{"answer":"87.8","unit":"million dollars","expression":"214.4 - 126.6","low":"87.7","high":"87.9","reliable_digits":"2","explanation":"Subtracting the 2007 year-end balance from the 2008 year-end balance gives the increase; each balance has rounding uncertainty of $0.05 million."}

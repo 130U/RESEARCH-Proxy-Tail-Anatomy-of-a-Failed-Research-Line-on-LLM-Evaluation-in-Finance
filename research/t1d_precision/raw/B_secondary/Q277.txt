@@ -1,0 +1,1 @@
+{"answer":"21.8641390205","unit":"percent","expression":"692 / 3165 * 100","low":"21.8448902227","high":"21.8833939011","reliable_digits":"2","explanation":"Debt repayments divided by total 2007 obligations give this percentage; rounding bounds use 691.5/3165.5 and 692.5/3164.5, with two significant digits consistently rounding to 22%."}

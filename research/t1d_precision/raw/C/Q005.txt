@@ -1,0 +1,1 @@
+{"answer":"102.43204578","unit":"percent","expression":"(1,415 - 699) / 699 * 100","low":"102.21586848","high":"102.64853257","reliable_digits":"2","explanation":"Allowing each cash-flow figure to vary by 0.5 million gives these bounds and supports two reliable significant digits."}

@@ -1,0 +1,1 @@
+{"answer":"11.7125984252","unit":"percent","expression":"(1135 - 1016) / 1016 * 100","low":"11.6084604033","high":"11.8168389956","reliable_digits":"2","explanation":"Allowing each borrowing figure to vary by 0.5 gives these bounds and supports two reliable significant digits."}

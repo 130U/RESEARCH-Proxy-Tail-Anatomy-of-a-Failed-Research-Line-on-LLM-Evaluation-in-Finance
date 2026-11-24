@@ -1,0 +1,1 @@
+{"answer":"26.46031746031746","unit":"percent","expression":"(79.67 - 63.00) / 63.00 * 100","low":"26.4423458455678","high":"26.4782919279308","reliable_digits":"2","explanation":"ROI equals the gain divided by the 2008 value; rounding uncertainty of 0.005 in each value leaves two reliable significant digits."}

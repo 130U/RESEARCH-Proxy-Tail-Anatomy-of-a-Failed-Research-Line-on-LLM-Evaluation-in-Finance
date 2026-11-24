@@ -1,0 +1,25 @@
+{
+  "group": "pilot",
+  "id": "P005",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "fresh_session": true,
+  "prompt_file": "prompts/pilot/P005.txt",
+  "started_utc": "2026-11-17T06:18:34.127767+00:00",
+  "status": "completed",
+  "returncode": 0,
+  "completed_utc": "2026-11-17T06:19:14.746430+00:00",
+  "elapsed_seconds": 40.61,
+  "thread_id": "01a1e828-4081-7a22-92ed-413c2ee04608",
+  "usage": {
+    "input_tokens": 17301,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 894,
+    "reasoning_output_tokens": 800
+  },
+  "event_item_types": [
+    "agent_message"
+  ],
+  "tool_use_observed": false
+}

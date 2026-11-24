@@ -1,0 +1,1 @@
+{"answer":"21.2772785623","unit":"percent","expression":"(37.79 - 31.16) / 31.16 * 100","low":"21.2417776352","high":"21.3127908843","reliable_digits":"2","explanation":"The high rose from $31.16 in 2011 to $37.79 through March 2012, with each price subject to rounding of ±$0.005."}

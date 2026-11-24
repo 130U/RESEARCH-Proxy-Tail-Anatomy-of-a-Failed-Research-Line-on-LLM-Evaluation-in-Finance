@@ -1,0 +1,7 @@
+{
+    "call_id": "S052",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Postretirement plans in row 2 increased from 3.68% in 2016 to 3.79% in 2017. The 0.11 percentage-point difference must be multiplied by 100 to obtain 11 basis points; the reference incorrectly subtracts 100."
+  }

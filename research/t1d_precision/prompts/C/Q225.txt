@@ -1,0 +1,38 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+.
+
+TABLE
+Currency | 2012 | 2011 | 2010
+Real | $40.4 | $42.4 | $32.5
+Euro | 27.1 | 26.4 | 18.6
+Pound Sterling | 18.5 | 17.6 | 9.0
+Indian Rupee | 4.3 | 3.6 | 2.6
+Total impact | $90.3 | $90.0 | $62.7
+
+the impact on earnings of the foregoing assumed 10% ( 10 % ) change in each of the periods presented would not have been significant .
+revenue included $ 100.8 million and operating income included $ 9.0 million of unfavorable foreign currency impact during 2012 resulting from a stronger u.s .
+dollar during 2012 compared to 2011 .
+our foreign exchange risk management policy permits the use of derivative instruments , such as forward contracts and options , to reduce volatility in our results of operations and/or cash flows resulting from foreign exchange rate fluctuations .
+our international operations' revenues and expenses are generally denominated in local currency , which limits the economic exposure to foreign exchange risk in those jurisdictions .
+we do not enter into foreign currency derivative instruments for trading purposes .
+we have entered into foreign currency forward exchange contracts to hedge foreign currency exposure to intercompany loans .
+as of december 31 , 2012 , the notional amount of these derivatives was approximately $ 115.6 million and the fair value was nominal .
+these derivatives are intended to hedge the foreign exchange risks related to intercompany loans , but have not been designated as hedges for accounting purposes. .
+
+QUESTION
+what was the percentage change in the impact of the euro on earnings from 2010 to 2011?

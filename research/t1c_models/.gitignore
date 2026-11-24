@@ -1,0 +1,4 @@
+__pycache__/
+private/documents.json
+private/review_packets/
+*.tmp

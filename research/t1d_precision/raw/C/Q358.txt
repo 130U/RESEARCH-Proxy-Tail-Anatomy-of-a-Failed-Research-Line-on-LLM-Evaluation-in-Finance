@@ -1,0 +1,1 @@
+{"answer":"81.6666666667","unit":"million dollars","expression":"(75 + 77 + 93) / 3","low":"81.1666666667","high":"82.1666666667","reliable_digits":"2","explanation":"Each annual figure has rounding uncertainty of $0.5 million, giving the average the same uncertainty, or about 0.61%."}

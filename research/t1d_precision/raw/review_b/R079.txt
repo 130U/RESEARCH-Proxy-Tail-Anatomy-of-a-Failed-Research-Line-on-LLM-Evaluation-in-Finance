@@ -1,0 +1,5 @@
+{
+    "review_id": "R079",
+    "verdict": "invalid",
+    "reason": "The $1.7 million input is the pension expense sensitivity to a 25-basis-point decrease, not expected investment income that can be divided by the 7.75% return assumption to obtain assets."
+  }

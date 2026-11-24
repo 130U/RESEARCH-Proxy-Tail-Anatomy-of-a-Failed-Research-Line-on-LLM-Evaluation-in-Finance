@@ -1,0 +1,1 @@
+{"answer":"3.4603694178","unit":"percent","expression":"(4425 - 4277) / 4277 * 100","low":"3.4365867913","high":"3.4841576055","reliable_digits":"1","explanation":"The year-end balance increased from 4,277 to 4,425; allowing each balance to vary by 0.5 gives this range, which supports one reliable significant digit."}

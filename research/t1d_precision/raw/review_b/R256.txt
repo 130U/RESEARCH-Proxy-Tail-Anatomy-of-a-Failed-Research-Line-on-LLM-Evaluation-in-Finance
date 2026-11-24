@@ -1,0 +1,5 @@
+{
+    "review_id": "R256",
+    "verdict": "invalid",
+    "reason": "The calculation reverses the chronological change and divides by the 2009 balance of $24 billion instead of the 2008 starting balance of $31 billion."
+  }

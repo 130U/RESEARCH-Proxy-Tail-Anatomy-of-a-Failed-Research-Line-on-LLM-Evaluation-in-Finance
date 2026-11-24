@@ -1,0 +1,1 @@
+{"answer":"-49.8346196251","unit":"percent","expression":"(318.5 - 634.9) / 634.9 * 100","low":"-49.8464446019","high":"-49.8227927857","reliable_digits":"3","explanation":"Net sales decreased by approximately 49.8%; rounding each sales figure to the nearest $0.1 million gives the stated bounds."}

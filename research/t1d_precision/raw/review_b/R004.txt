@@ -1,0 +1,5 @@
+{
+    "review_id": "R004",
+    "verdict": "invalid",
+    "reason": "The weighted-average borrowing rate is 0.44 percent, so multiplying $932 million by 0.44 without converting the percentage overstates the resulting amount by a factor of 100."
+  }

@@ -1,0 +1,380 @@
+{
+  "assumption": "Independent continuous uniform input rounding errors, shared draws for repeated references; no claim this distribution describes actual hidden financial values.",
+  "methods": {
+    "closed_form_affine_fraction": 4787,
+    "independent_uniform_monte_carlo": 550
+  },
+  "mc_samples_per_question": 262144,
+  "mc_interval_note": "Per-question Wilson 95% intervals measure numerical sampling error only. Aggregate MC SE assumes independent question streams. Excluded rows have unknown probabilities; all-row lower/upper rates assign those probabilities 0/1.",
+  "groups": {
+    "all": {
+      "analyzed": 5337,
+      "all_rows": 8281,
+      "by_tolerance": {
+        "0.001": {
+          "expected_count": 2140.5399625283662,
+          "analyzed_rate": 0.4010755035653675,
+          "all_rows_rate_lower": 0.258488100776279,
+          "all_rows_rate_upper": 0.6140007200251619,
+          "aggregate_mc_se_rate": 2.386104127417902e-06
+        },
+        "0.005": {
+          "expected_count": 1094.9294867905066,
+          "analyzed_rate": 0.20515823248838422,
+          "all_rows_rate_lower": 0.13222189189596747,
+          "all_rows_rate_upper": 0.48773451114485045,
+          "aggregate_mc_se_rate": 1.8320465550931128e-06
+        },
+        "0.01": {
+          "expected_count": 731.4698881057053,
+          "analyzed_rate": 0.13705637776010968,
+          "all_rows_rate_lower": 0.08833110591784872,
+          "all_rows_rate_upper": 0.44384372516673165,
+          "aggregate_mc_se_rate": 1.3335438403377457e-06
+        },
+        "0.02": {
+          "expected_count": 448.33560931796984,
+          "analyzed_rate": 0.08400517319055084,
+          "all_rows_rate_lower": 0.05414027403912207,
+          "all_rows_rate_upper": 0.4096528932880051,
+          "aggregate_mc_se_rate": 8.915327617973257e-07
+        },
+        "0.05": {
+          "expected_count": 199.44550739905668,
+          "analyzed_rate": 0.037370340528209985,
+          "all_rows_rate_lower": 0.024084712884803367,
+          "all_rows_rate_upper": 0.37959733213368646,
+          "aggregate_mc_se_rate": 5.672198668149311e-07
+        }
+      }
+    },
+    "train": {
+      "analyzed": 4018,
+      "all_rows": 6251,
+      "by_tolerance": {
+        "0.001": {
+          "expected_count": 1620.8200423642716,
+          "analyzed_rate": 0.403389756685981,
+          "all_rows_rate_lower": 0.2592897204230158,
+          "all_rows_rate_upper": 0.6165125647679206,
+          "aggregate_mc_se_rate": 2.703718768375801e-06
+        },
+        "0.005": {
+          "expected_count": 821.240323167438,
+          "analyzed_rate": 0.20439032433236384,
+          "all_rows_rate_lower": 0.13137743131777924,
+          "all_rows_rate_upper": 0.48860027566268405,
+          "aggregate_mc_se_rate": 2.109553598057437e-06
+        },
+        "0.01": {
+          "expected_count": 541.5823380804027,
+          "analyzed_rate": 0.13478903386769603,
+          "all_rows_rate_lower": 0.08663931180297595,
+          "all_rows_rate_upper": 0.4438621561478808,
+          "aggregate_mc_se_rate": 1.5235089811115983e-06
+        },
+        "0.02": {
+          "expected_count": 331.3045242802997,
+          "analyzed_rate": 0.08245508319569429,
+          "all_rows_rate_lower": 0.053000243845832615,
+          "all_rows_rate_upper": 0.4102230881907375,
+          "aggregate_mc_se_rate": 9.737943940344142e-07
+        },
+        "0.05": {
+          "expected_count": 151.39081549576713,
+          "analyzed_rate": 0.037678152189090874,
+          "all_rows_rate_lower": 0.02421865549444363,
+          "all_rows_rate_upper": 0.38144149983934844,
+          "aggregate_mc_se_rate": 6.536785867275986e-07
+        }
+      }
+    },
+    "dev": {
+      "analyzed": 588,
+      "all_rows": 883,
+      "by_tolerance": {
+        "0.001": {
+          "expected_count": 239.40079769210286,
+          "analyzed_rate": 0.4071442137620797,
+          "all_rows_rate_lower": 0.2711220811915095,
+          "all_rows_rate_upper": 0.6052104164123476,
+          "aggregate_mc_se_rate": 6.980436711951665e-06
+        },
+        "0.005": {
+          "expected_count": 129.68517867348078,
+          "analyzed_rate": 0.22055302495489928,
+          "all_rows_rate_lower": 0.14686883201979703,
+          "all_rows_rate_upper": 0.4809571672406351,
+          "aggregate_mc_se_rate": 4.520487471031111e-06
+        },
+        "0.01": {
+          "expected_count": 91.26980308017971,
+          "analyzed_rate": 0.1552207535377206,
+          "all_rows_rate_lower": 0.10336331039657952,
+          "all_rows_rate_upper": 0.43745164561741756,
+          "aggregate_mc_se_rate": 3.983609544544635e-06
+        },
+        "0.02": {
+          "expected_count": 57.70673820173673,
+          "analyzed_rate": 0.09814071122744342,
+          "all_rows_rate_lower": 0.06535304439607784,
+          "all_rows_rate_upper": 0.39944137961691584,
+          "aggregate_mc_se_rate": 3.721066358677423e-06
+        },
+        "0.05": {
+          "expected_count": 25.37254273894126,
+          "analyzed_rate": 0.04315058288935588,
+          "all_rows_rate_lower": 0.028734476488042195,
+          "all_rows_rate_upper": 0.3628228117088802,
+          "aggregate_mc_se_rate": 2.410716244974513e-06
+        }
+      }
+    },
+    "test": {
+      "analyzed": 731,
+      "all_rows": 1147,
+      "by_tolerance": {
+        "0.001": {
+          "expected_count": 280.3191224719915,
+          "analyzed_rate": 0.3834734917537503,
+          "all_rows_rate_lower": 0.24439330642719395,
+          "all_rows_rate_upper": 0.6070785723382663,
+          "aggregate_mc_se_rate": 7.148650497835885e-06
+        },
+        "0.005": {
+          "expected_count": 144.00398494958796,
+          "analyzed_rate": 0.19699587544403277,
+          "all_rows_rate_lower": 0.12554837397522925,
+          "all_rows_rate_upper": 0.4882336398863016,
+          "aggregate_mc_se_rate": 5.58889238417243e-06
+        },
+        "0.01": {
+          "expected_count": 98.61774694512295,
+          "analyzed_rate": 0.13490799855693975,
+          "all_rows_rate_lower": 0.08597885522678549,
+          "all_rows_rate_upper": 0.4486641211378578,
+          "aggregate_mc_se_rate": 3.794665421664445e-06
+        },
+        "0.02": {
+          "expected_count": 59.32434683593344,
+          "analyzed_rate": 0.0811550572310991,
+          "all_rows_rate_lower": 0.05172131371920963,
+          "all_rows_rate_upper": 0.41440657963028205,
+          "aggregate_mc_se_rate": 2.181528522998995e-06
+        },
+        "0.05": {
+          "expected_count": 22.68214916434829,
+          "analyzed_rate": 0.031028931825373855,
+          "all_rows_rate_lower": 0.019775195435351604,
+          "all_rows_rate_upper": 0.38246046134642386,
+          "aggregate_mc_se_rate": 6.928937008762598e-07
+        }
+      }
+    },
+    "category_difference": {
+      "analyzed": 872,
+      "all_rows": 872,
+      "by_tolerance": {
+        "0.001": {
+          "expected_count": 418.55176012915285,
+          "analyzed_rate": 0.47999055060682666,
+          "all_rows_rate_lower": 0.47999055060682666,
+          "all_rows_rate_upper": 0.47999055060682666,
+          "aggregate_mc_se_rate": 2.8881369983563773e-06
+        },
+        "0.005": {
+          "expected_count": 238.2653741870127,
+          "analyzed_rate": 0.2732401080126292,
+          "all_rows_rate_lower": 0.2732401080126292,
+          "all_rows_rate_upper": 0.27324010801262916,
+          "aggregate_mc_se_rate": 3.231862847277955e-06
+        },
+        "0.01": {
+          "expected_count": 163.18778218017655,
+          "analyzed_rate": 0.18714195204148687,
+          "all_rows_rate_lower": 0.18714195204148687,
+          "all_rows_rate_upper": 0.18714195204148687,
+          "aggregate_mc_se_rate": 2.219128488097577e-06
+        },
+        "0.02": {
+          "expected_count": 107.4468152343747,
+          "analyzed_rate": 0.12321882481006273,
+          "all_rows_rate_lower": 0.12321882481006273,
+          "all_rows_rate_upper": 0.12321882481006279,
+          "aggregate_mc_se_rate": 1.1158340910901187e-06
+        },
+        "0.05": {
+          "expected_count": 54.627494964599684,
+          "analyzed_rate": 0.06264620982178863,
+          "all_rows_rate_lower": 0.06264620982178863,
+          "all_rows_rate_upper": 0.06264620982178863,
+          "aggregate_mc_se_rate": 6.796452543860689e-07
+        }
+      }
+    },
+    "category_growth": {
+      "analyzed": 1458,
+      "all_rows": 1458,
+      "by_tolerance": {
+        "0.001": {
+          "expected_count": 772.3886681165502,
+          "analyzed_rate": 0.529759031630007,
+          "all_rows_rate_lower": 0.529759031630007,
+          "all_rows_rate_upper": 0.5297590316300071,
+          "aggregate_mc_se_rate": 1.390517500518362e-06
+        },
+        "0.005": {
+          "expected_count": 450.80123032599863,
+          "analyzed_rate": 0.3091915159986273,
+          "all_rows_rate_lower": 0.3091915159986273,
+          "all_rows_rate_upper": 0.3091915159986273,
+          "aggregate_mc_se_rate": 1.362839474112654e-06
+        },
+        "0.01": {
+          "expected_count": 326.4449529052653,
+          "analyzed_rate": 0.2238991446538171,
+          "all_rows_rate_lower": 0.2238991446538171,
+          "all_rows_rate_upper": 0.22389914465381713,
+          "aggregate_mc_se_rate": 8.332189699877731e-07
+        },
+        "0.02": {
+          "expected_count": 216.8582605602312,
+          "analyzed_rate": 0.14873680422512428,
+          "all_rows_rate_lower": 0.14873680422512428,
+          "all_rows_rate_upper": 0.14873680422512428,
+          "aggregate_mc_se_rate": 6.23883069579102e-07
+        },
+        "0.05": {
+          "expected_count": 104.06029464713552,
+          "analyzed_rate": 0.07137194420242492,
+          "all_rows_rate_lower": 0.07137194420242492,
+          "all_rows_rate_upper": 0.07137194420242497,
+          "aggregate_mc_se_rate": 8.793251039232296e-07
+        }
+      }
+    },
+    "category_other": {
+      "analyzed": 74,
+      "all_rows": 74,
+      "by_tolerance": {
+        "0.001": {
+          "expected_count": 29.234727621721547,
+          "analyzed_rate": 0.3950638867800209,
+          "all_rows_rate_lower": 0.3950638867800209,
+          "all_rows_rate_upper": 0.3950638867800209,
+          "aggregate_mc_se_rate": 4.311602128791942e-05
+        },
+        "0.005": {
+          "expected_count": 12.179345218331472,
+          "analyzed_rate": 0.16458574619366853,
+          "all_rows_rate_lower": 0.16458574619366853,
+          "all_rows_rate_upper": 0.16458574619366861,
+          "aggregate_mc_se_rate": 4.023015827920919e-05
+        },
+        "0.01": {
+          "expected_count": 6.538774108886718,
+          "analyzed_rate": 0.08836181228225296,
+          "all_rows_rate_lower": 0.08836181228225296,
+          "all_rows_rate_upper": 0.08836181228225289,
+          "aggregate_mc_se_rate": 3.82861659967076e-05
+        },
+        "0.02": {
+          "expected_count": 2.0018696594238294,
+          "analyzed_rate": 0.027052292694916612,
+          "all_rows_rate_lower": 0.027052292694916612,
+          "all_rows_rate_upper": 0.02705229269491665,
+          "aggregate_mc_se_rate": 1.8562437145580757e-05
+        },
+        "0.05": {
+          "expected_count": 0.7988777160644531,
+          "analyzed_rate": 0.010795644811681798,
+          "all_rows_rate_lower": 0.010795644811681798,
+          "all_rows_rate_upper": 0.010795644811681798,
+          "aggregate_mc_se_rate": 1.0581121835942527e-05
+        }
+      }
+    },
+    "category_ratio": {
+      "analyzed": 2538,
+      "all_rows": 2538,
+      "by_tolerance": {
+        "0.001": {
+          "expected_count": 796.1861780361859,
+          "analyzed_rate": 0.31370613791811897,
+          "all_rows_rate_lower": 0.31370613791811897,
+          "all_rows_rate_upper": 0.31370613791811897,
+          "aggregate_mc_se_rate": 3.739273950482902e-06
+        },
+        "0.005": {
+          "expected_count": 344.53262418074587,
+          "analyzed_rate": 0.13574965491755156,
+          "all_rows_rate_lower": 0.13574965491755156,
+          "all_rows_rate_upper": 0.13574965491755164,
+          "aggregate_mc_se_rate": 2.7476007254753584e-06
+        },
+        "0.01": {
+          "expected_count": 206.80763748071274,
+          "analyzed_rate": 0.08148449073314135,
+          "all_rows_rate_lower": 0.08148449073314135,
+          "all_rows_rate_upper": 0.08148449073314139,
+          "aggregate_mc_se_rate": 2.102622435502426e-06
+        },
+        "0.02": {
+          "expected_count": 106.86392653483857,
+          "analyzed_rate": 0.04210556601057469,
+          "all_rows_rate_lower": 0.04210556601057469,
+          "all_rows_rate_upper": 0.04210556601057461,
+          "aggregate_mc_se_rate": 1.557880136819977e-06
+        },
+        "0.05": {
+          "expected_count": 34.593246504362504,
+          "analyzed_rate": 0.013630120766100278,
+          "all_rows_rate_lower": 0.013630120766100278,
+          "all_rows_rate_upper": 0.013630120766100264,
+          "aggregate_mc_se_rate": 9.184225778563702e-07
+        }
+      }
+    },
+    "category_sum": {
+      "analyzed": 395,
+      "all_rows": 395,
+      "by_tolerance": {
+        "0.001": {
+          "expected_count": 124.17862862475567,
+          "analyzed_rate": 0.3143762749993815,
+          "all_rows_rate_lower": 0.3143762749993815,
+          "all_rows_rate_upper": 0.3143762749993815,
+          "aggregate_mc_se_rate": 1.816319995555358e-05
+        },
+        "0.005": {
+          "expected_count": 49.150912878418005,
+          "analyzed_rate": 0.12443269083143799,
+          "all_rows_rate_lower": 0.12443269083143799,
+          "all_rows_rate_upper": 0.124432690831438,
+          "aggregate_mc_se_rate": 1.2963536106257631e-05
+        },
+        "0.01": {
+          "expected_count": 28.49074143066406,
+          "analyzed_rate": 0.07212845931813686,
+          "all_rows_rate_lower": 0.07212845931813686,
+          "all_rows_rate_upper": 0.07212845931813686,
+          "aggregate_mc_se_rate": 7.564684146660396e-06
+        },
+        "0.02": {
+          "expected_count": 15.164737329101557,
+          "analyzed_rate": 0.03839174007367483,
+          "all_rows_rate_lower": 0.03839174007367483,
+          "all_rows_rate_upper": 0.03839174007367486,
+          "aggregate_mc_se_rate": 4.630422759191049e-06
+        },
+        "0.05": {
+          "expected_count": 5.365593566894531,
+          "analyzed_rate": 0.013583781182011472,
+          "all_rows_rate_lower": 0.013583781182011472,
+          "all_rows_rate_upper": 0.013583781182011437,
+          "aggregate_mc_se_rate": 2.6827117554894607e-06
+        }
+      }
+    }
+  }
+}

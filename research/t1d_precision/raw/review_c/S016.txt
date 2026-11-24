@@ -1,0 +1,7 @@
+{
+    "call_id": "S016",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 9 reports accrued interest and penalty liabilities of $1.2 billion in 2012 and $665 million in 2013. Converting the starting denominator to $1,200 million is a unit conversion, not alternative precision. The model correctly reports the positive decrease magnitude; the reference reports the equivalent negative signed change."
+  }

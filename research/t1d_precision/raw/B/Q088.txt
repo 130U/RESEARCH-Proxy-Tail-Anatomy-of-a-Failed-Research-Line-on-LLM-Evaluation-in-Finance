@@ -1,0 +1,1 @@
+{"answer":"1.5625","unit":"ratio","expression":"2.5 / 1.6","low":"1.4848484848484848","high":"1.6451612903225806","reliable_digits":"0","explanation":"Each input can vary by 0.05 billion, producing bounds that do not round to the same value even at one significant digit."}

@@ -1,0 +1,1 @@
+{"answer":"251599.67","unit":"thousand dollars","expression":"4,999 * 50.33","low":"251574.675","high":"251624.665","reliable_digits":"4","explanation":"The share count is exact, while the per-share fair value has a rounding uncertainty of $0.005."}

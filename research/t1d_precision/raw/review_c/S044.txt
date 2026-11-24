@@ -1,0 +1,7 @@
+{
+    "call_id": "S044",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "For adoption on January 1, 2004, the Net Income column contains -54, +30, and +1, totaling -23 as shown in row 4. The reference omits row 1's -54 reserve impact. No denominator applies; the excerpt does not explicitly establish the model's million-dollar scale."
+  }

@@ -1,0 +1,186 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S035",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "note 10 ."
+      },
+      {
+        "location": "text_1",
+        "text": "commitments and contingencies off-balance sheet commitments and contingencies : credit-related financial instruments include indemnified securities financing , unfunded commitments to extend credit or purchase assets and standby letters of credit ."
+      },
+      {
+        "location": "text_2",
+        "text": "the total potential loss on unfunded commitments , standby letters of credit and securities finance indemnifications is equal to the total contractual amount , which does not consider the value of any collateral ."
+      },
+      {
+        "location": "text_3",
+        "text": "the following is a summary of the contractual amount of credit-related , off-balance sheet financial instruments at december 31 ."
+      },
+      {
+        "location": "text_4",
+        "text": "amounts reported do not reflect participations to independent third parties ."
+      },
+      {
+        "location": "text_5",
+        "text": "2007 2006 ( in millions ) ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "(In millions)",
+          "2007",
+          "2006"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Indemnified securities financing",
+          "$558,368",
+          "$506,032"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Liquidity asset purchase agreements",
+          "35,339",
+          "30,251"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Unfunded commitments to extend credit",
+          "17,533",
+          "16,354"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Standby letters of credit",
+          "4,711",
+          "4,926"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_6",
+        "text": "on behalf of our customers , we lend their securities to creditworthy brokers and other institutions ."
+      },
+      {
+        "location": "text_7",
+        "text": "in certain circumstances , we may indemnify our customers for the fair market value of those securities against a failure of the borrower to return such securities ."
+      },
+      {
+        "location": "text_8",
+        "text": "collateral funds received in connection with our securities finance services are held by us as agent and are not recorded in our consolidated statement of condition ."
+      },
+      {
+        "location": "text_9",
+        "text": "we require the borrowers to provide collateral in an amount equal to or in excess of 100% ( 100 % ) of the fair market value of the securities borrowed ."
+      },
+      {
+        "location": "text_10",
+        "text": "the borrowed securities are revalued daily to determine if additional collateral is necessary ."
+      },
+      {
+        "location": "text_11",
+        "text": "in this regard , we held , as agent , cash and u.s ."
+      },
+      {
+        "location": "text_12",
+        "text": "government securities totaling $ 572.93 billion and $ 527.37 billion as collateral for indemnified securities on loan at december 31 , 2007 and 2006 , respectively ."
+      },
+      {
+        "location": "text_13",
+        "text": "approximately 82% ( 82 % ) of the unfunded commitments to extend credit and liquidity asset purchase agreements expire within one year from the date of issue ."
+      },
+      {
+        "location": "text_14",
+        "text": "since many of the commitments are expected to expire or renew without being drawn upon , the total commitment amounts do not necessarily represent future cash requirements ."
+      },
+      {
+        "location": "text_15",
+        "text": "in the normal course of business , we provide liquidity and credit enhancements to asset-backed commercial paper programs , referred to as 2018 2018conduits . 2019 2019 these conduits are described in note 11 ."
+      },
+      {
+        "location": "text_16",
+        "text": "the commercial paper issuances and commitments of the conduits to provide funding are supported by liquidity asset purchase agreements and backup liquidity lines of credit , the majority of which are provided by us ."
+      },
+      {
+        "location": "text_17",
+        "text": "in addition , we provide direct credit support to the conduits in the form of standby letters of credit ."
+      },
+      {
+        "location": "text_18",
+        "text": "our commitments under liquidity asset purchase agreements and back-up lines of credit totaled $ 28.37 billion at december 31 , 2007 , and are included in the preceding table ."
+      },
+      {
+        "location": "text_19",
+        "text": "our commitments under standby letters of credit totaled $ 1.04 billion at december 31 , 2007 , and are also included in the preceding table ."
+      },
+      {
+        "location": "text_20",
+        "text": "deterioration in asset performance or certain other factors affecting the liquidity of the commercial paper may shift the asset risk from the commercial paper investors to us as the liquidity or credit enhancement provider ."
+      },
+      {
+        "location": "text_21",
+        "text": "in addition , the conduits may need to draw upon the back-up facilities to repay maturing commercial paper ."
+      },
+      {
+        "location": "text_22",
+        "text": "in these instances , we would either acquire the assets of the conduits or make loans to the conduits secured by the conduits 2019 assets ."
+      },
+      {
+        "location": "text_23",
+        "text": "in the normal course of business , we offer products that provide book value protection primarily to plan participants in stable value funds of postretirement defined contribution benefit plans , particularly 401 ( k ) plans ."
+      },
+      {
+        "location": "text_24",
+        "text": "the book value protection is provided on portfolios of intermediate , investment grade fixed-income securities , and is intended to provide safety and stable growth of principal invested ."
+      },
+      {
+        "location": "text_25",
+        "text": "the protection is intended to cover any shortfall in the event that a significant number of plan participants ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the percent change in indemnified securities financing between 2006 and 2007?",
+  "human_answer": "10%",
+  "reference_program": "subtract(558368, 506032)",
+  "reference_execution_value": 52336.0,
+  "model_response": {
+    "answer": "10.3424289373",
+    "unit": "percent",
+    "expression": "(558368 - 506032) / 506032 * 100",
+    "explanation": "Indemnified securities financing increased by approximately 10.34% from 2006 to 2007."
+  }
+}

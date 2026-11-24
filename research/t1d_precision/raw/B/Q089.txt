@@ -1,0 +1,1 @@
+{"answer":"40.87887740029542","unit":"percent","expression":"3321 / 8124 * 100","low":"40.8702073973783","high":"40.88754847048686","reliable_digits":"3","explanation":"Allowing each amount to vary by 0.5 million gives these bounds, which both round to 40.9% at three significant digits."}

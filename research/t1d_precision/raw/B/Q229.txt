@@ -1,0 +1,1 @@
+{"answer":"3.9568345323741","unit":"percent","expression":"(28.9 - 27.8) / 27.8 * 100","low":"3.590664272890485","high":"4.324324324324324","reliable_digits":"1","explanation":"The increase is relative to 2012; both rounding bounds round to 4% at one significant digit."}

@@ -1,0 +1,1 @@
+{"answer":"49080","unit":"million dollars","expression":"49447 - 367","low":"49079","high":"49081","reliable_digits":"4","explanation":"Subtracting corporate stocks leaves 49,080 million dollars; rounding of both inputs permits uncertainty of up to 1 million dollars."}

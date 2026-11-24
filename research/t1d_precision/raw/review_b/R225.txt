@@ -1,0 +1,5 @@
+{
+    "review_id": "R225",
+    "verdict": "invalid",
+    "reason": "The correctly bound liability amounts are rounded millions, but the calculation returns fractional change without multiplying by 100 for the requested percentage."
+  }

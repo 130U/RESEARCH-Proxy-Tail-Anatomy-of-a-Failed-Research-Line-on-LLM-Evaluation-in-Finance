@@ -1,0 +1,5 @@
+{
+    "review_id": "R167",
+    "verdict": "valid",
+    "reason": "The 3.5% and 5.3% figures are rounded weighted-average borrowing rates for 2011 and 2010, and the calculation correctly expresses the decline as a signed relative change using 2010 as the baseline."
+  }

@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R049",
+    "verdict": "valid",
+    "reason": "The bindings correctly identify PPG’s rounded New Jersey Chrome reserves in millions for 2018 and 2017, and the calculation uses the 2017 reserve as the growth denominator."
+  },
+  {
+    "review_id": "R050",
+    "verdict": "valid",
+    "reason": "The $160 million and $72 million amounts are estimated 2010 non-U.S. pension and postretirement contributions, respectively, and their quotient answers the requested ratio."
+  },
+  {
+    "review_id": "R051",
+    "verdict": "valid",
+    "reason": "All five bindings identify aggregate debt maturities for 2018–2022 reported in thousands, and their sum answers the question in those units."
+  },
+  {
+    "review_id": "R052",
+    "verdict": "valid",
+    "reason": "The source explicitly reports approximate net losses and impairments of $10.5 million in 2008 and $7.1 million in 2007, and the calculation correctly measures growth against 2007."
+  },
+  {
+    "review_id": "R053",
+    "verdict": "invalid",
+    "reason": "The bound amounts are operating lease commitments rather than notes, and the calculation merely sums three years without dividing by a total to obtain a percentage."
+  },
+  {
+    "review_id": "R054",
+    "verdict": "uncertain",
+    "reason": "Although the Euro values and years are correctly bound, the excerpt lacks a table description establishing that these amounts measure earnings impact."
+  },
+  {
+    "review_id": "R055",
+    "verdict": "valid",
+    "reason": "The source reports 2012 aggregate repurchases in millions of shares and dollars, so dividing the rounded $92 million cost by 1 million shares gives average dollars per share."
+  },
+  {
+    "review_id": "R056",
+    "verdict": "invalid",
+    "reason": "The calculation omits the negative 54 reserve-establishment effect, whereas the table reports the total cumulative effect on net income as negative 23."
+  },
+  {
+    "review_id": "R057",
+    "verdict": "valid",
+    "reason": "The 2013 grants are reported as 561 thousand shares with a rounded weighted average grant-date fair value of $44, whose product gives total grant-date fair value in thousands of dollars."
+  },
+  {
+    "review_id": "R058",
+    "verdict": "valid",
+    "reason": "The source labels the dividend-reinvested HUM series as stock price performance, and the calculation correctly compares its rounded 2011 and 2010 values using 2010 as the base."
+  },
+  {
+    "review_id": "R059",
+    "verdict": "valid",
+    "reason": "The bindings identify Bermuda subsidiaries’ 2008 statutory net income and statutory capital and surplus, both aggregate amounts in millions, and their quotient gives the requested ratio."
+  },
+  {
+    "review_id": "R060",
+    "verdict": "valid",
+    "reason": "The rounded carrying amounts are correctly bound to 2010 and 2009, and the calculation expresses their decline as a negative relative change against the 2009 balance."
+  },
+  {
+    "review_id": "R061",
+    "verdict": "invalid",
+    "reason": "The 50 million shares define the board’s authorized repurchase limit, an exact authorization term rather than a rounded measured quantity."
+  },
+  {
+    "review_id": "R062",
+    "verdict": "valid",
+    "reason": "The bindings correctly identify rounded hedging-instrument fair values of $21 million for 2010 and $47 million for 2009, and subtraction gives the signed change in millions."
+  },
+  {
+    "review_id": "R063",
+    "verdict": "invalid",
+    "reason": "The calculation divides the revenue decrease by 2017 revenue, whereas the percentage decrease from 2016 must use 2016 revenue as its denominator."
+  },
+  {
+    "review_id": "R064",
+    "verdict": "valid",
+    "reason": "The bindings preserve the negative $36.5 million after-tax hedge loss and positive $7.7 million gain, and their quotient gives the signed loss-to-gain ratio."
+  }
+]

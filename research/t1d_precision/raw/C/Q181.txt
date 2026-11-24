@@ -1,0 +1,1 @@
+{"answer":"24684","unit":"thousand dollars","expression":"561 * 44","low":"24403.5","high":"24964.5","reliable_digits":"1","explanation":"The share count is exact, while the displayed $44 fair value ranges from $43.5 to $44.5 per share."}

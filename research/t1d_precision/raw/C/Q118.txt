@@ -1,0 +1,1 @@
+{"answer":"2.77618447","unit":"percent","expression":"(8959 - 8717) / 8717 * 100","low":"2.76455406","high":"2.78781621","reliable_digits":"2","explanation":"Total fuel cost increased from 2012 to 2013; allowing each cost to vary by $0.5 million gives these bounds."}

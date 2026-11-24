@@ -1,0 +1,7 @@
+{
+    "call_id": "S045",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 16 gives vested restricted stock fair value of $4.1 in 2017 and $2.2 in 2018. The question asks for the decrease without specifying a percentage, so the absolute decrease of 1.9 is reasonable. The reference instead calculates signed percentage change using 4.1 as denominator; the excerpt does not explicitly state the monetary scale."
+  }

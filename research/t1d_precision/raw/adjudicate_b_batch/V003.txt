@@ -1,0 +1,37 @@
+[
+  {
+    "review_id": "R200",
+    "verdict": "uncertain",
+    "reason": "The rounded 2017 cost and scaled share volume support an average repurchase price, but the excerpt does not identify the company as AWK."
+  },
+  {
+    "review_id": "R202",
+    "verdict": "valid",
+    "reason": "The rounded loss magnitudes increased from $1.2 billion to $2.2 billion, so the formula correctly gives a negative decline using the 2007 loss as its denominator."
+  },
+  {
+    "review_id": "R222",
+    "verdict": "uncertain",
+    "reason": "The $2.8 million numerator covers only previously disposed sites, whereas the question does not specify whether it means that subset or all site remediation."
+  },
+  {
+    "review_id": "R233",
+    "verdict": "valid",
+    "reason": "The rounded pro forma earnings of $3,538 million and $3,480 million correctly match 2015 and 2014, and their difference divided by the 2014 amount gives the requested relative change."
+  },
+  {
+    "review_id": "R239",
+    "verdict": "valid",
+    "reason": "The rounded pretax foreign-exchange loss magnitudes correctly match 2007 and 2006, and the formula measures their proportional increase against the 2006 loss."
+  },
+  {
+    "review_id": "R250",
+    "verdict": "invalid",
+    "reason": "The contribution decreased from $525 million to approximately $460 million, but the program computes a negative signed change instead of the requested positive percentage decrease."
+  },
+  {
+    "review_id": "R251",
+    "verdict": "invalid",
+    "reason": "The $68 million and $74 million figures are recorded vehicle asset values under capital leases, so their difference measures dollars rather than millions of vehicles."
+  }
+]

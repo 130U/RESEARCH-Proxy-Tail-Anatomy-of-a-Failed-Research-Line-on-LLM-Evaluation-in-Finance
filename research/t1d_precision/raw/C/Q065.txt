@@ -1,0 +1,1 @@
+{"answer":"126.06735105","unit":"percent","expression":"(235.63 - 104.23) / 104.23 * 100","low":"126.05171008","high":"126.08299352","reliable_digits":"4","explanation":"This compares the final cumulative values, each rounded within $0.005; the document covers September 2008–December 2011, so a five-year comparison is unavailable."}

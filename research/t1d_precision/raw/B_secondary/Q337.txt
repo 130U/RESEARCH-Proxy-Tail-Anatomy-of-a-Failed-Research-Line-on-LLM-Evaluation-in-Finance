@@ -1,0 +1,1 @@
+{"answer":"41.42857142857143","unit":"percent","expression":"(29.7 - 21.0) / 21.0 * 100","low":"40.855106888361","high":"42.004773269690","reliable_digits":"1","explanation":"Additions increased by 41.42857142857143%, with rounding uncertainty leaving one reliable significant digit."}

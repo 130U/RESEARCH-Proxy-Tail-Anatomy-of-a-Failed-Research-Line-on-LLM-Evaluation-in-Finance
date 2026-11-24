@@ -1,0 +1,1 @@
+{"answer":"45","unit":"million dollars","expression":"(43 + 47) / 2","low":"44.5","high":"45.5","reliable_digits":"2","explanation":"The average of the reported reserves is 45 million dollars, with rounding uncertainty of up to 0.5 million dollars."}

@@ -1,0 +1,1 @@
+{"answer":"-12.3287671233","unit":"percent","expression":"(2.56 - 2.92) / 2.92 * 100","low":"-12.6495726496","high":"-12.0068610635","reliable_digits":"1","explanation":"Each rate can vary by 0.005 percentage points due to rounding, giving this range and one reliable significant digit."}

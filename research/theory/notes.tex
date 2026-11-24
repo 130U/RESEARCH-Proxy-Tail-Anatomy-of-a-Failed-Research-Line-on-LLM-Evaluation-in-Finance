@@ -1,0 +1,464 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,hyperref}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+\newcommand{\Prob}{\mathbb P}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\newcommand{\ind}{\mathbf 1}
+\newcommand{\TV}{\operatorname{TV}}
+\newcommand{\VaR}{\operatorname{VaR}}
+\newcommand{\ES}{\operatorname{ES}}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\title{Certificate Chains for Financial Text Models:\\Conditional Results and Corrections to the Initial Draft}
+\author{130U-FinLLM research notes, WP0.3}
+\date{15 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+This note formalizes the initial T0, T1.1--T1.5,
+T2.1--T2.4 and T3.1. Statements are conditional mathematical results,
+not claims of novelty or real-data certification. In particular, test
+success is not a universal proof; recorded-time selection can leak future
+information; the shard-count lower bound has a tie-breaking exception;
+numeric monotonicity only applies to designated coordinates with fixed
+context; and marginal calibration does not identify individual error
+probabilities. The accompanying Chinese file \texttt{notes.md} contains
+the full operational contract and decision implications. This source was
+not compiled: no TeX engine was available in the inspected environment.
+\end{abstract}
+
+\section{T0: Semantics and composition}
+A certificate records a claim $\varphi$, assumptions $A$, evidence $E$,
+and a versioned checker $V$. Deterministic soundness is the universal
+implication $V(E)=\mathrm{accept}\Rightarrow(A\Rightarrow\varphi)$.
+Finite tests alone do not prove this implication. A statistical
+certificate additionally records the sampling mechanism and a coverage
+level. Coverage of a procedure need not equal coverage conditional on
+selecting an accepted output.
+\begin{proposition}[Certificate composition]
+On a specified common probability space, suppose
+$\Prob(E_i^c)\le\alpha_i$ and, under $A$, $\bigcap_i E_i$ implies
+$\varphi$. Then $\Prob(\varphi)\ge1-\min(1,\sum_i\alpha_i)$.
+\end{proposition}
+\begin{proof}
+The failure event is contained in $\bigcup_i E_i^c$; apply the union
+bound. Disjoint failure events show that no uniformly better bound is
+available without dependence information. Independence is unnecessary.
+\end{proof}
+Assigning zero failure probability to a mathematical implication does
+not assign zero probability to implementation bugs or false premises.
+
+\section{T1.1: History, randomness, and selection}
+Treat content versions as atomic records. Let $\mathcal F_t$ contain
+all actually available versions, IDs, collection metadata and selection
+inputs at time $t$. If $H_t$ is a history snapshot and $\Omega$ is
+training randomness, then a measurable map
+$\theta=F(H_t,\Omega)$ is
+$\mathcal F_t\vee\sigma(\Omega)$-measurable. For each fixed seed,
+equal histories give equal outputs. Randomized parameters need not be
+literally $\mathcal F_t$-measurable unless randomness is included in the
+initial information set.
+
+These measurability and fixed-seed statements do not themselves require
+independence. To assert that the seed adds no future information, assume
+it is independent of the entire data-generating world, or conditionally
+independent of the future given $\mathcal F_t$. Marginal independence
+from the future alone is insufficient: with independent fair bits $H,B$,
+let $\Omega=H\mathbin{\mathrm{xor}}B$. Then $\Omega$ is independent of
+$B$, yet $(H,\Omega)$ recovers the future bit $B$. The conditional
+noninterference proof and domain restrictions are expanded in the
+companion \texttt{pit\_noninterference.md} note (2026-11-16 review).
+
+Information measurability is distinct from admissible historical provenance.
+A text constant in the chosen probability space, or a realized checkpoint
+subsequently treated as a constant, can be measurable without proving that
+its bytes were available or its computation was admissible at the cutoff.
+Historical construction therefore also needs an ex ante fixed algorithm,
+cross-world data semantics, and version-availability and selection contracts;
+it cannot be obtained by conditioning away the realized training process.
+
+Write $D_{\rm obs}=\{i:\tau_i\le t\}$ and
+$C_t=\{i:\tau_i\le t<\tau_i^*\}$. The deletion comparator uses
+$D_{\rm del}=D_{\rm obs}\setminus C_t$ with the same algorithm and
+randomness. It is historical only if its selection, metadata and shared
+components are functions of $H_t$. It need not equal retraining on all
+truly available historical data.
+
+\paragraph{Counterexample to unconditional deletion sufficiency.}
+Both $d_0,d_1$ exist before $t$. A future bit $B$ determines which one
+receives recorded timestamp $t-1$; the other is assigned $t+1$.
+Record-based filtering retains only $d_B$, and a learner outputs its
+index. Here $C_t=\varnothing$, yet the output reveals $B$. Missing old
+documents can therefore carry information if their selection uses the
+future. A historical selection rule repairs this gap by measurable
+composition. Tokenizers, deduplication, model selection, labels,
+teachers, stopping rules and all auxiliary lookups belong in this rule.
+
+\section{T1.2: DP expectation bounds}
+Assume the complete algorithm $M$ is $(\varepsilon,\delta)$-DP under
+whole-document addition or deletion. Let $D,D'$ be connected by at
+most $k$ such operations, and fix the same measurable $S\in[0,1]$ for
+both output laws. Set
+\[
+a=k\varepsilon,\qquad b=\delta\sum_{j=0}^{k-1}e^{j\varepsilon},
+\]
+with $b=0$ when $k=0$.
+\begin{proposition}[Symmetric expectation envelope]
+\[
+|\E S(M(D))-\E S(M(D'))|
+\le\min\left\{1,\frac{e^a-1+2b}{e^a+1}\right\}.
+\]
+\end{proposition}
+\begin{proof}
+Iterate the DP inequality along the adjacency path to obtain
+$P(A)\le e^a Q(A)+b$ and its reverse. If
+$d=P(A)-Q(A)\ge0$, $q=Q(A)$, apply the forward inequality to $A$ and
+the reverse inequality to $A^c$:
+\[
+d\le(e^a-1)q+b,\qquad e^a d\le(e^a-1)(1-q)+b.
+\]
+Adding yields $(1+e^a)d\le e^a-1+2b$. Swap laws and take the
+supremum over events. Layer-cake integration of
+$\E S=\int_0^1\Prob(S>u)\,du$ gives the expectation bound.
+\end{proof}
+The weaker $\min(1,e^a-1+b)$ is also valid, with
+$b\le k e^{(k-1)\varepsilon}\delta$ for $k\ge1$ and $b=k\delta$
+when $\varepsilon=0$. These are bounds between randomized training
+laws, not deterministic intervals for one realized checkpoint.
+
+For $\mu$-GDP define
+$G_\mu(\alpha)=\Phi(\Phi^{-1}(1-\alpha)-\mu)$.
+Adjacent laws obey, for every event or randomized test,
+$P_{j+1}(A)\le\Phi(\Phi^{-1}(P_j(A))+\mu)$.
+Iteration gives the same bound with $k\mu$. Thus the minimum sum of
+testing errors is at least $2\Phi(-k\mu/2)$ and
+\[
+|\Delta\E S|\le\TV\le2\Phi(k\mu/2)-1.
+\]
+Requiring this to be at most $.05$ gives
+$k\mu\le2\Phi^{-1}(.525)\simeq .1254$.
+No utility impossibility for a 24M model follows from this calculation.
+Token-level privacy is not automatically document-level privacy.
+
+\section{T1.3: Fixed partitions and statistic envelopes}
+There are $m\ge1$ heads, $K\ge2$ labels and smallest-label tie breaking.
+Shared representation, tokenizer, hyperparameters and features are fixed
+from a clean historical core. A permanent ID-to-shard map is unchanged
+between comparators. Each head is a deterministic function of its own
+shard and exogenous randomness; there is no cross-shard fitting state.
+Deleting $k$ records or modifying $k$ records at fixed IDs touches at
+most $k$ shards. Replacing IDs can touch $2k$ shards instead.
+
+\begin{proposition}[Vote certificate]
+Let $n_c(z)$ count votes and $a$ be the observed winner. If, for all
+$c\ne a$,
+\[
+n_a(z)-n_c(z)\ge2b+\ind\{c<a\},
+\]
+then the winner survives arbitrary changes of at most $b$ heads.
+\end{proposition}
+\begin{proof}
+One changed vote reduces a pairwise margin by at most two. After $b$
+changes the margin is still positive against lower-index opponents and
+nonnegative against higher-index opponents, exactly as tie breaking requires.
+\end{proof}
+
+Fix evaluation points $z_j$ and scores $s_j(c)\in[0,1]$, $j=1,\ldots,J$.
+Let $R_j(b)$ contain all labels reachable by at most $b$ vote edits;
+a computational relaxation must be an outer set. Then
+\[
+L(b)=\frac1J\sum_j\min_{c\in R_j(b)}s_j(c),\qquad
+U(b)=\frac1J\sum_j\max_{c\in R_j(b)}s_j(c)
+\]
+enclose the score of every common set of at most $b$ altered shards.
+Indeed each realized label lies in its reachable set, and summation
+preserves inequalities. Optimizing separately over points is a relaxation
+of a common corrupted-shard set. Macro-F1, Sharpe ratios and drawdowns are
+not this additive statistic and require separate envelopes.
+
+\section{T1.4: Exact finite-population auditing}
+There are $N$ fixed suspect records and $K^*$ truly contaminated records.
+Before seeing audit outcomes, choose $0\le n\le N$ and draw a simple
+random sample without replacement. Audits are assumed error-free. Let
+$X=x$ be the count of contaminated sampled records and $0<\alpha<1$.
+Define
+\[
+F_K(x)=\sum_{j=\max(0,n-N+K)}^{\min(x,n,K)}
+\frac{\binom Kj\binom{N-K}{n-j}}{\binom Nn},\qquad
+K_u(x)=\max\{0\le K\le N:F_K(x)>\alpha\}.
+\]
+An empty sum is zero; $K_u=N$ for $n=0$ and $K_u=x$ for $n=N$.
+
+\begin{proposition}[Uniform coverage]
+For every fixed $K^*$, $\Prob_{K^*}(K^*\le K_u(X))\ge1-\alpha$.
+\end{proposition}
+\begin{proof}
+Couple populations by changing good records to bad ones, keeping the
+same random sample. Then $X_K$ increases with $K$, so $F_K(x)$ decreases.
+Failure $K_u(X)<K^*$ implies $F_{K^*}(X)\le\alpha$.
+The event comprises an initial segment of the discrete support; its
+probability is the CDF at its largest point, at most $\alpha$.
+\end{proof}
+
+For zero discoveries, when $K\le N-n$,
+\[
+F_K(0)=\frac{\binom{N-K}n}{\binom Nn}
+=\prod_{i=0}^{n-1}\left(1-\frac K{N-i}\right)
+\le(1-K/N)^n\le e^{-nK/N};
+\]
+otherwise $F_K(0)=0$. Consequently every accepted $K$ is strictly less
+than $N(1-\alpha^{1/n})$ and $N\log(1/\alpha)/n$ when $n>0$.
+The approximation $K_u\simeq N\log(1/\alpha)/n$ needs a small sampling
+fraction as well as a small contamination fraction. It is the scale of
+an upper confidence bound after zero discoveries, not a lower bound on
+the number of bad records actually present. For $N=1000,n=500,\alpha=.05$
+the exact integer bound is $4$, whereas the rule-of-three approximation
+is about $6$. These are hypothetical population sizes, not measured SEC data.
+
+\paragraph{Tie-breaking correction.}
+The assertion that any robust prediction requires $m\ge2b+1$ is false:
+with $m=2,b=1$, both votes for label 1, any one vote edit leaves label 1
+winning or tied and preferred. In general $m=2b$ suffices for a unanimous
+minimum-label prediction. The displayed margin condition requires
+$m\ge2b$ if $a=1$, and $m\ge2b+1$ if $a>1$. Strict majority regardless
+of priority requires the latter; actual margins must still be checked.
+
+\paragraph{Fixed-budget audit gate.}
+For an integer $0\le B<N$, CDF monotonicity gives exactly
+\[
+K_u(0)\le B\quad\Longleftrightarrow\quad
+\frac{\binom{N-(B+1)}n}{\binom Nn}\le\alpha.
+\]
+Thus the smallest integer $n$ satisfying this inequality is the required
+zero-discovery audit size. Binomial coefficients outside support are zero.
+The margin budget at point $j$ is
+\[
+B_j=\left\lfloor\frac12\min_{c\ne a_j}
+\{n_{a_j}-n_c-\ind\{c<a_j\}\}\right\rfloor.
+\]
+For a model frozen before auditing, certifying at least $r$ points is
+ensured by using the $r$-th largest $B_j$ as the budget gate.
+
+\paragraph{Prediction robustness and nonvacuous statistics differ.}
+With votes $(1,1,2,2,3)$ and $b=1$, reachable winners are $\{1,2\}$.
+The prediction is not robust, but if the true label is 3 its accuracy is
+exactly zero. Thus an unrobust prediction can still contribute a point
+interval rather than $[0,1]$. Collective constraints can also tighten
+aggregate intervals. A valid interval is nonempty; ``nonvacuous'' means
+narrower than the trivial range.
+
+\paragraph{Stratification and optional stopping.}
+For fixed source strata, obtain bounds $K_{u,h}$ at prescribed levels
+$\alpha_h$ with $\sum_h\alpha_h\le\alpha$. The union bound yields
+$K^*\le\sum_hK_{u,h}$ with confidence $1-\alpha$, without independence.
+Unobserved strata have upper bound $N_h$.
+Repeated use of a fixed-time interval after optional stopping is invalid
+without correction. One valid zero-discovery process for $H_0:K\ge K_0$
+is
+\[
+E_n=\ind\{X_n=0\}/F_{K_0,n}(0),\quad0\le n\le N-K_0.
+\]
+On a zero path the next conditional no-error probability under $K$ is
+$(N-K-n)/(N-n)$, no greater than its $K_0$ counterpart. After a discovery
+the process stays zero. Hence it is a nonnegative supermartingale starting
+at 1. Stopping at its first crossing of $1/\alpha$ shows crossing probability
+at most $\alpha$. Zero-path crossing is precisely $F_{K_0,n}(0)\le\alpha$;
+optional stopping does not give a free improvement of that constant.
+
+\section{T1.5: The deletion-comparator chain}
+Assume: historical selection and all shared components (T1.1); a clean
+shared core; a suspect universe frozen before audit; fixed-shard local
+training (T1.3); valid error-free random auditing (T1.4); fixed additive
+bounded evaluation scores and denominator; and sound computation of an
+outer envelope, including any required floating-point error control.
+
+\begin{proposition}[Conditional finite-test-set certificate]
+With probability at least $1-\alpha$ over auditing,
+$S(F_{\rm del})\in[L(K_u),U(K_u)]$.
+\end{proposition}
+\begin{proof}
+On $K^*\le K_u$, deletion affects at most $K^*$ shards. Every unaffected
+head sees identical inputs, shared parameters and randomness, so its
+output is identical. T1.3 encloses the comparator score. T1.4 bounds the
+probability of the exceptional audit event. The historical assumptions
+are needed to interpret the comparator as look-ahead free.
+\end{proof}
+
+A single contaminated core record may change the shared representation
+and all heads. Adding a core contamination upper bound to an edge count
+does not preserve the shard argument. A core audit can instead establish
+zero core contamination with additional failure budget, or a separate
+shared-backbone stability theorem is needed.
+If evaluation observations are additionally iid, independent of training
+and audit, and the clean comparator is fixed before evaluation, Hoeffding
+adds $\epsilon_J=\sqrt{\log(2/\beta)/(2J)}$ to each endpoint for a
+population-mean interval with confidence $1-\alpha-\beta$. General cluster
+bootstrap does not automatically supply an exact finite-sample substitute.
+
+\section{T2.1: Behavioral relations}
+For an edit $e$, define distribution preservation by
+$\TV(q_e,q)\le\rho$; label preservation by equal tie-broken argmax;
+relative relabeling margin by a change of at least $\gamma$ in the
+$b$-versus-$a$ log odds (positive relevant probabilities required);
+UP by nondecreasing upper-tail probabilities; and FREE by no constraint.
+These are distinct specifications.
+UP need not preserve labels: $(.6,.3,.1)\to(.2,.3,.5)$ is an upward
+stochastic shift with a different argmax. Label preservation need not
+give UP: $(.2,.6,.2)\to(.3,.6,.1)$. A relabeling margin does not force
+a label switch: $(.99,.01)\to(.98,.02)$ increases relative odds but keeps
+the winner. Distribution preservation implies label preservation if the
+original top-two gap exceeds $2\rho$, because each coordinate changes by
+at most $\rho$. Neutral strengthening can move probability inward from
+both tails, and is not a stochastic upward shift.
+
+\section{T2.2: Ordinal monotonicity and numeric sensitivity}
+Fix context $c$, $g\in\R^d$, $M\subseteq\{1,\ldots,d\}$ and
+$\lambda\ge0$. Suppose $h(\cdot,c)$ is $\lambda$-Lipschitz in $\ell_1$.
+Set $\eta=h(g,c)+\lambda\sum_{r\in M}g_r$ and
+\[
+Q_i=\Prob(Y\le i\mid g,c)=\sigma(\theta_i-\eta),\qquad
+\theta_1<\cdots<\theta_{K-1},
+\]
+with thresholds fixed under numeric interventions.
+
+\begin{proposition}[Corrected monotone-head statement]
+If $g'_r\ge g_r$ for $r\in M$ and $g'_r=g_r$ otherwise, the output
+distribution at $g'$ first-order stochastically dominates that at $g$.
+At differentiability points, for $r\in M$,
+\[
+0\le\partial_r\eta\le2\lambda,\quad
+0\le\partial_rq_K\le\lambda/2,\quad
+-\lambda/2\le\partial_rq_1\le0,\quad
+|\partial_rq_i|\le\lambda/2\ (1<i<K).
+\]
+For arbitrary $g,g'$ with fixed context,
+$|q_i(g')-q_i(g)|\le(\lambda/2)\|g'-g\|_1$ at every point.
+Without the residual term the constant is $\lambda/4$, with no direction
+guarantee.
+\end{proposition}
+\begin{proof}
+For an allowed nonnegative increment $\Delta$,
+$\Delta h\ge-\lambda\|\Delta\|_1$ while the residual increases by
+$\lambda\|\Delta\|_1$. Thus $\eta$ increases, and all $Q_i$ decrease.
+One-coordinate difference quotients bound $\partial_r\eta$ by $0$ and
+$2\lambda$ wherever the derivative exists; Lipschitzness guarantees
+almost-everywhere differentiability. Each endpoint class probability
+has derivative in $\eta$ of magnitude at most $1/4$. For an intermediate
+class the derivative is a difference of two numbers in $[0,1/4]$, so
+its magnitude is also at most $1/4$. Apply the chain rule. Finally $\eta$
+is $2\lambda$-Lipschitz and each class probability is $1/4$-Lipschitz
+in $\eta$, proving the finite-increment statement everywhere.
+\end{proof}
+
+The restriction on nonmonotone coordinates is essential: take $M=\{1\}$,
+$h(g)=-\lambda g_2$. Context independence is also essential: if
+$c=g$ and $h(g,c)=-2\lambda c$, then $h$ is constant in $g$ for each
+fixed $c$, but the actual $\eta=-\lambda g$ decreases. Numeric words,
+units and parser side channels must therefore be covered by the contract.
+If $g=(x-b)/b$ with fixed $b>0$, the raw-value derivative is bounded by
+$\lambda/(2b)$; there is no uniform bound near $b=0$, and negative $b$
+reverses direction. These structural results do not require the context
+encoder to be trained from scratch.
+
+\section{T2.3: Units and complete invariants}
+Let $x\in\R_{>0}^p$ and let $D\in\R^{q\times p}$ be the dimension
+matrix. Positive unit scales act by
+$x'_j=x_j\prod_a s_a^{D_{aj}}$. For $v\in\ker D$,
+$\Pi_v(x)=\prod_jx_j^{v_j}$ is invariant since the scale exponents
+are $Dv=0$. A model depending only on such features is invariant
+\emph{provided its context and all auxiliary paths are invariant too}.
+
+For the expressivity claim, take a complete basis $B$ of $\ker D$.
+If $B^T\log x=B^T\log y$, then
+$\log y-\log x\in(\ker D)^\perp=\operatorname{im}D^T$.
+Hence $x,y$ lie in the same unit orbit. Any orbit-invariant function
+therefore factors through the complete invariants. Arbitrarily selecting
+a few ratios need not separate orbits and can lose expressivity.
+Zeros and signed financial quantities require separate zero/sign strata
+and nonzero denominators; logarithms and arbitrary powers are not valid
+on the full signed domain. Unit tokens must be normalized as well.
+Real-number invariance is not itself a claim of bitwise floating-point
+invariance. Currency market movements are not pure reporting-unit changes.
+
+\section{T2.4: Entity slots}
+For a specified renaming family $\Pi$, assume a canonicalizer $a$ satisfies
+$a(\pi x)=a(x)$ for all $x,\pi$. Then $F=G\circ a$ obeys
+$F(\pi x)=F(x)$ by substitution. This does not prove that aliases,
+coreference, targets and slot order are parsed correctly. Naming slots
+by alphabetic entity order can violate the premise. Finite alias tests
+only establish facts about the tested alias family.
+
+\section{T3.1: Bernoulli dependence uncertainty}
+Within each finite cluster, error indicators have known true marginals
+$e_i\sim\operatorname{Bernoulli}(p_i)$; different clusters are independent.
+Let $e_i^{\rm com}=\ind\{U_c\le p_i\}$ within cluster $c$, using
+independent uniform $U_c$ across clusters.
+\begin{proposition}[Worst convex risk]
+For $E=\sum_i e_i$ and $E^{\rm com}=\sum_i e_i^{\rm com}$,
+$E\le_{\rm cx}E^{\rm com}$. Variance, stop-loss and upper-tail ES
+are maximized by this coupling.
+\end{proposition}
+\begin{proof}
+For one cluster represent a joint law by masses $q_A$ on subsets $A$
+of erroneous coordinates. Marginal constraints define a compact
+polytope. For any convex $\phi$, choose a law maximizing
+$\sum_Aq_A\phi(|A|)$; among maximizers, maximize $\sum_Aq_A|A|^2$.
+If two incomparable sets $A,B$ have positive mass, move
+$\epsilon=\min(q_A,q_B)>0$ mass from each to $A\cap B,A\cup B$.
+This preserves every marginal and total probability. Convexity ensures
+the primary objective cannot decrease; the secondary objective increases
+by $2\epsilon|A\setminus B||B\setminus A|>0$, a contradiction.
+Thus optimal positive-mass sets form a chain, whose masses are the
+successive differences of ordered $p_i$ and hence are the comonotone law.
+
+If $X\le_{\rm cx}Y$ and $Z$ is independent, the map
+$x\mapsto\E\phi(x+Z)$ is convex, proving $X+Z\le_{\rm cx}Y+Z$.
+Replace clusters successively. The mean is fixed by the marginals, so
+the $x^2$ inequality maximizes variance; positive-part functions yield
+stop-loss. Finally, for $0\le\beta<1$,
+\[
+\ES_\beta(X)=\inf_t\left[t+\frac{\E(X-t)_+}{1-\beta}\right].
+\]
+Every objective at fixed $t$ is ordered, and infima preserve that order.
+\end{proof}
+
+Sorted $p_i$ together with 0 and 1 determine each cluster's exact
+comonotone count distribution; convolution gives the independent-cluster
+sum. VaR is different: for two marginals $p_i=.5$, the comonotone sum
+has equal masses at 0 and 2, so under
+$\VaR_\beta(X)=\inf\{x:F_X(x)\ge\beta\}$ its median VaR is 0.
+The antimonotone sum is identically 1, with median VaR 1.
+
+Calibration alone does not supply known $p_i$. Two equal-sized subgroups
+with error rates 0 and .2 can both be assigned .1 and still be calibrated
+in aggregate. Plug-in probabilities therefore give a conditional scenario,
+not an unconditional risk certificate. Simultaneous upper bounds
+$p_i\le u_i$ can bound increasing convex risks via comonotone coupling
+at $u_i$, but not variance by that monotonicity argument. If clusters
+are dependent, merging them is conservative for convex risks; independent
+convolution is unjustified.
+
+\section{Computational scope and open evidence}
+The standard-library script \texttt{research/checks/theory\_checks.py}
+checks finite voting cases, an exact rational linear-head contract,
+100,000 floating-point points, unit rescalings, and a finite grid of
+Bernoulli couplings. Its output records hashes and timing. It does not
+train a transformer or certify an actual parser, data source or deployment.
+The Bernoulli theorem covers all couplings by proof; the grid enumeration
+does not. Real-data nonvacuity, prior-art coverage, parsing error and G0/G1
+remain separate empirical or research obligations.
+
+\begin{thebibliography}{9}
+\bibitem{gdp} J. Dong, A. Roth, W. J. Su.
+\emph{Gaussian Differential Privacy}.
+\url{https://arxiv.org/abs/1905.02383}.
+Metadata and abstract accessed; mathematical calculations are supplied here.
+\bibitem{monotone} O. Kitouni, N. Nolte, M. Williams.
+\emph{Robust and Provably Monotonic Networks}.
+\url{https://arxiv.org/abs/2112.00038}.
+Metadata and abstract accessed; no novelty claim is made for residual monotonicity.
+\end{thebibliography}
+\end{document}

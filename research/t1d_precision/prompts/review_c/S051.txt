@@ -1,0 +1,318 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S051",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "december 31 , 2007 , 2006 and 2005 , included ( in millions ) : ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2007",
+          "2006",
+          "2005"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "(Gain)/loss on disposition or impairment of acquired assets and obligations",
+          "$(1.2)",
+          "$(19.2)",
+          "$3.2"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Consulting and professional fees",
+          "1.0",
+          "8.8",
+          "5.6"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Employee severance and retention",
+          "1.6",
+          "3.3",
+          "13.3"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Information technology integration",
+          "2.6",
+          "3.0",
+          "6.9"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "In-process research & development",
+          "6.5",
+          "2.9",
+          "–"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Integration personnel",
+          "–",
+          "2.5",
+          "3.1"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Facility and employee relocation",
+          "–",
+          "1.0",
+          "6.2"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Distributor acquisitions",
+          "4.1",
+          "–",
+          "–"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Sales agent and lease contract terminations",
+          "5.4",
+          "0.2",
+          "12.7"
+        ]
+      },
+      {
+        "row_index": 10,
+        "cells": [
+          "Other",
+          "5.2",
+          "3.6",
+          "5.6"
+        ]
+      },
+      {
+        "row_index": 11,
+        "cells": [
+          "Acquisition, integration and other",
+          "$25.2",
+          "$6.1",
+          "$56.6"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_1",
+        "text": "in-process research and development charges for 2007 are related to the acquisitions of endius and orthosoft ."
+      },
+      {
+        "location": "text_2",
+        "text": "included in the gain/loss on disposition or impairment of acquired assets and obligations for 2006 is the sale of the former centerpulse austin land and facilities for a gain of $ 5.1 million and the favorable settlement of two pre- acquisition contingent liabilities ."
+      },
+      {
+        "location": "text_3",
+        "text": "these gains were offset by a $ 13.4 million impairment charge for certain centerpulse tradename and trademark intangibles based principally in our europe operating segment ."
+      },
+      {
+        "location": "text_4",
+        "text": "cash and equivalents 2013 we consider all highly liquid investments with an original maturity of three months or less to be cash equivalents ."
+      },
+      {
+        "location": "text_5",
+        "text": "the carrying amounts reported in the balance sheet for cash and equivalents are valued at cost , which approximates their fair value ."
+      },
+      {
+        "location": "text_6",
+        "text": "restricted cash is primarily composed of cash held in escrow related to certain insurance coverage ."
+      },
+      {
+        "location": "text_7",
+        "text": "inventories 2013 inventories , net of allowances for obsolete and slow-moving goods , are stated at the lower of cost or market , with cost determined on a first-in first-out basis ."
+      },
+      {
+        "location": "text_8",
+        "text": "property , plant and equipment 2013 property , plant and equipment is carried at cost less accumulated depreciation ."
+      },
+      {
+        "location": "text_9",
+        "text": "depreciation is computed using the straight-line method based on estimated useful lives of ten to forty years for buildings and improvements , three to eight years for machinery and equipment and generally five years for instruments ."
+      },
+      {
+        "location": "text_10",
+        "text": "maintenance and repairs are expensed as incurred ."
+      },
+      {
+        "location": "text_11",
+        "text": "in accordance with statement of financial accounting standards ( 201csfas 201d ) no ."
+      },
+      {
+        "location": "text_12",
+        "text": "144 , 201caccounting for the impairment or disposal of long-lived assets , 201d we review property , plant and equipment for impairment whenever events or changes in circumstances indicate that the carrying value of an asset may not be recoverable ."
+      },
+      {
+        "location": "text_13",
+        "text": "an impairment loss would be recognized when estimated future undiscounted cash flows relating to the asset are less than its carrying amount ."
+      },
+      {
+        "location": "text_14",
+        "text": "an impairment loss is measured as the amount by which the carrying amount of an asset exceeds its fair value ."
+      },
+      {
+        "location": "text_15",
+        "text": "software costs 2013 we capitalize certain computer software and software development costs incurred in connection with developing or obtaining computer software for internal use when both the preliminary project stage is completed and it is probable that the software will be used as intended ."
+      },
+      {
+        "location": "text_16",
+        "text": "capitalized software costs generally include external direct costs of materials and services utilized in developing or obtaining computer software and compensation and related benefits for employees who are directly associated with the software project ."
+      },
+      {
+        "location": "text_17",
+        "text": "capitalized software costs are included in property , plant and equipment on our balance sheet and amortized on a straight-line basis when placed into service over the estimated useful lives of the software , which approximate three to seven years ."
+      },
+      {
+        "location": "text_18",
+        "text": "instruments 2013 instruments are hand held devices used by orthopaedic surgeons during total joint replacement and other surgical procedures ."
+      },
+      {
+        "location": "text_19",
+        "text": "instruments are recognized as long-lived assets and are included in property , plant and equipment ."
+      },
+      {
+        "location": "text_20",
+        "text": "undeployed instruments are carried at cost , net of allowances for excess and obsolete instruments ."
+      },
+      {
+        "location": "text_21",
+        "text": "instruments in the field are carried at cost less accumulated depreciation ."
+      },
+      {
+        "location": "text_22",
+        "text": "depreciation is computed using the straight-line method based on average estimated useful lives , determined principally in reference to associated product life cycles , primarily five years ."
+      },
+      {
+        "location": "text_23",
+        "text": "we review instruments for impairment in accordance with sfas no ."
+      },
+      {
+        "location": "text_24",
+        "text": "144 ."
+      },
+      {
+        "location": "text_25",
+        "text": "depreciation of instruments is recognized as selling , general and administrative expense ."
+      },
+      {
+        "location": "text_26",
+        "text": "goodwill 2013 we account for goodwill in accordance with sfas no ."
+      },
+      {
+        "location": "text_27",
+        "text": "142 , 201cgoodwill and other intangible assets 201d ."
+      },
+      {
+        "location": "text_28",
+        "text": "goodwill is not amortized but is subject to annual impairment tests ."
+      },
+      {
+        "location": "text_29",
+        "text": "goodwill has been assigned to reporting units , which are consistent with our operating segments ."
+      },
+      {
+        "location": "text_30",
+        "text": "we perform annual impairment tests by comparing each reporting unit 2019s fair value to its carrying amount to determine if there is potential impairment ."
+      },
+      {
+        "location": "text_31",
+        "text": "we perform this test in the fourth quarter of the year ."
+      },
+      {
+        "location": "text_32",
+        "text": "if the fair value of the reporting unit is less than its carrying value , an impairment loss is recorded to the extent that the implied fair value of the reporting unit goodwill is less than the carrying value of the reporting unit goodwill ."
+      },
+      {
+        "location": "text_33",
+        "text": "the fair value of the reporting unit and the implied fair value of goodwill are determined based upon market multiples ."
+      },
+      {
+        "location": "text_34",
+        "text": "intangible assets 2013 we account for intangible assets in accordance with sfas no ."
+      },
+      {
+        "location": "text_35",
+        "text": "142 ."
+      },
+      {
+        "location": "text_36",
+        "text": "intangible assets are initially measured at their fair value ."
+      },
+      {
+        "location": "text_37",
+        "text": "we have determined the fair value of our intangible assets either by the fair value of the consideration exchanged for the intangible asset , or the estimated after-tax discounted cash flows expected to be generated from the intangible asset ."
+      },
+      {
+        "location": "text_38",
+        "text": "intangible assets with an indefinite life , including certain trademarks and trade names , are not amortized ."
+      },
+      {
+        "location": "text_39",
+        "text": "the useful lives of indefinite life intangible assets are assessed annually to determine whether events and circumstances continue to support an indefinite life ."
+      },
+      {
+        "location": "text_40",
+        "text": "intangible assets with a finite life , including core and developed technology , certain trademarks and trade names , z i m m e r h o l d i n g s , i n c ."
+      },
+      {
+        "location": "text_41",
+        "text": "2 0 0 7 f o r m 1 0 - k a n n u a l r e p o r t notes to consolidated financial statements ( continued ) ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the percent change in consulting and professional fees from 2006 to 2007?",
+  "human_answer": "780%",
+  "reference_program": "subtract(8.8, 1.0), divide(#0, 1.0)",
+  "reference_execution_value": 7.8,
+  "model_response": {
+    "answer": "-88.63636363636364",
+    "unit": "percent",
+    "expression": "(1.0 - 8.8) / 8.8 * 100",
+    "explanation": "Consulting and professional fees decreased from $8.8 million in 2006 to $1.0 million in 2007."
+  }
+}

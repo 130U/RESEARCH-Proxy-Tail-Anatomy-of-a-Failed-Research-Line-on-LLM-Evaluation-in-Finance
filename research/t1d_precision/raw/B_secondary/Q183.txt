@@ -1,0 +1,1 @@
+{"answer":"25.348782218","unit":"percent","expression":"(5301 - 4229) / 4229 * 100","low":"25.322142097","high":"25.375428638","reliable_digits":"2","explanation":"Each revenue has rounding uncertainty of half a million dollars; the resulting percentage range is stable to two significant digits."}

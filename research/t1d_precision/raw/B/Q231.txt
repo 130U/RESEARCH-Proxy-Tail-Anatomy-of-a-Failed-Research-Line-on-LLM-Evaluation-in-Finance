@@ -1,0 +1,1 @@
+{"answer":"58665","unit":"million dollars","expression":"(384,102 + 121,417) - (381,415 + 65,439)","low":"58663","high":"58667","reliable_digits":"3","explanation":"The four rounded figures allow a total uncertainty of ±2 million dollars; all possible results round identically to three significant digits, but not four."}

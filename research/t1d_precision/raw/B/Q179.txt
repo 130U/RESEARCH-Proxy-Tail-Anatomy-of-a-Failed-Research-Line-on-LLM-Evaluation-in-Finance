@@ -1,0 +1,1 @@
+{"answer":"12.30","unit":"USD per share","expression":"52.25 - 39.95","low":"12.29","high":"12.31","reliable_digits":"3","explanation":"Subtracting the low from the high gives the price difference; rounding to cents allows uncertainty of $0.01 in that difference."}

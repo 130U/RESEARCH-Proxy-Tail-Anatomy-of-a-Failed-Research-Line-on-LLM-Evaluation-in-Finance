@@ -1,0 +1,7 @@
+{
+    "call_id": "S048",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 1, Second generation tenant improvements, falls from $50,079 thousand in 2011 to $26,643 thousand in 2012. Using the 2011 denominator of 50,079, the model reports the positive percentage reduction of 46.80%; the reference reports the signed change of -46.80%."
+  }

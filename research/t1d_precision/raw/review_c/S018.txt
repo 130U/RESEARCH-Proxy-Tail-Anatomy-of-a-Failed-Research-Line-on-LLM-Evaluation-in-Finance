@@ -1,0 +1,7 @@
+{
+    "call_id": "S018",
+    "primary_cause": "unresolved",
+    "formula_valid": false,
+    "alternative_precision_used": false,
+    "reason": "The question omits the comparison needed to calculate an increase. The model divides row 3's 2010 maturity amount, $240.9 million, by row 6's total debt, $2,251.2 million, calculating a share rather than an increase. The reference assumes a comparison with row 4's 2011 maturities of $500.0 million, which the question does not specify."
+  }

@@ -1,0 +1,1 @@
+{"answer":"218.46","unit":"percent","expression":"(318.46 - 100) / 100 * 100","low":"216.870646766169","high":"220.065326633166","reliable_digits":"2","explanation":"The cumulative return is the investment gain divided by the initial investment, with bounds allowing for rounding in both displayed amounts."}

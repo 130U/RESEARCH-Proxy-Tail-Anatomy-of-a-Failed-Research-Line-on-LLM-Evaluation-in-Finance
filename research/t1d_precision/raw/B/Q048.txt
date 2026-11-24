@@ -1,0 +1,1 @@
+{"answer":"3739366.45","unit":"USD","expression":"151,945 * 24.61","low":"3738606.725","high":"3740126.175","reliable_digits":"3","explanation":"The securities count is exact, while the exercise price has rounding uncertainty of $0.005, leaving three significant digits reliable."}

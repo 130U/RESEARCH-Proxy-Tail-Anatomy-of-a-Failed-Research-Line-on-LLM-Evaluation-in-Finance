@@ -1,0 +1,5 @@
+{
+    "review_id": "R012",
+    "verdict": "invalid",
+    "reason": "The calculation reverses the requested direction and uses the 2007 denominator, whereas change from 2006 to 2007 requires subtracting $8.8 million from $1.0 million and dividing by $8.8 million."
+  }

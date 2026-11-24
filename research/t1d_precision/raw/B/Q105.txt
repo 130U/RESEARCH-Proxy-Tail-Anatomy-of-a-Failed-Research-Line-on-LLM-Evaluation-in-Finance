@@ -1,0 +1,1 @@
+{"answer":"7.01219512195122","unit":"percent","expression":"(35.1 - 32.8) / 32.8 * 100","low":"6.69710806697108","high":"7.32824427480916","reliable_digits":"1","explanation":"Each earnings figure is rounded to the nearest $0.1 million; the resulting percentage increase is reliable to one significant digit."}

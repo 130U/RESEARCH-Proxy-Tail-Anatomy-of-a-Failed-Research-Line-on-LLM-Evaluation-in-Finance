@@ -1,0 +1,1 @@
+{"answer":"12.2041031036","unit":"percent","expression":"(426.6 - 380.2) / 380.2 * 100","low":"12.1761998685","high":"12.2320136788","reliable_digits":"3","explanation":"Each revenue has a rounding uncertainty of ±0.05 million, and the resulting growth-rate bounds both round to 12.2% at three significant digits."}

@@ -1,0 +1,1 @@
+{"answer":"39.02439024390244","unit":"percent","expression":"(57 - 41) / 41 * 100","low":"36.14457831325301","high":"41.97530864197531","reliable_digits":"1","explanation":"The loss magnitude increased from 41 to 57 million, with each figure subject to rounding of half a million."}

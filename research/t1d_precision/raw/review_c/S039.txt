@@ -1,0 +1,7 @@
+{
+    "call_id": "S039",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Texts 1–2 disclose 2014 interest rate swaps of $1.3 billion and foreign currency hedges of $804 million. Converting the numerator to $1,300 million before dividing by the $804 million denominator gives 1.6169. The reference omits the unit conversion."
+  }

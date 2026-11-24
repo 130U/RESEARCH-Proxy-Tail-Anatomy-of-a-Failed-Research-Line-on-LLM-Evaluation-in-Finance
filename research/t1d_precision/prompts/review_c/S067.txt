@@ -1,0 +1,189 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S067",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "table of contents cdw corporation and subsidiaries notes to consolidated financial statements which the company realized the benefits of the deductions ."
+      },
+      {
+        "location": "text_1",
+        "text": "this arrangement has been accounted for as contingent consideration ."
+      },
+      {
+        "location": "text_2",
+        "text": "pre-2009 business combinations were accounted for under a former accounting standard which , among other aspects , precluded the recognition of certain contingent consideration as of the business combination date ."
+      },
+      {
+        "location": "text_3",
+        "text": "instead , under the former accounting standard , contingent consideration is accounted for as additional purchase price ( goodwill ) at the time the contingency is resolved ."
+      },
+      {
+        "location": "text_4",
+        "text": "as of december 31 , 2013 , the company accrued $ 20.9 million related to this arrangement within other current liabilities , as the company realized the tax benefit of the compensation deductions during the 2013 tax year ."
+      },
+      {
+        "location": "text_5",
+        "text": "the company made the related cash contribution during the first quarter of 2014 ."
+      },
+      {
+        "location": "text_6",
+        "text": "12 ."
+      },
+      {
+        "location": "text_7",
+        "text": "earnings per share the numerator for both basic and diluted earnings per share is net income ."
+      },
+      {
+        "location": "text_8",
+        "text": "the denominator for basic earnings per share is the weighted-average shares outstanding during the period ."
+      },
+      {
+        "location": "text_9",
+        "text": "a reconciliation of basic weighted-average shares outstanding to diluted weighted-average shares outstanding is as follows: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Years Ended December 31,"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "(in millions)",
+          "2015",
+          "2014",
+          "2013<sup>(1)</sup>"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Basic weighted-average shares outstanding",
+          "170.3",
+          "170.6",
+          "156.6"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Effect of dilutive securities<sup>(2)</sup>",
+          "1.5",
+          "2.2",
+          "2.1"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Diluted weighted-average shares outstanding<sup>(3)</sup>",
+          "171.8",
+          "172.8",
+          "158.7"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_10",
+        "text": "effect of dilutive securities ( 2 ) 1.5 2.2 2.1 diluted weighted-average shares outstanding ( 3 ) 171.8 172.8 158.7 ( 1 ) the 2013 basic weighted-average shares outstanding was impacted by common stock issued during the ipo and the underwriters 2019 exercise in full of the overallotment option granted to them in connection with the ipo ."
+      },
+      {
+        "location": "text_11",
+        "text": "as the common stock was issued on july 2 , 2013 and july 31 , 2013 , respectively , the shares are only partially reflected in the 2013 basic weighted-average shares outstanding ."
+      },
+      {
+        "location": "text_12",
+        "text": "such shares are fully reflected in the 2015 and 2014 basic weighted-average shares outstanding ."
+      },
+      {
+        "location": "text_13",
+        "text": "for additional discussion of the ipo , see note 10 ( stockholders 2019 equity ) ."
+      },
+      {
+        "location": "text_14",
+        "text": "( 2 ) the dilutive effect of outstanding stock options , restricted stock units , restricted stock , coworker stock purchase plan units and mpk plan units is reflected in the diluted weighted-average shares outstanding using the treasury stock method ."
+      },
+      {
+        "location": "text_15",
+        "text": "( 3 ) there were 0.4 million potential common shares excluded from the diluted weighted-average shares outstanding for the year ended december 31 , 2015 , and there was an insignificant amount of potential common shares excluded from the diluted weighted-average shares outstanding for the years ended december 31 , 2014 and 2013 , as their inclusion would have had an anti-dilutive effect ."
+      },
+      {
+        "location": "text_16",
+        "text": "13 ."
+      },
+      {
+        "location": "text_17",
+        "text": "coworker retirement and other compensation benefits profit sharing plan and other savings plans the company has a profit sharing plan that includes a salary reduction feature established under the internal revenue code section 401 ( k ) covering substantially all coworkers in the united states ."
+      },
+      {
+        "location": "text_18",
+        "text": "in addition , coworkers outside the u.s ."
+      },
+      {
+        "location": "text_19",
+        "text": "participate in other savings plans ."
+      },
+      {
+        "location": "text_20",
+        "text": "company contributions to the profit sharing and other savings plans are made in cash and determined at the discretion of the board of directors ."
+      },
+      {
+        "location": "text_21",
+        "text": "for the years ended december 31 , 2015 , 2014 and 2013 , the amounts expensed for these plans were $ 19.8 million , $ 21.9 million and $ 17.3 million , respectively ."
+      },
+      {
+        "location": "text_22",
+        "text": "coworker stock purchase plan on january 1 , 2014 , the first offering period under the company 2019s coworker stock purchase plan ( the 201ccspp 201d ) commenced ."
+      },
+      {
+        "location": "text_23",
+        "text": "the cspp provides the opportunity for eligible coworkers to acquire shares of the company 2019s common stock at a 5% ( 5 % ) discount from the closing market price on the final day of the offering period ."
+      },
+      {
+        "location": "text_24",
+        "text": "there is no compensation expense associated with the cspp ."
+      },
+      {
+        "location": "text_25",
+        "text": "restricted debt unit plan on march 10 , 2010 , the company established the restricted debt unit plan ( the 201crdu plan 201d ) , an unfunded nonqualified deferred compensation plan. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "how much more money was expensed per outstanding basic weighted-average share in the year ended dec 31 , 2013 compared to the year ended dec 31 , 2014?",
+  "human_answer": "1.26",
+  "reference_program": "divide(156.6, 17.3), divide(170.6, 21.9), subtract(#0, #1)",
+  "reference_execution_value": 1.26207,
+  "model_response": {
+    "answer": "-0.0178979157",
+    "unit": "dollars per basic weighted-average share",
+    "expression": "(17.3 / 156.6) - (21.9 / 170.6)",
+    "explanation": "The amount expensed per basic weighted-average share was approximately $0.0179 lower in 2013 than in 2014."
+  }
+}

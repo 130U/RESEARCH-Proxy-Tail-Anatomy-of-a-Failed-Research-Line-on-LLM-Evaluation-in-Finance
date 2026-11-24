@@ -1,0 +1,1 @@
+{"answer":"25.9259259259","unit":"percent","expression":"(79.90 - 63.45) / 63.45 * 100","low":"25.9081238673","high":"25.9437378832","reliable_digits":"3","explanation":"Allowing each index value to vary by 0.005 gives these bounds, which both round to 25.9 percent at three significant digits."}

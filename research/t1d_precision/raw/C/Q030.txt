@@ -1,0 +1,1 @@
+{"answer":"-0.0178979157","unit":"dollars per basic weighted-average share","expression":"(17.3 / 156.6) - (21.9 / 170.6)","low":"-0.0185831630","high":"-0.0172126359","reliable_digits":"1","explanation":"Expense per share was lower in 2013; the bounds account for rounding in both expenses and weighted-average shares."}

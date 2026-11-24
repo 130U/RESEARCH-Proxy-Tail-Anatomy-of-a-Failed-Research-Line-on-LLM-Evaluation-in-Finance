@@ -1,0 +1,1 @@
+{"answer":"9.8","unit":"billion dollars","expression":"3.7 + 2.6 + 3.5","low":"9.65","high":"9.95","reliable_digits":"1","explanation":"Each annual figure is rounded to the nearest 0.1 billion dollars, giving the sum a rounding uncertainty of 0.15 billion dollars."}

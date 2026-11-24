@@ -1,0 +1,1 @@
+{"answer":"0.8064516129032258","unit":"ratio","expression":"5 / 6.2","low":"0.72","high":"0.8943089430894309","reliable_digits":"0","explanation":"Rounding allows the increase to range from 4.5 to 5.5 billion and transfers from 6.15 to 6.25 billion, so even the first significant digit is uncertain."}

@@ -1,0 +1,1 @@
+{"answer":"28","unit":"million dollars","expression":"210 - 182","low":"27","high":"29","reliable_digits":"1","explanation":"Subtract cash consideration from total transaction value; rounding each input by up to 0.5 million gives bounds of 27 to 29 million."}

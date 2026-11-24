@@ -1,0 +1,5 @@
+{
+    "review_id": "R056",
+    "verdict": "invalid",
+    "reason": "The calculation omits the negative 54 reserve-establishment effect, whereas the table reports the total cumulative effect on net income as negative 23."
+  }

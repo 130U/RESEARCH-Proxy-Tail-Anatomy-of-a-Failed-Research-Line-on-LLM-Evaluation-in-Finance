@@ -1,0 +1,1 @@
+{"answer":"-2.91845493562232","unit":"percent","expression":"(1131 - 1165) / 1165 * 100","low":"-3.00300300300300","high":"-2.83383426363246","reliable_digits":"1","explanation":"Cash flows decreased by about 2.92%; allowing each annual figure to vary by $0.5 million gives these bounds and one reliable significant digit."}

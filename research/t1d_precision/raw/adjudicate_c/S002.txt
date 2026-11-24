@@ -1,0 +1,7 @@
+{
+    "call_id": "S002",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "Text_3 assigns $2.9 billion of issuances to 2008 and compares them with $900.1 million of net debt reductions when explaining increased cash used in 2009. The model's 2900/900.1 correctly computes that cross-year ratio, and the reference omits unit conversion. However, the requested 2009 cash increase from debt issuance is not established."
+  }

@@ -1,0 +1,25 @@
+{
+  "review_id": "S015",
+  "kind": "c",
+  "display_order": [
+    {
+      "source_round": "second",
+      "original_reason": "For December 31, 2011, rows 2–7 support net reserves of 271 + 39 + 57 - 47 = 320 in the table's monetary scale. The question does not specify a metric or request the reference's comparison of net 320 with direct 271 using denominator 271. The net-reserve formula is valid, but the excerpt does not establish the dollar scale.",
+      "display_reason": "For December 31, 2011, rows 2–7 support net reserves of 271 + 39 + 57 - 47 = 320 in the table's monetary scale. The question does not specify a metric or request the reference's comparison of net 320 with direct 271 using denominator 271. The net-reserve formula is valid, but the excerpt does not establish the dollar scale.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "first",
+      "original_reason": "Adopt the independent review: the question vaguely asks for a summary, so a correctly reconstructed net-reserve total is a reasonable single-number interpretation. The reference percentage is not requested, but the vague target does not justify asserting one uniquely required summary measure. Source monetary magnitude is not independently supplied.",
+      "display_reason": "the question vaguely asks for a summary, so a correctly reconstructed net-reserve total is a reasonable single-number interpretation. The reference percentage is not requested, but the vague target does not justify asserting one uniquely required summary measure. Source monetary magnitude is not independently supplied.",
+      "removed_fragments": [
+        {
+          "removed_text": "Adopt the independent review: ",
+          "reason": "procedural opening preface"
+        }
+      ],
+      "blindness_limitations": []
+    }
+  ]
+}

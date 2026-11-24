@@ -1,0 +1,1 @@
+{"answer":"3081","unit":"million dollars","expression":"150 + 175 + 2756","low":"3079.5","high":"3082.5","reliable_digits":"3","explanation":"The three maturities sum to $3,081 million, with rounding uncertainty of $0.5 million each."}

@@ -1,0 +1,25 @@
+{
+  "group": "C",
+  "id": "Q312",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "fresh_session": true,
+  "prompt_file": "prompts/C/Q312.txt",
+  "started_utc": "2026-11-17T09:21:23.192321+00:00",
+  "status": "completed",
+  "returncode": 0,
+  "completed_utc": "2026-11-17T09:30:41.483451+00:00",
+  "elapsed_seconds": 558.281,
+  "thread_id": "01a1e8cf-a038-73d3-8322-07ac4f858cd9",
+  "usage": {
+    "input_tokens": 17627,
+    "cached_input_tokens": 15488,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 304,
+    "reasoning_output_tokens": 223
+  },
+  "event_item_types": [
+    "agent_message"
+  ],
+  "tool_use_observed": false
+}

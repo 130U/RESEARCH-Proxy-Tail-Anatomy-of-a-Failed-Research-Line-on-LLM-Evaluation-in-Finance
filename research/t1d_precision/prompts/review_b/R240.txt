@@ -1,0 +1,270 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R240",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "financing activities for 2014 also included an acquisition-related contingent consideration payment of $ 86 million made to champion 2019s former shareholders ."
+      },
+      {
+        "location": "text_1",
+        "text": "liquidity and capital resources we currently expect to fund all of our cash requirements which are reasonably foreseeable for 2017 , including scheduled debt repayments , new investments in the business , share repurchases , dividend payments , possible business acquisitions and pension contributions , with cash from operating activities , and as needed , additional short-term and/or long-term borrowings ."
+      },
+      {
+        "location": "text_2",
+        "text": "we continue to expect our operating cash flow to remain strong ."
+      },
+      {
+        "location": "text_3",
+        "text": "as of december 31 , 2016 , we had $ 327 million of cash and cash equivalents on hand , of which $ 184 million was held outside of the u.s ."
+      },
+      {
+        "location": "text_4",
+        "text": "as of december 31 , 2015 , we had $ 26 million of deferred tax liabilities for pre-acquisition foreign earnings associated with the legacy nalco entities and legacy champion entities that we intended to repatriate ."
+      },
+      {
+        "location": "text_5",
+        "text": "these liabilities were recorded as part of the respective purchase price accounting of each transaction ."
+      },
+      {
+        "location": "text_6",
+        "text": "the remaining foreign earnings were repatriated in 2016 , reducing the deferred tax liabilities to zero at december 31 , 2016 ."
+      },
+      {
+        "location": "text_7",
+        "text": "we consider the remaining portion of our foreign earnings to be indefinitely reinvested in foreign jurisdictions and we have no intention to repatriate such funds ."
+      },
+      {
+        "location": "text_8",
+        "text": "we continue to be focused on building our global business and these funds are available for use by our international operations ."
+      },
+      {
+        "location": "text_9",
+        "text": "to the extent the remaining portion of the foreign earnings would be repatriated , such amounts would be subject to income tax or foreign withholding tax liabilities that may be fully or partially offset by foreign tax credits , both in the u.s ."
+      },
+      {
+        "location": "text_10",
+        "text": "and in various applicable foreign jurisdictions ."
+      },
+      {
+        "location": "text_11",
+        "text": "as of december 31 , 2016 we had a $ 2.0 billion multi-year credit facility , which expires in december 2019 ."
+      },
+      {
+        "location": "text_12",
+        "text": "the credit facility has been established with a diverse syndicate of banks ."
+      },
+      {
+        "location": "text_13",
+        "text": "there were no borrowings under our credit facility as of december 31 , 2016 or 2015 ."
+      },
+      {
+        "location": "text_14",
+        "text": "the credit facility supports our $ 2.0 billion u.s ."
+      },
+      {
+        "location": "text_15",
+        "text": "commercial paper program and $ 2.0 billion european commercial paper program ."
+      },
+      {
+        "location": "text_16",
+        "text": "we increased the european commercial paper program from $ 200 million during the third quarter of 2016 ."
+      },
+      {
+        "location": "text_17",
+        "text": "combined borrowing under these two commercial paper programs may not exceed $ 2.0 billion ."
+      },
+      {
+        "location": "text_18",
+        "text": "as of december 31 , 2016 , we had no amount outstanding under either our u.s ."
+      },
+      {
+        "location": "text_19",
+        "text": "or european commercial paper programs ."
+      },
+      {
+        "location": "text_20",
+        "text": "additionally , we have other committed and uncommitted credit lines of $ 746 million with major international banks and financial institutions to support our general global funding needs , including with respect to bank supported letters of credit , performance bonds and guarantees ."
+      },
+      {
+        "location": "text_21",
+        "text": "approximately $ 554 million of these credit lines were available for use as of year-end 2016 ."
+      },
+      {
+        "location": "text_22",
+        "text": "as of december 31 , 2016 , our short-term borrowing program was rated a-2 by standard & poor 2019s and p-2 by moody 2019s ."
+      },
+      {
+        "location": "text_23",
+        "text": "as of december 31 , 2016 , standard & poor 2019s and moody 2019s rated our long-term credit at a- ( stable outlook ) and baa1 ( stable outlook ) , respectively ."
+      },
+      {
+        "location": "text_24",
+        "text": "a reduction in our credit ratings could limit or preclude our ability to issue commercial paper under our current programs , or could also adversely affect our ability to renew existing , or negotiate new , credit facilities in the future and could increase the cost of these facilities ."
+      },
+      {
+        "location": "text_25",
+        "text": "should this occur , we could seek additional sources of funding , including issuing additional term notes or bonds ."
+      },
+      {
+        "location": "text_26",
+        "text": "in addition , we have the ability , at our option , to draw upon our $ 2.0 billion of committed credit facility prior to termination ."
+      },
+      {
+        "location": "text_27",
+        "text": "we are in compliance with our debt covenants and other requirements of our credit agreements and indentures ."
+      },
+      {
+        "location": "text_28",
+        "text": "a schedule of our obligations as of december 31 , 2016 under various notes payable , long-term debt agreements , operating leases with noncancelable terms in excess of one year and interest obligations are summarized in the following table: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "",
+          "Payments Due by Period"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "(millions)",
+          "Total",
+          "Less Than 1 Year",
+          "2-3 Years",
+          "4-5 Years",
+          "More Than 5 Years"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Notes payable",
+          "$30",
+          "$30",
+          "$ -",
+          "$ -",
+          "$ -"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Commercial paper",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Long-term debt",
+          "6,652",
+          "510",
+          "967",
+          "1,567",
+          "3,608"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Capital lease obligations",
+          "5",
+          "1",
+          "1",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Operating leases",
+          "431",
+          "102",
+          "153",
+          "105",
+          "71"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Interest*",
+          "2,261",
+          "218",
+          "396",
+          "360",
+          "1,287"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Total",
+          "$9,379",
+          "$861",
+          "$1,517",
+          "$2,033",
+          "$4,968"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_29",
+        "text": "* interest on variable rate debt was calculated using the interest rate at year-end 2016 ."
+      },
+      {
+        "location": "text_30",
+        "text": "as of december 31 , 2016 , our gross liability for uncertain tax positions was $ 76 million ."
+      },
+      {
+        "location": "text_31",
+        "text": "we are not able to reasonably estimate the amount by which the liability will increase or decrease over an extended period of time or whether a cash settlement of the liability will be required ."
+      },
+      {
+        "location": "text_32",
+        "text": "therefore , these amounts have been excluded from the schedule of contractual obligations. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the amount of credit lines that has been drawn in millions as of year-end 2016?",
+  "reference_program": "subtract(746, 554)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "746",
+      "raw": "746",
+      "location": "text_20:72",
+      "context": "additionally , we have other committed and uncommitted credit lines of $ 746 million with major international banks and financial institutions to support our general global funding needs , including with respect to bank supported letters of credit , performance bonds and guarantees ."
+    },
+    "x1": {
+      "program_token": "554",
+      "raw": "554",
+      "location": "text_21:15",
+      "context": "approximately $ 554 million of these credit lines were available for use as of year-end 2016 ."
+    }
+  }
+}

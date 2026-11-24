@@ -1,0 +1,1 @@
+{"answer":"11.71259842519685","unit":"percent","expression":"(1,135 - 1,016) / 1,016 * 100","low":"11.60846040334481","high":"11.81683899556869","reliable_digits":"2","explanation":"Using maximum borrowings outstanding, each amount has rounding uncertainty of 0.5, giving growth reliable to two significant digits."}

@@ -1,0 +1,1 @@
+{"answer":"-5.95853070216084","unit":"percent","expression":"(355173 - 377677) / 377677 * 100","low":"-5.95878758994115","high":"-5.95827381370350","reliable_digits":"3","explanation":"Allowing each displayed total to vary by 0.5 million, the growth rate consistently rounds to -5.96% at three significant digits."}

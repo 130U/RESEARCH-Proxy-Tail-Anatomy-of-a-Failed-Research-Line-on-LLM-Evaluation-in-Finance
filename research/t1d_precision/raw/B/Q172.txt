@@ -1,0 +1,1 @@
+{"answer":"39.02439024390244","unit":"percent","expression":"(57 - 41) / 41 * 100","low":"36.14457831325301","high":"41.97530864197531","reliable_digits":"1","explanation":"Losses increased in magnitude from 41 to 57 million; allowing rounding of ±0.5 million gives these bounds and one reliable significant digit."}

@@ -1,0 +1,25 @@
+{
+  "review_id": "S002",
+  "kind": "c",
+  "display_order": [
+    {
+      "source_round": "first",
+      "original_reason": "Reference definitely omits billion-to-million conversion, and model correctly forms the disclosed cross-year amount ratio. However, the question attributes the issuance to 2009 while the document assigns 2.9 billion to 2008. Adopt the independent review's unresolved classification: a correct dimensional calculation cannot establish an answer for a year whose issuance value is absent.",
+      "display_reason": "Reference definitely omits billion-to-million conversion, and model correctly forms the disclosed cross-year amount ratio. However, the question attributes the issuance to 2009 while the document assigns 2.9 billion to 2008. a correct dimensional calculation cannot establish an answer for a year whose issuance value is absent.",
+      "removed_fragments": [
+        {
+          "removed_text": "Adopt the independent review's unresolved classification: ",
+          "reason": "procedural classification preface"
+        }
+      ],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "second",
+      "original_reason": "Text 3 compares $2.9 billion of debt issuances in 2008 with $900.1 million of net debt reductions when explaining the 2009 cash-use change. The model correctly converts the numerator to $2,900 million before dividing by $900.1 million. The reference omits this unit conversion.",
+      "display_reason": "Text 3 compares $2.9 billion of debt issuances in 2008 with $900.1 million of net debt reductions when explaining the 2009 cash-use change. The model correctly converts the numerator to $2,900 million before dividing by $900.1 million. The reference omits this unit conversion.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

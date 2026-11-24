@@ -1,0 +1,1 @@
+{"answer":"11.3466334164589","unit":"percent","expression":"(802 - 711) / 802 * 100","low":"11.2289457267623","high":"11.4641744548287","reliable_digits":"2","explanation":"Development costs incurred decreased from 802 million to 711 million; rounding uncertainty of ±0.5 million leaves two significant digits reliable."}

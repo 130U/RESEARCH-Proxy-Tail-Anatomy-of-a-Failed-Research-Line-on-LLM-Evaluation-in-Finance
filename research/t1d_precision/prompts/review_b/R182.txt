@@ -1,0 +1,227 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R182",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "years ."
+      },
+      {
+        "location": "text_1",
+        "text": "the company does not yet have a robust set of annuitization experience because most of its clients 2019 policyholders are not yet eligible to annuitize utilizing the gmib ."
+      },
+      {
+        "location": "text_2",
+        "text": "however , for certain clients there are several years of annuitization experience 2013 for those clients the annuitization function reflects the actual experience and has a maximum annuitization rate per annum of 8 percent ( a higher maximum applies in the first year a policy is eligible to annuitize utilizing the gmib 2013 it is over 13 percent ) ."
+      },
+      {
+        "location": "text_3",
+        "text": "for most clients there is no currently observable relevant annuitization behavior data and so we use a weighted aver- age ( with a heavier weighting on the observed experience noted previously ) of three different annuitization functions with maximum annuitization rates per annum of 8 percent , 12 percent , and 30 percent , respectively ( with significantly higher rates in the first year a policy is eligible to annuitize utilizing the gmib ) ."
+      },
+      {
+        "location": "text_4",
+        "text": "as noted elsewhere , our gmib reinsurance treaties include claim limits to protect ace in the event that actual annuitization behavior is significantly higher than expected ."
+      },
+      {
+        "location": "text_5",
+        "text": "during 2010 , the company made various changes to assumptions ( primarily annuitization and lapse ) and methods used to calculate the fair value ."
+      },
+      {
+        "location": "text_6",
+        "text": "the changes had a net effect of reducing fair value of the liability by $ 98 million ( where the dollar impact of each change was measured in the quarter in which the change was implemented ) ."
+      },
+      {
+        "location": "text_7",
+        "text": "during 2010 , we recorded realized losses of $ 64 million primarily due to increasing net fair value of reported glb reinsurance liabilities resulting substantially from the impact of falling interest rates ."
+      },
+      {
+        "location": "text_8",
+        "text": "this excludes realized losses of $ 150 mil- lion during 2010 on derivative hedge instruments held to partially offset the risk in the va guarantee reinsurance portfolio ."
+      },
+      {
+        "location": "text_9",
+        "text": "these derivatives do not receive hedge accounting treatment ."
+      },
+      {
+        "location": "text_10",
+        "text": "refer to 201cnet realized gains ( losses ) 201d for a breakdown of the realized gains on glb reinsurance and the realized losses on the derivatives for 2010 and 2009 ."
+      },
+      {
+        "location": "text_11",
+        "text": "ace tempest life re employs a strategy to manage the financial market and policyholder behavior risks embedded in the reinsurance of va guarantees ."
+      },
+      {
+        "location": "text_12",
+        "text": "risk management begins with underwriting a prospective client and guarantee design , with particular focus on protecting ace 2019s position from policyholder options that , because of anti-selective behavior , could adversely impact our obligation ."
+      },
+      {
+        "location": "text_13",
+        "text": "a second layer of risk management is the structure of the reinsurance contracts ."
+      },
+      {
+        "location": "text_14",
+        "text": "all va guarantee reinsurance contracts include some form of annual or aggregate claim limit ( s ) ."
+      },
+      {
+        "location": "text_15",
+        "text": "the exact limits vary by contract , but some examples of typical con- tract provisions include : 2022 annual claim limits , as a percentage of reinsured account or guaranteed value , for gmdbs and gmibs ; 2022 annual annuitization rate limits , as a percentage of annuitization eligible account or guaranteed value , for gmibs ; and 2022 per policy claim limits , as a percentage of guaranteed value , for gmabs ."
+      },
+      {
+        "location": "text_16",
+        "text": "a third layer of risk management is the hedging strategy which is focused on mitigating long-term economic losses at a portfolio level ."
+      },
+      {
+        "location": "text_17",
+        "text": "ace tempest life re owned financial market instruments as part of the hedging strategy with a fair value of $ 21 million and $ 47 million at december 31 , 2010 , and 2009 , respectively ."
+      },
+      {
+        "location": "text_18",
+        "text": "the instruments are substantially collateralized by our counterparties , on a daily basis ."
+      },
+      {
+        "location": "text_19",
+        "text": "we also limit the aggregate amount of variable annuity reinsurance guarantee risk we are willing to assume ."
+      },
+      {
+        "location": "text_20",
+        "text": "the last substantive u.s ."
+      },
+      {
+        "location": "text_21",
+        "text": "transaction was quoted in mid-2007 and the last transaction in japan was quoted in late 2007 ."
+      },
+      {
+        "location": "text_22",
+        "text": "the aggregate number of policyholders is currently decreasing through policyholder withdrawals and deaths at a rate of 5-10 per- cent annually ."
+      },
+      {
+        "location": "text_23",
+        "text": "note that glb claims cannot occur for any reinsured policy until it has reached the end of its 201cwaiting period 201d ."
+      },
+      {
+        "location": "text_24",
+        "text": "the vast majority of policies we reinsure reach the end of their 201cwaiting periods 201d in 2013 or later , as shown in the table below ."
+      },
+      {
+        "location": "text_25",
+        "text": "year of first payment eligibility percent of living benefit account values ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "Year of first payment eligibility",
+          "Percent ofliving benefitaccount values"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2010 and prior",
+          "1%"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2011",
+          "0%"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2012",
+          "7%"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "2013",
+          "24%"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "2014",
+          "19%"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "2015",
+          "5%"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "2016",
+          "6%"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "2017",
+          "18%"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "2018 and after",
+          "20%"
+        ]
+      },
+      {
+        "row_index": 10,
+        "cells": [
+          "Total",
+          "100%"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_26",
+        "text": "."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the percent change in the fair value financial market instruments as part of the hedging strategy during 2010 compare to 2009?",
+  "reference_program": "subtract(21, 47), divide(#0, 47)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "21",
+      "raw": "21",
+      "location": "text_17:109",
+      "context": "ace tempest life re owned financial market instruments as part of the hedging strategy with a fair value of $ 21 million and $ 47 million at december 31 , 2010 , and 2009 , respectively ."
+    },
+    "x1": {
+      "program_token": "47",
+      "raw": "47",
+      "location": "text_17:126",
+      "context": "ace tempest life re owned financial market instruments as part of the hedging strategy with a fair value of $ 21 million and $ 47 million at december 31 , 2010 , and 2009 , respectively ."
+    }
+  }
+}

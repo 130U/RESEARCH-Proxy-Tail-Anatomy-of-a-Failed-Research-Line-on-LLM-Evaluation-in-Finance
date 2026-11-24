@@ -1,0 +1,21 @@
+{
+  "python": "3.12.14",
+  "scipy": "1.18.1",
+  "sympy": "1.14.0",
+  "matplotlib": "3.11.2",
+  "files_sha256": {
+    "build_review_a.py": "137b9047b3061310d57bce48015fef68012fd9f29fbf73c5015d30770b01ee73",
+    "deliver.py": "48896b940558bfc3a8601f7dbbf57ab63891a01976b920a978021f0c5e8f9095",
+    "exact_solver.py": "beae4cb7bf24b3ae6d17fa02d72029f3a1ac8b4dc61d999df01d20227ee8947a",
+    "prepare.py": "d83d5b5a9ed53b3d019756fcff72100654c85311be32cd193c321900d31453b9",
+    "replay_t1.py": "42955b8de18c406a5a8ab666181d0d5f244ec1f9918373d8aa6ed19c5f3f3ece",
+    "run_audit.py": "914c0a93dafaa887646e167f35d9911ab81fb9100338157644424740b79e2731",
+    "test_exact_solver.py": "264262c9bb9f471ba84af5b85c51035664eec52549576be905b2b2af2c4e4bdc",
+    "test_pipeline.py": "aad6e656c0c9675d48ab7e540672dfe3c46ef1fb9861f5e182eccca599c6c101",
+    "verify_saved.py": "cce78c230dd57bcbc3e13a173b0ff4d390a63da22d289f066ebb1bf503612943"
+  },
+  "review_sha256": {
+    "a": "43453ca613b9c1c3a1bc881be8b3ee3a3924833a42ca62c1391c13685673efc7",
+    "b": "c6d487b8848a70098d4fb6b9551ed36d295d495c9691ca869cc5d065773cd96a"
+  }
+}

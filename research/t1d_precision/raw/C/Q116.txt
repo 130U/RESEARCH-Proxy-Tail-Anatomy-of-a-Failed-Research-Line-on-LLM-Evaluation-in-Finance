@@ -1,0 +1,1 @@
+{"answer":"23.52941176470588","unit":"percent","expression":"(63 - 51) / 51 * 100","low":"21.35922330097087","high":"25.74257425742574","reliable_digits":"1","explanation":"Each average price has rounding uncertainty of $0.50, leaving about one significant digit reliable in the growth rate."}

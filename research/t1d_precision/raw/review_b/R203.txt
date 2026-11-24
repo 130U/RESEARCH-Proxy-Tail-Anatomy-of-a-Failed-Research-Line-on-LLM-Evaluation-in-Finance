@@ -1,0 +1,5 @@
+{
+    "review_id": "R203",
+    "verdict": "uncertain",
+    "reason": "Subtracting the reported aggregate principal and penalty from redemption cost isolates accrued interest paid at redemption, but the excerpt does not establish total interest expense incurred on the notes."
+  }

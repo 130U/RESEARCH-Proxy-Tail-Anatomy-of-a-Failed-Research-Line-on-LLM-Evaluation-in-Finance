@@ -1,0 +1,206 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R224",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "vertex pharmaceuticals incorporated notes to consolidated financial statements ( continued ) f ."
+      },
+      {
+        "location": "text_1",
+        "text": "marketable securities ( continued ) unrealized losses in the portfolio relate to various debt securities including u.s ."
+      },
+      {
+        "location": "text_2",
+        "text": "government securities , u.s ."
+      },
+      {
+        "location": "text_3",
+        "text": "government-sponsored enterprise securities , corporate debt securities and asset-backed securities ."
+      },
+      {
+        "location": "text_4",
+        "text": "for these securities , the unrealized losses are primarily due to increases in interest rates ."
+      },
+      {
+        "location": "text_5",
+        "text": "the investments held by the company are high investment grade and there were no adverse credit events ."
+      },
+      {
+        "location": "text_6",
+        "text": "because the company has the ability and intent to hold these investments until a recovery of fair value , which may be maturity , the company does not consider these investments to be other-than-temporarily impaired as of december 31 , 2006 and 2005 ."
+      },
+      {
+        "location": "text_7",
+        "text": "gross realized gains and losses for 2006 were $ 4000 and $ 88000 respectively ."
+      },
+      {
+        "location": "text_8",
+        "text": "gross realized gains and losses for 2005 were $ 15000 and $ 75000 , respectively ."
+      },
+      {
+        "location": "text_9",
+        "text": "gross realized gains and losses for 2004 were $ 628000 and $ 205000 , respectively ."
+      },
+      {
+        "location": "text_10",
+        "text": "g ."
+      },
+      {
+        "location": "text_11",
+        "text": "restricted cash at december 31 , 2006 and 2005 , the company held $ 30.3 million and $ 41.5 million respectively , in restricted cash ."
+      },
+      {
+        "location": "text_12",
+        "text": "at december 31 , 2006 and 2005 the balance was held in deposit with certain banks predominantly to collateralize conditional stand-by letters of credit in the names of the company 2019s landlords pursuant to certain operating lease agreements ."
+      },
+      {
+        "location": "text_13",
+        "text": "h ."
+      },
+      {
+        "location": "text_14",
+        "text": "property and equipment property and equipment consist of the following at december 31 ( in thousands ) : depreciation and amortization expense for the years ended december 31 , 2006 , 2005 and 2004 was $ 25.4 million , $ 26.3 million and $ 28.4 million , respectively ."
+      },
+      {
+        "location": "text_15",
+        "text": "in 2006 and 2005 , the company wrote off certain assets that were fully depreciated and no longer utilized ."
+      },
+      {
+        "location": "text_16",
+        "text": "there was no effect on the company 2019s net property and equipment ."
+      },
+      {
+        "location": "text_17",
+        "text": "additionally , the company wrote off or sold certain assets that were not fully depreciated ."
+      },
+      {
+        "location": "text_18",
+        "text": "the net loss on disposal of those assets was $ 10000 for 2006 , $ 344000 for 2005 and $ 43000 for 2004 ."
+      },
+      {
+        "location": "text_19",
+        "text": "i ."
+      },
+      {
+        "location": "text_20",
+        "text": "altus investment altus pharmaceuticals , inc ."
+      },
+      {
+        "location": "text_21",
+        "text": "( 201caltus 201d ) completed an initial public offering in january 2006 ."
+      },
+      {
+        "location": "text_22",
+        "text": "as of the completion of the offering , vertex owned 817749 shares of common stock and warrants to purchase 1962494 shares of common stock ( the 201caltus warrants 201d ) ."
+      },
+      {
+        "location": "text_23",
+        "text": "in addition , the company , as of the completion ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2006",
+          "2005"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Furniture and equipment",
+          "$97,638",
+          "$98,387"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Leasehold improvements",
+          "74,875",
+          "66,318"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Computers",
+          "19,733",
+          "18,971"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Software",
+          "21,274",
+          "18,683"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Total property and equipment, gross",
+          "213,520",
+          "202,359"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Less accumulated depreciation and amortization",
+          "151,985",
+          "147,826"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Total property and equipment, net",
+          "$61,535",
+          "$54,533"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_24",
+        "text": "furniture and equipment $ 97638 $ 98387 leasehold improvements 74875 66318 computers 19733 18971 software 21274 18683 total property and equipment , gross 213520 202359 less accumulated depreciation and amortization 151985 147826 total property and equipment , net $ 61535 $ 54533 ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percent change in depreciation and amortization expense between 2004 and 2005?",
+  "reference_program": "subtract(26.3, 28.4), divide(#0, 28.4)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "26.3",
+      "raw": "26.3",
+      "location": "text_14:220",
+      "context": "property and equipment property and equipment consist of the following at december 31 ( in thousands ) : depreciation and amortization expense for the years ended december 31 , 2006 , 2005 and 2004 was $ 25.4 million , $ 26.3 million and $ 28.4 million , respectively ."
+    },
+    "x1": {
+      "program_token": "28.4",
+      "raw": "28.4",
+      "location": "text_14:239",
+      "context": "property and equipment property and equipment consist of the following at december 31 ( in thousands ) : depreciation and amortization expense for the years ended december 31 , 2006 , 2005 and 2004 was $ 25.4 million , $ 26.3 million and $ 28.4 million , respectively ."
+    }
+  }
+}

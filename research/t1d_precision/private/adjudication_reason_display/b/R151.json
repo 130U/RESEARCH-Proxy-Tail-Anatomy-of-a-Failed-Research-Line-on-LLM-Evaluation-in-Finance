@@ -1,0 +1,20 @@
+{
+  "review_id": "R151",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "first",
+      "original_reason": "Feb2006/Jan2005 LIFO excess5.8/6.3m matches. Fiscal2005 separately disclosed0.5m reserve decrease constrains difference.",
+      "display_reason": "Feb2006/Jan2005 LIFO excess5.8/6.3m matches. Fiscal2005 separately disclosed0.5m reserve decrease constrains difference.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "second",
+      "original_reason": "The approximate balances and 2005 denominator are correct, but the calculation returns a fractional change without converting it to the requested percentage.",
+      "display_reason": "The approximate balances and 2005 denominator are correct, but the calculation returns a fractional change without converting it to the requested percentage.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

@@ -1,0 +1,2795 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only a JSON array, with one object for each supplied material in the supplied order, using its anonymous call_id and the requested fields.
+
+Assess each material independently. Do not infer a common answer or prevalence from the batch. Do not combine items or omit any item.
+
+MATERIALS
+[
+  {
+    "call_id": "S033",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "abiomed , inc ."
+        },
+        {
+          "location": "text_1",
+          "text": "and subsidiaries notes to consolidated financial statements 2014 ( continued ) note 10 ."
+        },
+        {
+          "location": "text_2",
+          "text": "commitments and contingencies the following is a description of the company 2019s significant arrangements in which the company is a guarantor ."
+        },
+        {
+          "location": "text_3",
+          "text": "indemnifications 2014in many sales transactions , the company indemnifies customers against possible claims of patent infringement caused by the company 2019s products ."
+        },
+        {
+          "location": "text_4",
+          "text": "the indemnifications contained within sales contracts usually do not include limits on the claims ."
+        },
+        {
+          "location": "text_5",
+          "text": "the company has never incurred any material costs to defend lawsuits or settle patent infringement claims related to sales transactions ."
+        },
+        {
+          "location": "text_6",
+          "text": "the company enters into agreements with other companies in the ordinary course of business , typically with underwriters , contractors , clinical sites and customers that include indemnification provisions ."
+        },
+        {
+          "location": "text_7",
+          "text": "under these provisions the company generally indemnifies and holds harmless the indemnified party for losses suffered or incurred by the indemnified party as a result of its activities ."
+        },
+        {
+          "location": "text_8",
+          "text": "these indemnification provisions generally survive termination of the underlying agreement ."
+        },
+        {
+          "location": "text_9",
+          "text": "the maximum potential amount of future payments the company could be required to make under these indemnification provisions is unlimited ."
+        },
+        {
+          "location": "text_10",
+          "text": "abiomed has never incurred any material costs to defend lawsuits or settle claims related to these indemnification agreements ."
+        },
+        {
+          "location": "text_11",
+          "text": "as a result , the estimated fair value of these agreements is immaterial ."
+        },
+        {
+          "location": "text_12",
+          "text": "accordingly , the company has no liabilities recorded for these agreements as of march 31 , 2012 ."
+        },
+        {
+          "location": "text_13",
+          "text": "clinical study agreements 2014in the company 2019s clinical study agreements , abiomed has agreed to indemnify the participating institutions against losses incurred by them for claims related to any personal injury of subjects taking part in the study to the extent they relate to uses of the company 2019s devices in accordance with the clinical study agreement , the protocol for the device and abiomed 2019s instructions ."
+        },
+        {
+          "location": "text_14",
+          "text": "the indemnification provisions contained within the company 2019s clinical study agreements do not generally include limits on the claims ."
+        },
+        {
+          "location": "text_15",
+          "text": "the company has never incurred any material costs related to the indemnification provisions contained in its clinical study agreements ."
+        },
+        {
+          "location": "text_16",
+          "text": "facilities leases 2014the company rents its danvers , massachusetts facility under an operating lease agreement that expires on february 28 , 2016 ."
+        },
+        {
+          "location": "text_17",
+          "text": "monthly rent under the facility lease is as follows : 2022 the base rent for november 2008 through june 2010 was $ 40000 per month ; 2022 the base rent for july 2010 through february 2014 is $ 64350 per month ; and 2022 the base rent for march 2014 through february 2016 will be $ 66000 per month ."
+        },
+        {
+          "location": "text_18",
+          "text": "in addition , the company has certain rights to terminate the facility lease early , subject to the payment of a specified termination fee based on the timing of the termination , as further outlined in the lease amendment ."
+        },
+        {
+          "location": "text_19",
+          "text": "the company has a lease for its european headquarters in aachen , germany ."
+        },
+        {
+          "location": "text_20",
+          "text": "the lease payments are approximately 36000 20ac ( euro ) ( approximately u.s ."
+        },
+        {
+          "location": "text_21",
+          "text": "$ 50000 at march 31 , 2012 exchange rates ) per month and the lease term expires in december 2012 ."
+        },
+        {
+          "location": "text_22",
+          "text": "in july 2008 , the company entered into a lease agreement providing for the lease of a 33000 square foot manufacturing facility in athlone , ireland ."
+        },
+        {
+          "location": "text_23",
+          "text": "the lease agreement was for a term of 25 years , commencing on july 18 , 2008 ."
+        },
+        {
+          "location": "text_24",
+          "text": "the company relocated the production equipment from its athlone , ireland manufacturing facility to its aachen and danvers facilities and fully vacated the athlone facility in the first quarter of fiscal 2011 ."
+        },
+        {
+          "location": "text_25",
+          "text": "in march 2011 , the company terminated the lease agreement and paid a termination fee of approximately $ 0.8 million as a result of the early termination of the lease ."
+        },
+        {
+          "location": "text_26",
+          "text": "total rent expense for the company 2019s operating leases included in the accompanying consolidated statements of operations approximated $ 1.6 million , $ 2.7 million and $ 2.2 million for the fiscal years ended march 31 , 2012 , 2011 , and 2010 , respectively ."
+        },
+        {
+          "location": "text_27",
+          "text": "future minimum lease payments under all significant non-cancelable operating leases as of march 31 , 2012 are approximately as follows : fiscal year ending march 31 , operating leases ( in $ 000s ) ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "Fiscal Year Ending March 31,",
+            "Operating Leases  (in $000s)"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2013",
+            "1,473"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2014",
+            "964"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2015",
+            "863"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2016",
+            "758"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "2017",
+            "32"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Thereafter",
+            "128"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Total future minimum lease payments",
+            "$4,218"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_28",
+          "text": "."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "how much of total future minimum lease payments are due currently?",
+    "human_answer": "35%",
+    "reference_program": "add(1473, 4218), divide(#0, const_2)",
+    "reference_execution_value": 2845.5,
+    "model_response": {
+      "answer": "34.92",
+      "unit": "percent",
+      "expression": "1473 / 4218 * 100",
+      "explanation": "Fiscal 2013 payments represent approximately 34.92% of total future minimum lease payments."
+    }
+  },
+  {
+    "call_id": "S034",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "see note 8 of the notes to consolidated financial statements in item 8 ."
+        },
+        {
+          "location": "text_1",
+          "text": "financial statements and supplementary data for a further discussion of these transactions ."
+        },
+        {
+          "location": "text_2",
+          "text": "capital resources outlook for 2007 international paper expects to be able to meet pro- jected capital expenditures , service existing debt and meet working capital and dividend requirements during 2007 through current cash balances and cash from operations and divestiture proceeds , supple- mented as required by its various existing credit facilities ."
+        },
+        {
+          "location": "text_3",
+          "text": "international paper has approximately $ 3.0 billion of committed liquidity , which we believe is adequate to cover expected operating cash flow variability during our industry 2019s economic cycles ."
+        },
+        {
+          "location": "text_4",
+          "text": "in march 2006 , international paper replaced its matur- ing $ 750 million revolving bank credit agreement with a 364-day $ 500 million fully committed revolv- ing bank credit agreement that expires in march 2007 and has a facility fee of 0.08% ( 0.08 % ) payable quarterly , and replaced its $ 1.25 billion revolving bank credit agreement with a $ 1.5 billion fully committed revolv- ing bank credit agreement that expires in march 2011 and has a facility fee of 0.10% ( 0.10 % ) payable quarterly ."
+        },
+        {
+          "location": "text_5",
+          "text": "in addition , in october 2006 , the company amended its existing receivables securitization program that pro- vides for up to $ 1.2 billion of commercial paper- based financings with a facility fee of 0.20% ( 0.20 % ) and an expiration date in november 2007 , to provide up to $ 1.0 billion of available commercial paper-based financings with a facility fee of 0.10% ( 0.10 % ) and an expira- tion date of october 2009 ."
+        },
+        {
+          "location": "text_6",
+          "text": "at december 31 , 2006 , there were no borrowings under either of the bank credit agreements or the receivables securitization program ."
+        },
+        {
+          "location": "text_7",
+          "text": "additionally , international paper investments ( luxembourg ) s.ar.l. , a wholly-owned subsidiary of international paper , has a $ 100 million bank credit agreement maturing in december 2007 , with $ 40 million in borrowings outstanding as of december 31 , 2006 ."
+        },
+        {
+          "location": "text_8",
+          "text": "the company will continue to rely upon debt and capital markets for the majority of any necessary long-term funding not provided by operating cash flow or divestiture proceeds ."
+        },
+        {
+          "location": "text_9",
+          "text": "funding decisions will be guided by our capital structure planning and liability management practices ."
+        },
+        {
+          "location": "text_10",
+          "text": "the primary goals of the company 2019s capital structure planning are to maximize financial flexibility and preserve liquidity while reducing interest expense ."
+        },
+        {
+          "location": "text_11",
+          "text": "the majority of international paper 2019s debt is accessed through global public capital markets where we have a wide base of investors ."
+        },
+        {
+          "location": "text_12",
+          "text": "the company was in compliance with all its debt covenants at december 31 , 2006 ."
+        },
+        {
+          "location": "text_13",
+          "text": "principal financial covenants include maintenance of a minimum net worth , defined as the sum of common stock , paid-in capital and retained earnings , less treasury stock , plus any goodwill impairment charges , of $ 9 billion ; and a maximum total debt to capital ratio , defined as total debt divided by total debt plus net worth , of maintaining an investment grade credit rating is an important element of international paper 2019s financing strategy ."
+        },
+        {
+          "location": "text_14",
+          "text": "in the third quarter of 2006 , standard & poor 2019s reaffirmed the company 2019s long-term credit rating of bbb , revised its ratings outlook from neg- ative to stable , and upgraded its short-term credit rating from a-3 to a-2 ."
+        },
+        {
+          "location": "text_15",
+          "text": "at december 31 , 2006 , the company also held long-term credit ratings of baa3 ( stable outlook ) and a short-term credit rating of p-3 from moody 2019s investor services ."
+        },
+        {
+          "location": "text_16",
+          "text": "contractual obligations for future payments under existing debt and lease commitments and purchase obligations at december 31 , 2006 , were as follows : in millions 2007 2008 2009 2010 2011 thereafter ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "<i>In millions</i>",
+            "2007",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "Thereafter"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Total debt (a)",
+            "$692",
+            "$129",
+            "$1,143",
+            "$1,198",
+            "$381",
+            "$3,680"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Lease obligations (b)",
+            "144",
+            "117",
+            "94",
+            "74",
+            "60",
+            "110"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Purchase obligations (c,d)",
+            "2,329",
+            "462",
+            "362",
+            "352",
+            "323",
+            "1,794"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Total",
+            "$3,165",
+            "$708",
+            "$1,599",
+            "$1,624",
+            "$764",
+            "$5,584"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_17",
+          "text": "( a ) total debt includes scheduled principal payments only ."
+        },
+        {
+          "location": "text_18",
+          "text": "( b ) included in these amounts are $ 76 million of lease obligations related to discontinued operations and businesses held for sale that are due as follows : 2007 - $ 23 million ; 2008 - $ 19 million ; 2009 - $ 15 million ; 2010 - $ 7 million ; 2011 - $ 5 million ; and thereafter - $ 7 million ."
+        },
+        {
+          "location": "text_19",
+          "text": "( c ) included in these amounts are $ 1.3 billion of purchase obliga- tions related to discontinued operations and businesses held for sale that are due as follows : 2007 - $ 335 million ; 2008 - $ 199 million ; 2009 - $ 157 million ; 2010 - $ 143 million ; 2011 - $ 141 million ; and thereafter - $ 331 million ."
+        },
+        {
+          "location": "text_20",
+          "text": "( d ) includes $ 2.2 billion relating to fiber supply agreements entered into at the time of the transformation plan forestland sales ."
+        },
+        {
+          "location": "text_21",
+          "text": "transformation plan in july 2005 , the company had announced a plan to focus its business portfolio on two key global plat- form businesses : uncoated papers ( including dis- tribution ) and packaging ."
+        },
+        {
+          "location": "text_22",
+          "text": "the plan 2019s other elements include exploring strategic options for other busi- nesses , including possible sale or spin-off , returning value to shareholders , strengthening the balance sheet , selective reinvestment to strengthen the paper ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percentage of total debt associated with lease obligations related to discontinued operations and businesses held for sale due in 2007",
+    "human_answer": "0.99",
+    "reference_program": "divide(23, 2329)",
+    "reference_execution_value": 0.00988,
+    "model_response": {
+      "answer": "3.323699421965318",
+      "unit": "percent",
+      "expression": "(23 / 692) * 100",
+      "explanation": "The $23 million of relevant lease obligations due in 2007 represented this percentage of the $692 million of total debt due in 2007."
+    }
+  },
+  {
+    "call_id": "S035",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "note 10 ."
+        },
+        {
+          "location": "text_1",
+          "text": "commitments and contingencies off-balance sheet commitments and contingencies : credit-related financial instruments include indemnified securities financing , unfunded commitments to extend credit or purchase assets and standby letters of credit ."
+        },
+        {
+          "location": "text_2",
+          "text": "the total potential loss on unfunded commitments , standby letters of credit and securities finance indemnifications is equal to the total contractual amount , which does not consider the value of any collateral ."
+        },
+        {
+          "location": "text_3",
+          "text": "the following is a summary of the contractual amount of credit-related , off-balance sheet financial instruments at december 31 ."
+        },
+        {
+          "location": "text_4",
+          "text": "amounts reported do not reflect participations to independent third parties ."
+        },
+        {
+          "location": "text_5",
+          "text": "2007 2006 ( in millions ) ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "(In millions)",
+            "2007",
+            "2006"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Indemnified securities financing",
+            "$558,368",
+            "$506,032"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Liquidity asset purchase agreements",
+            "35,339",
+            "30,251"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Unfunded commitments to extend credit",
+            "17,533",
+            "16,354"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Standby letters of credit",
+            "4,711",
+            "4,926"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_6",
+          "text": "on behalf of our customers , we lend their securities to creditworthy brokers and other institutions ."
+        },
+        {
+          "location": "text_7",
+          "text": "in certain circumstances , we may indemnify our customers for the fair market value of those securities against a failure of the borrower to return such securities ."
+        },
+        {
+          "location": "text_8",
+          "text": "collateral funds received in connection with our securities finance services are held by us as agent and are not recorded in our consolidated statement of condition ."
+        },
+        {
+          "location": "text_9",
+          "text": "we require the borrowers to provide collateral in an amount equal to or in excess of 100% ( 100 % ) of the fair market value of the securities borrowed ."
+        },
+        {
+          "location": "text_10",
+          "text": "the borrowed securities are revalued daily to determine if additional collateral is necessary ."
+        },
+        {
+          "location": "text_11",
+          "text": "in this regard , we held , as agent , cash and u.s ."
+        },
+        {
+          "location": "text_12",
+          "text": "government securities totaling $ 572.93 billion and $ 527.37 billion as collateral for indemnified securities on loan at december 31 , 2007 and 2006 , respectively ."
+        },
+        {
+          "location": "text_13",
+          "text": "approximately 82% ( 82 % ) of the unfunded commitments to extend credit and liquidity asset purchase agreements expire within one year from the date of issue ."
+        },
+        {
+          "location": "text_14",
+          "text": "since many of the commitments are expected to expire or renew without being drawn upon , the total commitment amounts do not necessarily represent future cash requirements ."
+        },
+        {
+          "location": "text_15",
+          "text": "in the normal course of business , we provide liquidity and credit enhancements to asset-backed commercial paper programs , referred to as 2018 2018conduits . 2019 2019 these conduits are described in note 11 ."
+        },
+        {
+          "location": "text_16",
+          "text": "the commercial paper issuances and commitments of the conduits to provide funding are supported by liquidity asset purchase agreements and backup liquidity lines of credit , the majority of which are provided by us ."
+        },
+        {
+          "location": "text_17",
+          "text": "in addition , we provide direct credit support to the conduits in the form of standby letters of credit ."
+        },
+        {
+          "location": "text_18",
+          "text": "our commitments under liquidity asset purchase agreements and back-up lines of credit totaled $ 28.37 billion at december 31 , 2007 , and are included in the preceding table ."
+        },
+        {
+          "location": "text_19",
+          "text": "our commitments under standby letters of credit totaled $ 1.04 billion at december 31 , 2007 , and are also included in the preceding table ."
+        },
+        {
+          "location": "text_20",
+          "text": "deterioration in asset performance or certain other factors affecting the liquidity of the commercial paper may shift the asset risk from the commercial paper investors to us as the liquidity or credit enhancement provider ."
+        },
+        {
+          "location": "text_21",
+          "text": "in addition , the conduits may need to draw upon the back-up facilities to repay maturing commercial paper ."
+        },
+        {
+          "location": "text_22",
+          "text": "in these instances , we would either acquire the assets of the conduits or make loans to the conduits secured by the conduits 2019 assets ."
+        },
+        {
+          "location": "text_23",
+          "text": "in the normal course of business , we offer products that provide book value protection primarily to plan participants in stable value funds of postretirement defined contribution benefit plans , particularly 401 ( k ) plans ."
+        },
+        {
+          "location": "text_24",
+          "text": "the book value protection is provided on portfolios of intermediate , investment grade fixed-income securities , and is intended to provide safety and stable growth of principal invested ."
+        },
+        {
+          "location": "text_25",
+          "text": "the protection is intended to cover any shortfall in the event that a significant number of plan participants ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what is the percent change in indemnified securities financing between 2006 and 2007?",
+    "human_answer": "10%",
+    "reference_program": "subtract(558368, 506032)",
+    "reference_execution_value": 52336.0,
+    "model_response": {
+      "answer": "10.3424289373",
+      "unit": "percent",
+      "expression": "(558368 - 506032) / 506032 * 100",
+      "explanation": "Indemnified securities financing increased by approximately 10.34% from 2006 to 2007."
+    }
+  },
+  {
+    "call_id": "S036",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "devon energy corporation and subsidiaries notes to consolidated financial statements 2013 ( continued ) restricted stock awards and units restricted stock awards and units are subject to the terms , conditions , restrictions and limitations , if any , that the compensation committee deems appropriate , including restrictions on continued employment ."
+        },
+        {
+          "location": "text_1",
+          "text": "generally , the service requirement for vesting ranges from zero to four years ."
+        },
+        {
+          "location": "text_2",
+          "text": "during the vesting period , recipients of restricted stock awards receive dividends that are not subject to restrictions or other limitations ."
+        },
+        {
+          "location": "text_3",
+          "text": "devon estimates the fair values of restricted stock awards and units as the closing price of devon 2019s common stock on the grant date of the award or unit , which is expensed over the applicable vesting period ."
+        },
+        {
+          "location": "text_4",
+          "text": "performance-based restricted stock awards performance-based restricted stock awards are granted to certain members of devon 2019s senior management ."
+        },
+        {
+          "location": "text_5",
+          "text": "vesting of the awards is dependent on devon meeting certain internal performance targets and the recipient meeting certain service requirements ."
+        },
+        {
+          "location": "text_6",
+          "text": "generally , the service requirement for vesting ranges from zero to four years ."
+        },
+        {
+          "location": "text_7",
+          "text": "in order for awards to vest , the performance target must be met in the first year , and if met , recipients are entitled to dividends on the awards over the remaining service vesting period ."
+        },
+        {
+          "location": "text_8",
+          "text": "if the performance target and service period requirements are not met , the award does not vest ."
+        },
+        {
+          "location": "text_9",
+          "text": "devon estimates the fair values of the awards as the closing price of devon 2019s common stock on the grant date of the award , which is expensed over the applicable vesting period ."
+        },
+        {
+          "location": "text_10",
+          "text": "performance share units performance share units are granted to certain members of devon 2019s senior management ."
+        },
+        {
+          "location": "text_11",
+          "text": "each unit that vests entitles the recipient to one share of devon common stock ."
+        },
+        {
+          "location": "text_12",
+          "text": "the vesting of these units is based on comparing devon 2019s tsr to the tsr of a predetermined group of fourteen peer companies over the specified two- or three- year performance period ."
+        },
+        {
+          "location": "text_13",
+          "text": "the vesting of units may be between zero and 200% ( 200 % ) of the units granted depending on devon 2019s tsr as compared to the peer group on the vesting date ."
+        },
+        {
+          "location": "text_14",
+          "text": "at the end of the vesting period , recipients receive dividend equivalents with respect to the number of units vested ."
+        },
+        {
+          "location": "text_15",
+          "text": "the fair value of each performance share unit is estimated as of the date of grant using a monte carlo simulation with the following assumptions used for all grants made under the plan : ( i ) a risk-free interest rate based on u.s ."
+        },
+        {
+          "location": "text_16",
+          "text": "treasury rates as of the grant date ; ( ii ) a volatility assumption based on the historical realized price volatility of devon and the designated peer group ; and ( iii ) an estimated ranking of devon among the designated peer group ."
+        },
+        {
+          "location": "text_17",
+          "text": "the fair value of the unit on the date of grant is expensed over the applicable vesting period ."
+        },
+        {
+          "location": "text_18",
+          "text": "the following table presents the assumptions related to performance share units granted. ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2015",
+            "2014",
+            "2013"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Grant-date fair value",
+            "$81.99 – $85.05",
+            "$70.18 – $81.05",
+            "$61.27 – $63.48"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Risk-free interest rate",
+            "1.06%",
+            "0.54%",
+            "0.26% – 0.36%"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Volatility factor",
+            "26.2%",
+            "28.8%",
+            "30.3%"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Contractual term (years)",
+            "2.89",
+            "2.89",
+            "3.0"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_19",
+          "text": "stock options in accordance with devon 2019s incentive plans , the exercise price of stock options granted may not be less than the market value of the stock at the date of grant ."
+        },
+        {
+          "location": "text_20",
+          "text": "in addition , options granted are exercisable during a period established for each grant , which may not exceed eight years from the date of grant ."
+        },
+        {
+          "location": "text_21",
+          "text": "the recipient must pay the exercise price in cash or in common stock , or a combination thereof , at the time that the option is exercised ."
+        },
+        {
+          "location": "text_22",
+          "text": "generally , the service requirement for vesting ranges from zero to four years ."
+        },
+        {
+          "location": "text_23",
+          "text": "the fair value of stock options on ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percent of the change in the volatility factor",
+    "human_answer": "-5%",
+    "reference_program": "subtract(28.8, 30.3), divide(#0, 30.3)",
+    "reference_execution_value": -0.0495,
+    "model_response": {
+      "answer": "-9.03",
+      "unit": "percent",
+      "expression": "(26.2 - 28.8) / 28.8 * 100",
+      "explanation": "The volatility factor decreased by approximately 9.03% from 2014 to 2015."
+    }
+  },
+  {
+    "call_id": "S037",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "note 12 ."
+        },
+        {
+          "location": "text_1",
+          "text": "shareholders 2019 equity accumulated other comprehensive loss : accumulated other comprehensive loss included the following components as of december 31: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "(In millions)",
+            "2009",
+            "2008",
+            "2007"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Foreign currency translation",
+            "$281",
+            "$68",
+            "$331"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Net unrealized loss on hedges of net investments in non-U.S. subsidiaries",
+            "(14)",
+            "(14)",
+            "(15)"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Net unrealized loss on available-for-sale securities",
+            "(1,636)",
+            "(5,205)",
+            "(678)"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Net unrealized loss on fair value hedges of available-for-sale securities",
+            "(113)",
+            "(242)",
+            "(55)"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Losses from other-than-temporary impairment on available-for-sale securities related to factors other than credit",
+            "(159)",
+            "—",
+            "—"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Losses from other-than-temporary impairment on held-to-maturity securities related to factors other than credit",
+            "(387)",
+            "—",
+            "—"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Minimum pension liability",
+            "(192)",
+            "(229)",
+            "(146)"
+          ]
+        },
+        {
+          "row_index": 8,
+          "cells": [
+            "Net unrealized loss on cash flow hedges",
+            "(18)",
+            "(28)",
+            "(12)"
+          ]
+        },
+        {
+          "row_index": 9,
+          "cells": [
+            "Total",
+            "$(2,238)",
+            "$(5,650)",
+            "$(575)"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_2",
+          "text": "the net after-tax unrealized loss on available-for-sale securities of $ 1.64 billion and $ 5.21 billion as of december 31 , 2009 and december 31 , 2008 , respectively , included $ 635 million and $ 1.39 billion , respectively , of net after-tax unrealized losses related to securities reclassified from securities available for sale to securities held to maturity ."
+        },
+        {
+          "location": "text_3",
+          "text": "the decrease in the losses related to transfers compared to december 31 , 2008 resulted from amortization and from the recognition of losses from other-than-temporary impairment on certain of the securities ."
+        },
+        {
+          "location": "text_4",
+          "text": "additional information is provided in note 3 ."
+        },
+        {
+          "location": "text_5",
+          "text": "for the year ended december 31 , 2009 , we realized net gains of $ 368 million from sales of available-for-sale securities ."
+        },
+        {
+          "location": "text_6",
+          "text": "unrealized pre-tax gains of $ 46 million were included in other comprehensive income at december 31 , 2008 , net of deferred taxes of $ 18 million , related to these sales ."
+        },
+        {
+          "location": "text_7",
+          "text": "for the year ended december 31 , 2008 , we realized net gains of $ 68 million from sales of available-for-sale securities ."
+        },
+        {
+          "location": "text_8",
+          "text": "unrealized pre-tax gains of $ 71 million were included in other comprehensive income at december 31 , 2007 , net of deferred taxes of $ 28 million , related to these sales ."
+        },
+        {
+          "location": "text_9",
+          "text": "for the year ended december 31 , 2007 , we realized net gains of $ 7 million on sales of available-for-sale securities ."
+        },
+        {
+          "location": "text_10",
+          "text": "unrealized pre-tax losses of $ 32 million were included in other comprehensive income at december 31 , 2006 , net of deferred taxes of $ 13 million , related to these sales ."
+        },
+        {
+          "location": "text_11",
+          "text": "preferred stock : in october 2008 , in connection with the u.s ."
+        },
+        {
+          "location": "text_12",
+          "text": "treasury 2019s capital purchase program , we issued 20000 shares of our series b fixed-rate cumulative perpetual preferred stock , $ 100000 liquidation preference per share , and a warrant to purchase 5576208 shares of our common stock at an exercise price of $ 53.80 per share , to treasury , and received aggregate proceeds of $ 2 billion ."
+        },
+        {
+          "location": "text_13",
+          "text": "the aggregate proceeds were allocated to the preferred stock and the warrant based on their relative fair values on the date of issuance ."
+        },
+        {
+          "location": "text_14",
+          "text": "as a result , approximately $ 1.88 billion and $ 121 million , respectively , were allocated to the preferred stock and the warrant ."
+        },
+        {
+          "location": "text_15",
+          "text": "the difference between the initial value of $ 1.88 billion allocated to the preferred stock and the liquidation amount of $ 2 billion was intended to be charged to retained earnings and credited to the preferred stock over the period that the preferred stock was outstanding , using the effective yield method ."
+        },
+        {
+          "location": "text_16",
+          "text": "for 2008 and 2009 , these charges to retained earnings reduced net income available to common shareholders by $ 4 million and $ 11 million , respectively , and reduced basic and diluted earnings per common share for those periods ."
+        },
+        {
+          "location": "text_17",
+          "text": "these calculations are presented in note 22 ."
+        },
+        {
+          "location": "text_18",
+          "text": "the preferred shares qualified as tier 1 regulatory capital , and paid cumulative quarterly dividends at a rate of 5% ( 5 % ) per year ."
+        },
+        {
+          "location": "text_19",
+          "text": "for 2008 and 2009 , the accrual of dividends on the preferred shares reduced net income available to common shareholders by $ 18 million and $ 46 million , respectively , and reduced basic and diluted earnings per common share for those periods ."
+        },
+        {
+          "location": "text_20",
+          "text": "these calculations are presented in note 22 ."
+        },
+        {
+          "location": "text_21",
+          "text": "the warrant was immediately ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percent change in net unrealized loss on available-for-sale securities between 2008 and 2009?",
+    "human_answer": "-68%",
+    "reference_program": "subtract(-5205, -1636), divide(#0, -1636)",
+    "reference_execution_value": 2.18154,
+    "model_response": {
+      "answer": "-68.57",
+      "unit": "percent",
+      "expression": "(1636 - 5205) / 5205 * 100",
+      "explanation": "Net unrealized losses decreased by approximately 68.57% from 2008 to 2009."
+    }
+  },
+  {
+    "call_id": "S038",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "other information related to the company's share options is as follows ( in millions ) : ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2015",
+            "2014",
+            "2013"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Aggregate intrinsic value of stock options exercised",
+            "$104",
+            "$61",
+            "$73"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Cash received from the exercise of stock options",
+            "40",
+            "38",
+            "61"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Tax benefit realized from the exercise of stock options",
+            "36",
+            "16",
+            "15"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_1",
+          "text": "unamortized deferred compensation expense , which includes both options and rsus , amounted to $ 378 million as of december 31 , 2015 , with a remaining weighted-average amortization period of approximately 2.1 years ."
+        },
+        {
+          "location": "text_2",
+          "text": "employee share purchase plan united states the company has an employee share purchase plan that provides for the purchase of a maximum of 7.5 million shares of the company's ordinary shares by eligible u.s ."
+        },
+        {
+          "location": "text_3",
+          "text": "employees ."
+        },
+        {
+          "location": "text_4",
+          "text": "the company's ordinary shares were purchased at 6-month intervals at 85% ( 85 % ) of the lower of the fair market value of the ordinary shares on the first or last day of each 6-month period ."
+        },
+        {
+          "location": "text_5",
+          "text": "in 2015 , 2014 , and 2013 , 411636 shares , 439000 shares and 556000 shares , respectively , were issued to employees under the plan ."
+        },
+        {
+          "location": "text_6",
+          "text": "compensation expense recognized was $ 9 million in 2015 , $ 7 million in 2014 , and $ 6 million in 2013 ."
+        },
+        {
+          "location": "text_7",
+          "text": "united kingdom the company also has an employee share purchase plan for eligible u.k ."
+        },
+        {
+          "location": "text_8",
+          "text": "employees that provides for the purchase of shares after a 3-year period and that is similar to the u.s ."
+        },
+        {
+          "location": "text_9",
+          "text": "plan previously described ."
+        },
+        {
+          "location": "text_10",
+          "text": "three-year periods began in 2015 , 2014 , 2013 , allowing for the purchase of a maximum of 100000 , 300000 , and 350000 shares , respectively ."
+        },
+        {
+          "location": "text_11",
+          "text": "in 2015 , 2014 , and 2013 , 2779 shares , 642 shares , and 172110 shares , respectively , were issued under the plan ."
+        },
+        {
+          "location": "text_12",
+          "text": "compensation expense of $ 2 million was recognized in 2015 and 2014 , as compared to $ 1 million of compensation expense in 2013 ."
+        },
+        {
+          "location": "text_13",
+          "text": "12 ."
+        },
+        {
+          "location": "text_14",
+          "text": "derivatives and hedging the company is exposed to market risks , including changes in foreign currency exchange rates and interest rates ."
+        },
+        {
+          "location": "text_15",
+          "text": "to manage the risk related to these exposures , the company enters into various derivative instruments that reduce these risks by creating offsetting exposures ."
+        },
+        {
+          "location": "text_16",
+          "text": "the company does not enter into derivative transactions for trading or speculative purposes ."
+        },
+        {
+          "location": "text_17",
+          "text": "foreign exchange risk management the company is exposed to foreign exchange risk when it earns revenues , pays expenses , or enters into monetary intercompany transfers denominated in a currency that differs from its functional currency , or other transactions that are denominated in a currency other than its functional currency ."
+        },
+        {
+          "location": "text_18",
+          "text": "the company uses foreign exchange derivatives , typically forward contracts , options and cross-currency swaps , to reduce its overall exposure to the effects of currency fluctuations on cash flows ."
+        },
+        {
+          "location": "text_19",
+          "text": "these exposures are hedged , on average , for less than two years ."
+        },
+        {
+          "location": "text_20",
+          "text": "these derivatives are accounted for as hedges , and changes in fair value are recorded each period in other comprehensive income ( loss ) in the consolidated statements of comprehensive income ."
+        },
+        {
+          "location": "text_21",
+          "text": "the company also uses foreign exchange derivatives , typically forward contracts and options to economically hedge the currency exposure of the company's global liquidity profile , including monetary assets or liabilities that are denominated in a non-functional currency of an entity , typically on a rolling 30-day basis , but may be for up to one year in the future ."
+        },
+        {
+          "location": "text_22",
+          "text": "these derivatives are not accounted for as hedges , and changes in fair value are recorded each period in other income in the consolidated statements of income. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the average number of shares issued to employees from 2013 to 2015",
+    "human_answer": "[6] : in 2015 , 2014 , and 2013 , shares , respectively , were issued to employees under the plan .",
+    "reference_program": "add(411636, 439000)",
+    "reference_execution_value": 850636.0,
+    "model_response": {
+      "answer": "468878.6666666667",
+      "unit": "shares",
+      "expression": "(411636 + 439000 + 556000) / 3",
+      "explanation": "Average annual shares issued to employees under the U.S. plan from 2013 through 2015."
+    }
+  },
+  {
+    "call_id": "S039",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "ineffective portion of the hedges or of derivatives that are not considered to be highly effective hedges , if any , are immediately recognized in earnings ."
+        },
+        {
+          "location": "text_1",
+          "text": "the aggregate notional amount of our outstanding interest rate swaps at december 31 , 2014 and 2013 was $ 1.3 billion and $ 1.2 billion ."
+        },
+        {
+          "location": "text_2",
+          "text": "the aggregate notional amount of our outstanding foreign currency hedges at december 31 , 2014 and 2013 was $ 804 million and $ 1.0 billion ."
+        },
+        {
+          "location": "text_3",
+          "text": "derivative instruments did not have a material impact on net earnings and comprehensive income during 2014 , 2013 and 2012 ."
+        },
+        {
+          "location": "text_4",
+          "text": "substantially all of our derivatives are designated for hedge accounting ."
+        },
+        {
+          "location": "text_5",
+          "text": "see note 15 for more information on the fair value measurements related to our derivative instruments ."
+        },
+        {
+          "location": "text_6",
+          "text": "recent accounting pronouncements 2013 in may 2014 , the financial accounting standards board ( fasb ) issued a new standard that will change the way we recognize revenue and significantly expand the disclosure requirements for revenue arrangements ."
+        },
+        {
+          "location": "text_7",
+          "text": "unless the fasb delays the effective date of the new standard , it will be effective for us beginning on january 1 , 2017 and may be adopted either retrospectively or on a modified retrospective basis whereby the new standard would be applied to new contracts and existing contracts with remaining performance obligations as of the effective date , with a cumulative catch-up adjustment recorded to beginning retained earnings at the effective date for existing contracts with remaining performance obligations ."
+        },
+        {
+          "location": "text_8",
+          "text": "early adoption is not permitted ."
+        },
+        {
+          "location": "text_9",
+          "text": "we are currently evaluating the methods of adoption allowed by the new standard and the effect the standard is expected to have on our consolidated financial statements and related disclosures ."
+        },
+        {
+          "location": "text_10",
+          "text": "as the new standard will supersede substantially all existing revenue guidance affecting us under gaap , it could impact revenue and cost recognition on thousands of contracts across all our business segments , in addition to our business processes and our information technology systems ."
+        },
+        {
+          "location": "text_11",
+          "text": "as a result , our evaluation of the effect of the new standard will extend over future periods ."
+        },
+        {
+          "location": "text_12",
+          "text": "note 2 2013 earnings per share the weighted average number of shares outstanding used to compute earnings per common share were as follows ( in millions ) : ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2014",
+            "2013",
+            "2012"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Weighted average common shares outstanding for basic computations",
+            "316.8",
+            "320.9",
+            "323.7"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Weighted average dilutive effect of equity awards",
+            "5.6",
+            "5.6",
+            "4.7"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Weighted average common shares outstanding for diluted computations",
+            "322.4",
+            "326.5",
+            "328.4"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_13",
+          "text": "we compute basic and diluted earnings per common share by dividing net earnings by the respective weighted average number of common shares outstanding for the periods presented ."
+        },
+        {
+          "location": "text_14",
+          "text": "our calculation of diluted earnings per common share also includes the dilutive effects for the assumed vesting of outstanding restricted stock units and exercise of outstanding stock options based on the treasury stock method ."
+        },
+        {
+          "location": "text_15",
+          "text": "the computation of diluted earnings per common share excluded 2.4 million and 8.0 million stock options for the years ended december 31 , 2013 and 2012 because their inclusion would have been anti-dilutive , primarily due to their exercise prices exceeding the average market prices of our common stock during the respective periods ."
+        },
+        {
+          "location": "text_16",
+          "text": "there were no anti-dilutive equity awards for the year ended december 31 , 2014 ."
+        },
+        {
+          "location": "text_17",
+          "text": "note 3 2013 information on business segments we operate in five business segments : aeronautics , information systems & global solutions ( is&gs ) , mfc , mission systems and training ( mst ) and space systems ."
+        },
+        {
+          "location": "text_18",
+          "text": "we organize our business segments based on the nature of the products and services offered ."
+        },
+        {
+          "location": "text_19",
+          "text": "the following is a brief description of the activities of our business segments : 2022 aeronautics 2013 engaged in the research , design , development , manufacture , integration , sustainment , support and upgrade of advanced military aircraft , including combat and air mobility aircraft , unmanned air vehicles and related technologies ."
+        },
+        {
+          "location": "text_20",
+          "text": "2022 information systems & global solutions 2013 provides advanced technology systems and expertise , integrated information technology solutions and management services across a broad spectrum of applications for civil , defense , intelligence and other government customers ."
+        },
+        {
+          "location": "text_21",
+          "text": "2022 missiles and fire control 2013 provides air and missile defense systems ; tactical missiles and air-to-ground precision strike weapon systems ; logistics and other technical services ; fire control systems ; mission operations support , readiness , engineering support and integration services ; and manned and unmanned ground vehicles. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "in 2014 what was the ratio of the aggregate notional amount of outstanding interest rate swaps to the outstanding foreign currency hedges",
+    "human_answer": "1.62",
+    "reference_program": "divide(1.3, 804)",
+    "reference_execution_value": 0.00162,
+    "model_response": {
+      "answer": "1.616915422885572",
+      "unit": "ratio",
+      "expression": "1300 / 804",
+      "explanation": "The $1.3 billion in interest rate swaps equals $1,300 million, divided by $804 million in foreign currency hedges."
+    }
+  },
+  {
+    "call_id": "S040",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "rm&t segment marathon 2019s rm&t operations primarily use derivative commodity instruments to mitigate the price risk of certain crude oil and other feedstock purchases , to protect carrying values of excess inventories , to protect margins on fixed price sales of refined products and to lock-in the price spread between refined products and crude oil ."
+        },
+        {
+          "location": "text_1",
+          "text": "derivative instruments are used to mitigate the price risk between the time foreign and domestic crude oil and other feedstock purchases for refinery supply are priced and when they are actually refined into salable petroleum products ."
+        },
+        {
+          "location": "text_2",
+          "text": "in addition , natural gas options are in place to manage the price risk associated with approximately 60% ( 60 % ) of the anticipated natural gas purchases for refinery use through the first quarter of 2004 and 50% ( 50 % ) through the second quarter of 2004 ."
+        },
+        {
+          "location": "text_3",
+          "text": "derivative commodity instruments are also used to protect the value of excess refined product , crude oil and lpg inventories ."
+        },
+        {
+          "location": "text_4",
+          "text": "derivatives are used to lock in margins associated with future fixed price sales of refined products to non-retail customers ."
+        },
+        {
+          "location": "text_5",
+          "text": "derivative commodity instruments are used to protect against decreases in the future crack spreads ."
+        },
+        {
+          "location": "text_6",
+          "text": "within a limited framework , derivative instruments are also used to take advantage of opportunities identified in the commodity markets ."
+        },
+        {
+          "location": "text_7",
+          "text": "derivative gains ( losses ) included in rm&t segment income for each of the last two years are summarized in the following table : strategy ( in millions ) 2003 2002 ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "<i>Strategy (In Millions)</i>",
+            "2003",
+            "2002"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Mitigate price risk",
+            "$(112)",
+            "$(95)"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Protect carrying values of excess inventories",
+            "(57)",
+            "(41)"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Protect margin on fixed price sales",
+            "5",
+            "11"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Protect crack spread values",
+            "6",
+            "1"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Trading activities",
+            "(4)",
+            "–"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Total net derivative losses",
+            "$(162)",
+            "$(124)"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_8",
+          "text": "generally , derivative losses occur when market prices increase , which are offset by gains on the underlying physical commodity transaction ."
+        },
+        {
+          "location": "text_9",
+          "text": "conversely , derivative gains occur when market prices decrease , which are offset by losses on the underlying physical commodity transaction ."
+        },
+        {
+          "location": "text_10",
+          "text": "oerb segment marathon has used derivative instruments to convert the fixed price of a long-term gas sales contract to market prices ."
+        },
+        {
+          "location": "text_11",
+          "text": "the underlying physical contract is for a specified annual quantity of gas and matures in 2008 ."
+        },
+        {
+          "location": "text_12",
+          "text": "similarly , marathon will use derivative instruments to convert shorter term ( typically less than a year ) fixed price contracts to market prices in its ongoing purchase for resale activity ; and to hedge purchased gas injected into storage for subsequent resale ."
+        },
+        {
+          "location": "text_13",
+          "text": "derivative gains ( losses ) included in oerb segment income were $ 19 million , $ ( 8 ) million and $ ( 29 ) million for 2003 , 2002 and 2001 ."
+        },
+        {
+          "location": "text_14",
+          "text": "oerb 2019s trading activity gains ( losses ) of $ ( 7 ) million , $ 4 million and $ ( 1 ) million in 2003 , 2002 and 2001 are included in the aforementioned amounts ."
+        },
+        {
+          "location": "text_15",
+          "text": "other commodity risk marathon is subject to basis risk , caused by factors that affect the relationship between commodity futures prices reflected in derivative commodity instruments and the cash market price of the underlying commodity ."
+        },
+        {
+          "location": "text_16",
+          "text": "natural gas transaction prices are frequently based on industry reference prices that may vary from prices experienced in local markets ."
+        },
+        {
+          "location": "text_17",
+          "text": "for example , new york mercantile exchange ( 201cnymex 201d ) contracts for natural gas are priced at louisiana 2019s henry hub , while the underlying quantities of natural gas may be produced and sold in the western united states at prices that do not move in strict correlation with nymex prices ."
+        },
+        {
+          "location": "text_18",
+          "text": "to the extent that commodity price changes in one region are not reflected in other regions , derivative commodity instruments may no longer provide the expected hedge , resulting in increased exposure to basis risk ."
+        },
+        {
+          "location": "text_19",
+          "text": "these regional price differences could yield favorable or unfavorable results ."
+        },
+        {
+          "location": "text_20",
+          "text": "otc transactions are being used to manage exposure to a portion of basis risk ."
+        },
+        {
+          "location": "text_21",
+          "text": "marathon is subject to liquidity risk , caused by timing delays in liquidating contract positions due to a potential inability to identify a counterparty willing to accept an offsetting position ."
+        },
+        {
+          "location": "text_22",
+          "text": "due to the large number of active participants , liquidity risk exposure is relatively low for exchange-traded transactions. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "for natural gas options in place to manage the price risk , what is the change in the percentage of the anticipated natural gas purchases hedged between the first quarter of 2004 and the second quarter of 2004?",
+    "human_answer": "10",
+    "reference_program": "subtract(60, 50)",
+    "reference_execution_value": 10.0,
+    "model_response": {
+      "answer": "-10",
+      "unit": "percentage points",
+      "expression": "50 - 60",
+      "explanation": "The percentage hedged decreased from 60% in the first quarter to 50% in the second quarter."
+    }
+  },
+  {
+    "call_id": "S041",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "humana inc ."
+        },
+        {
+          "location": "text_1",
+          "text": "notes to consolidated financial statements 2014 ( continued ) amortization expense for other intangible assets was approximately $ 75 million in 2017 , $ 77 million in 2016 , and $ 93 million in 2015 ."
+        },
+        {
+          "location": "text_2",
+          "text": "the following table presents our estimate of amortization expense for each of the five next succeeding fiscal years: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "(in millions)"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "For the years ending December 31,",
+            ""
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2018",
+            "$64"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2019",
+            "54"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2020",
+            "52"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "2021",
+            "19"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "2022",
+            "16"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_3",
+          "text": "."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the ratio of the amortization expense for other intangible assets from to 20192018",
+    "human_answer": "1.19",
+    "reference_program": "divide(64, 54)",
+    "reference_execution_value": 1.18519,
+    "model_response": {
+      "answer": "0.84375",
+      "unit": "ratio",
+      "expression": "54 / 64",
+      "explanation": "The ratio of 2019 amortization expense to 2018 amortization expense is 54 divided by 64."
+    }
+  },
+  {
+    "call_id": "S042",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "5 ."
+        },
+        {
+          "location": "text_1",
+          "text": "other current assets other current assets consisted of the following at december 31: ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "(in millions)",
+            "2010",
+            "2009"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Refundable income tax",
+            "$61.0",
+            "$24.1"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Net deferred income taxes (note 14)",
+            "18.3",
+            "23.8"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Prepaid technology license and maintenance contracts",
+            "18.0",
+            "17.0"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Forward contract receivable (note 20)",
+            "11.8",
+            "27.3"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Receivables from brokers",
+            "11.2",
+            "8.8"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Other prepaid expenses",
+            "9.6",
+            "13.5"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Prepaid insurance",
+            "6.3",
+            "7.0"
+          ]
+        },
+        {
+          "row_index": 8,
+          "cells": [
+            "CBOE exercise rights privilege",
+            "—",
+            "39.8"
+          ]
+        },
+        {
+          "row_index": 9,
+          "cells": [
+            "Other",
+            "9.9",
+            "4.3"
+          ]
+        },
+        {
+          "row_index": 10,
+          "cells": [
+            "Total",
+            "$146.1",
+            "$165.6"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_2",
+          "text": "6 ."
+        },
+        {
+          "location": "text_3",
+          "text": "performance bonds and guaranty fund contributions cme clears and guarantees the settlement of cme , cbot and nymex contracts traded in their respective markets ."
+        },
+        {
+          "location": "text_4",
+          "text": "in its guarantor role , cme has precisely equal and offsetting claims to and from clearing firms on opposite sides of each contract , standing as an intermediary on every contract cleared ."
+        },
+        {
+          "location": "text_5",
+          "text": "clearing firm positions are combined to create a single portfolio for each clearing firm 2019s regulated and non-regulated accounts with cme for which performance bond and guaranty fund requirements are calculated ."
+        },
+        {
+          "location": "text_6",
+          "text": "to the extent that funds are not otherwise available to satisfy an obligation under the applicable contract , cme bears counterparty credit risk in the event that future market movements create conditions that could lead to clearing firms failing to meet their obligations to cme ."
+        },
+        {
+          "location": "text_7",
+          "text": "cme reduces its exposure through a risk management program that includes initial and ongoing financial standards for designation as a clearing firm , performance bond requirements and mandatory guaranty fund contributions ."
+        },
+        {
+          "location": "text_8",
+          "text": "each clearing firm is required to deposit and maintain balances in the form of cash , u.s ."
+        },
+        {
+          "location": "text_9",
+          "text": "government securities , bank letters of credit or other approved investments to satisfy performance bond and guaranty fund requirements ."
+        },
+        {
+          "location": "text_10",
+          "text": "all obligations and non-cash deposits are marked to market on a daily basis ."
+        },
+        {
+          "location": "text_11",
+          "text": "in addition , the rules and regulations of cbot require certain minimum financial requirements for delivery of physical commodities , maintenance of capital requirements and deposits on pending arbitration matters ."
+        },
+        {
+          "location": "text_12",
+          "text": "to satisfy these requirements , cbot clearing firms have deposited cash , u.s ."
+        },
+        {
+          "location": "text_13",
+          "text": "treasury securities and letters of credit ."
+        },
+        {
+          "location": "text_14",
+          "text": "cme marks-to-market open positions at least twice a day , and requires payment from clearing firms whose positions have lost value and makes payments to clearing firms whose positions have gained value ."
+        },
+        {
+          "location": "text_15",
+          "text": "for select product offerings within newer markets , positions are marked-to-market once daily , with the capability to mark-to-market more frequently as market conditions warrant ."
+        },
+        {
+          "location": "text_16",
+          "text": "under the extremely unlikely scenario of simultaneous default by every clearing firm who has open positions with unrealized losses , the maximum exposure related to cme 2019s guarantee would be one half day of changes in fair value of all open positions , before considering cme 2019s ability to access defaulting clearing firms 2019 performance bond and guaranty fund balances as well as other available resources ."
+        },
+        {
+          "location": "text_17",
+          "text": "during 2010 , cme transferred an average of approximately $ 2.4 billion a day through its clearing system for settlement from clearing firms whose positions had lost value to clearing firms whose positions had gained value ."
+        },
+        {
+          "location": "text_18",
+          "text": "cme reduces its guarantee exposure through initial and maintenance performance bond requirements and mandatory guaranty fund contributions ."
+        },
+        {
+          "location": "text_19",
+          "text": "the company believes that the guarantee liability is immaterial and therefore has not recorded any liability at december 31 , 2010. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what percentage of total other current assets is represented by",
+    "human_answer": "8%",
+    "reference_program": "divide(11.8, 146.1)",
+    "reference_execution_value": 0.08077,
+    "model_response": {
+      "answer": "Cannot be determined",
+      "unit": "percent",
+      "expression": "",
+      "explanation": "The question does not specify the asset category or year needed to calculate the percentage."
+    }
+  },
+  {
+    "call_id": "S043",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "notes to the financial statements as a reduction of debt or accrued interest ."
+        },
+        {
+          "location": "text_1",
+          "text": "new esop shares that have been released are considered outstanding in computing earnings per common share ."
+        },
+        {
+          "location": "text_2",
+          "text": "unreleased new esop shares are not considered to be outstanding ."
+        },
+        {
+          "location": "text_3",
+          "text": "pensions and other postretirement benefits in september 2006 , the fasb issued sfas no ."
+        },
+        {
+          "location": "text_4",
+          "text": "158 , 201cemployers 2019 accounting for defined benefit pension and other postretirement plans , an amendment of fasb statements no ."
+        },
+        {
+          "location": "text_5",
+          "text": "87 , 88 , 106 , and 132 ( r ) . 201d under this new standard , a company must recognize a net liability or asset to report the funded status of its defined benefit pension and other postretirement benefit plans on its balance sheets as well as recognize changes in that funded status , in the year in which the changes occur , through charges or credits to comprehensive income ."
+        },
+        {
+          "location": "text_6",
+          "text": "sfas no ."
+        },
+        {
+          "location": "text_7",
+          "text": "158 does not change how pensions and other postretirement benefits are accounted for and reported in the income statement ."
+        },
+        {
+          "location": "text_8",
+          "text": "ppg adopted the recognition and disclosure provisions of sfas no ."
+        },
+        {
+          "location": "text_9",
+          "text": "158 as of dec ."
+        },
+        {
+          "location": "text_10",
+          "text": "31 , 2006 ."
+        },
+        {
+          "location": "text_11",
+          "text": "the following table presents the impact of applying sfas no ."
+        },
+        {
+          "location": "text_12",
+          "text": "158 on individual line items in the balance sheet as of dec ."
+        },
+        {
+          "location": "text_13",
+          "text": "31 , 2006 : ( millions ) balance sheet caption : before application of sfas no ."
+        },
+        {
+          "location": "text_14",
+          "text": "158 ( 1 ) adjustments application of sfas no ."
+        },
+        {
+          "location": "text_15",
+          "text": "158 ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "<i>(Millions)</i><i>Balance Sheet Caption:</i>",
+            "Before Application of SFAS No. 158 (1)",
+            "Adjustments",
+            "After Application of SFAS No. 158"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Other assets",
+            "$494",
+            "$105",
+            "$599"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Deferred income tax liability",
+            "(193)",
+            "57",
+            "(136)"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Accrued pensions",
+            "(371)",
+            "(258)",
+            "(629)"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Other postretirement benefits",
+            "(619)",
+            "(409)",
+            "(1,028)"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Accumulated other comprehensive loss",
+            "480",
+            "505",
+            "985"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_16",
+          "text": "other postretirement benefits ( 619 ) ( 409 ) ( 1028 ) accumulated other comprehensive loss 480 505 985 ( 1 ) represents balances that would have been recorded under accounting standards prior to the adoption of sfas no ."
+        },
+        {
+          "location": "text_17",
+          "text": "158 ."
+        },
+        {
+          "location": "text_18",
+          "text": "see note 13 , 201cpensions and other postretirement benefits , 201d for additional information ."
+        },
+        {
+          "location": "text_19",
+          "text": "derivative financial instruments and hedge activities the company recognizes all derivative instruments as either assets or liabilities at fair value on the balance sheet ."
+        },
+        {
+          "location": "text_20",
+          "text": "the accounting for changes in the fair value of a derivative depends on the use of the derivative ."
+        },
+        {
+          "location": "text_21",
+          "text": "to the extent that a derivative is effective as a cash flow hedge of an exposure to future changes in value , the change in fair value of the derivative is deferred in accumulated other comprehensive ( loss ) income ."
+        },
+        {
+          "location": "text_22",
+          "text": "any portion considered to be ineffective is reported in earnings immediately ."
+        },
+        {
+          "location": "text_23",
+          "text": "to the extent that a derivative is effective as a hedge of an exposure to future changes in fair value , the change in the derivative 2019s fair value is offset in the statement of income by the change in fair value of the item being hedged ."
+        },
+        {
+          "location": "text_24",
+          "text": "to the extent that a derivative or a financial instrument is effective as a hedge of a net investment in a foreign operation , the change in the derivative 2019s fair value is deferred as an unrealized currency translation adjustment in accumulated other comprehensive ( loss ) income ."
+        },
+        {
+          "location": "text_25",
+          "text": "product warranties the company accrues for product warranties at the time the associated products are sold based on historical claims experience ."
+        },
+        {
+          "location": "text_26",
+          "text": "as of dec ."
+        },
+        {
+          "location": "text_27",
+          "text": "31 , 2006 and 2005 , the reserve for product warranties was $ 10 million and $ 4 million , respectively ."
+        },
+        {
+          "location": "text_28",
+          "text": "pretax charges against income for product warranties in 2006 , 2005 and 2004 totaled $ 4 million , $ 5 million and $ 4 million , respectively ."
+        },
+        {
+          "location": "text_29",
+          "text": "cash outlays related to product warranties were $ 5 million , $ 4 million and $ 4 million in 2006 , 2005 and 2004 , respectively ."
+        },
+        {
+          "location": "text_30",
+          "text": "in addition , $ 7 million of warranty obligations were assumed as part of the company 2019s 2006 business acquisitions ."
+        },
+        {
+          "location": "text_31",
+          "text": "asset retirement obligations an asset retirement obligation represents a legal obligation associated with the retirement of a tangible long-lived asset that is incurred upon the acquisition , construction , development or normal operation of that long-lived asset ."
+        },
+        {
+          "location": "text_32",
+          "text": "we recognize asset retirement obligations in the period in which they are incurred , if a reasonable estimate of fair value can be made ."
+        },
+        {
+          "location": "text_33",
+          "text": "the asset retirement obligation is subsequently adjusted for changes in fair value ."
+        },
+        {
+          "location": "text_34",
+          "text": "the associated estimated asset retirement costs are capitalized as part of the carrying amount of the long-lived asset and depreciated over its useful life ."
+        },
+        {
+          "location": "text_35",
+          "text": "ppg 2019s asset retirement obligations are primarily associated with closure of certain assets used in the chemicals manufacturing process ."
+        },
+        {
+          "location": "text_36",
+          "text": "as of dec ."
+        },
+        {
+          "location": "text_37",
+          "text": "31 , 2006 and 2005 the accrued asset retirement obligation was $ 10 million and as of dec ."
+        },
+        {
+          "location": "text_38",
+          "text": "31 , 2004 it was $ 9 million ."
+        },
+        {
+          "location": "text_39",
+          "text": "in march 2005 , the fasb issued fasb interpretation ( 201cfin 201d ) no ."
+        },
+        {
+          "location": "text_40",
+          "text": "47 , 201caccounting for conditional asset retirement obligations , an interpretation of fasb statement no ."
+        },
+        {
+          "location": "text_41",
+          "text": "143 201d ."
+        },
+        {
+          "location": "text_42",
+          "text": "fin no ."
+        },
+        {
+          "location": "text_43",
+          "text": "47 clarifies the term conditional asset retirement obligation as used in sfas no ."
+        },
+        {
+          "location": "text_44",
+          "text": "143 , 201caccounting for asset retirement obligations 201d , and provides further guidance as to when an entity would have sufficient information to reasonably estimate the fair value of an asset retirement obligation ."
+        },
+        {
+          "location": "text_45",
+          "text": "effective dec ."
+        },
+        {
+          "location": "text_46",
+          "text": "31 , 2005 , ppg adopted the provisions of fin no ."
+        },
+        {
+          "location": "text_47",
+          "text": "47 ."
+        },
+        {
+          "location": "text_48",
+          "text": "our only conditional asset retirement obligation relates to the possible future abatement of asbestos contained in certain ppg production facilities ."
+        },
+        {
+          "location": "text_49",
+          "text": "the asbestos in our production facilities arises from the application of normal and customary building practices in the past when the facilities were constructed ."
+        },
+        {
+          "location": "text_50",
+          "text": "this asbestos is encapsulated in place and , as a result , there is no current legal requirement to abate it ."
+        },
+        {
+          "location": "text_51",
+          "text": "inasmuch as there is no requirement to abate , we do not have any current plans or an intention to abate and therefore the timing , method and cost of future abatement , if any , are not 40 2006 ppg annual report and form 10-k 4282_txt ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the increase in asset retirement obligations for closure of assets in the chemicals manufacturing process in 2006?",
+    "human_answer": "111%",
+    "reference_program": "divide(10, const_9)",
+    "reference_execution_value": 1.11111,
+    "model_response": {
+      "answer": "0",
+      "unit": "million dollars",
+      "expression": "10 - 10",
+      "explanation": "Asset retirement obligations remained at $10 million in both 2005 and 2006."
+    }
+  },
+  {
+    "call_id": "S044",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "notes to consolidated financial statements ( continued ) 1 ."
+        },
+        {
+          "location": "text_1",
+          "text": "basis of presentation and accounting policies ( continued ) sop 03-1 was effective for financial statements for fiscal years beginning after december 15 , 2003 ."
+        },
+        {
+          "location": "text_2",
+          "text": "at the date of initial application , january 1 , 2004 , the cumulative effect of the adoption of sop 03-1 on net income and other comprehensive income was comprised of the following individual impacts shown net of income tax benefit of $ 12 : in may 2003 , the financial accounting standards board ( 201cfasb 201d ) issued statement of financial accounting standards ( 201csfas 201d ) no ."
+        },
+        {
+          "location": "text_3",
+          "text": "150 , 201caccounting for certain financial instruments with characteristics of both liabilities and equity 201d ."
+        },
+        {
+          "location": "text_4",
+          "text": "sfas no ."
+        },
+        {
+          "location": "text_5",
+          "text": "150 establishes standards for classifying and measuring as liabilities certain financial instruments that embody obligations of the issuer and have characteristics of both liabilities and equity ."
+        },
+        {
+          "location": "text_6",
+          "text": "generally , sfas no ."
+        },
+        {
+          "location": "text_7",
+          "text": "150 requires liability classification for two broad classes of financial instruments : ( a ) instruments that represent , or are indexed to , an obligation to buy back the issuer 2019s shares regardless of whether the instrument is settled on a net-cash or gross-physical basis and ( b ) obligations that ( i ) can be settled in shares but derive their value predominately from another underlying instrument or index ( e.g ."
+        },
+        {
+          "location": "text_8",
+          "text": "security prices , interest rates , and currency rates ) , ( ii ) have a fixed value , or ( iii ) have a value inversely related to the issuer 2019s shares ."
+        },
+        {
+          "location": "text_9",
+          "text": "mandatorily redeemable equity and written options requiring the issuer to buyback shares are examples of financial instruments that should be reported as liabilities under this new guidance ."
+        },
+        {
+          "location": "text_10",
+          "text": "sfas no ."
+        },
+        {
+          "location": "text_11",
+          "text": "150 specifies accounting only for certain freestanding financial instruments and does not affect whether an embedded derivative must be bifurcated and accounted for separately ."
+        },
+        {
+          "location": "text_12",
+          "text": "sfas no ."
+        },
+        {
+          "location": "text_13",
+          "text": "150 was effective for instruments entered into or modified after may 31 , 2003 and for all other instruments beginning with the first interim reporting period beginning after june 15 , 2003 ."
+        },
+        {
+          "location": "text_14",
+          "text": "adoption of this statement did not have a material impact on the company 2019s consolidated financial condition or results of operations ."
+        },
+        {
+          "location": "text_15",
+          "text": "in january 2003 , the fasb issued interpretation no ."
+        },
+        {
+          "location": "text_16",
+          "text": "46 , 201cconsolidation of variable interest entities , an interpretation of arb no ."
+        },
+        {
+          "location": "text_17",
+          "text": "51 201d ( 201cfin 46 201d ) , which required an enterprise to assess whether consolidation of an entity is appropriate based upon its interests in a variable interest entity ."
+        },
+        {
+          "location": "text_18",
+          "text": "a vie is an entity in which the equity investors do not have the characteristics of a controlling financial interest or do not have sufficient equity at risk for the entity to finance its activities without additional subordinated financial support from other parties ."
+        },
+        {
+          "location": "text_19",
+          "text": "the initial determination of whether an entity is a vie shall be made on the date at which an enterprise becomes involved with the entity ."
+        },
+        {
+          "location": "text_20",
+          "text": "an enterprise shall consolidate a vie if it has a variable interest that will absorb a majority of the vies expected losses if they occur , receive a majority of the entity 2019s expected residual returns if they occur or both ."
+        },
+        {
+          "location": "text_21",
+          "text": "fin 46 was effective immediately for new vies established or purchased subsequent to january 31 , 2003 ."
+        },
+        {
+          "location": "text_22",
+          "text": "for vies established or purchased subsequent to january 31 , 2003 , the adoption of fin 46 did not have a material impact on the company 2019s consolidated financial condition or results of operations as there were no material vies which required consolidation ."
+        },
+        {
+          "location": "text_23",
+          "text": "in december 2003 , the fasb issued a revised version of fin 46 ( 201cfin 46r 201d ) , which incorporated a number of modifications and changes made to the original version ."
+        },
+        {
+          "location": "text_24",
+          "text": "fin 46r replaced the previously issued fin 46 and , subject to certain special provisions , was effective no later than the end of the first reporting period that ends after december 15 , 2003 for entities considered to be special- purpose entities and no later than the end of the first reporting period that ends after march 15 , 2004 for all other vies ."
+        },
+        {
+          "location": "text_25",
+          "text": "early adoption was permitted ."
+        },
+        {
+          "location": "text_26",
+          "text": "the company adopted fin 46r in the fourth quarter of 2003 ."
+        },
+        {
+          "location": "text_27",
+          "text": "the adoption of fin 46r did not result in the consolidation of any material vies but resulted in the deconsolidation of vies that issued mandatorily redeemable preferred securities of subsidiary trusts ( 201ctrust preferred securities 201d ) ."
+        },
+        {
+          "location": "text_28",
+          "text": "the company is not the primary beneficiary of the vies , which issued the trust preferred securities ."
+        },
+        {
+          "location": "text_29",
+          "text": "the company does not own any of the trust preferred securities which were issued to unrelated third parties ."
+        },
+        {
+          "location": "text_30",
+          "text": "these trust preferred securities are considered the principal variable interests issued by the vies ."
+        },
+        {
+          "location": "text_31",
+          "text": "as a result , the vies , which the company previously consolidated , are no longer consolidated ."
+        },
+        {
+          "location": "text_32",
+          "text": "the sole assets of the vies are junior subordinated debentures issued by the company with payment terms identical to the trust preferred securities ."
+        },
+        {
+          "location": "text_33",
+          "text": "previously , the trust preferred securities were reported as a separate liability on the company 2019s consolidated balance sheets as 201ccompany obligated mandatorily redeemable preferred securities of subsidiary trusts holding solely junior subordinated debentures 201d ."
+        },
+        {
+          "location": "text_34",
+          "text": "at december 31 , 2003 and 2002 , the impact of deconsolidation was to increase long-term debt and decrease the trust preferred securities by $ 952 and $ 1.5 billion , respectively ."
+        },
+        {
+          "location": "text_35",
+          "text": "( for further discussion , see note 14 for disclosure of information related to these vies as required under fin 46r. ) future adoption of new accounting standards in december 2004 , the fasb issued sfas no ."
+        },
+        {
+          "location": "text_36",
+          "text": "123 ( revised 2004 ) , 201cshare-based payment 201d ( 201csfas no ."
+        },
+        {
+          "location": "text_37",
+          "text": "123r 201d ) , which replaces sfas no ."
+        },
+        {
+          "location": "text_38",
+          "text": "123 , 201caccounting for stock-based compensation 201d ( 201csfas no ."
+        },
+        {
+          "location": "text_39",
+          "text": "123 201d ) and supercedes apb opinion no ."
+        },
+        {
+          "location": "text_40",
+          "text": "25 , 201caccounting for stock issued to employees 201d ."
+        },
+        {
+          "location": "text_41",
+          "text": "sfas no ."
+        },
+        {
+          "location": "text_42",
+          "text": "123r requires all companies to recognize compensation costs for share-based payments to employees based on the grant-date fair value of the award for financial statements for reporting periods beginning after june 15 , 2005 ."
+        },
+        {
+          "location": "text_43",
+          "text": "the pro forma disclosures previously permitted under sfas no ."
+        },
+        {
+          "location": "text_44",
+          "text": "123 will no longer be an alternative to financial statement recognition ."
+        },
+        {
+          "location": "text_45",
+          "text": "the transition methods include prospective and retrospective adoption options ."
+        },
+        {
+          "location": "text_46",
+          "text": "the prospective method requires that ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "Components of Cumulative Effect of Adoption",
+            "Net Income",
+            "Other Comprehensive Income"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Establishing GMDB and other benefit reserves for annuity contracts",
+            "$(54)",
+            "$—"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Reclassifying certain separate accounts to general account",
+            "30",
+            "294"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Other",
+            "1",
+            "(2)"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Total cumulative effect of adoption",
+            "$(23)",
+            "$292"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_47",
+          "text": "."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what is the change in net income from cumulative effect of adoption?",
+    "human_answer": "31",
+    "reference_program": "add(30, 1)",
+    "reference_execution_value": 31.0,
+    "model_response": {
+      "answer": "-23",
+      "unit": "million dollars",
+      "expression": "-54 + 30 + 1",
+      "explanation": "The cumulative effect of adoption decreased net income by $23 million."
+    }
+  },
+  {
+    "call_id": "S045",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "compensation cost is generally recognized over the stated vesting period consistent with the terms of the arrangement ( i.e. , either on a straight-line or graded-vesting basis ) ."
+        },
+        {
+          "location": "text_1",
+          "text": "expense recognition is accelerated for retirement-eligible individuals who would meet the requirements for vesting of awards upon their retirement ."
+        },
+        {
+          "location": "text_2",
+          "text": "as of 30 september 2018 , there was no unrecognized compensation cost as all stock option awards were fully vested ."
+        },
+        {
+          "location": "text_3",
+          "text": "cash received from option exercises during fiscal year 2018 was $ 76.2 ."
+        },
+        {
+          "location": "text_4",
+          "text": "the total tax benefit realized from stock option exercises in fiscal year 2018 was $ 25.8 , of which $ 19.0 was the excess tax benefit ."
+        },
+        {
+          "location": "text_5",
+          "text": "restricted stock the grant-date fair value of restricted stock is estimated on the date of grant based on the closing price of the stock , and compensation cost is generally amortized to expense on a straight-line basis over the vesting period during which employees perform related services ."
+        },
+        {
+          "location": "text_6",
+          "text": "expense recognition is accelerated for retirement-eligible individuals who would meet the requirements for vesting of awards upon their retirement ."
+        },
+        {
+          "location": "text_7",
+          "text": "we have elected to account for forfeitures as they occur , rather than to estimate them ."
+        },
+        {
+          "location": "text_8",
+          "text": "forfeitures have not been significant historically ."
+        },
+        {
+          "location": "text_9",
+          "text": "we have issued shares of restricted stock to certain officers ."
+        },
+        {
+          "location": "text_10",
+          "text": "participants are entitled to cash dividends and to vote their respective shares ."
+        },
+        {
+          "location": "text_11",
+          "text": "restrictions on shares lift in one to four years or upon the earlier of retirement , death , or disability ."
+        },
+        {
+          "location": "text_12",
+          "text": "the shares are nontransferable while subject to forfeiture ."
+        },
+        {
+          "location": "text_13",
+          "text": "a summary of restricted stock activity is presented below : restricted stock shares ( 000 ) weighted average grant- date fair value ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "Restricted Stock",
+            "Shares (000)",
+            "Weighted AverageGrant-Date Fair Value"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Outstanding at 30 September 2017",
+            "56",
+            "$135.74"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Vested",
+            "( 14)",
+            "121.90"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Outstanding at 30 September 2018",
+            "42",
+            "$140.28"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_14",
+          "text": "as of 30 september 2018 , there was $ .1 of unrecognized compensation cost related to restricted stock awards ."
+        },
+        {
+          "location": "text_15",
+          "text": "the cost is expected to be recognized over a weighted average period of 0.5 years ."
+        },
+        {
+          "location": "text_16",
+          "text": "the total fair value of restricted stock vested during fiscal years 2018 , 2017 , and 2016 was $ 2.2 , $ 4.1 , and $ 4.3 , respectively ."
+        },
+        {
+          "location": "text_17",
+          "text": "as discussed in note 3 , discontinued operations , air products completed the spin-off of versum on 1 october 2016 ."
+        },
+        {
+          "location": "text_18",
+          "text": "in connection with the spin-off , the company adjusted the number of deferred stock units and stock options pursuant to existing anti-dilution provisions in the ltip to preserve the intrinsic value of the awards immediately before and after the separation ."
+        },
+        {
+          "location": "text_19",
+          "text": "the outstanding awards will continue to vest over the original vesting period defined at the grant date ."
+        },
+        {
+          "location": "text_20",
+          "text": "outstanding awards at the time of spin-off were primarily converted into awards of the holders' employer following the separation ."
+        },
+        {
+          "location": "text_21",
+          "text": "stock awards held upon separation were adjusted based upon the conversion ratio of air products' new york stock exchange ( 201cnyse 201d ) volume weighted-average closing stock price on 30 september 2016 ( $ 150.35 ) to the nyse volume weighted-average opening stock price on 3 october 2016 ( $ 140.38 ) , or 1.071 ."
+        },
+        {
+          "location": "text_22",
+          "text": "the adjustment to the awards did not result in incremental fair value , and no incremental compensation expense was recorded related to the conversion of these awards. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the decrease observed in the total fair value of restricted stock that vested during 2017 and 2018?",
+    "human_answer": "46.34%",
+    "reference_program": "subtract(2.2, 4.1), divide(#0, 4.1)",
+    "reference_execution_value": -0.46341,
+    "model_response": {
+      "answer": "1.9",
+      "unit": "million dollars",
+      "expression": "4.1 - 2.2",
+      "explanation": "The total fair value decreased from $4.1 million in 2017 to $2.2 million in 2018."
+    }
+  },
+  {
+    "call_id": "S046",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "american tower corporation and subsidiaries notes to consolidated financial statements 2014 ( continued ) ati 7.25% ( 7.25 % ) notes 2014during the year ended december 31 , 2006 , the company repurchased in privately negotiated transactions $ 74.9 million principal amount of ati 7.25% ( 7.25 % ) notes for $ 77.3 million in cash ."
+        },
+        {
+          "location": "text_1",
+          "text": "in connection with these transactions , the company recorded a charge of $ 3.9 million related to amounts paid in excess of carrying value and the write-off of related deferred financing fees , which is reflected in loss on retirement of long-term obligations in the accompanying consolidated statement of operations for the year ended december 31 , 2006 ."
+        },
+        {
+          "location": "text_2",
+          "text": "as of december 31 , 2006 and 2005 , the company had $ 325.1 million and $ 400.0 million outstanding under the ati 7.25% ( 7.25 % ) notes , respectively ."
+        },
+        {
+          "location": "text_3",
+          "text": "capital lease obligations and notes payable 2014the company 2019s capital lease obligations and notes payable approximated $ 59.8 million and $ 60.4 million as of december 31 , 2006 and 2005 , respectively ."
+        },
+        {
+          "location": "text_4",
+          "text": "these obligations bear interest at rates ranging from 6.3% ( 6.3 % ) to 9.5% ( 9.5 % ) and mature in periods ranging from less than one year to approximately seventy years ."
+        },
+        {
+          "location": "text_5",
+          "text": "maturities 2014as of december 31 , 2006 , aggregate carrying value of long-term debt , including capital leases , for the next five years and thereafter are estimated to be ( in thousands ) : year ending december 31 ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "2007",
+            "$253,907"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2008",
+            "1,278"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2009",
+            "654"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2010",
+            "1,833,416"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2011",
+            "338,501"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "Thereafter",
+            "1,112,253"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Total cash obligations",
+            "$3,540,009"
+          ]
+        },
+        {
+          "row_index": 7,
+          "cells": [
+            "Accreted value of the discount and premium of 3.00% Notes and 7.125% Notes",
+            "3,007"
+          ]
+        },
+        {
+          "row_index": 8,
+          "cells": [
+            "Balance as of December 31, 2006",
+            "$3,543,016"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_6",
+          "text": "the holders of the company 2019s 5.0% ( 5.0 % ) notes have the right to require the company to repurchase their notes on specified dates prior to the maturity date in 2010 , but the company may pay the purchase price by issuing shares of class a common stock , subject to certain conditions ."
+        },
+        {
+          "location": "text_7",
+          "text": "obligations with respect to the right of the holders to put the 5.0% ( 5.0 % ) notes have been included in the table above as if such notes mature the date on which the put rights become exercisable in 2007 ."
+        },
+        {
+          "location": "text_8",
+          "text": "in february 2007 , the company conducted a cash tender offer for its outstanding 5.0% ( 5.0 % ) notes to enable note holders to exercise their right to require the company to purchase their notes ."
+        },
+        {
+          "location": "text_9",
+          "text": "( see note 19. ) 8 ."
+        },
+        {
+          "location": "text_10",
+          "text": "derivative financial instruments the company has entered into interest rate protection agreements to manage exposure on the variable rate debt under its credit facilities and to manage variability in cash flows relating to forecasted interest payments in connection with the likely issuance of new fixed rate debt that the company expects to issue on or before july 31 , 2007 ."
+        },
+        {
+          "location": "text_11",
+          "text": "under these agreements , the company is exposed to credit risk to the extent that a counterparty fails to meet the terms of a contract ."
+        },
+        {
+          "location": "text_12",
+          "text": "such exposure is limited to the current value of the contract at the time the counterparty fails to perform ."
+        },
+        {
+          "location": "text_13",
+          "text": "the company believes its contracts as of december 31 , 2006 and 2005 are with credit worthy institutions ."
+        },
+        {
+          "location": "text_14",
+          "text": "during the fourth quarter of 2005 and january 2006 , the company entered into a total of ten interest rate swap agreements to manage exposure to variable rate interest obligations under its american tower and spectrasite ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what portion of the ati 7.25% ( 7.25 % ) notes was paid off during 2006?",
+    "human_answer": "-18.7%",
+    "reference_program": "subtract(325.1, 400.0), divide(#0, 400.0)",
+    "reference_execution_value": -0.18725,
+    "model_response": {
+      "answer": "18.725",
+      "unit": "percent",
+      "expression": "74.9 / 400.0 * 100",
+      "explanation": "The company repurchased $74.9 million of the $400.0 million in ATI 7.25% notes outstanding at the end of 2005."
+    }
+  },
+  {
+    "call_id": "S047",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "devon energy corporation and subsidiaries notes to consolidated financial statements 2013 ( continued ) debt maturities as of december 31 , 2014 , excluding premiums and discounts , are as follows ( in millions ) : ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "2015",
+            "$1,432"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "2016",
+            "350"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "2017",
+            "—"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "2018",
+            "875"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "2019",
+            "1,337"
+          ]
+        },
+        {
+          "row_index": 5,
+          "cells": [
+            "2020 and thereafter",
+            "7,263"
+          ]
+        },
+        {
+          "row_index": 6,
+          "cells": [
+            "Total",
+            "$11,257"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_1",
+          "text": "credit lines devon has a $ 3.0 billion syndicated , unsecured revolving line of credit ( the senior credit facility ) ."
+        },
+        {
+          "location": "text_2",
+          "text": "the maturity date for $ 30 million of the senior credit facility is october 24 , 2017 ."
+        },
+        {
+          "location": "text_3",
+          "text": "the maturity date for $ 164 million of the senior credit facility is october 24 , 2018 ."
+        },
+        {
+          "location": "text_4",
+          "text": "the maturity date for the remaining $ 2.8 billion is october 24 , 2019 ."
+        },
+        {
+          "location": "text_5",
+          "text": "amounts borrowed under the senior credit facility may , at the election of devon , bear interest at various fixed rate options for periods of up to twelve months ."
+        },
+        {
+          "location": "text_6",
+          "text": "such rates are generally less than the prime rate ."
+        },
+        {
+          "location": "text_7",
+          "text": "however , devon may elect to borrow at the prime rate ."
+        },
+        {
+          "location": "text_8",
+          "text": "the senior credit facility currently provides for an annual facility fee of $ 3.8 million that is payable quarterly in arrears ."
+        },
+        {
+          "location": "text_9",
+          "text": "as of december 31 , 2014 , there were no borrowings under the senior credit facility ."
+        },
+        {
+          "location": "text_10",
+          "text": "the senior credit facility contains only one material financial covenant ."
+        },
+        {
+          "location": "text_11",
+          "text": "this covenant requires devon 2019s ratio of total funded debt to total capitalization , as defined in the credit agreement , to be no greater than 65 percent ."
+        },
+        {
+          "location": "text_12",
+          "text": "the credit agreement contains definitions of total funded debt and total capitalization that include adjustments to the respective amounts reported in the accompanying consolidated financial statements ."
+        },
+        {
+          "location": "text_13",
+          "text": "also , total capitalization is adjusted to add back noncash financial write-downs such as full cost ceiling impairments or goodwill impairments ."
+        },
+        {
+          "location": "text_14",
+          "text": "as of december 31 , 2014 , devon was in compliance with this covenant with a debt-to- capitalization ratio of 20.9 percent ."
+        },
+        {
+          "location": "text_15",
+          "text": "commercial paper devon has access to $ 3.0 billion of short-term credit under its commercial paper program ."
+        },
+        {
+          "location": "text_16",
+          "text": "commercial paper debt generally has a maturity of between 1 and 90 days , although it can have a maturity of up to 365 days , and bears interest at rates agreed to at the time of the borrowing ."
+        },
+        {
+          "location": "text_17",
+          "text": "the interest rate is generally based on a standard index such as the federal funds rate , libor or the money market rate as found in the commercial paper market ."
+        },
+        {
+          "location": "text_18",
+          "text": "as of december 31 , 2014 , devon 2019s commercial paper borrowings of $ 932 million have a weighted- average borrowing rate of 0.44 percent ."
+        },
+        {
+          "location": "text_19",
+          "text": "retirement of senior notes on november 13 , 2014 , devon redeemed $ 1.9 billion of senior notes prior to their scheduled maturity , primarily with proceeds received from its asset divestitures ."
+        },
+        {
+          "location": "text_20",
+          "text": "the redemption includes the 2.4% ( 2.4 % ) $ 500 million senior notes due 2016 , the 1.2% ( 1.2 % ) $ 650 million senior notes due 2016 and the 1.875% ( 1.875 % ) $ 750 million senior notes due 2017 ."
+        },
+        {
+          "location": "text_21",
+          "text": "the notes were redeemed for $ 1.9 billion , which included 100 percent of the principal amount and a make-whole premium of $ 40 million ."
+        },
+        {
+          "location": "text_22",
+          "text": "on the date of redemption , these notes also had an unamortized discount of $ 2 million and unamortized debt issuance costs of $ 6 million ."
+        },
+        {
+          "location": "text_23",
+          "text": "the make-whole premium , unamortized discounts and debt issuance costs are included in net financing costs on the accompanying 2014 consolidated comprehensive statement of earnings. ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the weighted value of the devon 2019s commercial paper borrowings as of december 31 , 2014 in millions",
+    "human_answer": "410.08",
+    "reference_program": "multiply(932, 0.44)",
+    "reference_execution_value": 410.08,
+    "model_response": {
+      "answer": "4.1008",
+      "unit": "million dollars",
+      "expression": "932 * 0.44 / 100",
+      "explanation": "Multiplying commercial paper borrowings of $932 million by the weighted-average borrowing rate of 0.44% gives $4.1008 million."
+    }
+  },
+  {
+    "call_id": "S048",
+    "document": {
+      "pre_text": [
+        {
+          "location": "text_0",
+          "text": "38| | duke realty corporation annual report 2012 is dependent upon a number of factors including the availability of credit to potential buyers to purchase properties at prices that we consider acceptable ."
+        },
+        {
+          "location": "text_1",
+          "text": "although we believe that we have demonstrated our ability to generate significant liquidity through the disposition of non-strategic properties , potential future adverse changes to general market and economic conditions could negatively impact our further ability to dispose of such properties ."
+        },
+        {
+          "location": "text_2",
+          "text": "transactions with unconsolidated entities transactions with unconsolidated partnerships and joint ventures also provide a source of liquidity ."
+        },
+        {
+          "location": "text_3",
+          "text": "from time to time we will sell properties to unconsolidated entities , while retaining a continuing interest in that entity , and receive proceeds commensurate to those interests that we do not own ."
+        },
+        {
+          "location": "text_4",
+          "text": "additionally , unconsolidated entities will from time to time obtain debt financing and will distribute to us , and our joint venture partners , all or a portion of the proceeds from such debt financing ."
+        },
+        {
+          "location": "text_5",
+          "text": "uses of liquidity our principal uses of liquidity include the following : 2022 property investment ; 2022 leasing/capital costs ; 2022 dividends and distributions to shareholders and unitholders ; 2022 long-term debt maturities ; 2022 opportunistic repurchases of outstanding debt and preferred stock ; and 2022 other contractual obligations ."
+        },
+        {
+          "location": "text_6",
+          "text": "property investment we continue to pursue an asset repositioning strategy that involves increasing our investment concentration in industrial and medical office properties while reducing our investment concentration in suburban ."
+        }
+      ],
+      "table": [
+        {
+          "row_index": 0,
+          "cells": [
+            "",
+            "2012",
+            "2011",
+            "2010"
+          ]
+        },
+        {
+          "row_index": 1,
+          "cells": [
+            "Second generation tenant improvements",
+            "$26,643",
+            "$50,079",
+            "$36,676"
+          ]
+        },
+        {
+          "row_index": 2,
+          "cells": [
+            "Second generation leasing costs",
+            "31,059",
+            "38,130",
+            "39,090"
+          ]
+        },
+        {
+          "row_index": 3,
+          "cells": [
+            "Building improvements",
+            "6,182",
+            "11,055",
+            "12,957"
+          ]
+        },
+        {
+          "row_index": 4,
+          "cells": [
+            "Total",
+            "$63,884",
+            "$99,264",
+            "$88,723"
+          ]
+        }
+      ],
+      "post_text": [
+        {
+          "location": "text_7",
+          "text": "office properties ."
+        },
+        {
+          "location": "text_8",
+          "text": "pursuant to this strategy , we evaluate development and acquisition opportunities based upon market outlook , including general economic conditions , supply and long-term growth potential ."
+        },
+        {
+          "location": "text_9",
+          "text": "our ability to make future property investments , along with being dependent upon identifying suitable acquisition and development opportunities , is also dependent upon our continued access to our longer-term sources of liquidity , including issuances of debt or equity securities as well as generating cash flow by disposing of selected properties ."
+        },
+        {
+          "location": "text_10",
+          "text": "leasing/capital costs tenant improvements and leasing commissions related to the initial leasing of newly completed or vacant space in acquired properties are referred to as first generation expenditures ."
+        },
+        {
+          "location": "text_11",
+          "text": "such expenditures are included within development of real estate investments and other deferred leasing costs in our consolidated statements of cash flows ."
+        },
+        {
+          "location": "text_12",
+          "text": "tenant improvements and leasing costs to re-let rental space that had been previously under lease to tenants are referred to as second generation expenditures ."
+        },
+        {
+          "location": "text_13",
+          "text": "building improvements that are not specific to any tenant but serve to improve integral components of our real estate properties are also second generation expenditures ."
+        },
+        {
+          "location": "text_14",
+          "text": "one of our principal uses of our liquidity is to fund the second generation leasing/capital expenditures of our real estate investments ."
+        },
+        {
+          "location": "text_15",
+          "text": "as illustrated in the tables below , we have significantly reduced such expenditures in 2012 as a direct result of repositioning our investment concentration in office properties in accordance with our asset strategy ."
+        },
+        {
+          "location": "text_16",
+          "text": "the following is a summary of our second generation capital expenditures by type of expenditure ( in thousands ) : ."
+        }
+      ],
+      "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+    },
+    "question": "what was the percentage reduction second generation tenant improvements",
+    "human_answer": "-46.8%",
+    "reference_program": "subtract(26643, 50079), divide(#0, 50079)",
+    "reference_execution_value": -0.46798,
+    "model_response": {
+      "answer": "46.79805906667465",
+      "unit": "percent",
+      "expression": "(50079 - 26643) / 50079 * 100",
+      "explanation": "Second generation tenant improvements decreased by approximately 46.80% from 2011 to 2012."
+    }
+  }
+]

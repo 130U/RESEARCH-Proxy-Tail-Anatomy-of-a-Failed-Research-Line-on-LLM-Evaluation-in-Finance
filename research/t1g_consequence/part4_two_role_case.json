@@ -1,0 +1,19 @@
+{
+  "dataset": "finqa",
+  "question_id": "PNC/2014/page_111.pdf-1",
+  "pair_ids": [
+    "p19818",
+    "p19821"
+  ],
+  "original_program": "subtract(2.6, 2.6)",
+  "separate_role_fine_program": "subtract(2.616, 2.572)",
+  "coarse_answer": "0",
+  "fine_answer": "11/250",
+  "relative_difference_to_fine": "1",
+  "coarse_joint_range": [
+    "-1/10",
+    "1/10"
+  ],
+  "fine_answer_contained": true,
+  "note": "Both year roles are substituted at the same time; supplementary only, not added to the single-input substitution denominator."
+}

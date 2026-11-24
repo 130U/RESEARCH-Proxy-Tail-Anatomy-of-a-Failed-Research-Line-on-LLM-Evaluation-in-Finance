@@ -1,0 +1,127 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R200",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "intangible asset amortization expense amounted to $ 12 million , $ 4 million and $ 4 million for the years ended december 31 , 2018 , 2017 and 2016 , respectively ."
+      },
+      {
+        "location": "text_1",
+        "text": "estimated amortization expense for the next five years subsequent to december 31 , 2018 is as follows: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Amount"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2019",
+          "$15"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2020",
+          "13"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2021",
+          "11"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "2022",
+          "10"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "2023",
+          "7"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_2",
+        "text": "note 9 : shareholders 2019 equity common stock under the dividend reinvestment and direct stock purchase plan ( the 201cdrip 201d ) , shareholders may reinvest cash dividends and purchase additional company common stock , up to certain limits , through the plan administrator without commission fees ."
+      },
+      {
+        "location": "text_3",
+        "text": "shares purchased by participants through the drip may be newly issued shares , treasury shares , or at the company 2019s election , shares purchased by the plan administrator in the open market or in privately negotiated transactions ."
+      },
+      {
+        "location": "text_4",
+        "text": "purchases generally will be made and credited to drip accounts once each week ."
+      },
+      {
+        "location": "text_5",
+        "text": "as of december 31 , 2018 , there were approximately 4.2 million shares available for future issuance under the drip ."
+      },
+      {
+        "location": "text_6",
+        "text": "anti-dilutive stock repurchase program in february 2015 , the company 2019s board of directors authorized an anti-dilutive stock repurchase program , which allowed the company to purchase up to 10 million shares of its outstanding common stock over an unrestricted period of time ."
+      },
+      {
+        "location": "text_7",
+        "text": "the company repurchased 0.6 million shares and 0.7 million shares of common stock in the open market at an aggregate cost of $ 45 million and $ 54 million under this program for the years ended december 31 , 2018 and 2017 , respectively ."
+      },
+      {
+        "location": "text_8",
+        "text": "as of december 31 , 2018 , there were 5.5 million shares of common stock available for purchase under the program. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "at what price per share did awk repurchase its shares of common stock in 2017?",
+  "reference_program": "divide(54, 0.7)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "54",
+      "raw": "54",
+      "location": "text_7:143",
+      "context": "the company repurchased 0.6 million shares and 0.7 million shares of common stock in the open market at an aggregate cost of $ 45 million and $ 54 million under this program for the years ended december 31 , 2018 and 2017 , respectively ."
+    },
+    "x1": {
+      "program_token": "0.7",
+      "raw": "0.7",
+      "location": "text_7:47",
+      "context": "the company repurchased 0.6 million shares and 0.7 million shares of common stock in the open market at an aggregate cost of $ 45 million and $ 54 million under this program for the years ended december 31 , 2018 and 2017 , respectively ."
+    }
+  }
+}
+
+TWO SOURCE INTERPRETATIONS TO CONSIDER
+The order is random. Evaluate these reasons against the supplied source and give your own judgment using the same JSON schema. Their order carries no priority.
+[
+  "2017repurchase cost54m/shares0.7million yields dollars/share; scaled shares are rounded counts.",
+  "The rounded 2017 aggregate cost and scaled share volume support an average repurchase price, but the excerpt does not identify the company as AWK."
+]

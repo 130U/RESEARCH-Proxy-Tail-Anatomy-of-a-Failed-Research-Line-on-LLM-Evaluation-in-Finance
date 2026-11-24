@@ -1,0 +1,1 @@
+{"answer":"1375","unit":"million dollars","expression":"1.345 * 1000 + 30","low":"1374","high":"1376","reliable_digits":"2","explanation":"Add the amount already paid to the remaining payment; rounding uncertainty crosses the three-significant-digit rounding threshold."}

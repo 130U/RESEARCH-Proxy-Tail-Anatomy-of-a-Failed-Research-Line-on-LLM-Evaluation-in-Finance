@@ -1,0 +1,5 @@
+{
+    "review_id": "R084",
+    "verdict": "valid",
+    "reason": "Both bindings correctly identify rounded 2014 revenue amounts in millions, and dividing net interest income by total net revenue gives the requested proportion."
+  }

@@ -1,0 +1,1 @@
+{"answer":"10.7894736842","unit":"percent","expression":"(42.1 - 38) / 38 * 100","low":"9.2207792208","high":"12.4","reliable_digits":"0","explanation":"Rounding allows 2010 amounts of 42.05–42.15 million and 2009 amounts of 37.5–38.5 million, so even the first significant digit is uncertain."}

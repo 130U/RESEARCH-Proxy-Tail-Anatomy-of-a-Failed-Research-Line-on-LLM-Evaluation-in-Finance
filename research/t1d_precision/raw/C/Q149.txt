@@ -1,0 +1,1 @@
+{"answer":"43.3333333333","unit":"percent","expression":"(30 - 17) / 30 * 100","low":"40.6779661017","high":"45.9016393443","reliable_digits":"1","explanation":"Equity declined from 30% to 17%, with each allocation uncertain by 0.5 percentage points due to rounding."}

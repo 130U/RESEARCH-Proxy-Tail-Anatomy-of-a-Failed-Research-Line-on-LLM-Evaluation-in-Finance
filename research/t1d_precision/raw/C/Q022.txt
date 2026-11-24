@@ -1,0 +1,1 @@
+{"answer":"-13.666032091","unit":"percent","expression":"(634.9 - 735.4) / 735.4 * 100","low":"-13.678700116","high":"-13.653362344","reliable_digits":"3","explanation":"Allowing each sales figure to vary by $0.05 million gives these bounds, with the decrease reliably reported as 13.7%."}

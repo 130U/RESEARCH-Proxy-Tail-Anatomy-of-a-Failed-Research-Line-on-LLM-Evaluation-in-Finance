@@ -1,0 +1,194 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R041",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "see note 8 of the notes to consolidated financial statements in item 8 ."
+      },
+      {
+        "location": "text_1",
+        "text": "financial statements and supplementary data for a further discussion of these transactions ."
+      },
+      {
+        "location": "text_2",
+        "text": "capital resources outlook for 2007 international paper expects to be able to meet pro- jected capital expenditures , service existing debt and meet working capital and dividend requirements during 2007 through current cash balances and cash from operations and divestiture proceeds , supple- mented as required by its various existing credit facilities ."
+      },
+      {
+        "location": "text_3",
+        "text": "international paper has approximately $ 3.0 billion of committed liquidity , which we believe is adequate to cover expected operating cash flow variability during our industry 2019s economic cycles ."
+      },
+      {
+        "location": "text_4",
+        "text": "in march 2006 , international paper replaced its matur- ing $ 750 million revolving bank credit agreement with a 364-day $ 500 million fully committed revolv- ing bank credit agreement that expires in march 2007 and has a facility fee of 0.08% ( 0.08 % ) payable quarterly , and replaced its $ 1.25 billion revolving bank credit agreement with a $ 1.5 billion fully committed revolv- ing bank credit agreement that expires in march 2011 and has a facility fee of 0.10% ( 0.10 % ) payable quarterly ."
+      },
+      {
+        "location": "text_5",
+        "text": "in addition , in october 2006 , the company amended its existing receivables securitization program that pro- vides for up to $ 1.2 billion of commercial paper- based financings with a facility fee of 0.20% ( 0.20 % ) and an expiration date in november 2007 , to provide up to $ 1.0 billion of available commercial paper-based financings with a facility fee of 0.10% ( 0.10 % ) and an expira- tion date of october 2009 ."
+      },
+      {
+        "location": "text_6",
+        "text": "at december 31 , 2006 , there were no borrowings under either of the bank credit agreements or the receivables securitization program ."
+      },
+      {
+        "location": "text_7",
+        "text": "additionally , international paper investments ( luxembourg ) s.ar.l. , a wholly-owned subsidiary of international paper , has a $ 100 million bank credit agreement maturing in december 2007 , with $ 40 million in borrowings outstanding as of december 31 , 2006 ."
+      },
+      {
+        "location": "text_8",
+        "text": "the company will continue to rely upon debt and capital markets for the majority of any necessary long-term funding not provided by operating cash flow or divestiture proceeds ."
+      },
+      {
+        "location": "text_9",
+        "text": "funding decisions will be guided by our capital structure planning and liability management practices ."
+      },
+      {
+        "location": "text_10",
+        "text": "the primary goals of the company 2019s capital structure planning are to maximize financial flexibility and preserve liquidity while reducing interest expense ."
+      },
+      {
+        "location": "text_11",
+        "text": "the majority of international paper 2019s debt is accessed through global public capital markets where we have a wide base of investors ."
+      },
+      {
+        "location": "text_12",
+        "text": "the company was in compliance with all its debt covenants at december 31 , 2006 ."
+      },
+      {
+        "location": "text_13",
+        "text": "principal financial covenants include maintenance of a minimum net worth , defined as the sum of common stock , paid-in capital and retained earnings , less treasury stock , plus any goodwill impairment charges , of $ 9 billion ; and a maximum total debt to capital ratio , defined as total debt divided by total debt plus net worth , of maintaining an investment grade credit rating is an important element of international paper 2019s financing strategy ."
+      },
+      {
+        "location": "text_14",
+        "text": "in the third quarter of 2006 , standard & poor 2019s reaffirmed the company 2019s long-term credit rating of bbb , revised its ratings outlook from neg- ative to stable , and upgraded its short-term credit rating from a-3 to a-2 ."
+      },
+      {
+        "location": "text_15",
+        "text": "at december 31 , 2006 , the company also held long-term credit ratings of baa3 ( stable outlook ) and a short-term credit rating of p-3 from moody 2019s investor services ."
+      },
+      {
+        "location": "text_16",
+        "text": "contractual obligations for future payments under existing debt and lease commitments and purchase obligations at december 31 , 2006 , were as follows : in millions 2007 2008 2009 2010 2011 thereafter ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "<i>In millions</i>",
+          "2007",
+          "2008",
+          "2009",
+          "2010",
+          "2011",
+          "Thereafter"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Total debt (a)",
+          "$692",
+          "$129",
+          "$1,143",
+          "$1,198",
+          "$381",
+          "$3,680"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Lease obligations (b)",
+          "144",
+          "117",
+          "94",
+          "74",
+          "60",
+          "110"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Purchase obligations (c,d)",
+          "2,329",
+          "462",
+          "362",
+          "352",
+          "323",
+          "1,794"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Total",
+          "$3,165",
+          "$708",
+          "$1,599",
+          "$1,624",
+          "$764",
+          "$5,584"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_17",
+        "text": "( a ) total debt includes scheduled principal payments only ."
+      },
+      {
+        "location": "text_18",
+        "text": "( b ) included in these amounts are $ 76 million of lease obligations related to discontinued operations and businesses held for sale that are due as follows : 2007 - $ 23 million ; 2008 - $ 19 million ; 2009 - $ 15 million ; 2010 - $ 7 million ; 2011 - $ 5 million ; and thereafter - $ 7 million ."
+      },
+      {
+        "location": "text_19",
+        "text": "( c ) included in these amounts are $ 1.3 billion of purchase obliga- tions related to discontinued operations and businesses held for sale that are due as follows : 2007 - $ 335 million ; 2008 - $ 199 million ; 2009 - $ 157 million ; 2010 - $ 143 million ; 2011 - $ 141 million ; and thereafter - $ 331 million ."
+      },
+      {
+        "location": "text_20",
+        "text": "( d ) includes $ 2.2 billion relating to fiber supply agreements entered into at the time of the transformation plan forestland sales ."
+      },
+      {
+        "location": "text_21",
+        "text": "transformation plan in july 2005 , the company had announced a plan to focus its business portfolio on two key global plat- form businesses : uncoated papers ( including dis- tribution ) and packaging ."
+      },
+      {
+        "location": "text_22",
+        "text": "the plan 2019s other elements include exploring strategic options for other busi- nesses , including possible sale or spin-off , returning value to shareholders , strengthening the balance sheet , selective reinvestment to strengthen the paper ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percentage of total debt associated with lease obligations related to discontinued operations and businesses held for sale due in 2007",
+  "reference_program": "divide(23, 2329)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "23",
+      "raw": "23",
+      "location": "text_18:168",
+      "context": "( b ) included in these amounts are $ 76 million of lease obligations related to discontinued operations and businesses held for sale that are due as follows : 2007 - $ 23 million ; 2008 - $ 19 million ; 2009 - $ 15 million ; 2010 - $ 7 million ; 2011 - $ 5 million ; and thereafter - $ 7 million ."
+    },
+    "x1": {
+      "program_token": "2329",
+      "raw": "2,329",
+      "location": "table_3:1",
+      "context": "Purchase obligations (c,d) | 2007"
+    }
+  }
+}

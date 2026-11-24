@@ -1,0 +1,1 @@
+{"answer":"0.640987097582","unit":"ratio","expression":"511.7 / 798.3","low":"0.640884323918","high":"0.641089884122","reliable_digits":"3","explanation":"Goodwill divided by total purchase consideration gives the portion, with bounds reflecting rounding of each amount to the nearest $0.1 million."}

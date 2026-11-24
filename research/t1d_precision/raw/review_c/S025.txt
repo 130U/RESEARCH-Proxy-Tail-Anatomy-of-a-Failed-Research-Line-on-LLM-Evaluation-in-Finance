@@ -1,0 +1,7 @@
+{
+    "call_id": "S025",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_2 states that the Relief Act reduced the 2010 minimum contribution from $525 million to approximately $460 million. With $525 million as denominator, the model correctly reports the positive decrease magnitude of approximately 12.38%; the reference program reports its negative. The human answer of −14.0% is unsupported by that program."
+  }

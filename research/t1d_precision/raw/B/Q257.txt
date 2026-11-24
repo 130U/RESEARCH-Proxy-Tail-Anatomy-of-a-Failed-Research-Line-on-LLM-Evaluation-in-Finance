@@ -1,0 +1,1 @@
+{"answer":"14.5552560647","unit":"percent","expression":"(4.25 - 3.71) / 3.71 * 100","low":"14.2664872140","high":"14.8448043185","reliable_digits":"1","explanation":"Annual dividends increased from $3.71 to $4.25 per share, with each rounded total allowing uncertainty of $0.005."}

@@ -1,0 +1,5 @@
+{
+    "review_id": "R098",
+    "verdict": "invalid",
+    "reason": "Dividing accrued interest by redeemed principal does not determine the annual interest rate, which the source explicitly states was 6.25%."
+  }

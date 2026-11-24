@@ -1,0 +1,1 @@
+{"answer":"10.4","unit":"ratio","expression":"156 / 15","low":"10.032258064516129","high":"10.793103448275862","reliable_digits":"1","explanation":"Dividing 2018 total tax expense by 2017 total tax expense gives 10.4, with rounding bounds of 155.5/15.5 and 156.5/14.5."}

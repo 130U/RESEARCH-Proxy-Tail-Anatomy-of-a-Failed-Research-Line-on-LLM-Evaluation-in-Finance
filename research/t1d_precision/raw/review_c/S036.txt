@@ -1,0 +1,7 @@
+{
+    "call_id": "S036",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The question specifies no years. Row 3, Volatility factor, supports the model's stated 2014-to-2015 comparison: (26.2% - 28.8%) / 28.8% × 100. The reference instead compares 2013 to 2014 using 30.3% as its denominator."
+  }

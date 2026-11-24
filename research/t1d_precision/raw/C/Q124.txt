@@ -1,0 +1,1 @@
+{"answer":"-26.0663507109","unit":"percent","expression":"(15.6 - 21.1) / 21.1 * 100","low":"-26.4775413712","high":"-25.6532066508","reliable_digits":"2","explanation":"Each expense may vary by $0.05 million, and both extreme percentage changes round to -26% at two significant digits."}

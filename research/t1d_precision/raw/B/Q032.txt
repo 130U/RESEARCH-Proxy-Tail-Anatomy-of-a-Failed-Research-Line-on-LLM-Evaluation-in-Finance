@@ -1,0 +1,1 @@
+{"answer":"-9.78520286396181","unit":"percent","expression":"(378 - 419) / 419 * 100","low":"-10.0119189511323","high":"-9.55794504181601","reliable_digits":"1","explanation":"Operating lease payments decrease from $419 million to $378 million, with bounds allowing rounding of ±$0.5 million for each figure."}

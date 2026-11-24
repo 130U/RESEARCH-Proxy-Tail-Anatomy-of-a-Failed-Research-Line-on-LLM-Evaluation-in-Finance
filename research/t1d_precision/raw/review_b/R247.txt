@@ -1,0 +1,5 @@
+{
+    "review_id": "R247",
+    "verdict": "valid",
+    "reason": "The bound values are rounded total income-tax expenses for 2018 and 2017, and dividing 156 by 15 correctly gives their ratio."
+  }

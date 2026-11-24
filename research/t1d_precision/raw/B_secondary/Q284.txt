@@ -1,0 +1,1 @@
+{"answer":"18.9562087582","unit":"percent","expression":"(1,983 - 1,667) / 1,667 * 100","low":"18.8905547226","high":"19.0219021902","reliable_digits":"2","explanation":"Each investment balance is rounded to the nearest million dollars, giving these bounds and two reliable significant digits."}

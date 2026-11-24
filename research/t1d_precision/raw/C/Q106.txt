@@ -1,0 +1,1 @@
+{"answer":"24.7440273","unit":"percent","expression":"145 / 586 * 100","low":"24.6376812","high":"24.8505551","reliable_digits":"2","explanation":"Each acreage figure is uncertain by 0.5 thousand acres, so the bounds are 144.5 / 586.5 * 100 and 145.5 / 585.5 * 100."}

@@ -1,0 +1,226 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R072",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "uncertain tax positions the following is a reconciliation of the company 2019s beginning and ending amount of uncertain tax positions ( in millions ) : ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2018",
+          "2017"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Balance at January 1",
+          "$280",
+          "$278"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Additions based on tax positions related to the current year",
+          "18",
+          "25"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Additions for tax positions of prior years",
+          "10",
+          "12"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Reductions for tax positions of prior years",
+          "(24)",
+          "(26)"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Settlements",
+          "—",
+          "(6)"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Business combinations",
+          "1",
+          "—"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Lapse of statute of limitations",
+          "(6)",
+          "(7)"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Foreign currency translation",
+          "—",
+          "4"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Balance at December 31",
+          "$279",
+          "$280"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_1",
+        "text": "the company 2019s liability for uncertain tax positions as of december 31 , 2018 , 2017 , and 2016 , includes $ 228 million , $ 219 million , and $ 240 million , respectively , related to amounts that would impact the effective tax rate if recognized ."
+      },
+      {
+        "location": "text_2",
+        "text": "it is possible that the amount of unrecognized tax benefits may change in the next twelve months ; however , the company does not expect the change to have a significant impact on its consolidated statements of income or consolidated balance sheets ."
+      },
+      {
+        "location": "text_3",
+        "text": "these changes may be the result of settlements of ongoing audits ."
+      },
+      {
+        "location": "text_4",
+        "text": "at this time , an estimate of the range of the reasonably possible outcomes within the twelve months cannot be made ."
+      },
+      {
+        "location": "text_5",
+        "text": "the company recognizes interest and penalties related to uncertain tax positions in its provision for income taxes ."
+      },
+      {
+        "location": "text_6",
+        "text": "the company accrued potential interest and penalties of $ 22 million , $ 11 million , and $ 15 million in 2018 , 2017 , and 2016 , respectively ."
+      },
+      {
+        "location": "text_7",
+        "text": "the company recorded a liability for interest and penalties of $ 77 million , $ 55 million , and $ 48 million as of december 31 , 2018 , 2017 , and 2016 , respectively ."
+      },
+      {
+        "location": "text_8",
+        "text": "the company and its subsidiaries file income tax returns in their respective jurisdictions ."
+      },
+      {
+        "location": "text_9",
+        "text": "the company has substantially concluded all u.s ."
+      },
+      {
+        "location": "text_10",
+        "text": "federal income tax matters for years through 2007 ."
+      },
+      {
+        "location": "text_11",
+        "text": "material u.s ."
+      },
+      {
+        "location": "text_12",
+        "text": "state and local income tax jurisdiction examinations have been concluded for years through 2005 ."
+      },
+      {
+        "location": "text_13",
+        "text": "the company has concluded income tax examinations in its primary non-u.s ."
+      },
+      {
+        "location": "text_14",
+        "text": "jurisdictions through 2010 ."
+      },
+      {
+        "location": "text_15",
+        "text": "12 ."
+      },
+      {
+        "location": "text_16",
+        "text": "shareholders 2019 equityq y distributable reserves as a company incorporated in england and wales , aon is required under u.k ."
+      },
+      {
+        "location": "text_17",
+        "text": "law to have available 201cdistributable reserves 201d to make share repurchases or pay dividends to shareholders ."
+      },
+      {
+        "location": "text_18",
+        "text": "distributable reserves may be created through the earnings of the u.k ."
+      },
+      {
+        "location": "text_19",
+        "text": "parent company and , among other methods , through a reduction in share capital approved by the courts of england and wales ."
+      },
+      {
+        "location": "text_20",
+        "text": "distributable reserves are not directly linked to a u.s ."
+      },
+      {
+        "location": "text_21",
+        "text": "gaap reported amount ( e.g. , retained earnings ) ."
+      },
+      {
+        "location": "text_22",
+        "text": "as of december 31 , 2018 and 2017 , the company had distributable reserves in excess of $ 2.2 billion and $ 1.2 billion , respectively ."
+      },
+      {
+        "location": "text_23",
+        "text": "ordinary shares aon has a share repurchase program authorized by the company 2019s board of directors ( the 201crepurchase program 201d ) ."
+      },
+      {
+        "location": "text_24",
+        "text": "the repurchase program was established in april 2012 with $ 5.0 billion in authorized repurchases , and was increased by $ 5.0 billion in authorized repurchases in each of november 2014 and february 2017 for a total of $ 15.0 billion in repurchase authorizations ."
+      },
+      {
+        "location": "text_25",
+        "text": "under the repurchase program , class a ordinary shares may be repurchased through the open market or in privately negotiated transactions , from time to time , based on prevailing market conditions , and will be funded from available capital. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percent of the increase in the company recorded a liability for interest and penalties from 2017 to 2018",
+  "reference_program": "subtract(77, 55), divide(#0, 55)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "77",
+      "raw": "77",
+      "location": "text_7:64",
+      "context": "the company recorded a liability for interest and penalties of $ 77 million , $ 55 million , and $ 48 million as of december 31 , 2018 , 2017 , and 2016 , respectively ."
+    },
+    "x1": {
+      "program_token": "55",
+      "raw": "55",
+      "location": "text_7:79",
+      "context": "the company recorded a liability for interest and penalties of $ 77 million , $ 55 million , and $ 48 million as of december 31 , 2018 , 2017 , and 2016 , respectively ."
+    }
+  }
+}

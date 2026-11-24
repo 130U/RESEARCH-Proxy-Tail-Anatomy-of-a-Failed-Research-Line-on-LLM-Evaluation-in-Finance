@@ -1,0 +1,1 @@
+{"answer":"72.710453284","unit":"percent","expression":"(78.6 / 108.1) * 100","low":"72.630605640","high":"72.790374826","reliable_digits":"2","explanation":"The bounds use 78.55/108.15 and 78.65/108.05, reflecting rounding of each amount by 0.05 million."}

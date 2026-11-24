@@ -1,0 +1,1 @@
+{"answer":"1.6666666667","unit":"percent","expression":"(3538 - 3480) / 3480 * 100","low":"1.6376957334","high":"1.6956459261","reliable_digits":"1","explanation":"Net earnings increased by $58 million; allowing each earnings figure to vary by $0.5 million gives the stated bounds."}

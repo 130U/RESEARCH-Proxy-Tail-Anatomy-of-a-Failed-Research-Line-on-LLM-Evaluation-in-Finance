@@ -1,0 +1,1 @@
+{"answer":"-4.35452398","unit":"percent","expression":"(931.3 - 973.7) / 973.7 * 100","low":"-4.36456996","high":"-4.34447697","reliable_digits":"2","explanation":"Each revenue can vary by 0.05 million, producing about 0.23% relative uncertainty in the calculated decline."}

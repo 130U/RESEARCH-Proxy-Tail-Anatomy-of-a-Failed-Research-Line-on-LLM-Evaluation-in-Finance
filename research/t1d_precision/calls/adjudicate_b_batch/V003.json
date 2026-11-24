@@ -1,0 +1,26 @@
+{
+  "group": "adjudicate_b_batch",
+  "id": "V003",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "fresh_session": true,
+  "prompt_file": "prompts/adjudicate_b_batch/V003.txt",
+  "started_utc": "2026-11-17T10:01:25.468494+00:00",
+  "status": "completed",
+  "returncode": 0,
+  "attempt_number": 1,
+  "completed_utc": "2026-11-17T10:03:11.772001+00:00",
+  "elapsed_seconds": 106.281,
+  "thread_id": "01a1e8f4-4811-7e30-81d8-474ffe9dbc6c",
+  "usage": {
+    "input_tokens": 29228,
+    "cached_input_tokens": 15488,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2768,
+    "reasoning_output_tokens": 2346
+  },
+  "event_item_types": [
+    "agent_message"
+  ],
+  "tool_use_observed": false
+}

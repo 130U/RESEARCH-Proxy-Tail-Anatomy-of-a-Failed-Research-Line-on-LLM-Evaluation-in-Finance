@@ -1,0 +1,1 @@
+{"answer":"117624.84","unit":"thousand dollars","expression":"1084 * 108.51","low":"117619.42","high":"117630.26","reliable_digits":"4","explanation":"The share count is exact, while the displayed fair value implies rounding bounds of $108.505 to $108.515 per share."}

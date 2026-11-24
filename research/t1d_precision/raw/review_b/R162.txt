@@ -1,0 +1,5 @@
+{
+    "review_id": "R162",
+    "verdict": "valid",
+    "reason": "The bindings correctly identify rounded 2007 daily throughput figures in thousands of barrels, and crude oil throughput divided by total throughput gives its percentage share."
+  }

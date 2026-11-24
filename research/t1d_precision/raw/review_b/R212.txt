@@ -1,0 +1,5 @@
+{
+    "review_id": "R212",
+    "verdict": "valid",
+    "reason": "The source explicitly identifies approximate PennyMac fair values of $348 million for 2017 and $259 million for 2016, and the calculation correctly measures growth relative to 2016."
+  }

@@ -1,0 +1,1 @@
+{"answer":"-20.47852620772258","unit":"percent","expression":"(27,885 - 35,066) / 35,066 * 100","low":"-20.48108593672023","high":"-20.47596640572643","reliable_digits":"4","explanation":"Allowing ±0.5 million for each reported figure gives these bounds, which both round to a 20.48% decrease at four significant digits."}

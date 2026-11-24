@@ -1,0 +1,5 @@
+{
+    "review_id": "R109",
+    "verdict": "valid",
+    "reason": "The bound figures are rounded weighted-average basic shares in millions rather than exact share counts, and the calculation correctly uses 2010 as the percentage-change baseline."
+  }

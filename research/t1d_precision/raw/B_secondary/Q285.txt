@@ -1,0 +1,1 @@
+{"answer":"38.81487107","unit":"million dollars","expression":"342313 * 113.39 / 1000000","low":"38.813159505","high":"38.816582635","reliable_digits":"3","explanation":"September's total shares purchased multiplied by the average price gives cash used; the bounds reflect the price's rounding to cents."}

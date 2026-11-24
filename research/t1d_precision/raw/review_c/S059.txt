@@ -1,0 +1,7 @@
+{
+    "call_id": "S059",
+    "primary_cause": "unresolved",
+    "formula_valid": false,
+    "alternative_precision_used": false,
+    "reason": "Text_26 gives $47.0 million expected return for pension plans collectively, while text_18 assigns 7.75% only to the U.S. qualified plan; international rates vary. Applying that denominator to the collective return mixes scopes. Row 2's $1.7 million is a 25-basis-point expense sensitivity, not total expected return as the reference assumes."
+  }

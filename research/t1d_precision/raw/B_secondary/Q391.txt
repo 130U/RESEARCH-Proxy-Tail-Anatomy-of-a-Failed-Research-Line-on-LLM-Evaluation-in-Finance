@@ -1,0 +1,1 @@
+{"answer":"6","unit":"million dollars","expression":"10 - 4","low":"5","high":"7","reliable_digits":"0","explanation":"The reserve increased by $6 million, with rounding allowing a $5 million to $7 million increase, so the first significant digit is not reliable."}

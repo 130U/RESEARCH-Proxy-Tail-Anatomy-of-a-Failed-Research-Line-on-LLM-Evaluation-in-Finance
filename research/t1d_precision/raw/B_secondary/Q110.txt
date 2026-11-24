@@ -1,0 +1,1 @@
+{"answer":"80.4728475752","unit":"percent","expression":"(22.366 - 12.393) / 12.393 * 100","low":"80.4615322548","high":"80.4841638088","reliable_digits":"3","explanation":"Each allowance figure has rounding uncertainty of ±0.0005 billion, giving the stated range and three reliable significant digits."}

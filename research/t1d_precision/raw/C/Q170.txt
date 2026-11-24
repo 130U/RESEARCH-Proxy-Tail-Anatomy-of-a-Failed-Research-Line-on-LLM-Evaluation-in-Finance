@@ -1,0 +1,1 @@
+{"answer":"2.97619047619","unit":"percent","expression":"(17.3 - 16.8) / 16.8 * 100","low":"2.37388724036","high":"3.58208955224","reliable_digits":"0","explanation":"Each balance is rounded to the nearest $0.1 million, making even the first significant digit of the percentage increase unreliable."}

@@ -1,0 +1,1 @@
+{"answer":"0.13599554923657","unit":"percent","expression":"(242 / 177947) * 100","low":"0.13571418536366","high":"0.13627691469065","reliable_digits":"3","explanation":"Allowing each amount to vary by 0.5 gives these bounds, which both round to 0.136% at three significant digits."}

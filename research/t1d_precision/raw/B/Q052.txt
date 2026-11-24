@@ -1,0 +1,1 @@
+{"answer":"-20.47337278","unit":"percent","expression":"(22176 - 27885) / 27885 * 100","low":"-20.47659178","high":"-20.47015367","reliable_digits":"3","explanation":"Liabilities decreased by approximately 20.5%; the bounds allow each reported liability figure to vary by $0.5 million."}

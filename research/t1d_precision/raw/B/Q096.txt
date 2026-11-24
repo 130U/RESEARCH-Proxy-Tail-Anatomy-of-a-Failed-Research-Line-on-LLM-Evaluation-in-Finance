@@ -1,0 +1,1 @@
+{"answer":"8.63909589","unit":"percent","expression":"(572.93 - 527.37) / 527.37 * 100","low":"8.63711780","high":"8.64107402","reliable_digits":"3","explanation":"Each collateral amount has rounding uncertainty of 0.005 billion; the resulting range consistently rounds to 8.64% at three significant digits."}

@@ -1,0 +1,20 @@
+{
+  "review_id": "S061",
+  "kind": "c",
+  "display_order": [
+    {
+      "source_round": "first",
+      "original_reason": "Source distinguishes a 154 million pretax sale gain from its 100 million net-of-tax amount. Model subtracts the former; reference subtracts the latter. This is a tax-basis difference, not precision. The 5829 table is specifically utility net revenue and its bridge does not identify this asset-sale gain; the excerpt does not establish that either amount is included in that metric. Hence neither adjustment is certified as the correct counterfactual from this excerpt.",
+      "display_reason": "Source distinguishes a 154 million pretax sale gain from its 100 million net-of-tax amount. Model subtracts the former; reference subtracts the latter. This is a tax-basis difference, not precision. The 5829 table is specifically utility net revenue and its bridge does not identify this asset-sale gain; the excerpt does not establish that either amount is included in that metric. Hence neither adjustment is certified as the correct counterfactual from this excerpt.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "second",
+      "original_reason": "Under the question's assumed removal of the sale gain from 2015 net revenue, row 8 supplies $5,829 million and text_2 supplies the $154 million pretax gain. The model consistently subtracts that gain; the reference substitutes the $100 million after-tax amount.",
+      "display_reason": "Under the question's assumed removal of the sale gain from 2015 net revenue, row 8 supplies $5,829 million and text_2 supplies the $154 million pretax gain. The model consistently subtracts that gain; the reference substitutes the $100 million after-tax amount.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

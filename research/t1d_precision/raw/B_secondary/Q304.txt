@@ -1,0 +1,1 @@
+{"answer":"8.352941176470588","unit":"percent","expression":"(850 - 779) / 850 * 100","low":"8.24014125956445","high":"8.46560846560847","reliable_digits":"1","explanation":"Each borrowing figure has rounding uncertainty of 0.5, so the percentage decrease has one reliable significant digit."}

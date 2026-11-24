@@ -1,0 +1,1 @@
+{"answer":"448.5","unit":"million dollars","expression":"897 * 50 / 100","low":"443.7675","high":"453.2375","reliable_digits":"2","explanation":"Applying rounding bounds of 896.5–897.5 million dollars and 49.5–50.5 percent gives the stated range."}

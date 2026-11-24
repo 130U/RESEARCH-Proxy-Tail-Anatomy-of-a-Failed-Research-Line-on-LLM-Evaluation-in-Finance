@@ -1,0 +1,1 @@
+{"answer":"305261","unit":"million dollars","expression":"384102 - 78841","low":"305260","high":"305262","reliable_digits":"5","explanation":"Subtracting nonderivative trading liabilities from nonderivative trading assets gives net trading assets; rounding permits a variation of one million dollars."}

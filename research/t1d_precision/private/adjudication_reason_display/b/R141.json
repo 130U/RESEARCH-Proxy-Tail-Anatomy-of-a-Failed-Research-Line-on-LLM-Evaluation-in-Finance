@@ -1,0 +1,20 @@
+{
+  "review_id": "R141",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "first",
+      "original_reason": "Both operands bind the reclassification row correctly. However prospective method in the question appears in the discussion of future SFAS 123R adoption, while the table is SOP 03-1 cumulative adoption (pre_text[2]); question scope is ambiguous.",
+      "display_reason": "Both operands bind the reclassification row correctly. However prospective method in the question appears in the discussion of future SFAS 123R adoption, while the table is SOP 03-1 cumulative adoption (pre_text[2]); question scope is ambiguous.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "second",
+      "original_reason": "The bound reclassification amounts concern initial adoption of SOP 03-1, whereas the prospective-method discussion concerns SFAS 123R, so the ratio is tied to the wrong adoption context.",
+      "display_reason": "The bound reclassification amounts concern initial adoption of SOP 03-1, whereas the prospective-method discussion concerns SFAS 123R, so the ratio is tied to the wrong adoption context.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

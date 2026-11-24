@@ -1,0 +1,179 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R253",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "advance payments and billings in excess of revenues - payments received in excess of inventoried costs and revenues are recorded as advance payment liabilities ."
+      },
+      {
+        "location": "text_1",
+        "text": "property , plant , and equipment - depreciable properties owned by the company are recorded at cost and depreciated over the estimated useful lives of individual assets ."
+      },
+      {
+        "location": "text_2",
+        "text": "major improvements are capitalized while expenditures for maintenance , repairs , and minor improvements are expensed ."
+      },
+      {
+        "location": "text_3",
+        "text": "costs incurred for computer software developed or obtained for internal use are capitalized and amortized over the expected useful life of the software , not to exceed nine years ."
+      },
+      {
+        "location": "text_4",
+        "text": "leasehold improvements are amortized over the shorter of their useful lives or the term of the lease ."
+      },
+      {
+        "location": "text_5",
+        "text": "the remaining assets are depreciated using the straight-line method , with the following lives: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Years"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Land improvements",
+          "3",
+          "-",
+          "40"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Buildings and improvements",
+          "3",
+          "-",
+          "60"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Capitalized software costs",
+          "3",
+          "-",
+          "9"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Machinery and other equipment",
+          "2",
+          "-",
+          "45"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_6",
+        "text": "the company evaluates the recoverability of its property , plant , and equipment when there are changes in economic circumstances or business objectives that indicate the carrying value may not be recoverable ."
+      },
+      {
+        "location": "text_7",
+        "text": "the company's evaluations include estimated future cash flows , profitability , and other factors affecting fair value ."
+      },
+      {
+        "location": "text_8",
+        "text": "as these assumptions and estimates may change over time , it may or may not be necessary to record impairment charges ."
+      },
+      {
+        "location": "text_9",
+        "text": "leases - the company uses its incremental borrowing rate in the assessment of lease classification as capital or operating and defines the initial lease term to include renewal options determined to be reasonably assured ."
+      },
+      {
+        "location": "text_10",
+        "text": "the company conducts operations primarily under operating leases ."
+      },
+      {
+        "location": "text_11",
+        "text": "many of the company's real property lease agreements contain incentives for tenant improvements , rent holidays , or rent escalation clauses ."
+      },
+      {
+        "location": "text_12",
+        "text": "for incentives for tenant improvements , the company records a deferred rent liability and amortizes the deferred rent over the term of the lease as a reduction to rent expense ."
+      },
+      {
+        "location": "text_13",
+        "text": "for rent holidays and rent escalation clauses during the lease term , the company records minimum rental expenses on a straight-line basis over the term of the lease ."
+      },
+      {
+        "location": "text_14",
+        "text": "for purposes of recognizing lease incentives , the company uses the date of initial possession as the commencement date , which is generally the date on which the company is given the right of access to the space and begins to make improvements in preparation for the intended use ."
+      },
+      {
+        "location": "text_15",
+        "text": "goodwill and other intangible assets - the company performs impairment tests for goodwill as of november 30 of each year and between annual impairment tests if evidence of potential impairment exists , by first comparing the carrying value of net assets to the fair value of the related operations ."
+      },
+      {
+        "location": "text_16",
+        "text": "if the fair value is determined to be less than the carrying value , a second step is performed to determine if goodwill is impaired , by comparing the estimated fair value of goodwill to its carrying value ."
+      },
+      {
+        "location": "text_17",
+        "text": "purchased intangible assets are amortized on a straight-line basis or a method based on the pattern of benefits over their estimated useful lives , and the carrying value of these assets is reviewed for impairment when events indicate that a potential impairment may have occurred ."
+      },
+      {
+        "location": "text_18",
+        "text": "equity method investments - investments in which the company has the ability to exercise significant influence over the investee but does not own a majority interest or otherwise control are accounted for under the equity method of accounting and included in other assets in its consolidated statements of financial position ."
+      },
+      {
+        "location": "text_19",
+        "text": "the company's equity investments align strategically and are integrated with the company's operations , and therefore the company's share of the net earnings or losses of the investee is included in operating income ( loss ) ."
+      },
+      {
+        "location": "text_20",
+        "text": "the company evaluates its equity investments for other than temporary impairment whenever events or changes in business circumstances indicate that the carrying amounts of such investments may not be fully recoverable ."
+      },
+      {
+        "location": "text_21",
+        "text": "if a decline in the value of an equity method investment is determined to be other than temporary , a loss is recorded in earnings in the current period ."
+      },
+      {
+        "location": "text_22",
+        "text": "self-insured group medical insurance - the company maintains a self-insured group medical insurance plan ."
+      },
+      {
+        "location": "text_23",
+        "text": "the plan is designed to provide a specified level of coverage for employees and their dependents ."
+      },
+      {
+        "location": "text_24",
+        "text": "estimated liabilities ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the minimum yearly depreciation rate that can be used for land improvements?",
+  "reference_program": "divide(const_100, 40)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "40",
+      "raw": "40",
+      "location": "table_1:3",
+      "context": "Land improvements | "
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"answer":"8.639096","unit":"percent","expression":"(572.93 - 527.37) / 527.37 * 100","low":"8.637117800","high":"8.641074019","reliable_digits":"3","explanation":"Each balance is uncertain by 0.005 billion from rounding, giving these bounds and three reliable significant digits."}

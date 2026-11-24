@@ -1,0 +1,247 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R119",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "the goldman sachs group , inc ."
+      },
+      {
+        "location": "text_1",
+        "text": "and subsidiaries management 2019s discussion and analysis in the table above , total aus net inflows/ ( outflows ) for 2017 included $ 23 billion of inflows ( $ 20 billion in long- term aus and $ 3 billion in liquidity products ) in connection with the acquisition of a portion of verus investors 2019 outsourced chief investment officer business ( verus acquisition ) and $ 5 billion of equity asset outflows in connection with the divestiture of our local australian- focused investment capabilities and fund platform ( australian divestiture ) ."
+      },
+      {
+        "location": "text_2",
+        "text": "the table below presents average monthly assets under supervision by asset class ."
+      },
+      {
+        "location": "text_3",
+        "text": "average for the year ended december $ in billions 2018 2017 2016 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Average for theYear Ended December"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "<i>$ in billions</i>",
+          "2018",
+          "2017",
+          "2016"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Alternative investments",
+          "$ 171",
+          "$ 162",
+          "$ 149"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Equity",
+          "329",
+          "292",
+          "256"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Fixed income",
+          "665",
+          "633",
+          "578"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Total long-term AUS",
+          "1,165",
+          "1,087",
+          "983"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Liquidity products",
+          "352",
+          "330",
+          "326"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Total AUS",
+          "$1,517",
+          "$1,417",
+          "$1,309"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_4",
+        "text": "operating environment ."
+      },
+      {
+        "location": "text_5",
+        "text": "during 2018 , our assets under supervision increased reflecting net inflows in liquidity products , fixed income assets and equity assets ."
+      },
+      {
+        "location": "text_6",
+        "text": "this increase was partially offset by depreciation in our client assets , primarily in equity assets , as global equity prices generally decreased in 2018 , particularly towards the end of the year ."
+      },
+      {
+        "location": "text_7",
+        "text": "the mix of our average assets under supervision between long-term assets under supervision and liquidity products during 2018 was essentially unchanged compared with 2017 ."
+      },
+      {
+        "location": "text_8",
+        "text": "in the future , if asset prices continue to decline , or investors continue to favor assets that typically generate lower fees or investors withdraw their assets , net revenues in investment management would likely be negatively impacted ."
+      },
+      {
+        "location": "text_9",
+        "text": "during 2017 , investment management operated in an environment characterized by generally higher asset prices , resulting in appreciation in both equity and fixed income assets ."
+      },
+      {
+        "location": "text_10",
+        "text": "our long-term assets under supervision increased from net inflows primarily in fixed income and alternative investment assets ."
+      },
+      {
+        "location": "text_11",
+        "text": "these increases were partially offset by net outflows in liquidity products ."
+      },
+      {
+        "location": "text_12",
+        "text": "as a result , the mix of our average assets under supervision during 2017 shifted slightly from liquidity products to long-term assets under supervision compared to the mix at the end of 2016 ."
+      },
+      {
+        "location": "text_13",
+        "text": "2018 versus 2017 ."
+      },
+      {
+        "location": "text_14",
+        "text": "net revenues in investment management were $ 7.02 billion for 2018 , 13% ( 13 % ) higher than 2017 , primarily due to significantly higher incentive fees , as a result of harvesting ."
+      },
+      {
+        "location": "text_15",
+        "text": "management and other fees were also higher , reflecting higher average assets under supervision and the impact of the recently adopted revenue recognition standard , partially offset by shifts in the mix of client assets and strategies ."
+      },
+      {
+        "location": "text_16",
+        "text": "in addition , transaction revenues were higher ."
+      },
+      {
+        "location": "text_17",
+        "text": "see note 3 to the consolidated financial statements for further information about asu no ."
+      },
+      {
+        "location": "text_18",
+        "text": "2014-09 , 201crevenue from contracts with customers ( topic 606 ) . 201d during 2018 , total assets under supervision increased $ 48 billion to $ 1.54 trillion ."
+      },
+      {
+        "location": "text_19",
+        "text": "long-term assets under supervision decreased $ 4 billion , including net market depreciation of $ 41 billion primarily in equity assets , largely offset by net inflows of $ 37 billion , primarily in fixed income and equity assets ."
+      },
+      {
+        "location": "text_20",
+        "text": "liquidity products increased $ 52 billion ."
+      },
+      {
+        "location": "text_21",
+        "text": "operating expenses were $ 5.27 billion for 2018 , 10% ( 10 % ) higher than 2017 , primarily due to the impact of the recently adopted revenue recognition standard and increased compensation and benefits expenses , reflecting higher net revenues ."
+      },
+      {
+        "location": "text_22",
+        "text": "pre-tax earnings were $ 1.76 billion in 2018 , 24% ( 24 % ) higher than 2017 ."
+      },
+      {
+        "location": "text_23",
+        "text": "see note 3 to the consolidated financial statements for further information about asu no ."
+      },
+      {
+        "location": "text_24",
+        "text": "2014-09 , 201crevenue from contracts with customers ( topic 606 ) . 201d 2017 versus 2016 ."
+      },
+      {
+        "location": "text_25",
+        "text": "net revenues in investment management were $ 6.22 billion for 2017 , 7% ( 7 % ) higher than 2016 , due to higher management and other fees , reflecting higher average assets under supervision , and higher transaction revenues ."
+      },
+      {
+        "location": "text_26",
+        "text": "during 2017 , total assets under supervision increased $ 115 billion to $ 1.49 trillion ."
+      },
+      {
+        "location": "text_27",
+        "text": "long-term assets under supervision increased $ 128 billion , including net market appreciation of $ 86 billion , primarily in equity and fixed income assets , and net inflows of $ 42 billion ( which includes $ 20 billion of inflows in connection with the verus acquisition and $ 5 billion of equity asset outflows in connection with the australian divestiture ) , primarily in fixed income and alternative investment assets ."
+      },
+      {
+        "location": "text_28",
+        "text": "liquidity products decreased $ 13 billion ( which includes $ 3 billion of inflows in connection with the verus acquisition ) ."
+      },
+      {
+        "location": "text_29",
+        "text": "operating expenses were $ 4.80 billion for 2017 , 3% ( 3 % ) higher than 2016 , primarily due to increased compensation and benefits expenses , reflecting higher net revenues ."
+      },
+      {
+        "location": "text_30",
+        "text": "pre-tax earnings were $ 1.42 billion in 2017 , 25% ( 25 % ) higher than geographic data see note 25 to the consolidated financial statements for a summary of our total net revenues , pre-tax earnings and net earnings by geographic region ."
+      },
+      {
+        "location": "text_31",
+        "text": "62 goldman sachs 2018 form 10-k ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "in the table , what percentage of total aus net inflows for 2017 were long- term aus liquidity products?",
+  "reference_program": "divide(20, 23)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "20",
+      "raw": "20",
+      "location": "text_1:160",
+      "context": "and subsidiaries management 2019s discussion and analysis in the table above , total aus net inflows/ ( outflows ) for 2017 included $ 23 billion of inflows ( $ 20 billion in long- term aus and $ 3 billion in liquidity products ) in connection with the acquisition of a portion of verus investors 2019 outsourced chief investment officer business ( verus acquisition ) and $ 5 billion of equity asset outflows in connection with the divestiture of our local australian- focused investment capabilities and fund platform ( australian divestiture ) ."
+    },
+    "x1": {
+      "program_token": "23",
+      "raw": "23",
+      "location": "text_1:134",
+      "context": "and subsidiaries management 2019s discussion and analysis in the table above , total aus net inflows/ ( outflows ) for 2017 included $ 23 billion of inflows ( $ 20 billion in long- term aus and $ 3 billion in liquidity products ) in connection with the acquisition of a portion of verus investors 2019 outsourced chief investment officer business ( verus acquisition ) and $ 5 billion of equity asset outflows in connection with the divestiture of our local australian- focused investment capabilities and fund platform ( australian divestiture ) ."
+    }
+  }
+}
+
+TWO SOURCE INTERPRETATIONS TO CONSIDER
+The order is random. Evaluate these reasons against the supplied source and give your own judgment using the same JSON schema. Their order carries no priority.
+[
+  "The $23 billion denominator represents only Verus acquisition inflows rather than total 2017 AUS net inflows, so 20/23 does not answer the question as written.",
+  "Question conflates long-term AUS and liquidity products and refers to total net inflows, whereas 20/23 measures the acquisition-specific long-term component of Verus inflows. Full-year long-term net inflows are 42 and liquidity -13 in post_text[23:25]. Scope is ambiguous; not retained as a clean question."
+]

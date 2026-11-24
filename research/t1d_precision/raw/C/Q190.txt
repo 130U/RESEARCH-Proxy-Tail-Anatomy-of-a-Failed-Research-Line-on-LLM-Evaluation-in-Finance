@@ -1,0 +1,1 @@
+{"answer":"88.9278464661","unit":"percent","expression":"4819 / 5419 * 100","low":"88.9104160900","high":"88.9452800591","reliable_digits":"3","explanation":"Allowing each displayed amount to vary by 0.5 thousand dollars gives these bounds, which support three reliable significant digits."}

@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R097",
+    "verdict": "valid",
+    "reason": "The rounded liabilities are correctly bound to 2012 and 2013, and converting $1.2 billion to millions before dividing the signed change by the 2012 balance measures the relative decline."
+  },
+  {
+    "review_id": "R098",
+    "verdict": "invalid",
+    "reason": "Dividing accrued interest by redeemed principal does not determine the annual interest rate, which the source explicitly states was 6.25%."
+  },
+  {
+    "review_id": "R099",
+    "verdict": "uncertain",
+    "reason": "The $37 million cost and measured 1.4-year weighted average are correctly bound, but the source provides no recognition schedule supporting their quotient as the amount recognized within one year."
+  },
+  {
+    "review_id": "R100",
+    "verdict": "uncertain",
+    "reason": "The rounded $717 million and $802 million amounts measure unfunded commitments, while the question ambiguously refers to either those commitments or the equity investment balances containing them."
+  },
+  {
+    "review_id": "R101",
+    "verdict": "invalid",
+    "reason": "The obligation was $10 million in both 2005 and 2006, whereas dividing by nine uses the 2004 balance as an exact constant and does not calculate the 2006 increase."
+  },
+  {
+    "review_id": "R102",
+    "verdict": "valid",
+    "reason": "The explicitly approximate $3.4 million and $2.2 million capitalized compensation amounts correspond to 2011 and 2010, and addition gives the requested total in millions."
+  },
+  {
+    "review_id": "R103",
+    "verdict": "valid",
+    "reason": "The rounded 2009 operating expenses and net interest revenue are correctly bound in millions, and dividing expenses by revenue gives the requested proportion."
+  },
+  {
+    "review_id": "R104",
+    "verdict": "valid",
+    "reason": "The bound amounts are rounded December 31 unrecognized tax benefit balances for 2014 and 2013, and subtracting the earlier balance gives the signed change in millions."
+  },
+  {
+    "review_id": "R105",
+    "verdict": "valid",
+    "reason": "The rounded $156 million represents 2010 restructuring charges within the $289 million recorded aggregate, making their quotient the requested share."
+  },
+  {
+    "review_id": "R106",
+    "verdict": "valid",
+    "reason": "The rounded $25.2 million and $6.1 million totals correctly represent 2007 and 2006 acquisition, integration and other expenses, and the calculation uses the 2006 baseline."
+  },
+  {
+    "review_id": "R107",
+    "verdict": "valid",
+    "reason": "The correctly bound 2009 and 2008 expected volatilities are estimated weighted-average assumptions, and dividing their difference by the 2008 value measures relative percentage change."
+  },
+  {
+    "review_id": "R108",
+    "verdict": "valid",
+    "reason": "The rounded total income tax expenses are correctly bound to 2018 and 2017, and the calculation divides their increase by the 2017 baseline and converts it to percent."
+  },
+  {
+    "review_id": "R109",
+    "verdict": "valid",
+    "reason": "The bound figures are rounded weighted-average basic shares in millions rather than exact share counts, and the calculation correctly uses 2010 as the percentage-change baseline."
+  },
+  {
+    "review_id": "R110",
+    "verdict": "valid",
+    "reason": "The rounded accrued interest liabilities are correctly bound to 2018 and 2017 in millions, and the calculation measures their relative change against 2017."
+  },
+  {
+    "review_id": "R111",
+    "verdict": "valid",
+    "reason": "The rounded $289 million total gain and $270 million recorded at third-quarter extinguishment are correctly bound, and subtraction gives the remaining gain in millions."
+  },
+  {
+    "review_id": "R112",
+    "verdict": "uncertain",
+    "reason": "The rounded figures and growth formula correctly describe Utility net revenue, but the excerpt does not establish whether the question intends that business scope or Entergy Corporation overall."
+  }
+]

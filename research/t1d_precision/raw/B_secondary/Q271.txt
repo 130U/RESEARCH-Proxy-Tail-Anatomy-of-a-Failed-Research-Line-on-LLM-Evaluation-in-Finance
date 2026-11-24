@@ -1,0 +1,1 @@
+{"answer":"290395","unit":"million dollars","expression":"(318063 + 110457) - (60224 + 77901)","low":"290393","high":"290397","reliable_digits":"4","explanation":"Total equity is trading assets minus trading liabilities; rounding allows a deviation of 2 million dollars, leaving four significant digits stable."}

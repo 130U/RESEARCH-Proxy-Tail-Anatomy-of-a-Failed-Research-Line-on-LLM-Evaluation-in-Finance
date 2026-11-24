@@ -1,0 +1,1 @@
+{"answer":"16.3461538462","unit":"percent","expression":"(104 - 87) / 104 * 100","low":"15.4589371981","high":"17.2248803828","reliable_digits":"1","explanation":"Hedges reduce the anticipated expense increase, with bounds calculated using $104 ± $0.5 million and $87 ± $0.5 million."}

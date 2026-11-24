@@ -1,0 +1,1 @@
+{"answer":"3.2218642373","unit":"times","expression":"(2.9 * 1000) / 900.1","low":"3.1661389768","high":"3.2775956891","reliable_digits":"1","explanation":"Debt issuance ranges from 2,850 to 2,950 million and debt reductions from 900.05 to 900.15 million, giving these ratio bounds."}

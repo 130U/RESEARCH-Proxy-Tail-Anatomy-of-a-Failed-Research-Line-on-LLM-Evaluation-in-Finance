@@ -1,0 +1,46 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+table of contents notes to consolidated financial statements of american airlines group inc .
+purposes that permitted approximately $ 9.0 billion ( with $ 6.6 billion of unlimited nol still remaining at december 31 , 2015 ) of the federal nols carried over from prior taxable years ( nol carryforwards ) to be utilized without regard to the annual limitation generally imposed by section 382 .
+see note 10 for additional information related to tax matters .
+moreover , an ownership change subsequent to the debtors 2019 emergence from bankruptcy may further limit or effectively eliminate the ability to utilize the debtors 2019 nol carryforwards and other tax attributes .
+to reduce the risk of a potential adverse effect on the debtors 2019 ability to utilize the nol carryforwards , aag 2019s restated certificate of incorporation ( the certificate of incorporation ) contains transfer restrictions applicable to certain substantial stockholders .
+although the purpose of these transfer restrictions is to prevent an ownership change from occurring , there can be no assurance that an ownership change will not occur even with these transfer restrictions .
+a copy of the certificate of incorporation was attached as exhibit 3.1 to a current report on form 8-k filed by the company with the sec on december 9 , 2013 .
+reorganization items , net reorganization items refer to revenues , expenses ( including professional fees ) , realized gains and losses and provisions for losses that are realized or incurred in the chapter 11 cases .
+the following table summarizes the components included in reorganization items , net on the consolidated statement of operations for the year ended december 31 , 2013 ( in millions ) : december 31 .
+
+TABLE
+ | December 31, 2013
+Labor-related deemed claim (1) | $1,733
+Aircraft and facility financing renegotiations and rejections (2),(3) | 325
+Fair value of conversion discount (4) | 218
+Professional fees | 199
+Other | 180
+Total reorganization items, net | $2,655
+
+( 1 ) in exchange for employees 2019 contributions to the successful reorganization , including agreeing to reductions in pay and benefits , the company agreed in the plan to provide each employee group a deemed claim , which was used to provide a distribution of a portion of the equity of the reorganized entity to those employees .
+each employee group received a deemed claim amount based upon a portion of the value of cost savings provided by that group through reductions to pay and benefits as well as through certain work rule changes .
+the total value of this deemed claim was approximately $ 1.7 billion .
+( 2 ) amounts include allowed claims ( claims approved by the bankruptcy court ) and estimated allowed claims relating to ( i ) the rejection or modification of financings related to aircraft and ( ii ) entry of orders treated as unsecured claims with respect to facility agreements supporting certain issuances of special facility revenue bonds .
+the debtors recorded an estimated claim associated with the rejection or modification of a financing or facility agreement when the applicable motion was filed with the bankruptcy court to reject or modify such financing or facility agreement and the debtors believed that it was probable the motion would be approved , and there was sufficient information to estimate the claim .
+( 3 ) pursuant to the plan , the debtors agreed to allow certain post-petition unsecured claims on obligations .
+as a result , during the year ended december 31 , 2013 , the company recorded reorganization charges to adjust estimated allowed claim amounts previously recorded on rejected special facility revenue bonds of $ 180 million , allowed general unsecured claims related to the 1990 and 1994 series of special facility revenue bonds that financed certain improvements at john f .
+kennedy international airport ( jfk ) , and rejected bonds that financed certain improvements at chicago o 2019hare international airport ( ord ) , which are included in the table above. .
+
+QUESTION
+as of december 312013 what was the percent of labor-related deemed claim as part of the total reorganization items net

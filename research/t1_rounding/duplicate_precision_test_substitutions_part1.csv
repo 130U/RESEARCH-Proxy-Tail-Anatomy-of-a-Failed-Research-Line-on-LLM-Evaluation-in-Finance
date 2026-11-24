@@ -1,0 +1,12 @@
+candidate_pair,question_id,source_direction,original_program,expanded_table_program,old_operand,new_operand,gold_answer,original_result,alternative_result,original_decimal,alternative_decimal,nominal_relative_change,original_1pct_inside,alternative_1pct_inside,display_original,display_alternative
+1,AAL/2015/page_114.pdf-1,coarse_for_fine,"divide(1733, 2655)",,1733,1700,65.3%,1733/2655,340/531,0.6527306967984934,0.64030131826742,0.019042123485285632,True,False,inside,outside
+3,ADBE/1999/page_64.pdf-3,coarse_for_fine,"subtract(772, 8867)",,772,800,-8095,-8095,-8067,-8095.0,-8067.0,0.0034589252625077207,True,True,inside,outside
+3,ADBE/1999/page_64.pdf-2,fine_for_coarse,"divide(0.4, 0.8)",,0.8,0.772,50%,1/2,100/193,0.5,0.5181347150259067,0.03626943005181347,True,False,inside,outside
+15,BLL/2010/page_35.pdf-1,fine_for_coarse,"divide(635, 1000)",,635,634.9,.635,127/200,6349/10000,0.635,0.6349,0.00015748031496062991,True,True,inside,inside
+15,BLL/2010/page_35.pdf-2,coarse_for_fine,"subtract(318.5, 634.9), divide(#0, 634.9)",,634.9,635,-50%,-452/907,-633/1270,-0.49834619625137816,-0.4984251968503937,0.00015852553829001463,True,True,inside,inside
+15,BLL/2010/page_35.pdf-3,coarse_for_fine,"subtract(634.9, 735.4), divide(#0, 735.4)",,634.9,635,-14%,-1005/7354,-502/3677,-0.1366603209137884,-0.13652434049496873,0.0009950248756218905,True,True,inside,inside
+17,DXC/2018/page_56.pdf-1,coarse_for_fine,"divide(17944, 22885)",,17944,17900,78%,17944/22885,3580/4577,0.7840943849683198,0.7821717282062486,0.002452073116362015,True,True,inside,inside
+17,DXC/2018/page_56.pdf-3,coarse_for_fine,"divide(17944, 22885)",,17944,17900,78.41%,17944/22885,3580/4577,0.7840943849683198,0.7821717282062486,0.002452073116362015,True,True,inside,outside
+19,DXC/2018/page_56.pdf-2,coarse_for_fine,"divide(2010, 22885)",,2010,2000,9%,402/4577,400/4577,0.08783045663098099,0.08739348918505571,0.004975124378109453,True,True,inside,inside
+24,GS/2013/page_63.pdf-1,coarse_for_fine,"table_average(total assets, none)","add(911507, 938555), divide(#0, 2)",911507,911510,925031,925031,1850065/2,925031.0,925032.5,1.621567277204764e-06,True,True,inside,outside
+24,GS/2013/page_63.pdf-2,coarse_for_fine,"subtract(911507, 938555)",,911507,911510,-27048,-27048,-27045,-27048.0,-27045.0,0.00011091393078970719,True,True,inside,outside

@@ -1,0 +1,8 @@
+# Keep saved experiment and source bytes unchanged across platforms.
+* -text
+*.pdf binary
+*.png binary
+*.joblib binary
+
+# GitHub language statistics: the source snapshots are archived material, not this project's code.
+source_materials/** linguist-vendored

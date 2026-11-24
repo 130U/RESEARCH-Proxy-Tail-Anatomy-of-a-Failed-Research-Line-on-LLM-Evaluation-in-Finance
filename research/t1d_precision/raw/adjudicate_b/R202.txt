@@ -1,0 +1,5 @@
+{
+    "review_id": "R202",
+    "verdict": "valid",
+    "reason": "The rounded loss magnitudes increased from $1.2 billion to $2.2 billion, so the formula correctly gives a negative decline using the 2007 loss as its denominator."
+  }

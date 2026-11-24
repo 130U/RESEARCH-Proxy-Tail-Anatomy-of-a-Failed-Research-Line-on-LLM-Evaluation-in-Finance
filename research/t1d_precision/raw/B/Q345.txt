@@ -1,0 +1,1 @@
+{"answer":"50","unit":"percent","expression":"(0.4 / 0.8) * 100","low":"41.1764705882353","high":"60","reliable_digits":"0","explanation":"Canceled contracts comprised $0.4 million of the $0.8 million balance; rounding permits a portion from 0.35/0.85 to 0.45/0.75."}

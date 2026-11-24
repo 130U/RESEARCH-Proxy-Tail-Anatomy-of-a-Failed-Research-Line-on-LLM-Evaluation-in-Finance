@@ -1,0 +1,1 @@
+{"answer":"34.9146110056926","unit":"percent","expression":"(711 - 527) / 527 * 100","low":"34.6919431279621","high":"35.1377018043685","reliable_digits":"2","explanation":"Allowing each liability figure to vary by $0.5 million gives these bounds, which both round to 35% at two significant digits."}

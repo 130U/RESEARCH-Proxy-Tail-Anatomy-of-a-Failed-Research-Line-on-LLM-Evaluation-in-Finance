@@ -1,0 +1,7 @@
+{
+    "call_id": "S058",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "Text_12 gives approximately $210 million transaction value and $182 million cash net of $7 million acquired cash. The model reconstructs $189 million gross cash consideration, but the excerpt does not establish whether the $210 million total uses that same gross basis. The noncash residual is therefore not uniquely established."
+  }

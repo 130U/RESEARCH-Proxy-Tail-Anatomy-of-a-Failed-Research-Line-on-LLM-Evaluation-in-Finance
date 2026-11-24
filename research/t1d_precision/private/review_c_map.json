@@ -1,0 +1,1097 @@
+[
+  {
+    "review_id": "S001",
+    "call_id": "Q299",
+    "id": "STT/2011/page_69.pdf-3",
+    "page_id": "STT/2011/page_69.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q299",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "The table gives 2010 employee-related costs 105 and total 2010 restructuring costs 156. Model computes the employee share of that year's aggregate. Gold denominator 190 is the employee-related total across 2010 and 2011, not aggregate restructuring costs (which are 289 across both years). Thus gold uses a different category/period denominator unsupported by the requested 2010 share.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S002",
+    "call_id": "Q297",
+    "id": "CME/2010/page_69.pdf-1",
+    "page_id": "CME/2010/page_69.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q297",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "reason": "Reference definitely omits billion-to-million conversion, and model correctly forms the disclosed cross-year amount ratio. However, the question attributes the issuance to 2009 while the document assigns 2.9 billion to 2008. Adopt the independent review's unresolved classification: a correct dimensional calculation cannot establish an answer for a year whose issuance value is absent.",
+      "reviewer": "root adjudication after group-blind source_early review",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json",
+      "final_override_file": "adjudication.json"
+    }
+  },
+  {
+    "review_id": "S003",
+    "call_id": "Q093",
+    "id": "ABMD/2007/page_78.pdf-4",
+    "page_id": "ABMD/2007/page_78.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q093",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Post-text explicitly gives option grant-date fair values for 2005, 2006, 2007 as 8.05, 6.91, 8.75 respectively. Model computes the requested 2005-to-2006 growth (6.91-8.05)/8.05. Gold reverses the two years and uses the 2006 denominator.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S004",
+    "call_id": "Q021",
+    "id": "K/2006/page_52.pdf-3",
+    "page_id": "K/2006/page_52.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q021",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Question asks percent increase in net cash from 2004 (1229.0) to 2006 (1410.5). Model computes (1410.5-1229.0)/1229.0. Reference subtracts 1229.0 twice, yielding -1047.5; the written human answer 14.77 supports the model's intended calculation.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S005",
+    "call_id": "Q321",
+    "id": "STT/2009/page_25.pdf-2",
+    "page_id": "STT/2009/page_25.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q321",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "The SSgA collateral-pool table explicitly lists 31 billion for December 2008 and 24 billion for December 2009. Model computes forward change (24-31)/31. Reference reverses the years and divides by the ending 24. Human -22% agrees in direction but truncates rather than nearest-integer rounds.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S006",
+    "call_id": "Q223",
+    "id": "ECL/2017/page_79.pdf-2",
+    "page_id": "ECL/2017/page_79.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q223",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "Anios total consideration including debt is 798.3, explicitly described as total consideration in the acquisition text; net consideration to sellers is 605.5 after repaying 192.8 of debt. Goodwill is 511.7. Model uses total acquisition price while gold uses net seller consideration. The question does not specify this denominator choice; both are source quantities, not different precision disclosures of one fact.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S007",
+    "call_id": "Q141",
+    "id": "MKTX/2012/page_42.pdf-1",
+    "page_id": "MKTX/2012/page_42.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q141",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Question asks by how much the stock high increased and does not specify a percentage. Table gives the highest 2011 price 31.16 and first-quarter 2012 high 37.79. Model reports the valid absolute increase 6.63 USD per share; reference chooses a relative increase.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S008",
+    "call_id": "Q160",
+    "id": "AMT/2008/page_107.pdf-2",
+    "page_id": "AMT/2008/page_107.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q160",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Employee-separation liability is 20963 at year-end 2005 and 7327 at year-end 2006. Question asks percentage change. Model divides the change by the starting liability; gold stops after subtraction and returns a currency amount. Human -65.1% supports the intended percentage calculation.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S009",
+    "call_id": "Q234",
+    "id": "AAL/2010/page_72.pdf-4",
+    "page_id": "AAL/2010/page_72.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q234",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "Question explicitly asks percentage decline from 736 to 708. Model reports the positive decline magnitude with the correct starting denominator; gold reports signed negative change. Same source values, not precision.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S010",
+    "call_id": "Q260",
+    "id": "GRMN/2008/page_85.pdf-1",
+    "page_id": "GRMN/2008/page_85.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q260",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "Question says increase 'during 2007 and 2008'. Source beginning-2007 balance is 70.5, end-2007/beginning-2008 is 126.6, and end-2008 is 214.4. Model interprets the full two-year period (214.4-70.5); gold compares the two year-end levels (214.4-126.6). The wording permits the cumulative-period interpretation and model states its endpoints; no source precision issue.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S011",
+    "call_id": "Q125",
+    "id": "AAL/2013/page_18.pdf-3",
+    "page_id": "AAL/2013/page_18.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q125",
+      "reviewer": "root adjudication after group-blind source_early review",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Adopt the independent review's more cautious classification. The question asks broadly for the percentage effect of hedges, without fixing a percentage-reduction baseline. Model measures the 104-to-87 sensitivity reduction against 104; reference measures the difference against 87. Both denominators are identifiable, and ambiguity is more defensible than a definite reference-error claim. Original root and independent judgments are retained.",
+      "original_review_file": "review_root.json",
+      "final_override_file": "adjudication.json"
+    }
+  },
+  {
+    "review_id": "S012",
+    "call_id": "Q300",
+    "id": "DRE/2007/page_56.pdf-1",
+    "page_id": "DRE/2007/page_56.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q300",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "Table gives basic common-shareholder net income 217,692 in 2007 and 145,095 in 2006. Model computes the forward percentage change. Gold first computes the correct fractional change, then incorrectly subtracts 100. Human 50.0% supports the model's interpretation.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S013",
+    "call_id": "Q236",
+    "id": "MSI/2008/page_69.pdf-2",
+    "page_id": "MSI/2008/page_69.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q236",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "alternative_precision_used": true,
+      "reason": "Table gives operating losses 2,199 and 1,201 million for 2008 and 2007 and itself prints +83%; prose rounds the same facts to 2.2 and 1.2 billion. Model correctly describes an increase in loss magnitude using the finer table values (+83.0974%). Gold returns a negative decline using coarse prose (-83.3333%). Thus both sign convention/premise and disclosure precision differ. Replacing coarse inputs by fine ones while retaining the gold sign would still reject this model answer; this is not attributed solely to input precision.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S014",
+    "call_id": "Q348",
+    "id": "JKHY/2017/page_26.pdf-3",
+    "page_id": "JKHY/2017/page_26.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q348",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "Peer-group total-return index rises from 161.90 in 2014 to 203.87 in 2015. Model interprets 2015 total return as the annual percentage return and divides the increase by 161.90. Reference gives the dollar/index-point increase of 41.97 for the original $100 investment. The question does not specify a dollar gain rather than a percentage return, so the model's stated annual-return interpretation is reasonable.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S015",
+    "call_id": "Q316",
+    "id": "HIG/2011/page_53.pdf-2",
+    "page_id": "HIG/2011/page_53.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q316",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "Adopt the independent review: the question vaguely asks for a summary, so a correctly reconstructed net-reserve total is a reasonable single-number interpretation. The reference percentage is not requested, but the vague target does not justify asserting one uniquely required summary measure. Source monetary magnitude is not independently supplied.",
+      "reviewer": "root adjudication after group-blind source_final_b review",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json",
+      "final_override_file": "adjudication.json"
+    }
+  },
+  {
+    "review_id": "S016",
+    "call_id": "Q319",
+    "id": "MRK/2013/page_125.pdf-4",
+    "page_id": "MRK/2013/page_125.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q319",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "Accrued interest/penalty liabilities are 1.2 billion at December 2012 and 665 million at December 2013. Model harmonizes units and gives positive percentage decrease, as the question requests; reference reports signed negative change. Human +44.59% also uses positive direction but differs slightly from nearest rounding of the exact displayed inputs (44.58%).",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S017",
+    "call_id": "Q182",
+    "id": "WRK/2018/page_107.pdf-4",
+    "page_id": "WRK/2018/page_107.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q182",
+      "reviewer": "root adjudication after group-blind source_early review",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "alternative_precision_used": false,
+      "reason": "The unrecognized-tax-benefit balance already contains the category the question asks to add. Model computes addition of separately excluded interest and penalties, whereas reference combines benefit subsets across years. Neither interpretation is uniquely established. Adopt null formula validity rather than a definitive false judgment because the requested counterfactual itself is contradictory.",
+      "original_review_file": "review_root.json",
+      "final_override_file": "adjudication.json"
+    }
+  },
+  {
+    "review_id": "S018",
+    "call_id": "Q227",
+    "id": "IPG/2006/page_77.pdf-3",
+    "page_id": "IPG/2006/page_77.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q227",
+      "primary_cause": "unresolved",
+      "formula_valid": false,
+      "reason": "Question is grammatically incomplete ('what percent increase ... did the floating rate notes maturing in 2010?') and supplies no comparison year or baseline. Model answers the 2010 maturity share of total debt, not an increase. Gold compares 2011 and 2010 scheduled maturities, a comparison not specified in the question and not an increase in total debt. Neither resolves the missing requested relation; this is not a precision disagreement.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S019",
+    "call_id": "Q352",
+    "id": "PPG/2012/page_29.pdf-4",
+    "page_id": "PPG/2012/page_29.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q352",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "Source explicitly gives acquisition-related capital spending of 122, 56, and 34 million in 2012, 2011, and 2010, respectively. Model computes the requested 2011-to-2012 increase 122-56. Reference instead subtracts 2010 from 2011 (56-34).",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S020",
+    "call_id": "Q142",
+    "id": "AMT/2003/page_102.pdf-4",
+    "page_id": "AMT/2003/page_102.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q142",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Source explicitly identifies redeemed notes as 6.25% notes, the coupon rate requested by the question. Model returns that stated rate. Gold divides the 4.8 million accrued interest at redemption by 212.7 million principal, a partial accrual-period fraction, not an annual coupon rate. These quantities differ in meaning, not precision.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S021",
+    "call_id": "Q104",
+    "id": "ETFC/2011/page_144.pdf-2",
+    "page_id": "ETFC/2011/page_144.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q104",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Post-text explicitly says collateral was 2.3 million and 19.3 million as of 2011 and 2010 respectively, and overnight borrowings were 0.5 million as of 2010. Question asks 2010. Model correctly uses 19.3/0.5; reference uses 2011 collateral 2.3.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S022",
+    "call_id": "Q076",
+    "id": "HUM/2017/page_118.pdf-1",
+    "page_id": "HUM/2017/page_118.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q076",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Question explicitly asks the percent decline from 2016 to 2017. Model uses the same 77 and 75 as gold, returns the positive decline magnitude, and states the downward direction. Reference uses negative signed change. This is a sign convention, not precision.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S023",
+    "call_id": "Q304",
+    "id": "AWK/2017/page_148.pdf-1",
+    "page_id": "AWK/2017/page_148.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q304",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "Average borrowings decline from 850 in 2016 to 779 in 2017. Question asks by what percentage they decreased. Model reports the positive decline magnitude; gold reports signed negative change with the same denominator.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S024",
+    "call_id": "Q361",
+    "id": "ETR/2015/page_17.pdf-4",
+    "page_id": "ETR/2015/page_17.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q361",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "reason": "Adopt the independent review: 107 minus 66 establishes a 41 million tax effect, not a separately established tax liability. Model computes a defensible gross-to-tax-effect ratio but labels the tax effect as liability; reference computes a different ratio. The literal requested liability ratio is not established by the excerpt.",
+      "reviewer": "root adjudication after group-blind source_final_a review",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json",
+      "final_override_file": "adjudication.json"
+    }
+  },
+  {
+    "review_id": "S025",
+    "call_id": "Q038",
+    "id": "AAL/2010/page_72.pdf-2",
+    "page_id": "AAL/2010/page_72.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q038",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Source explicitly says minimum contribution was reduced from 525 million to approximately 460 million. Positive 12.38095 percent is the magnitude of the requested decrease; reference is a negative signed change. Human -14.0 percent also disagrees numerically with its own reference program. No alternative source precision was used.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S026",
+    "call_id": "Q102",
+    "id": "ETR/2017/page_372.pdf-3",
+    "page_id": "ETR/2017/page_372.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q102",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Table identifies 705.4 as 2016 net revenue and 703.1 as 2017. Model correctly measures the decrease against the initial 2016 amount, (705.4-703.1)/705.4. Gold computes 705.4/703.1-1 using the ending amount. Both outputs fit the inherited rounding box, but the difference is denominator convention, not changed input precision. Model passes 1% and the human-display rule.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S027",
+    "call_id": "Q210",
+    "id": "CDNS/2018/page_66.pdf-2",
+    "page_id": "CDNS/2018/page_66.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q210",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "The three cumulative adjustments sum to 85,929, equal to adjusted 426,932 minus original 341,003. Model divides by the adjusted balance, explicitly named at the end of the question. Gold divides by the original balance, appropriate for percentage increase. Both use the same net adjustment; the question permits a denominator ambiguity, not a precision difference.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S028",
+    "call_id": "Q329",
+    "id": "KHC/2018/page_132.pdf-2",
+    "page_id": "KHC/2018/page_132.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q329",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "Adopt the independent review after rechecking the explicitly named December carrying value. The document supplies 31.2 billion for that denominator. Adding repaid 2.7 creates an undisclosed 33.9 measure; new June borrowing financed the repayment, so the addition cannot be treated as an established starting debt balance. Model correctly uses the named December amount.",
+      "reviewer": "root adjudication after group-blind source_final_a review",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json",
+      "final_override_file": "adjudication.json"
+    }
+  },
+  {
+    "review_id": "S029",
+    "call_id": "Q335",
+    "id": "GS/2018/page_69.pdf-2",
+    "page_id": "GS/2018/page_69.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q335",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "Document states 2017 net interest income of 2.93 billion was 13% higher than 2016. The displayed-value inverse is 2.93/1.13, as the model calculates. Reference instead subtracts 13% of the ending amount (2.93*0.87), which does not invert a 13% increase. This is a reverse-growth formula error, not alternate source precision.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S030",
+    "call_id": "Q027",
+    "id": "C/2009/page_197.pdf-1",
+    "page_id": "C/2009/page_197.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q027",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Document states a 9.6 billion pretax and 8.7 billion after-tax goodwill charge. A tax rate applied to the charge is (9.6-8.7)/9.6=9.375%. Gold divides the tax benefit by the after-tax charge 8.7. Model's different denominator is conceptually correct. Its value happens to be attainable within the gold program's broad rounding box, but it did not use alternative-precision inputs.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S031",
+    "call_id": "Q246",
+    "id": "ETR/2016/page_150.pdf-4",
+    "page_id": "ETR/2016/page_150.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q246",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "New Orleans storm recovery principal payments explicitly listed for the next years are 10.6 (2017), 11 (2018), 11.2 (2019), 11.6 (2020), 11.9 (2021). Model sums the requested next three years to 32.8. Gold program sums only the first two to 21.6; human 44.4 instead sums four. Neither reference matches the requested three-year horizon.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S032",
+    "call_id": "Q036",
+    "id": "PNC/2012/page_65.pdf-4",
+    "page_id": "PNC/2012/page_65.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q036",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Question explicitly restricts to securities available for sale. The full multirow-header table lists 2012 fair value 51052 for available-for-sale securities and 61912 for all securities including held-to-maturity securities. Model uses 51052-367; gold uses the broader total 61912-367. This is scope, not a different rounding precision or year.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S033",
+    "call_id": "Q233",
+    "id": "ABMD/2012/page_79.pdf-2",
+    "page_id": "ABMD/2012/page_79.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q233",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "At March 31, 2012, payments due in fiscal 2013 are 1,473 of total future lease payments 4,218. Model computes this current share, consistent with the human 35% answer. Gold incorrectly takes the arithmetic mean of the current payment and total instead of their ratio.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S034",
+    "call_id": "Q046",
+    "id": "IP/2006/page_38.pdf-3",
+    "page_id": "IP/2006/page_38.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q046",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Full table has Total debt 692 million for 2007, Lease obligations 144, and Purchase obligations 2329. Footnote (b) gives 23 million discontinued-operation lease obligations due in 2007. Model uses the explicitly requested total-debt denominator 692. Reference divides by 2329, the purchase-obligations row, not total debt.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S035",
+    "call_id": "Q090",
+    "id": "STT/2007/page_111.pdf-4",
+    "page_id": "STT/2007/page_111.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q090",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Question requests percent change; table has 506032 (2006) and 558368 (2007). Model divides their difference by the 2006 baseline. Reference only subtracts and produces an unscaled money amount 52336. The human answer 10% is consistent with the intended percentage calculation.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S036",
+    "call_id": "Q084",
+    "id": "DVN/2015/page_79.pdf-3",
+    "page_id": "DVN/2015/page_79.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q084",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Question specifies no comparison years. Full table contains volatility factors 26.2% (2015), 28.8% (2014), and 30.3% (2013). Model explicitly uses the latest two years 2014-2015; gold uses 2013-2014. Both are available, but only the model states its period. This is missing temporal scope, not alternative precision of the same fact.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S037",
+    "call_id": "Q226",
+    "id": "STT/2009/page_127.pdf-3",
+    "page_id": "STT/2009/page_127.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q226",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "Net unrealized loss is 5,205 in 2008 and 1,636 in 2009. Model computes forward percentage change of the loss magnitude, -68.57%. Gold reverses the year order and uses the ending 2009 loss as denominator, yielding +218.154%. Human -68% agrees in direction but truncates rather than nearest-integer rounds.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S038",
+    "call_id": "Q101",
+    "id": "AON/2015/page_96.pdf-1",
+    "page_id": "AON/2015/page_96.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q101",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Post-text lists U.S. plan shares for 2015/2014/2013 as 411636/439000/556000. Model explicitly identifies the U.S. plan and averages all three. Gold adds only the first two and never divides, so it cannot be the requested three-year average. The question does not specify U.S. versus U.K.; the model states its scope, and the separate U.K. plan makes that scope an additional ambiguity.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S039",
+    "call_id": "Q249",
+    "id": "LMT/2014/page_77.pdf-3",
+    "page_id": "LMT/2014/page_77.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q249",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "Source states 2014 interest-rate swaps of 1.3 billion dollars and foreign-currency hedges of 804 million dollars. Model correctly converts 1.3 billion to 1,300 million before forming the dimensionless ratio, 1.6169. Gold divides 1.3 by 804 without harmonizing units, giving a value 1,000 times too small. Human 1.62 supports the model; the issue is units, not source rounding.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S040",
+    "call_id": "Q245",
+    "id": "MRO/2003/page_84.pdf-1",
+    "page_id": "MRO/2003/page_84.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q245",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "The excerpt assigns 60% to the first quarter and 50% to the second. Model reports the forward signed change of -10 percentage points and explicitly says decreased. Gold computes the positive difference 60-50. These are direction versus magnitude conventions, not precision.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S041",
+    "call_id": "Q232",
+    "id": "HUM/2017/page_118.pdf-2",
+    "page_id": "HUM/2017/page_118.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q232",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "Question ends with the corrupted phrase 'from to 20192018', leaving ratio order unclear. Table lists 2018=64 and 2019=54. Model explicitly states 2019/2018, consistent with the visible year order; gold uses reciprocal 2018/2019. No source-precision difference.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S042",
+    "call_id": "Q224",
+    "id": "CME/2010/page_91.pdf-2",
+    "page_id": "CME/2010/page_91.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q224",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "reason": "The original question is truncated verbatim after 'what percentage of total other current assets is represented by'. Multiple asset categories and two years appear in the table. Model gives a justified nonnumeric abstention; no unique requested numerator exists in the prompt. It fails all numeric scoring rules where a human target is available, but this is an incomplete question, not evidence of input-precision error.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S043",
+    "call_id": "Q351",
+    "id": "PPG/2006/page_42.pdf-2",
+    "page_id": "PPG/2006/page_42.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q351",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "Source explicitly states asset retirement obligations were 10 million in both 2006 and 2005, versus 9 million in 2004. Model correctly gives zero increase in 2006. Reference uses the 2004 amount and computes a level ratio 10/9 rather than an increase; both the comparison year and operation are wrong.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S044",
+    "call_id": "Q061",
+    "id": "HIG/2004/page_140.pdf-3",
+    "page_id": "HIG/2004/page_140.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q061",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Table explicitly labels the total cumulative effect on net income as (23), composed of (54), +30 and +1. Model sums all components and agrees with the reported total. Reference sums only the two positive components and omits the -54 benefit-reserve effect.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S045",
+    "call_id": "Q086",
+    "id": "APD/2018/page_121.pdf-2",
+    "page_id": "APD/2018/page_121.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q086",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Question asks the decrease in total fair value and does not request a percentage. Post-text gives 4.1 in 2017 and 2.2 in 2018. Model returns the absolute decrease 1.9 in displayed monetary units, whereas gold computes a negative relative change. The absolute interpretation is reasonable; no source value has changed. The excerpt does not explicitly repeat its monetary magnitude unit, so the claimed million-dollar unit is not independently established here.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S046",
+    "call_id": "Q301",
+    "id": "AMT/2006/page_104.pdf-2",
+    "page_id": "AMT/2006/page_104.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q301",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "Source explicitly reports 74.9 million principal repurchased from 400.0 million previously outstanding, leaving 325.1. Model gives the positive portion paid off, 74.9/400.0, as asked. Gold represents this as the negative signed change in outstanding principal. Equal amounts and same base; sign convention rather than precision.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S047",
+    "call_id": "Q362",
+    "id": "DVN/2014/page_87.pdf-2",
+    "page_id": "DVN/2014/page_87.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q362",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "Source states commercial-paper borrowings of 932 million and a weighted-average borrowing rate of 0.44 percent. Under the question's rate-weighted-value interpretation, model correctly multiplies by 0.0044 to obtain 4.1008 million. Reference treats 0.44% as 0.44, producing a 100-fold scale error. This product is a rate-weighted amount, not a verified total interest payment for a specified holding period.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S048",
+    "call_id": "Q263",
+    "id": "DRE/2012/page_40.pdf-1",
+    "page_id": "DRE/2012/page_40.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q263",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "Source second-generation tenant improvements decline from 50,079 in 2011 to 26,643 in 2012 and the text explicitly discusses reductions in 2012. Question asks percentage reduction. Model gives the positive reduction magnitude with direction explained; gold uses signed negative change with the same starting denominator.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S049",
+    "call_id": "Q220",
+    "id": "ETR/2004/page_239.pdf-4",
+    "page_id": "ETR/2004/page_239.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q220",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "The document explicitly separates 2004-versus-2003 increases of 6.6 and 3.7 from 2003-versus-2002 increases of 7.1 and 4.4. Question asks the increase in 2003 relative to its net revenue 426.6. Model uses the 2003 components; gold uses the following year's increases. No difference in source precision.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S050",
+    "call_id": "Q057",
+    "id": "SNA/2013/page_84.pdf-2",
+    "page_id": "SNA/2013/page_84.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q057",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "alternative_precision_used": false,
+      "reason": "Model uses the change in net receivables (531.6-497.9), while reference uses gross receivables (546.5-516.9). The 4.1 difference is the change in doubtful-account allowance, not source rounding. Neither sales nor cash receipts nor a complete receivables roll-forward is disclosed in this excerpt; therefore the requested sales-minus-payments difference is not established without additional assumptions. Do not count the model response as a verified correct answer.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S051",
+    "call_id": "Q261",
+    "id": "ZBH/2007/page_67.pdf-1",
+    "page_id": "ZBH/2007/page_67.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q261",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "The table explicitly has consulting/professional fees of 1.0 in 2007 and 8.8 in 2006. Model computes forward change (1.0-8.8)/8.8. Gold reverses the years and divides by the 2007 value, producing +780% instead of a decrease.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S052",
+    "call_id": "Q194",
+    "id": "PM/2017/page_32.pdf-2",
+    "page_id": "PM/2017/page_32.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q194",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "Postretirement discount rates are 3.79% in 2017 and 3.68% in 2016. Their 0.11 percentage-point difference is 11 basis points, matching the human answer and model. Gold incorrectly subtracts 100 from the percentage-point difference instead of multiplying by 100.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S053",
+    "call_id": "Q307",
+    "id": "GIS/2015/page_62.pdf-1",
+    "page_id": "GIS/2015/page_62.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q307",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "May 2015 table gives interest-rate hedge losses of 36.5 and foreign-currency hedge gains of 7.7. Model explicitly reports the ratio of loss magnitude to gain, 36.5/7.7. Gold retains the signed negative loss value. The stated magnitude convention is a reasonable reading of a loss-to-gain ratio and uses the same source amounts.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S054",
+    "call_id": "Q389",
+    "id": "NCLH/2018/page_64.pdf-2",
+    "page_id": "NCLH/2018/page_64.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q389",
+      "primary_cause": "unresolved",
+      "formula_valid": false,
+      "reason": "Question asks actual capital expenditure growth from 2017 to 2018. Source instead provides anticipated capex 1.6/1.2/0.7 billion for 2019/2020/2021, while the 30.4/29.0 million 2018/2017 values are capitalized interest. Model explicitly substitutes the latter, a different quantity and thus an unsupported formula. Reference also uses wrong-year forecasts (and reverses their order). The requested actual capex values are absent, so the case remains unresolved with a separately recorded invalid model formula.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S055",
+    "call_id": "Q346",
+    "id": "SNA/2013/page_83.pdf-3",
+    "page_id": "SNA/2013/page_83.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q346",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "reason": "Reference uses accrued-warranty liabilities 17.0 and 18.9, unrelated to the requested customer payments versus recognized revenue. Model instead takes the 26.6-24.8 change in deferred subscription revenue, a relevant liability. However, the excerpt provides neither a complete receipt/revenue reconciliation nor a precise period/scope for the question; that balance movement cannot unconditionally establish the requested cash-versus-revenue difference. The reference row is wrong, but full model validity remains unresolved.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S056",
+    "call_id": "Q287",
+    "id": "LMT/2015/page_89.pdf-4",
+    "page_id": "LMT/2015/page_89.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q287",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "Source explicitly states issuance costs of 48 million dollars for 7.0 billion dollars of November 2015 notes. Model converts the note principal to 7,000 million and obtains a 0.6857% cost share, consistent with human 0.69%. Gold divides 48 by 7.0 without reconciling monetary units. This is a unit-encoding error, not a difference in source precision.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S057",
+    "call_id": "Q001",
+    "id": "UA/2011/page_69.pdf-1",
+    "page_id": "UA/2011/page_69.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q001",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Question asks for the percentage decrease from 5.3% to 3.5%. Reporting the positive magnitude (5.3-3.5)/5.3 with an explicit 'decreased' explanation is reasonable; the reference instead uses a signed change. Same displayed source values, so this is a sign convention rather than input precision.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S058",
+    "call_id": "Q387",
+    "id": "NWS/2019/page_116.pdf-1",
+    "page_id": "NWS/2019/page_116.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q387",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "reason": "The acquisition excerpt ends after stating total transaction value 210 million and cash 182 million 'net of 7 million of cash'. Model grosses cash up to 189 before subtracting from 210; reference subtracts net cash 182 directly. The truncated sentence does not unambiguously establish whether the 210 transaction-value total is on the same net-cash basis, and the question says non-cash assets rather than consideration. Both gross/net scope and the missing continuation prevent a definitive attribution to source rounding or a certified correct numeric answer.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S059",
+    "call_id": "Q385",
+    "id": "EL/2008/page_59.pdf-1",
+    "page_id": "EL/2008/page_59.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q385",
+      "primary_cause": "unresolved",
+      "formula_valid": false,
+      "reason": "Retain unresolved total-asset identification, but adopt a false formula-validity flag: dividing all-plan expected return by the U.S.-only rate mixes explicitly different scopes. The sensitivity table may identify a return-calculation base under further assumptions, not a uniquely established total-asset balance for the requested date. The reference is also unsupported.",
+      "reviewer": "root adjudication after group-blind source_final_a review",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json",
+      "final_override_file": "adjudication.json"
+    }
+  },
+  {
+    "review_id": "S060",
+    "call_id": "Q132",
+    "id": "JKHY/2019/page_18.pdf-1",
+    "page_id": "JKHY/2019/page_18.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q132",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Question requests percentage growth from 2016 to 2017. Source 2018 peer-group row has 151.16 and 177.26 for these years, and model divides the increase by the starting value. Gold subtracts the baseline a second time instead of dividing, yielding -125.06; human answer 17.3% agrees with the intended growth calculation.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S061",
+    "call_id": "Q092",
+    "id": "ETR/2016/page_23.pdf-4",
+    "page_id": "ETR/2016/page_23.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q092",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "alternative_precision_used": false,
+      "reason": "Source distinguishes a 154 million pretax sale gain from its 100 million net-of-tax amount. Model subtracts the former; reference subtracts the latter. This is a tax-basis difference, not precision. The 5829 table is specifically utility net revenue and its bridge does not identify this asset-sale gain; the excerpt does not establish that either amount is included in that metric. Hence neither adjustment is certified as the correct counterfactual from this excerpt.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S062",
+    "call_id": "Q114",
+    "id": "DVN/2018/page_35.pdf-4",
+    "page_id": "DVN/2018/page_35.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q114",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Source states a 2.6 billion gain, 2.2 billion after tax. Model uses the ordinary tax-rate convention tax/pretax gain, while gold uses tax/after-tax gain. Because the question says tax rate on net earnings, an after-tax denominator is also a possible literal interpretation. This is an ambiguous denominator convention with identical inputs, not source-precision substitution.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S063",
+    "call_id": "Q129",
+    "id": "UNP/2007/page_25.pdf-3",
+    "page_id": "UNP/2007/page_25.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q129",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Full table gives free cash flow 487 in 2007, 516 in 2006, and 234 in 2005. Question asks 2005 to 2007. Model uses 487-234; gold uses 487-516, the wrong starting year.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S064",
+    "call_id": "Q167",
+    "id": "ABMD/2007/page_78.pdf-3",
+    "page_id": "ABMD/2007/page_78.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q167",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Same reviewed source page as Q093 explicitly assigns 6.91 to 2006 and 8.75 to 2007. Model computes the requested forward growth (8.75-6.91)/6.91. Gold reverses the years and divides by the 2007 value.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S065",
+    "call_id": "Q149",
+    "id": "RSG/2018/page_135.pdf-2",
+    "page_id": "RSG/2018/page_135.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q149",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Question asks percentage decline. Equity allocation falls from 30% (2017 actual) to 17% (2018 actual). Model returns the positive decline magnitude and explains its direction; gold uses signed negative change. Same input values and denominator, not source precision.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S066",
+    "call_id": "Q191",
+    "id": "DG/2005/page_44.pdf-3",
+    "page_id": "DG/2005/page_44.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q191",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "Current-cost excess over LIFO is 5.8 at February 2006 and 6.3 at January 2005. Question asks cost difference over LIFO in the last two years, without explicitly requesting a sum. Model computes the change in the excess, also explicitly stated as a 0.5 reserve decrease; gold sums the two year-end levels. This is a plausible alternative reading, not precision.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false,
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S067",
+    "call_id": "Q030",
+    "id": "CDW/2015/page_93.pdf-2",
+    "page_id": "CDW/2015/page_93.pdf",
+    "group": "witness",
+    "first": {
+      "call_id": "Q030",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Full table gives basic shares 156.6 million (2013), 170.6 million (2014); post_text gives plan expenses 17.3 and 21.9 million respectively. Dollars expensed per share is expense/shares. Model correctly computes 17.3/156.6 - 21.9/170.6; gold inverts both fractions, producing shares per dollar. The negative difference is explicitly explained as lower expense per share.",
+      "original_review_file": "review_root.json"
+    }
+  },
+  {
+    "review_id": "S068",
+    "call_id": "Q108",
+    "id": "CMCSA/2008/page_36.pdf-3",
+    "page_id": "CMCSA/2008/page_36.pdf",
+    "group": "control",
+    "first": {
+      "call_id": "Q108",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "The full table columns are 2008, 2007, 2006. Question asks 2006: customer-premises equipment is 2321 and total capital expenditure is 4244. Model uses those values. Gold uses 3147 and 5545 from 2008.",
+      "original_review_file": "review_root.json"
+    }
+  }
+]

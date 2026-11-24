@@ -1,0 +1,1 @@
+{"answer":"18.75","unit":"percent","expression":"2.7 / 14.4 * 100","low":"18.3391003460","high":"19.1637630662","reliable_digits":"1","explanation":"Allowing each billion-dollar figure to vary by 0.05 gives these bounds, supporting one reliable significant digit."}

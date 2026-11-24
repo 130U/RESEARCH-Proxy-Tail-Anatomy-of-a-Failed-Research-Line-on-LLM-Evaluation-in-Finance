@@ -1,0 +1,5 @@
+{
+    "review_id": "R053",
+    "verdict": "invalid",
+    "reason": "The bound amounts are operating lease commitments rather than notes, and the calculation merely sums three years without dividing by a total to obtain a percentage."
+  }

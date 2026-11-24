@@ -1,0 +1,1 @@
+{"answer":"606.4516129032258","unit":"million dollars","expression":"47.0 / (7.75 / 100)","low":"605.4158607350097","high":"607.4887023886378","reliable_digits":"2","explanation":"This implied asset value assumes the 7.75% U.S. plan rate applies to the entire $47.0 million expected return; international plan rates differ."}

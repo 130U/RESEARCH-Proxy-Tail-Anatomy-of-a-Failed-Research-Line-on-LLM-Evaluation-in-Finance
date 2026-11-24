@@ -1,0 +1,1 @@
+{"answer":"49.0775367739","unit":"percent","expression":"(7874 / 16044) * 100","low":"49.0728910218","high":"49.0821828155","reliable_digits":"4","explanation":"Divide compensation and benefits by total liabilities; bounds use ±0.5 million for each figure, giving uncertainty of about ±0.00465 percentage points."}

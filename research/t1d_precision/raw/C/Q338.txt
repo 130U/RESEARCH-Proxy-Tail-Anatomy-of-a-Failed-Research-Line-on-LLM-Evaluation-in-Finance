@@ -1,0 +1,1 @@
+{"answer":"10.41936279","unit":"percent","expression":"(7167.1 - 6490.8) / 6490.8 * 100","low":"10.41774190","high":"10.42098371","reliable_digits":"4","explanation":"Each total has rounding uncertainty of ±0.05 million; both percentage bounds round to 10.42%, supporting four significant digits."}

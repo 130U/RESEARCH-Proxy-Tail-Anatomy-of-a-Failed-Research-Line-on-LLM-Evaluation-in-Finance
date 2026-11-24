@@ -1,0 +1,1 @@
+{"answer":"67.53571428571429","unit":"percent","expression":"(945.5 / (1.4 * 1000)) * 100","low":"65.20344827586207","high":"70.04074074074074","reliable_digits":"1","explanation":"Allowing rounding of ±0.05 million and ±0.05 billion gives these bounds, which both round to 70% at one significant digit."}

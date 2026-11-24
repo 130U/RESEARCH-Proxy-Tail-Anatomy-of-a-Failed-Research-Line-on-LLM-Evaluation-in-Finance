@@ -1,0 +1,1 @@
+{"answer":"2.695733708392","unit":"percent","expression":"(7.1 + 4.4) / 426.6 * 100","low":"2.671979374194","high":"2.719493611534","reliable_digits":"2","explanation":"The listed expense increases total $11.5 million; allowing ±$0.05 million rounding uncertainty per input leaves two significant digits reliable."}

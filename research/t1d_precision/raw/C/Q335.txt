@@ -1,0 +1,1 @@
+{"answer":"2.5929203539823","unit":"billion dollars","expression":"2.93 / (1 + 13 / 100)","low":"2.5770925110132","high":"2.6088888888889","reliable_digits":"2","explanation":"The bounds divide the rounded 2017 income range of 2.925–2.935 billion by growth factors ranging from 1.125 to 1.135."}

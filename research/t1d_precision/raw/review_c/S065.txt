@@ -1,0 +1,7 @@
+{
+    "call_id": "S065",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 2, Equity securities, shows actual allocations of 30% in 2017 and 17% in 2018. Using the 2017 allocation of 30% as denominator, (30−17)/30×100 gives a positive decline magnitude of 43.33%, a reasonable interpretation of 'percentage decline'; the reference reports signed change."
+  }

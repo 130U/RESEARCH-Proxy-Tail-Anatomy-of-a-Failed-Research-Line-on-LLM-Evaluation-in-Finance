@@ -1,0 +1,1 @@
+{"answer":"0.9708737864","unit":"percent","expression":"(270.4 - 267.8) / 267.8 * 100","low":"0.9333582229","high":"1.0084033613","reliable_digits":"0","explanation":"Net interest expense increased, but rounding allows a percentage change spanning different leading significant digits."}

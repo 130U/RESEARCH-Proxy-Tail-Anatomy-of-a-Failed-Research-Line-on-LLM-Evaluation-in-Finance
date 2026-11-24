@@ -1,0 +1,1 @@
+{"answer":"16.9197396963","unit":"percent","expression":"1014 / 5993 * 100","low":"16.9099858180","high":"16.9294952023","reliable_digits":"3","explanation":"The percentage uses 2007 scalable infrastructure spending divided by total capital expenditures, with each input rounded to the nearest $1 million."}

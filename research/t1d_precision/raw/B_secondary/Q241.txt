@@ -1,0 +1,1 @@
+{"answer":"-1.69423155","unit":"percent","expression":"(243.7 - 247.9) / 247.9 * 100","low":"-1.73422061","high":"-1.65422635","reliable_digits":"2","explanation":"Allowing each total to vary by 0.05 million gives these bounds, both of which round to a 1.7% decrease."}

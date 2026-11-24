@@ -1,0 +1,1 @@
+{"answer":"10.8433734939759","unit":"percent","expression":"(92 - 83) / 83 * 100","low":"9.58083832335329","high":"12.1212121212121","reliable_digits":"1","explanation":"Allowing ±$0.5 million for each dividend figure gives these bounds, which both round to 10% at one significant digit."}

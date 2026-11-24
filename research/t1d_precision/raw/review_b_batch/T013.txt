@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R193",
+    "verdict": "uncertain",
+    "reason": "The calculation uses rounded 2018–2022 estimates, but the question does not clearly identify their five-year sum as the intended total amortization expense."
+  },
+  {
+    "review_id": "R194",
+    "verdict": "uncertain",
+    "reason": "The rounded estimates are correctly bound, but the malformed wording 'from to 20192018' leaves the intended ratio direction ambiguous."
+  },
+  {
+    "review_id": "R195",
+    "verdict": "valid",
+    "reason": "The bound amounts are rounded utility net revenues in millions, and subtracting 2014 revenue from 2015 revenue and dividing by 2014 revenue correctly measures the percentage change."
+  },
+  {
+    "review_id": "R196",
+    "verdict": "valid",
+    "reason": "The table identifies rounded 2003 asset amounts of $5.3 billion and $17.7 billion for the respective vehicle categories, supporting the stated ratio."
+  },
+  {
+    "review_id": "R197",
+    "verdict": "valid",
+    "reason": "The rounded year-end liability balances of $99 million for 2008 and $110 million for 2007 correctly yield the signed net change in millions."
+  },
+  {
+    "review_id": "R198",
+    "verdict": "valid",
+    "reason": "The source explicitly identifies approximately $17.7 million and $19.1 million of impairment charges and net losses for 2004 and 2003, supporting the change relative to 2003."
+  },
+  {
+    "review_id": "R199",
+    "verdict": "valid",
+    "reason": "The rounded free cash flow amounts of $1,415 million for 2010 and $699 million for 2009 are correctly bound and compared using the 2009 denominator."
+  },
+  {
+    "review_id": "R200",
+    "verdict": "uncertain",
+    "reason": "The rounded 2017 aggregate cost and scaled share volume support an average repurchase price, but the excerpt does not identify the company as AWK."
+  },
+  {
+    "review_id": "R201",
+    "verdict": "valid",
+    "reason": "The rounded collateral fair values of $24,296 million for 2012 and $29,002 million for 2011 support the signed percentage change using 2011 as the base."
+  },
+  {
+    "review_id": "R202",
+    "verdict": "valid",
+    "reason": "The rounded loss magnitudes of $1.2 billion and $2.2 billion correctly produce a negative percentage decline, indicating that the operating loss actually increased."
+  },
+  {
+    "review_id": "R203",
+    "verdict": "uncertain",
+    "reason": "Subtracting the reported aggregate principal and penalty from redemption cost isolates accrued interest paid at redemption, but the excerpt does not establish total interest expense incurred on the notes."
+  },
+  {
+    "review_id": "R204",
+    "verdict": "valid",
+    "reason": "The bound rounded impairment charges are $11.2 million for 2014 and $15.9 million for 2013, so their subtraction correctly gives the signed change in US$ millions."
+  },
+  {
+    "review_id": "R205",
+    "verdict": "invalid",
+    "reason": "The calculation compares aggregate debt maturities in 2011 and 2010 rather than measuring the effect of the floating rate notes maturing in 2010."
+  },
+  {
+    "review_id": "R206",
+    "verdict": "valid",
+    "reason": "The rounded December 2012 maximum exposure of $3.9 billion divided by the corresponding $12.8 billion unpaid principal balance correctly measures the requested proportion."
+  },
+  {
+    "review_id": "R207",
+    "verdict": "valid",
+    "reason": "The rounded aggregate commitments of $136,462 thousand due in 2019 and $1,184,594 thousand in total correctly support the requested share as of December 2016."
+  },
+  {
+    "review_id": "R208",
+    "verdict": "invalid",
+    "reason": "Adding the $2.7 billion repayment to December's $31.2 billion carrying value creates an unsupported denominator, especially since the source says new debt primarily financed the repayment."
+  }
+]

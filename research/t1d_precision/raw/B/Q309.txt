@@ -1,0 +1,1 @@
+{"answer":"70","unit":"million dollars","expression":"34 + 23 + 13","low":"68.5","high":"71.5","reliable_digits":"1","explanation":"The three annual payments sum to $70 million, with rounding uncertainty of $0.5 million per payment."}

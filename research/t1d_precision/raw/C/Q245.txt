@@ -1,0 +1,1 @@
+{"answer":"-10","unit":"percentage points","expression":"50 - 60","low":"-11","high":"-9","reliable_digits":"1","explanation":"The hedged share decreased from 60% to 50%; rounding allows a decrease of 9 to 11 percentage points."}

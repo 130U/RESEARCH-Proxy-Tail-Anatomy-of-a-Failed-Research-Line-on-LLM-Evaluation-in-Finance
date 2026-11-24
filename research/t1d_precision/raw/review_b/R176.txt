@@ -1,0 +1,5 @@
+{
+    "review_id": "R176",
+    "verdict": "invalid",
+    "reason": "The $2.3 million numerator belongs to 2011, whereas the requested 2010 collateral amount is $19.3 million."
+  }

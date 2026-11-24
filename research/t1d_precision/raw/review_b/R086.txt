@@ -1,0 +1,5 @@
+{
+    "review_id": "R086",
+    "verdict": "valid",
+    "reason": "The source reports aggregate open-market repurchases as rounded quantities of 0.6 million and 0.7 million shares for 2018 and 2017, and adding them gives the combined million shares."
+  }

@@ -1,0 +1,174 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R146",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "table of contents although our ownership interest in each of our cellulose derivatives ventures exceeds 20% ( 20 % ) , we account for these investments using the cost method of accounting because we determined that we cannot exercise significant influence over these entities due to local government investment in and influence over these entities , limitations on our involvement in the day-to-day operations and the present inability of the entities to provide timely financial information prepared in accordance with generally accepted accounting principles in the united states of america ( \"us gaap\" ) ."
+      },
+      {
+        "location": "text_1",
+        "text": "other equity method investments infraservs ."
+      },
+      {
+        "location": "text_2",
+        "text": "we hold indirect ownership interests in several german infraserv groups that own and develop industrial parks and provide on-site general and administrative support to tenants ."
+      },
+      {
+        "location": "text_3",
+        "text": "our ownership interest in the equity investments in infraserv affiliates are as follows : as of december 31 , 2016 ( in percentages ) ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "As of December 31, 2016 (In percentages)"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "InfraServ GmbH & Co. Gendorf KG",
+          "39"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "InfraServ GmbH & Co. Hoechst KG",
+          "32"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "InfraServ GmbH & Co. Knapsack KG",
+          "27"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_4",
+        "text": "research and development our businesses are innovation-oriented and conduct research and development activities to develop new , and optimize existing , production technologies , as well as to develop commercially viable new products and applications ."
+      },
+      {
+        "location": "text_5",
+        "text": "research and development expense was $ 78 million , $ 119 million and $ 86 million for the years ended december 31 , 2016 , 2015 and 2014 , respectively ."
+      },
+      {
+        "location": "text_6",
+        "text": "we consider the amounts spent during each of the last three fiscal years on research and development activities to be sufficient to execute our current strategic initiatives ."
+      },
+      {
+        "location": "text_7",
+        "text": "intellectual property we attach importance to protecting our intellectual property , including safeguarding our confidential information and through our patents , trademarks and copyrights , in order to preserve our investment in research and development , manufacturing and marketing ."
+      },
+      {
+        "location": "text_8",
+        "text": "patents may cover processes , equipment , products , intermediate products and product uses ."
+      },
+      {
+        "location": "text_9",
+        "text": "we also seek to register trademarks as a means of protecting the brand names of our company and products ."
+      },
+      {
+        "location": "text_10",
+        "text": "patents ."
+      },
+      {
+        "location": "text_11",
+        "text": "in most industrial countries , patent protection exists for new substances and formulations , as well as for certain unique applications and production processes ."
+      },
+      {
+        "location": "text_12",
+        "text": "however , we do business in regions of the world where intellectual property protection may be limited and difficult to enforce ."
+      },
+      {
+        "location": "text_13",
+        "text": "confidential information ."
+      },
+      {
+        "location": "text_14",
+        "text": "we maintain stringent information security policies and procedures wherever we do business ."
+      },
+      {
+        "location": "text_15",
+        "text": "such information security policies and procedures include data encryption , controls over the disclosure and safekeeping of confidential information and trade secrets , as well as employee awareness training ."
+      },
+      {
+        "location": "text_16",
+        "text": "trademarks ."
+      },
+      {
+        "location": "text_17",
+        "text": "aoplus ae , ateva ae , avicor ae , britecoat ae , celanese ae , celanex ae , celcon ae , celfx ae , celstran ae , celvolit ae , clarifoil ae , duroset ae , ecovae ae , factor ae , fortron ae , gur ae , hostaform ae , impet ae , mowilith ae , metalx ae , mt ae , nutrinova ae , qorus ae , riteflex ae , slidex 2122 , sunett ae , tcx ae , thermx ae , tufcor ae , vantage ae , vantageplus 2122 , vectra ae , vinamul ae , vitaldose ae , zenite ae and certain other branded products and services named in this document are registered or reserved trademarks or service marks owned or licensed by celanese ."
+      },
+      {
+        "location": "text_18",
+        "text": "the foregoing is not intended to be an exhaustive or comprehensive list of all registered or reserved trademarks and service marks owned or licensed by celanese ."
+      },
+      {
+        "location": "text_19",
+        "text": "fortron ae is a registered trademark of fortron industries llc ."
+      },
+      {
+        "location": "text_20",
+        "text": "hostaform ae is a registered trademark of hoechst gmbh ."
+      },
+      {
+        "location": "text_21",
+        "text": "mowilith ae is a registered trademark of celanese in most european countries ."
+      },
+      {
+        "location": "text_22",
+        "text": "we monitor competitive developments and defend against infringements on our intellectual property rights ."
+      },
+      {
+        "location": "text_23",
+        "text": "neither celanese nor any particular business segment is materially dependent upon any one patent , trademark , copyright or trade secret ."
+      },
+      {
+        "location": "text_24",
+        "text": "environmental and other regulation matters pertaining to environmental and other regulations are discussed in item 1a ."
+      },
+      {
+        "location": "text_25",
+        "text": "risk factors , as well as note 2 - summary of accounting policies , note 16 - environmental and note 24 - commitments and contingencies in the accompanying consolidated financial statements. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the net change in the amount spent for research and development in 2015 compare to 2014?",
+  "reference_program": "subtract(119, 86)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "119",
+      "raw": "119",
+      "location": "text_5:53",
+      "context": "research and development expense was $ 78 million , $ 119 million and $ 86 million for the years ended december 31 , 2016 , 2015 and 2014 , respectively ."
+    },
+    "x1": {
+      "program_token": "86",
+      "raw": "86",
+      "location": "text_5:71",
+      "context": "research and development expense was $ 78 million , $ 119 million and $ 86 million for the years ended december 31 , 2016 , 2015 and 2014 , respectively ."
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"answer":"24.7440273037543","unit":"percent","expression":"(145 / 586) * 100","low":"24.6376811594203","high":"24.8505550811272","reliable_digits":"2","explanation":"Allowing each acreage figure to vary by 0.5 thousand acres gives the stated bounds and supports 2 significant digits."}

@@ -1,0 +1,1 @@
+{"answer":"-4.364596","unit":"percent","expression":"(4711 - 4926) / 4926 * 100","low":"-4.38445144","high":"-4.34473657","reliable_digits":"2","explanation":"Allowing each balance to vary by 0.5 million gives approximately 0.46% relative uncertainty, supporting two significant digits."}

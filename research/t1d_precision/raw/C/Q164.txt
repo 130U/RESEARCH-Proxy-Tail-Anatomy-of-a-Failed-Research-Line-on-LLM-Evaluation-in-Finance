@@ -1,0 +1,1 @@
+{"answer":"10.4821802935","unit":"percent","expression":"(5.27 - 4.77) / 4.77 * 100","low":"10.2617801047","high":"10.7030430220","reliable_digits":"1","explanation":"Each fair value may vary by $0.005, giving the stated range and one reliable significant digit."}

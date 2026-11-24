@@ -1,0 +1,1 @@
+{"answer":"446.6666666667","unit":"percent","expression":"(164 - 30) / 30 * 100","low":"436.0655737705","high":"457.6271186441","reliable_digits":"1","explanation":"Each displayed maturity amount may vary by $0.5 million, yielding these bounds and one reliable significant digit."}

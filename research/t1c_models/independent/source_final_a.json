@@ -1,0 +1,149 @@
+[
+  {
+    "call_id": "Q021",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The Net cash provided by operating activities row reports $1,229.0 million in 2004 and $1,410.5 million in 2006. The model correctly divides the $181.5 million increase by the 2004 base, producing 14.7681%. The reference's second subtraction should be division by 1,229.0; its executed -1,047.5 is not a percent increase."
+  },
+  {
+    "call_id": "Q038",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The narrative says the Relief Act reduced the 2010 minimum pension contribution from $525 million to approximately $460 million. Using the original $525 million denominator, (525-460)/525 gives the positive 12.381% decrease requested. The reference uses the same facts and denominator but reports a signed negative change."
+  },
+  {
+    "call_id": "Q076",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The narrative reports other-intangible amortization expense of approximately $77 million in 2016 and $75 million in 2017. The model's (77-75)/77 correctly expresses the decline as a positive 2.5974%, using the 2016 denominator. The reference instead expresses the same decline as a signed change."
+  },
+  {
+    "call_id": "Q092",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "The sale produced a $154 million pretax gain ($100 million net of tax), but the $5,829 million 2015 figure belongs to the separate Utility net-revenue bridge. The excerpt does not establish that this sale gain is included in that net-revenue figure. Thus neither the model's 5,829-154 nor the reference's 5,829-100 can be validated as net revenue without the sale. Pretax versus after-tax amounts are different concepts, not alternative precision."
+  },
+  {
+    "call_id": "Q104",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The post-text assigns derivative-counterparty collateral of $2.3 million to December 31, 2011 and $19.3 million to December 31, 2010. Overnight and other short-term borrowings were $0.5 million at December 31, 2010. The requested 2010 ratio is therefore 19.3/0.5=38.6; the reference selects the 2011 numerator."
+  },
+  {
+    "call_id": "Q129",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The Free cash flow row gives $234 million for 2005, $516 million for 2006, and $487 million for 2007. The requested 2005-to-2007 change is 487-234=$253 million. The reference incorrectly subtracts the 2006 value of 516."
+  },
+  {
+    "call_id": "Q149",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The Equity securities row shows actual allocation of 30% at December 31, 2017 and 17% at December 31, 2018, distinct from the 18% target. The model correctly uses (30-17)/30 for a positive 43.3333% relative decline. The reference uses the same actual allocations and base but gives the signed negative change."
+  },
+  {
+    "call_id": "Q191",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Current cost exceeded LIFO cost by approximately $6.3 million at January 28, 2005 and $5.8 million at February 3, 2006. The loosely worded cost difference over the last two years permits the model's stated interpretation as the change between those balances: 5.8-6.3=-$0.5 million. The reference instead sums the two balances to $12.1 million; the question does not explicitly request that sum."
+  },
+  {
+    "call_id": "Q223",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The 2017 Anios acquisition table records $511.7 million of goodwill, $798.3 million of total consideration transferred, and $605.5 million transferred to sellers after repaying $192.8 million of debt. The model explicitly treats purchasing price as total consideration and correctly computes 511.7/798.3=64.0987%. The reference uses net seller consideration; the question does not specify that narrower denominator."
+  },
+  {
+    "call_id": "Q232",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The estimated amortization table gives $54 million for 2019 and $64 million for 2018. Although the question's phrase 'from to 20192018' is malformed, the model clearly states the plausible orientation 2019 to 2018 and correctly calculates 54/64=0.84375. The reference reverses that orientation; the corrupted wording does not establish that the reverse is required."
+  },
+  {
+    "call_id": "Q245",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The narrative reports natural-gas purchase hedging of approximately 60% through the first quarter of 2004 and 50% through the second quarter. The model's 50-60=-10 percentage points is the chronological signed change in the percentage. The reference's +10 is the decrease magnitude; either sign convention is reasonable for this wording."
+  },
+  {
+    "call_id": "Q261",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The Consulting and professional fees row reports $8.8 million in 2006 and $1.0 million in 2007. Percent change from 2006 to 2007 uses the 2006 denominator: (1.0-8.8)/8.8=-88.6364%. The reference reverses the change and uses the ending $1.0 million denominator, calculating the reverse-period growth rate instead."
+  },
+  {
+    "call_id": "Q299",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "In the 2010 row, employee-related restructuring costs are $105 million and total restructuring costs are $156 million. The model's 105/156=67.3077% answers the employee-related share of aggregate 2010 restructuring costs. The reference denominator of $190 million is the employee-related subtotal across 2010 and 2011, not the aggregate restructuring-cost denominator requested."
+  },
+  {
+    "call_id": "Q307",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "At May 31, 2015, the after-tax hedge table shows $36.5 million of interest-rate losses and $7.7 million of foreign-currency gains. The model explicitly compares the loss magnitude with gains, so 36.5/7.7=4.74026 is a reasonable losses-to-gains ratio. The reference retains the negative accounting sign on the loss numerator."
+  },
+  {
+    "call_id": "Q319",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The narrative reports accrued interest-and-penalty liabilities of $1.2 billion at December 31, 2012 and $665 million at December 31, 2013. Converting the 2012 base to $1,200 million, (1200-665)/1200 gives the requested positive 44.5833% decrease. The reference gives the signed negative change. Converting billions to millions is not alternative source precision."
+  },
+  {
+    "call_id": "Q329",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The narrative reports $2.7 billion of senior-note repayments in July and August 2018 and a $31.2 billion total-debt carrying value at December 29, 2018. The model explicitly uses that December carrying-value denominator, giving 2.7/31.2=8.65385%. The reference adds the repayments to the December balance, producing an undisclosed $33.9 billion denominator. That reconstruction is unsupported, particularly because the source states that new June notes funded most of the repayments."
+  },
+  {
+    "call_id": "Q346",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "The table gives deferred subscription revenue of $26.6 million in 2013 and $24.8 million in 2012, but does not give client payments and actual recorded revenue for a specified period. The model calculates the $1.8 million year-over-year change in deferred subscription revenue, which is not established as the requested payments-minus-revenue difference. The reference instead subtracts the unrelated accrued-warranty balances of $17.0 million and $18.9 million. The excerpt and question do not identify a unique valid calculation."
+  },
+  {
+    "call_id": "Q351",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The asset-retirement-obligation narrative states that the accrued obligation was $10 million at both December 31, 2006 and December 31, 2005, versus $9 million in 2004. The increase during 2006 is therefore 10-10=$0 million. The reference uses the 2004 balance and calculates 10/9, a level ratio rather than the requested increase."
+  },
+  {
+    "call_id": "Q361",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "For October 2015, the excerpt discloses a $107 million regulatory liability with a $66 million net-of-tax amount. Their $41 million difference is an implied tax effect, but the excerpt does not identify a $41 million tax liability. The model's 107/(107-66) is arithmetically a gross-regulatory-liability-to-tax-effect ratio; its assertion that the denominator is tax liability is unverified. The reference instead divides that tax effect by the net-of-tax amount, also not the stated ratio."
+  },
+  {
+    "call_id": "Q385",
+    "primary_cause": "unresolved",
+    "formula_valid": false,
+    "alternative_precision_used": false,
+    "reason": "The fiscal 2008 expected return of $47.0 million refers to the pension plans collectively, whereas 7.75% applies only to the U.S. qualified plan; international-plan rates range from 3.00% to 8.25%. The model's 47/0.0775 therefore mixes scopes and cannot establish total plan assets. The $1.7 million expense sensitivity to a 25-basis-point rate change could imply an approximately $680 million return-calculation base, but the excerpt does not identify that base as actual total assets at a specified 2008 date. The reference also incorrectly treats the $1.7 million sensitivity as expected return and divides by 7.75%."
+  },
+  {
+    "call_id": "Q389",
+    "primary_cause": "unresolved",
+    "formula_valid": false,
+    "alternative_precision_used": false,
+    "reason": "Actual capital expenditures for 2017 and 2018 are absent. The model's $29.0 million and $30.4 million amounts are capitalized interest for those years, so its 4.8276% result answers a different metric. The reference's $1.2 billion and $1.6 billion amounts are anticipated capital expenditures for 2020 and 2019, respectively, not 2017 and 2018. Neither calculation establishes the requested capital-expenditure change."
+  }
+]

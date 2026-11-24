@@ -1,0 +1,1 @@
+{"answer":"27.4030086906","unit":"percent","expression":"(534648 - 419651) / 419651 * 100","low":"27.4027377479","high":"27.4032796339","reliable_digits":"5","explanation":"Each equity value may vary by 0.5 million, giving these bounds and five reliable significant digits."}

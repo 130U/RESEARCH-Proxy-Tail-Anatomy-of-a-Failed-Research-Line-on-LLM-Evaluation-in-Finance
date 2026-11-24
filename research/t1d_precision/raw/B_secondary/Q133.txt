@@ -1,0 +1,1 @@
+{"answer":"-7.9365079365","unit":"percent","expression":"(5.8 - 6.3) / 6.3 * 100","low":"-9.4488188976","high":"-6.4","reliable_digits":"0","explanation":"Allowing each amount to vary by $0.05 million gives this range, so no significant digit is reliable."}

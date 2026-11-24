@@ -1,0 +1,298 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R003",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "management 2019s discussion and analysis operating expenses our operating expenses are primarily influenced by compensation , headcount and levels of business activity ."
+      },
+      {
+        "location": "text_1",
+        "text": "in addition , see 201cuse of estimates 201d for expenses that may arise from litigation and regulatory proceedings ."
+      },
+      {
+        "location": "text_2",
+        "text": "compensation and benefits includes salaries , discretionary compensation , amortization of equity awards and other items such as benefits ."
+      },
+      {
+        "location": "text_3",
+        "text": "discretionary compensation is significantly impacted by , among other factors , the level of net revenues , overall financial performance , prevailing labor markets , business mix , the structure of our share-based compensation programs and the external environment ."
+      },
+      {
+        "location": "text_4",
+        "text": "the table below presents our operating expenses and total staff ( which includes employees , consultants and temporary staff ) . ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Year Ended December"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "<i>$ in millions</i>",
+          "2014",
+          "2013",
+          "2012"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Compensation and benefits",
+          "$12,691",
+          "$12,613",
+          "$12,944"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Brokerage, clearing, exchange anddistribution fees",
+          "2,501",
+          "2,341",
+          "2,208"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Market development",
+          "549",
+          "541",
+          "509"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Communications and technology",
+          "779",
+          "776",
+          "782"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Depreciation and amortization",
+          "1,337",
+          "1,322",
+          "1,738"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Occupancy",
+          "827",
+          "839",
+          "875"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Professional fees",
+          "902",
+          "930",
+          "867"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Insurance reserves<sup>1</sup>",
+          "—",
+          "176",
+          "598"
+        ]
+      },
+      {
+        "row_index": 10,
+        "cells": [
+          "Other expenses",
+          "2,585",
+          "2,931",
+          "2,435"
+        ]
+      },
+      {
+        "row_index": 11,
+        "cells": [
+          "Total non-compensation expenses",
+          "9,480",
+          "9,856",
+          "10,012"
+        ]
+      },
+      {
+        "row_index": 12,
+        "cells": [
+          "Total operating expenses",
+          "$22,171",
+          "$22,469",
+          "$22,956"
+        ]
+      },
+      {
+        "row_index": 13,
+        "cells": [
+          "Total staff at period-end",
+          "34,000",
+          "32,900",
+          "32,400"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_5",
+        "text": "1 ."
+      },
+      {
+        "location": "text_6",
+        "text": "consists of changes in reserves related to our americas reinsurance business , including interest credited to policyholder account balances , and expenses related to property catastrophe reinsurance claims ."
+      },
+      {
+        "location": "text_7",
+        "text": "in april 2013 , we completed the sale of a majority stake in our americas reinsurance business and no longer consolidate this business ."
+      },
+      {
+        "location": "text_8",
+        "text": "2014 versus 2013 ."
+      },
+      {
+        "location": "text_9",
+        "text": "operating expenses on the consolidated statements of earnings were $ 22.17 billion for 2014 , essentially unchanged compared with 2013 ."
+      },
+      {
+        "location": "text_10",
+        "text": "compensation and benefits expenses on the consolidated statements of earnings were $ 12.69 billion for 2014 , essentially unchanged compared with 2013 ."
+      },
+      {
+        "location": "text_11",
+        "text": "the ratio of compensation and benefits to net revenues for 2014 was 36.8% ( 36.8 % ) compared with 36.9% ( 36.9 % ) for 2013 ."
+      },
+      {
+        "location": "text_12",
+        "text": "total staff increased 3% ( 3 % ) during 2014 ."
+      },
+      {
+        "location": "text_13",
+        "text": "non-compensation expenses on the consolidated statements of earnings were $ 9.48 billion for 2014 , 4% ( 4 % ) lower than 2013 ."
+      },
+      {
+        "location": "text_14",
+        "text": "the decrease compared with 2013 included a decrease in other expenses , due to lower net provisions for litigation and regulatory proceedings and lower operating expenses related to consolidated investments , as well as a decline in insurance reserves , reflecting the sale of our americas reinsurance business in 2013 ."
+      },
+      {
+        "location": "text_15",
+        "text": "these decreases were partially offset by an increase in brokerage , clearing , exchange and distribution fees ."
+      },
+      {
+        "location": "text_16",
+        "text": "net provisions for litigation and regulatory proceedings for 2014 were $ 754 million compared with $ 962 million for 2013 ( both primarily comprised of net provisions for mortgage-related matters ) ."
+      },
+      {
+        "location": "text_17",
+        "text": "2014 included a charitable contribution of $ 137 million to goldman sachs gives , our donor-advised fund ."
+      },
+      {
+        "location": "text_18",
+        "text": "compensation was reduced to fund this charitable contribution to goldman sachs gives ."
+      },
+      {
+        "location": "text_19",
+        "text": "the firm asks its participating managing directors to make recommendations regarding potential charitable recipients for this contribution ."
+      },
+      {
+        "location": "text_20",
+        "text": "2013 versus 2012 ."
+      },
+      {
+        "location": "text_21",
+        "text": "operating expenses on the consolidated statements of earnings were $ 22.47 billion for 2013 , 2% ( 2 % ) lower than 2012 ."
+      },
+      {
+        "location": "text_22",
+        "text": "compensation and benefits expenses on the consolidated statements of earnings were $ 12.61 billion for 2013 , 3% ( 3 % ) lower compared with $ 12.94 billion for 2012 ."
+      },
+      {
+        "location": "text_23",
+        "text": "the ratio of compensation and benefits to net revenues for 2013 was 36.9% ( 36.9 % ) compared with 37.9% ( 37.9 % ) for 2012 ."
+      },
+      {
+        "location": "text_24",
+        "text": "total staff increased 2% ( 2 % ) during 2013 ."
+      },
+      {
+        "location": "text_25",
+        "text": "non-compensation expenses on the consolidated statements of earnings were $ 9.86 billion for 2013 , 2% ( 2 % ) lower than 2012 ."
+      },
+      {
+        "location": "text_26",
+        "text": "the decrease compared with 2012 included a decline in insurance reserves , reflecting the sale of our americas reinsurance business , and a decrease in depreciation and amortization expenses , primarily reflecting lower impairment charges and lower operating expenses related to consolidated investments ."
+      },
+      {
+        "location": "text_27",
+        "text": "these decreases were partially offset by an increase in other expenses , due to higher net provisions for litigation and regulatory proceedings , and higher brokerage , clearing , exchange and distribution fees ."
+      },
+      {
+        "location": "text_28",
+        "text": "net provisions for litigation and regulatory proceedings for 2013 were $ 962 million ( primarily comprised of net provisions for mortgage-related matters ) compared with $ 448 million for 2012 ( including a settlement with the board of governors of the federal reserve system ( federal reserve board ) regarding the independent foreclosure review ) ."
+      },
+      {
+        "location": "text_29",
+        "text": "2013 included a charitable contribution of $ 155 million to goldman sachs gives , our donor-advised fund ."
+      },
+      {
+        "location": "text_30",
+        "text": "compensation was reduced to fund this charitable contribution to goldman sachs gives ."
+      },
+      {
+        "location": "text_31",
+        "text": "the firm asks its participating managing directors to make recommendations regarding potential charitable recipients for this contribution ."
+      },
+      {
+        "location": "text_32",
+        "text": "38 goldman sachs 2014 annual report ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the growth rate in operating expenses in 2013?",
+  "reference_program": "subtract(22469, 22956), divide(#0, 22956)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "22469",
+      "raw": "22,469",
+      "location": "table_12:2",
+      "context": "Total operating expenses | "
+    },
+    "x1": {
+      "program_token": "22956",
+      "raw": "22,956",
+      "location": "table_12:3",
+      "context": "Total operating expenses | "
+    }
+  }
+}

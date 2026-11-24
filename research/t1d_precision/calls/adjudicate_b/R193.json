@@ -1,0 +1,23 @@
+{
+  "group": "adjudicate_b",
+  "id": "R193",
+  "status": "derived_from_batch",
+  "fresh_individual_session": false,
+  "fresh_source_session": true,
+  "source_batch_group": "adjudicate_b_batch",
+  "source_batch_id": "V002",
+  "source_call_file": "calls/adjudicate_b_batch/V002.json",
+  "source_raw_file": "raw/adjudicate_b_batch/V002.txt",
+  "source_array_index": 7,
+  "source_char_span": [
+    1919,
+    2187
+  ],
+  "derivation": "Verbatim JSON-object substring from the retained raw batch response. No judgment values or prose repaired.",
+  "thread_id": "01a1e8f1-99e9-79f3-bd22-5fc19bebc018",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "started_utc": "2026-11-17T09:58:29.789339+00:00",
+  "completed_utc": "2026-11-17T10:01:25.427446+00:00",
+  "tool_use_observed": false
+}

@@ -1,0 +1,1 @@
+{"answer":"448.5","unit":"million dollars","expression":"897 * 50 / 100","low":"443.7675","high":"453.2375","reliable_digits":"1","explanation":"Allowing for rounding, backlog ranges from 896.5 to 897.5 million dollars and the fixed-price share from 49.5 to 50.5 percent."}

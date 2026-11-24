@@ -1,0 +1,1 @@
+{"answer":"-9.0277777778","unit":"percent","expression":"(26.2 - 28.8) / 28.8 * 100","low":"-9.3587521664","high":"-8.6956521739","reliable_digits":"1","explanation":"Using the latest annual change, volatility decreased from 28.8% in 2014 to 26.2% in 2015, with each figure rounded to the nearest 0.1 percentage point."}

@@ -1,0 +1,67 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+management 2019s discussion and analysis 68 jpmorgan chase & co./2014 annual report consolidated results of operations the following section provides a comparative discussion of jpmorgan chase 2019s consolidated results of operations on a reported basis for the three-year period ended december 31 , 2014 .
+factors that relate primarily to a single business segment are discussed in more detail within that business segment .
+for a discussion of the critical accounting estimates used by the firm that affect the consolidated results of operations , see pages 161 2013165 .
+revenue year ended december 31 .
+
+TABLE
+(in millions) | 2014 | 2013 | 2012
+Investment banking fees | $6,542 | $6,354 | $5,808
+Principal transactions<sup>(a)</sup> | 10,531 | 10,141 | 5,536
+Lending- and deposit-related fees | 5,801 | 5,945 | 6,196
+Asset management, administration and commissions | 15,931 | 15,106 | 13,868
+Securities gains | 77 | 667 | 2,110
+Mortgage fees and related income | 3,563 | 5,205 | 8,687
+Card income | 6,020 | 6,022 | 5,658
+Other income<sup>(b)</sup> | 2,106 | 3,847 | 4,258
+Noninterest revenue | 50,571 | 53,287 | 52,121
+Net interest income | 43,634 | 43,319 | 44,910
+Total net revenue | $94,205 | $96,606 | $97,031
+
+( a ) included funding valuation adjustments ( ( 201cfva 201d ) effective 2013 ) ) and debit valuation adjustments ( 201cdva 201d ) on over-the-counter ( 201cotc 201d ) derivatives and structured notes , measured at fair value .
+fva and dva gains/ ( losses ) were $ 468 million and $ ( 1.9 ) billion for the years ended december 31 , 2014 and 2013 , respectively .
+dva losses were ( $ 930 ) million for the year ended december 31 , 2012 .
+( b ) included operating lease income of $ 1.7 billion , $ 1.5 billion and $ 1.3 billion for the years ended december 31 , 2014 , 2013 and 2012 , respectively .
+2014 compared with 2013 total net revenue for 2014 was down by $ 2.4 billion , or 2% ( 2 % ) , compared with the prior year , predominantly due to lower mortgage fees and related income , and lower other income .
+the decrease was partially offset by higher asset management , administration and commissions revenue .
+investment banking fees increased compared with the prior year , due to higher advisory and equity underwriting fees , largely offset by lower debt underwriting fees .
+the increase in advisory fees was driven by the combined impact of a greater share of fees for completed transactions , and growth in industry-wide fee levels .
+the increase in equity underwriting fees was driven by higher industry-wide issuance .
+the decrease in debt underwriting fees was primarily related to lower bond underwriting compared with a stronger prior year , and lower loan syndication fees on lower industry-wide fee levels .
+investment banking fee share and industry-wide data are sourced from dealogic , an external vendor .
+for additional information on investment banking fees , see cib segment results on pages 92 201396 , cb segment results on pages 97 201399 , and note 7 .
+principal transactions revenue , which consists of revenue primarily from the firm 2019s client-driven market-making and private equity investing activities , increased compared with the prior year as the prior year included a $ 1.5 billion loss related to the implementation of the fva framework for otc derivatives and structured notes .
+the increase was also due to higher private equity gains as a result of higher net gains on sales .
+the increase was partially offset by lower fixed income markets revenue in cib , primarily driven by credit- related and rates products , as well as the impact of business simplification initiatives .
+for additional information on principal transactions revenue , see cib and corporate segment results on pages 92 201396 and pages 103 2013104 , respectively , and note 7 .
+lending- and deposit-related fees decreased compared with the prior year , reflecting the impact of business simplification initiatives and lower trade finance revenue in cib .
+for additional information on lending- and deposit- related fees , see the segment results for ccb on pages 81 2013 91 , cib on pages 92 201396 and cb on pages 97 201399 .
+asset management , administration and commissions revenue increased compared with the prior year , reflecting higher asset management fees driven by net client inflows and the effect of higher market levels in am and ccb .
+the increase was offset partially by lower commissions and other fee revenue in ccb as a result of the exit of a non-core product in the second half of 2013 .
+for additional information on these fees and commissions , see the segment discussions of ccb on pages 81 201391 , am on pages 100 2013102 , and note 7 .
+securities gains decreased compared with the prior year , reflecting lower repositioning activity related to the firm 2019s investment securities portfolio .
+for additional information , see the corporate segment discussion on pages 103 2013104 and note 12 .
+mortgage fees and related income decreased compared with the prior year .
+the decrease was predominantly due to lower net production revenue driven by lower volumes due to higher levels of mortgage interest rates , and tighter margins .
+the decline in net production revenue was partially offset by a lower loss on the risk management of mortgage servicing rights ( 201cmsrs 201d ) .
+for additional information , see the segment discussion of ccb on pages 85 201387 and note 17 .
+card income remained relatively flat but included higher net interchange income on credit and debit cards due to growth in sales volume , offset by higher amortization of new account origination costs .
+for additional information on credit card income , see ccb segment results on pages 81 201391. .
+
+QUESTION
+what percentage of total net revenue was due to net interest income in 2013?

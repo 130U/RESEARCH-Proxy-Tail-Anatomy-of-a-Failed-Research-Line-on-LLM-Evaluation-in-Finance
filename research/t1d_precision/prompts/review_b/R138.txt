@@ -1,0 +1,196 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R138",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "duke realty corporation annual report , 200844 estimated with reasonable accuracy ."
+      },
+      {
+        "location": "text_1",
+        "text": "the percentage of completion estimates are based on a comparison of the contract expenditures incurred to the estimated final costs ."
+      },
+      {
+        "location": "text_2",
+        "text": "changes in job performance , job conditions and estimated profitability may result in revisions to costs and income and are recognized in the period in which the revisions are determined ."
+      },
+      {
+        "location": "text_3",
+        "text": "unbilled receivables on construction contracts totaled $ 22.7 million and $ 33.1 million at december 31 , 2008 and 2007 , respectively ."
+      },
+      {
+        "location": "text_4",
+        "text": "property sales gains on sales of all properties are recognized in accordance with sfas 66 ."
+      },
+      {
+        "location": "text_5",
+        "text": "the specific timing of the sale is measured against various criteria in sfas 66 related to the terms of the transactions and any continuing involvement in the form of management or financial assistance from the seller associated with the properties ."
+      },
+      {
+        "location": "text_6",
+        "text": "we make judgments based on the specific terms of each transaction as to the amount of the total profit from the transaction that we recognize considering factors such as continuing ownership interest we may have with the buyer ( 201cpartial sales 201d ) and our level of future involvement with the property or the buyer that acquires the assets ."
+      },
+      {
+        "location": "text_7",
+        "text": "if the sales criteria are not met , we defer gain recognition and account for the continued operations of the property by applying the finance , installment or cost recovery methods , as appropriate , until the full accrual sales criteria are met ."
+      },
+      {
+        "location": "text_8",
+        "text": "estimated future costs to be incurred after completion of each sale are included in the determination of the gain on sales ."
+      },
+      {
+        "location": "text_9",
+        "text": "gains from sales of depreciated property are included in discontinued operations and the proceeds from the sale of these held-for-rental properties are classified in the investing activities section of the consolidated statements of cash flows ."
+      },
+      {
+        "location": "text_10",
+        "text": "gains or losses from our sale of properties that were developed or repositioned with the intent to sell and not for long-term rental ( 201cbuild-for- sale 201d properties ) are classified as gain on sale of build-for-sale properties in the consolidated statements of operations ."
+      },
+      {
+        "location": "text_11",
+        "text": "all activities and proceeds received from the development and sale of these buildings are classified in the operating activities section of the consolidated statements of cash flows ."
+      },
+      {
+        "location": "text_12",
+        "text": "net income per common share basic net income per common share is computed by dividing net income available for common shareholders by the weighted average number of common shares outstanding for the period ."
+      },
+      {
+        "location": "text_13",
+        "text": "diluted net income per common share is computed by dividing the sum of net income available for common shareholders and the minority interest in earnings allocable to units not owned by us , by the sum of the weighted average number of common shares outstanding and minority units outstanding , including any potential dilutive securities for the period ."
+      },
+      {
+        "location": "text_14",
+        "text": "the following table reconciles the components of basic and diluted net income per common share ( in thousands ) : ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2008",
+          "2007",
+          "2006"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Basic net income available for common shareholders",
+          "$56,616",
+          "$217,692",
+          "$145,095"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Minority interest in earnings of common unitholders",
+          "2,968",
+          "14,399",
+          "14,238"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Diluted net income available for common shareholders",
+          "$59,584",
+          "$232,091",
+          "$159,333"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Weighted average number of common shares outstanding",
+          "146,915",
+          "139,255",
+          "134,883"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Weighted average partnership Units outstanding",
+          "7,619",
+          "9,204",
+          "13,186"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Dilutive shares for stock-based compensation plans (1)",
+          "507",
+          "1,155",
+          "1,324"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Weighted average number of common shares and potential dilutive securities",
+          "155,041",
+          "149,614",
+          "149,393"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_15",
+        "text": "weighted average number of common shares and potential dilutive securities 155041 149614 149393 ( 1 ) excludes ( in thousands of shares ) 7731 , 780 and 719 of anti-dilutive shares for the years ended december 31 , 2008 , 2007 and 2006 , respectively ."
+      },
+      {
+        "location": "text_16",
+        "text": "also excludes the 3.75% ( 3.75 % ) exchangeable senior notes due november 2011 ( 201cexchangeable notes 201d ) issued in 2006 , that have an anti-dilutive effect on earnings per share for the years ended december 31 , 2008 , 2007 and 2006 ."
+      },
+      {
+        "location": "text_17",
+        "text": "a joint venture partner in one of our unconsolidated companies has the option to convert a portion of its ownership in the joint venture to our common shares ."
+      },
+      {
+        "location": "text_18",
+        "text": "the effect of this option on earnings per share was anti-dilutive for the years ended december 31 , 2008 , 2007 and 2006. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the average basic net income available for common shareholders from 2006 to 2008 in millions",
+  "reference_program": "add(56616, 217692), add(145095, #0), add(#1, const_3), divide(#2, const_2)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "56616",
+      "raw": "56,616",
+      "location": "table_1:1",
+      "context": "Basic net income available for common shareholders | 2008"
+    },
+    "x1": {
+      "program_token": "217692",
+      "raw": "217,692",
+      "location": "table_1:2",
+      "context": "Basic net income available for common shareholders | 2007"
+    },
+    "x2": {
+      "program_token": "145095",
+      "raw": "145,095",
+      "location": "table_1:3",
+      "context": "Basic net income available for common shareholders | 2006"
+    }
+  }
+}

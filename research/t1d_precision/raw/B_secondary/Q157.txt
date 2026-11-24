@@ -1,0 +1,1 @@
+{"answer":"-20.4785262077","unit":"percent","expression":"(27,885 - 35,066) / 35,066 * 100","low":"-20.4810859367","high":"-20.4759664057","reliable_digits":"4","explanation":"Net derivative liabilities decreased by approximately 20.48%, with bounds allowing each reported liability to vary by 0.5 million."}

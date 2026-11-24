@@ -1,0 +1,1 @@
+{"answer":"20.1270928391","unit":"percent","expression":"(91,640 + 2,638 - 8,349) / 426,932 * 100","low":"20.1267179238","high":"20.1274677554","reliable_digits":"5","explanation":"The net adjustment is divided by adjusted retained earnings; allowing each amount to vary by 0.5 thousand yields bounds that both round to 20.127%."}

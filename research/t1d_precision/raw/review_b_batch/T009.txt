@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R129",
+    "verdict": "valid",
+    "reason": "The rounded development costs incurred are $802 million for 2003 and $711 million for 2004, and the calculation correctly measures the decrease relative to 2003."
+  },
+  {
+    "review_id": "R130",
+    "verdict": "valid",
+    "reason": "The bound amounts are rounded Utility net revenues for 2015 and 2014 in millions, and their increase divided by 2014 revenue correctly measures growth."
+  },
+  {
+    "review_id": "R131",
+    "verdict": "invalid",
+    "reason": "The calculation divides weighted-average shares by plan expenses, producing shares per dollar instead of the requested dollars expensed per share."
+  },
+  {
+    "review_id": "R132",
+    "verdict": "valid",
+    "reason": "The source assigns rounded expenses of $137 million to 2013 and $133 million to 2012, and the calculation correctly uses 2012 expense as the growth denominator."
+  },
+  {
+    "review_id": "R133",
+    "verdict": "uncertain",
+    "reason": "The approximately $34 million is subject to future amortization over 8–16 years, leaving ambiguous whether the question requests that share of the deferred loss or actual amortization expense."
+  },
+  {
+    "review_id": "R134",
+    "verdict": "valid",
+    "reason": "The source explicitly approximates aggregate rent expense at $655.0 million for 2014 and $495.2 million for 2013, and the calculation correctly measures change relative to 2013."
+  },
+  {
+    "review_id": "R135",
+    "verdict": "valid",
+    "reason": "The approximately $342 million and $301 million are PennyMac carrying values for 2017 and 2016 respectively, and the calculation correctly measures growth from 2016."
+  },
+  {
+    "review_id": "R136",
+    "verdict": "valid",
+    "reason": "The three bound amounts are approximate construction-in-progress impairment charges in millions for 2006, 2005 and 2004, and dividing their sum by the exact three-year count gives the requested average."
+  },
+  {
+    "review_id": "R137",
+    "verdict": "valid",
+    "reason": "The 176 and 850 miles describe measured lengths of owned private crude oil and refined products pipelines, appropriately treated as rounded quantities and added in miles."
+  },
+  {
+    "review_id": "R138",
+    "verdict": "invalid",
+    "reason": "Although the bound income amounts match 2006–2008, the program adds three and divides by two instead of averaging three years and converting thousands to millions."
+  },
+  {
+    "review_id": "R139",
+    "verdict": "valid",
+    "reason": "The rounded 2007 liability movements are expense of 38, cash payments of negative 110 and currency revaluation of positive 1 in millions, whose sum correctly gives the net change."
+  },
+  {
+    "review_id": "R140",
+    "verdict": "invalid",
+    "reason": "The calculation measures the relative difference between net reserves of 320 and direct gross reserves of 271, which does not answer the request for the environmental reserves summary."
+  },
+  {
+    "review_id": "R141",
+    "verdict": "invalid",
+    "reason": "The bound reclassification amounts concern initial adoption of SOP 03-1, whereas the prospective-method discussion concerns SFAS 123R, so the ratio is tied to the wrong adoption context."
+  },
+  {
+    "review_id": "R142",
+    "verdict": "uncertain",
+    "reason": "The $0.2 million charge covers only the 2007 predecessor period, so the excerpt does not establish whether it represents the 2007 expense required for the requested comparison."
+  },
+  {
+    "review_id": "R143",
+    "verdict": "invalid",
+    "reason": "The 82% debt and 18% equity allocations are defined policy targets rather than rounded measured quantities, so treating these inputs as rounded is unjustified."
+  },
+  {
+    "review_id": "R144",
+    "verdict": "valid",
+    "reason": "The source explicitly approximates operating lease rent expenses for fiscal 2012, 2011 and 2010 at $1.6 million, $2.7 million and $2.2 million, and summing them gives the requested total in millions."
+  }
+]

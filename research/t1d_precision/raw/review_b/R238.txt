@@ -1,0 +1,5 @@
+{
+    "review_id": "R238",
+    "verdict": "valid",
+    "reason": "The inputs are rounded weighted-average diluted share quantities in millions for 2013 and 2012, and subtracting 328.4 from 326.5 gives the requested signed change."
+  }

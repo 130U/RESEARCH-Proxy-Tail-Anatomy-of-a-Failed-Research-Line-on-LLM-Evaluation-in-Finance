@@ -1,0 +1,1 @@
+{"answer":"-30.43478260869565","unit":"percent","expression":"(1.6 - 2.3) / 2.3 * 100","low":"-34.04255319148936","high":"-26.66666666666667","reliable_digits":"1","explanation":"Expense decreased from $2.3 million to $1.6 million; allowing ±$0.05 million for each figure gives these bounds, which agree to one significant digit."}

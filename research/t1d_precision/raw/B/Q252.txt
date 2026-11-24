@@ -1,0 +1,1 @@
+{"answer":"13.043478260869565","unit":"percent","expression":"3 / 23 * 100","low":"10.638297872340425","high":"15.555555555555556","reliable_digits":"0","explanation":"Interpreting the question as the liquidity-products share, inflows were $3 billion of $23 billion, each rounded to the nearest billion."}

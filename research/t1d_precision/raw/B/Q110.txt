@@ -1,0 +1,1 @@
+{"answer":"80.4728475752","unit":"percent","expression":"(22.366 - 12.393) / 12.393 * 100","low":"80.4615322548","high":"80.4841638088","reliable_digits":"3","explanation":"Allowing each balance to vary by 0.0005 billion gives these bounds, which both round to 80.5% at three significant digits."}

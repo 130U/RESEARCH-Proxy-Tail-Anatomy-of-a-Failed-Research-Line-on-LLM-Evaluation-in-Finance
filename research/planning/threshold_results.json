@@ -1,0 +1,1554 @@
+{
+  "status": "mathematical_design_experiment",
+  "alpha_exact": "1/20",
+  "target_accuracy_interval_exact": [
+    "9/10",
+    "1"
+  ],
+  "votes": "artificial unanimous correct heads; one fixed evaluation point",
+  "real_audit_performed": false,
+  "trained_model": false,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "elapsed_seconds": 0.6843482999975095,
+  "rows": [
+    {
+      "layer_population": 2,
+      "layers": 3,
+      "threshold": 2,
+      "total_population": 6,
+      "direct": {
+        "samples": [
+          0,
+          2,
+          2
+        ],
+        "cost": 4,
+        "risk_exact": "0",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 6,
+        "risks_evaluated_after_cost_pruning": 4
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          2,
+          2
+        ],
+        "count_upper_box": [
+          2,
+          0,
+          0
+        ],
+        "cost": 4,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          2,
+          2,
+          2
+        ],
+        "cost": 6,
+        "risk_exact": "0",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          2,
+          2
+        ],
+        "cost": 4,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "0",
+      "saving_fraction": 0.0
+    },
+    {
+      "layer_population": 5,
+      "layers": 3,
+      "threshold": 2,
+      "total_population": 15,
+      "direct": {
+        "samples": [
+          0,
+          5,
+          5
+        ],
+        "cost": 10,
+        "risk_exact": "0",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 21,
+        "risks_evaluated_after_cost_pruning": 13
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          5,
+          5
+        ],
+        "count_upper_box": [
+          5,
+          0,
+          0
+        ],
+        "cost": 10,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          4,
+          4,
+          4
+        ],
+        "cost": 12,
+        "risk_exact": "1/25",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          5,
+          5
+        ],
+        "cost": 10,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "0",
+      "saving_fraction": 0.0
+    },
+    {
+      "layer_population": 10,
+      "layers": 3,
+      "threshold": 2,
+      "total_population": 30,
+      "direct": {
+        "samples": [
+          0,
+          10,
+          10
+        ],
+        "cost": 20,
+        "risk_exact": "0",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 66,
+        "risks_evaluated_after_cost_pruning": 41
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          10,
+          10
+        ],
+        "count_upper_box": [
+          10,
+          0,
+          0
+        ],
+        "cost": 20,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          8,
+          8,
+          8
+        ],
+        "cost": 24,
+        "risk_exact": "1/25",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          10,
+          10
+        ],
+        "cost": 20,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "0",
+      "saving_fraction": 0.0
+    },
+    {
+      "layer_population": 20,
+      "layers": 3,
+      "threshold": 2,
+      "total_population": 60,
+      "direct": {
+        "samples": [
+          0,
+          19,
+          19
+        ],
+        "cost": 38,
+        "risk_exact": "1/20",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 231,
+        "risks_evaluated_after_cost_pruning": 134
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          19,
+          19
+        ],
+        "count_upper_box": [
+          20,
+          0,
+          0
+        ],
+        "cost": 38,
+        "risk_exact": "1/20",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          16,
+          16,
+          16
+        ],
+        "cost": 48,
+        "risk_exact": "1/25",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          19,
+          20
+        ],
+        "cost": 39,
+        "risk_sum_exact": "1/20",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "0",
+      "saving_fraction": 0.0
+    },
+    {
+      "layer_population": 2,
+      "layers": 5,
+      "threshold": 3,
+      "total_population": 10,
+      "direct": {
+        "samples": [
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "cost": 6,
+        "risk_exact": "0",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 10,
+        "risks_evaluated_after_cost_pruning": 5
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "count_upper_box": [
+          2,
+          2,
+          0,
+          0,
+          0
+        ],
+        "cost": 6,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "cost": 10,
+        "risk_exact": "0",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "cost": 6,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "0",
+      "saving_fraction": 0.0
+    },
+    {
+      "layer_population": 5,
+      "layers": 5,
+      "threshold": 3,
+      "total_population": 25,
+      "direct": {
+        "samples": [
+          0,
+          0,
+          5,
+          5,
+          5
+        ],
+        "cost": 15,
+        "risk_exact": "0",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 56,
+        "risks_evaluated_after_cost_pruning": 24
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          5,
+          5,
+          5
+        ],
+        "count_upper_box": [
+          5,
+          5,
+          0,
+          0,
+          0
+        ],
+        "cost": 15,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "cost": 20,
+        "risk_exact": "1/125",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          5,
+          5,
+          5
+        ],
+        "cost": 15,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "0",
+      "saving_fraction": 0.0
+    },
+    {
+      "layer_population": 10,
+      "layers": 5,
+      "threshold": 3,
+      "total_population": 50,
+      "direct": {
+        "samples": [
+          0,
+          0,
+          10,
+          10,
+          10
+        ],
+        "cost": 30,
+        "risk_exact": "0",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 286,
+        "risks_evaluated_after_cost_pruning": 124
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          10,
+          10,
+          10
+        ],
+        "count_upper_box": [
+          10,
+          10,
+          0,
+          0,
+          0
+        ],
+        "cost": 30,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "cost": 35,
+        "risk_exact": "27/1000",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          10,
+          10,
+          10
+        ],
+        "cost": 30,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "0",
+      "saving_fraction": 0.0
+    },
+    {
+      "layer_population": 20,
+      "layers": 5,
+      "threshold": 3,
+      "total_population": 100,
+      "direct": {
+        "samples": [
+          0,
+          0,
+          19,
+          19,
+          19
+        ],
+        "cost": 57,
+        "risk_exact": "1/20",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 1771,
+        "risks_evaluated_after_cost_pruning": 677
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          19,
+          19,
+          19
+        ],
+        "count_upper_box": [
+          20,
+          20,
+          0,
+          0,
+          0
+        ],
+        "cost": 57,
+        "risk_exact": "1/20",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          13,
+          13,
+          13,
+          13,
+          13
+        ],
+        "cost": 65,
+        "risk_exact": "343/8000",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          19,
+          20,
+          20
+        ],
+        "cost": 59,
+        "risk_sum_exact": "1/20",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "0",
+      "saving_fraction": 0.0
+    },
+    {
+      "layer_population": 2,
+      "layers": 7,
+      "threshold": 4,
+      "total_population": 14,
+      "direct": {
+        "samples": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        "cost": 8,
+        "risk_exact": "0",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 15,
+        "risks_evaluated_after_cost_pruning": 6
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        "count_upper_box": [
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 8,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "cost": 14,
+        "risk_exact": "0",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        "cost": 8,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "0",
+      "saving_fraction": 0.0
+    },
+    {
+      "layer_population": 5,
+      "layers": 7,
+      "threshold": 4,
+      "total_population": 35,
+      "direct": {
+        "samples": [
+          0,
+          0,
+          0,
+          5,
+          5,
+          5,
+          5
+        ],
+        "cost": 20,
+        "risk_exact": "0",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 126,
+        "risks_evaluated_after_cost_pruning": 41
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          0,
+          5,
+          5,
+          5,
+          5
+        ],
+        "count_upper_box": [
+          5,
+          5,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 20,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cost": 21,
+        "risk_exact": "16/625",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          0,
+          5,
+          5,
+          5,
+          5
+        ],
+        "cost": 20,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "0",
+      "saving_fraction": 0.0
+    },
+    {
+      "layer_population": 10,
+      "layers": 7,
+      "threshold": 4,
+      "total_population": 70,
+      "direct": {
+        "samples": [
+          3,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "cost": 39,
+        "risk_exact": "28/625",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 1001,
+        "risks_evaluated_after_cost_pruning": 313
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          0,
+          10,
+          10,
+          10,
+          10
+        ],
+        "count_upper_box": [
+          10,
+          10,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 40,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "cost": 42,
+        "risk_exact": "16/625",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          0,
+          10,
+          10,
+          10,
+          10
+        ],
+        "cost": 40,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "1/40",
+      "saving_fraction": 0.025
+    },
+    {
+      "layer_population": 20,
+      "layers": 7,
+      "threshold": 4,
+      "total_population": 140,
+      "direct": {
+        "samples": [
+          0,
+          0,
+          0,
+          19,
+          19,
+          19,
+          19
+        ],
+        "cost": 76,
+        "risk_exact": "1/20",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 10626,
+        "risks_evaluated_after_cost_pruning": 2754
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          0,
+          19,
+          19,
+          19,
+          19
+        ],
+        "count_upper_box": [
+          20,
+          20,
+          20,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 76,
+        "risk_exact": "1/20",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "cost": 77,
+        "risk_exact": "6561/160000",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          0,
+          19,
+          20,
+          20,
+          20
+        ],
+        "cost": 79,
+        "risk_sum_exact": "1/20",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "0",
+      "saving_fraction": 0.0
+    },
+    {
+      "layer_population": 2,
+      "layers": 9,
+      "threshold": 5,
+      "total_population": 18,
+      "direct": {
+        "samples": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "cost": 9,
+        "risk_exact": "1/32",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 21,
+        "risks_evaluated_after_cost_pruning": 5
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "count_upper_box": [
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 10,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "cost": 9,
+        "risk_exact": "1/32",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "cost": 10,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "1/10",
+      "saving_fraction": 0.1
+    },
+    {
+      "layer_population": 5,
+      "layers": 9,
+      "threshold": 5,
+      "total_population": 45,
+      "direct": {
+        "samples": [
+          0,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cost": 23,
+        "risk_exact": "24/625",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 252,
+        "risks_evaluated_after_cost_pruning": 55
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "count_upper_box": [
+          5,
+          5,
+          5,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 25,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "cost": 27,
+        "risk_exact": "32/3125",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "cost": 25,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "2/25",
+      "saving_fraction": 0.08
+    },
+    {
+      "layer_population": 10,
+      "layers": 9,
+      "threshold": 5,
+      "total_population": 90,
+      "direct": {
+        "samples": [
+          2,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "cost": 42,
+        "risk_exact": "1/20",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 3003,
+        "risks_evaluated_after_cost_pruning": 468
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "count_upper_box": [
+          10,
+          10,
+          10,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 50,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "cost": 45,
+        "risk_exact": "1/32",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "cost": 50,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "4/25",
+      "saving_fraction": 0.16
+    },
+    {
+      "layer_population": 20,
+      "layers": 9,
+      "threshold": 5,
+      "total_population": 180,
+      "direct": {
+        "samples": [
+          4,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "cost": 84,
+        "risk_exact": "1/20",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 53130,
+        "risks_evaluated_after_cost_pruning": 6775
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          19,
+          19,
+          19,
+          19,
+          19
+        ],
+        "count_upper_box": [
+          20,
+          20,
+          20,
+          20,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 95,
+        "risk_exact": "1/20",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "cost": 90,
+        "risk_exact": "1/32",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          19,
+          20,
+          20,
+          20,
+          20
+        ],
+        "cost": 99,
+        "risk_sum_exact": "1/20",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "11/95",
+      "saving_fraction": 0.11578947368421053
+    },
+    {
+      "layer_population": 2,
+      "layers": 11,
+      "threshold": 6,
+      "total_population": 22,
+      "direct": {
+        "samples": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "cost": 10,
+        "risk_exact": "1/32",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 28,
+        "risks_evaluated_after_cost_pruning": 6
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "count_upper_box": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 12,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "cost": 11,
+        "risk_exact": "1/64",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "cost": 12,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "1/6",
+      "saving_fraction": 0.16666666666666666
+    },
+    {
+      "layer_population": 5,
+      "layers": 11,
+      "threshold": 6,
+      "total_population": 55,
+      "direct": {
+        "samples": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "cost": 22,
+        "risk_exact": "729/15625",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 462,
+        "risks_evaluated_after_cost_pruning": 34
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "count_upper_box": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 30,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "cost": 22,
+        "risk_exact": "729/15625",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "cost": 30,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "4/15",
+      "saving_fraction": 0.26666666666666666
+    },
+    {
+      "layer_population": 10,
+      "layers": 11,
+      "threshold": 6,
+      "total_population": 110,
+      "direct": {
+        "samples": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "cost": 44,
+        "risk_exact": "729/15625",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 8008,
+        "risks_evaluated_after_cost_pruning": 398
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "count_upper_box": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 60,
+        "risk_exact": "0",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "cost": 44,
+        "risk_exact": "729/15625",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "cost": 60,
+        "risk_sum_exact": "0",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "4/15",
+      "saving_fraction": 0.26666666666666666
+    },
+    {
+      "layer_population": 20,
+      "layers": 11,
+      "threshold": 6,
+      "total_population": 220,
+      "direct": {
+        "samples": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "cost": 88,
+        "risk_exact": "729/15625",
+        "optimality": "global among fixed equal-cost per-layer uniform designs",
+        "sorted_tuples_enumerated": 230230,
+        "risks_evaluated_after_cost_pruning": 8311
+      },
+      "rectangle": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19
+        ],
+        "count_upper_box": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cost": 114,
+        "risk_exact": "1/20",
+        "optimality": "global among fixed joint-zero safe count-box procedures"
+      },
+      "balanced": {
+        "samples": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "cost": 88,
+        "risk_exact": "729/15625",
+        "optimality": "minimum within balanced designs only"
+      },
+      "bonferroni": {
+        "samples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          19,
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "cost": 119,
+        "risk_sum_exact": "1/20",
+        "optimality": "global among safe count boxes using a Bonferroni sum"
+      },
+      "saving_fraction_exact": "13/57",
+      "saving_fraction": 0.22807017543859648
+    }
+  ],
+  "negative_control_two_layer_and": {
+    "population_per_layer": 20,
+    "direct": {
+      "samples": [
+        0,
+        19
+      ],
+      "cost": 19,
+      "risk_exact": "1/20",
+      "optimality": "global among fixed equal-cost per-layer uniform designs",
+      "sorted_tuples_enumerated": 231,
+      "risks_evaluated_after_cost_pruning": 101
+    },
+    "rectangle": {
+      "samples": [
+        0,
+        19
+      ],
+      "count_upper_box": [
+        20,
+        0
+      ],
+      "cost": 19,
+      "risk_exact": "1/20",
+      "optimality": "global among fixed joint-zero safe count-box procedures"
+    }
+  },
+  "source_sha256": {
+    "threshold_design.py": "2eddf0a0d29621ecafedbdb23d31aebfe141f6fa63a2a4bb3a1a144ca508e8f1",
+    "impact_budget.md": "f47739ff3a07c7a6584370b86b5d04ce4dcb234c4848235664a918c861518e45"
+  },
+  "limitations": [
+    "No historical provenance, annotation, or model quality is certified.",
+    "Risk is worst probability of all-zero findings under a bad configuration, not audit success probability.",
+    "Optimality excludes adaptive, nonuniform-within-layer, randomized-allocation and unequal-cost designs.",
+    "Rectangle comparator must cover its reported count box, not just the downstream metric.",
+    "Structural separation does not establish originality."
+  ]
+}

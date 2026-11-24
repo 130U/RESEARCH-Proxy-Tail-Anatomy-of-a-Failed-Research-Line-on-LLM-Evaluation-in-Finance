@@ -1,0 +1,190 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R049",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "2018 ppg annual report and form 10-k 83 current open and active claims post-pittsburgh corning bankruptcy the company is aware of approximately 460 open and active asbestos-related claims pending against the company and certain of its subsidiaries ."
+      },
+      {
+        "location": "text_1",
+        "text": "these claims consist primarily of non-pc relationship claims and claims against a subsidiary of ppg ."
+      },
+      {
+        "location": "text_2",
+        "text": "the company is defending the remaining open and active claims vigorously ."
+      },
+      {
+        "location": "text_3",
+        "text": "since april 1 , 2013 , a subsidiary of ppg has been implicated in claims alleging death or injury caused by asbestos-containing products manufactured , distributed or sold by a north american architectural coatings business or its predecessors which was acquired by ppg ."
+      },
+      {
+        "location": "text_4",
+        "text": "all such claims have been either served upon or tendered to the seller for defense and indemnity pursuant to obligations undertaken by the seller in connection with the company 2019s purchase of the north american architectural coatings business ."
+      },
+      {
+        "location": "text_5",
+        "text": "the seller has accepted the defense of these claims subject to the terms of various agreements between the company and the seller ."
+      },
+      {
+        "location": "text_6",
+        "text": "the seller 2019s defense and indemnity obligations in connection with newly filed claims ceased with respect to claims filed after april 1 , 2018 ."
+      },
+      {
+        "location": "text_7",
+        "text": "ppg has established reserves totaling approximately $ 180 million for asbestos-related claims that would not be channeled to the trust which , based on presently available information , we believe will be sufficient to encompass all of ppg 2019s current and potential future asbestos liabilities ."
+      },
+      {
+        "location": "text_8",
+        "text": "these reserves include a $ 162 million reserve established in 2009 in connection with an amendment to the pc plan of reorganization ."
+      },
+      {
+        "location": "text_9",
+        "text": "these reserves , which are included within other liabilities on the accompanying consolidated balance sheets , represent ppg 2019s best estimate of its liability for these claims ."
+      },
+      {
+        "location": "text_10",
+        "text": "ppg does not have sufficient current claim information or settlement history on which to base a better estimate of this liability in light of the fact that the bankruptcy court 2019s injunction staying most asbestos claims against the company was in effect from april 2000 through may 2016 ."
+      },
+      {
+        "location": "text_11",
+        "text": "ppg will monitor the activity associated with its remaining asbestos claims and evaluate , on a periodic basis , its estimated liability for such claims , its insurance assets then available , and all underlying assumptions to determine whether any adjustment to the reserves for these claims is required ."
+      },
+      {
+        "location": "text_12",
+        "text": "the amount reserved for asbestos-related claims by its nature is subject to many uncertainties that may change over time , including ( i ) the ultimate number of claims filed ; ( ii ) the amounts required to resolve both currently known and future unknown claims ; ( iii ) the amount of insurance , if any , available to cover such claims ; ( iv ) the unpredictable aspects of the litigation process , including a changing trial docket and the jurisdictions in which trials are scheduled ; ( v ) the outcome of any trials , including potential judgments or jury verdicts ; ( vi ) the lack of specific information in many cases concerning exposure for which ppg is allegedly responsible , and the claimants 2019 alleged diseases resulting from such exposure ; and ( vii ) potential changes in applicable federal and/or state tort liability law ."
+      },
+      {
+        "location": "text_13",
+        "text": "all of these factors may have a material effect upon future asbestos- related liability estimates ."
+      },
+      {
+        "location": "text_14",
+        "text": "as a potential offset to any future asbestos financial exposure , under the pc plan of reorganization ppg retained , for its own account , the right to pursue insurance coverage from certain of its historical insurers that did not participate in the pc plan of reorganization ."
+      },
+      {
+        "location": "text_15",
+        "text": "while the ultimate outcome of ppg 2019s asbestos litigation cannot be predicted with certainty , ppg believes that any financial exposure resulting from its asbestos-related claims will not have a material adverse effect on ppg 2019s consolidated financial position , liquidity or results of operations ."
+      },
+      {
+        "location": "text_16",
+        "text": "environmental matters it is ppg 2019s policy to accrue expenses for environmental contingencies when it is probable that a liability has been incurred and the amount of loss can be reasonably estimated ."
+      },
+      {
+        "location": "text_17",
+        "text": "reserves for environmental contingencies are exclusive of claims against third parties and are generally not discounted ."
+      },
+      {
+        "location": "text_18",
+        "text": "in management 2019s opinion , the company operates in an environmentally sound manner and the outcome of the company 2019s environmental contingencies will not have a material effect on ppg 2019s financial position or liquidity ; however , any such outcome may be material to the results of operations of any particular period in which costs , if any , are recognized ."
+      },
+      {
+        "location": "text_19",
+        "text": "management anticipates that the resolution of the company 2019s environmental contingencies will occur over an extended period of time ."
+      },
+      {
+        "location": "text_20",
+        "text": "as of december 31 , 2018 and 2017 , ppg had reserves for environmental contingencies associated with ppg 2019s former chromium manufacturing plant in jersey city , n.j ."
+      },
+      {
+        "location": "text_21",
+        "text": "( 201cnew jersey chrome 201d ) and for other environmental contingencies , including national priority list sites and legacy glass and chemical manufacturing sites ."
+      },
+      {
+        "location": "text_22",
+        "text": "these reserves are reported as accounts payable and accrued liabilities and other liabilities in the accompanying consolidated balance sheet ."
+      },
+      {
+        "location": "text_23",
+        "text": "environmental reserves ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "($ in millions)",
+          "2018",
+          "2017"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "New Jersey Chrome",
+          "$151",
+          "$136"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Glass and chemical",
+          "90",
+          "71"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Other",
+          "50",
+          "51"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Total",
+          "$291",
+          "$258"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Current Portion",
+          "$105",
+          "$73"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_24",
+        "text": "notes to the consolidated financial statements ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percentage increase in the new jersey chrome environmental reserve in 2018?",
+  "reference_program": "subtract(151, 136), divide(#0, 136)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "151",
+      "raw": "151",
+      "location": "table_1:1",
+      "context": "New Jersey Chrome | 2018"
+    },
+    "x1": {
+      "program_token": "136",
+      "raw": "136",
+      "location": "table_1:2",
+      "context": "New Jersey Chrome | 2017"
+    }
+  }
+}

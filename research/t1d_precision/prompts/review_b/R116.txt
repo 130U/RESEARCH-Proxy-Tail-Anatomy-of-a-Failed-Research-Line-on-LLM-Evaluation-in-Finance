@@ -1,0 +1,1126 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R116",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "the following table summarizes the short-term borrowing activity for awcc for the years ended december 31: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2017",
+          "2016"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Average borrowings",
+          "$779",
+          "$850"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Maximum borrowings outstanding",
+          "1,135",
+          "1,016"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Weighted average interest rates, computed on daily basis",
+          "1.24%",
+          "0.78%"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Weighted average interest rates, as of December 31",
+          "1.61%",
+          "0.98%"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_1",
+        "text": "the credit facility requires the company to maintain a ratio of consolidated debt to consolidated capitalization of not more than 0.70 to 1.00 ."
+      },
+      {
+        "location": "text_2",
+        "text": "the ratio as of december 31 , 2017 was 0.59 to 1.00 ."
+      },
+      {
+        "location": "text_3",
+        "text": "none of the company 2019s borrowings are subject to default or prepayment as a result of a downgrading of securities , although such a downgrading could increase fees and interest charges under the company 2019s credit facility ."
+      },
+      {
+        "location": "text_4",
+        "text": "as part of the normal course of business , the company routinely enters contracts for the purchase and sale of water , energy , fuels and other services ."
+      },
+      {
+        "location": "text_5",
+        "text": "these contracts either contain express provisions or otherwise permit the company and its counterparties to demand adequate assurance of future performance when there are reasonable grounds for doing so ."
+      },
+      {
+        "location": "text_6",
+        "text": "in accordance with the contracts and applicable contract law , if the company is downgraded by a credit rating agency , especially if such downgrade is to a level below investment grade , it is possible that a counterparty would attempt to rely on such a downgrade as a basis for making a demand for adequate assurance of future performance ."
+      },
+      {
+        "location": "text_7",
+        "text": "depending on the company 2019s net position with the counterparty , the demand could be for the posting of collateral ."
+      },
+      {
+        "location": "text_8",
+        "text": "in the absence of expressly agreed provisions that specify the collateral that must be provided , the obligation to supply the collateral requested will be a function of the facts and circumstances of the company 2019s situation at the time of the demand ."
+      },
+      {
+        "location": "text_9",
+        "text": "if the company can reasonably claim that it is willing and financially able to perform its obligations , it may be possible that no collateral would need to be posted or that only an amount equal to two or three months of future payments should be sufficient ."
+      },
+      {
+        "location": "text_10",
+        "text": "the company does not expect to post any collateral which will have a material adverse impact on the company 2019s results of operations , financial position or cash flows ."
+      },
+      {
+        "location": "text_11",
+        "text": "note 12 : general taxes the following table summarizes the components of general tax expense for the years ended december 31 : 2017 2016 2015 gross receipts and franchise ."
+      },
+      {
+        "location": "text_12",
+        "text": "."
+      },
+      {
+        "location": "text_13",
+        "text": "."
+      },
+      {
+        "location": "text_14",
+        "text": "."
+      },
+      {
+        "location": "text_15",
+        "text": "."
+      },
+      {
+        "location": "text_16",
+        "text": "."
+      },
+      {
+        "location": "text_17",
+        "text": "."
+      },
+      {
+        "location": "text_18",
+        "text": "."
+      },
+      {
+        "location": "text_19",
+        "text": "."
+      },
+      {
+        "location": "text_20",
+        "text": "."
+      },
+      {
+        "location": "text_21",
+        "text": "."
+      },
+      {
+        "location": "text_22",
+        "text": "."
+      },
+      {
+        "location": "text_23",
+        "text": "."
+      },
+      {
+        "location": "text_24",
+        "text": "."
+      },
+      {
+        "location": "text_25",
+        "text": "."
+      },
+      {
+        "location": "text_26",
+        "text": "."
+      },
+      {
+        "location": "text_27",
+        "text": "."
+      },
+      {
+        "location": "text_28",
+        "text": "."
+      },
+      {
+        "location": "text_29",
+        "text": "."
+      },
+      {
+        "location": "text_30",
+        "text": "."
+      },
+      {
+        "location": "text_31",
+        "text": "."
+      },
+      {
+        "location": "text_32",
+        "text": "."
+      },
+      {
+        "location": "text_33",
+        "text": "."
+      },
+      {
+        "location": "text_34",
+        "text": "."
+      },
+      {
+        "location": "text_35",
+        "text": "."
+      },
+      {
+        "location": "text_36",
+        "text": "."
+      },
+      {
+        "location": "text_37",
+        "text": "."
+      },
+      {
+        "location": "text_38",
+        "text": "."
+      },
+      {
+        "location": "text_39",
+        "text": "."
+      },
+      {
+        "location": "text_40",
+        "text": "."
+      },
+      {
+        "location": "text_41",
+        "text": "."
+      },
+      {
+        "location": "text_42",
+        "text": "."
+      },
+      {
+        "location": "text_43",
+        "text": "."
+      },
+      {
+        "location": "text_44",
+        "text": "."
+      },
+      {
+        "location": "text_45",
+        "text": "."
+      },
+      {
+        "location": "text_46",
+        "text": "."
+      },
+      {
+        "location": "text_47",
+        "text": "."
+      },
+      {
+        "location": "text_48",
+        "text": "."
+      },
+      {
+        "location": "text_49",
+        "text": "."
+      },
+      {
+        "location": "text_50",
+        "text": "."
+      },
+      {
+        "location": "text_51",
+        "text": "."
+      },
+      {
+        "location": "text_52",
+        "text": "."
+      },
+      {
+        "location": "text_53",
+        "text": "$ 110 $ 106 $ 99 property and capital stock ."
+      },
+      {
+        "location": "text_54",
+        "text": "."
+      },
+      {
+        "location": "text_55",
+        "text": "."
+      },
+      {
+        "location": "text_56",
+        "text": "."
+      },
+      {
+        "location": "text_57",
+        "text": "."
+      },
+      {
+        "location": "text_58",
+        "text": "."
+      },
+      {
+        "location": "text_59",
+        "text": "."
+      },
+      {
+        "location": "text_60",
+        "text": "."
+      },
+      {
+        "location": "text_61",
+        "text": "."
+      },
+      {
+        "location": "text_62",
+        "text": "."
+      },
+      {
+        "location": "text_63",
+        "text": "."
+      },
+      {
+        "location": "text_64",
+        "text": "."
+      },
+      {
+        "location": "text_65",
+        "text": "."
+      },
+      {
+        "location": "text_66",
+        "text": "."
+      },
+      {
+        "location": "text_67",
+        "text": "."
+      },
+      {
+        "location": "text_68",
+        "text": "."
+      },
+      {
+        "location": "text_69",
+        "text": "."
+      },
+      {
+        "location": "text_70",
+        "text": "."
+      },
+      {
+        "location": "text_71",
+        "text": "."
+      },
+      {
+        "location": "text_72",
+        "text": "."
+      },
+      {
+        "location": "text_73",
+        "text": "."
+      },
+      {
+        "location": "text_74",
+        "text": "."
+      },
+      {
+        "location": "text_75",
+        "text": "."
+      },
+      {
+        "location": "text_76",
+        "text": "."
+      },
+      {
+        "location": "text_77",
+        "text": "."
+      },
+      {
+        "location": "text_78",
+        "text": "."
+      },
+      {
+        "location": "text_79",
+        "text": "."
+      },
+      {
+        "location": "text_80",
+        "text": "."
+      },
+      {
+        "location": "text_81",
+        "text": "."
+      },
+      {
+        "location": "text_82",
+        "text": "."
+      },
+      {
+        "location": "text_83",
+        "text": "."
+      },
+      {
+        "location": "text_84",
+        "text": "."
+      },
+      {
+        "location": "text_85",
+        "text": "."
+      },
+      {
+        "location": "text_86",
+        "text": "."
+      },
+      {
+        "location": "text_87",
+        "text": "."
+      },
+      {
+        "location": "text_88",
+        "text": "."
+      },
+      {
+        "location": "text_89",
+        "text": "."
+      },
+      {
+        "location": "text_90",
+        "text": "."
+      },
+      {
+        "location": "text_91",
+        "text": "."
+      },
+      {
+        "location": "text_92",
+        "text": "."
+      },
+      {
+        "location": "text_93",
+        "text": "."
+      },
+      {
+        "location": "text_94",
+        "text": "."
+      },
+      {
+        "location": "text_95",
+        "text": "."
+      },
+      {
+        "location": "text_96",
+        "text": "."
+      },
+      {
+        "location": "text_97",
+        "text": "105 106 98 payroll ."
+      },
+      {
+        "location": "text_98",
+        "text": "."
+      },
+      {
+        "location": "text_99",
+        "text": "."
+      },
+      {
+        "location": "text_100",
+        "text": "."
+      },
+      {
+        "location": "text_101",
+        "text": "."
+      },
+      {
+        "location": "text_102",
+        "text": "."
+      },
+      {
+        "location": "text_103",
+        "text": "."
+      },
+      {
+        "location": "text_104",
+        "text": "."
+      },
+      {
+        "location": "text_105",
+        "text": "."
+      },
+      {
+        "location": "text_106",
+        "text": "."
+      },
+      {
+        "location": "text_107",
+        "text": "."
+      },
+      {
+        "location": "text_108",
+        "text": "."
+      },
+      {
+        "location": "text_109",
+        "text": "."
+      },
+      {
+        "location": "text_110",
+        "text": "."
+      },
+      {
+        "location": "text_111",
+        "text": "."
+      },
+      {
+        "location": "text_112",
+        "text": "."
+      },
+      {
+        "location": "text_113",
+        "text": "."
+      },
+      {
+        "location": "text_114",
+        "text": "."
+      },
+      {
+        "location": "text_115",
+        "text": "."
+      },
+      {
+        "location": "text_116",
+        "text": "."
+      },
+      {
+        "location": "text_117",
+        "text": "."
+      },
+      {
+        "location": "text_118",
+        "text": "."
+      },
+      {
+        "location": "text_119",
+        "text": "."
+      },
+      {
+        "location": "text_120",
+        "text": "."
+      },
+      {
+        "location": "text_121",
+        "text": "."
+      },
+      {
+        "location": "text_122",
+        "text": "."
+      },
+      {
+        "location": "text_123",
+        "text": "."
+      },
+      {
+        "location": "text_124",
+        "text": "."
+      },
+      {
+        "location": "text_125",
+        "text": "."
+      },
+      {
+        "location": "text_126",
+        "text": "."
+      },
+      {
+        "location": "text_127",
+        "text": "."
+      },
+      {
+        "location": "text_128",
+        "text": "."
+      },
+      {
+        "location": "text_129",
+        "text": "."
+      },
+      {
+        "location": "text_130",
+        "text": "."
+      },
+      {
+        "location": "text_131",
+        "text": "."
+      },
+      {
+        "location": "text_132",
+        "text": "."
+      },
+      {
+        "location": "text_133",
+        "text": "."
+      },
+      {
+        "location": "text_134",
+        "text": "."
+      },
+      {
+        "location": "text_135",
+        "text": "."
+      },
+      {
+        "location": "text_136",
+        "text": "."
+      },
+      {
+        "location": "text_137",
+        "text": "."
+      },
+      {
+        "location": "text_138",
+        "text": "."
+      },
+      {
+        "location": "text_139",
+        "text": "."
+      },
+      {
+        "location": "text_140",
+        "text": "."
+      },
+      {
+        "location": "text_141",
+        "text": "."
+      },
+      {
+        "location": "text_142",
+        "text": "."
+      },
+      {
+        "location": "text_143",
+        "text": "."
+      },
+      {
+        "location": "text_144",
+        "text": "."
+      },
+      {
+        "location": "text_145",
+        "text": "."
+      },
+      {
+        "location": "text_146",
+        "text": "."
+      },
+      {
+        "location": "text_147",
+        "text": "."
+      },
+      {
+        "location": "text_148",
+        "text": "."
+      },
+      {
+        "location": "text_149",
+        "text": "."
+      },
+      {
+        "location": "text_150",
+        "text": "."
+      },
+      {
+        "location": "text_151",
+        "text": "."
+      },
+      {
+        "location": "text_152",
+        "text": "."
+      },
+      {
+        "location": "text_153",
+        "text": "."
+      },
+      {
+        "location": "text_154",
+        "text": "."
+      },
+      {
+        "location": "text_155",
+        "text": "."
+      },
+      {
+        "location": "text_156",
+        "text": "31 32 31 other general ."
+      },
+      {
+        "location": "text_157",
+        "text": "."
+      },
+      {
+        "location": "text_158",
+        "text": "."
+      },
+      {
+        "location": "text_159",
+        "text": "."
+      },
+      {
+        "location": "text_160",
+        "text": "."
+      },
+      {
+        "location": "text_161",
+        "text": "."
+      },
+      {
+        "location": "text_162",
+        "text": "."
+      },
+      {
+        "location": "text_163",
+        "text": "."
+      },
+      {
+        "location": "text_164",
+        "text": "."
+      },
+      {
+        "location": "text_165",
+        "text": "."
+      },
+      {
+        "location": "text_166",
+        "text": "."
+      },
+      {
+        "location": "text_167",
+        "text": "."
+      },
+      {
+        "location": "text_168",
+        "text": "."
+      },
+      {
+        "location": "text_169",
+        "text": "."
+      },
+      {
+        "location": "text_170",
+        "text": "."
+      },
+      {
+        "location": "text_171",
+        "text": "."
+      },
+      {
+        "location": "text_172",
+        "text": "."
+      },
+      {
+        "location": "text_173",
+        "text": "."
+      },
+      {
+        "location": "text_174",
+        "text": "."
+      },
+      {
+        "location": "text_175",
+        "text": "."
+      },
+      {
+        "location": "text_176",
+        "text": "."
+      },
+      {
+        "location": "text_177",
+        "text": "."
+      },
+      {
+        "location": "text_178",
+        "text": "."
+      },
+      {
+        "location": "text_179",
+        "text": "."
+      },
+      {
+        "location": "text_180",
+        "text": "."
+      },
+      {
+        "location": "text_181",
+        "text": "."
+      },
+      {
+        "location": "text_182",
+        "text": "."
+      },
+      {
+        "location": "text_183",
+        "text": "."
+      },
+      {
+        "location": "text_184",
+        "text": "."
+      },
+      {
+        "location": "text_185",
+        "text": "."
+      },
+      {
+        "location": "text_186",
+        "text": "."
+      },
+      {
+        "location": "text_187",
+        "text": "."
+      },
+      {
+        "location": "text_188",
+        "text": "."
+      },
+      {
+        "location": "text_189",
+        "text": "."
+      },
+      {
+        "location": "text_190",
+        "text": "."
+      },
+      {
+        "location": "text_191",
+        "text": "."
+      },
+      {
+        "location": "text_192",
+        "text": "."
+      },
+      {
+        "location": "text_193",
+        "text": "."
+      },
+      {
+        "location": "text_194",
+        "text": "."
+      },
+      {
+        "location": "text_195",
+        "text": "."
+      },
+      {
+        "location": "text_196",
+        "text": "."
+      },
+      {
+        "location": "text_197",
+        "text": "."
+      },
+      {
+        "location": "text_198",
+        "text": "."
+      },
+      {
+        "location": "text_199",
+        "text": "."
+      },
+      {
+        "location": "text_200",
+        "text": "."
+      },
+      {
+        "location": "text_201",
+        "text": "."
+      },
+      {
+        "location": "text_202",
+        "text": "."
+      },
+      {
+        "location": "text_203",
+        "text": "."
+      },
+      {
+        "location": "text_204",
+        "text": "."
+      },
+      {
+        "location": "text_205",
+        "text": "."
+      },
+      {
+        "location": "text_206",
+        "text": "."
+      },
+      {
+        "location": "text_207",
+        "text": "."
+      },
+      {
+        "location": "text_208",
+        "text": "."
+      },
+      {
+        "location": "text_209",
+        "text": "."
+      },
+      {
+        "location": "text_210",
+        "text": "13 14 15 total general taxes ."
+      },
+      {
+        "location": "text_211",
+        "text": "."
+      },
+      {
+        "location": "text_212",
+        "text": "."
+      },
+      {
+        "location": "text_213",
+        "text": "."
+      },
+      {
+        "location": "text_214",
+        "text": "."
+      },
+      {
+        "location": "text_215",
+        "text": "."
+      },
+      {
+        "location": "text_216",
+        "text": "."
+      },
+      {
+        "location": "text_217",
+        "text": "."
+      },
+      {
+        "location": "text_218",
+        "text": "."
+      },
+      {
+        "location": "text_219",
+        "text": "."
+      },
+      {
+        "location": "text_220",
+        "text": "."
+      },
+      {
+        "location": "text_221",
+        "text": "."
+      },
+      {
+        "location": "text_222",
+        "text": "."
+      },
+      {
+        "location": "text_223",
+        "text": "."
+      },
+      {
+        "location": "text_224",
+        "text": "."
+      },
+      {
+        "location": "text_225",
+        "text": "."
+      },
+      {
+        "location": "text_226",
+        "text": "."
+      },
+      {
+        "location": "text_227",
+        "text": "."
+      },
+      {
+        "location": "text_228",
+        "text": "."
+      },
+      {
+        "location": "text_229",
+        "text": "."
+      },
+      {
+        "location": "text_230",
+        "text": "."
+      },
+      {
+        "location": "text_231",
+        "text": "."
+      },
+      {
+        "location": "text_232",
+        "text": "."
+      },
+      {
+        "location": "text_233",
+        "text": "."
+      },
+      {
+        "location": "text_234",
+        "text": "."
+      },
+      {
+        "location": "text_235",
+        "text": "."
+      },
+      {
+        "location": "text_236",
+        "text": "."
+      },
+      {
+        "location": "text_237",
+        "text": "."
+      },
+      {
+        "location": "text_238",
+        "text": "."
+      },
+      {
+        "location": "text_239",
+        "text": "."
+      },
+      {
+        "location": "text_240",
+        "text": "."
+      },
+      {
+        "location": "text_241",
+        "text": "."
+      },
+      {
+        "location": "text_242",
+        "text": "."
+      },
+      {
+        "location": "text_243",
+        "text": "."
+      },
+      {
+        "location": "text_244",
+        "text": "."
+      },
+      {
+        "location": "text_245",
+        "text": "."
+      },
+      {
+        "location": "text_246",
+        "text": "."
+      },
+      {
+        "location": "text_247",
+        "text": "."
+      },
+      {
+        "location": "text_248",
+        "text": "."
+      },
+      {
+        "location": "text_249",
+        "text": "."
+      },
+      {
+        "location": "text_250",
+        "text": "."
+      },
+      {
+        "location": "text_251",
+        "text": "."
+      },
+      {
+        "location": "text_252",
+        "text": "."
+      },
+      {
+        "location": "text_253",
+        "text": "."
+      },
+      {
+        "location": "text_254",
+        "text": "."
+      },
+      {
+        "location": "text_255",
+        "text": "."
+      },
+      {
+        "location": "text_256",
+        "text": "."
+      },
+      {
+        "location": "text_257",
+        "text": "."
+      },
+      {
+        "location": "text_258",
+        "text": "."
+      },
+      {
+        "location": "text_259",
+        "text": "."
+      },
+      {
+        "location": "text_260",
+        "text": "$ 259 $ 258 $ 243 ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "by what percentage did average borrowings decrease from 2016 to 2017?",
+  "reference_program": "subtract(779, 850), divide(#0, 850)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "779",
+      "raw": "779",
+      "location": "table_1:1",
+      "context": "Average borrowings | 2017"
+    },
+    "x1": {
+      "program_token": "850",
+      "raw": "850",
+      "location": "table_1:2",
+      "context": "Average borrowings | 2016"
+    }
+  }
+}

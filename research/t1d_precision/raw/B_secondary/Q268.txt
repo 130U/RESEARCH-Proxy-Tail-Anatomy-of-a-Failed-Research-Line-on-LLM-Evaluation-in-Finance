@@ -1,0 +1,1 @@
+{"answer":"6.5","unit":"million dollars","expression":"2.2 + 2.7 + 1.6","low":"6.35","high":"6.65","reliable_digits":"1","explanation":"Each annual expense is rounded to the nearest 0.1 million dollars, giving a total rounding uncertainty of 0.15 million dollars."}

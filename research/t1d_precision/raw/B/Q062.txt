@@ -1,0 +1,1 @@
+{"answer":"29.45736434108527","unit":"percent","expression":"(38 / 129) * 100","low":"28.95752895752896","high":"29.96108949416342","reliable_digits":"1","explanation":"Allowing each displayed amount to vary by 0.5 million gives bounds of (37.5 / 129.5) * 100 and (38.5 / 128.5) * 100."}

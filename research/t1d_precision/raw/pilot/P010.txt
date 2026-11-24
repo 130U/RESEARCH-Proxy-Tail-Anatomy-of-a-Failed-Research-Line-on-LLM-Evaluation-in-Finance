@@ -1,0 +1,1 @@
+{"answer":"1.3547767363","unit":"ratio","expression":"23271 / 17177","low":"1.3547081939","high":"1.3548451373","reliable_digits":"4","explanation":"The bounds are (23271 - 0.5) / (17177 + 0.5) and (23271 + 0.5) / (17177 - 0.5), supporting four reliable significant digits."}

@@ -1,0 +1,1 @@
+{"answer":"3.74331550802139","unit":"percent","expression":"(776 - 748) / 748 * 100","low":"3.60721442885772","high":"3.87959866220736","reliable_digits":"1","explanation":"The table measures gasoline sales rather than production; growth from 2001 to 2003 uses endpoints each uncertain by ±0.5 thousand barrels per day."}

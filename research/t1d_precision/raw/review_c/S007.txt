@@ -1,0 +1,7 @@
+{
+    "call_id": "S007",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 9 gives the highest 2011 price, $31.16 per share, and row 1 gives $37.79 through March 2012. 'By how much' permits the model's absolute increase of $6.63 per share, requiring no denominator. The reference instead reports a percentage using $31.16 as denominator."
+  }

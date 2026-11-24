@@ -1,0 +1,1 @@
+{"answer":"-11.4035087719","unit":"percent","expression":"(101 - 114) / 114 * 100","low":"-12.2270742358","high":"-10.5726872247","reliable_digits":"1","explanation":"Interpreting 20011 as 2011, each displayed investment value has rounding uncertainty of ±0.5, yielding these bounds and one reliable significant digit."}

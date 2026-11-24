@@ -1,0 +1,7 @@
+{
+    "call_id": "S003",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 22 gives weighted average grant-date fair values of $8.05 per share in 2005 and $6.91 in 2006. Growth from 2005 to 2006 uses the 2005 denominator, $8.05, and yields a negative rate. The reference reverses the change and uses the ending value as denominator."
+  }

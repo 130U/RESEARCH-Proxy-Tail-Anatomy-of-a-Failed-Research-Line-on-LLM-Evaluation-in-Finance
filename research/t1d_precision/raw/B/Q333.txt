@@ -1,0 +1,1 @@
+{"answer":"940","unit":"percent","expression":"(156 - 15) / 15 * 100","low":"903.2258064516129","high":"979.3103448275862","reliable_digits":"1","explanation":"Each total can vary by 0.5, so the bounds use the smallest 2018 total with the largest 2017 total, and vice versa."}

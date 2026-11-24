@@ -1,0 +1,44 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+entergy corporation and subsidiaries notes to financial statements rate of 2.04% ( 2.04 % ) .
+although the principal amount is not due until the date given in the tables above , entergy louisiana investment recovery funding expects to make principal payments on the bonds over the next five years in the amounts of $ 21.7 million for 2017 , $ 22.3 million for 2018 , $ 22.7 million for 2019 , $ 23.2 million for 2020 , and $ 11 million for 2021 .
+with the proceeds , entergy louisiana investment recovery funding purchased from entergy louisiana the investment recovery property , which is the right to recover from customers through an investment recovery charge amounts sufficient to service the bonds .
+in accordance with the financing order , entergy louisiana will apply the proceeds it received from the sale of the investment recovery property as a reimbursement for previously-incurred investment recovery costs .
+the investment recovery property is reflected as a regulatory asset on the consolidated entergy louisiana balance sheet .
+the creditors of entergy louisiana do not have recourse to the assets or revenues of entergy louisiana investment recovery funding , including the investment recovery property , and the creditors of entergy louisiana investment recovery funding do not have recourse to the assets or revenues of entergy louisiana .
+entergy louisiana has no payment obligations to entergy louisiana investment recovery funding except to remit investment recovery charge collections .
+entergy new orleans securitization bonds - hurricane isaac in may 2015 the city council issued a financing order authorizing the issuance of securitization bonds to recover entergy new orleans 2019s hurricane isaac storm restoration costs of $ 31.8 million , including carrying costs , the costs of funding and replenishing the storm recovery reserve in the amount of $ 63.9 million , and approximately $ 3 million of up-front financing costs associated with the securitization .
+in july 2015 , entergy new orleans storm recovery funding i , l.l.c. , a company wholly owned and consolidated by entergy new orleans , issued $ 98.7 million of storm cost recovery bonds .
+the bonds have a coupon of 2.67% ( 2.67 % ) .
+although the principal amount is not due until the date given in the tables above , entergy new orleans storm recovery funding expects to make principal payments on the bonds over the next five years in the amounts of $ 10.6 million for 2017 , $ 11 million for 2018 , $ 11.2 million for 2019 , $ 11.6 million for 2020 , and $ 11.9 million for 2021 .
+with the proceeds , entergy new orleans storm recovery funding purchased from entergy new orleans the storm recovery property , which is the right to recover from customers through a storm recovery charge amounts sufficient to service the securitization bonds .
+the storm recovery property is reflected as a regulatory asset on the consolidated entergy new orleans balance sheet .
+the creditors of entergy new orleans do not have recourse to the assets or revenues of entergy new orleans storm recovery funding , including the storm recovery property , and the creditors of entergy new orleans storm recovery funding do not have recourse to the assets or revenues of entergy new orleans .
+entergy new orleans has no payment obligations to entergy new orleans storm recovery funding except to remit storm recovery charge collections .
+entergy texas securitization bonds - hurricane rita in april 2007 the puct issued a financing order authorizing the issuance of securitization bonds to recover $ 353 million of entergy texas 2019s hurricane rita reconstruction costs and up to $ 6 million of transaction costs , offset by $ 32 million of related deferred income tax benefits .
+in june 2007 , entergy gulf states reconstruction funding i , llc , a company that is now wholly-owned and consolidated by entergy texas , issued $ 329.5 million of senior secured transition bonds ( securitization bonds ) as follows : amount ( in thousands ) .
+
+TABLE
+ | Amount (In Thousands)
+Senior Secured Transition Bonds, Series A: | 
+Tranche A-1 (5.51%) due October 2013 | $93,500
+Tranche A-2 (5.79%) due October 2018 | 121,600
+Tranche A-3 (5.93%) due June 2022 | 114,400
+Total senior secured transition bonds | $329,500
+
+.
+
+QUESTION
+what is the total expected payments on the bonds for the next 5 years for entergy new orleans storm recovery funding?

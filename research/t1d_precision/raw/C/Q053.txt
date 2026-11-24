@@ -1,0 +1,1 @@
+{"answer":"3.460369","unit":"percent","expression":"(4425 - 4277) / 4277 * 100","low":"3.436587","high":"3.484158","reliable_digits":"2","explanation":"Year-end unrecognized tax benefits increased; the bounds allow each displayed balance to vary by 0.5."}

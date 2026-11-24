@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R001",
+    "verdict": "uncertain",
+    "reason": "The bindings correctly identify 2008 amounts, but the question leaves ambiguous whether the denominator is total 2008 commitments or total lease commitments across all years."
+  },
+  {
+    "review_id": "R002",
+    "verdict": "valid",
+    "reason": "The net-revenue bridge reports rounded amounts of $5,829 million for 2015 and $5,735 million for 2014, whose subtraction gives the annual net increase in millions."
+  },
+  {
+    "review_id": "R003",
+    "verdict": "valid",
+    "reason": "The bound rounded operating expenses correctly correspond to 2013 and 2012, and the calculation measures their change relative to the 2012 base."
+  },
+  {
+    "review_id": "R004",
+    "verdict": "invalid",
+    "reason": "The weighted-average borrowing rate is 0.44 percent, so multiplying $932 million by 0.44 without converting the percentage overstates the resulting amount by a factor of 100."
+  },
+  {
+    "review_id": "R005",
+    "verdict": "valid",
+    "reason": "The source assigns rounded cash dividends of $83 million to 2012 and $78 million to 2011, and the calculation correctly uses 2011 as the growth denominator."
+  },
+  {
+    "review_id": "R006",
+    "verdict": "valid",
+    "reason": "The source identifies approximately $0.8 million of remaining restructuring accruals, including a rounded $0.4 million for canceled contracts, supporting the calculated portion."
+  },
+  {
+    "review_id": "R007",
+    "verdict": "valid",
+    "reason": "The bindings correctly select rounded interest-rate-risk revenues for 2017 and 2016, and the calculation divides their increase by the 2016 amount."
+  },
+  {
+    "review_id": "R008",
+    "verdict": "invalid",
+    "reason": "Although $11.02 and $9.52 correctly bind the estimated average fair values for 2014 and 2013, percentage change requires their difference divided by $9.52 rather than two successive divisions."
+  },
+  {
+    "review_id": "R009",
+    "verdict": "uncertain",
+    "reason": "The bound amounts are unaudited pro forma sales and earnings from continuing operations, while the question does not specify whether it seeks that margin or the actual overall 2015 net profit margin."
+  },
+  {
+    "review_id": "R010",
+    "verdict": "valid",
+    "reason": "The rounded 2018 interest-rate-risk revenue of $5,186 million and total principal-transactions revenue of $9,062 million correctly form the requested revenue share."
+  },
+  {
+    "review_id": "R011",
+    "verdict": "valid",
+    "reason": "The source explicitly reports approximate rental expenses of $211.5 million for 2016 and $168.4 million for 2015, and the calculation correctly measures growth against 2015."
+  },
+  {
+    "review_id": "R012",
+    "verdict": "invalid",
+    "reason": "The calculation reverses the requested direction and uses the 2007 denominator, whereas change from 2006 to 2007 requires subtracting $8.8 million from $1.0 million and dividing by $8.8 million."
+  },
+  {
+    "review_id": "R013",
+    "verdict": "valid",
+    "reason": "The rounded net-revenue amounts correctly bind 2011 and 2010, and subtracting $5,051 million from $4,904 million before dividing by the 2010 base gives the requested change."
+  },
+  {
+    "review_id": "R014",
+    "verdict": "valid",
+    "reason": "The table reports aggregate capital lease payments rounded to millions of $148 million for 2019 and $155 million for 2020, supporting the increase divided by the 2019 base."
+  },
+  {
+    "review_id": "R015",
+    "verdict": "valid",
+    "reason": "The parenthesized rounded amounts correctly bind losses of $57 million in 2003 and $41 million in 2002, and the calculation measures the proportional increase in their magnitude."
+  },
+  {
+    "review_id": "R016",
+    "verdict": "valid",
+    "reason": "The reconciliation reports a rounded $7.2 million ending liability including $1.2 million of recognized accretion, so subtracting accretion gives the requested balance in millions."
+  }
+]

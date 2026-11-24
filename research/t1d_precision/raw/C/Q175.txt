@@ -1,0 +1,1 @@
+{"answer":"-5.9585307","unit":"percent","expression":"(355173 - 377677) / 377677 * 100","low":"-5.9587876","high":"-5.9582738","reliable_digits":"4","explanation":"Liabilities decreased; allowing each total to vary by $0.5 million gives the stated bounds and about 0.0043% relative uncertainty."}

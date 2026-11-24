@@ -1,0 +1,548 @@
+{
+  "AAL/2013/page_18.pdf-3": [
+    {
+      "variable": "x1",
+      "source_location": "text_1:276",
+      "original_interval": [
+        "173/2",
+        "175/2"
+      ],
+      "candidate_location": "table_2:3",
+      "raw": "8,717",
+      "scale": "1/100",
+      "interval": [
+        "17433/200",
+        "3487/40"
+      ],
+      "context": "2012 | Total Cost(in millions)"
+    }
+  ],
+  "ABMD/2008/page_86.pdf-2": [
+    {
+      "variable": "x1",
+      "source_location": "text_24:110",
+      "original_interval": [
+        "111/20",
+        "113/20"
+      ],
+      "candidate_location": "text_20:263",
+      "raw": "5583333",
+      "scale": "1/1000000",
+      "interval": [
+        "2233333/400000",
+        "11166667/2000000"
+      ],
+      "context": "commitments and contingencies the company 2019s acquisition of impella provides that abiomed may be required to make additional contingent payments to impella 2019s former shareholders as follows : 2022 upon fda approval of the impella 2.5 device , a payment of $ 5583333 , and 2022 upon fda approval of the impella 5.0 device , a payment of $ 5583333 if the average market price per share of abiomed 2019s common stock , as determined in accordance with the purchase agreement , as of the date of one of these milestones is achieved is $ 22 or more , no additional contingent consideration will be required with respect to that milestone ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_24:110",
+      "original_interval": [
+        "111/20",
+        "113/20"
+      ],
+      "candidate_location": "text_20:343",
+      "raw": "5583333",
+      "scale": "1/1000000",
+      "interval": [
+        "2233333/400000",
+        "11166667/2000000"
+      ],
+      "context": "commitments and contingencies the company 2019s acquisition of impella provides that abiomed may be required to make additional contingent payments to impella 2019s former shareholders as follows : 2022 upon fda approval of the impella 2.5 device , a payment of $ 5583333 , and 2022 upon fda approval of the impella 5.0 device , a payment of $ 5583333 if the average market price per share of abiomed 2019s common stock , as determined in accordance with the purchase agreement , as of the date of one of these milestones is achieved is $ 22 or more , no additional contingent consideration will be required with respect to that milestone ."
+    }
+  ],
+  "ADBE/1999/page_64.pdf-1": [
+    {
+      "variable": "x0",
+      "source_location": "text_3:30",
+      "original_interval": [
+        "1/4",
+        "7/20"
+      ],
+      "candidate_location": "text_1:254",
+      "raw": "27",
+      "scale": "1/100",
+      "interval": [
+        "53/200",
+        "11/40"
+      ],
+      "context": "restructuring and other charges ( continued ) previously announced restructuring programs the following table depicts the activity for previously announced restructuring programs through december 3 , 1999 : accrued accrued balance at balance at november 27 total cash december 3 1998 charges payments adjustments 1999 ."
+    },
+    {
+      "variable": "x0",
+      "source_location": "text_3:30",
+      "original_interval": [
+        "1/4",
+        "7/20"
+      ],
+      "candidate_location": "text_7:47",
+      "raw": "27",
+      "scale": "1/100",
+      "interval": [
+        "53/200",
+        "11/40"
+      ],
+      "context": "included in the accrual balance as of november 27 , 1998 were lease termination costs related to previously announced restructuring programs in fiscal 1994 and 1995 ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_3:79",
+      "original_interval": [
+        "1/20",
+        "3/20"
+      ],
+      "candidate_location": "text_0:140",
+      "raw": "7",
+      "scale": "1/100",
+      "interval": [
+        "13/200",
+        "3/40"
+      ],
+      "context": "adobe systems incorporated notes to consolidated financial statements ( in thousands , except share and per share data ) ( continued ) note 7 ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_3:79",
+      "original_interval": [
+        "1/20",
+        "3/20"
+      ],
+      "candidate_location": "text_13:107",
+      "raw": "8.4",
+      "scale": "1/100",
+      "interval": [
+        "167/2000",
+        "169/2000"
+      ],
+      "context": "other charges during the third and fourth quarters of fiscal 1999 , the company recorded other charges of $ 8.4 million that were unusual in nature ."
+    }
+  ],
+  "ADBE/1999/page_64.pdf-2": [
+    {
+      "variable": "x1",
+      "source_location": "text_2:41",
+      "original_interval": [
+        "3/4",
+        "17/20"
+      ],
+      "candidate_location": "table_1:5",
+      "raw": "772",
+      "scale": "1/1000",
+      "interval": [
+        "1543/2000",
+        "309/400"
+      ],
+      "context": "Accrual related to previous restructurings | Accrued Balance at December 3 1999"
+    }
+  ],
+  "AMT/2006/page_113.pdf-4": [
+    {
+      "variable": "x0",
+      "source_location": "text_14:147",
+      "original_interval": [
+        "19/20",
+        "21/20"
+      ],
+      "candidate_location": "table_3:5",
+      "raw": "96",
+      "scale": "1/100",
+      "interval": [
+        "191/200",
+        "193/200"
+      ],
+      "context": "Total | 2005 Expense"
+    }
+  ],
+  "AON/2007/page_175.pdf-1": [
+    {
+      "variable": "x2",
+      "source_location": "table_11:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "table_1:1",
+      "raw": "141",
+      "scale": "1/100",
+      "interval": [
+        "281/200",
+        "283/200"
+      ],
+      "context": "Expensed in 2005 | $\u2014"
+    },
+    {
+      "variable": "x2",
+      "source_location": "table_11:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "table_4:1",
+      "raw": "116",
+      "scale": "1/100",
+      "interval": [
+        "231/200",
+        "233/200"
+      ],
+      "context": "Balance at December 31, 2005 | $\u2014"
+    },
+    {
+      "variable": "x2",
+      "source_location": "table_11:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "table_6:1",
+      "raw": "141",
+      "scale": "-1/100",
+      "interval": [
+        "281/200",
+        "283/200"
+      ],
+      "context": "Cash payments in 2006 | $\u2014"
+    },
+    {
+      "variable": "x2",
+      "source_location": "table_11:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "table_8:1",
+      "raw": "134",
+      "scale": "1/100",
+      "interval": [
+        "267/200",
+        "269/200"
+      ],
+      "context": "Balance at December 31, 2006 | $\u2014"
+    },
+    {
+      "variable": "x2",
+      "source_location": "table_11:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "table_10:1",
+      "raw": "110",
+      "scale": "-1/100",
+      "interval": [
+        "219/200",
+        "221/200"
+      ],
+      "context": "Cash payments in 2007 | $\u2014"
+    },
+    {
+      "variable": "x2",
+      "source_location": "table_11:1",
+      "original_interval": [
+        "1/2",
+        "3/2"
+      ],
+      "candidate_location": "table_12:1",
+      "raw": "63",
+      "scale": "1/100",
+      "interval": [
+        "5/8",
+        "127/200"
+      ],
+      "context": "Balance at December 31, 2007 | $\u2014"
+    }
+  ],
+  "AWK/2017/page_148.pdf-4": [
+    {
+      "variable": "x1",
+      "source_location": "table_3:2",
+      "original_interval": [
+        "31/40",
+        "157/200"
+      ],
+      "candidate_location": "table_1:1",
+      "raw": "779",
+      "scale": "1/1000",
+      "interval": [
+        "1557/2000",
+        "1559/2000"
+      ],
+      "context": "Average borrowings | 2017"
+    }
+  ],
+  "C/2009/page_243.pdf-2": [
+    {
+      "variable": "x0",
+      "source_location": "table_1:1",
+      "original_interval": [
+        "49/20",
+        "51/20"
+      ],
+      "candidate_location": "text_6:187",
+      "raw": "3",
+      "scale": "1",
+      "interval": [
+        "5/2",
+        "7/2"
+      ],
+      "context": "included in 2013 these settlements were $ 21 billion of payments made on maturing siv debt and the replacement of $ 17 billion of non-recourse , consolidated siv debt classified as level 3 with citigroup debt classified as level 2 ."
+    },
+    {
+      "variable": "x0",
+      "source_location": "table_1:1",
+      "original_interval": [
+        "49/20",
+        "51/20"
+      ],
+      "candidate_location": "text_6:229",
+      "raw": "2",
+      "scale": "1",
+      "interval": [
+        "3/2",
+        "5/2"
+      ],
+      "context": "included in 2013 these settlements were $ 21 billion of payments made on maturing siv debt and the replacement of $ 17 billion of non-recourse , consolidated siv debt classified as level 3 with citigroup debt classified as level 2 ."
+    },
+    {
+      "variable": "x0",
+      "source_location": "table_1:1",
+      "original_interval": [
+        "49/20",
+        "51/20"
+      ],
+      "candidate_location": "text_12:45",
+      "raw": "2",
+      "scale": "1",
+      "interval": [
+        "3/2",
+        "5/2"
+      ],
+      "context": "such loans are generally classified as level 2 of the fair-value hierarchy given the level of activity in the market and the frequency of available quotes ."
+    },
+    {
+      "variable": "x0",
+      "source_location": "table_1:1",
+      "original_interval": [
+        "49/20",
+        "51/20"
+      ],
+      "candidate_location": "text_14:163",
+      "raw": "2",
+      "scale": "1",
+      "interval": [
+        "3/2",
+        "5/2"
+      ],
+      "context": "the following table presents all loans held-for-sale that are carried at locom as of december 31 , 2009 and 2008 ( in billions ) : aggregate cost fair value level 2 level 3 ."
+    },
+    {
+      "variable": "x0",
+      "source_location": "table_1:1",
+      "original_interval": [
+        "49/20",
+        "51/20"
+      ],
+      "candidate_location": "text_14:171",
+      "raw": "3",
+      "scale": "1",
+      "interval": [
+        "5/2",
+        "7/2"
+      ],
+      "context": "the following table presents all loans held-for-sale that are carried at locom as of december 31 , 2009 and 2008 ( in billions ) : aggregate cost fair value level 2 level 3 ."
+    }
+  ],
+  "D/2002/page_87.pdf-3": [
+    {
+      "variable": "x0",
+      "source_location": "text_23:73",
+      "original_interval": [
+        "167/2",
+        "169/2"
+      ],
+      "candidate_location": "table_8:1",
+      "raw": "8,369",
+      "scale": "1/100",
+      "interval": [
+        "16737/200",
+        "16739/200"
+      ],
+      "context": "Total | Commitment"
+    }
+  ],
+  "DVN/2018/page_35.pdf-1": [
+    {
+      "variable": "x1",
+      "source_location": "table_3:2",
+      "original_interval": [
+        "29/2",
+        "31/2"
+      ],
+      "candidate_location": "text_12:66",
+      "raw": "1458",
+      "scale": "1/100",
+      "interval": [
+        "583/40",
+        "2917/200"
+      ],
+      "context": "$ 1308 ( $ 165 ) ( $ 4 ) $ 1 $ 63 $ 400 ( $ 397 ) $ 126 $ 1204 ( $ 1458 ) $ 1078 2016 upstream operations marketing operations exploration expenses dd&a g&a financing costs , net other ( 1 ) income discontinued operations net earnings ( 1 ) other in the table above includes asset impairments , asset dispositions , restructuring and transaction costs and other expenses ."
+    }
+  ],
+  "DVN/2018/page_35.pdf-2": [
+    {
+      "variable": "x1",
+      "source_location": "table_3:2",
+      "original_interval": [
+        "29/2",
+        "31/2"
+      ],
+      "candidate_location": "text_12:66",
+      "raw": "1458",
+      "scale": "1/100",
+      "interval": [
+        "583/40",
+        "2917/200"
+      ],
+      "context": "$ 1308 ( $ 165 ) ( $ 4 ) $ 1 $ 63 $ 400 ( $ 397 ) $ 126 $ 1204 ( $ 1458 ) $ 1078 2016 upstream operations marketing operations exploration expenses dd&a g&a financing costs , net other ( 1 ) income discontinued operations net earnings ( 1 ) other in the table above includes asset impairments , asset dispositions , restructuring and transaction costs and other expenses ."
+    }
+  ],
+  "DVN/2018/page_35.pdf-3": [
+    {
+      "variable": "x1",
+      "source_location": "table_3:2",
+      "original_interval": [
+        "29/2",
+        "31/2"
+      ],
+      "candidate_location": "text_12:66",
+      "raw": "1458",
+      "scale": "1/100",
+      "interval": [
+        "583/40",
+        "2917/200"
+      ],
+      "context": "$ 1308 ( $ 165 ) ( $ 4 ) $ 1 $ 63 $ 400 ( $ 397 ) $ 126 $ 1204 ( $ 1458 ) $ 1078 2016 upstream operations marketing operations exploration expenses dd&a g&a financing costs , net other ( 1 ) income discontinued operations net earnings ( 1 ) other in the table above includes asset impairments , asset dispositions , restructuring and transaction costs and other expenses ."
+    }
+  ],
+  "DVN/2018/page_35.pdf-4": [
+    {
+      "variable": "x1",
+      "source_location": "text_5:200",
+      "original_interval": [
+        "43/20",
+        "9/4"
+      ],
+      "candidate_location": "text_14:35",
+      "raw": "2176",
+      "scale": "1/1000",
+      "interval": [
+        "4351/2000",
+        "4353/2000"
+      ],
+      "context": "( $ 427 ) ( $ 427 ) $ 1395$ 1 395 $ 2176$ 2 176 $ 3484 2016 production volumes field prices hedging 2017 upstream operations expenses ."
+    }
+  ],
+  "ETFC/2011/page_144.pdf-2": [
+    {
+      "variable": "x1",
+      "source_location": "text_18:59",
+      "original_interval": [
+        "9/20",
+        "11/20"
+      ],
+      "candidate_location": "text_8:77",
+      "raw": "50.6",
+      "scale": "1/100",
+      "interval": [
+        "1011/2000",
+        "1013/2000"
+      ],
+      "context": "the company recorded a loss on the early extinguishment of fhlb advances of $ 50.6 million for the year ended december 31 , 2009 ."
+    }
+  ],
+  "ETR/2011/page_17.pdf-2": [
+    {
+      "variable": "x2",
+      "source_location": "table_7:1",
+      "original_interval": [
+        "97/2",
+        "99/2"
+      ],
+      "candidate_location": "table_9:1",
+      "raw": "4,904",
+      "scale": "1/100",
+      "interval": [
+        "9807/200",
+        "9809/200"
+      ],
+      "context": "2011 net revenue | Amount (In Millions)"
+    }
+  ],
+  "ETR/2016/page_150.pdf-3": [
+    {
+      "variable": "x1",
+      "source_location": "text_10:245",
+      "original_interval": [
+        "21/2",
+        "23/2"
+      ],
+      "candidate_location": "text_10:219",
+      "raw": "10.6",
+      "scale": "1",
+      "interval": [
+        "211/20",
+        "213/20"
+      ],
+      "context": "although the principal amount is not due until the date given in the tables above , entergy new orleans storm recovery funding expects to make principal payments on the bonds over the next five years in the amounts of $ 10.6 million for 2017 , $ 11 million for 2018 , $ 11.2 million for 2019 , $ 11.6 million for 2020 , and $ 11.9 million for 2021 ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_10:245",
+      "original_interval": [
+        "21/2",
+        "23/2"
+      ],
+      "candidate_location": "text_10:269",
+      "raw": "11.2",
+      "scale": "1",
+      "interval": [
+        "223/20",
+        "45/4"
+      ],
+      "context": "although the principal amount is not due until the date given in the tables above , entergy new orleans storm recovery funding expects to make principal payments on the bonds over the next five years in the amounts of $ 10.6 million for 2017 , $ 11 million for 2018 , $ 11.2 million for 2019 , $ 11.6 million for 2020 , and $ 11.9 million for 2021 ."
+    }
+  ],
+  "ETR/2016/page_150.pdf-4": [
+    {
+      "variable": "x1",
+      "source_location": "text_10:245",
+      "original_interval": [
+        "21/2",
+        "23/2"
+      ],
+      "candidate_location": "text_10:219",
+      "raw": "10.6",
+      "scale": "1",
+      "interval": [
+        "211/20",
+        "213/20"
+      ],
+      "context": "although the principal amount is not due until the date given in the tables above , entergy new orleans storm recovery funding expects to make principal payments on the bonds over the next five years in the amounts of $ 10.6 million for 2017 , $ 11 million for 2018 , $ 11.2 million for 2019 , $ 11.6 million for 2020 , and $ 11.9 million for 2021 ."
+    },
+    {
+      "variable": "x1",
+      "source_location": "text_10:245",
+      "original_interval": [
+        "21/2",
+        "23/2"
+      ],
+      "candidate_location": "text_10:269",
+      "raw": "11.2",
+      "scale": "1",
+      "interval": [
+        "223/20",
+        "45/4"
+      ],
+      "context": "although the principal amount is not due until the date given in the tables above , entergy new orleans storm recovery funding expects to make principal payments on the bonds over the next five years in the amounts of $ 10.6 million for 2017 , $ 11 million for 2018 , $ 11.2 million for 2019 , $ 11.6 million for 2020 , and $ 11.9 million for 2021 ."
+    }
+  ]
+}

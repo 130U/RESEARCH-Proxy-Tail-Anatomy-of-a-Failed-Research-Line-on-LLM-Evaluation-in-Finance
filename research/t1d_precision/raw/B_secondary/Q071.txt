@@ -1,0 +1,1 @@
+{"answer":"12.8525","unit":"percent","expression":"(857679 - 760000) / 760000 * 100","low":"12.8523599656","high":"12.8526400346","reliable_digits":"4","explanation":"Maturities increased by 12.8525%; allowing each displayed maturity to vary by 0.5 thousand leaves four significant digits reliable."}

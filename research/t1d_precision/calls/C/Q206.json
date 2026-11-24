@@ -1,0 +1,25 @@
+{
+  "group": "C",
+  "id": "Q206",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "fresh_session": true,
+  "prompt_file": "prompts/C/Q206.txt",
+  "started_utc": "2026-11-17T08:36:54.987905+00:00",
+  "status": "completed",
+  "returncode": 0,
+  "completed_utc": "2026-11-17T08:37:48.535850+00:00",
+  "elapsed_seconds": 53.547,
+  "thread_id": "01a1e8a6-e98f-7031-9e9c-c06cda63c6bf",
+  "usage": {
+    "input_tokens": 17602,
+    "cached_input_tokens": 15488,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1639,
+    "reasoning_output_tokens": 1552
+  },
+  "event_item_types": [
+    "agent_message"
+  ],
+  "tool_use_observed": false
+}

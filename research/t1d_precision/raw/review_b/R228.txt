@@ -1,0 +1,5 @@
+{
+    "review_id": "R228",
+    "verdict": "valid",
+    "reason": "The calculation correctly uses the rounded total tax expenses of $156 for 2018 and $15 for 2017, divides their increase by the 2017 base, and converts it to a percentage."
+  }

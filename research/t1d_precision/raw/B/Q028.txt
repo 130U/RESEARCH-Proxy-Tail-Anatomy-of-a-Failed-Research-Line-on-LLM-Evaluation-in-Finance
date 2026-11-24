@@ -1,0 +1,1 @@
+{"answer":"5.365853658536585","unit":"percent","expression":"(216 - 205) / 205 * 100","low":"4.8661800486618","high":"5.8679706601467","reliable_digits":"0","explanation":"Each rent figure has rounding uncertainty of $0.5 million, so the increase can round to either 5% or 6% at one significant digit."}

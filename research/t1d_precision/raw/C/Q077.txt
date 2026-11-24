@@ -1,0 +1,1 @@
+{"answer":"9.4045071132","unit":"percent","expression":"(8690 - 7943) / 7943 * 100","low":"9.3913262416","high":"9.4176896443","reliable_digits":"2","explanation":"The percentage increase in total investments uses rounding bounds of ±0.5 for each displayed total."}

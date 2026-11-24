@@ -1,0 +1,1 @@
+{"answer":"93.3333333333333","unit":"percent","expression":"(2.9 - 1.5) / 1.5 * 100","low":"83.8709677419355","high":"103.448275862069","reliable_digits":"0","explanation":"Each dividend yield has rounding uncertainty of 0.05 percentage points, leaving even the first significant digit of growth uncertain."}

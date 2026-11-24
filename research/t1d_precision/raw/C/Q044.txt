@@ -1,0 +1,1 @@
+{"answer":"4.8275862069","unit":"percent","expression":"(30.4 - 29.0) / 29.0 * 100","low":"4.4750430293","high":"5.1813471503","reliable_digits":"1","explanation":"Each amount has rounding uncertainty of $0.05 million, giving roughly 7% relative uncertainty in the percentage increase."}

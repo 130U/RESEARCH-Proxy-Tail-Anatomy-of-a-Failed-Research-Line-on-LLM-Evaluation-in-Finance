@@ -1,0 +1,1 @@
+{"answer":"2.564102564102564","unit":"percent","expression":"(66000 - 64350) / 64350 * 100","low":"2.564102564102564","high":"2.564102564102564","reliable_digits":"16","explanation":"The base rents are exact contractual terms, so all reported digits are reliable and there is no input rounding uncertainty."}

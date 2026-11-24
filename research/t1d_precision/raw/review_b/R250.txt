@@ -1,0 +1,5 @@
+{
+    "review_id": "R250",
+    "verdict": "invalid",
+    "reason": "Although the contribution amounts are correctly bound, subtracting 525 from 460 produces a negative change rather than the requested positive percentage decrease."
+  }

@@ -1,0 +1,20 @@
+{
+  "review_id": "R025",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "second",
+      "original_reason": "The excerpt lists State Street dollar figures for 2011 and 2012 but does not define them as investment values or explain their return basis, so the ROI interpretation cannot be verified.",
+      "display_reason": "The excerpt lists State Street dollar figures for 2011 and 2012 but does not define them as investment values or explain their return basis, so the ROI interpretation cannot be verified.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "first",
+      "original_reason": "Question contains apparent extra-zero typo20011; table only contains2011 and2012 for the specified pair, values114 and101. Reading20011 as2011 is explicit, and program computes investment return101/114-1. This is a question typo, not source uncertainty.",
+      "display_reason": "Question contains apparent extra-zero typo20011; table only contains2011 and2012 for the specified pair, values114 and101. Reading20011 as2011 is explicit, and program computes investment return101/114-1. This is a question typo, not source uncertainty.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

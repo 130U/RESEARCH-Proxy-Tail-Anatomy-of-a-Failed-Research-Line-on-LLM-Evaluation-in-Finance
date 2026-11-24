@@ -1,0 +1,20 @@
+{
+  "review_id": "R093",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "first",
+      "original_reason": "Gold tax(2.6-2.2)/aftertax2.2 differs from conventional pretax tax rate; wording on net earnings ambiguous.",
+      "display_reason": "Gold tax(2.6-2.2)/aftertax2.2 differs from conventional pretax tax rate; wording on net earnings ambiguous.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "second",
+      "original_reason": "The tax rate on the sale gain requires dividing the tax difference by the $2.6 billion pretax gain, whereas the calculation divides by the $2.2 billion after-tax gain.",
+      "display_reason": "The tax rate on the sale gain requires dividing the tax difference by the $2.6 billion pretax gain, whereas the calculation divides by the $2.2 billion after-tax gain.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

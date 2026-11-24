@@ -1,0 +1,1 @@
+{"answer":"35.7792601577","unit":"percent","expression":"2360 / 6596 * 100","low":"35.7689683923","high":"35.7895534834","reliable_digits":"3","explanation":"Allowing each revenue figure to vary by 0.5 million gives these bounds; both round to 35.8% at three significant digits."}

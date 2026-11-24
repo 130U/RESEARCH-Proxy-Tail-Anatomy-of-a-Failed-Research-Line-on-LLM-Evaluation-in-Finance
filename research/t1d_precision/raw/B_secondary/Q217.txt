@@ -1,0 +1,1 @@
+{"answer":"4.16148690833347","unit":"percent","expression":"7532 / 180993 * 100","low":"4.16119915908582","high":"4.16177465917096","reliable_digits":"3","explanation":"The 2012 tax benefit of 7532 is divided by gross liabilities of 180993; rounding permits ±0.5 in each figure."}

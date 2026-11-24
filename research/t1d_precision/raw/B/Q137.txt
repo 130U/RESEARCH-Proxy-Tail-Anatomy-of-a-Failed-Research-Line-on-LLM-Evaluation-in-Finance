@@ -1,0 +1,1 @@
+{"answer":"-7.394366197183099","unit":"percent","expression":"(26.3 - 28.4) / 28.4 * 100","low":"-7.732864674868190","high":"-7.054673721340388","reliable_digits":"0","explanation":"Allowing each expense to vary by 0.05 million yields these bounds, which round differently even at one significant digit."}

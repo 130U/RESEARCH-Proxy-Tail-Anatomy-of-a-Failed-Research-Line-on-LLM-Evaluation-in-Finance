@@ -1,0 +1,108 @@
+{
+  "model": {
+    "steps": [
+      [
+        "divide",
+        "x0",
+        "x1"
+      ],
+      [
+        "subtract",
+        "#0",
+        "1"
+      ],
+      [
+        "divide",
+        "x2",
+        "x3"
+      ],
+      [
+        "subtract",
+        "#2",
+        "1"
+      ],
+      [
+        "subtract",
+        "#1",
+        "#3"
+      ]
+    ],
+    "input_intervals": {
+      "x0": {
+        "lo": "106219/2",
+        "hi": "106221/2"
+      },
+      "x1": {
+        "lo": "104863/2",
+        "hi": "104865/2"
+      },
+      "x2": {
+        "lo": "99997/2",
+        "hi": "99999/2"
+      },
+      "x3": {
+        "lo": "98835/2",
+        "hi": "98837/2"
+      }
+    },
+    "input_provenance": {
+      "x0": {
+        "value": "53110",
+        "half": "1/2",
+        "raw": "53,110",
+        "location": "table_6:1",
+        "context": "Dilutive weighted average number of shares outstanding"
+      },
+      "x1": {
+        "value": "52432",
+        "half": "1/2",
+        "raw": "52,432",
+        "location": "table_4:1",
+        "context": "Basic weighted average number of shares outstanding during the year (thousands)"
+      },
+      "x2": {
+        "value": "49999",
+        "half": "1/2",
+        "raw": "49,999",
+        "location": "table_6:2",
+        "context": "Dilutive weighted average number of shares outstanding"
+      },
+      "x3": {
+        "value": "49418",
+        "half": "1/2",
+        "raw": "49,418",
+        "location": "table_4:2",
+        "context": "Basic weighted average number of shares outstanding during the year (thousands)"
+      }
+    }
+  },
+  "audit": {
+    "center_difference": "6731/5732488",
+    "baseline": true,
+    "status": "stable",
+    "certificate": {
+      "exact": true,
+      "method": "monotone_interval_derivatives",
+      "lo": "783982/690955485",
+      "hi": "12579566/10364344331",
+      "witness_lo": "11760139918000/10364332281029999",
+      "witness_hi": "12579156082000/10364344324973999"
+    },
+    "witness": null,
+    "probability": 0.0,
+    "qmc_replicates": [
+      0.0,
+      0.0
+    ],
+    "qmc_n_per_replicate": 131072,
+    "first_order_radius": "587452360379/14853361238905088",
+    "first_order_unstable": false,
+    "gradient": {
+      "x0": "1/52432",
+      "x1": "-235/12164224",
+      "x2": "-1/49418",
+      "x3": "49999/2442138724"
+    }
+  },
+  "note": "The stated EPS formulas imply g=(diluted shares/basic shares)-1. Separate conservative share rounding boxes already fix the ordering."
+}

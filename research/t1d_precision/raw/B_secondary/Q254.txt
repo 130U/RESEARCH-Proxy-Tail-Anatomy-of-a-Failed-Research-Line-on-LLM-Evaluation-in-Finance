@@ -1,0 +1,1 @@
+{"answer":"39.0070921986","unit":"percent","expression":"(39.2 - 28.2) / 28.2 * 100","low":"38.5840707965","high":"39.4316163410","reliable_digits":"2","explanation":"Expected volatility increased from 28.2% to 39.2%; allowing for rounding, the percentage increase is reliable to two significant digits."}

@@ -1,0 +1,1 @@
+{"answer":"2.6097560975609756","unit":"ratio","expression":"107 / (107 - 66)","low":"2.5595238095238095","high":"2.6625","reliable_digits":"1","explanation":"The implied tax liability is the $107 million regulatory liability minus its $66 million net-of-tax amount, with both figures rounded to the nearest million."}

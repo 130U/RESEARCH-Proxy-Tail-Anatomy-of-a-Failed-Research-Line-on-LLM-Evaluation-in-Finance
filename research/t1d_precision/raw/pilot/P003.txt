@@ -1,0 +1,1 @@
+{"answer":"96.4390976125519","unit":"percent","expression":"176038 / 182538 * 100","low":"96.4385595367553","high":"96.4396356912963","reliable_digits":"4","explanation":"Allowing each displayed amount to vary by 0.5 thousand dollars gives these bounds, which both round to 96.44 percent."}

@@ -1,0 +1,5 @@
+{
+    "review_id": "R074",
+    "verdict": "valid",
+    "reason": "The table binds rounded additions charged to expense of 29.7 for 2012 and 21.0 for 2011 in matching monetary units, and the program correctly measures change against 2011."
+  }

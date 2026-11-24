@@ -1,0 +1,1 @@
+{"answer":"0.025","unit":"per year","expression":"(40 / 40) / 40","low":"0.025","high":"0.025","reliable_digits":"2","explanation":"The maximum land-improvement life is exactly 40 years, giving a minimum straight-line depreciation rate of 0.025 per year (2.5%)."}

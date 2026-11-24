@@ -1,0 +1,1 @@
+{"answer":"34.9217638691323","unit":"percent","expression":"(1473 / 4218) * 100","low":"34.9057721939078","high":"34.9377593360996","reliable_digits":"3","explanation":"Fiscal 2013 payments are the current portion; the bounds allow rounding of ±0.5 thousand dollars in both the current payments and total."}

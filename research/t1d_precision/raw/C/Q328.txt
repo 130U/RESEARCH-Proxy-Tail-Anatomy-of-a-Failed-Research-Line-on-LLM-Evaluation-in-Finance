@@ -1,0 +1,1 @@
+{"answer":"20","unit":"million dollars","expression":"24 - 4","low":"19","high":"21","reliable_digits":"1","explanation":"Each addition is rounded to the nearest million, so the difference can range from 19 to 21 million dollars."}

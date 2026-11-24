@@ -1,0 +1,7 @@
+{
+    "call_id": "S046",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 0 reports $74.9 million principal repurchased during 2006, and text 2 gives $400.0 million outstanding at year-end 2005 and $325.1 million at year-end 2006. Dividing principal paid off by the opening $400.0 million denominator gives a positive 18.725% portion. The reference reports the equivalent signed balance decline."
+  }

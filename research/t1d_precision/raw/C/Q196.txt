@@ -1,0 +1,1 @@
+{"answer":"58.04","unit":"percent","expression":"(1,451 / 2,500) * 100","low":"58.0083983203","high":"58.0716143229","reliable_digits":"3","explanation":"Divide 2007 crude oil volume by total volume; allowing each figure to vary by 0.5 gives the stated bounds."}

@@ -1,0 +1,190 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R064",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "amounts recorded in accumulated other comprehensive loss as of may 31 , 2015 , the aft er-tax amounts of unrealized gains and losses in aoci related to hedge derivatives follows: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "In Millions",
+          "After-Tax Gain/(Loss)"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Unrealized losses from interest rate cash flow hedges",
+          "$(36.5)"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Unrealized gains from foreign currency cash flow hedges",
+          "7.7"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "After-tax loss in AOCI related to hedge derivatives",
+          "$(28.8)"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_1",
+        "text": "th e net amount of pre-tax gains and losses in aoci as of may 31 , 2015 , that we expect to be reclassifi ed into net earnings within the next 12 months is $ 2.3 million of gain ."
+      },
+      {
+        "location": "text_2",
+        "text": "credit-risk-related contingent features certain of our derivative instruments contain pro- visions that require us to maintain an investment grade credit rating on our debt from each of the major credit rating agencies ."
+      },
+      {
+        "location": "text_3",
+        "text": "if our debt were to fall below investment grade , the counterparties to the deriva- tive instruments could request full collateralization on derivative instruments in net liability positions ."
+      },
+      {
+        "location": "text_4",
+        "text": "th e aggregate fair value of all derivative instruments with credit-risk-related contingent features that were in a liability position on may 31 , 2015 , was $ 81.5 million ."
+      },
+      {
+        "location": "text_5",
+        "text": "we have posted $ 25.0 million of collateral under these contracts ."
+      },
+      {
+        "location": "text_6",
+        "text": "if the credit-risk-related contingent features underlying these agreements had been triggered on may 31 , 2015 , we would have been required to post $ 56.5 million of collateral to counterparties ."
+      },
+      {
+        "location": "text_7",
+        "text": "concentrations of credit and counterparty credit risk during fi scal 2015 , wal-mart stores , inc ."
+      },
+      {
+        "location": "text_8",
+        "text": "and its affi li- ates ( wal-mart ) accounted for 21 percent of our consol- idated net sales and 30 percent of our net sales in the u.s ."
+      },
+      {
+        "location": "text_9",
+        "text": "retail segment ."
+      },
+      {
+        "location": "text_10",
+        "text": "no other customer accounted for 10 percent or more of our consolidated net sales ."
+      },
+      {
+        "location": "text_11",
+        "text": "wal- mart also represented 7 percent of our net sales in the international segment and 9 percent of our net sales in the convenience stores and foodservice segment ."
+      },
+      {
+        "location": "text_12",
+        "text": "as of may 31 , 2015 , wal-mart accounted for 29 percent of our u.s ."
+      },
+      {
+        "location": "text_13",
+        "text": "retail receivables , 6 percent of our international receivables , and 9 percent of our convenience stores and foodservice receivables ."
+      },
+      {
+        "location": "text_14",
+        "text": "th e fi ve largest customers in our u.s ."
+      },
+      {
+        "location": "text_15",
+        "text": "retail segment accounted for 54 percent of its fi scal 2015 net sales , the fi ve largest customers in our international segment accounted for 24 percent of its fi scal 2015 net sales , and the fi ve largest custom- ers in our convenience stores and foodservice segment accounted for 44 percent of its fi scal 2015 net sales ."
+      },
+      {
+        "location": "text_16",
+        "text": "we enter into interest rate , foreign exchange , and certain commodity and equity derivatives , primarily with a diversifi ed group of highly rated counterparties ."
+      },
+      {
+        "location": "text_17",
+        "text": "we continually monitor our positions and the credit ratings of the counterparties involved and , by policy , limit the amount of credit exposure to any one party ."
+      },
+      {
+        "location": "text_18",
+        "text": "th ese transactions may expose us to potential losses due to the risk of nonperformance by these counter- parties ; however , we have not incurred a material loss ."
+      },
+      {
+        "location": "text_19",
+        "text": "we also enter into commodity futures transactions through various regulated exchanges ."
+      },
+      {
+        "location": "text_20",
+        "text": "th e amount of loss due to the credit risk of the counterparties , should the counterparties fail to per- form according to the terms of the contracts , is $ 16.7 million against which we do not hold collateral ."
+      },
+      {
+        "location": "text_21",
+        "text": "under the terms of our swap agreements , some of our trans- actions require collateral or other security to support fi nancial instruments subject to threshold levels of exposure and counterparty credit risk ."
+      },
+      {
+        "location": "text_22",
+        "text": "collateral assets are either cash or u.s ."
+      },
+      {
+        "location": "text_23",
+        "text": "treasury instruments and are held in a trust account that we may access if the coun- terparty defaults ."
+      },
+      {
+        "location": "text_24",
+        "text": "we off er certain suppliers access to a third party ser- vice that allows them to view our scheduled payments online ."
+      },
+      {
+        "location": "text_25",
+        "text": "th e third party service also allows suppliers to fi nance advances on our scheduled payments at the sole discretion of the supplier and the third party ."
+      },
+      {
+        "location": "text_26",
+        "text": "we have no economic interest in these fi nancing arrange- ments and no direct relationship with the suppliers , the third party , or any fi nancial institutions concerning this service ."
+      },
+      {
+        "location": "text_27",
+        "text": "all of our accounts payable remain as obli- gations to our suppliers as stated in our supplier agree- ments ."
+      },
+      {
+        "location": "text_28",
+        "text": "as of may 31 , 2015 , $ 448.6 million of our total accounts payable is payable to suppliers who utilize this third party service ."
+      },
+      {
+        "location": "text_29",
+        "text": "60 general mills ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "in may 2015 what was the ratio of the unrealized losses from interest rate cash flow hedges to the unrealized gains from foreign currency cash flow hedges",
+  "reference_program": "divide(-36.5, 7.7)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "-36.5",
+      "raw": "36.5",
+      "location": "table_1:1",
+      "context": "Unrealized losses from interest rate cash flow hedges | After-Tax Gain/(Loss)"
+    },
+    "x1": {
+      "program_token": "7.7",
+      "raw": "7.7",
+      "location": "table_2:1",
+      "context": "Unrealized gains from foreign currency cash flow hedges | After-Tax Gain/(Loss)"
+    }
+  }
+}

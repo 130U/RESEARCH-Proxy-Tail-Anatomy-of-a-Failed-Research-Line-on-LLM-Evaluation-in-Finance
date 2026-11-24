@@ -1,0 +1,5 @@
+{
+    "review_id": "R016",
+    "verdict": "valid",
+    "reason": "The reconciliation reports a rounded $7.2 million ending liability including $1.2 million of recognized accretion, so subtracting accretion gives the requested balance in millions."
+  }

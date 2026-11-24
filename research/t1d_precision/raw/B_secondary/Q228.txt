@@ -1,0 +1,1 @@
+{"answer":"41.3793103448276","unit":"percent","expression":"12 / 29 * 100","low":"38.9830508474576","high":"43.8596491228070","reliable_digits":"1","explanation":"The earnings-impact portion is $12 million of $29 million; rounding gives bounds of 11.5 / 29.5 * 100 and 12.5 / 28.5 * 100."}

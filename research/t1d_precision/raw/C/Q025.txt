@@ -1,0 +1,1 @@
+{"answer":"9.8","unit":"billion dollars","expression":"3.7 + 2.6 + 3.5","low":"9.65","high":"9.95","reliable_digits":"1","explanation":"Each annual amount has rounding uncertainty of 0.05 billion, giving total uncertainty of 0.15 billion."}

@@ -1,0 +1,1 @@
+{"answer":"65.2730696798","unit":"percent","expression":"(1733 / 2655) * 100","low":"65.2419506684","high":"65.3042004144","reliable_digits":"3","explanation":"Each amount may vary by $0.5 million; the bounds divide the smallest claim by the largest total and vice versa."}

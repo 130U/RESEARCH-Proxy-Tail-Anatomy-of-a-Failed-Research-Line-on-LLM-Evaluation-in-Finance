@@ -1,0 +1,1 @@
+{"answer":"51.171875","unit":"percent","expression":"(3.87 - 2.56) / 2.56 * 100","low":"50.6822612086","high":"51.6634050881","reliable_digits":"2","explanation":"Allowing each rate to vary by 0.005 percentage points gives these bounds and approximately 1% relative uncertainty."}

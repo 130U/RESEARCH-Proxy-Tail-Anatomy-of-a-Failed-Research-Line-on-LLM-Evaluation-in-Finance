@@ -1,0 +1,41 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+part ii item 5 .
+market for registrant 2019s common equity , related stockholder matters and issuer purchases of equity securities our common stock is listed on the nasdaq global select market under the symbol adi .
+information regarding our equity compensation plans and the securities authorized for issuance thereunder is set forth in item 12 of this annual report on form 10-k .
+issuer purchases of equity securities the table below summarizes the activity related to stock repurchases for the three months ended november 2 , 2019 .
+period total number shares purchased ( 1 ) average price paid per share ( 2 ) total number of shares purchased as part of publicly announced plans or programs ( 3 ) approximate dollar value of shares that may yet be purchased under the plans or programs .
+
+TABLE
+Period | Total Number ofShares Purchased (1) | Average Price PaidPer Share (2) | Total Number of SharesPurchased as Part ofPublicly AnnouncedPlans or Programs (3) | Approximate DollarValue of Shares thatMay Yet Be PurchasedUnder the Plans or Programs
+August 4, 2019 through August 31, 2019 | 199,231 | $109.00 | 194,849 | $2,213,017,633
+September 1, 2019 through September 28, 2019 | 342,313 | $113.39 | 338,534 | $2,174,639,499
+September 29, 2019 through November 2, 2019 | 1,023,202 | $109.32 | 949,531 | $2,070,927,831
+Total | 1,564,746 | $110.17 | 1,482,914 | $2,070,927,831
+
+_______________________________________ ( 1 ) includes 81832 shares withheld by us from employees to satisfy employee tax obligations upon vesting of restricted stock units/ awards granted to our employees under our equity compensation plans .
+( 2 ) the average price paid for shares in connection with vesting of restricted stock units/awards are averages of the closing stock price at the vesting date which is used to calculate the number of shares to be withheld .
+( 3 ) shares repurchased pursuant to the stock repurchase program publicly announced on august 12 , 2004 .
+on august 21 , 2018 , the board of directors approved an increase to the current authorization for the stock repurchase program by an additional $ 2.0 billion to $ 8.2 billion in the aggregate .
+under the repurchase program , we may repurchase outstanding shares of our common stock froff m time to time in the open market and through privately negotiated transactions .
+unless terminated earlier by resolution of our board of directors , the repurchase program will expire when we have repurchased all shares authorized for repurchase under the repurchase program .
+the number of holders of record of our common stock at november 22 , 2019 was 2059 .
+this number does not include shareholders for whom shares are held in a 201cnominee 201d or 201cstreet 201d name .
+on november 1 , 2019 , the last reported sales price of our common stock on the nasdaq global select market was $ 109.37 per share. .
+
+QUESTION
+what is the total cash used of the stock repurchase during september 2019 , ( in millions ) ?

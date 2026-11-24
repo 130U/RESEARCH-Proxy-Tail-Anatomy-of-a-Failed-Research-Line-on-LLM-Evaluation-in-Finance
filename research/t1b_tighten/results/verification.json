@@ -1,0 +1,7 @@
+{
+  "questions": 196,
+  "stage_proofs_verified_without_optimizer": 588,
+  "paired_inside_outside_witnesses_verified": 139,
+  "optional_sensitivity_proofs_verified": 1,
+  "pass": true
+}

@@ -1,0 +1,1 @@
+{"answer":"44.5833333333333","unit":"percent","expression":"(1.2 * 1000 - 665) / (1.2 * 1000) * 100","low":"42.1304347826087","high":"46.84","reliable_digits":"0","explanation":"Rounding permits starting liabilities of 1.15–1.25 billion and ending liabilities of 664.5–665.5 million; the resulting decrease crosses the 45% threshold for rounding to one significant digit."}

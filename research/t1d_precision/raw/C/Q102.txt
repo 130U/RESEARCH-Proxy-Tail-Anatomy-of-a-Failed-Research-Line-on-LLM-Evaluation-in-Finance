@@ -1,0 +1,1 @@
+{"answer":"0.32605614","unit":"percent","expression":"(705.4 - 703.1) / 705.4 * 100","low":"0.31190189","high":"0.34020838","reliable_digits":"1","explanation":"Each revenue may vary by 0.05 million, giving these bounds and leaving one significant digit reliable."}

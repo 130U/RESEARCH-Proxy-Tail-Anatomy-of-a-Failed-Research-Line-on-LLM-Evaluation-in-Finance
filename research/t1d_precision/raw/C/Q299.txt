@@ -1,0 +1,1 @@
+{"answer":"67.3076923077","unit":"percent","expression":"105 / 156 * 100","low":"66.7731629393","high":"67.8456591640","reliable_digits":"2","explanation":"Employee-related costs were $105 million of the $156 million total in 2010; rounding each to the nearest million gives the stated bounds."}

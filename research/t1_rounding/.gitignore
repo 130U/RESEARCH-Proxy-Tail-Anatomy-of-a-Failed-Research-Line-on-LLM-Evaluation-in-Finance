@@ -1,0 +1,5 @@
+/data/
+/__pycache__/
+/results/*_pilot.json
+/results/*_pilot.jsonl
+/results/run_summary.txt

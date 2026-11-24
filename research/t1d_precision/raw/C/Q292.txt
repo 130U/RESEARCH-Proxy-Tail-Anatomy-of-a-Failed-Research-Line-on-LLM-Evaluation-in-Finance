@@ -1,0 +1,1 @@
+{"answer":"1.639058","unit":"percent","expression":"(5829 - 5735) / 5735 * 100","low":"1.621480","high":"1.656640","reliable_digits":"1","explanation":"Net revenue increased by $94 million; allowing each rounded revenue total to vary by $0.5 million gives the stated bounds."}

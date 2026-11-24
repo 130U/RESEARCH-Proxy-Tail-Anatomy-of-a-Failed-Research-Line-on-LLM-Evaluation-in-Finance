@@ -1,0 +1,206 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R159",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "4 ."
+      },
+      {
+        "location": "text_1",
+        "text": "acquisitions and dispositions acquisitions the company makes acquisitions that align with its strategic business objectives ."
+      },
+      {
+        "location": "text_2",
+        "text": "the assets and liabilities of the acquired entities have been recorded as of the acquisition date , at their respective fair values , and are included in the consolidated balance sheet ."
+      },
+      {
+        "location": "text_3",
+        "text": "the purchase price allocation is based on estimates of the fair value of assets acquired and liabilities assumed ."
+      },
+      {
+        "location": "text_4",
+        "text": "the aggregate purchase price of acquisitions has been reduced for any cash or cash equivalents acquired with the acquisition ."
+      },
+      {
+        "location": "text_5",
+        "text": "acquisitions during 2017 , 2016 and 2015 were not significant to the company 2019s consolidated financial statements ; therefore , pro forma financial information is not presented ."
+      },
+      {
+        "location": "text_6",
+        "text": "anios acquisition on february 1 , 2017 , the company acquired anios for total consideration of $ 798.3 million , including satisfaction of outstanding debt ."
+      },
+      {
+        "location": "text_7",
+        "text": "anios had annualized pre-acquisition sales of approximately $ 245 million and is a leading european manufacturer and marketer of hygiene and disinfection products for the healthcare , food service , and food and beverage processing industries ."
+      },
+      {
+        "location": "text_8",
+        "text": "anios provides an innovative product line that expands the solutions the company is able to offer , while also providing a complementary geographic footprint within the healthcare market ."
+      },
+      {
+        "location": "text_9",
+        "text": "during 2016 , the company deposited 20ac50 million in an escrow account that was released back to the company upon closing of the transaction in february 2017 ."
+      },
+      {
+        "location": "text_10",
+        "text": "as shown within note 5 , this was recorded as restricted cash within other assets on the consolidated balance sheet as of december 31 , 2016 ."
+      },
+      {
+        "location": "text_11",
+        "text": "the company incurred certain acquisition and integration costs associated with the transaction that were expensed and are reflected in the consolidated statement of income ."
+      },
+      {
+        "location": "text_12",
+        "text": "see note 3 for additional information related to the company 2019s special ( gains ) and charges related to such activities ."
+      },
+      {
+        "location": "text_13",
+        "text": "the components of the cash paid for anios are shown in the following table. ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "(millions)",
+          "2017"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Tangible assets",
+          "$139.8"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Identifiable intangible assets",
+          ""
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Customer relationships",
+          "252.0"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Trademarks",
+          "65.7"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Other technology",
+          "16.1"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Total assets acquired",
+          "473.6"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Goodwill",
+          "511.7"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Total liabilities",
+          "187.0"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Total consideration transferred",
+          "798.3"
+        ]
+      },
+      {
+        "row_index": 10,
+        "cells": [
+          "Long-term debt repaid upon close",
+          "192.8"
+        ]
+      },
+      {
+        "row_index": 11,
+        "cells": [
+          "Net consideration transferred to sellers",
+          "$605.5"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_14",
+        "text": "tangible assets are primarily comprised of accounts receivable of $ 64.8 million , property , plant and equipment of $ 24.7 million and inventory of $ 29.1 million ."
+      },
+      {
+        "location": "text_15",
+        "text": "liabilities primarily consist of deferred tax liabilities of $ 102.3 million and current liabilities of $ 62.5 million ."
+      },
+      {
+        "location": "text_16",
+        "text": "customer relationships , trademarks and other technology are being amortized over weighted average lives of 20 , 17 , and 11 years , respectively ."
+      },
+      {
+        "location": "text_17",
+        "text": "goodwill of $ 511.7 million arising from the acquisition consists largely of the synergies and economies of scale expected through adding complementary geographies and innovative products to the company 2019s healthcare portfolio ."
+      },
+      {
+        "location": "text_18",
+        "text": "the goodwill was allocated to the institutional , healthcare , and specialty operating segments within the global institutional reportable segment and the food & beverage and life sciences operating segments within the global industrial reportable segment ."
+      },
+      {
+        "location": "text_19",
+        "text": "none of the goodwill recognized is expected to be deductible for income tax purposes. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what portion of total assets acquired of anios are intangible assets?",
+  "reference_program": "subtract(473.6, 139.8), divide(#0, 473.6)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "473.6",
+      "raw": "473.6",
+      "location": "table_6:1",
+      "context": "Total assets acquired | 2017"
+    },
+    "x1": {
+      "program_token": "139.8",
+      "raw": "139.8",
+      "location": "table_1:1",
+      "context": "Tangible assets | 2017"
+    }
+  }
+}

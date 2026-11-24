@@ -1,0 +1,1 @@
+{"answer":"2.5974025974","unit":"percent","expression":"(77 - 75) / 77 * 100","low":"1.3071895425","high":"3.8709677419","reliable_digits":"0","explanation":"Allowing each expense to vary by $0.5 million gives these rounding bounds, so even the first significant digit is uncertain."}

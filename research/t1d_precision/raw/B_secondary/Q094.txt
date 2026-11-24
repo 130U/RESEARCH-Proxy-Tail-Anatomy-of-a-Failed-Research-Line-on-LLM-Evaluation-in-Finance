@@ -1,0 +1,1 @@
+{"answer":"27.2727272727","unit":"percent","expression":"(11.2 - 8.8) / 8.8 * 100","low":"25.9887005650","high":"28.5714285714","reliable_digits":"1","explanation":"Receivables increased from 8.8 million to 11.2 million; allowing for rounding to the nearest 0.1 million gives the stated bounds."}

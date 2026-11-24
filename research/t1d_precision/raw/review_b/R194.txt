@@ -1,0 +1,5 @@
+{
+    "review_id": "R194",
+    "verdict": "uncertain",
+    "reason": "The rounded estimates are correctly bound, but the malformed wording 'from to 20192018' leaves the intended ratio direction ambiguous."
+  }

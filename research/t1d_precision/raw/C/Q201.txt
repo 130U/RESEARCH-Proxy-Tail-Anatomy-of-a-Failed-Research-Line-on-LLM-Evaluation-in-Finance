@@ -1,0 +1,1 @@
+{"answer":"-2.9103147892","unit":"percent","expression":"(4904 - 5051) / 5051 * 100","low":"-2.9298228249","high":"-2.8908028908","reliable_digits":"2","explanation":"Each revenue figure can vary by $0.5 million, giving these bounds and supporting two significant digits."}

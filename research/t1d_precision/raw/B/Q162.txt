@@ -1,0 +1,1 @@
+{"answer":"-16.2264671402","unit":"percent","expression":"(24296 - 29002) / 29002 * 100","low":"-16.2296353763","high":"-16.2232987949","reliable_digits":"3","explanation":"Collateral posted decreased by about 16.2%; the bounds allow each reported amount to vary by 0.5 million dollars."}

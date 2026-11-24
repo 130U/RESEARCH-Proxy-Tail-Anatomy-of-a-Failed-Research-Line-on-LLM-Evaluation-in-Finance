@@ -1,0 +1,1 @@
+{"answer":"19.2307692308","unit":"percent","expression":"(127.1 - 106.6) / 106.6 * 100","low":"19.1279887482","high":"19.3336461755","reliable_digits":"2","explanation":"Each balance has rounding uncertainty of $0.05 million; opposite extremes give the bounds, supporting two reliable significant digits."}

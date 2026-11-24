@@ -1,0 +1,1 @@
+{"answer":"-4.3645960211","unit":"percent","expression":"(4711 - 4926) / 4926 * 100","low":"-4.3844514361","high":"-4.3447365760","reliable_digits":"1","explanation":"Each balance has rounding uncertainty of 0.5 million; the resulting growth rates round consistently to one significant digit."}

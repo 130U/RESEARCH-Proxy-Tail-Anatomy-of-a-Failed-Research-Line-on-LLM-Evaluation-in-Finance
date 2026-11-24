@@ -1,0 +1,1 @@
+{"answer":"80.472848","unit":"percent","expression":"(22.366 - 12.393) / 12.393 * 100","low":"80.461532","high":"80.484164","reliable_digits":"3","explanation":"Each balance has rounding uncertainty of 0.0005 billion dollars, giving these bounds and three reliable significant digits."}

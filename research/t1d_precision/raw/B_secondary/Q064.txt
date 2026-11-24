@@ -1,0 +1,1 @@
+{"answer":"-7.916666666666667","unit":"percent","expression":"(22.1 - 24.0) / 24.0 * 100","low":"-8.316008316008316","high":"-7.515657620041754","reliable_digits":"1","explanation":"Expected volatility decreased by about 7.9%, with bounds reflecting rounding of each displayed volatility to 0.1 percentage point."}

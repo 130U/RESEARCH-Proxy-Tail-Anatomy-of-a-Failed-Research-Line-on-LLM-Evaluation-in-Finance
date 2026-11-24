@@ -1,0 +1,26 @@
+{
+  "group": "review_b_batch",
+  "id": "T007",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "fresh_session": true,
+  "prompt_file": "prompts/review_b_batch/T007.txt",
+  "started_utc": "2026-11-17T09:39:54.514191+00:00",
+  "status": "completed",
+  "returncode": 0,
+  "attempt_number": 1,
+  "completed_utc": "2026-11-17T09:41:19.592391+00:00",
+  "elapsed_seconds": 85.078,
+  "thread_id": "01a1e8e0-954e-75d0-b238-6520c131760e",
+  "usage": {
+    "input_tokens": 53075,
+    "cached_input_tokens": 20096,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 3345,
+    "reasoning_output_tokens": 2383
+  },
+  "event_item_types": [
+    "agent_message"
+  ],
+  "tool_use_observed": false
+}

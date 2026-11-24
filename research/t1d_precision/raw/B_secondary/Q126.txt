@@ -1,0 +1,1 @@
+{"answer":"-2.8281133818","unit":"percent","expression":"(377677 - 388669) / 388669 * 100","low":"-2.82836703163","high":"-2.82785973136","reliable_digits":"4","explanation":"Total financial liabilities at fair value decreased by approximately 2.828%, with bounds reflecting rounding to the nearest million dollars."}

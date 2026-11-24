@@ -1,0 +1,236 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R221",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "the fair value of our total investments increased $ 4.8 billion during 2010 , primarily due to unrealized appreciation , the inves- ting of operating cash flows , and the portfolios acquired in the 2010 corporate acquisitions ."
+      },
+      {
+        "location": "text_1",
+        "text": "the following tables show the market value of our fixed maturities and short-term investments at december 31 , 2010 and 2009 ."
+      },
+      {
+        "location": "text_2",
+        "text": "the first table lists investments according to type and the second according to s&p credit rating. ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2010",
+          "2009"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "(in millions of U.S. dollars, except for percentages)",
+          "Market Value",
+          "Percentage of Total",
+          "Market Value",
+          "Percentageof Total"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Treasury",
+          "$2,075",
+          "4%",
+          "$2,068",
+          "5%"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Agency",
+          "2,015",
+          "4%",
+          "2,698",
+          "6%"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Corporate and asset-backed securities",
+          "15,900",
+          "33%",
+          "13,537",
+          "30%"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Mortgage-backed securities",
+          "12,362",
+          "25%",
+          "11,311",
+          "25%"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Municipal",
+          "2,449",
+          "5%",
+          "2,300",
+          "5%"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Non-U.S.",
+          "12,199",
+          "25%",
+          "11,172",
+          "25%"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Short-term investments",
+          "1,983",
+          "4%",
+          "1,667",
+          "4%"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Total",
+          "$48,983",
+          "100%",
+          "$44,753",
+          "100%"
+        ]
+      },
+      {
+        "row_index": 10,
+        "cells": [
+          "AAA",
+          "$23,718",
+          "48%",
+          "$22,884",
+          "51%"
+        ]
+      },
+      {
+        "row_index": 11,
+        "cells": [
+          "AA",
+          "4,714",
+          "10%",
+          "4,021",
+          "9%"
+        ]
+      },
+      {
+        "row_index": 12,
+        "cells": [
+          "A",
+          "8,482",
+          "17%",
+          "7,461",
+          "17%"
+        ]
+      },
+      {
+        "row_index": 13,
+        "cells": [
+          "BBB",
+          "5,487",
+          "11%",
+          "4,910",
+          "11%"
+        ]
+      },
+      {
+        "row_index": 14,
+        "cells": [
+          "BB",
+          "3,357",
+          "7%",
+          "2,866",
+          "6%"
+        ]
+      },
+      {
+        "row_index": 15,
+        "cells": [
+          "B",
+          "2,393",
+          "5%",
+          "2,029",
+          "5%"
+        ]
+      },
+      {
+        "row_index": 16,
+        "cells": [
+          "Other",
+          "832",
+          "2%",
+          "582",
+          "1%"
+        ]
+      },
+      {
+        "row_index": 17,
+        "cells": [
+          "Total",
+          "$48,983",
+          "100%",
+          "$44,753",
+          "100%"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_3",
+        "text": "."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the percentage change in the balance of treasury in 2010?",
+  "reference_program": "subtract(2075, 2068), divide(#0, 2068)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "2075",
+      "raw": "2,075",
+      "location": "table_2:1",
+      "context": "Treasury | 2010"
+    },
+    "x1": {
+      "program_token": "2068",
+      "raw": "2,068",
+      "location": "table_2:3",
+      "context": "Treasury | "
+    }
+  }
+}

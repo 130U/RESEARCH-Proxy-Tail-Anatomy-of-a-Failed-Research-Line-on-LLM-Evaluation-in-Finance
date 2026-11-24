@@ -1,0 +1,114 @@
+[
+  {
+    "call_id": "S049",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_13 identifies the 2003-versus-2002 operation and maintenance increases as $7.1 million and $4.4 million. Dividing their sum by 2003 net revenue of $426.6 million in row 4 is supported. The reference instead uses increases for 2004 versus 2003."
+  },
+  {
+    "call_id": "S050",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "Row 3 supports a $33.7 million increase in net receivables between year-end 2012 and 2013; row 1 supports a $29.6 million increase in gross receivables. Neither establishes 2013 sales minus payments received without information about other receivable movements."
+  },
+  {
+    "call_id": "S051",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Consulting and professional fees in row 2 fell from $8.8 million in 2006 to $1.0 million in 2007. Percentage change uses the starting $8.8 million denominator, giving -88.64%. The reference reverses the subtraction and uses the ending value."
+  },
+  {
+    "call_id": "S052",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Postretirement plans in row 2 increased from 3.68% in 2016 to 3.79% in 2017. The 0.11 percentage-point difference must be multiplied by 100 to obtain 11 basis points; the reference incorrectly subtracts 100."
+  },
+  {
+    "call_id": "S053",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Rows 1 and 2 report May 31, 2015 after-tax losses of $36.5 million and gains of $7.7 million. The model explicitly calculates the loss-magnitude ratio using $7.7 million as denominator; the reference retains the loss's negative accounting sign."
+  },
+  {
+    "call_id": "S054",
+    "primary_cause": "unresolved",
+    "formula_valid": false,
+    "alternative_precision_used": false,
+    "reason": "Text_15 reports capitalized interest, not capital expenditures: $30.4 million in 2018 and $29.0 million in 2017. The model's $29.0 million denominator therefore concerns the wrong concept. Actual 2017–2018 capital expenditures are absent; the reference's $1.6 billion and $1.2 billion concern anticipated 2019 and 2020 expenditures."
+  },
+  {
+    "call_id": "S055",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "Row 4 supports a $1.8 million change in deferred subscription revenue from $24.8 million in 2012 to $26.6 million in 2013. The question does not specify this balance-change comparison or provide payments and recognized-revenue flows. The reference instead subtracts accrued warranty balances in row 3, an unrelated concept."
+  },
+  {
+    "call_id": "S056",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_17 identifies November 2015 issuance costs of $48 million and notes of $7.0 billion. Converting the denominator to $7,000 million and multiplying the ratio by 100 gives 0.686%. The reference divides amounts expressed in different money units."
+  },
+  {
+    "call_id": "S057",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_20 gives weighted-average borrowing rates of 5.3% in 2010 and 3.5% in 2011. Using the starting 5.3% denominator, the model correctly reports a positive decrease magnitude of 33.96%; the reference reports the signed change."
+  },
+  {
+    "call_id": "S058",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "Text_12 gives approximately $210 million transaction value and $182 million cash net of $7 million acquired cash. The model reconstructs $189 million gross cash consideration, but the excerpt does not establish whether the $210 million total uses that same gross basis. The noncash residual is therefore not uniquely established."
+  },
+  {
+    "call_id": "S059",
+    "primary_cause": "unresolved",
+    "formula_valid": false,
+    "alternative_precision_used": false,
+    "reason": "Text_26 gives $47.0 million expected return for pension plans collectively, while text_18 assigns 7.75% only to the U.S. qualified plan; international rates vary. Applying that denominator to the collective return mixes scopes. Row 2's $1.7 million is a 25-basis-point expense sensitivity, not total expected return as the reference assumes."
+  },
+  {
+    "call_id": "S060",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The 2018 Peer Group row 3 rises from 151.16 in 2016 to 177.26 in 2017, expressed as investment values based on an initial $100. Growth correctly divides the 26.10 increase by the starting 151.16 value. The reference performs a second subtraction instead of division."
+  },
+  {
+    "call_id": "S061",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Under the question's assumed removal of the sale gain from 2015 net revenue, row 8 supplies $5,829 million and text_2 supplies the $154 million pretax gain. The model consistently subtracts that gain; the reference substitutes the $100 million after-tax amount."
+  },
+  {
+    "call_id": "S062",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_5 reports an EnLink disposal gain of $2.6 billion pretax and $2.2 billion after tax. The model uses the conventional tax-rate denominator of $2.6 billion, yielding 15.38%. The wording 'on the net earnings' also permits the reference's tax-to-after-tax-gain interpretation using $2.2 billion."
+  },
+  {
+    "call_id": "S063",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Free cash flow in row 4 is $234 million for 2005 and $487 million for 2007, supporting an increase of $253 million. The reference incorrectly uses the 2006 value of $516 million as the starting amount."
+  },
+  {
+    "call_id": "S064",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_22 gives weighted-average grant-date fair values of $6.91 per share in 2006 and $8.75 in 2007. Growth uses the starting $6.91 denominator and equals 26.63%. The reference reverses the change and divides by the ending $8.75 value."
+  }
+]

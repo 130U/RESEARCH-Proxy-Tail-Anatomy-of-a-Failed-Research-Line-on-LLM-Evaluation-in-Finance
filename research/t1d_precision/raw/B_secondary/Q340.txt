@@ -1,0 +1,1 @@
+{"answer":"2.6515151515151515","unit":"percent","expression":"(27.1 - 26.4) / 26.4 * 100","low":"2.268431001890359","high":"3.036053130929791","reliable_digits":"0","explanation":"Each euro figure is rounded to the nearest 0.1, giving a percentage increase between the stated bounds with no stable significant digit."}

@@ -1,0 +1,1 @@
+{"answer":"7.9506878685","unit":"percent","expression":"(559.7 - 515.2) / 559.7 * 100","low":"7.9335298847","high":"7.9678427869","reliable_digits":"2","explanation":"Each cash flow figure is uncertain by $0.05 million, giving approximately 0.22% relative uncertainty in the percentage decrease."}

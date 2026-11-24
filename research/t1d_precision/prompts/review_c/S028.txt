@@ -1,0 +1,222 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S028",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "debt issuance costs : debt issuance costs are reflected as a direct deduction of our long-term debt balance on the consolidated balance sheets ."
+      },
+      {
+        "location": "text_1",
+        "text": "we incurred debt issuance costs of $ 15 million in 2018 and $ 53 million in 2016 ."
+      },
+      {
+        "location": "text_2",
+        "text": "debt issuance costs in 2017 were insignificant ."
+      },
+      {
+        "location": "text_3",
+        "text": "unamortized debt issuance costs were $ 115 million at december 29 , 2018 , $ 114 million at december 30 , 2017 , and $ 124 million at december 31 , 2016 ."
+      },
+      {
+        "location": "text_4",
+        "text": "amortization of debt issuance costs was $ 16 million in 2018 , $ 16 million in 2017 , and $ 14 million in 2016 ."
+      },
+      {
+        "location": "text_5",
+        "text": "debt premium : unamortized debt premiums are presented on the consolidated balance sheets as a direct addition to the carrying amount of debt ."
+      },
+      {
+        "location": "text_6",
+        "text": "unamortized debt premium , net , was $ 430 million at december 29 , 2018 and $ 505 million at december 30 , 2017 ."
+      },
+      {
+        "location": "text_7",
+        "text": "amortization of our debt premium , net , was $ 65 million in 2018 , $ 81 million in 2017 , and $ 88 million in 2016 ."
+      },
+      {
+        "location": "text_8",
+        "text": "debt repayments : in july and august 2018 , we repaid $ 2.7 billion aggregate principal amount of senior notes that matured in the period ."
+      },
+      {
+        "location": "text_9",
+        "text": "we funded these long-term debt repayments primarily with proceeds from the new notes issued in june 2018 ."
+      },
+      {
+        "location": "text_10",
+        "text": "additionally , in june 2017 , we repaid $ 2.0 billion aggregate principal amount of senior notes that matured in the period ."
+      },
+      {
+        "location": "text_11",
+        "text": "we funded these long-term debt repayments primarily with cash on hand and our commercial paper programs ."
+      },
+      {
+        "location": "text_12",
+        "text": "fair value of debt : at december 29 , 2018 , the aggregate fair value of our total debt was $ 30.1 billion as compared with a carrying value of $ 31.2 billion ."
+      },
+      {
+        "location": "text_13",
+        "text": "at december 30 , 2017 , the aggregate fair value of our total debt was $ 33.0 billion as compared with a carrying value of $ 31.5 billion ."
+      },
+      {
+        "location": "text_14",
+        "text": "our short-term debt and commercial paper had carrying values that approximated their fair values at december 29 , 2018 and december 30 , 2017 ."
+      },
+      {
+        "location": "text_15",
+        "text": "we determined the fair value of our long-term debt using level 2 inputs ."
+      },
+      {
+        "location": "text_16",
+        "text": "fair values are generally estimated based on quoted market prices for identical or similar instruments ."
+      },
+      {
+        "location": "text_17",
+        "text": "note 20 ."
+      },
+      {
+        "location": "text_18",
+        "text": "capital stock preferred stock our second amended and restated certificate of incorporation authorizes the issuance of up to 920000 shares of preferred stock ."
+      },
+      {
+        "location": "text_19",
+        "text": "on june 7 , 2016 , we redeemed all 80000 outstanding shares of our series a preferred stock for $ 8.3 billion ."
+      },
+      {
+        "location": "text_20",
+        "text": "we funded this redemption primarily through the issuance of long-term debt in may 2016 , as well as other sources of liquidity , including our u.s ."
+      },
+      {
+        "location": "text_21",
+        "text": "commercial paper program , u.s ."
+      },
+      {
+        "location": "text_22",
+        "text": "securitization program , and cash on hand ."
+      },
+      {
+        "location": "text_23",
+        "text": "in connection with the redemption , all series a preferred stock was canceled and automatically retired ."
+      },
+      {
+        "location": "text_24",
+        "text": "common stock our second amended and restated certificate of incorporation authorizes the issuance of up to 5.0 billion shares of common stock ."
+      },
+      {
+        "location": "text_25",
+        "text": "shares of common stock issued , in treasury , and outstanding were ( in millions of shares ) : shares issued treasury shares shares outstanding ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Shares Issued",
+          "Treasury Shares",
+          "Shares Outstanding"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Balance at January 3, 2016",
+          "1,214",
+          "—",
+          "1,214"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Exercise of stock options, issuance of other stock awards, and other",
+          "5",
+          "(2)",
+          "3"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Balance at December 31, 2016",
+          "1,219",
+          "(2)",
+          "1,217"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Exercise of stock options, issuance of other stock awards, and other",
+          "2",
+          "—",
+          "2"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Balance at December 30, 2017",
+          "1,221",
+          "(2)",
+          "1,219"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Exercise of stock options, issuance of other stock awards, and other",
+          "3",
+          "(2)",
+          "1"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Balance at December 29, 2018",
+          "1,224",
+          "(4)",
+          "1,220"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_26",
+        "text": "."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "in july and august 2018 , what percent of debt carrying debt in december did they pay off?",
+  "human_answer": "7.96%",
+  "reference_program": "add(31.2, 2.7), divide(2.7, #0)",
+  "reference_execution_value": 0.07965,
+  "model_response": {
+    "answer": "8.653846153846154",
+    "unit": "percent",
+    "expression": "(2.7 / 31.2) * 100",
+    "explanation": "The $2.7 billion repayment was 8.653846153846154 percent of the $31.2 billion debt carrying value in December 2018."
+  }
+}

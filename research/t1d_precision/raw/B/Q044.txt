@@ -1,0 +1,1 @@
+{"answer":"4.827586206896552","unit":"percent","expression":"(30.4 - 29.0) / 29.0 * 100","low":"4.475043029259897","high":"5.181347150259067","reliable_digits":"0","explanation":"Each amount has rounding uncertainty of $0.05 million, producing a range that does not preserve even the first significant digit."}

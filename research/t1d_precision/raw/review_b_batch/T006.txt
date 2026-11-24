@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R081",
+    "verdict": "valid",
+    "reason": "The bound values are Aon's rounded net foreign exchange translation balances in millions for 2007 and 2006, and subtracting the earlier balance gives the requested net change."
+  },
+  {
+    "review_id": "R082",
+    "verdict": "valid",
+    "reason": "The rounded $32 million and $38 million DVA sensitivities match the two reporting dates, and their arithmetic mean converted to dollars answers the question."
+  },
+  {
+    "review_id": "R083",
+    "verdict": "valid",
+    "reason": "The rounded actual equity allocations are 17% for 2018 and 30% for 2017, and the calculation measures their signed relative decline using 2017 as the base."
+  },
+  {
+    "review_id": "R084",
+    "verdict": "valid",
+    "reason": "Both bindings correctly identify rounded 2014 revenue amounts in millions, and dividing net interest income by total net revenue gives the requested proportion."
+  },
+  {
+    "review_id": "R085",
+    "verdict": "valid",
+    "reason": "The source explicitly describes approximately $3.5 billion, $2.6 billion and $3.7 billion of temporary differences for 2009, 2008 and 2007, respectively, supporting their requested sum in billions."
+  },
+  {
+    "review_id": "R086",
+    "verdict": "valid",
+    "reason": "The source reports aggregate open-market repurchases as rounded quantities of 0.6 million and 0.7 million shares for 2018 and 2017, and adding them gives the combined million shares."
+  },
+  {
+    "review_id": "R087",
+    "verdict": "invalid",
+    "reason": "The 2012 purchase obligations are $623 million, whereas the bound $747 million denominator includes both lease and purchase obligations."
+  },
+  {
+    "review_id": "R088",
+    "verdict": "valid",
+    "reason": "The rounded rental expenses are $75 million for 2001 and $107 million for 2000, and the calculation correctly measures growth against the 2000 base."
+  },
+  {
+    "review_id": "R089",
+    "verdict": "valid",
+    "reason": "The rounded net derivative gains are $24 million for 2007 and $15 million for 2006, and dividing the later balance by the earlier balance and subtracting one gives the relative increase."
+  },
+  {
+    "review_id": "R090",
+    "verdict": "invalid",
+    "reason": "The $9 million is compensation expense, so dividing it by the exact count of 411,636 shares gives compensation expense per share rather than average share price."
+  },
+  {
+    "review_id": "R091",
+    "verdict": "valid",
+    "reason": "The source assigns rounded cash dividends of $92 million to 2013 and $83 million to 2012, and the calculation correctly uses 2012 as the growth denominator."
+  },
+  {
+    "review_id": "R092",
+    "verdict": "uncertain",
+    "reason": "The $43 million and $47 million balances are loss reserves, while maximum recourse exposures are separately reported as $3.9 billion and $4.0 billion, leaving the question's meaning of obligations ambiguous."
+  },
+  {
+    "review_id": "R093",
+    "verdict": "invalid",
+    "reason": "The tax rate on the sale gain requires dividing the tax difference by the $2.6 billion pretax gain, whereas the calculation divides by the $2.2 billion after-tax gain."
+  },
+  {
+    "review_id": "R094",
+    "verdict": "valid",
+    "reason": "The source identifies rounded balances of $2.7 billion in high-LTV home equity loans out of $14.4 billion at December 31, 2007, supporting the numerator and denominator."
+  },
+  {
+    "review_id": "R095",
+    "verdict": "valid",
+    "reason": "The bound 322.4 million and 326.5 million shares are rounded weighted averages for diluted computations in 2014 and 2013, and their subtraction gives the requested change in millions."
+  },
+  {
+    "review_id": "R096",
+    "verdict": "valid",
+    "reason": "The source assigns rounded weighted-average estimated option fair values of $5.27 to 2013 and $4.77 to 2012, and the calculation correctly measures growth against 2012."
+  }
+]

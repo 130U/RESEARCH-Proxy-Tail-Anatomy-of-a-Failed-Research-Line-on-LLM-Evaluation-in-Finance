@@ -1,0 +1,7 @@
+{
+    "call_id": "S042",
+    "primary_cause": "unresolved",
+    "formula_valid": null,
+    "alternative_precision_used": false,
+    "reason": "The question ends after 'represented by' and specifies neither an asset category nor a year. The reference selects row 4, 2010 Forward contract receivable of $11.8 million, over row 10, 2010 Total of $146.1 million, without support from the question. The model's abstention is substantively justified."
+  }

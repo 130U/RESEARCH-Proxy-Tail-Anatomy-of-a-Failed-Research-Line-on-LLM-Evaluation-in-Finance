@@ -1,0 +1,1 @@
+{"answer":"2.60975609756","unit":"ratio","expression":"107 / (107 - 66)","low":"2.55952380952","high":"2.6625","reliable_digits":"1","explanation":"The implied tax liability is 107 - 66 = $41 million; allowing for rounding gives the stated bounds."}

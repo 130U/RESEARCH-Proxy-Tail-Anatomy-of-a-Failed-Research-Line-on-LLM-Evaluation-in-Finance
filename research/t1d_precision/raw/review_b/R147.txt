@@ -1,0 +1,5 @@
+{
+    "review_id": "R147",
+    "verdict": "invalid",
+    "reason": "The calculation divides the 2014 swaps amount in billions by the hedges amount in millions without converting them to common units."
+  }

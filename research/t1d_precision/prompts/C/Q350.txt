@@ -1,0 +1,49 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+entergy corporation and subsidiaries management's financial discussion and analysis net revenue utility following is an analysis of the change in net revenue comparing 2011 to 2010 .
+amount ( in millions ) .
+
+TABLE
+ | Amount (In Millions)
+2010 net revenue | $5,051
+Mark-to-market tax settlement sharing | (196)
+Purchased power capacity | (21)
+Net wholesale revenue | (14)
+Volume/weather | 13
+ANO decommissioning trust | 24
+Retail electric price | 49
+Other | (2)
+2011 net revenue | $4,904
+
+the mark-to-market tax settlement sharing variance results from a regulatory charge because a portion of the benefits of a settlement with the irs related to the mark-to-market income tax treatment of power purchase contracts will be shared with customers , slightly offset by the amortization of a portion of that charge beginning in october 2011 .
+see notes 3 and 8 to the financial statements for additional discussion of the settlement and benefit sharing .
+the purchased power capacity variance is primarily due to price increases for ongoing purchased power capacity and additional capacity purchases .
+the net wholesale revenue variance is primarily due to lower margins on co-owner contracts and higher wholesale energy costs .
+the volume/weather variance is primarily due to an increase of 2061 gwh in weather-adjusted usage across all sectors .
+weather-adjusted residential retail sales growth reflected an increase in the number of customers .
+industrial sales growth has continued since the beginning of 2010 .
+entergy 2019s service territory has benefited from the national manufacturing economy and exports , as well as industrial facility expansions .
+increases have been offset to some extent by declines in the paper , wood products , and pipeline segments .
+the increase was also partially offset by the effect of less favorable weather on residential sales .
+the ano decommissioning trust variance is primarily related to the deferral of investment gains from the ano 1 and 2 decommissioning trust in 2010 in accordance with regulatory treatment .
+the gains resulted in an increase in interest and investment income in 2010 and a corresponding increase in regulatory charges with no effect on net income .
+the retail electric price variance is primarily due to : rate actions at entergy texas , including a base rate increase effective august 2010 and an additional increase beginning may 2011 ; a formula rate plan increase at entergy louisiana effective may 2011 ; and a base rate increase at entergy arkansas effective july 2010 .
+these were partially offset by formula rate plan decreases at entergy new orleans effective october 2010 and october 2011 .
+see note 2 to the financial statements for further discussion of these proceedings. .
+
+QUESTION
+what is the total amount of variance that favorably affected net revenue in 2011?

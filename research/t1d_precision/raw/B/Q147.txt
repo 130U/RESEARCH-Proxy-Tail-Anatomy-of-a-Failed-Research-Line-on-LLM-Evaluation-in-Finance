@@ -1,0 +1,1 @@
+{"answer":"9.75","unit":"million dollars per year","expression":"39 / 4","low":"9.625","high":"9.875","reliable_digits":"1","explanation":"The technology cost is rounded to the nearest million dollars, while the 4-year amortization period is exact."}

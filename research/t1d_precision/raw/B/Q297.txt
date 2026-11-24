@@ -1,0 +1,1 @@
+{"answer":"3.221864237306966","unit":"times","expression":"(2.9 * 1000) / 900.1","low":"3.166138976837194","high":"3.277595689128382","reliable_digits":"1","explanation":"Dividing debt issuance, converted from billions to millions, by debt reductions gives the ratio; the displayed rounding supports one reliable significant digit."}

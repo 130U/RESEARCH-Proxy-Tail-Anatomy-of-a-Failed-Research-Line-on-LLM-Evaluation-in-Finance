@@ -1,0 +1,1 @@
+{"answer":"-14.1614906832","unit":"percent","expression":"(6.91 - 8.05) / 8.05 * 100","low":"-14.2768466791","high":"-14.0459912989","reliable_digits":"2","explanation":"The fair value decreased; allowing each displayed value to vary by $0.005 gives these bounds and supports two significant digits."}

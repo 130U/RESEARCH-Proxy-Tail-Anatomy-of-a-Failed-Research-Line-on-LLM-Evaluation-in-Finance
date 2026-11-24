@@ -1,0 +1,5 @@
+{
+    "review_id": "R233",
+    "verdict": "invalid",
+    "reason": "The rounded pro forma net earnings are correctly bound to 2015 and 2014, but the calculation returns fractional change without converting it to the requested percentage."
+  }

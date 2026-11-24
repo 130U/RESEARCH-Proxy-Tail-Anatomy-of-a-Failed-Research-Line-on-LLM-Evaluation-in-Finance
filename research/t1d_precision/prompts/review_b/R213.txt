@@ -1,0 +1,231 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R213",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "financial statements ."
+      },
+      {
+        "location": "text_1",
+        "text": "as of december 31 , 2016 , we had cash and cash equivalents of $ 683 million and debt of $ 10478 million , including the current portion , net of capitalized debt issuance costs ."
+      },
+      {
+        "location": "text_2",
+        "text": "of the $ 683 million cash and cash equivalents , approximately $ 470 million is held by our foreign entities and would generally be subject to u.s ."
+      },
+      {
+        "location": "text_3",
+        "text": "income taxation upon repatriation to the u.s ."
+      },
+      {
+        "location": "text_4",
+        "text": "the majority of our domestic cash and cash equivalents represents net deposits-in-transit at the balance sheet dates and relates to daily settlement activity ."
+      },
+      {
+        "location": "text_5",
+        "text": "we expect that cash and cash equivalents plus cash flows from operations over the next twelve months will be sufficient to fund our operating cash requirements , capital expenditures and mandatory debt service ."
+      },
+      {
+        "location": "text_6",
+        "text": "we currently expect to continue to pay quarterly dividends ."
+      },
+      {
+        "location": "text_7",
+        "text": "however , the amount , declaration and payment of future dividends is at the discretion of the board of directors and depends on , among other things , our investment opportunities , results of operationtt s , financial condition , cash requirements , future prospects , and other factors that may be considered relevant by our board of directors , including legal and contractual restrictions ."
+      },
+      {
+        "location": "text_8",
+        "text": "additionally , the payment of cash dividends may be limited by covenants in certain debt agreements ."
+      },
+      {
+        "location": "text_9",
+        "text": "a regular quarterly dividend of $ 0.29 per common share is payable on march 31 , 2017 to shareholders of record as of thef close of business on march 17 , 2017 ."
+      },
+      {
+        "location": "text_10",
+        "text": "cash flows from operations cash flows from operations were $ 1925 million , $ 1131 million and $ 1165 million in 2016 , 2015 and 2014 respectively ."
+      },
+      {
+        "location": "text_11",
+        "text": "our net cash provided by operating activities consists primarily of net earnings , adjusted to add backr depreciation and amortization ."
+      },
+      {
+        "location": "text_12",
+        "text": "ck ash flows from operations increased $ 794 million in 2016 and decreased $ 34 million in 2015 ."
+      },
+      {
+        "location": "text_13",
+        "text": "the 2016 increase in cash flows from operations is primarily due to increased net earnings , after the add back of non-cash depreciation and amortization , as a result of sungard operations being included for the full year ."
+      },
+      {
+        "location": "text_14",
+        "text": "the 2015 decrease in cash flows from operations is primarily due to a tax payment of $ 88 million of income taxes relating to the sale of check warranty contracts and other assets in the gaming industry and lower net earnings , partially offset by changes in working capital ."
+      },
+      {
+        "location": "text_15",
+        "text": "capital expenditures and other investing activities our principal capital expenditures are for computer software ( purchased and internally developed ) and addrr itions to property and equipment ."
+      },
+      {
+        "location": "text_16",
+        "text": "we invested approximately $ 616 million , $ 415 million and $ 372 million in capital expenditures during 2016 , 2015 and 2014 , respectively ."
+      },
+      {
+        "location": "text_17",
+        "text": "we expect to invest approximately 6%-7% ( 6%-7 % ) of 2017 revenue in capital expenditures ."
+      },
+      {
+        "location": "text_18",
+        "text": "we used $ 0 million , $ 1720 million and $ 595 million of cash during 2016 , 2015 and 2014 , respectively , for acquisitions and other equity investments ."
+      },
+      {
+        "location": "text_19",
+        "text": "see note 3 of the notes to consolidated financial statements for a discussion of the more significant items ."
+      },
+      {
+        "location": "text_20",
+        "text": "cash provided by net proceeds from sale of assets in 2015 relates principally to the sale of check warranty contracts and other assets in the gaming industry discussed in note 15 of the notes to consolidated financial statements ."
+      },
+      {
+        "location": "text_21",
+        "text": "financing for information regarding the company's long-term debt and financing activity , see note 10 of the notes to consolidated financial statements ."
+      },
+      {
+        "location": "text_22",
+        "text": "contractual obligations fis 2019 long-term contractual obligations generally include its long-term debt , interest on long-term debt , lease payments on certain of its property and equipment and payments for data processing and maintenance ."
+      },
+      {
+        "location": "text_23",
+        "text": "for information regarding the company's long-term aa debt , see note 10 of the notes to consolidated financial statements ."
+      },
+      {
+        "location": "text_24",
+        "text": "the following table summarizes fis 2019 significant contractual obligations and commitments as of december 31 , 2016 ( in millions ) : ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "",
+          "Payments Due in"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Type of Obligations",
+          "Total",
+          "Less than 1 Year",
+          "1-3 Years",
+          "3-5 Years",
+          "More than 5 Years"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Long-term debt (1)",
+          "$10,591",
+          "$332",
+          "$1,573",
+          "$2,536",
+          "$6,150"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Interest (2)",
+          "2,829",
+          "381",
+          "706",
+          "595",
+          "1,147"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Operating leases",
+          "401",
+          "96",
+          "158",
+          "82",
+          "65"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Data processing and maintenance",
+          "557",
+          "242",
+          "258",
+          "35",
+          "22"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Other contractual obligations (3)",
+          "51",
+          "17",
+          "17",
+          "16",
+          "1"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Total",
+          "$14,429",
+          "$1,068",
+          "$2,712",
+          "$3,264",
+          "$7,385"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_25",
+        "text": "."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percentage change in cash flows from operations from 2014 to 2015?",
+  "reference_program": "subtract(1131, 1165), divide(#0, 1165)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "1131",
+      "raw": "1131",
+      "location": "text_10:77",
+      "context": "cash flows from operations cash flows from operations were $ 1925 million , $ 1131 million and $ 1165 million in 2016 , 2015 and 2014 respectively ."
+    },
+    "x1": {
+      "program_token": "1165",
+      "raw": "1165",
+      "location": "text_10:96",
+      "context": "cash flows from operations cash flows from operations were $ 1925 million , $ 1131 million and $ 1165 million in 2016 , 2015 and 2014 respectively ."
+    }
+  }
+}

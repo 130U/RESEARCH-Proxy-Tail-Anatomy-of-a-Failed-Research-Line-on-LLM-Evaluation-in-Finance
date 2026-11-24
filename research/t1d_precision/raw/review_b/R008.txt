@@ -1,0 +1,5 @@
+{
+    "review_id": "R008",
+    "verdict": "invalid",
+    "reason": "Although $11.02 and $9.52 correctly bind the estimated average fair values for 2014 and 2013, percentage change requires their difference divided by $9.52 rather than two successive divisions."
+  }

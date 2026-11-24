@@ -1,0 +1,1 @@
+{"answer":"111.97","unit":"percentage points","expression":"(318.46 - 206.49) / 100 * 100","low":"111.40298507462687","high":"112.54271356783920","reliable_digits":"2","explanation":"The bounds allow rounding of both 2017 values and the common $100 initial investment; the percentage conversion factor is exact."}

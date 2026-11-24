@@ -1,0 +1,114 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R177",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "shareholder return performance the line graph below compares the annual percentage change in ball corporation fffds cumulative total shareholder return on its common stock with the cumulative total return of the dow jones containers & packaging index and the s&p composite 500 stock index for the five-year period ended december 31 , 2012 ."
+      },
+      {
+        "location": "text_1",
+        "text": "it assumes $ 100 was invested on december 31 , 2007 , and that all dividends were reinvested ."
+      },
+      {
+        "location": "text_2",
+        "text": "the dow jones containers & packaging index total return has been weighted by market capitalization ."
+      },
+      {
+        "location": "text_3",
+        "text": "total return to stockholders ( assumes $ 100 investment on 12/31/07 ) total return analysis ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "12/31/2007",
+          "12/31/2008",
+          "12/31/2009",
+          "12/31/2010",
+          "12/31/2011",
+          "12/31/2012"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Ball Corporation",
+          "$100.00",
+          "$93.28",
+          "$117.01",
+          "$155.14",
+          "$164.09",
+          "$207.62"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "DJ US Containers & Packaging",
+          "$100.00",
+          "$61.55",
+          "$84.76",
+          "$97.78",
+          "$96.27",
+          "$107.76"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "S&P 500",
+          "$100.00",
+          "$61.51",
+          "$75.94",
+          "$85.65",
+          "$85.65",
+          "$97.13"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_4",
+        "text": "source : bloomberg l.p ."
+      },
+      {
+        "location": "text_5",
+        "text": "aecharts ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "the five year total return for the period ending 12/31/2012 on ball corporation stock was how much greater than the same return on the dj us containers & packaging index?",
+  "reference_program": "subtract(207.62, 97.13)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "207.62",
+      "raw": "207.62",
+      "location": "table_1:6",
+      "context": "Ball Corporation | 12/31/2012"
+    },
+    "x1": {
+      "program_token": "97.13",
+      "raw": "97.13",
+      "location": "table_3:6",
+      "context": "S&P 500 | 12/31/2012"
+    }
+  }
+}

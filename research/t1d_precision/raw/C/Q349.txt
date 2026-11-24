@@ -1,0 +1,1 @@
+{"answer":"18.75","unit":"percent","expression":"(2.7 / 14.4) * 100","low":"18.339100346","high":"19.163763066","reliable_digits":"1","explanation":"Rounding permits bounds of (2.65 / 14.45) * 100 and (2.75 / 14.35) * 100, supporting one reliable significant digit."}

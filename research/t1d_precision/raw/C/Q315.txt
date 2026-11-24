@@ -1,0 +1,1 @@
+{"answer":"47.8873239437","unit":"percent","expression":"(10.5 - 7.1) / 7.1 * 100","low":"46.1538461538","high":"49.6453900709","reliable_digits":"1","explanation":"Net losses increased from $7.1 million to $10.5 million, with rounding uncertainty of $0.05 million in each amount."}

@@ -1,0 +1,1 @@
+{"answer":"25.0895154667","unit":"percent","expression":"45826 / 182650 * 100","low":"25.0891730381247","high":"25.0898578972297","reliable_digits":"4","explanation":"Allowing each displayed amount to vary by 0.5 million gives these bounds, which support four significant digits."}

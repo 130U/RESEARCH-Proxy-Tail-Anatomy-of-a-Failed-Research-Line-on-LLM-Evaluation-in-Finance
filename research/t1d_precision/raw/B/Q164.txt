@@ -1,0 +1,1 @@
+{"answer":"10.482180293501","unit":"percent","expression":"(5.27 - 4.77) / 4.77 * 100","low":"10.261780104712","high":"10.703043022036","reliable_digits":"1","explanation":"The percentage growth uses the 2012 value as its base, with bounds allowing each fair value to vary by $0.005 due to rounding."}

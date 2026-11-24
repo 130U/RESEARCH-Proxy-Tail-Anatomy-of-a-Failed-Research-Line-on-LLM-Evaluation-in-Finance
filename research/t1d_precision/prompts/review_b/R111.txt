@@ -1,0 +1,201 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R111",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "notes to consolidated financial statements the apex trusts and the 2012 trusts are delaware statutory trusts sponsored by the firm and wholly-owned finance subsidiaries of the firm for regulatory and legal purposes but are not consolidated for accounting purposes ."
+      },
+      {
+        "location": "text_1",
+        "text": "the firm has covenanted in favor of the holders of group inc . 2019s 6.345% ( 6.345 % ) junior subordinated debt due february 15 , 2034 , that , subject to certain exceptions , the firm will not redeem or purchase the capital securities issued by the apex trusts or shares of group inc . 2019s series e or series f preferred stock prior to specified dates in 2022 for a price that exceeds a maximum amount determined by reference to the net cash proceeds that the firm has received from the sale of qualifying securities ."
+      },
+      {
+        "location": "text_2",
+        "text": "junior subordinated debt issued in connection with trust preferred securities ."
+      },
+      {
+        "location": "text_3",
+        "text": "group inc ."
+      },
+      {
+        "location": "text_4",
+        "text": "issued $ 2.84 billion of junior subordinated debt in 2004 to goldman sachs capital i ( trust ) , a delaware statutory trust ."
+      },
+      {
+        "location": "text_5",
+        "text": "the trust issued $ 2.75 billion of guaranteed preferred beneficial interests ( trust preferred securities ) to third parties and $ 85 million of common beneficial interests to group inc ."
+      },
+      {
+        "location": "text_6",
+        "text": "and used the proceeds from the issuances to purchase the junior subordinated debt from group inc ."
+      },
+      {
+        "location": "text_7",
+        "text": "during the second quarter of 2014 , the firm purchased $ 1.22 billion ( par amount ) of trust preferred securities and delivered these securities , along with $ 37.6 million of common beneficial interests , to the trust in the third quarter of 2014 in exchange for a corresponding par amount of the junior subordinated debt ."
+      },
+      {
+        "location": "text_8",
+        "text": "following the exchange , these trust preferred securities , common beneficial interests and junior subordinated debt were extinguished and the firm recognized a gain of $ 289 million ( $ 270 million of which was recorded at extinguishment in the third quarter of 2014 ) , which is included in 201cmarket making 201d in the consolidated statements of earnings ."
+      },
+      {
+        "location": "text_9",
+        "text": "subsequent to this exchange , during the second half of 2014 , the firm purchased $ 214 million ( par amount ) of trust preferred securities and delivered these securities , along with $ 6.6 million of common beneficial interests , to the trust in february 2015 in exchange for a corresponding par amount of the junior subordinated debt ."
+      },
+      {
+        "location": "text_10",
+        "text": "the trust is a wholly-owned finance subsidiary of the firm for regulatory and legal purposes but is not consolidated for accounting purposes ."
+      },
+      {
+        "location": "text_11",
+        "text": "the firm pays interest semi-annually on the junior subordinated debt at an annual rate of 6.345% ( 6.345 % ) and the debt matures on february 15 , 2034 ."
+      },
+      {
+        "location": "text_12",
+        "text": "the coupon rate and the payment dates applicable to the beneficial interests are the same as the interest rate and payment dates for the junior subordinated debt ."
+      },
+      {
+        "location": "text_13",
+        "text": "the firm has the right , from time to time , to defer payment of interest on the junior subordinated debt , and therefore cause payment on the trust 2019s preferred beneficial interests to be deferred , in each case up to ten consecutive semi-annual periods ."
+      },
+      {
+        "location": "text_14",
+        "text": "during any such deferral period , the firm will not be permitted to , among other things , pay dividends on or make certain repurchases of its common stock ."
+      },
+      {
+        "location": "text_15",
+        "text": "the trust is not permitted to pay any distributions on the common beneficial interests held by group inc ."
+      },
+      {
+        "location": "text_16",
+        "text": "unless all dividends payable on the preferred beneficial interests have been paid in full ."
+      },
+      {
+        "location": "text_17",
+        "text": "note 17 ."
+      },
+      {
+        "location": "text_18",
+        "text": "other liabilities and accrued expenses the table below presents other liabilities and accrued expenses by type. ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "As of December"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "<i>$ in millions</i>",
+          "2014",
+          "2013"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Compensation and benefits",
+          "$ 8,368",
+          "$ 7,874"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Noncontrolling interests<sup>1</sup>",
+          "404",
+          "326"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Income tax-related liabilities",
+          "1,533",
+          "1,974"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Employee interests in consolidated funds",
+          "176",
+          "210"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Subordinated liabilities issued by consolidated VIEs",
+          "843",
+          "477"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Accrued expenses and other",
+          "4,751",
+          "5,183"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Total",
+          "$16,075",
+          "$16,044"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_19",
+        "text": "1 ."
+      },
+      {
+        "location": "text_20",
+        "text": "primarily relates to consolidated investment funds ."
+      },
+      {
+        "location": "text_21",
+        "text": "goldman sachs 2014 annual report 163 ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "for the trust preferred securities , common beneficial interests and junior subordinated debt extinguished with a recognized gain , how much in millions was not recorded in the third quarter of 2014?",
+  "reference_program": "subtract(289, 270)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "289",
+      "raw": "289",
+      "location": "text_8:170",
+      "context": "following the exchange , these trust preferred securities , common beneficial interests and junior subordinated debt were extinguished and the firm recognized a gain of $ 289 million ( $ 270 million of which was recorded at extinguishment in the third quarter of 2014 ) , which is included in 201cmarket making 201d in the consolidated statements of earnings ."
+    },
+    "x1": {
+      "program_token": "270",
+      "raw": "270",
+      "location": "text_8:186",
+      "context": "following the exchange , these trust preferred securities , common beneficial interests and junior subordinated debt were extinguished and the firm recognized a gain of $ 289 million ( $ 270 million of which was recorded at extinguishment in the third quarter of 2014 ) , which is included in 201cmarket making 201d in the consolidated statements of earnings ."
+    }
+  }
+}

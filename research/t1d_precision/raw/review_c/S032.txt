@@ -1,0 +1,7 @@
+{
+    "call_id": "S032",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 2 gives December 31, 2012 available-for-sale securities fair value of $51,052 million; text_1 identifies $367 million of corporate stocks and other within that category. Subtraction yields $50,685 million, as the model states. The reference incorrectly starts with row 4's $61,912 million fair value of all securities, including held-to-maturity securities."
+  }

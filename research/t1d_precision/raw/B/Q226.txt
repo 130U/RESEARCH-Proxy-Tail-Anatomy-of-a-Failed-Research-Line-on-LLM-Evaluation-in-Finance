@@ -1,0 +1,1 @@
+{"answer":"-68.568683957733","unit":"percent","expression":"(1636 - 5205) / 5205 * 100","low":"-68.581308231678","high":"-68.556057258142","reliable_digits":"3","explanation":"The loss decreased; allowing each reported amount to vary by 0.5 million gives these bounds, which agree to three significant digits."}

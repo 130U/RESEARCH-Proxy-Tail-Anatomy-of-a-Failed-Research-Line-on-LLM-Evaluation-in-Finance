@@ -1,0 +1,170 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R105",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "with respect to our business operations , we are standardizing certain core business processes , primarily through our execution of the state street lean methodology , and driving automation of these business processes ."
+      },
+      {
+        "location": "text_1",
+        "text": "we are currently creating a new technology platform , including transferring certain core software applications to a private cloud , and have expanded our use of service providers associated with components of our technology infrastructure and application maintenance and support ."
+      },
+      {
+        "location": "text_2",
+        "text": "we expect the transfer of core software applications to a private cloud to occur primarily in 2013 and 2014 ."
+      },
+      {
+        "location": "text_3",
+        "text": "to implement this program , we expect to incur aggregate pre-tax restructuring charges of approximately $ 400 million to $ 450 million over the four-year period ending december 31 , 2014 ."
+      },
+      {
+        "location": "text_4",
+        "text": "to date , we have recorded aggregate restructuring charges of $ 289 million in our consolidated statement of income , composed of $ 156 million in 2010 and $ 133 million in 2011 ."
+      },
+      {
+        "location": "text_5",
+        "text": "the following table presents the charges by type of cost : ( in millions ) employee-related real estate consolidation information technology costs total ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "(In millions)",
+          "Employee-Related Costs",
+          "Real Estate Consolidation",
+          "Information Technology Costs",
+          "Total"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2010",
+          "$105",
+          "$51",
+          "",
+          "$156"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2011",
+          "85",
+          "7",
+          "$41",
+          "133"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Total",
+          "$190",
+          "$58",
+          "$41",
+          "$289"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_6",
+        "text": "the employee-related costs included costs related to severance , benefits and outplacement services ."
+      },
+      {
+        "location": "text_7",
+        "text": "real estate consolidation costs resulted from actions taken to reduce our occupancy costs through consolidation of leases and properties ."
+      },
+      {
+        "location": "text_8",
+        "text": "information technology costs included transition fees related to the above-described expansion of our use of service providers ."
+      },
+      {
+        "location": "text_9",
+        "text": "in 2010 , in connection with the program , we initiated the involuntary termination of 1400 employees , or approximately 5% ( 5 % ) of our global workforce , which was substantially complete at the end of 2011 ."
+      },
+      {
+        "location": "text_10",
+        "text": "in addition , in the third quarter of 2011 , in connection with the expansion of our use of service providers associated with our information technology infrastructure and application maintenance and support , we identified 530 employees who will be provided with severance and outplacement services as their roles are eliminated ."
+      },
+      {
+        "location": "text_11",
+        "text": "as of december 31 , 2011 , in connection with the planned aggregate staff reductions of 1930 employees described above , 1332 employees had been involuntarily terminated and left state street , including 782 employees in 2011 ."
+      },
+      {
+        "location": "text_12",
+        "text": "in connection with our continued implementation of the business operations and information technology transformation program , we achieved approximately $ 86 million of annual pre-tax , run-rate expense savings in 2011 compared to 2010 run-rate expenses ."
+      },
+      {
+        "location": "text_13",
+        "text": "excluding the expected aggregate restructuring charges of $ 400 million to $ 450 million described earlier , we expect the program to reduce our pre-tax expenses from operations , on an annualized basis , by approximately $ 575 million to $ 625 million by the end of 2014 compared to 2010 , with the full effect realized in 2015 ."
+      },
+      {
+        "location": "text_14",
+        "text": "assuming all other things equal , we expect to achieve aggregate annual pre-tax expense savings of approximately $ 540 million by the end of 2014 , for a total annual pre-tax expense savings of approximately $ 600 million to be realized in 2015 ."
+      },
+      {
+        "location": "text_15",
+        "text": "we expect the business operations transformation component of the program to result in annual pre-tax expense savings of approximately $ 440 million in 2015 , with the majority of these savings expected to be achieved by the end of 2013 ."
+      },
+      {
+        "location": "text_16",
+        "text": "in addition , we expect the information technology transformation component of the program to result in annual pre-tax expense savings of approximately $ 160 million in 2015 ."
+      },
+      {
+        "location": "text_17",
+        "text": "these annual pre-tax run-rate savings relate only to the business operations and information technology transformation program ."
+      },
+      {
+        "location": "text_18",
+        "text": "our actual operating expenses may increase or decrease as a result of other factors ."
+      },
+      {
+        "location": "text_19",
+        "text": "the majority of the annualized savings will affect compensation and employee benefits expenses ; these savings will be modestly offset by increases in information systems and communications expenses as we implement the program ."
+      },
+      {
+        "location": "text_20",
+        "text": "2011 expense control measures during the fourth quarter of 2011 , in connection with expense control measures designed to calibrate our expenses to our outlook for our capital markets-facing businesses in 2012 , we took two actions ."
+      },
+      {
+        "location": "text_21",
+        "text": "first , we ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percent of the aggregate restructuring charges recorded in 2010",
+  "reference_program": "divide(156, 289)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "156",
+      "raw": "156",
+      "location": "text_4:131",
+      "context": "to date , we have recorded aggregate restructuring charges of $ 289 million in our consolidated statement of income , composed of $ 156 million in 2010 and $ 133 million in 2011 ."
+    },
+    "x1": {
+      "program_token": "289",
+      "raw": "289",
+      "location": "text_4:63",
+      "context": "to date , we have recorded aggregate restructuring charges of $ 289 million in our consolidated statement of income , composed of $ 156 million in 2010 and $ 133 million in 2011 ."
+    }
+  }
+}

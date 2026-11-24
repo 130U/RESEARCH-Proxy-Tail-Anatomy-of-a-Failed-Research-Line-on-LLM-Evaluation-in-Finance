@@ -1,0 +1,1 @@
+{"answer":"-55.43973941","unit":"percent","expression":"(684 - 1535) / 1535 * 100","low":"-55.48681211","high":"-55.39263604","reliable_digits":"2","explanation":"Each income may vary by $0.5 million, giving the stated bounds and two reliable significant digits."}

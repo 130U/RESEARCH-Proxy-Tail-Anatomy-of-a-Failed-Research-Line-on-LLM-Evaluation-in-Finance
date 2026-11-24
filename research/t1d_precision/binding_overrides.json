@@ -1,0 +1,1458 @@
+{
+  "A/Q016": {
+    "expression": "10.6 + 11 + 11.2 + 11.6 + 11.9",
+    "nodes": {
+      "n1": {
+        "location": "text_10:245",
+        "factor": "1",
+        "exact": false,
+        "reason": "New Orleans storm recovery principal payment for 2018, in the sentence enumerating its 2017–2021 expected payments; the other 11 belongs to Louisiana 2021."
+      }
+    }
+  },
+  "A/Q020": {
+    "expression": "((318.46 - 100) / 100 - (206.49 - 100) / 100) * 100",
+    "nodes": {
+      "n1": {
+        "location": "text_1:34",
+        "factor": "1",
+        "exact": true,
+        "reason": "The graph explicitly assumes an initial $100 investment; this is an exact defined index base."
+      },
+      "n4": {
+        "location": "text_1:34",
+        "factor": "1",
+        "exact": true,
+        "reason": "The graph explicitly assumes an initial $100 investment; this is an exact defined index base."
+      },
+      "n2": {
+        "location": "text_1:34",
+        "factor": "1",
+        "exact": true,
+        "reason": "Denominator is the same explicitly assumed $100 initial investment, an exact defined base."
+      },
+      "n5": {
+        "location": "text_1:34",
+        "factor": "1",
+        "exact": true,
+        "reason": "Denominator is the same explicitly assumed $100 initial investment, an exact defined base."
+      }
+    }
+  },
+  "A/Q040": {
+    "expression": "68 - 74",
+    "nodes": {
+      "n1": {
+        "location": "table_1:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Vehicle asset carrying value in the 2015 column, not the unrelated senior-note issuance."
+      }
+    }
+  },
+  "A/Q041": {
+    "expression": "(434814 - 382739) / 382739 * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_9:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "The lending-related commitments row contains the two model-used exposures; adjacent OCR text repeats the same row. Repeated denominator shares one source fact."
+      },
+      "n1": {
+        "location": "table_9:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "The lending-related commitments row contains the two model-used exposures; adjacent OCR text repeats the same row. Repeated denominator shares one source fact."
+      },
+      "n2": {
+        "location": "table_9:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "The lending-related commitments row contains the two model-used exposures; adjacent OCR text repeats the same row. Repeated denominator shares one source fact."
+      }
+    }
+  },
+  "A/Q048": {
+    "expression": "151945 * 24.61",
+    "nodes": {
+      "n0": {
+        "location": "table_2:1",
+        "factor": "1",
+        "exact": true,
+        "reason": "Row approved by securityholders, column A states the number of securities; the Total row repeats it because the unapproved row is N/A."
+      },
+      "n1": {
+        "location": "table_2:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Approved-plan row column B is weighted average exercise price. It is an aggregate mean displayed to cents, not one contractual strike; Total repeats the same mean."
+      }
+    }
+  },
+  "A/Q051": {
+    "expression": "849 / 5424 * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_2:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "Labor-related deemed claim in the settlement obligations table; paragraph repeats the corresponding $849m labor liability."
+      }
+    }
+  },
+  "A/Q053": {
+    "expression": "(4425 - 4277) / 4277 * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_7:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "The model explicitly compares December 31 balances for 2012 and 2011; next-year January 1 balances are duplicate carryforwards."
+      },
+      "n1": {
+        "location": "table_7:3",
+        "factor": "1",
+        "exact": false,
+        "reason": "The model explicitly compares December 31 balances for 2012 and 2011; next-year January 1 balances are duplicate carryforwards."
+      },
+      "n2": {
+        "location": "table_7:3",
+        "factor": "1",
+        "exact": false,
+        "reason": "The model explicitly compares December 31 balances for 2012 and 2011; next-year January 1 balances are duplicate carryforwards."
+      }
+    }
+  },
+  "A/Q064": {
+    "expression": "(22.1 - 24.0) / 24.0 * 100",
+    "nodes": {
+      "n1": {
+        "location": "table_1:3",
+        "factor": "1",
+        "exact": false,
+        "reason": "Expected volatility 24.0% in the 2012 column, not the unrelated contractual 24-month termination period."
+      },
+      "n2": {
+        "location": "table_1:3",
+        "factor": "1",
+        "exact": false,
+        "reason": "Expected volatility 24.0% in the 2012 column, not the unrelated contractual 24-month termination period."
+      }
+    }
+  },
+  "A/Q078": {
+    "expression": "75970 / 777443 * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_4:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "The model explicitly chooses the payment scheduled in 2015; equal payments in 2013/2014 remain different facts."
+      }
+    }
+  },
+  "A/Q092": {
+    "expression": "5829 - 154",
+    "nodes": {
+      "n1": {
+        "location": "text_2:141",
+        "factor": "1",
+        "exact": false,
+        "reason": "The 2015 Rhode Island facility sale gain is $154m; the equal 2014 Vermont Yankee charge is a different fact."
+      }
+    }
+  },
+  "A/Q097": {
+    "expression": "(17.7 - 19.1) / 19.1 * 100",
+    "nodes": {
+      "n1": {
+        "location": "text_4:123",
+        "factor": "1",
+        "exact": false,
+        "reason": "The sentence explicitly associates impairment charges and net losses of 19.1m with 2003, matching the model explanation; the earlier 19.1m is a different 2005 total."
+      },
+      "n2": {
+        "location": "text_4:123",
+        "factor": "1",
+        "exact": false,
+        "reason": "The sentence explicitly associates impairment charges and net losses of 19.1m with 2003, matching the model explanation; the earlier 19.1m is a different 2005 total."
+      }
+    }
+  },
+  "A/Q111": {
+    "expression": "0 + 150 + 175 + 2756",
+    "nodes": {
+      "n2": {
+        "location": "table_2:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "2019 scheduled debt maturity in the table; the equal current-liability figure is a different source quantity."
+      }
+    }
+  },
+  "A/Q129": {
+    "expression": "487 - 234",
+    "nodes": {
+      "n0": {
+        "location": "table_4:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "Free cash flow in the 2007 table column; narrative repeats this same 2007 free cash flow."
+      }
+    }
+  },
+  "A/Q142": {
+    "expression": "6.25 * 1",
+    "nodes": {
+      "n0": {
+        "location": "text_6:156",
+        "factor": "1",
+        "exact": true,
+        "reason": "6.25% is the named contractual coupon on redeemed notes, explicitly repeated in redemption paragraphs, not an estimated average rate."
+      },
+      "n1": {
+        "location": null,
+        "factor": "1",
+        "exact": true,
+        "reason": "Multiplication by one simply returns the stated coupon. It is an exact arithmetic identity, not a May/November day-of-month token."
+      }
+    }
+  },
+  "A/Q152": {
+    "expression": "1136 - 1171",
+    "nodes": {
+      "n1": {
+        "location": "table_8:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "December 31, 2014 unrecognized tax benefit balance, also carried forward to January 1, 2015."
+      }
+    }
+  },
+  "A/Q160": {
+    "expression": "(7327 - 20963) / 20963 * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_1:5",
+        "factor": "1",
+        "exact": false,
+        "reason": "Employee separations monetary-liability row, closing 2006 and opening 2006/closing 2005 columns. OCR text repeats the row, and these are liabilities rather than employee counts."
+      },
+      "n1": {
+        "location": "table_1:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "Employee separations monetary-liability row, closing 2006 and opening 2006/closing 2005 columns. OCR text repeats the row, and these are liabilities rather than employee counts."
+      },
+      "n2": {
+        "location": "table_1:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "Employee separations monetary-liability row, closing 2006 and opening 2006/closing 2005 columns. OCR text repeats the row, and these are liabilities rather than employee counts."
+      }
+    }
+  },
+  "A/Q178": {
+    "expression": "342.9 + 78.5",
+    "nodes": {
+      "n0": {
+        "location": "table_1:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "The short-term debt table labels notes payable 342.9m and Sojitz payable 78.5m. OCR narrative interleaves labels, so the labeled cells identify the model facts."
+      },
+      "n1": {
+        "location": "table_2:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "The short-term debt table labels notes payable 342.9m and Sojitz payable 78.5m. OCR narrative interleaves labels, so the labeled cells identify the model facts."
+      }
+    }
+  },
+  "A/Q181": {
+    "expression": "561 * 44",
+    "nodes": {
+      "n0": {
+        "location": "table_6:1",
+        "factor": "1",
+        "exact": true,
+        "reason": "Granted row in the fiscal-2013 block, Shares column; source states share awards in thousands. Task treats counts as exact."
+      },
+      "n1": {
+        "location": "table_6:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Granted row in fiscal-2013 block, weighted-average grant-date fair-value column. Other 44 cells are different award populations."
+      }
+    }
+  },
+  "A/Q182": {
+    "expression": "70.4 / 127.1 * 100",
+    "nodes": {
+      "n1": {
+        "location": "table_9:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "2018 year-end unrecognized tax-benefit balance; the narrative repeats the same 127.1m excluding interest and penalties."
+      }
+    }
+  },
+  "A/Q192": {
+    "expression": "(945.5 / 1400) * 100",
+    "nodes": {
+      "n1": {
+        "location": "text_44:17",
+        "factor": "1000",
+        "exact": false,
+        "reason": "The source states total senior facility 1.4 billion; model explicitly converts to 1400 million. Apply factor 1000 to both center and source half-unit."
+      }
+    }
+  },
+  "A/Q202": {
+    "expression": "100.8 - 9.0",
+    "nodes": {
+      "n1": {
+        "location": "text_2:64",
+        "factor": "1",
+        "exact": false,
+        "reason": "Operating-income unfavorable foreign-currency impact in 2012 is 9.0m; pound-sterling 2010 table percentage is unrelated."
+      }
+    }
+  },
+  "A/Q204": {
+    "expression": "(559.7 - 627.6) / 627.6 * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_1:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Operating cash-flow table including discontinued operations, 2009 and 2008. Narrative repeats these same amounts."
+      },
+      "n1": {
+        "location": "table_1:3",
+        "factor": "1",
+        "exact": false,
+        "reason": "Operating cash-flow table including discontinued operations, 2009 and 2008. Narrative repeats these same amounts."
+      },
+      "n2": {
+        "location": "table_1:3",
+        "factor": "1",
+        "exact": false,
+        "reason": "Operating cash-flow table including discontinued operations, 2009 and 2008. Narrative repeats these same amounts."
+      }
+    }
+  },
+  "A/Q211": {
+    "expression": "12 - 10",
+    "nodes": {
+      "n0": {
+        "location": "table_3:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Additions for prior-year tax positions in the 2017 column; the isolated paragraph number 12 is not a financial source."
+      }
+    }
+  },
+  "A/Q218": {
+    "expression": "(99 - 110) / 110 * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_9:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "December 31 tax-benefit balances for 2008 and 2007. January 1 2008 carries forward 2007 and OCR repeats the same totals."
+      },
+      "n1": {
+        "location": "table_9:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "December 31 tax-benefit balances for 2008 and 2007. January 1 2008 carries forward 2007 and OCR repeats the same totals."
+      },
+      "n2": {
+        "location": "table_9:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "December 31 tax-benefit balances for 2008 and 2007. January 1 2008 carries forward 2007 and OCR repeats the same totals."
+      }
+    }
+  },
+  "A/Q219": {
+    "expression": "574 / 1407 * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_1:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Long-term debt maturities in the 2011 column. Narrative repeats the same displayed aggregate obligation, not an exact contractual coupon."
+      }
+    }
+  },
+  "A/Q220": {
+    "expression": "(7.1 + 4.4) / 426.6 * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_13:138",
+        "factor": "1",
+        "exact": false,
+        "reason": "2003 compared with 2002 paragraph identifies the 7.1m severance accrual; the earlier paragraph refers to its absence in the following-year comparison."
+      }
+    }
+  },
+  "A/Q222": {
+    "expression": "(127.1 - 106.6) / 106.6 * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_9:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "2018 year-end tax-benefit balance; repeated narrative identifies the same period and amount."
+      }
+    }
+  },
+  "A/Q223": {
+    "expression": "(511.7 / 798.3) * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_7:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "Anios purchase-price allocation table identifies goodwill 511.7m and total consideration 798.3m; narrative repeats the same acquisition facts."
+      },
+      "n1": {
+        "location": "table_9:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "Anios purchase-price allocation table identifies goodwill 511.7m and total consideration 798.3m; narrative repeats the same acquisition facts."
+      }
+    }
+  },
+  "A/Q246": {
+    "expression": "10.6 + 11 + 11.2",
+    "nodes": {
+      "n1": {
+        "location": "text_10:245",
+        "factor": "1",
+        "exact": false,
+        "reason": "New Orleans storm recovery payment for 2018 within its listed next-three-year payments, not Louisiana payment in 2021."
+      }
+    }
+  },
+  "A/Q247": {
+    "expression": "5.3 / 17.7",
+    "nodes": {
+      "n0": {
+        "location": "table_1:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "Structured commercial loan vehicles, 2003 column; narrative repeats commercial paper issued by those vehicles in 2003."
+      }
+    }
+  },
+  "A/Q249": {
+    "expression": "1300 / 804",
+    "nodes": {
+      "n0": {
+        "location": "text_1:105",
+        "factor": "1000",
+        "exact": false,
+        "reason": "The source states 1.3 billion outstanding interest-rate swaps for 2014; expression converts to 1300 million. Preserve the 0.05 billion source half-unit."
+      }
+    }
+  },
+  "A/Q252": {
+    "expression": "20 / 23 * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_1:160",
+        "factor": "1",
+        "exact": false,
+        "reason": "Acquisition-linked long-term AUS inflow of 20 billion in the explicit 23=20+3 narrative, which is the model-selected denominator context; later narrative repeats the same inflow."
+      }
+    }
+  },
+  "A/Q260": {
+    "expression": "214.4 - 70.5",
+    "nodes": {
+      "n0": {
+        "location": "table_8:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "Tax-benefit balance at December 27, 2008; both narrative occurrences describe this same 214.4m balance."
+      }
+    }
+  },
+  "A/Q269": {
+    "expression": "34 / 66.3 * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_26:237",
+        "factor": "1",
+        "exact": false,
+        "reason": "Approximately 34m of the 66.3m deferred pension loss is subject to amortization. Other 34 tokens are timestamp seconds."
+      }
+    }
+  },
+  "A/Q276": {
+    "expression": "258.6 - 250.0 - 1.4",
+    "nodes": {
+      "n1": {
+        "location": "text_3:160",
+        "factor": "1",
+        "exact": false,
+        "reason": "Principal amount of the redeemed 7.875% notes in August 2005, matching the model calculation, not subsequently issued floating-rate notes."
+      }
+    }
+  },
+  "A/Q281": {
+    "expression": "(318.46 - 100) / 100 * 100",
+    "nodes": {
+      "n1": {
+        "location": "text_1:34",
+        "factor": "1",
+        "exact": true,
+        "reason": "The graph explicitly assumes a $100 initial investment; the base is a defined exact amount."
+      },
+      "n2": {
+        "location": "text_1:34",
+        "factor": "1",
+        "exact": true,
+        "reason": "Denominator is the explicitly assumed initial $100 index investment, a defined exact base."
+      }
+    }
+  },
+  "A/Q287": {
+    "expression": "48 / 7000 * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_17:32",
+        "factor": "1",
+        "exact": false,
+        "reason": "48m issuance costs associated with November 2015 notes, not the unrelated pro-forma interest-expense amount."
+      },
+      "n1": {
+        "location": "text_17:82",
+        "factor": "1000",
+        "exact": false,
+        "reason": "Source 7.0 billion November 2015 notes is converted to 7000 million; scale source half-unit by 1000."
+      }
+    }
+  },
+  "A/Q291": {
+    "expression": "3087 / 55687 * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_2:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "2018 CIB markets net interest income and managed-basis net interest income in labeled table rows; two OCR paragraphs repeat the same facts."
+      },
+      "n1": {
+        "location": "table_1:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "2018 CIB markets net interest income and managed-basis net interest income in labeled table rows; two OCR paragraphs repeat the same facts."
+      }
+    }
+  },
+  "A/Q294": {
+    "expression": "592 / 992 * 100",
+    "nodes": {
+      "n1": {
+        "location": "table_8:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Total continuing-operations capital spending in 2005 column; narrative repeats 992m for 2005."
+      }
+    }
+  },
+  "A/Q295": {
+    "expression": "0.3 + 0.1",
+    "nodes": {
+      "n0": {
+        "location": "text_3:30",
+        "factor": "1",
+        "exact": false,
+        "reason": "Remaining restructuring balance severance component 0.3m, not the 0.3m adjustment to other charges in another paragraph."
+      }
+    }
+  },
+  "A/Q297": {
+    "expression": "2900 / 900.1",
+    "nodes": {
+      "n0": {
+        "location": "text_3:88",
+        "factor": "1000",
+        "exact": false,
+        "reason": "The model uses the 2.9 billion debt-issuance figure and converts to 2900 million. Source calls it 2008 while the question says 2009; precision still follows this model-selected figure."
+      }
+    }
+  },
+  "A/Q299": {
+    "expression": "105 / 156 * 100",
+    "nodes": {
+      "n1": {
+        "location": "table_1:4",
+        "factor": "1",
+        "exact": false,
+        "reason": "2010 restructuring costs Total column; narrative repeats aggregate 156m for 2010."
+      }
+    }
+  },
+  "A/Q305": {
+    "expression": "2140954 / 151945",
+    "nodes": {
+      "n0": {
+        "location": "table_2:3",
+        "factor": "1",
+        "exact": true,
+        "reason": "Approved-plan row columns C and A explicitly count securities. Total repeats the same counts because the unapproved row is N/A."
+      },
+      "n1": {
+        "location": "table_2:1",
+        "factor": "1",
+        "exact": true,
+        "reason": "Approved-plan row columns C and A explicitly count securities. Total repeats the same counts because the unapproved row is N/A."
+      }
+    }
+  },
+  "A/Q309": {
+    "expression": "34 + 23 + 13",
+    "nodes": {
+      "n1": {
+        "location": "text_18:118",
+        "factor": "1",
+        "exact": false,
+        "reason": "Estimated 2004 payment for natural-gas pipeline/storage commitments; the 2003 production-handling payment belongs to a different commitment category."
+      }
+    }
+  },
+  "A/Q319": {
+    "expression": "(1200 - 665) / 1200 * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_9:71",
+        "factor": "1000",
+        "exact": false,
+        "reason": "Source 2012 accrued interest/penalties liability is 1.2 billion; both occurrences convert the same fact to 1200 million, preserving source half-unit."
+      },
+      "n2": {
+        "location": "text_9:71",
+        "factor": "1000",
+        "exact": false,
+        "reason": "Source 2012 accrued interest/penalties liability is 1.2 billion; both occurrences convert the same fact to 1200 million, preserving source half-unit."
+      }
+    }
+  },
+  "A/Q321": {
+    "expression": "(24 - 31) / 31 * 100",
+    "nodes": {
+      "n1": {
+        "location": "table_2:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "SSgA collateral-pool asset value in December 31, 2008 column, not date-day tokens 31 in prose."
+      },
+      "n2": {
+        "location": "table_2:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "SSgA collateral-pool asset value in December 31, 2008 column, not date-day tokens 31 in prose."
+      }
+    }
+  },
+  "A/Q332": {
+    "expression": "(10 - 4) / 4 * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_27:61",
+        "factor": "1",
+        "exact": false,
+        "reason": "Warranty reserve sentence explicitly pairs 10m and 4m with 2006 and 2005. Charges, cash outlays and asset-retirement obligations are distinct quantities."
+      },
+      "n1": {
+        "location": "text_27:78",
+        "factor": "1",
+        "exact": false,
+        "reason": "Warranty reserve sentence explicitly pairs 10m and 4m with 2006 and 2005. Charges, cash outlays and asset-retirement obligations are distinct quantities."
+      },
+      "n2": {
+        "location": "text_27:78",
+        "factor": "1",
+        "exact": false,
+        "reason": "Warranty reserve sentence explicitly pairs 10m and 4m with 2006 and 2005. Charges, cash outlays and asset-retirement obligations are distinct quantities."
+      }
+    }
+  },
+  "A/Q338": {
+    "expression": "(7167.1 - 6490.8) / 6490.8 * 100",
+    "nodes": {
+      "n1": {
+        "location": "table_3:5",
+        "factor": "1",
+        "exact": false,
+        "reason": "Revised December 31, 2015 total goodwill is 6490.8m; original total is identical at the same precision. Model compares total goodwill, not segment allocations."
+      },
+      "n2": {
+        "location": "table_3:5",
+        "factor": "1",
+        "exact": false,
+        "reason": "Revised December 31, 2015 total goodwill is 6490.8m; original total is identical at the same precision. Model compares total goodwill, not segment allocations."
+      }
+    }
+  },
+  "A/Q341": {
+    "expression": "581 + 123",
+    "nodes": {
+      "n0": {
+        "location": "text_18:103",
+        "factor": "1",
+        "exact": false,
+        "reason": "Mastercard share-sale 2007 pretax gain is 581m, paired in the narrative with 367m after-tax; the table total repeats this pretax figure."
+      }
+    }
+  },
+  "A/Q343": {
+    "expression": "99 - 110",
+    "nodes": {
+      "n0": {
+        "location": "table_9:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "Year-end 2008 and 2007 unrecognized tax-benefit balances, not a separate January 1 observation."
+      },
+      "n1": {
+        "location": "table_9:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Year-end 2008 and 2007 unrecognized tax-benefit balances, not a separate January 1 observation."
+      }
+    }
+  },
+  "A/Q344": {
+    "expression": "(438861 - 414067) / 414067 * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_8:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "Total wholesale credit-related assets row, model-used first and second exposure columns; OCR repeats the row. Repeated denominator shares its fact."
+      },
+      "n1": {
+        "location": "table_8:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Total wholesale credit-related assets row, model-used first and second exposure columns; OCR repeats the row. Repeated denominator shares its fact."
+      },
+      "n2": {
+        "location": "table_8:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Total wholesale credit-related assets row, model-used first and second exposure columns; OCR repeats the row. Repeated denominator shares its fact."
+      }
+    }
+  },
+  "A/Q345": {
+    "expression": "0.4 / 0.8 * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_3:126",
+        "factor": "1",
+        "exact": false,
+        "reason": "Canceled-contract component of remaining restructuring accrual, not cash paid or lease-cost adjustment amounts."
+      }
+    }
+  },
+  "A/Q346": {
+    "expression": "26.6 - 24.8",
+    "nodes": {
+      "n0": {
+        "location": "table_4:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "2013 deferred subscription revenue selected explicitly by model explanation; equal 2012 accrued promotion expense is unrelated."
+      }
+    }
+  },
+  "A/Q351": {
+    "expression": "10 - 10",
+    "nodes": {
+      "n0": {
+        "location": "text_37:64",
+        "factor": "1",
+        "exact": false,
+        "reason": "One sentence reports 10m in both 2006 and 2005. These are two distinct period facts with equal displays; never cancel their uncertainty by sharing a variable.",
+        "fact_id": "asset_retirement_2006"
+      },
+      "n1": {
+        "location": "text_37:64",
+        "factor": "1",
+        "exact": false,
+        "reason": "One sentence reports 10m in both 2006 and 2005. These are two distinct period facts with equal displays; never cancel their uncertainty by sharing a variable.",
+        "fact_id": "asset_retirement_2005"
+      }
+    }
+  },
+  "A/Q361": {
+    "expression": "107 / (107 - 66)",
+    "nodes": {
+      "n0": {
+        "location": "text_10:247",
+        "factor": "1",
+        "exact": false,
+        "reason": "October-2015 regulatory liability 107m with 66m net-of-tax; earlier paragraph repeats the same liability. Both 107 occurrences must share a variable."
+      },
+      "n1": {
+        "location": "text_10:247",
+        "factor": "1",
+        "exact": false,
+        "reason": "October-2015 regulatory liability 107m with 66m net-of-tax; earlier paragraph repeats the same liability. Both 107 occurrences must share a variable."
+      }
+    }
+  },
+  "A/Q365": {
+    "expression": "(43 + 47) / 2",
+    "nodes": {
+      "n0": {
+        "location": "table_4:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "Model explicitly uses the 2012 and 2011 year-end reserve-for-loss balances, also repeated in narrative; beginning-2012 amount is a carryforward."
+      },
+      "n1": {
+        "location": "table_4:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Model explicitly uses the 2012 and 2011 year-end reserve-for-loss balances, also repeated in narrative; beginning-2012 amount is a carryforward."
+      }
+    }
+  },
+  "A/Q370": {
+    "expression": "368 - 68",
+    "nodes": {
+      "n1": {
+        "location": "text_7:66",
+        "factor": "1",
+        "exact": false,
+        "reason": "2008 available-for-sale-security net gains in prose, not the foreign-currency-translation table value."
+      }
+    }
+  },
+  "A/Q371": {
+    "expression": "9000000 / 411636",
+    "nodes": {
+      "n0": {
+        "location": "text_6:37",
+        "factor": "1000000",
+        "exact": false,
+        "reason": "2015 compensation expense of 9 million is converted by the model to 9000000 dollars; scale source half-unit by one million."
+      }
+    }
+  },
+  "A/Q379": {
+    "expression": "8945694 * 40.85 / 1000000",
+    "nodes": {
+      "n0": {
+        "location": "table_1:3",
+        "factor": "1",
+        "exact": true,
+        "reason": "Approved-plan row explicitly counts securities remaining available; Total and OCR repeat the same count."
+      },
+      "n1": {
+        "location": "table_1:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Approved-plan weighted-average exercise price, a rounded aggregate average rather than one contractual strike; Total and OCR repeat the same figure."
+      }
+    }
+  },
+  "A/Q380": {
+    "expression": "(772 - 843) / 843 * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_1:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "The model explicitly computes 2012 versus 2011 values despite requested years; bind its selected fair-value mortgage balances, which prose repeats."
+      },
+      "n1": {
+        "location": "table_1:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "The model explicitly computes 2012 versus 2011 values despite requested years; bind its selected fair-value mortgage balances, which prose repeats."
+      },
+      "n2": {
+        "location": "table_1:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "The model explicitly computes 2012 versus 2011 values despite requested years; bind its selected fair-value mortgage balances, which prose repeats."
+      }
+    }
+  },
+  "A/Q381": {
+    "expression": "(559.7 - 515.2) / 559.7 * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_1:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Reported 2009 operating cash-flow balance; narrative repeats the same 559.7m figure. Both occurrences share one variable."
+      },
+      "n2": {
+        "location": "table_1:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Reported 2009 operating cash-flow balance; narrative repeats the same 559.7m figure. Both occurrences share one variable."
+      }
+    }
+  },
+  "A/Q387": {
+    "expression": "210-(182+7)",
+    "nodes": {
+      "n1": {
+        "location": "text_12:91",
+        "factor": "1",
+        "exact": false,
+        "reason": "Opcity transaction cash consideration, not future revenue from unsatisfied performance obligations."
+      }
+    }
+  },
+  "A/Q391": {
+    "expression": "10 - 4",
+    "nodes": {
+      "n0": {
+        "location": "text_27:61",
+        "factor": "1",
+        "exact": false,
+        "reason": "Warranty reserve sentence explicitly assigns 10m/4m to 2006/2005, rather than charge/outlay or asset-retirement amounts."
+      },
+      "n1": {
+        "location": "text_27:78",
+        "factor": "1",
+        "exact": false,
+        "reason": "Warranty reserve sentence explicitly assigns 10m/4m to 2006/2005, rather than charge/outlay or asset-retirement amounts."
+      }
+    }
+  },
+  "A/Q392": {
+    "expression": "(47 + 43) / 2",
+    "nodes": {
+      "n0": {
+        "location": "table_4:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "Year-end loss reserves for 2011 and 2012; January-2012 balance carries forward the first amount and narrative repeats both."
+      },
+      "n1": {
+        "location": "table_4:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "Year-end loss reserves for 2011 and 2012; January-2012 balance carries forward the first amount and narrative repeats both."
+      }
+    }
+  },
+  "A/Q023": {
+    "expression": "(1.0 + 2.3 + 4.6) / 3",
+    "nodes": {
+      "n0": {
+        "location": "text_14:147",
+        "factor": "1",
+        "exact": false,
+        "reason": "Construction-in-progress 2006 impairment 1.0 million; it is a rounded monetary source figure, not arithmetic identity one."
+      }
+    }
+  },
+  "A/Q061": {
+    "expression": "-54 + 30 + 1",
+    "nodes": {
+      "n2": {
+        "location": "table_3:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "Other net-income effect of 1 million in the adoption-impact table; source monetary figure, not identity one or a date."
+      }
+    }
+  },
+  "A/Q261": {
+    "expression": "(1.0 - 8.8) / 8.8 * 100",
+    "nodes": {
+      "n0": {
+        "location": "table_2:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "Consulting/professional fees in 2007 is 1.0 million, not equal 2006 relocation cost or a typographical page token."
+      }
+    }
+  },
+  "A/Q310": {
+    "expression": "(217.56 - 100) / 100 * 100",
+    "nodes": {
+      "n1": {
+        "location": "text_2:19",
+        "factor": "1",
+        "exact": true,
+        "reason": "Graph explicitly assumes $100 originally invested on September 18, 2008; exact defined base, not a rounded monetary observation."
+      }
+    }
+  },
+  "A/Q248": {
+    "expression": "1.8 * 64.20",
+    "nodes": {
+      "n0": {
+        "location": "text_2:20",
+        "factor": "1",
+        "exact": true,
+        "reason": "Sentence lists employee-purchased 1.8, 1.9, 2.0 million share counts for 2007, 2006, 2005. The 1.8 count is exact under the task convention; average prices remain rounded."
+      }
+    }
+  },
+  "A/Q266": {
+    "expression": "110000000 + 10000000",
+    "nodes": {
+      "n0": {
+        "location": "text_7:43",
+        "factor": "1",
+        "exact": true,
+        "reason": "Authorized common shares 110000000 is a legal count, exact under the task convention."
+      },
+      "n1": {
+        "location": "text_7:91",
+        "factor": "1",
+        "exact": true,
+        "reason": "Authorized non-voting shares 10000000 is a legal count, exact under the task convention."
+      }
+    }
+  },
+  "B/Q020": {
+    "expression": "(318.46 - 206.49) / 100 * 100",
+    "nodes": {
+      "n2": {
+        "location": "text_1:34",
+        "exact": true,
+        "factor": "1",
+        "reason": "The denominator is the graph-defined initial $100 investment. It is exact under the task convention, even though this response incorrectly treats the base as rounded in its explanation."
+      }
+    }
+  },
+  "B/Q023": {
+    "expression": "(4.6 + 2.3 + 1.0) / 3",
+    "nodes": {
+      "n2": {
+        "location": "text_14:147",
+        "exact": false,
+        "factor": "1",
+        "reason": "The reversed summation uses 2006 construction-in-progress impairment of 1.0 million; this is the monetary source figure, not the unrelated January 1 date token."
+      }
+    }
+  },
+  "B/Q111": {
+    "expression": "150 + 175 + 2756",
+    "nodes": {
+      "n1": {
+        "location": "table_2:1",
+        "exact": false,
+        "factor": "1",
+        "reason": "The 2019 scheduled debt-maturity amount is 175 million in the table. This displayed aggregate obligation is rounded; the equal 2017 current-liability disclosure is a different fact."
+      }
+    }
+  },
+  "B/Q142": {
+    "expression": "6.25 * (100 / 100)",
+    "nodes": {
+      "n0": {
+        "location": "text_6:156",
+        "exact": true,
+        "factor": "1",
+        "reason": "6.25% names the exact contractual coupon on the notes redeemed in February 2004; other passages repeat the same coupon."
+      },
+      "n1": {
+        "location": null,
+        "exact": true,
+        "factor": "1",
+        "reason": "The response writes 100/100 as an exact unit-preserving identity after the contractual coupon; these are arithmetic percentage factors, not the separate 100% redemption-price disclosure."
+      },
+      "n2": {
+        "location": null,
+        "exact": true,
+        "factor": "1",
+        "reason": "The response writes 100/100 as an exact unit-preserving identity after the contractual coupon; these are arithmetic percentage factors, not the separate 100% redemption-price disclosure."
+      }
+    }
+  },
+  "B/Q159": {
+    "expression": "88 + 4",
+    "nodes": {
+      "n1": {
+        "location": "table_8:5",
+        "exact": false,
+        "factor": "1",
+        "reason": "The model explicitly uses the customer-satisfaction row reported 2008-versus-2007 change of 4. It adds that displayed change directly to the index; the separate 4% employee reduction is not its source. Precision follows this model algorithm without correcting the percentage/points interpretation."
+      }
+    }
+  },
+  "B/Q182": {
+    "expression": "(108.7 / 127.1) * 100",
+    "nodes": {
+      "n1": {
+        "location": "table_9:1",
+        "exact": false,
+        "factor": "1",
+        "reason": "The model divides the separately disclosed 108.7m benefit by the 2018 year-end unrecognized-tax-benefit balance of 127.1m. The narrative repeats this same denominator; this is not the prior A numerator of 70.4m."
+      }
+    }
+  },
+  "B/Q223": {
+    "expression": "511.7 / 798.3",
+    "nodes": {
+      "n0": {
+        "location": "table_7:1",
+        "exact": false,
+        "factor": "1",
+        "reason": "The model now reports a ratio: goodwill 511.7m from the Anios purchase allocation, repeated in the narrative. Retain this source half-unit without adding the A response percentage conversion."
+      },
+      "n1": {
+        "location": "table_9:1",
+        "exact": false,
+        "factor": "1",
+        "reason": "Total consideration transferred 798.3m for the same Anios acquisition; the narrative repeats this denominator."
+      }
+    }
+  },
+  "B/Q227": {
+    "expression": "(250.0 - 250.0) / 250.0 * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_5:122",
+        "exact": false,
+        "factor": "1",
+        "reason": "New floating-rate notes due 2010 have displayed aggregate principal 250.0m. This is a distinct liability from the old notes due 2008, even though both amounts display 250.0."
+      },
+      "n1": {
+        "location": "text_5:81",
+        "exact": false,
+        "factor": "1",
+        "reason": "Old floating-rate notes due 2008 have displayed aggregate principal 250.0m. Subtrahend and growth denominator refer to this same old-note fact; do not share its variable with the new notes."
+      },
+      "n2": {
+        "location": "text_5:81",
+        "exact": false,
+        "factor": "1",
+        "reason": "Old floating-rate notes due 2008 have displayed aggregate principal 250.0m. Subtrahend and growth denominator refer to this same old-note fact; do not share its variable with the new notes."
+      }
+    }
+  },
+  "B/Q252": {
+    "expression": "3 / 23 * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_1:195",
+        "exact": false,
+        "factor": "1",
+        "reason": "The response explicitly selects liquidity-products acquisition inflows of 3 billion, within the 23=20+3 description. The later liquidity paragraph repeats that inflow; note-number 3 and operating-expense 3% are unrelated."
+      }
+    }
+  },
+  "B/Q260": {
+    "expression": "214.4 - 126.6",
+    "nodes": {
+      "n0": {
+        "location": "table_8:1",
+        "exact": false,
+        "factor": "1",
+        "reason": "Year-end December 27, 2008 tax-benefit balance 214.4m; both narrative occurrences repeat the same balance."
+      },
+      "n1": {
+        "location": "table_8:2",
+        "exact": false,
+        "factor": "1",
+        "reason": "The B expression selects the December 29, 2007 year-end balance 126.6m. Beginning-2008 balance is its carryforward, while A selected a different starting period."
+      }
+    }
+  },
+  "B/Q287": {
+    "expression": "48 / (7.0 * 1000) * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_17:32",
+        "exact": false,
+        "factor": "1",
+        "reason": "48m issuance costs for the November-2015 7.0b notes, matching the B explanation; not 48m pro-forma 2014 interest expense in another paragraph."
+      }
+    }
+  },
+  "B/Q319": {
+    "expression": "(1.2 * 1000 - 665) / (1.2 * 1000) * 100",
+    "nodes": {
+      "n1": {
+        "exact": true,
+        "reason": "Source text_9 reports the 2012 liability as 1.2 billion and the 2013 liability as 665 million. Multiplication by 1000 exactly converts the former to millions before subtraction/division; both copies convert the same 2012 fact."
+      },
+      "n4": {
+        "exact": true,
+        "reason": "Source text_9 reports the 2012 liability as 1.2 billion and the 2013 liability as 665 million. Multiplication by 1000 exactly converts the former to millions before subtraction/division; both copies convert the same 2012 fact."
+      }
+    }
+  },
+  "B/Q379": {
+    "expression": "(766801 * 40.85) / 1000000",
+    "nodes": {
+      "n0": {
+        "location": "table_1:1",
+        "exact": true,
+        "factor": "1",
+        "reason": "The B model selects approved-plan securities to be issued upon exercise (766801), an exact count under the task rule. Total/OCR repeat this count; A selected the different remaining-authorization count, which is not substituted here."
+      },
+      "n1": {
+        "location": "table_1:2",
+        "exact": false,
+        "factor": "1",
+        "reason": "The approved-plan weighted-average exercise price of 40.85 is a rounded aggregate mean. Total/OCR repeat the same average; it is not one contractual option strike."
+      }
+    }
+  },
+  "B/Q392": {
+    "expression": "(43 + 47) / 2",
+    "nodes": {
+      "n0": {
+        "location": "table_4:1",
+        "exact": false,
+        "factor": "1",
+        "reason": "The model now writes the 2012 December-31 loss reserve 43m first; the narrative repeats this same year-end reserve."
+      },
+      "n1": {
+        "location": "table_4:2",
+        "exact": false,
+        "factor": "1",
+        "reason": "The second summand is the 2011 December-31 loss reserve 47m; the January-1 2012 entry is its carryforward. Both observations remain distinct year-end facts."
+      }
+    }
+  },
+  "C/Q020": {
+    "expression": "(318.46 - 206.49) / 100 * 100",
+    "nodes": {
+      "n2": {
+        "location": "text_1:34",
+        "factor": "1",
+        "exact": true,
+        "reason": "This expression uses the graph-defined initial $100 investment as denominator. The graph explicitly assumes that base, so it is exact under the task convention despite the response explanation treating it as rounded."
+      }
+    }
+  },
+  "C/Q260": {
+    "expression": "214.4 - 126.6",
+    "nodes": {
+      "n0": {
+        "location": "table_8:1",
+        "exact": false,
+        "factor": "1",
+        "reason": "The C expression selects the December-27 2008 year-end tax-benefit balance of 214.4m. Two narrative references repeat this same balance."
+      },
+      "n1": {
+        "location": "table_8:2",
+        "exact": false,
+        "factor": "1",
+        "reason": "The C expression selects the December-29 2007 year-end balance of 126.6m; beginning-2008 value is its carryforward. Do not substitute the different starting balance used by A."
+      }
+    }
+  },
+  "C/Q272": {
+    "expression": "(172 + 265) / 2",
+    "nodes": {
+      "n2": {
+        "location": null,
+        "exact": true,
+        "factor": "1",
+        "reason": "The question and response call for the midpoint of two exposure amounts. Division of their sum by 2 is an exact arithmetic averaging count, not an unbound document amount."
+      }
+    }
+  },
+  "C/Q385": {
+    "expression": "1.7 / (25 / 10000)",
+    "nodes": {
+      "n1": {
+        "location": "text_28:2",
+        "factor": "1",
+        "exact": true,
+        "reason": "The source defines a hypothetical 25-basis-point change for its sensitivity experiment (also the table column label). This is a prescribed scenario increment, not an observed or estimated rounded rate; treat the defined increment as exact."
+      },
+      "n2": {
+        "exact": true,
+        "reason": "10000 is the exact conversion from basis points to a dimensionless rate. The model divides the disclosed 1.7m expense sensitivity by the defined 25-basis-point shock; no A/B expected-return formula is substituted."
+      }
+    }
+  },
+  "C/Q111": {
+    "expression": "150 + 175 + 2,756",
+    "nodes": {
+      "n1": {
+        "location": "table_2:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "The expression sums the scheduled debt maturities, so 175m is the 2019 table amount. The separate paragraph’s 175m current liability during 2017 is a different fact. The displayed aggregate maturity remains rounded, rather than an exact contractual rate."
+      }
+    }
+  },
+  "C/Q142": {
+    "expression": "6.25 / 100 * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_6:156",
+        "factor": "1",
+        "exact": true,
+        "reason": "The named 6.25% coupon on the notes redeemed in February 2004 is an exact contractual rate; multiple passages repeat that same coupon."
+      },
+      "n1": {
+        "exact": true,
+        "reason": "Division by 100 converts the stated percentage coupon to a dimensionless rate before the terminal multiplication converts it back. This is an exact arithmetic conversion, not the distinct 100% redemption-price disclosure."
+      }
+    }
+  },
+  "B_secondary/Q142": {
+    "expression": "6.25 / 100 * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_6:156",
+        "factor": "1",
+        "exact": true,
+        "reason": "The named 6.25% coupon on the notes redeemed in February 2004 is an exact contractual rate; multiple passages repeat that same coupon."
+      },
+      "n1": {
+        "exact": true,
+        "reason": "Division by 100 converts the stated percentage coupon to a dimensionless rate before the terminal multiplication converts it back. This is an exact arithmetic conversion, not the distinct 100% redemption-price disclosure."
+      }
+    }
+  },
+  "C/Q227": {
+    "expression": "(250.0 - 240.9) / 240.9 * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_5:122",
+        "exact": false,
+        "factor": "1",
+        "reason": "The model compares principal of floating-rate notes due 2010 (250.0m) with the separately scheduled 2010 debt amount 240.9m. Bind the new notes due 2010, not the redeemed fixed-rate notes or old floating notes due 2008. Precision follows this particular model calculation without correcting its debt interpretation."
+      }
+    }
+  },
+  "C/Q249": {
+    "expression": "(1.3 * 1000) / 804",
+    "nodes": {
+      "n1": {
+        "location": null,
+        "exact": true,
+        "factor": "1",
+        "reason": "Source text_1 reports 2014 interest-rate swaps as 1.3 billion, while the foreign-currency-hedge amount is 804 million. Multiplication by 1000 is an exact billion-to-million conversion before taking their ratio."
+      }
+    }
+  },
+  "C/Q287": {
+    "expression": "48 / (7.0 * 1000) * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_17:32",
+        "exact": false,
+        "factor": "1",
+        "reason": "48m is the issuance cost specifically associated with the November-2015 7.0b notes. The equal 2014 pro-forma interest expense in text_22 is a different economic fact."
+      }
+    }
+  },
+  "C/Q379": {
+    "expression": "766801 * 40.85 / 1000000",
+    "nodes": {
+      "n0": {
+        "location": "table_1:1",
+        "exact": true,
+        "factor": "1",
+        "reason": "The C expression selects 766801 approved-plan securities issuable upon exercise, an exact count. The Total row and OCR repeat this count; do not substitute A’s different remaining-authorization count."
+      },
+      "n1": {
+        "location": "table_1:2",
+        "exact": false,
+        "factor": "1",
+        "reason": "The corresponding approved-plan weighted-average exercise price is 40.85, a rounded aggregate mean. The Total row and OCR repeat it; it is not one fixed contractual strike."
+      }
+    }
+  },
+  "C/Q387": {
+    "expression": "210 - 182",
+    "nodes": {
+      "n1": {
+        "location": "text_12:91",
+        "exact": false,
+        "factor": "1",
+        "reason": "The C calculation subtracts the disclosed Opcity cash consideration of 182m directly from 210m total value. It does not use A/B’s extra acquired-cash term. The equal 182m expected future revenue in text_8 is unrelated."
+      }
+    }
+  },
+  "B_secondary/Q020": {
+    "expression": "(318.46 - 206.49) / 100 * 100",
+    "nodes": {
+      "n2": {
+        "location": "text_1:34",
+        "factor": "1",
+        "exact": true,
+        "reason": "The denominator is the graph-defined initial $100 investment assumed on December 31, 2012, not a measured amount or graph tick. It is exact under the task convention even though this response treats it as rounded. Source binding agrees with B/Q020 because the expression and economic fact are identical."
+      }
+    }
+  },
+  "B_secondary/Q111": {
+    "expression": "150 + 175 + 2,756",
+    "nodes": {
+      "n1": {
+        "location": "table_2:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "This response sums the three nonzero scheduled debt maturities: 150 in 2018, 175 in 2019 and 2,756 in 2020, all in millions. The 175 is the 2019 table amount, not the separate 2017 current-liability disclosure. The displayed aggregate maturity is rounded. The same source identity is documented for B/Q111 and C/Q111."
+      }
+    }
+  },
+  "B_secondary/Q227": {
+    "expression": "(250.0 / 2251.2) * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_5:122",
+        "factor": "1",
+        "exact": false,
+        "reason": "The response divides floating-rate notes due 2010 by total long-term debt. Its numerator is the new notes aggregate principal of 250.0 million, not the old notes due 2008 or the redeemed fixed-rate notes. The displayed aggregate principal remains rounded. This differs from both B and C expressions, so their growth formulas are not substituted."
+      }
+    }
+  },
+  "B_secondary/Q252": {
+    "expression": "3 / 23 * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_1:195",
+        "factor": "1",
+        "exact": false,
+        "reason": "The response explicitly selects liquidity-products inflows of 3 billion from the Verus acquisition within the 23 billion total, matching this source paragraph. The later liquidity paragraph repeats this same inflow; note number 3 and expense growth 3% are different facts. Same source identity and expression as B/Q252."
+      }
+    }
+  },
+  "B_secondary/Q287": {
+    "expression": "48 / (7.0 * 1000) * 100",
+    "nodes": {
+      "n0": {
+        "location": "text_17:32",
+        "factor": "1",
+        "exact": false,
+        "reason": "The response explicitly uses the approximately $48 million costs of issuing the November 2015 notes of $7.0 billion in this sentence. The separate $48 million is pro forma interest expense for 2014 and is not the selected fact. Same issuance-cost identity as B/Q287 and C/Q287; the response retains its own explicit billion-to-million conversion."
+      }
+    }
+  },
+  "B_secondary/Q392": {
+    "expression": "(43 + 47) / 2",
+    "nodes": {
+      "n0": {
+        "location": "table_4:1",
+        "factor": "1",
+        "exact": false,
+        "reason": "The first summand is the December 31, 2012 loss reserve of 43 million in the table; text_26 repeats this same year-end reserve. Same expression order and source identity as B/Q392."
+      },
+      "n1": {
+        "location": "table_4:2",
+        "factor": "1",
+        "exact": false,
+        "reason": "The second summand is the December 31, 2011 loss reserve of 47 million in the table. January 1, 2012 carries this balance forward; text_26 repeats the 2011 reserve. It remains a distinct year-end observation from the 2012 reserve, matching B/Q392."
+      }
+    }
+  }
+}

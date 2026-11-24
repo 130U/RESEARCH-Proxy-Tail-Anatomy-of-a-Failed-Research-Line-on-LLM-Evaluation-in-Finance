@@ -1,0 +1,1 @@
+{"answer":"218.46","unit":"percent","expression":"(318.46 - 100) / 100 * 100","low":"216.87064676616915","high":"220.06532663316583","reliable_digits":"2","explanation":"Cumulative return is the investment gain divided by the initial investment; the bounds allow rounding of $318.46 by $0.005 and $100 by $0.5."}

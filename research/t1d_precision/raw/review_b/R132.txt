@@ -1,0 +1,5 @@
+{
+    "review_id": "R132",
+    "verdict": "valid",
+    "reason": "The source assigns rounded expenses of $137 million to 2013 and $133 million to 2012, and the calculation correctly uses 2012 expense as the growth denominator."
+  }

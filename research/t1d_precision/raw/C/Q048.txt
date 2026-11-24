@@ -1,0 +1,1 @@
+{"answer":"3739366.45","unit":"dollars","expression":"151945 * 24.61","low":"3738606.725","high":"3740126.175","reliable_digits":"3","explanation":"The count of 151,945 securities is exact, while the exercise price ranges from $24.605 to $24.615; both endpoint values round to $3.74 million."}

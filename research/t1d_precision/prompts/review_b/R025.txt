@@ -1,0 +1,110 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R025",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2009",
+          "2010",
+          "2011",
+          "2012",
+          "2013",
+          "2014"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "State Street Corporation",
+          "$100",
+          "$107",
+          "$114",
+          "$101",
+          "$120",
+          "$190"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "S&P 500 Index",
+          "100",
+          "115",
+          "132",
+          "135",
+          "157",
+          "208"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "S&P Financial Index",
+          "100",
+          "112",
+          "126",
+          "104",
+          "135",
+          "183"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "KBW Bank Index",
+          "100",
+          "123",
+          "152",
+          "117",
+          "153",
+          "211"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_1",
+        "text": "."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the roi of an investment in state street corporation from 20011 to 2012?",
+  "reference_program": "subtract(101, 114), divide(#0, 114)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "101",
+      "raw": "101",
+      "location": "table_1:4",
+      "context": "State Street Corporation | 2012"
+    },
+    "x1": {
+      "program_token": "114",
+      "raw": "114",
+      "location": "table_1:3",
+      "context": "State Street Corporation | 2011"
+    }
+  }
+}

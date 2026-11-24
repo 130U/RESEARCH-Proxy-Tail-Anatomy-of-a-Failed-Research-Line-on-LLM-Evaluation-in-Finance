@@ -1,0 +1,49 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+compensation cost is generally recognized over the stated vesting period consistent with the terms of the arrangement ( i.e. , either on a straight-line or graded-vesting basis ) .
+expense recognition is accelerated for retirement-eligible individuals who would meet the requirements for vesting of awards upon their retirement .
+as of 30 september 2018 , there was no unrecognized compensation cost as all stock option awards were fully vested .
+cash received from option exercises during fiscal year 2018 was $ 76.2 .
+the total tax benefit realized from stock option exercises in fiscal year 2018 was $ 25.8 , of which $ 19.0 was the excess tax benefit .
+restricted stock the grant-date fair value of restricted stock is estimated on the date of grant based on the closing price of the stock , and compensation cost is generally amortized to expense on a straight-line basis over the vesting period during which employees perform related services .
+expense recognition is accelerated for retirement-eligible individuals who would meet the requirements for vesting of awards upon their retirement .
+we have elected to account for forfeitures as they occur , rather than to estimate them .
+forfeitures have not been significant historically .
+we have issued shares of restricted stock to certain officers .
+participants are entitled to cash dividends and to vote their respective shares .
+restrictions on shares lift in one to four years or upon the earlier of retirement , death , or disability .
+the shares are nontransferable while subject to forfeiture .
+a summary of restricted stock activity is presented below : restricted stock shares ( 000 ) weighted average grant- date fair value .
+
+TABLE
+Restricted Stock | Shares (000) | Weighted AverageGrant-Date Fair Value
+Outstanding at 30 September 2017 | 56 | $135.74
+Vested | ( 14) | 121.90
+Outstanding at 30 September 2018 | 42 | $140.28
+
+as of 30 september 2018 , there was $ .1 of unrecognized compensation cost related to restricted stock awards .
+the cost is expected to be recognized over a weighted average period of 0.5 years .
+the total fair value of restricted stock vested during fiscal years 2018 , 2017 , and 2016 was $ 2.2 , $ 4.1 , and $ 4.3 , respectively .
+as discussed in note 3 , discontinued operations , air products completed the spin-off of versum on 1 october 2016 .
+in connection with the spin-off , the company adjusted the number of deferred stock units and stock options pursuant to existing anti-dilution provisions in the ltip to preserve the intrinsic value of the awards immediately before and after the separation .
+the outstanding awards will continue to vest over the original vesting period defined at the grant date .
+outstanding awards at the time of spin-off were primarily converted into awards of the holders' employer following the separation .
+stock awards held upon separation were adjusted based upon the conversion ratio of air products' new york stock exchange ( 201cnyse 201d ) volume weighted-average closing stock price on 30 september 2016 ( $ 150.35 ) to the nyse volume weighted-average opening stock price on 3 october 2016 ( $ 140.38 ) , or 1.071 .
+the adjustment to the awards did not result in incremental fair value , and no incremental compensation expense was recorded related to the conversion of these awards. .
+
+QUESTION
+what was the decrease observed in the total fair value of restricted stock that vested during 2017 and 2018?

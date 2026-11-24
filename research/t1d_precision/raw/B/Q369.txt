@@ -1,0 +1,1 @@
+{"answer":"22.1576486306","unit":"percent","expression":"(182.87 - 149.70) / 149.70 * 100","low":"22.1502287833","high":"22.1650689736","reliable_digits":"3","explanation":"ROI is the gain divided by the purchase value, with bounds allowing each displayed index value to vary by 0.005."}

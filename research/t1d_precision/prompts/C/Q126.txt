@@ -1,0 +1,53 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+notes to consolidated financial statements the fair values for substantially all of the firm 2019s financial assets and financial liabilities are based on observable prices and inputs and are classified in levels 1 and 2 of the fair value hierarchy .
+certain level 2 and level 3 financial assets and financial liabilities may require appropriate valuation adjustments that a market participant would require to arrive at fair value for factors such as counterparty and the firm 2019s credit quality , funding risk , transfer restrictions , liquidity and bid/offer spreads .
+valuation adjustments are generally based on market evidence .
+see notes 6 and 7 for further information about fair value measurements of cash instruments and derivatives , respectively , included in 201cfinancial instruments owned , at fair value 201d and 201cfinancial instruments sold , but not yet purchased , at fair value , 201d and note 8 for further information about fair value measurements of other financial assets and financial liabilities accounted for at fair value under the fair value option .
+financial assets and financial liabilities accounted for at fair value under the fair value option or in accordance with other u.s .
+gaap are summarized below. .
+
+TABLE
+ | As of December
+<i>$ in millions</i> | 2012 | 2011
+Total level 1 financial assets | $ 190,737 | $ 136,780
+Total level 2 financial assets | 502,293 | 587,416
+Total level 3 financial assets | 47,095 | 47,937
+Cash collateral and counterparty netting<sup>1</sup> | (101,612) | (120,821)
+Total financial assets at fair value | $ 638,513 | $ 651,312
+Total assets | $ 938,555 | $ 923,225
+Total level 3 financial assets as a percentage of Total assets | 5.0% | 5.2%
+Total level 3 financial assets as a percentage of Total financial assets at fair value | 7.4% | 7.4%
+Total level 1 financial liabilities | $ 65,994 | $ 75,557
+Total level 2 financial liabilities | 318,764 | 319,160
+Total level 3 financial liabilities | 25,679 | 25,498
+Cash collateral and counterparty netting<sup>1</sup> | (32,760) | (31,546)
+Total financial liabilities at fair value | $ 377,677 | $ 388,669
+Total level 3 financial liabilities as a percentage of Total financial liabilities at fairvalue | 6.8% | 6.6%
+
+1 .
+represents the impact on derivatives of cash collateral netting , and counterparty netting across levels of the fair value hierarchy .
+netting among positions classified in the same level is included in that level .
+level 3 financial assets as of december 2012 decreased compared with december 2011 , primarily reflecting a decrease in derivative assets , partially offset by an increase in private equity investments .
+the decrease in derivative assets primarily reflected a decline in credit derivative assets , principally due to settlements , unrealized losses and sales , partially offset by net transfers from level 2 .
+level 3 currency derivative assets also declined compared with december 2011 , principally due to unrealized losses and net transfers to level 2 .
+the increase in private equity investments primarily reflected purchases and unrealized gains , partially offset by settlements and net transfers to level 2 .
+see notes 6 , 7 and 8 for further information about level 3 cash instruments , derivatives and other financial assets and financial liabilities accounted for at fair value under the fair value option , respectively , including information about significant unrealized gains and losses , and transfers in and out of level 3 .
+goldman sachs 2012 annual report 119 .
+
+QUESTION
+what is the percentage change in total financial liabilities at fair value in 2012?

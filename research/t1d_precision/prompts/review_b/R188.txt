@@ -1,0 +1,224 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R188",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "after , including a reduction in the u.s ."
+      },
+      {
+        "location": "text_1",
+        "text": "federal corporate income tax rate from 35% ( 35 % ) to 21% ( 21 % ) ."
+      },
+      {
+        "location": "text_2",
+        "text": "the 2017 tax act makes broad and complex changes to the u.s ."
+      },
+      {
+        "location": "text_3",
+        "text": "tax code including , but not limited to , the repeal of the irc section 199 domestic production activities deduction in 2018 and accelerated depreciation that allows for full expensing of qualified property beginning in the fourth quarter of 2017 ."
+      },
+      {
+        "location": "text_4",
+        "text": "on december 22 , 2017 , the sec staff issued a staff accounting bulletin that provides guidance on accounting for the tax effects of the 2017 tax act ."
+      },
+      {
+        "location": "text_5",
+        "text": "the guidance provides a measurement period that should not extend beyond one year from the 2017 tax act enactment date for companies to complete the accounting for income taxes related to changes associated with the 2017 tax act ."
+      },
+      {
+        "location": "text_6",
+        "text": "according to the staff accounting bulletin , entities must recognize the impact in the financial statements for the activities that they have completed the work to understand the impact as a result of the tax reform law ."
+      },
+      {
+        "location": "text_7",
+        "text": "for those activities which have not completed , the company would include provisional amounts if a reasonable estimate is available ."
+      },
+      {
+        "location": "text_8",
+        "text": "as a result of the reduction of the federal corporate income tax rate , the company has revalued its net deferred tax liability , excluding after tax credits , as of december 31 , 2017 ."
+      },
+      {
+        "location": "text_9",
+        "text": "based on this revaluation and other impacts of the 2017 tax act , the company has recognized a net tax benefit of $ 2.6 billion , which was recorded as a reduction to income tax expense for the year ended december 31 , 2017 ."
+      },
+      {
+        "location": "text_10",
+        "text": "the company has recognized provisional adjustments but management has not completed its accounting for income tax effects for certain elements of the 2017 tax act , principally due to the accelerated depreciation that will allow for full expensing of qualified property ."
+      },
+      {
+        "location": "text_11",
+        "text": "reconciliation of the statutory u.s ."
+      },
+      {
+        "location": "text_12",
+        "text": "federal income tax rate to the effective tax rate is as follows: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2017",
+          "2016",
+          "2015"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Statutory U.S. federal tax rate",
+          "35.0%",
+          "35.0%",
+          "35.0%"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "State taxes, net of federal benefit",
+          "2.1",
+          "3.7",
+          "3.0"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Domestic production activities deduction",
+          "(1.0)",
+          "(1.3)",
+          "(1.3)"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Increase (decrease) in domestic valuation allowance",
+          "(0.1)",
+          "(4.7)",
+          "0.1"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Impact of revised state and local apportionment estimates",
+          "3.1",
+          "0.5",
+          "(0.7)"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Reclassification of accumulated other comprehensive income",
+          "3.5",
+          "—",
+          "—"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Impact of 2017 Tax Act",
+          "(101.6)",
+          "—",
+          "—"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Other, net",
+          "(1.8)",
+          "(0.3)",
+          "0.2"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Effective Tax Expense (Benefit) Rate",
+          "(60.8)%",
+          "32.9%",
+          "36.3%"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_13",
+        "text": "in 2017 , the effective rate was lower than the statutory tax rate due to the remeasurement of the deferred tax liabilities as a result of the 2017 tax act ."
+      },
+      {
+        "location": "text_14",
+        "text": "this decrease was partially offset by an increase in the state apportionment impact of the illinois income tax rate change on deferred tax liabilities as well as the reclassification of income tax expense from accumulated other comprehensive income related to the disposal of bm&fbovespa shares ."
+      },
+      {
+        "location": "text_15",
+        "text": "in 2016 , the effective rate was lower than the statutory tax rate largely due to the release of the valuation allowances related to the sale of bm&fbovespa shares ."
+      },
+      {
+        "location": "text_16",
+        "text": "the decrease was partially offset by an increase in state tax expense and the state apportionment impact on deferred tax liabilities ."
+      },
+      {
+        "location": "text_17",
+        "text": "in 2015 , the effective rate was higher than the statutory tax rate primarily due to the impact of state and local income taxes ."
+      },
+      {
+        "location": "text_18",
+        "text": "the effective rate was primarily reduced by the section 199 domestic productions activities deduction ( section 199 deduction ) and the impact of state and local apportionment factors in deferred tax expense ."
+      },
+      {
+        "location": "text_19",
+        "text": "the section 199 deduction is related to certain activities performed by the company 2019s electronic platform. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the 3 year average net state effective tax rate?",
+  "reference_program": "add(2.1, 3.7), add(3.0, #0), divide(#1, 3)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "2.1",
+      "raw": "2.1",
+      "location": "table_2:1",
+      "context": "State taxes, net of federal benefit | 2017"
+    },
+    "x1": {
+      "program_token": "3.7",
+      "raw": "3.7",
+      "location": "table_2:2",
+      "context": "State taxes, net of federal benefit | 2016"
+    },
+    "x2": {
+      "program_token": "3.0",
+      "raw": "3.0",
+      "location": "table_2:3",
+      "context": "State taxes, net of federal benefit | 2015"
+    },
+    "x3": {
+      "program_token": "3",
+      "raw": "3.0",
+      "location": "table_2:3",
+      "context": "State taxes, net of federal benefit | 2015"
+    }
+  }
+}

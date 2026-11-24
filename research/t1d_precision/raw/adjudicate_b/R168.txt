@@ -1,0 +1,5 @@
+{
+    "review_id": "R168",
+    "verdict": "invalid",
+    "reason": "The London Market amount of 57 is explicitly gross, whereas the total of 320 is net of ceded reserves, so their ratio does not establish London's share of net reserves."
+  }

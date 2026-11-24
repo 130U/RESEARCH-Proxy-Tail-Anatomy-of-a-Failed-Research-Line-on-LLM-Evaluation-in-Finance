@@ -1,0 +1,1 @@
+{"answer":"12.3809523809524","unit":"percent","expression":"(525 - 460) / 525 * 100","low":"12.2020972354623","high":"12.5594671741199","reliable_digits":"1","explanation":"Allowing each contribution to vary by $0.5 million gives these bounds and one reliable significant digit."}

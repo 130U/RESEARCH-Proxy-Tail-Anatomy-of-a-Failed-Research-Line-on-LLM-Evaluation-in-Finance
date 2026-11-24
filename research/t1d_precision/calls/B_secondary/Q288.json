@@ -1,0 +1,26 @@
+{
+  "group": "B_secondary",
+  "id": "Q288",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "fresh_session": true,
+  "prompt_file": "prompts/B_secondary/Q288.txt",
+  "started_utc": "2026-11-17T11:09:28.312748+00:00",
+  "status": "completed",
+  "returncode": 0,
+  "attempt_number": 1,
+  "completed_utc": "2026-11-17T11:09:39.267809+00:00",
+  "elapsed_seconds": 10.969,
+  "thread_id": "01a1e932-94b2-7423-b203-09e0a7627ac5",
+  "usage": {
+    "input_tokens": 22241,
+    "cached_input_tokens": 20096,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 163,
+    "reasoning_output_tokens": 87
+  },
+  "event_item_types": [
+    "agent_message"
+  ],
+  "tool_use_observed": false
+}

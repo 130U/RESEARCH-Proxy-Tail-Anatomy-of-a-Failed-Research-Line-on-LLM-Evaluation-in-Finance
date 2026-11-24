@@ -1,0 +1,5 @@
+{
+    "review_id": "R193",
+    "verdict": "uncertain",
+    "reason": "The calculation uses rounded 2018–2022 estimates, but the question does not clearly identify their five-year sum as the intended total amortization expense."
+  }

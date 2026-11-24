@@ -1,0 +1,20 @@
+{
+  "review_id": "R222",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "second",
+      "original_reason": "The $2.8 million numerator covers remediation of previously disposed sites specifically, while the question does not clarify whether it means that subset or remediation of all sites.",
+      "display_reason": "The $2.8 million numerator covers remediation of previously disposed sites specifically, while the question does not clarify whether it means that subset or remediation of all sites.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "first",
+      "original_reason": "2015 disposed-site remediation2.8m is subset of15.2m reserve;2014 amounts and expenses are distinct.",
+      "display_reason": "2015 disposed-site remediation2.8m is subset of15.2m reserve;2014 amounts and expenses are distinct.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

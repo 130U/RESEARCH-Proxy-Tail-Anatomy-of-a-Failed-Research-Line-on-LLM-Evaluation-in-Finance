@@ -1,0 +1,1 @@
+{"answer":"-37.00062421972534","unit":"percent","expression":"(80.74 - 128.16) / 128.16 * 100","low":"-37.00698318573713","high":"-36.99426475752019","reliable_digits":"3","explanation":"The return was approximately -37.0%, with bounds allowing each index value to vary by 0.005 due to rounding."}

@@ -1,0 +1,222 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S068",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "facility due 2013 relates to leverage ( ratio of debt to operating income before depreciation and amortization ) ."
+      },
+      {
+        "location": "text_1",
+        "text": "as of december 31 , 2008 , we met this financial covenant by a significant margin ."
+      },
+      {
+        "location": "text_2",
+        "text": "our ability to comply with this financial covenant in the future does not depend on further debt reduction or on improved operating results ."
+      },
+      {
+        "location": "text_3",
+        "text": "share repurchase and dividends as of december 31 , 2008 , we had approximately $ 4.1 billion of availability remaining under our share repurchase authorization ."
+      },
+      {
+        "location": "text_4",
+        "text": "we have previously indicated our plan to fully use our remaining share repurchase authorization by the end of 2009 , subject to market conditions ."
+      },
+      {
+        "location": "text_5",
+        "text": "however , as previously disclosed , due to difficult economic conditions and instability in the capital markets , it is unlikely that we will complete our share repurchase authorization by the end of 2009 as previously planned ."
+      },
+      {
+        "location": "text_6",
+        "text": "share repurchases ( in billions ) 20072006 our board of directors declared a dividend of $ 0.0625 per share for each quarter in 2008 totaling approximately $ 727 million ."
+      },
+      {
+        "location": "text_7",
+        "text": "we paid approximately $ 547 million of dividends in 2008 ."
+      },
+      {
+        "location": "text_8",
+        "text": "we expect to continue to pay quarterly dividends , though each subsequent dividend is subject to approval by our board of directors ."
+      },
+      {
+        "location": "text_9",
+        "text": "we did not declare or pay any cash dividends in 2007 or 2006 ."
+      },
+      {
+        "location": "text_10",
+        "text": "investing activities net cash used in investing activities consists primarily of cash paid for capital expenditures , acquisitions and investments , partially offset by proceeds from sales of investments ."
+      },
+      {
+        "location": "text_11",
+        "text": "capital expenditures our most significant recurring investing activity has been capital expenditures in our cable segment and we expect that this will con- tinue in the future ."
+      },
+      {
+        "location": "text_12",
+        "text": "a significant portion of our capital expenditures is based on the level of customer growth and the technology being deployed ."
+      },
+      {
+        "location": "text_13",
+        "text": "the table below summarizes the capital expenditures we incurred in our cable segment from 2006 through 2008. ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "Year ended December 31 (in millions)",
+          "2008",
+          "2007",
+          "2006"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Customer premises equipment<sup>(a)</sup>",
+          "$3,147",
+          "$3,164",
+          "$2,321"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Scalable infrastructure<sup>(b)</sup>",
+          "1,024",
+          "1,014",
+          "906"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Line extensions<sup>(c)</sup>",
+          "212",
+          "352",
+          "275"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Support capital<sup>(d)</sup>",
+          "522",
+          "792",
+          "435"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Upgrades (capacity expansion)<sup>(e)</sup>",
+          "407",
+          "520",
+          "307"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Business services<sup>(f)</sup>",
+          "233",
+          "151",
+          "—"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Total",
+          "$5,545",
+          "$5,993",
+          "$4,244"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_14",
+        "text": "( a ) customer premises equipment ( 201ccpe 201d ) includes costs incurred to connect our services at the customer 2019s home ."
+      },
+      {
+        "location": "text_15",
+        "text": "the equipment deployed typically includes stan- dard digital set-top boxes , hd set-top boxes , digital video recorders , remote controls and modems ."
+      },
+      {
+        "location": "text_16",
+        "text": "cpe also includes the cost of installing this equipment for new customers as well as the material and labor cost incurred to install the cable that connects a customer 2019s dwelling to the network ."
+      },
+      {
+        "location": "text_17",
+        "text": "( b ) scalable infrastructure includes costs incurred to secure growth in customers or revenue units or to provide service enhancements , other than those related to cpe ."
+      },
+      {
+        "location": "text_18",
+        "text": "scalable infrastructure includes equipment that controls signal reception , processing and transmission throughout our distribution network , as well as equipment that controls and communicates with the cpe residing within a customer 2019s home ."
+      },
+      {
+        "location": "text_19",
+        "text": "also included in scalable infrastructure is certain equipment necessary for content aggregation and distribution ( video on demand equipment ) and equipment necessary to provide certain video , high-speed internet and digital phone service features ( e.g. , voice mail and e-mail ) ."
+      },
+      {
+        "location": "text_20",
+        "text": "( c ) line extensions include the costs of extending our distribution network into new service areas ."
+      },
+      {
+        "location": "text_21",
+        "text": "these costs typically include network design , the purchase and installation of fiber-optic and coaxial cable , and certain electronic equipment ."
+      },
+      {
+        "location": "text_22",
+        "text": "( d ) support capital includes costs associated with the replacement or enhancement of non-network assets due to technical or physical obsolescence and wear-out ."
+      },
+      {
+        "location": "text_23",
+        "text": "these costs typically include vehicles , computer and office equipment , furniture and fixtures , tools , and test equipment ."
+      },
+      {
+        "location": "text_24",
+        "text": "( e ) upgrades include costs to enhance or replace existing portions of our cable net- work , including recurring betterments ."
+      },
+      {
+        "location": "text_25",
+        "text": "( f ) business services include the costs incurred related to the rollout of our services to small and medium-sized businesses ."
+      },
+      {
+        "location": "text_26",
+        "text": "the equipment typically includes high-speed internet modems and phone modems and the cost of installing this equipment for new customers as well as materials and labor incurred to install the cable that connects a customer 2019s business to the closest point of the main distribution net- comcast 2008 annual report on form 10-k 32 ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percent of the capital expenditures we incurred in our cable segment in 2006 for the customer premise equipment",
+  "human_answer": "56.8%",
+  "reference_program": "divide(3147, 5545)",
+  "reference_execution_value": 0.56754,
+  "model_response": {
+    "answer": "54.69",
+    "unit": "percent",
+    "expression": "2321 / 4244 * 100",
+    "explanation": "Customer premises equipment accounted for 54.69% of cable segment capital expenditures in 2006, rounded to two decimal places."
+  }
+}

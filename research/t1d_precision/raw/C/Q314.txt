@@ -1,0 +1,1 @@
+{"answer":"0.1359955492","unit":"percent","expression":"242 / 177947 * 100","low":"0.1357141854","high":"0.1362769147","reliable_digits":"3","explanation":"Dividing interest and penalties by total unrecognized tax benefits gives the percentage; allowing each figure to vary by 0.5 yields bounds that both round to 0.136%."}

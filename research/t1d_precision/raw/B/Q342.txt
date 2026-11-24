@@ -1,0 +1,1 @@
+{"answer":"-55.43973941368078","unit":"percent","expression":"(684 - 1535) / 1535 * 100","low":"-55.48681211331814","high":"-55.39263603779733","reliable_digits":"2","explanation":"Bermuda net income declined; allowing each displayed income to vary by $0.5 million gives these bounds and two reliable significant digits."}

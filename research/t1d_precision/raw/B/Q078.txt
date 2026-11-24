@@ -1,0 +1,1 @@
+{"answer":"9.7717774808","unit":"percent","expression":"(75,970 / 777,443) * 100","low":"9.7717068829","high":"9.7718480788","reliable_digits":"4","explanation":"Allowing each amount to vary by 0.5 thousand gives these bounds, both of which round to 9.772 percent at four significant digits."}

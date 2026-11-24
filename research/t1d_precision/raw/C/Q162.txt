@@ -1,0 +1,1 @@
+{"answer":"-16.22646714","unit":"percent","expression":"(24296 - 29002) / 29002 * 100","low":"-16.22963538","high":"-16.22329879","reliable_digits":"3","explanation":"Allowing each displayed amount to vary by 0.5 million gives these bounds, supporting a decrease of 16.2% to three significant digits."}

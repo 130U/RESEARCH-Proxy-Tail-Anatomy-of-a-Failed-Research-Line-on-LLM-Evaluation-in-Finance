@@ -1,0 +1,472 @@
+{
+  "date": "2026-11-16",
+  "timezone": "America/New_York",
+  "input": "per_question.jsonl",
+  "scope": "Main analyzed rows; strict subtract(b,a), divide(#0,a), optional exact times 100; distinct bound source variables; denominator away from zero.",
+  "interpretation": "Conditional rounding-box calculation. Exact range uses four coherent ratio endpoints. First-order symmetric interval is an approximation, not a bound. Strict radius is an exact maximum absolute deviation but its symmetric envelope can be wider on one side than the true range. Strict crossing has interior witnesses by continuity; source-boundary ties are not needed.",
+  "counterfactual": "Fixed original centers and fixed exe_ans-based 1% acceptance band; divide both source halfwidths by factor. This is simulated precision refinement, not actual finer disclosure.",
+  "n_input_rows": 8281,
+  "n_eligible_questions": 1307,
+  "exclusions": {
+    "not_strict_growth_structure": 4030,
+    "not_in_main_analyzed_set": 2944
+  },
+  "formula": {
+    "center": "scale * (b/a - 1)",
+    "first_order_radius": "abs(scale) * (abs(a)*half_b + abs(b)*half_a)/a**2",
+    "strict_radius": "abs(scale) * (abs(a)*half_b + abs(b)*half_a)/(abs(a)*(abs(a)-half_a))",
+    "gold_band": "[exe_ans - abs(exe_ans)/100, exe_ans + abs(exe_ans)/100]"
+  },
+  "formula_checks": {
+    "n_case_checks": 5228,
+    "exact_radius_equals_corner_max_errors": 0,
+    "exact_range_outside_general_enclosure_errors": 0,
+    "general_certificate_contradictions": 0,
+    "detail": "Assertions halt execution before any output if one of these equalities/containments fails."
+  },
+  "by_factor": {
+    "1": {
+      "n": 1307,
+      "exact_crossing": 529,
+      "first_order_crossing": 529,
+      "first_order_error": 0,
+      "first_order_false_positive": 0,
+      "first_order_false_negative": 0,
+      "strict_symmetric_crossing": 529,
+      "strict_symmetric_false_positive": 0,
+      "exact_crossing_fraction": 0.404743687834736,
+      "general_status": {
+        "certified_inside": 773,
+        "witnessed_outside": 529,
+        "unresolved": 5
+      },
+      "general_unresolved_closed_as_inside": 5,
+      "general_unresolved_closed_as_outside": 0,
+      "center_gold_offset_nonzero": 1257,
+      "strict_to_first_radius_ratio_min": {
+        "exact": "227912000/227911999",
+        "decimal": 1.0000000043876585
+      },
+      "strict_to_first_radius_ratio_max": {
+        "exact": "4/3",
+        "decimal": 1.3333333333333333
+      },
+      "first_order_error_examples": []
+    },
+    "10": {
+      "n": 1307,
+      "exact_crossing": 143,
+      "first_order_crossing": 143,
+      "first_order_error": 0,
+      "first_order_false_positive": 0,
+      "first_order_false_negative": 0,
+      "strict_symmetric_crossing": 143,
+      "strict_symmetric_false_positive": 0,
+      "exact_crossing_fraction": 0.10941086457536343,
+      "general_status": {
+        "certified_inside": 1153,
+        "witnessed_outside": 143,
+        "unresolved": 11
+      },
+      "general_unresolved_closed_as_inside": 11,
+      "general_unresolved_closed_as_outside": 0,
+      "center_gold_offset_nonzero": 1257,
+      "strict_to_first_radius_ratio_min": {
+        "exact": "2279120000/2279119999",
+        "decimal": 1.000000000438766
+      },
+      "strict_to_first_radius_ratio_max": {
+        "exact": "40/39",
+        "decimal": 1.0256410256410255
+      },
+      "first_order_error_examples": []
+    },
+    "100": {
+      "n": 1307,
+      "exact_crossing": 7,
+      "first_order_crossing": 7,
+      "first_order_error": 0,
+      "first_order_false_positive": 0,
+      "first_order_false_negative": 0,
+      "strict_symmetric_crossing": 7,
+      "strict_symmetric_false_positive": 0,
+      "exact_crossing_fraction": 0.005355776587605203,
+      "general_status": {
+        "certified_inside": 1298,
+        "witnessed_outside": 7,
+        "unresolved": 2
+      },
+      "general_unresolved_closed_as_inside": 2,
+      "general_unresolved_closed_as_outside": 0,
+      "center_gold_offset_nonzero": 1257,
+      "strict_to_first_radius_ratio_min": {
+        "exact": "22791200000/22791199999",
+        "decimal": 1.0000000000438767
+      },
+      "strict_to_first_radius_ratio_max": {
+        "exact": "400/399",
+        "decimal": 1.0025062656641603
+      },
+      "first_order_error_examples": []
+    },
+    "1000": {
+      "n": 1307,
+      "exact_crossing": 0,
+      "first_order_crossing": 0,
+      "first_order_error": 0,
+      "first_order_false_positive": 0,
+      "first_order_false_negative": 0,
+      "strict_symmetric_crossing": 0,
+      "strict_symmetric_false_positive": 0,
+      "exact_crossing_fraction": 0.0,
+      "general_status": {
+        "certified_inside": 1307
+      },
+      "general_unresolved_closed_as_inside": 0,
+      "general_unresolved_closed_as_outside": 0,
+      "center_gold_offset_nonzero": 1257,
+      "strict_to_first_radius_ratio_min": {
+        "exact": "227912000000/227911999999",
+        "decimal": 1.0000000000043876
+      },
+      "strict_to_first_radius_ratio_max": {
+        "exact": "4000/3999",
+        "decimal": 1.000250062515629
+      },
+      "first_order_error_examples": []
+    }
+  },
+  "by_split": {
+    "dev": {
+      "1": {
+        "n": 123,
+        "exact_crossing": 54,
+        "first_order_crossing": 54,
+        "first_order_error": 0,
+        "first_order_false_positive": 0,
+        "first_order_false_negative": 0,
+        "strict_symmetric_crossing": 54,
+        "strict_symmetric_false_positive": 0,
+        "exact_crossing_fraction": 0.43902439024390244,
+        "general_status": {
+          "certified_inside": 69,
+          "witnessed_outside": 54
+        },
+        "general_unresolved_closed_as_inside": 0,
+        "general_unresolved_closed_as_outside": 0,
+        "center_gold_offset_nonzero": 119,
+        "strict_to_first_radius_ratio_min": {
+          "exact": "2039498/2039497",
+          "decimal": 1.0000004903169752
+        },
+        "strict_to_first_radius_ratio_max": {
+          "exact": "16/15",
+          "decimal": 1.0666666666666667
+        },
+        "first_order_error_examples": []
+      },
+      "10": {
+        "n": 123,
+        "exact_crossing": 11,
+        "first_order_crossing": 11,
+        "first_order_error": 0,
+        "first_order_false_positive": 0,
+        "first_order_false_negative": 0,
+        "strict_symmetric_crossing": 11,
+        "strict_symmetric_false_positive": 0,
+        "exact_crossing_fraction": 0.08943089430894309,
+        "general_status": {
+          "certified_inside": 109,
+          "unresolved": 3,
+          "witnessed_outside": 11
+        },
+        "general_unresolved_closed_as_inside": 3,
+        "general_unresolved_closed_as_outside": 0,
+        "center_gold_offset_nonzero": 119,
+        "strict_to_first_radius_ratio_min": {
+          "exact": "20394980/20394979",
+          "decimal": 1.0000000490316758
+        },
+        "strict_to_first_radius_ratio_max": {
+          "exact": "160/159",
+          "decimal": 1.0062893081761006
+        },
+        "first_order_error_examples": []
+      },
+      "100": {
+        "n": 123,
+        "exact_crossing": 2,
+        "first_order_crossing": 2,
+        "first_order_error": 0,
+        "first_order_false_positive": 0,
+        "first_order_false_negative": 0,
+        "strict_symmetric_crossing": 2,
+        "strict_symmetric_false_positive": 0,
+        "exact_crossing_fraction": 0.016260162601626018,
+        "general_status": {
+          "certified_inside": 121,
+          "witnessed_outside": 2
+        },
+        "general_unresolved_closed_as_inside": 0,
+        "general_unresolved_closed_as_outside": 0,
+        "center_gold_offset_nonzero": 119,
+        "strict_to_first_radius_ratio_min": {
+          "exact": "203949800/203949799",
+          "decimal": 1.0000000049031674
+        },
+        "strict_to_first_radius_ratio_max": {
+          "exact": "1600/1599",
+          "decimal": 1.0006253908692933
+        },
+        "first_order_error_examples": []
+      },
+      "1000": {
+        "n": 123,
+        "exact_crossing": 0,
+        "first_order_crossing": 0,
+        "first_order_error": 0,
+        "first_order_false_positive": 0,
+        "first_order_false_negative": 0,
+        "strict_symmetric_crossing": 0,
+        "strict_symmetric_false_positive": 0,
+        "exact_crossing_fraction": 0.0,
+        "general_status": {
+          "certified_inside": 123
+        },
+        "general_unresolved_closed_as_inside": 0,
+        "general_unresolved_closed_as_outside": 0,
+        "center_gold_offset_nonzero": 119,
+        "strict_to_first_radius_ratio_min": {
+          "exact": "2039498000/2039497999",
+          "decimal": 1.0000000004903167
+        },
+        "strict_to_first_radius_ratio_max": {
+          "exact": "16000/15999",
+          "decimal": 1.000062503906494
+        },
+        "first_order_error_examples": []
+      }
+    },
+    "test": {
+      "1": {
+        "n": 214,
+        "exact_crossing": 84,
+        "first_order_crossing": 84,
+        "first_order_error": 0,
+        "first_order_false_positive": 0,
+        "first_order_false_negative": 0,
+        "strict_symmetric_crossing": 84,
+        "strict_symmetric_false_positive": 0,
+        "exact_crossing_fraction": 0.3925233644859813,
+        "general_status": {
+          "certified_inside": 129,
+          "witnessed_outside": 84,
+          "unresolved": 1
+        },
+        "general_unresolved_closed_as_inside": 1,
+        "general_unresolved_closed_as_outside": 0,
+        "center_gold_offset_nonzero": 204,
+        "strict_to_first_radius_ratio_min": {
+          "exact": "185420000/185419999",
+          "decimal": 1.0000000053931615
+        },
+        "strict_to_first_radius_ratio_max": {
+          "exact": "8/7",
+          "decimal": 1.1428571428571428
+        },
+        "first_order_error_examples": []
+      },
+      "10": {
+        "n": 214,
+        "exact_crossing": 24,
+        "first_order_crossing": 24,
+        "first_order_error": 0,
+        "first_order_false_positive": 0,
+        "first_order_false_negative": 0,
+        "strict_symmetric_crossing": 24,
+        "strict_symmetric_false_positive": 0,
+        "exact_crossing_fraction": 0.11214953271028037,
+        "general_status": {
+          "certified_inside": 190,
+          "witnessed_outside": 24
+        },
+        "general_unresolved_closed_as_inside": 0,
+        "general_unresolved_closed_as_outside": 0,
+        "center_gold_offset_nonzero": 204,
+        "strict_to_first_radius_ratio_min": {
+          "exact": "1854200000/1854199999",
+          "decimal": 1.0000000005393161
+        },
+        "strict_to_first_radius_ratio_max": {
+          "exact": "80/79",
+          "decimal": 1.0126582278481013
+        },
+        "first_order_error_examples": []
+      },
+      "100": {
+        "n": 214,
+        "exact_crossing": 0,
+        "first_order_crossing": 0,
+        "first_order_error": 0,
+        "first_order_false_positive": 0,
+        "first_order_false_negative": 0,
+        "strict_symmetric_crossing": 0,
+        "strict_symmetric_false_positive": 0,
+        "exact_crossing_fraction": 0.0,
+        "general_status": {
+          "certified_inside": 214
+        },
+        "general_unresolved_closed_as_inside": 0,
+        "general_unresolved_closed_as_outside": 0,
+        "center_gold_offset_nonzero": 204,
+        "strict_to_first_radius_ratio_min": {
+          "exact": "18542000000/18541999999",
+          "decimal": 1.0000000000539315
+        },
+        "strict_to_first_radius_ratio_max": {
+          "exact": "800/799",
+          "decimal": 1.0012515644555695
+        },
+        "first_order_error_examples": []
+      },
+      "1000": {
+        "n": 214,
+        "exact_crossing": 0,
+        "first_order_crossing": 0,
+        "first_order_error": 0,
+        "first_order_false_positive": 0,
+        "first_order_false_negative": 0,
+        "strict_symmetric_crossing": 0,
+        "strict_symmetric_false_positive": 0,
+        "exact_crossing_fraction": 0.0,
+        "general_status": {
+          "certified_inside": 214
+        },
+        "general_unresolved_closed_as_inside": 0,
+        "general_unresolved_closed_as_outside": 0,
+        "center_gold_offset_nonzero": 204,
+        "strict_to_first_radius_ratio_min": {
+          "exact": "185420000000/185419999999",
+          "decimal": 1.0000000000053932
+        },
+        "strict_to_first_radius_ratio_max": {
+          "exact": "8000/7999",
+          "decimal": 1.0001250156269534
+        },
+        "first_order_error_examples": []
+      }
+    },
+    "train": {
+      "1": {
+        "n": 970,
+        "exact_crossing": 391,
+        "first_order_crossing": 391,
+        "first_order_error": 0,
+        "first_order_false_positive": 0,
+        "first_order_false_negative": 0,
+        "strict_symmetric_crossing": 391,
+        "strict_symmetric_false_positive": 0,
+        "exact_crossing_fraction": 0.40309278350515465,
+        "general_status": {
+          "certified_inside": 575,
+          "witnessed_outside": 391,
+          "unresolved": 4
+        },
+        "general_unresolved_closed_as_inside": 4,
+        "general_unresolved_closed_as_outside": 0,
+        "center_gold_offset_nonzero": 934,
+        "strict_to_first_radius_ratio_min": {
+          "exact": "227912000/227911999",
+          "decimal": 1.0000000043876585
+        },
+        "strict_to_first_radius_ratio_max": {
+          "exact": "4/3",
+          "decimal": 1.3333333333333333
+        },
+        "first_order_error_examples": []
+      },
+      "10": {
+        "n": 970,
+        "exact_crossing": 108,
+        "first_order_crossing": 108,
+        "first_order_error": 0,
+        "first_order_false_positive": 0,
+        "first_order_false_negative": 0,
+        "strict_symmetric_crossing": 108,
+        "strict_symmetric_false_positive": 0,
+        "exact_crossing_fraction": 0.11134020618556702,
+        "general_status": {
+          "certified_inside": 854,
+          "witnessed_outside": 108,
+          "unresolved": 8
+        },
+        "general_unresolved_closed_as_inside": 8,
+        "general_unresolved_closed_as_outside": 0,
+        "center_gold_offset_nonzero": 934,
+        "strict_to_first_radius_ratio_min": {
+          "exact": "2279120000/2279119999",
+          "decimal": 1.000000000438766
+        },
+        "strict_to_first_radius_ratio_max": {
+          "exact": "40/39",
+          "decimal": 1.0256410256410255
+        },
+        "first_order_error_examples": []
+      },
+      "100": {
+        "n": 970,
+        "exact_crossing": 5,
+        "first_order_crossing": 5,
+        "first_order_error": 0,
+        "first_order_false_positive": 0,
+        "first_order_false_negative": 0,
+        "strict_symmetric_crossing": 5,
+        "strict_symmetric_false_positive": 0,
+        "exact_crossing_fraction": 0.005154639175257732,
+        "general_status": {
+          "certified_inside": 963,
+          "witnessed_outside": 5,
+          "unresolved": 2
+        },
+        "general_unresolved_closed_as_inside": 2,
+        "general_unresolved_closed_as_outside": 0,
+        "center_gold_offset_nonzero": 934,
+        "strict_to_first_radius_ratio_min": {
+          "exact": "22791200000/22791199999",
+          "decimal": 1.0000000000438767
+        },
+        "strict_to_first_radius_ratio_max": {
+          "exact": "400/399",
+          "decimal": 1.0025062656641603
+        },
+        "first_order_error_examples": []
+      },
+      "1000": {
+        "n": 970,
+        "exact_crossing": 0,
+        "first_order_crossing": 0,
+        "first_order_error": 0,
+        "first_order_false_positive": 0,
+        "first_order_false_negative": 0,
+        "strict_symmetric_crossing": 0,
+        "strict_symmetric_false_positive": 0,
+        "exact_crossing_fraction": 0.0,
+        "general_status": {
+          "certified_inside": 970
+        },
+        "general_unresolved_closed_as_inside": 0,
+        "general_unresolved_closed_as_outside": 0,
+        "center_gold_offset_nonzero": 934,
+        "strict_to_first_radius_ratio_min": {
+          "exact": "227912000000/227911999999",
+          "decimal": 1.0000000000043876
+        },
+        "strict_to_first_radius_ratio_max": {
+          "exact": "4000/3999",
+          "decimal": 1.000250062515629
+        },
+        "first_order_error_examples": []
+      }
+    }
+  }
+}

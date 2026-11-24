@@ -1,0 +1,1 @@
+{"answer":"-55.3191489361702","unit":"percent","expression":"(21 - 47) / 47 * 100","low":"-56.8421052631579","high":"-53.7634408602151","reliable_digits":"0","explanation":"Allowing each value to vary by $0.5 million gives these bounds, which do not agree when rounded to one significant digit."}

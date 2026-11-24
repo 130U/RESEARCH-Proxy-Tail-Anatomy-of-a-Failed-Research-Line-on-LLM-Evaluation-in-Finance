@@ -1,0 +1,5 @@
+{
+    "review_id": "R141",
+    "verdict": "invalid",
+    "reason": "The bound reclassification amounts concern initial adoption of SOP 03-1, whereas the prospective-method discussion concerns SFAS 123R, so the ratio is tied to the wrong adoption context."
+  }

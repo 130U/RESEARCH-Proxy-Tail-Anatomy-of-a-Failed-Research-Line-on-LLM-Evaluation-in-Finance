@@ -1,0 +1,1 @@
+{"answer":"40","unit":"percent","expression":"(77 - 55) / 55 * 100","low":"37.8378378378","high":"42.2018348624","reliable_digits":"1","explanation":"The liability increased from $55 million to $77 million; allowing for rounding to the nearest million leaves one reliable significant digit."}

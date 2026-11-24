@@ -1,0 +1,232 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S017",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "westrock company notes to consolidated financial statements fffd ( continued ) a reconciliation of the beginning and ending amount of gross unrecognized tax benefits is as follows ( in millions ) : ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2018",
+          "2017",
+          "2016"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Balance at beginning of fiscal year",
+          "$148.9",
+          "$166.8",
+          "$106.6"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Additions related to purchase accounting<sup>(1)</sup>",
+          "3.4",
+          "7.7",
+          "16.5"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Additions for tax positions taken in current year",
+          "3.1",
+          "5.0",
+          "30.3"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Additions for tax positions taken in prior fiscal years",
+          "18.0",
+          "15.2",
+          "20.6"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Reductions for tax positions taken in prior fiscal years",
+          "(5.3)",
+          "(25.6)",
+          "(9.7)"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Reductions due to settlement<sup>(2)</sup>",
+          "(29.4)",
+          "(14.1)",
+          "(1.3)"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "(Reductions) additions for currency translation adjustments",
+          "(9.6)",
+          "2.0",
+          "7.0"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Reductions as a result of a lapse of the applicable statute oflimitations",
+          "(2.0)",
+          "(8.1)",
+          "(3.2)"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Balance at end of fiscal year",
+          "$127.1",
+          "$148.9",
+          "$166.8"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_1",
+        "text": "( 1 ) amounts in fiscal 2018 and 2017 relate to the mps acquisition ."
+      },
+      {
+        "location": "text_2",
+        "text": "adjustments in fiscal 2016 relate to the combination and the sp fiber acquisition ."
+      },
+      {
+        "location": "text_3",
+        "text": "( 2 ) amounts in fiscal 2018 relate to the settlement of state audit examinations and federal and state amended returns filed related to affirmative adjustments for which a there was a reserve ."
+      },
+      {
+        "location": "text_4",
+        "text": "amounts in fiscal 2017 relate to the settlement of federal and state audit examinations with taxing authorities ."
+      },
+      {
+        "location": "text_5",
+        "text": "as of september 30 , 2018 and 2017 , the total amount of unrecognized tax benefits was approximately $ 127.1 million and $ 148.9 million , respectively , exclusive of interest and penalties ."
+      },
+      {
+        "location": "text_6",
+        "text": "of these balances , as of september 30 , 2018 and 2017 , if we were to prevail on all unrecognized tax benefits recorded , approximately $ 108.7 million and $ 138.0 million , respectively , would benefit the effective tax rate ."
+      },
+      {
+        "location": "text_7",
+        "text": "we regularly evaluate , assess and adjust the related liabilities in light of changing facts and circumstances , which could cause the effective tax rate to fluctuate from period to period ."
+      },
+      {
+        "location": "text_8",
+        "text": "we recognize estimated interest and penalties related to unrecognized tax benefits in income tax expense in the consolidated statements of operations ."
+      },
+      {
+        "location": "text_9",
+        "text": "as of september 30 , 2018 , we had liabilities of $ 70.4 million related to estimated interest and penalties for unrecognized tax benefits ."
+      },
+      {
+        "location": "text_10",
+        "text": "as of september 30 , 2017 , we had liabilities of $ 81.7 million , net of indirect benefits , related to estimated interest and penalties for unrecognized tax benefits ."
+      },
+      {
+        "location": "text_11",
+        "text": "our results of operations for the fiscal year ended september 30 , 2018 , 2017 and 2016 include expense of $ 5.8 million , $ 7.4 million and $ 2.9 million , respectively , net of indirect benefits , related to estimated interest and penalties with respect to the liability for unrecognized tax benefits ."
+      },
+      {
+        "location": "text_12",
+        "text": "as of september 30 , 2018 , it is reasonably possible that our unrecognized tax benefits will decrease by up to $ 5.5 million in the next twelve months due to expiration of various statues of limitations and settlement of issues ."
+      },
+      {
+        "location": "text_13",
+        "text": "we file federal , state and local income tax returns in the u.s ."
+      },
+      {
+        "location": "text_14",
+        "text": "and various foreign jurisdictions ."
+      },
+      {
+        "location": "text_15",
+        "text": "with few exceptions , we are no longer subject to u.s ."
+      },
+      {
+        "location": "text_16",
+        "text": "federal and state and local income tax examinations by tax authorities for years prior to fiscal 2015 and fiscal 2008 , respectively ."
+      },
+      {
+        "location": "text_17",
+        "text": "we are no longer subject to non-u.s ."
+      },
+      {
+        "location": "text_18",
+        "text": "income tax examinations by tax authorities for years prior to fiscal 2011 , except for brazil for which we are not subject to tax examinations for years prior to 2005 ."
+      },
+      {
+        "location": "text_19",
+        "text": "while we believe our tax positions are appropriate , they are subject to audit or other modifications and there can be no assurance that any modifications will not materially and adversely affect our results of operations , financial condition or cash flows ."
+      },
+      {
+        "location": "text_20",
+        "text": "note 6 ."
+      },
+      {
+        "location": "text_21",
+        "text": "segment information we report our financial results of operations in the following three reportable segments : corrugated packaging , which consists of our containerboard mill and corrugated packaging operations , as well as our recycling operations ; consumer packaging , which consists of consumer mills , folding carton , beverage , merchandising displays and partition operations ; and land and development , which sells real estate primarily in the charleston , sc region ."
+      },
+      {
+        "location": "text_22",
+        "text": "following the combination and until the completion of the separation , our financial results of operations had a fourth reportable segment , specialty chemicals ."
+      },
+      {
+        "location": "text_23",
+        "text": "prior to the hh&b sale , our consumer packaging segment included hh&b ."
+      },
+      {
+        "location": "text_24",
+        "text": "certain income and expenses are not allocated to our segments and , thus , the information that ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what percent would the balance by the end of 2018 increase if the unrecognized tax benefits were included?",
+  "human_answer": "194.1%",
+  "reference_program": "add(108.7, 138.0), add(#0, 127.1), subtract(#1, 127.1), divide(#2, 127.1)",
+  "reference_execution_value": 1.94099,
+  "model_response": {
+    "answer": "55.39",
+    "unit": "percent",
+    "expression": "70.4 / 127.1 * 100",
+    "explanation": "Including the $70.4 million of related interest and penalties would increase the $127.1 million year-end balance by approximately 55.39%."
+  }
+}

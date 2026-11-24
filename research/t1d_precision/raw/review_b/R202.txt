@@ -1,0 +1,5 @@
+{
+    "review_id": "R202",
+    "verdict": "valid",
+    "reason": "The rounded loss magnitudes of $1.2 billion and $2.2 billion correctly produce a negative percentage decline, indicating that the operating loss actually increased."
+  }

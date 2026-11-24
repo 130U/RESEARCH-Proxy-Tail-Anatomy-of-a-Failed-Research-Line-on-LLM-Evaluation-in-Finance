@@ -1,0 +1,74 @@
+{
+  "scan": {
+    "finqa_views": 2789,
+    "tatqa_views": 2756,
+    "finqa_documents": 2789,
+    "tatqa_documents": 2756,
+    "finqa_candidates": 23445,
+    "tatqa_candidates": 27531
+  },
+  "reviewed": {
+    "unreviewed": 50591,
+    "confirmed": 154,
+    "rejected": 226,
+    "unresolved": 5
+  },
+  "by_dataset": {
+    "finqa": {
+      "semantic_reviewed": 203,
+      "confirmed_pairs": 73,
+      "independent_confirmed_pairs": 45,
+      "legacy_only_confirmed_pairs": 28,
+      "pair_fine_center_contained": 73,
+      "independent_pair_fine_center_contained": 45,
+      "nonintersecting_confirmed_pair_ids": [],
+      "pairs_with_bound_questions": 31,
+      "substitutions": 45,
+      "unique_questions": 42,
+      "over_1pct": 9,
+      "over_1pct_rate": 0.2,
+      "coarse_answer_range_contains_fine": 45,
+      "independent_substitutions": 19,
+      "independent_over_1pct": 3,
+      "zero_fine_nonzero_coarse": 0,
+      "relative_difference_quantiles": {
+        "0": 0.0,
+        "0.25": 0.00015852553829001463,
+        "0.5": 0.002452073116362015,
+        "0.75": 0.006478873239436619,
+        "0.9": 0.03454581673306773,
+        "0.95": 0.1648803149368765,
+        "1": 1.0
+      }
+    },
+    "tatqa": {
+      "semantic_reviewed": 182,
+      "confirmed_pairs": 81,
+      "independent_confirmed_pairs": 81,
+      "legacy_only_confirmed_pairs": 0,
+      "pair_fine_center_contained": 80,
+      "independent_pair_fine_center_contained": 80,
+      "nonintersecting_confirmed_pair_ids": [
+        "p40065"
+      ],
+      "pairs_with_bound_questions": 47,
+      "substitutions": 51,
+      "unique_questions": 37,
+      "over_1pct": 9,
+      "over_1pct_rate": 0.17647058823529413,
+      "coarse_answer_range_contains_fine": 51,
+      "independent_substitutions": 51,
+      "independent_over_1pct": 9,
+      "zero_fine_nonzero_coarse": 0,
+      "relative_difference_quantiles": {
+        "0": 2.2715218173991757e-06,
+        "0.25": 0.0002654735655527238,
+        "0.5": 0.0014857679074132,
+        "0.75": 0.0027965976050835944,
+        "0.9": 0.020766773162939296,
+        "0.95": 0.03538751317175975,
+        "1": 0.09544468546637744
+      }
+    }
+  }
+}

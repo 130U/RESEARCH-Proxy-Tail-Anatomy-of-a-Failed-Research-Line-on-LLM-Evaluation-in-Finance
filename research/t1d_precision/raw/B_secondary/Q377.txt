@@ -1,0 +1,1 @@
+{"answer":"1400","unit":"million dollars","expression":"(4.7-3.3)*1000","low":"1300","high":"1500","reliable_digits":"1","explanation":"Subtracting the excess from net capital gives the minimum requirement; rounding each billion-dollar figure permits uncertainty of 100 million dollars in the difference."}

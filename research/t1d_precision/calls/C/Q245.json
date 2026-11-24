@@ -1,0 +1,31 @@
+{
+  "group": "C",
+  "id": "Q245",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "fresh_session": true,
+  "prompt_file": "prompts/C/Q245.txt",
+  "started_utc": "2026-11-17T08:43:13.270685+00:00",
+  "status": "completed",
+  "returncode": 0,
+  "completed_utc": "2026-11-17T08:48:10.467361+00:00",
+  "elapsed_seconds": 297.187,
+  "thread_id": "01a1e8ac-af30-7782-947a-6f8e8594192c",
+  "errors": [
+    {
+      "type": "error",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: tls handshake eof)"
+    }
+  ],
+  "usage": {
+    "input_tokens": 17697,
+    "cached_input_tokens": 15488,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 952,
+    "reasoning_output_tokens": 882
+  },
+  "event_item_types": [
+    "agent_message"
+  ],
+  "tool_use_observed": false
+}

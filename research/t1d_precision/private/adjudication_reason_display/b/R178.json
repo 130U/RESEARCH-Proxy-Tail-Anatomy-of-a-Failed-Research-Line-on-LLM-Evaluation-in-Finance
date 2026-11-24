@@ -1,0 +1,20 @@
+{
+  "review_id": "R178",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "first",
+      "original_reason": "Cash requirement1.8m applies to remaining combined11.2m contingent payments, while5.6m is one milestone. Precise contractual5583333-dollar amount appears in P20. Rounded-independent assumptions and June-specific cash allocation are unsupported.",
+      "display_reason": "Cash requirement1.8m applies to remaining combined11.2m contingent payments, while5.6m is one milestone. Precise contractual5583333-dollar amount appears in P20. Rounded-independent assumptions and June-specific cash allocation are unsupported.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "second",
+      "original_reason": "The approximately $1.8 million aggregate cash requirement divided by the rounded $5.6 million June obligation gives the maximum required cash share if that requirement falls entirely on June's payment.",
+      "display_reason": "The approximately $1.8 million aggregate cash requirement divided by the rounded $5.6 million June obligation gives the maximum required cash share if that requirement falls entirely on June's payment.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

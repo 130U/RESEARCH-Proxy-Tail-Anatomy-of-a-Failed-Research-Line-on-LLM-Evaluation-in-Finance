@@ -1,0 +1,1 @@
+{"answer":"-16.346153846153846","unit":"percent","expression":"(87 - 104) / 104 * 100","low":"-17.22488038277512","high":"-15.458937198067632","reliable_digits":"1","explanation":"Hedges reduce the anticipated expense increase from $104 million to $87 million; each figure has rounding uncertainty of $0.5 million."}

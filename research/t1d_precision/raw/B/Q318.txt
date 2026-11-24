@@ -1,0 +1,1 @@
+{"answer":"70","unit":"million USD","expression":"32 + 38","low":"69","high":"71","reliable_digits":"1","explanation":"Adding the two annual DVA impacts gives $70 million; rounding each input to the nearest million allows a total from $69 million to $71 million."}

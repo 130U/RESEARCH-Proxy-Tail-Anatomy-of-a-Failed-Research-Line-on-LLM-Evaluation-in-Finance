@@ -1,0 +1,128 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S026",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "entergy mississippi , inc ."
+      },
+      {
+        "location": "text_1",
+        "text": "management 2019s financial discussion and analysis results of operations net income 2017 compared to 2016 net income increased $ 0.8 million primarily due to higher other income , lower other operation and maintenance expenses , and lower interest expense , substantially offset by higher depreciation and amortization expenses and a higher effective income tax rate ."
+      },
+      {
+        "location": "text_2",
+        "text": "2016 compared to 2015 net income increased $ 16.5 million primarily due to lower other operation and maintenance expenses , higher net revenues , and a lower effective income tax rate , partially offset by higher depreciation and amortization expenses ."
+      },
+      {
+        "location": "text_3",
+        "text": "net revenue 2017 compared to 2016 net revenue consists of operating revenues net of : 1 ) fuel , fuel-related expenses , and gas purchased for resale , 2 ) purchased power expenses , and 3 ) other regulatory credits ."
+      },
+      {
+        "location": "text_4",
+        "text": "following is an analysis of the change in net revenue comparing 2017 to 2016 ."
+      },
+      {
+        "location": "text_5",
+        "text": "amount ( in millions ) ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Amount (In Millions)"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2016 net revenue",
+          "$705.4"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Volume/weather",
+          "(18.2)"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Retail electric price",
+          "13.5"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Other",
+          "2.4"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "2017 net revenue",
+          "$703.1"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_6",
+        "text": "the volume/weather variance is primarily due to the effect of less favorable weather on residential and commercial sales ."
+      },
+      {
+        "location": "text_7",
+        "text": "the retail electric price variance is primarily due to a $ 19.4 million net annual increase in rates , effective with the first billing cycle of july 2016 , and an increase in the energy efficiency rider , effective with the first billing cycle of february 2017 , each as approved by the mpsc ."
+      },
+      {
+        "location": "text_8",
+        "text": "the increase was partially offset by decreased storm damage rider revenues due to resetting the storm damage provision to zero beginning with the november 2016 billing cycle ."
+      },
+      {
+        "location": "text_9",
+        "text": "entergy mississippi resumed billing the storm damage rider effective with the september 2017 billing cycle ."
+      },
+      {
+        "location": "text_10",
+        "text": "see note 2 to the financial statements for more discussion of the formula rate plan and the storm damage rider. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what percent did net revenue decrease between 2016 and 2017?",
+  "human_answer": ".33%",
+  "reference_program": "divide(705.4, 703.1), subtract(#0, const_1)",
+  "reference_execution_value": 0.00327,
+  "model_response": {
+    "answer": "0.33",
+    "unit": "percent",
+    "expression": "(705.4 - 703.1) / 705.4 * 100",
+    "explanation": "Net revenue decreased by $2.3 million, approximately 0.33% of 2016 net revenue."
+  }
+}

@@ -1,0 +1,1 @@
+{"answer":"-5.084745762711864","unit":"percent","expression":"(16.8 - 17.7) / 17.7 * 100","low":"-5.633802816901408","high":"-4.532577903682720","reliable_digits":"0","explanation":"Charges decreased from $17.7 million to $16.8 million; rounding uncertainty of $0.05 million per figure leaves no reliable significant digits in the percentage change."}

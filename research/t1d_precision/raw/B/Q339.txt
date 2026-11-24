@@ -1,0 +1,1 @@
+{"answer":"44.8409009792","unit":"percent","expression":"(43319 / 96606) * 100","low":"44.8401505075","high":"44.8416518728","reliable_digits":"4","explanation":"Each reported amount can vary by 0.5 million, giving these percentage bounds and four reliable significant digits."}

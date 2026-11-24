@@ -1,0 +1,315 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R103",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "special asset pool special asset pool ( sap ) , which constituted approximately 28% ( 28 % ) of citi holdings by assets as of december 31 , 2009 , is a portfolio of securities , loans and other assets that citigroup intends to actively reduce over time through asset sales and portfolio run-off ."
+      },
+      {
+        "location": "text_1",
+        "text": "at december 31 , 2009 , sap had $ 154 billion of assets ."
+      },
+      {
+        "location": "text_2",
+        "text": "sap assets have declined by $ 197 billion or 56% ( 56 % ) from peak levels in 2007 reflecting cumulative write-downs , asset sales and portfolio run-off ."
+      },
+      {
+        "location": "text_3",
+        "text": "assets have been reduced by $ 87 billion from year-ago levels ."
+      },
+      {
+        "location": "text_4",
+        "text": "approximately 60% ( 60 % ) of sap assets are now accounted for on an accrual basis , which has helped reduce income volatility ."
+      },
+      {
+        "location": "text_5",
+        "text": "in millions of dollars 2009 2008 2007 % (  % ) change 2009 vs ."
+      },
+      {
+        "location": "text_6",
+        "text": "2008 % (  % ) change 2008 vs ."
+      },
+      {
+        "location": "text_7",
+        "text": "2007 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "In millions of dollars",
+          "2009",
+          "2008",
+          "2007",
+          "% Change 2009 vs. 2008",
+          "% Change 2008 vs. 2007"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Net interest revenue",
+          "$3,173",
+          "$3,332",
+          "$2,723",
+          "(5)%",
+          "22%"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Non-interest revenue",
+          "(6,855)",
+          "(42,906)",
+          "(20,619)",
+          "84",
+          "NM"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Revenues, net of interest expense",
+          "$(3,682)",
+          "$(39,574)",
+          "$(17,896)",
+          "91%",
+          "NM"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Total operating expenses",
+          "$896",
+          "$988",
+          "$1,070",
+          "(9)%",
+          "(8)%"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Net credit losses",
+          "$5,420",
+          "$909",
+          "$436",
+          "NM",
+          "NM"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Provision for unfunded lending commitments",
+          "111",
+          "(172)",
+          "71",
+          "NM",
+          "NM"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Credit reserve builds/(release)",
+          "(483)",
+          "2,844",
+          "378",
+          "NM",
+          "NM"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Provisions for credit losses and for benefits and claims",
+          "$5,048",
+          "$3,581",
+          "$885",
+          "41%",
+          "NM"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "(Loss) from continuing operations before taxes",
+          "$(9,626)",
+          "$(44,143)",
+          "$(19,851)",
+          "78%",
+          "NM"
+        ]
+      },
+      {
+        "row_index": 10,
+        "cells": [
+          "Income taxes (benefits)",
+          "(4,323)",
+          "(17,149)",
+          "(7,740)",
+          "75",
+          "NM"
+        ]
+      },
+      {
+        "row_index": 11,
+        "cells": [
+          "(Loss) from continuing operations",
+          "$(5,303)",
+          "$(26,994)",
+          "$(12,111)",
+          "80%",
+          "NM"
+        ]
+      },
+      {
+        "row_index": 12,
+        "cells": [
+          "Net income (loss) attributable to noncontrolling interests",
+          "(17)",
+          "(205)",
+          "149",
+          "92",
+          "NM"
+        ]
+      },
+      {
+        "row_index": 13,
+        "cells": [
+          "Net (loss)",
+          "$(5,286)",
+          "$(26,789)",
+          "$(12,260)",
+          "80%",
+          "NM"
+        ]
+      },
+      {
+        "row_index": 14,
+        "cells": [
+          "EOP assets(in billions of dollars)",
+          "$154",
+          "$241",
+          "$351",
+          "(36)%",
+          "(31)%"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_8",
+        "text": "nm not meaningful 2009 vs ."
+      },
+      {
+        "location": "text_9",
+        "text": "2008 revenues , net of interest expense increased $ 35.9 billion in 2009 , primarily due to the absence of significant negative revenue marks occurring in the prior year ."
+      },
+      {
+        "location": "text_10",
+        "text": "total negative marks were $ 1.9 billion in 2009 as compared to $ 38.1 billion in 2008 , as described in more detail below ."
+      },
+      {
+        "location": "text_11",
+        "text": "revenue in the current year included a positive $ 1.3 billion cva on derivative positions , excluding monoline insurers , and positive marks of $ 0.8 billion on subprime-related direct exposures ."
+      },
+      {
+        "location": "text_12",
+        "text": "these positive revenues were partially offset by negative revenues of $ 1.5 billion on alt-a mortgages , $ 1.3 billion of write-downs on commercial real estate , and a negative $ 1.6 billion cva on the monoline insurers and fair value option liabilities ."
+      },
+      {
+        "location": "text_13",
+        "text": "revenue was also affected by negative marks on private equity positions and write-downs on highly leveraged finance commitments ."
+      },
+      {
+        "location": "text_14",
+        "text": "operating expenses decreased 9% ( 9 % ) in 2009 , mainly driven by lower compensation and lower volumes and transaction expenses , partially offset by costs associated with the u.s ."
+      },
+      {
+        "location": "text_15",
+        "text": "government loss-sharing agreement , which citi exited in the fourth quarter of 2009 ."
+      },
+      {
+        "location": "text_16",
+        "text": "provisions for credit losses and for benefits and claims increased $ 1.5 billion , primarily driven by $ 4.5 billion in increased net credit losses , partially offset by a lower reserve build of $ 3.0 billion ."
+      },
+      {
+        "location": "text_17",
+        "text": "assets declined 36% ( 36 % ) versus the prior year , primarily driven by amortization and prepayments , sales , marks and charge-offs ."
+      },
+      {
+        "location": "text_18",
+        "text": "asset sales during the fourth quarter of 2009 ( $ 10 billion ) were executed at or above citi 2019s marks generating $ 800 million in pretax gains for the quarter ."
+      },
+      {
+        "location": "text_19",
+        "text": "2008 vs ."
+      },
+      {
+        "location": "text_20",
+        "text": "2007 revenues , net of interest expense decreased $ 21.7 billion , primarily due to negative net revenue marks ."
+      },
+      {
+        "location": "text_21",
+        "text": "revenue included $ 14.3 billion of write- downs on subprime-related direct exposures and a negative $ 6.8 billion cva related to the monoline insurers and derivative positions ."
+      },
+      {
+        "location": "text_22",
+        "text": "revenue was also negatively affected by write-downs on highly leveraged finance commitments , alt-a mortgage revenue , write-downs on structured investment vehicles and commercial real estate , and mark-to-market on auction rate securities ."
+      },
+      {
+        "location": "text_23",
+        "text": "total negative marks were $ 38.1 billion in 2008 as compared to $ 20.2 billion in 2007 , which are described in more detail below ."
+      },
+      {
+        "location": "text_24",
+        "text": "operating expenses decreased 8% ( 8 % ) , mainly driven by lower compensation and transaction expenses ."
+      },
+      {
+        "location": "text_25",
+        "text": "provisions for credit losses and for benefits and claims increased $ 2.7 billion , primarily due to a $ 2.2 billion increase in the reserve build and an increase in net credit losses of $ 0.5 billion ."
+      },
+      {
+        "location": "text_26",
+        "text": "assets declined 31% ( 31 % ) versus the prior year , primarily driven by amortization and prepayments , sales , and marks and charge-offs. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what percent of net interest revenue where total operating expenses in 2009?",
+  "reference_program": "divide(896, 3173)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "896",
+      "raw": "896",
+      "location": "table_4:1",
+      "context": "Total operating expenses | 2009"
+    },
+    "x1": {
+      "program_token": "3173",
+      "raw": "3,173",
+      "location": "table_1:1",
+      "context": "Net interest revenue | 2009"
+    }
+  }
+}

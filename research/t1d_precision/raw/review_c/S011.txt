@@ -1,0 +1,7 @@
+{
+    "call_id": "S011",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 1 estimates the 2014 annual fuel-expense increase per $1-per-barrel crude-price rise at $104 million without hedges and $87 million with hedges. The model reasonably measures the $17 million reduction against the $104 million unhedged baseline. The reference uses the $87 million hedged amount; the question does not specify that benchmark."
+  }

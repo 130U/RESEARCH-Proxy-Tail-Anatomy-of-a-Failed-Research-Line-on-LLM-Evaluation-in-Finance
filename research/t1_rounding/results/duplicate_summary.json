@@ -1,0 +1,73 @@
+{
+  "n_test_questions": 1147,
+  "n_test_pages": 380,
+  "candidate_pairs": 54,
+  "candidate_pages": 24,
+  "reviewed_pairs": 54,
+  "reviewed_status": {
+    "yes": 35,
+    "no": 16,
+    "uncertain": 3
+  },
+  "single_source_substitution_questions": 23,
+  "substitution_question_ids": [
+    "AAL/2015/page_114.pdf-1",
+    "ADBE/1999/page_64.pdf-2",
+    "ADBE/1999/page_64.pdf-3",
+    "BLL/2010/page_35.pdf-1",
+    "BLL/2010/page_35.pdf-2",
+    "BLL/2010/page_35.pdf-3",
+    "DXC/2018/page_56.pdf-1",
+    "DXC/2018/page_56.pdf-2",
+    "DXC/2018/page_56.pdf-3",
+    "GS/2013/page_63.pdf-1",
+    "GS/2013/page_63.pdf-2",
+    "GS/2014/page_40.pdf-1",
+    "GS/2014/page_40.pdf-2",
+    "IP/2006/page_35.pdf-1",
+    "MSI/2007/page_70.pdf-1",
+    "MSI/2007/page_70.pdf-2",
+    "MSI/2007/page_70.pdf-3",
+    "MSI/2008/page_69.pdf-1",
+    "MSI/2008/page_69.pdf-3",
+    "PNC/2007/page_92.pdf-2",
+    "UNP/2007/page_25.pdf-2",
+    "UNP/2011/page_24.pdf-2",
+    "UNP/2011/page_24.pdf-4"
+  ],
+  "cross_1pct_question_ids": [
+    "AAL/2015/page_114.pdf-1",
+    "ADBE/1999/page_64.pdf-2",
+    "UNP/2007/page_25.pdf-2",
+    "UNP/2011/page_24.pdf-4"
+  ],
+  "cross_display_question_ids": [
+    "AAL/2015/page_114.pdf-1",
+    "ADBE/1999/page_64.pdf-2",
+    "ADBE/1999/page_64.pdf-3",
+    "DXC/2018/page_56.pdf-3",
+    "GS/2013/page_63.pdf-1",
+    "GS/2013/page_63.pdf-2",
+    "IP/2006/page_35.pdf-1",
+    "MSI/2007/page_70.pdf-1",
+    "MSI/2007/page_70.pdf-3",
+    "PNC/2007/page_92.pdf-2",
+    "UNP/2007/page_25.pdf-2",
+    "UNP/2011/page_24.pdf-2",
+    "UNP/2011/page_24.pdf-4"
+  ],
+  "display_unavailable_ids": [
+    "MSI/2008/page_69.pdf-1"
+  ],
+  "separate_two_role_case": {
+    "id": "PNC/2014/page_111.pdf-1",
+    "original_program": "subtract(2.6, 2.6)",
+    "source_resolved_program": "subtract(2.616, 2.572)",
+    "original_value": "0",
+    "alternative_exact": "11/250",
+    "alternative_decimal": 0.044,
+    "cross_zero_width_relative_band": true,
+    "cross_display_integer_cell": false
+  },
+  "limitations": "Candidate generator only covers chosen table/text unit-scaled precision patterns. Review is a model-assisted source reading. Counts are lower bounds for this search domain, not complete semantic duplicate prevalence. Single-source replacements hold all other operands fixed. PNC requires two distinct role bindings and is separate."
+}

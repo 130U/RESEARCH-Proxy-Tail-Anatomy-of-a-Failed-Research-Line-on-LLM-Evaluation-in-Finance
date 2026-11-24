@@ -1,0 +1,1 @@
+{"answer":"51.89003436426117","unit":"percent","expression":"151 / 291 * 100","low":"51.6295025728988","high":"52.1514629948365","reliable_digits":"2","explanation":"Allowing each reserve figure to vary by $0.5 million gives these bounds, which both round to 52% at two significant digits."}

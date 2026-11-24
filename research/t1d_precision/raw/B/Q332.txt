@@ -1,0 +1,1 @@
+{"answer":"150","unit":"percent","expression":"(10 - 4) / 4 * 100","low":"111.1111111111","high":"200","reliable_digits":"0","explanation":"Nearest-million rounding allows reserves of 3.5–4.5 million in 2005 and 9.5–10.5 million in 2006, leaving no significant digit reliable."}

@@ -1,0 +1,20 @@
+{
+  "review_id": "R155",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "second",
+      "original_reason": "The $14 million discontinued-operations commitment and $169 million total are correctly selected, but their quotient is not converted to the requested percentage.",
+      "display_reason": "The $14 million discontinued-operations commitment and $169 million total are correctly selected, but their quotient is not converted to the requested percentage.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "first",
+      "original_reason": "Discontinued-operation14m/all169m lease commitments matches; both columns sum over maturity buckets.",
+      "display_reason": "Discontinued-operation14m/all169m lease commitments matches; both columns sum over maturity buckets.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

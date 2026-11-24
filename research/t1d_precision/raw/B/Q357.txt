@@ -1,0 +1,1 @@
+{"answer":"18","unit":"million dollars","expression":"134 - 116","low":"17","high":"19","reliable_digits":"1","explanation":"Liabilities increased by 18 million dollars; rounding each year-end balance to the nearest million gives bounds of 17 to 19 million dollars."}

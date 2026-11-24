@@ -1,0 +1,212 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S021",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "required to maintain a fhlb stock investment currently equal to the lesser of : a percentage of 0.2% ( 0.2 % ) of total bank assets ; or a dollar cap amount of $ 25 million ."
+      },
+      {
+        "location": "text_1",
+        "text": "additionally , the bank must maintain an activity based stock investment which is currently equal to 4.5% ( 4.5 % ) of the bank 2019s outstanding advances at the time of borrowing ."
+      },
+      {
+        "location": "text_2",
+        "text": "on a quarterly basis the fhlb atlanta evaluates excess activity based stock holdings for its members and makes a determination regarding quarterly redemption of any excess activity based stock positions ."
+      },
+      {
+        "location": "text_3",
+        "text": "the company had an investment in fhlb stock of $ 140.2 million and $ 164.4 million at december 31 , 2011 and 2010 , respectively ."
+      },
+      {
+        "location": "text_4",
+        "text": "the company must also maintain qualified collateral as a percent of its advances , which varies based on the collateral type , and is further adjusted by the outcome of the most recent annual collateral audit and by fhlb 2019s internal ranking of the bank 2019s creditworthiness ."
+      },
+      {
+        "location": "text_5",
+        "text": "these advances are secured by a pool of mortgage loans and mortgage-backed securities ."
+      },
+      {
+        "location": "text_6",
+        "text": "at december 31 , 2011 and 2010 , the company pledged loans with a lendable value of $ 5.0 billion and $ 5.6 billion , respectively , of the one- to four-family and home equity loans as collateral in support of both its advances and unused borrowing lines ."
+      },
+      {
+        "location": "text_7",
+        "text": "during the year ended december 31 , 2009 , the company paid down in advance of maturity $ 1.6 billion of its fhlb advances ."
+      },
+      {
+        "location": "text_8",
+        "text": "the company recorded a loss on the early extinguishment of fhlb advances of $ 50.6 million for the year ended december 31 , 2009 ."
+      },
+      {
+        "location": "text_9",
+        "text": "this loss is recorded in the gains ( losses ) on early extinguishment of debt line item in the consolidated statement of income ( loss ) ."
+      },
+      {
+        "location": "text_10",
+        "text": "the company did not have any similar transactions for the years ended december 31 , 2011 and 2010 ."
+      },
+      {
+        "location": "text_11",
+        "text": "other borrowings 2014etbh raised capital in the past through the formation of trusts , which sell trust preferred securities in the capital markets ."
+      },
+      {
+        "location": "text_12",
+        "text": "the capital securities must be redeemed in whole at the due date , which is generally 30 years after issuance ."
+      },
+      {
+        "location": "text_13",
+        "text": "each trust issued floating rate cumulative preferred securities ( 201ctrust preferred securities 201d ) , at par with a liquidation amount of $ 1000 per capital security ."
+      },
+      {
+        "location": "text_14",
+        "text": "the trusts used the proceeds from the sale of issuances to purchase floating rate junior subordinated debentures ( 201csubordinated debentures 201d ) issued by etbh , which guarantees the trust obligations and contributed proceeds from the sale of its subordinated debentures to e*trade bank in the form of a capital contribution ."
+      },
+      {
+        "location": "text_15",
+        "text": "the most recent issuance of trust preferred securities occurred in 2007 ."
+      },
+      {
+        "location": "text_16",
+        "text": "the face values of outstanding trusts at december 31 , 2011 are shown below ( dollars in thousands ) : trusts face value maturity date annual interest rate ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "Trusts",
+          "Face Value",
+          "Maturity Date",
+          "Annual Interest Rate"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "ETBH Capital Trust II",
+          "$5,000",
+          "2031",
+          "10.25%"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "ETBH Capital Trust I",
+          "20,000",
+          "2031",
+          "3.75% above 6-month LIBOR"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "ETBH Capital Trust V, VI, VIII",
+          "51,000",
+          "2032",
+          "3.25%-3.65% above 3-month LIBOR"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "ETBH Capital Trust VII, IX—XII",
+          "65,000",
+          "2033",
+          "3.00%-3.30% above 3-month LIBOR"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "ETBH Capital Trust XIII—XVIII, XX",
+          "77,000",
+          "2034",
+          "2.45%-2.90% above 3-month LIBOR"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "ETBH Capital Trust XIX, XXI, XXII",
+          "60,000",
+          "2035",
+          "2.20%-2.40% above 3-month LIBOR"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "ETBH Capital Trust XXIII—XXIV",
+          "45,000",
+          "2036",
+          "2.10% above 3-month LIBOR"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "ETBH Capital Trust XXV—XXX",
+          "110,000",
+          "2037",
+          "1.90%-2.00% above 3-month LIBOR"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Total",
+          "$433,000",
+          "",
+          ""
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_17",
+        "text": "as of december 31 , 2011 and 2010 , other borrowings also included $ 2.3 million and $ 19.3 million , respectively , of collateral pledged to the bank by its derivatives counterparties to reduce credit exposure to changes in market value ."
+      },
+      {
+        "location": "text_18",
+        "text": "as of december 31 , 2010 , other borrowings also included $ 0.5 million of overnight and other short-term borrowings in connection with the federal reserve bank 2019s treasury , tax and loan programs ."
+      },
+      {
+        "location": "text_19",
+        "text": "the company pledged $ 0.8 million of securities to secure these borrowings from the federal reserve bank as of december 31 , 2010. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "as of december 31 , 2010 , what was the ratio of collateral pledged to the bank by its derivatives counterparties to overnight and other short-term borrowings",
+  "human_answer": "4.6",
+  "reference_program": "divide(2.3, 0.5)",
+  "reference_execution_value": 4.6,
+  "model_response": {
+    "answer": "38.6",
+    "unit": "ratio",
+    "expression": "19.3 / 0.5",
+    "explanation": "The ratio is $19.3 million of pledged collateral divided by $0.5 million of overnight and other short-term borrowings."
+  }
+}

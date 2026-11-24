@@ -1,0 +1,1 @@
+{"answer":"2.420774648","unit":"percent","expression":"165 / 6816 * 100","low":"2.413261938","high":"2.428288460","reliable_digits":"2","explanation":"Allowing each amount to vary by $0.5 million gives bounds of 164.5 / 6816.5 * 100 and 165.5 / 6815.5 * 100, supporting two reliable significant digits."}

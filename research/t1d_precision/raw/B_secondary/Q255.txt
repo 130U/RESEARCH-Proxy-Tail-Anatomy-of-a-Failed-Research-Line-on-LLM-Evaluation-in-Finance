@@ -1,0 +1,1 @@
+{"answer":"3.74331550802139","unit":"percent","expression":"(776 - 748) / 748 * 100","low":"3.60721442885772","high":"3.87959866220736","reliable_digits":"1","explanation":"Reported gasoline sales volumes, rather than production, increased from 748 in 2001 to 776 in 2003, with rounding uncertainty of 0.5 in each figure."}

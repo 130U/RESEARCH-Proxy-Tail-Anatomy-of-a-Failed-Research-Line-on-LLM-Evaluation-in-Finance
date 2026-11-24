@@ -1,0 +1,1 @@
+{"answer":"9.375","unit":"percent","expression":"(9.6 - 8.7) / 9.6 * 100","low":"8.37696335078534","high":"10.3626943005181","reliable_digits":"0","explanation":"The implied tax rate equals the pretax charge minus the after-tax charge, divided by the pretax charge; rounding allows rates spanning approximately 8.38% to 10.36%."}

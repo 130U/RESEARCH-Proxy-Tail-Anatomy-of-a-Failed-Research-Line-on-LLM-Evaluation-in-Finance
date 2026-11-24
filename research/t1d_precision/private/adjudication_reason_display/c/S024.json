@@ -1,0 +1,25 @@
+{
+  "review_id": "S024",
+  "kind": "c",
+  "display_order": [
+    {
+      "source_round": "first",
+      "original_reason": "Adopt the independent review: 107 minus 66 establishes a 41 million tax effect, not a separately established tax liability. Model computes a defensible gross-to-tax-effect ratio but labels the tax effect as liability; reference computes a different ratio. The literal requested liability ratio is not established by the excerpt.",
+      "display_reason": "107 minus 66 establishes a 41 million tax effect, not a separately established tax liability. Model computes a defensible gross-to-tax-effect ratio but labels the tax effect as liability; reference computes a different ratio. The literal requested liability ratio is not established by the excerpt.",
+      "removed_fragments": [
+        {
+          "removed_text": "Adopt the independent review: ",
+          "reason": "procedural opening preface"
+        }
+      ],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "second",
+      "original_reason": "Text_10 gives the October 2015 regulatory liability as $107 million gross and $66 million net of tax, implying a $41 million tax effect. Interpreting that effect as the question's tax liability supports the model's requested gross-liability-to-tax ratio, 107/41. The reference instead calculates tax effect divided by the net-of-tax amount, 41/66.",
+      "display_reason": "Text_10 gives the October 2015 regulatory liability as $107 million gross and $66 million net of tax, implying a $41 million tax effect. Interpreting that effect as the question's tax liability supports the model's requested gross-liability-to-tax ratio, 107/41. The reference instead calculates tax effect divided by the net-of-tax amount, 41/66.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

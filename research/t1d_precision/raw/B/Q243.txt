@@ -1,0 +1,1 @@
+{"answer":"-9.731386038648","unit":"percent","expression":"(230667 - 255534) / 255534 * 100","low":"-9.731758334002","high":"-9.731013741838","reliable_digits":"3","explanation":"Allowing each inventory figure to vary by 0.5 million gives these bounds, which both round to -9.73% at three significant digits."}

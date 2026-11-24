@@ -1,0 +1,1 @@
+{"answer":"51.89003436","unit":"percent","expression":"151 / 291 * 100","low":"51.62950257","high":"52.15146299","reliable_digits":"2","explanation":"Each reserve figure can vary by $0.5 million, giving bounds of 150.5 / 291.5 * 100 and 151.5 / 290.5 * 100."}

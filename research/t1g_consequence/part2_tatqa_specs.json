@@ -1,0 +1,79 @@
+{
+  "1d5aea847254a9c3a9771b7b1a9ae40b": {
+    "kind": "growth", "labels": ["2018", "2019"], "winner": 1,
+    "expressions": ["(x0-x1)/x1", "(x2-x3)/x3"],
+    "coordinates": [[7,1],[8,1],[7,2],[8,2]], "direction": "min",
+    "note": "EPS-only rounding box; same document also supplies net income and share counts, so this does not establish whole-document indeterminacy."
+  },
+  "654f5a41-0690-4968-badf-03ecaf2d9dd4": {
+    "kind": "difference", "labels": ["2018", "2019"], "winner": 1,
+    "expressions": ["x1-x0", "x2-x1"],
+    "coordinates": [[2,1],[7,1],[7,2]], "direction": "max",
+    "note": "2018 ending balance and 2019 beginning balance are the same economic fact; x1 is shared."
+  },
+  "5cf4c89d-022b-4dc7-9d08-41fdffba1bac": {
+    "kind": "growth", "labels": ["United States", "Europe", "Asia"], "winner": 0,
+    "expressions": ["(x1-x0)/x0", "(x3-x2)/x2", "(x5-x4)/x4"],
+    "coordinates": [[3,1],[3,2],[4,1],[4,2],[5,1],[5,2]], "direction": "max"
+  },
+  "11c8488d-261b-469f-b681-656c2d06f3b9": {
+    "kind": "ratio_selection", "labels": ["PBIT"], "winner": 0,
+    "expressions": ["x0/x1-2/3"], "coordinates": [[3,3],[1,1]], "direction": "zero",
+    "exact_inputs": true,
+    "note": "Remuneration committee sets scorecard weights in advance; these are exact designed weights, not rounded observations."
+  },
+  "9e5f51f8-9335-44f0-a371-ade17f609823": {
+    "kind": "ratio", "labels": ["2018", "2019"], "winner": 0,
+    "expressions": ["x0/(x1+x2)", "x3/(x4+x5)"],
+    "coordinates": [[6,1],[2,1],[3,1],[6,2],[2,2],[3,2]], "direction": "max"
+  },
+  "ce5fc144-7926-472b-9f90-f6fcbc3410e7": {
+    "kind": "sum", "labels": ["2019", "2018"], "winner": 0,
+    "expressions": ["x0+x1+x2", "x3+x4+x5"],
+    "coordinates": [[5,1],[6,1],[7,1],[8,2],[9,2],[10,2]], "direction": "max",
+    "note": "The two 1.2 cells are different audit firms/years and remain distinct variables."
+  },
+  "4c0637d8-2428-47f6-b86d-4ed5f403e076": {
+    "kind": "ratio", "labels": ["2018", "2019", "2017"], "winner": 0,
+    "expressions": ["x0/x1", "x2/x3", "x4/x5"],
+    "coordinates": [[8,2],[6,2],[8,1],[6,1],[8,3],[6,3]], "direction": "max"
+  },
+  "c43b32fe-7d32-46af-a551-2d9eb6509206": {
+    "kind": "difference", "labels": ["2019", "2018"], "winner": 0,
+    "expressions": ["x0-x1", "x2-x1"],
+    "coordinates": [[4,1],[1,1],[1,2]], "direction": "max",
+    "note": "Absolute 2018 change equals x2-x1 throughout the box. Shared 185 is the same ending/beginning balance."
+  },
+  "db3a9398-3891-4d1a-a083-6fa48a7f8f90": {
+    "kind": "sum", "labels": ["2018", "2019"], "winner": 1,
+    "expressions": ["x0+x1", "x2+x3"],
+    "coordinates": [[3,1],[4,1],[3,2],[4,2]], "direction": "max"
+  },
+  "90c27906-ca28-4e37-bce1-086f3d3c8870": {
+    "kind": "difference", "labels": ["Globe", "Telkomsel", "Airtel", "AIS"], "winner": 0,
+    "expressions": ["x0-x1", "x2-x3", "x4-x5", "x6-x7"],
+    "coordinates": [[2,4],[3,4],[2,1],[3,1],[2,3],[3,3],[2,2],[3,2]], "direction": "max"
+  },
+  "14aa0a57-5239-4b79-9c18-457d8bda584c": {
+    "kind": "average_threshold", "labels": ["Gregory S. Clark", "Nicholas R. Noviello", "Amy L. Cappellanti-Wolf", "Samir Kapuria", "Scott C. Taylor"], "winner": 0,
+    "expressions": ["x0-(x0+x1+x2+x3+x4)/5", "x1-(x0+x1+x2+x3+x4)/5", "x2-(x0+x1+x2+x3+x4)/5", "x3-(x0+x1+x2+x3+x4)/5", "x4-(x0+x1+x2+x3+x4)/5"],
+    "coordinates": [[2,2],[3,2],[4,2],[5,2],[6,2]], "direction": "threshold", "exact_inputs": true,
+    "note": "Contractually specified target dollars; exact inputs. Each employee also contributes to the common average."
+  },
+  "877388f8-caf8-42a8-926d-4f3aba465810": {
+    "kind": "sum", "labels": ["2019", "2018", "2017"], "winner": 2,
+    "expressions": ["x0+x1", "x2+x3", "x4+x5"],
+    "coordinates": [[3,1],[4,1],[3,2],[4,2],[3,3],[4,3]], "direction": "max",
+    "note": "Gold derivation compares share dilution counts; natural-language 'impact on EPS' is semantically broader."
+  },
+  "898b61d4-2700-4346-b6f7-0d2444578eef": {
+    "kind": "sum", "labels": ["2018", "2019"], "winner": 0,
+    "expressions": ["x0+x1", "x2+x3"],
+    "coordinates": [[6,2],null,[6,1],null], "text_sources": {"1":{"raw":"18","paragraph":3},"3":{"raw":"7","paragraph":3}}, "direction": "max"
+  },
+  "a69c1c5d-4065-4168-af65-44b90bc7d9a4": {
+    "kind": "ratio", "labels": ["Trade names", "Customer relationships", "Completed technologies"], "winner": 0,
+    "expressions": ["x0/x1", "x2/x3", "x4/x5"],
+    "coordinates": [[3,3],[3,2],[2,3],[2,2],[1,3],[1,2]], "direction": "max"
+  }
+}

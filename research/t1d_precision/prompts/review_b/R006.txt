@@ -1,0 +1,128 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R006",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "adobe systems incorporated notes to consolidated financial statements ( in thousands , except share and per share data ) ( continued ) note 7 ."
+      },
+      {
+        "location": "text_1",
+        "text": "restructuring and other charges ( continued ) previously announced restructuring programs the following table depicts the activity for previously announced restructuring programs through december 3 , 1999 : accrued accrued balance at balance at november 27 total cash december 3 1998 charges payments adjustments 1999 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Accrued Balance at November 27 1998",
+          "Total Charges",
+          "Cash Payments",
+          "Adjustments",
+          "Accrued Balance at December 3 1999"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Accrual related to previous restructurings",
+          "$8,867",
+          "$—",
+          "$(6,221)",
+          "$(1,874)",
+          "$772"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_2",
+        "text": "as of december 3 , 1999 , approximately $ 0.8 million in accrued restructuring costs remain related to the company 2019s fiscal 1998 restructuring program ."
+      },
+      {
+        "location": "text_3",
+        "text": "this balance is comprised of $ 0.3 million in severance and related charges , $ 0.1 million in lease termination costs , and $ 0.4 million in canceled contracts ."
+      },
+      {
+        "location": "text_4",
+        "text": "the majority of the accrual is expected to be paid by the first quarter of fiscal 2000 ."
+      },
+      {
+        "location": "text_5",
+        "text": "cash payments for the twelve months ended december 3 , 1999 related to the fiscal 1998 restructuring were $ 0.7 million , $ 3.6 million , and $ 0.4 million for severance and related charges , lease termination costs , and canceled contracts costs , respectively ."
+      },
+      {
+        "location": "text_6",
+        "text": "in addition , adjustments related to the fiscal 1998 restructuring were made during the year , which consisted of $ 0.4 million related to estimated lease termination costs and $ 0.3 mil- lion related to other charges ."
+      },
+      {
+        "location": "text_7",
+        "text": "included in the accrual balance as of november 27 , 1998 were lease termination costs related to previously announced restructuring programs in fiscal 1994 and 1995 ."
+      },
+      {
+        "location": "text_8",
+        "text": "cash payments for the twelve months ended december 3 , 1999 related to both restructuring programs were $ 1.5 million ."
+      },
+      {
+        "location": "text_9",
+        "text": "during the third and fourth quarters of fiscal 1999 , the company recorded adjustments to the accrual balance of approximately $ 1.2 million related to these programs ."
+      },
+      {
+        "location": "text_10",
+        "text": "an adjustment of $ 0.6 million was made in the third quarter of fiscal 1999 due to the company 2019s success in terminating a lease agreement earlier than the contract term specified ."
+      },
+      {
+        "location": "text_11",
+        "text": "in addition , $ 0.6 million was reduced from the restructuring accrual relating to expired lease termination costs for two facilities resulting from the merger with frame in fiscal 1995 ."
+      },
+      {
+        "location": "text_12",
+        "text": "as of december 3 , 1999 no accrual balances remain related to the aldus and frame mergers ."
+      },
+      {
+        "location": "text_13",
+        "text": "other charges during the third and fourth quarters of fiscal 1999 , the company recorded other charges of $ 8.4 million that were unusual in nature ."
+      },
+      {
+        "location": "text_14",
+        "text": "these charges included $ 2.0 million associated with the cancellation of a contract and $ 2.2 million for accelerated depreciation related to the adjustment of the useful life of certain assets as a result of decisions made by management as part of the restructuring program ."
+      },
+      {
+        "location": "text_15",
+        "text": "additionally , the company incurred a nonrecurring compensation charge totaling $ 2.6 million for a terminated employee and incurred consulting fees of $ 1.6 million to assist in the restructuring of the company 2019s operations. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what portion of the 1999 accrual balance related to restructurings is comprised of canceled contracts?",
+  "reference_program": "divide(0.4, 0.8)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "0.4",
+      "raw": "0.4",
+      "location": "text_3:126",
+      "context": "this balance is comprised of $ 0.3 million in severance and related charges , $ 0.1 million in lease termination costs , and $ 0.4 million in canceled contracts ."
+    },
+    "x1": {
+      "program_token": "0.8",
+      "raw": "0.8",
+      "location": "text_2:41",
+      "context": "as of december 3 , 1999 , approximately $ 0.8 million in accrued restructuring costs remain related to the company 2019s fiscal 1998 restructuring program ."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "Proxy Tail: Anatomy of a Failed Research Line on LLM Evaluation in Finance"
+version: "V_202611"
+date-released: 2026-11-19
+abstract: "Why did five stages of careful experiments end without a paper, and how early could each stage have been closed? The report, its LaTeX source, and the protocols, prompts, raw outputs and code of every stage."
+authors:
+  - family-names: Ouyang
+    given-names: "Letao (Theodore)"
+repository-code: "https://github.com/130U/RESEARCH-Proxy-Tail-Anatomy-of-a-Failed-Research-Line-on-LLM-Evaluation-in-Finance"
+url: "https://github.com/130U/RESEARCH-Proxy-Tail-Anatomy-of-a-Failed-Research-Line-on-LLM-Evaluation-in-Finance/blob/main/report/Proxy-Tail-Anatomy-of-a-Failed-Research-Line-on-LLM-Evaluation-in-Finance.pdf"
+keywords:
+  - LLM evaluation
+  - financial NLP
+  - negative results
+  - research methodology
+  - FinQA
+  - TAT-QA
+preferred-citation:
+  type: report
+  title: "Proxy Tail: Anatomy of a Failed Research Line on LLM Evaluation in Finance"
+  authors:
+    - family-names: Ouyang
+      given-names: "Letao (Theodore)"
+  year: 2026
+  url: "https://github.com/130U/RESEARCH-Proxy-Tail-Anatomy-of-a-Failed-Research-Line-on-LLM-Evaluation-in-Finance/blob/main/report/Proxy-Tail-Anatomy-of-a-Failed-Research-Line-on-LLM-Evaluation-in-Finance.pdf"

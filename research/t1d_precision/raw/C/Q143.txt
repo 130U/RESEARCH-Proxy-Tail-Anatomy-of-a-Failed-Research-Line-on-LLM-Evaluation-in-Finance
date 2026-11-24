@@ -1,0 +1,1 @@
+{"answer":"93.3333333333","unit":"percent","expression":"(2.9 - 1.5) / 1.5 * 100","low":"83.8709677419","high":"103.4482758621","reliable_digits":"0","explanation":"The rounded yields permit growth from (2.85 - 1.55) / 1.55 * 100 to (2.95 - 1.45) / 1.45 * 100, leaving no significant digit reliable."}

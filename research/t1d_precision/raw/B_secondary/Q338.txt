@@ -1,0 +1,1 @@
+{"answer":"10.41936279","unit":"percent","expression":"(7167.1 - 6490.8) / 6490.8 * 100","low":"10.41774190","high":"10.42098371","reliable_digits":"4","explanation":"Allowing each total to vary by 0.05 million gives these bounds, both of which round to 10.42 percent."}

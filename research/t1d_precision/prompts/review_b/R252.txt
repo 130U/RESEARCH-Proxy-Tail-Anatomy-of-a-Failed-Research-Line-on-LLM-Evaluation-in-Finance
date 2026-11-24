@@ -1,0 +1,183 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R252",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "due to the adoption of sfas no ."
+      },
+      {
+        "location": "text_1",
+        "text": "123r , the company recognizes excess tax benefits associated with share-based compensation to stockholders 2019 equity only when realized ."
+      },
+      {
+        "location": "text_2",
+        "text": "when assessing whether excess tax benefits relating to share-based compensation have been realized , the company follows the with-and-without approach excluding any indirect effects of the excess tax deductions ."
+      },
+      {
+        "location": "text_3",
+        "text": "under this approach , excess tax benefits related to share-based compensation are not deemed to be realized until after the utilization of all other tax benefits available to the company ."
+      },
+      {
+        "location": "text_4",
+        "text": "during 2008 , the company realized $ 18.5 million of such excess tax benefits , and accordingly recorded a corresponding credit to additional paid in capital ."
+      },
+      {
+        "location": "text_5",
+        "text": "as of december 28 , 2008 , the company has $ 36.5 million of unrealized excess tax benefits associated with share-based compensation ."
+      },
+      {
+        "location": "text_6",
+        "text": "these tax benefits will be accounted for as a credit to additional paid-in capital , if and when realized , rather than a reduction of the tax provision ."
+      },
+      {
+        "location": "text_7",
+        "text": "the company 2019s manufacturing operations in singapore operate under various tax holidays and incentives that begin to expire in 2018 ."
+      },
+      {
+        "location": "text_8",
+        "text": "for the year ended december 28 , 2008 , these tax holidays and incentives resulted in an approximate $ 1.9 million decrease to the tax provision and an increase to net income per diluted share of $ 0.01 ."
+      },
+      {
+        "location": "text_9",
+        "text": "residual u.s ."
+      },
+      {
+        "location": "text_10",
+        "text": "income taxes have not been provided on $ 14.7 million of undistributed earnings of foreign subsidiaries as of december 28 , 2008 , since the earnings are considered to be indefinitely invested in the operations of such subsidiaries ."
+      },
+      {
+        "location": "text_11",
+        "text": "effective january 1 , 2007 , the company adopted fin no ."
+      },
+      {
+        "location": "text_12",
+        "text": "48 , accounting for uncertainty in income taxes 2014 an interpretation of fasb statement no ."
+      },
+      {
+        "location": "text_13",
+        "text": "109 , which clarifies the accounting for uncertainty in tax positions ."
+      },
+      {
+        "location": "text_14",
+        "text": "fin no ."
+      },
+      {
+        "location": "text_15",
+        "text": "48 requires recognition of the impact of a tax position in the company 2019s financial statements only if that position is more likely than not of being sustained upon examination by taxing authorities , based on the technical merits of the position ."
+      },
+      {
+        "location": "text_16",
+        "text": "the adoption of fin no ."
+      },
+      {
+        "location": "text_17",
+        "text": "48 did not result in an adjustment to the company 2019s opening stockholders 2019 equity since there was no cumulative effect from the change in accounting principle ."
+      },
+      {
+        "location": "text_18",
+        "text": "the following table summarizes the gross amount of the company 2019s uncertain tax positions ( in thousands ) : ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "Balance at December 31, 2007",
+          "$21,376"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Increases related to current year tax positions",
+          "2,402"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Balance at December 28, 2008",
+          "$23,778"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_19",
+        "text": "as of december 28 , 2008 , $ 7.7 million of the company 2019s uncertain tax positions would reduce the company 2019s annual effective tax rate , if recognized ."
+      },
+      {
+        "location": "text_20",
+        "text": "the company does not expect its uncertain tax positions to change significantly over the next 12 months ."
+      },
+      {
+        "location": "text_21",
+        "text": "any interest and penalties related to uncertain tax positions will be reflected in income tax expense ."
+      },
+      {
+        "location": "text_22",
+        "text": "as of december 28 , 2008 , no interest or penalties have been accrued related to the company 2019s uncertain tax positions ."
+      },
+      {
+        "location": "text_23",
+        "text": "tax years 1992 to 2008 remain subject to future examination by the major tax jurisdictions in which the company is subject to tax ."
+      },
+      {
+        "location": "text_24",
+        "text": "13 ."
+      },
+      {
+        "location": "text_25",
+        "text": "employee benefit plans retirement plan the company has a 401 ( k ) savings plan covering substantially all of its employees ."
+      },
+      {
+        "location": "text_26",
+        "text": "company contributions to the plan are discretionary ."
+      },
+      {
+        "location": "text_27",
+        "text": "during the years ended december 28 , 2008 , december 30 , 2007 and december 31 , 2006 , the company made matching contributions of $ 2.6 million , $ 1.4 million and $ 0.4 million , respectively ."
+      },
+      {
+        "location": "text_28",
+        "text": "illumina , inc ."
+      },
+      {
+        "location": "text_29",
+        "text": "notes to consolidated financial statements 2014 ( continued ) ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the change in millions of company contributions to the employee benefit plans retirement plan between 2007 and 2008?",
+  "reference_program": "subtract(2.6, 1.4)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "2.6",
+      "raw": "2.6",
+      "location": "text_27:132",
+      "context": "during the years ended december 28 , 2008 , december 30 , 2007 and december 31 , 2006 , the company made matching contributions of $ 2.6 million , $ 1.4 million and $ 0.4 million , respectively ."
+    },
+    "x1": {
+      "program_token": "1.4",
+      "raw": "1.4",
+      "location": "text_27:148",
+      "context": "during the years ended december 28 , 2008 , december 30 , 2007 and december 31 , 2006 , the company made matching contributions of $ 2.6 million , $ 1.4 million and $ 0.4 million , respectively ."
+    }
+  }
+}

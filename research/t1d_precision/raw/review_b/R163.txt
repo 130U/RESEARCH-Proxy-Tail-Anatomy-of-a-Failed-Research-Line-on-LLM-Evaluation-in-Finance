@@ -1,0 +1,5 @@
+{
+    "review_id": "R163",
+    "verdict": "valid",
+    "reason": "The bound amounts are rounded DVA sensitivities of $32 million and $38 million at the two specified year ends, and their sum converted to dollars answers the requested combined impact."
+  }

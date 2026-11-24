@@ -1,0 +1,36 @@
+{
+  "group": "B_secondary",
+  "id": "Q174",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "fresh_session": true,
+  "prompt_file": "prompts/B_secondary/Q174.txt",
+  "started_utc": "2026-11-17T10:56:18.883099+00:00",
+  "status": "completed",
+  "returncode": 0,
+  "attempt_number": 1,
+  "completed_utc": "2026-11-17T11:01:48.957125+00:00",
+  "elapsed_seconds": 330.078,
+  "thread_id": "01a1e926-893b-7431-b41a-e023c0607352",
+  "errors": [
+    {
+      "type": "error",
+      "message": "Reconnecting... 2/5 (stream disconnected before completion: tls handshake eof)"
+    },
+    {
+      "type": "error",
+      "message": "Reconnecting... 3/5 (stream disconnected before completion: tls handshake eof)"
+    }
+  ],
+  "usage": {
+    "input_tokens": 22292,
+    "cached_input_tokens": 21632,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 202,
+    "reasoning_output_tokens": 115
+  },
+  "event_item_types": [
+    "agent_message"
+  ],
+  "tool_use_observed": false
+}

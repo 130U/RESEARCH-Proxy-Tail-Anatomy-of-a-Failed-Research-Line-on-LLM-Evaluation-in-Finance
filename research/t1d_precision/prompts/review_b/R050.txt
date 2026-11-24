@@ -1,0 +1,217 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R050",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "contractual obligations the following table includes aggregated information about citigroup 2019s contractual obligations that impact its short- and long-term liquidity and capital needs ."
+      },
+      {
+        "location": "text_1",
+        "text": "the table includes information about payments due under specified contractual obligations , aggregated by type of contractual obligation ."
+      },
+      {
+        "location": "text_2",
+        "text": "it includes the maturity profile of citigroup 2019s consolidated long-term debt , leases and other long-term liabilities ."
+      },
+      {
+        "location": "text_3",
+        "text": "citigroup 2019s contractual obligations include purchase obligations that are enforceable and legally binding for citi ."
+      },
+      {
+        "location": "text_4",
+        "text": "for the purposes of the table below , purchase obligations are included through the termination date of the respective agreements , even if the contract is renewable ."
+      },
+      {
+        "location": "text_5",
+        "text": "many of the purchase agreements for goods or services include clauses that would allow citigroup to cancel the agreement with specified notice ; however , that impact is not included in the table ( unless citigroup has already notified the counterparty of its intention to terminate the agreement ) ."
+      },
+      {
+        "location": "text_6",
+        "text": "other liabilities reflected on citigroup 2019s consolidated balance sheet include obligations for goods and services that have already been received , uncertain tax positions , as well as other long-term liabilities that have been incurred and will ultimately be paid in cash ."
+      },
+      {
+        "location": "text_7",
+        "text": "excluded from the following table are obligations that are generally short-term in nature , including deposit liabilities and securities sold under agreements to repurchase ."
+      },
+      {
+        "location": "text_8",
+        "text": "the table also excludes certain insurance and investment contracts subject to mortality and morbidity risks or without defined maturities , such that the timing of payments and withdrawals is uncertain ."
+      },
+      {
+        "location": "text_9",
+        "text": "the liabilities related to these insurance and investment contracts are included on the consolidated balance sheet as insurance policy and claims reserves , contractholder funds , and separate and variable accounts ."
+      },
+      {
+        "location": "text_10",
+        "text": "citigroup 2019s funding policy for pension plans is generally to fund to the minimum amounts required by the applicable laws and regulations ."
+      },
+      {
+        "location": "text_11",
+        "text": "at december 31 , 2009 , there were no minimum required contributions , and no contributions are currently planned for the u.s ."
+      },
+      {
+        "location": "text_12",
+        "text": "pension plans ."
+      },
+      {
+        "location": "text_13",
+        "text": "accordingly , no amounts have been included in the table below for future contributions to the u.s ."
+      },
+      {
+        "location": "text_14",
+        "text": "pension plans ."
+      },
+      {
+        "location": "text_15",
+        "text": "for the non-u.s ."
+      },
+      {
+        "location": "text_16",
+        "text": "pension plans , discretionary contributions in 2010 are anticipated to be approximately $ 160 million ."
+      },
+      {
+        "location": "text_17",
+        "text": "the anticipated cash contributions in 2010 related to the non-u.s ."
+      },
+      {
+        "location": "text_18",
+        "text": "postretirement benefit plans are $ 72 million ."
+      },
+      {
+        "location": "text_19",
+        "text": "these amounts are included in the purchase obligations in the table below ."
+      },
+      {
+        "location": "text_20",
+        "text": "the estimated pension and postretirement plan contributions are subject to change , since contribution decisions are affected by various factors , such as market performance , regulatory and legal requirements , and management 2019s ability to change funding policy ."
+      },
+      {
+        "location": "text_21",
+        "text": "for additional information regarding citi 2019s retirement benefit obligations , see note 9 to the consolidated financial statements. ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Contractual obligations by year"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "In millions of dollars at year end",
+          "2010",
+          "2011",
+          "2012",
+          "2013",
+          "2014",
+          "Thereafter"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Long-term debt obligations(1)",
+          "$47,162",
+          "$59,656",
+          "$69,344",
+          "$28,132",
+          "$34,895",
+          "$124,830"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Lease obligations",
+          "1,247",
+          "1,110",
+          "1,007",
+          "900",
+          "851",
+          "2,770"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Purchase obligations",
+          "1,032",
+          "446",
+          "331",
+          "267",
+          "258",
+          "783"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Other long-term liabilities reflected on Citi’s Consolidated Balance Sheet(2)",
+          "34,218",
+          "156",
+          "36",
+          "35",
+          "36",
+          "3,009"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Total",
+          "$83,659",
+          "$61,368",
+          "$70,718",
+          "$29,334",
+          "$36,040",
+          "$131,392"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_22",
+        "text": "( 1 ) for additional information about long-term debt and trust preferred securities , see note 20 to the consolidated financial statements ."
+      },
+      {
+        "location": "text_23",
+        "text": "( 2 ) relates primarily to accounts payable and accrued expenses included in other liabilities in citi 2019s consolidated balance sheet. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "in 2010 what was the ratio of the non-us pension plans , discretionary contributions to the postretirement benefit plans",
+  "reference_program": "divide(160, 72)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "160",
+      "raw": "160",
+      "location": "text_16:89",
+      "context": "pension plans , discretionary contributions in 2010 are anticipated to be approximately $ 160 million ."
+    },
+    "x1": {
+      "program_token": "72",
+      "raw": "72",
+      "location": "text_18:34",
+      "context": "postretirement benefit plans are $ 72 million ."
+    }
+  }
+}

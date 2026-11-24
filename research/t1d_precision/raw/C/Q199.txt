@@ -1,0 +1,1 @@
+{"answer":"-53.017992","unit":"percent","expression":"(161.9 - 344.6) / 344.6 * 100","low":"-53.039315","high":"-52.996662","reliable_digits":"3","explanation":"Debt decreased by approximately 53.0%; the bounds allow each displayed debt figure to vary by $0.05 million."}

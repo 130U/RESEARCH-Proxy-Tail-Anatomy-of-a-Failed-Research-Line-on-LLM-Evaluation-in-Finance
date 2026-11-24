@@ -1,0 +1,25 @@
+{
+  "group": "B",
+  "id": "Q264",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "fresh_session": true,
+  "prompt_file": "prompts/B/Q264.txt",
+  "started_utc": "2026-11-17T07:49:16.116593+00:00",
+  "status": "completed",
+  "returncode": 0,
+  "completed_utc": "2026-11-17T07:49:33.015054+00:00",
+  "elapsed_seconds": 16.89,
+  "thread_id": "01a1e87b-49e7-7662-a4e4-4d222ec9dba5",
+  "usage": {
+    "input_tokens": 17578,
+    "cached_input_tokens": 15488,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 221,
+    "reasoning_output_tokens": 153
+  },
+  "event_item_types": [
+    "agent_message"
+  ],
+  "tool_use_observed": false
+}

@@ -1,0 +1,1 @@
+{"answer":"44.5833333333","unit":"percent","expression":"(1.2 * 1000 - 665) / (1.2 * 1000) * 100","low":"42.1304347826","high":"46.84","reliable_digits":"1","explanation":"The rounding bounds are $1,150–$1,250 million for 2012 and $664.5–$665.5 million for 2013, supporting about one significant digit."}

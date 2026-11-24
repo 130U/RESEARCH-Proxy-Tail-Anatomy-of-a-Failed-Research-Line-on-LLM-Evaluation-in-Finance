@@ -1,0 +1,1 @@
+{"answer":"4781374","unit":"thousand dollars","expression":"760000 + 857679 + 898500 + 960764 + 1304431","low":"4781371.5","high":"4781376.5","reliable_digits":"5","explanation":"The five maturities sum to 4781374 thousand dollars, with rounding uncertainty of ±2.5 thousand dollars and five significant digits stable under rounding."}

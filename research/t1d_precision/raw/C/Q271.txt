@@ -1,0 +1,1 @@
+{"answer":"290395","unit":"million dollars","expression":"(318063 + 110457) - (60224 + 77901)","low":"290393","high":"290397","reliable_digits":"5","explanation":"Subtracting trading liabilities from trading assets gives the total; rounding of the four balances permits uncertainty of 2 million dollars in either direction."}

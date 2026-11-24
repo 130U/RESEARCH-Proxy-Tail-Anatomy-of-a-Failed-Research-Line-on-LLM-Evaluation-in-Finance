@@ -1,0 +1,1 @@
+{"answer":"3739366.45","unit":"dollars","expression":"151945 * 24.61","low":"3738606.725","high":"3740126.175","reliable_digits":"3","explanation":"Multiply the exact securities count by the weighted average exercise price, whose rounding permits a $0.005 variation."}

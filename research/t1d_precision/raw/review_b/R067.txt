@@ -1,0 +1,5 @@
+{
+    "review_id": "R067",
+    "verdict": "invalid",
+    "reason": "The program divides $2.9 billion by $900.1 million without aligning units, and the source places the debt issuance in 2008 rather than 2009."
+  }

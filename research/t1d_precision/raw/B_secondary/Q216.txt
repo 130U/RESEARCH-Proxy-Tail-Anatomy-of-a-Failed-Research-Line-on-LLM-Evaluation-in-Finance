@@ -1,0 +1,1 @@
+{"answer":"7.4266310641","unit":"percent","expression":"(161.43 - 150.27) / 150.27 * 100","low":"7.4197304941","high":"7.4335347553","reliable_digits":"2","explanation":"Allowing each index value to vary by 0.005 gives these bounds, which support reporting a 7.4% increase."}

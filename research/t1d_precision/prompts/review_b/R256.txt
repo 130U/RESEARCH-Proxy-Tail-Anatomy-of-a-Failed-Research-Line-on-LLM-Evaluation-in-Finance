@@ -1,0 +1,117 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R256",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "action commenced by the california attorney general , we are providing customers with greater transparency into the pricing of this product and other alternatives offered by us for addressing their foreign exchange requirements ."
+      },
+      {
+        "location": "text_1",
+        "text": "although we believe such disclosures will address customer interests for increased transparency , over time such action may result in pressure on our pricing of this product or result in clients electing other foreign exchange execution options , which would have an adverse impact on the revenue from , and profitability of , this product for us ."
+      },
+      {
+        "location": "text_2",
+        "text": "we may be exposed to customer claims , financial loss , reputational damage and regulatory scrutiny as a result of transacting purchases and redemptions relating to the unregistered cash collateral pools underlying our securities lending program at a net asset value of $ 1.00 per unit rather than a lower net asset value based upon market value of the underlying portfolios ."
+      },
+      {
+        "location": "text_3",
+        "text": "a portion of the cash collateral received by customers under our securities lending program is invested in cash collateral pools that we manage ."
+      },
+      {
+        "location": "text_4",
+        "text": "interests in these cash collateral pools are held by unaffiliated customers and by registered and unregistered investment funds that we manage ."
+      },
+      {
+        "location": "text_5",
+        "text": "our cash collateral pools that are money market funds registered under the investment company act of 1940 are required to maintain , and have maintained , a constant net asset value of $ 1.00 per unit ."
+      },
+      {
+        "location": "text_6",
+        "text": "the remainder of our cash collateral pools are collective investment funds that are not required to be registered under the investment company act ."
+      },
+      {
+        "location": "text_7",
+        "text": "these unregistered cash collateral pools seek , but are not required , to maintain , and transact purchases and redemptions at , a constant net asset value of $ 1.00 per unit ."
+      },
+      {
+        "location": "text_8",
+        "text": "our securities lending operations consist of two components ; a direct lending program for third-party investment managers and asset owners , the collateral pools for which we refer to as direct lending collateral pools ; and investment funds with a broad range of investment objectives that are managed by ssga and engage in securities lending , which we refer to as ssga lending funds ."
+      },
+      {
+        "location": "text_9",
+        "text": "the following table shows the aggregate net asset values of the unregistered direct lending collateral pools and the aggregate net asset value of the unregistered collateral pools underlying the ssga lending funds , in each case based on a constant net asset value of $ 1.00 per ( in billions ) december 31 , 2009 december 31 , 2008 december 31 , 2007 ( 1 ) ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "(in billions)",
+          "December 31, 2009",
+          "December 31, 2008",
+          "December 31, 2007<sup>(1)</sup>"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Direct lending collateral pools",
+          "$85",
+          "$85",
+          "$150"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Collateral pools underlying SSgA lending funds",
+          "24",
+          "31",
+          "44"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_10",
+        "text": "( 1 ) certain of the ssga lending funds were participants in the direct lending collateral pools until october 2008 ."
+      },
+      {
+        "location": "text_11",
+        "text": "the direct lending collateral pool balances at december 31 , 2007 related to ssga lending funds have been included within the ssga lending fund balances and excluded from the direct lending collateral pool balances presented above. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percent change in the aggregate net asset values of the collateral pools underlying ssga lending funds between 2008 and 2009?",
+  "reference_program": "subtract(31, 24), divide(#0, 24)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "31",
+      "raw": "31",
+      "location": "table_2:2",
+      "context": "Collateral pools underlying SSgA lending funds | December 31, 2008"
+    },
+    "x1": {
+      "program_token": "24",
+      "raw": "24",
+      "location": "table_2:1",
+      "context": "Collateral pools underlying SSgA lending funds | December 31, 2009"
+    }
+  }
+}

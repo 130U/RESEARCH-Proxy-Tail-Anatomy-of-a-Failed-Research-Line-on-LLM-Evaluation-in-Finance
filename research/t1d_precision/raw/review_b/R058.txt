@@ -1,0 +1,5 @@
+{
+    "review_id": "R058",
+    "verdict": "valid",
+    "reason": "The source labels the dividend-reinvested HUM series as stock price performance, and the calculation correctly compares its rounded 2011 and 2010 values using 2010 as the base."
+  }

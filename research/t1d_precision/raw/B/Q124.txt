@@ -1,0 +1,1 @@
+{"answer":"-26.0663507109","unit":"percent","expression":"(15.6 - 21.1) / 21.1 * 100","low":"-26.4775413712","high":"-25.6532066508","reliable_digits":"2","explanation":"Each expense figure has a rounding uncertainty of ±$0.05 million, yielding bounds that both round to a 26% decrease."}

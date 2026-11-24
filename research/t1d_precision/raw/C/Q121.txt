@@ -1,0 +1,1 @@
+{"answer":"-37.00062422","unit":"percent","expression":"(80.74 - 128.16) / 128.16 * 100","low":"-37.00698319","high":"-36.99426476","reliable_digits":"3","explanation":"Allowing each index value to vary by 0.005 gives these bounds and supports reporting a 37.0% loss."}

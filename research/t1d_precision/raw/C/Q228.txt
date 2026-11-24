@@ -1,0 +1,1 @@
+{"answer":"41.3793103448","unit":"percent","expression":"(12 / 29) * 100","low":"38.9830508475","high":"43.8596491228","reliable_digits":"1","explanation":"The potentially earnings-impacting $12 million is divided by $29 million, with rounding bounds of 11.5/29.5 and 12.5/28.5."}

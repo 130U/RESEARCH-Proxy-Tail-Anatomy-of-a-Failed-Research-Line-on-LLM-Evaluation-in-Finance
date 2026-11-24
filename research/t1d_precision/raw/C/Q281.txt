@@ -1,0 +1,1 @@
+{"answer":"218.46","unit":"percent","expression":"(318.46 - 100) / 100 * 100","low":"216.8706467662","high":"220.0653266332","reliable_digits":"2","explanation":"The return is the gain divided by the initial investment, with bounds allowing $318.46 to vary by $0.005 and $100 by $0.50."}

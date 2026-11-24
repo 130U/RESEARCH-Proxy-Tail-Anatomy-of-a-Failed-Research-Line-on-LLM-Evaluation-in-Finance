@@ -1,0 +1,1 @@
+{"answer":"2.7761844671","unit":"percent","expression":"(8959 - 8717) / 8717 * 100","low":"2.7645540579","high":"2.7878162106","reliable_digits":"2","explanation":"Fuel costs increased in 2013; allowing each reported cost to vary by $0.5 million leaves two significant digits reliable."}

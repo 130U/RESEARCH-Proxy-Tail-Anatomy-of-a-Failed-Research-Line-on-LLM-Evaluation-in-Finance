@@ -1,0 +1,226 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R099",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "the following is a summary of stock-based performance award and restricted stock award activity ."
+      },
+      {
+        "location": "text_1",
+        "text": "stock-based performance awards weighted average grant date fair value restricted awards weighted average grant date fair value ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Stock-Based Performance Awards",
+          "WeightedAverage GrantDate Fair Value",
+          "Restricted Stock Awards",
+          "WeightedAverage GrantDate Fair Value"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Unvested at December 31, 2005",
+          "897,200",
+          "$14.97",
+          "1,971,112",
+          "$23.97"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Granted",
+          "135,696(a)",
+          "38.41",
+          "437,960",
+          "40.45"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Vested",
+          "(546,896)",
+          "19.15",
+          "(777,194)",
+          "20.59"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Forfeited",
+          "(12,000)",
+          "16.81",
+          "(79,580)",
+          "26.55"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Unvested at December 31, 2006",
+          "474,000",
+          "16.81",
+          "1,552,298",
+          "30.21"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Granted",
+          "393,420(a)",
+          "44.13",
+          "572,897",
+          "54.97"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Vested",
+          "(867,420)",
+          "29.20",
+          "(557,096)",
+          "28.86"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Forfeited",
+          "–",
+          "–",
+          "(40,268)",
+          "34.55"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Unvested at December 31, 2007",
+          "–",
+          "–",
+          "1,527,831",
+          "39.87"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_2",
+        "text": "( a ) additional shares were issued in 2006 and 2007 because the performance targets were exceeded for the 36-month performance periods related to the 2003 and 2004 grants ."
+      },
+      {
+        "location": "text_3",
+        "text": "during 2007 , 2006 and 2005 the weighted average grant date fair value of restricted stock awards was $ 54.97 , $ 40.45 and $ 27.21 ."
+      },
+      {
+        "location": "text_4",
+        "text": "the vesting date fair value of stock-based performance awards which vested during 2007 , 2006 and 2005 was $ 38 million , $ 21 million and $ 5 million ."
+      },
+      {
+        "location": "text_5",
+        "text": "the vesting date fair value of restricted stock awards which vested during 2007 , 2006 and 2005 was $ 29 million , $ 32 million and $ 13 million ."
+      },
+      {
+        "location": "text_6",
+        "text": "as of december 31 , 2007 , there was $ 37 million of unrecognized compensation cost related to restricted stock awards which is expected to be recognized over a weighted average period of 1.4 year ."
+      },
+      {
+        "location": "text_7",
+        "text": "25 ."
+      },
+      {
+        "location": "text_8",
+        "text": "stockholders 2019 equity common stock 2013 on april 25 , 2007 , marathon 2019s stockholders approved an increase in the number of authorized shares of common stock from 550 million to 1.1 billion shares , and the company 2019s board of directors subsequently declared a two-for-one split of the company 2019s common stock ."
+      },
+      {
+        "location": "text_9",
+        "text": "the stock split was effected in the form of a stock dividend distributed on june 18 , 2007 , to stockholders of record at the close of business on may 23 , 2007 ."
+      },
+      {
+        "location": "text_10",
+        "text": "stockholders received one additional share of marathon oil corporation common stock for each share of common stock held as of the close of business on the record date ."
+      },
+      {
+        "location": "text_11",
+        "text": "in addition , shares of common stock issued or issuable for stock-based awards under marathon 2019s incentive compensation plans were proportionately increased in accordance with the terms of the plans ."
+      },
+      {
+        "location": "text_12",
+        "text": "common stock and per share ( except par value ) information for all periods presented has been restated in the consolidated financial statements and notes to reflect the stock split ."
+      },
+      {
+        "location": "text_13",
+        "text": "during 2007 , 2006 and 2005 , marathon had the following common stock issuances in addition to shares issued for employee stock-based awards : 2022 on october 18 , 2007 , in connection with the acquisition of western discussed in note 6 , marathon distributed 29 million shares of its common stock valued at $ 55.70 per share to western 2019s shareholders ."
+      },
+      {
+        "location": "text_14",
+        "text": "2022 on june 30 , 2005 , in connection with the acquisition of ashland 2019s minority interest in mpc discussed in note 6 , marathon distributed 35 million shares of its common stock valued at $ 27.23 per share to ashland 2019s shareholders ."
+      },
+      {
+        "location": "text_15",
+        "text": "marathon 2019s board of directors has authorized the repurchase of up to $ 5 billion of common stock ."
+      },
+      {
+        "location": "text_16",
+        "text": "purchases under the program may be in either open market transactions , including block purchases , or in privately negotiated transactions ."
+      },
+      {
+        "location": "text_17",
+        "text": "the company will use cash on hand , cash generated from operations , proceeds from potential asset sales or cash from available borrowings to acquire shares ."
+      },
+      {
+        "location": "text_18",
+        "text": "this program may be changed based upon the company 2019s financial condition or changes in market conditions and is subject to termination prior to completion ."
+      },
+      {
+        "location": "text_19",
+        "text": "the repurchase program does not include specific price targets or timetables ."
+      },
+      {
+        "location": "text_20",
+        "text": "as of december 31 , 2007 , the company had acquired 58 million common shares at a cost of $ 2.520 billion under the program , including 16 million common shares acquired during 2007 at a cost of $ 822 million and 42 million common shares acquired during 2006 at a cost of $ 1.698 billion. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "as of december 31 , 2007 , how much unrecognized compensation cost related to restricted stock awards is expected to be recognized in 1 year , in millions?",
+  "reference_program": "divide(37, 1.4)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "37",
+      "raw": "37",
+      "location": "text_6:38",
+      "context": "as of december 31 , 2007 , there was $ 37 million of unrecognized compensation cost related to restricted stock awards which is expected to be recognized over a weighted average period of 1.4 year ."
+    },
+    "x1": {
+      "program_token": "1.4",
+      "raw": "1.4",
+      "location": "text_6:188",
+      "context": "as of december 31 , 2007 , there was $ 37 million of unrecognized compensation cost related to restricted stock awards which is expected to be recognized over a weighted average period of 1.4 year ."
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"answer":"8.63909589093","unit":"percent","expression":"(572.93 - 527.37) / 527.37 * 100","low":"8.63711780043","high":"8.64107401894","reliable_digits":"3","explanation":"Allowing each collateral amount to vary by 0.005 billion gives these bounds, which both round to 8.64%."}

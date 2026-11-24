@@ -1,0 +1,5 @@
+{
+    "review_id": "R151",
+    "verdict": "invalid",
+    "reason": "The approximate balances and 2005 denominator are correct, but the calculation returns a fractional change without converting it to the requested percentage."
+  }

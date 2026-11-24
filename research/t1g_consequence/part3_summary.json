@@ -1,0 +1,247 @@
+{
+  "prediction_commit": "0c68d8a",
+  "total_arithmetic": 6960,
+  "bound_total": {
+    "n": 5661,
+    "exact_ranges": 5661,
+    "center_counts": {
+      "outside": 1356,
+      "inside": 4305
+    },
+    "gold_counts": {
+      "outside": 1438,
+      "inside": 4223
+    },
+    "center_rate": 0.2395336512983572,
+    "gold_rate": 0.2540187246069599,
+    "center_first_order_accuracy": 1.0,
+    "gold_first_order_accuracy": 0.9998233527645293,
+    "prediction": null,
+    "center_error_pp": null,
+    "gold_error_pp": null
+  },
+  "forecast_population": {
+    "n": 5261,
+    "exact_ranges": 5261,
+    "center_counts": {
+      "outside": 1086,
+      "inside": 4175
+    },
+    "gold_counts": {
+      "outside": 1153,
+      "inside": 4108
+    },
+    "center_rate": 0.206424634099981,
+    "gold_rate": 0.21915985554077172,
+    "center_first_order_accuracy": 1.0,
+    "gold_first_order_accuracy": 0.9998099220680479,
+    "prediction": 0.24494606761644266,
+    "center_error_pp": 3.852143351646167,
+    "gold_error_pp": 2.5786212075670942
+  },
+  "by_category": {
+    "difference": {
+      "n": 2308,
+      "exact_ranges": 2308,
+      "center_counts": {
+        "outside": 622,
+        "inside": 1686
+      },
+      "gold_counts": {
+        "outside": 640,
+        "inside": 1668
+      },
+      "center_rate": 0.26949740034662045,
+      "gold_rate": 0.2772963604852686,
+      "center_first_order_accuracy": 1.0,
+      "gold_first_order_accuracy": 1.0,
+      "prediction": 0.3118102883798047,
+      "center_error_pp": 4.231288803318423,
+      "gold_error_pp": 3.451392789453606
+    },
+    "difference_other": {
+      "n": 1,
+      "exact_ranges": 1,
+      "center_counts": {
+        "outside": 1
+      },
+      "gold_counts": {
+        "outside": 1
+      },
+      "center_rate": 1.0,
+      "gold_rate": 1.0,
+      "center_first_order_accuracy": 1.0,
+      "gold_first_order_accuracy": 1.0,
+      "prediction": null,
+      "center_error_pp": null,
+      "gold_error_pp": null
+    },
+    "growth": {
+      "n": 1349,
+      "exact_ranges": 1349,
+      "center_counts": {
+        "inside": 1013,
+        "outside": 336
+      },
+      "gold_counts": {
+        "inside": 996,
+        "outside": 353
+      },
+      "center_rate": 0.2490733876945886,
+      "gold_rate": 0.26167531504818387,
+      "center_first_order_accuracy": 1.0,
+      "gold_first_order_accuracy": 1.0,
+      "prediction": 0.27464491204024244,
+      "center_error_pp": 2.557152434565385,
+      "gold_error_pp": 1.2969596992058574
+    },
+    "other": {
+      "n": 24,
+      "exact_ranges": 24,
+      "center_counts": {
+        "inside": 21,
+        "outside": 3
+      },
+      "gold_counts": {
+        "inside": 20,
+        "outside": 4
+      },
+      "center_rate": 0.125,
+      "gold_rate": 0.16666666666666666,
+      "center_first_order_accuracy": 1.0,
+      "gold_first_order_accuracy": 1.0,
+      "prediction": null,
+      "center_error_pp": null,
+      "gold_error_pp": null
+    },
+    "ratio": {
+      "n": 515,
+      "exact_ranges": 515,
+      "center_counts": {
+        "inside": 453,
+        "outside": 62
+      },
+      "gold_counts": {
+        "inside": 431,
+        "outside": 84
+      },
+      "center_rate": 0.1203883495145631,
+      "gold_rate": 0.16310679611650486,
+      "center_first_order_accuracy": 1.0,
+      "gold_first_order_accuracy": 0.9980582524271845,
+      "prediction": 0.12252848763017953,
+      "center_error_pp": 0.2140138115616419,
+      "gold_error_pp": -4.057830848632533
+    },
+    "ratio_other": {
+      "n": 375,
+      "exact_ranges": 375,
+      "center_counts": {
+        "outside": 266,
+        "inside": 109
+      },
+      "gold_counts": {
+        "outside": 280,
+        "inside": 95
+      },
+      "center_rate": 0.7093333333333334,
+      "gold_rate": 0.7466666666666667,
+      "center_first_order_accuracy": 1.0,
+      "gold_first_order_accuracy": 1.0,
+      "prediction": null,
+      "center_error_pp": null,
+      "gold_error_pp": null
+    },
+    "sum": {
+      "n": 1089,
+      "exact_ranges": 1089,
+      "center_counts": {
+        "inside": 1023,
+        "outside": 66
+      },
+      "gold_counts": {
+        "inside": 1013,
+        "outside": 76
+      },
+      "center_rate": 0.06060606060606061,
+      "gold_rate": 0.06978879706152434,
+      "center_first_order_accuracy": 1.0,
+      "gold_first_order_accuracy": 1.0,
+      "prediction": 0.12433880503001464,
+      "center_error_pp": 6.373274442395403,
+      "gold_error_pp": 5.4550007968490295
+    }
+  },
+  "by_split": {
+    "train": {
+      "n": 4493,
+      "exact_ranges": 4493,
+      "center_counts": {
+        "outside": 1085,
+        "inside": 3408
+      },
+      "gold_counts": {
+        "outside": 1152,
+        "inside": 3341
+      },
+      "center_rate": 0.2414867571778322,
+      "gold_rate": 0.25639884264411306,
+      "center_first_order_accuracy": 1.0,
+      "gold_first_order_accuracy": 0.9997774315602047,
+      "prediction": null,
+      "center_error_pp": null,
+      "gold_error_pp": null
+    },
+    "dev": {
+      "n": 602,
+      "exact_ranges": 602,
+      "center_counts": {
+        "inside": 463,
+        "outside": 139
+      },
+      "gold_counts": {
+        "inside": 451,
+        "outside": 151
+      },
+      "center_rate": 0.23089700996677742,
+      "gold_rate": 0.25083056478405313,
+      "center_first_order_accuracy": 1.0,
+      "gold_first_order_accuracy": 1.0,
+      "prediction": null,
+      "center_error_pp": null,
+      "gold_error_pp": null
+    },
+    "test": {
+      "n": 566,
+      "exact_ranges": 566,
+      "center_counts": {
+        "inside": 434,
+        "outside": 132
+      },
+      "gold_counts": {
+        "inside": 431,
+        "outside": 135
+      },
+      "center_rate": 0.2332155477031802,
+      "gold_rate": 0.23851590106007067,
+      "center_first_order_accuracy": 1.0,
+      "gold_first_order_accuracy": 1.0,
+      "prediction": null,
+      "center_error_pp": null,
+      "gold_error_pp": null
+    }
+  },
+  "first_order_disagreements": [
+    {
+      "id": "ebca9215-a46c-45f4-8149-b43c80d5704a",
+      "category": "ratio",
+      "center_status": "inside",
+      "gold_status": "outside",
+      "center_first_order": false,
+      "gold_first_order": false,
+      "center": "3650/81",
+      "gold": "2253/50",
+      "first_order_radius": "5875/13122"
+    }
+  ]
+}

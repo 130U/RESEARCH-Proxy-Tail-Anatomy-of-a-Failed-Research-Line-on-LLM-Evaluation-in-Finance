@@ -1,0 +1,166 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R080",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "compensation cost is generally recognized over the stated vesting period consistent with the terms of the arrangement ( i.e. , either on a straight-line or graded-vesting basis ) ."
+      },
+      {
+        "location": "text_1",
+        "text": "expense recognition is accelerated for retirement-eligible individuals who would meet the requirements for vesting of awards upon their retirement ."
+      },
+      {
+        "location": "text_2",
+        "text": "as of 30 september 2018 , there was no unrecognized compensation cost as all stock option awards were fully vested ."
+      },
+      {
+        "location": "text_3",
+        "text": "cash received from option exercises during fiscal year 2018 was $ 76.2 ."
+      },
+      {
+        "location": "text_4",
+        "text": "the total tax benefit realized from stock option exercises in fiscal year 2018 was $ 25.8 , of which $ 19.0 was the excess tax benefit ."
+      },
+      {
+        "location": "text_5",
+        "text": "restricted stock the grant-date fair value of restricted stock is estimated on the date of grant based on the closing price of the stock , and compensation cost is generally amortized to expense on a straight-line basis over the vesting period during which employees perform related services ."
+      },
+      {
+        "location": "text_6",
+        "text": "expense recognition is accelerated for retirement-eligible individuals who would meet the requirements for vesting of awards upon their retirement ."
+      },
+      {
+        "location": "text_7",
+        "text": "we have elected to account for forfeitures as they occur , rather than to estimate them ."
+      },
+      {
+        "location": "text_8",
+        "text": "forfeitures have not been significant historically ."
+      },
+      {
+        "location": "text_9",
+        "text": "we have issued shares of restricted stock to certain officers ."
+      },
+      {
+        "location": "text_10",
+        "text": "participants are entitled to cash dividends and to vote their respective shares ."
+      },
+      {
+        "location": "text_11",
+        "text": "restrictions on shares lift in one to four years or upon the earlier of retirement , death , or disability ."
+      },
+      {
+        "location": "text_12",
+        "text": "the shares are nontransferable while subject to forfeiture ."
+      },
+      {
+        "location": "text_13",
+        "text": "a summary of restricted stock activity is presented below : restricted stock shares ( 000 ) weighted average grant- date fair value ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "Restricted Stock",
+          "Shares (000)",
+          "Weighted AverageGrant-Date Fair Value"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Outstanding at 30 September 2017",
+          "56",
+          "$135.74"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Vested",
+          "( 14)",
+          "121.90"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Outstanding at 30 September 2018",
+          "42",
+          "$140.28"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_14",
+        "text": "as of 30 september 2018 , there was $ .1 of unrecognized compensation cost related to restricted stock awards ."
+      },
+      {
+        "location": "text_15",
+        "text": "the cost is expected to be recognized over a weighted average period of 0.5 years ."
+      },
+      {
+        "location": "text_16",
+        "text": "the total fair value of restricted stock vested during fiscal years 2018 , 2017 , and 2016 was $ 2.2 , $ 4.1 , and $ 4.3 , respectively ."
+      },
+      {
+        "location": "text_17",
+        "text": "as discussed in note 3 , discontinued operations , air products completed the spin-off of versum on 1 october 2016 ."
+      },
+      {
+        "location": "text_18",
+        "text": "in connection with the spin-off , the company adjusted the number of deferred stock units and stock options pursuant to existing anti-dilution provisions in the ltip to preserve the intrinsic value of the awards immediately before and after the separation ."
+      },
+      {
+        "location": "text_19",
+        "text": "the outstanding awards will continue to vest over the original vesting period defined at the grant date ."
+      },
+      {
+        "location": "text_20",
+        "text": "outstanding awards at the time of spin-off were primarily converted into awards of the holders' employer following the separation ."
+      },
+      {
+        "location": "text_21",
+        "text": "stock awards held upon separation were adjusted based upon the conversion ratio of air products' new york stock exchange ( 201cnyse 201d ) volume weighted-average closing stock price on 30 september 2016 ( $ 150.35 ) to the nyse volume weighted-average opening stock price on 3 october 2016 ( $ 140.38 ) , or 1.071 ."
+      },
+      {
+        "location": "text_22",
+        "text": "the adjustment to the awards did not result in incremental fair value , and no incremental compensation expense was recorded related to the conversion of these awards. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the decrease observed in the total fair value of restricted stock that vested during 2017 and 2018?",
+  "reference_program": "subtract(2.2, 4.1), divide(#0, 4.1)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "2.2",
+      "raw": "2.2",
+      "location": "text_16:96",
+      "context": "the total fair value of restricted stock vested during fiscal years 2018 , 2017 , and 2016 was $ 2.2 , $ 4.1 , and $ 4.3 , respectively ."
+    },
+    "x1": {
+      "program_token": "4.1",
+      "raw": "4.1",
+      "location": "text_16:104",
+      "context": "the total fair value of restricted stock vested during fiscal years 2018 , 2017 , and 2016 was $ 2.2 , $ 4.1 , and $ 4.3 , respectively ."
+    }
+  }
+}

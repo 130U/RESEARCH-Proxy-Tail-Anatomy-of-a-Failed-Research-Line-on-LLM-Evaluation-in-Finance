@@ -1,0 +1,1 @@
+{"answer":"17.7514792899408","unit":"percent","expression":"30 / 169 * 100","low":"17.4041297935103","high":"18.1008902077151","reliable_digits":"1","explanation":"The rounding bounds are 29.5 / 169.5 * 100 and 30.5 / 168.5 * 100, supporting one reliable significant digit."}

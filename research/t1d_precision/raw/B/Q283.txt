@@ -1,0 +1,1 @@
+{"answer":"-29.9065420560748","unit":"percent","expression":"(75 - 107) / 107 * 100","low":"-30.6976744186047","high":"-29.1079812206573","reliable_digits":"1","explanation":"Rental expense decreased from $107 million to $75 million, with each figure rounded to the nearest million."}

@@ -1,0 +1,1 @@
+{"answer":"54.6889726673","unit":"percent","expression":"2321 / 4244 * 100","low":"54.6707503828","high":"54.7072004242","reliable_digits":"3","explanation":"Dividing customer premises equipment expenditures by total expenditures gives the percentage; allowing each figure to vary by $0.5 million yields the bounds."}

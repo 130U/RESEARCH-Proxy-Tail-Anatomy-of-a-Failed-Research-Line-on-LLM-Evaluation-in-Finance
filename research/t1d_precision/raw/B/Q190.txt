@@ -1,0 +1,1 @@
+{"answer":"88.92784646613766","unit":"percent","expression":"(4819 / 5419) * 100","low":"88.91041609004521","high":"88.94528005905693","reliable_digits":"3","explanation":"Allowing each total to vary by 0.5 thousand dollars gives this range, which consistently rounds to 88.9%."}

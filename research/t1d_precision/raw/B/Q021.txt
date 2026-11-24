@@ -1,0 +1,1 @@
+{"answer":"14.7681041497152","unit":"percent","expression":"(1410.5 - 1229.0) / 1229.0 * 100","low":"14.7593669907652","high":"14.7768420196102","reliable_digits":"3","explanation":"Using 2004 as the base, rounding uncertainty of 0.05 million in each figure gives these bounds, which both round to 14.8 percent."}

@@ -1,0 +1,1 @@
+{"answer":"75","unit":"USD per share","expression":"45 / 0.6","low":"68.46153846153846","high":"82.72727272727273","reliable_digits":"0","explanation":"Rounding allows costs of $44.5–45.5 million and shares of 0.55–0.65 million, so even the first significant digit is uncertain."}

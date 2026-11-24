@@ -1,0 +1,1 @@
+id,split,question,kind,printed_raw,printed_in_answer_unit,recomputed,gold,officially_affected,relative_1pct_affected,row_mismatch,condition,model,answer,expression,normalized_answer,normalized_expression,selected_value,selection_evidence,official_expression_correct,official_answer_correct,source,call_id

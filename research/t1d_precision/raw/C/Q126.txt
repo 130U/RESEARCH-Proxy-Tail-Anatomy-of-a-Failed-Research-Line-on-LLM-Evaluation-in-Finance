@@ -1,0 +1,1 @@
+{"answer":"-2.828113382","unit":"percent","expression":"(377677 - 388669) / 388669 * 100","low":"-2.828367032","high":"-2.827859731","reliable_digits":"4","explanation":"Total financial liabilities decreased by about 2.828%, with bounds allowing each displayed total to vary by $0.5 million."}

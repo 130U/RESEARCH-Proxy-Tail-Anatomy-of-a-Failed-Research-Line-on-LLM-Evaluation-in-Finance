@@ -1,0 +1,142 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R023",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "entergy mississippi , inc ."
+      },
+      {
+        "location": "text_1",
+        "text": "management 2019s financial discussion and analysis results of operations net income 2016 compared to 2015 net income increased $ 16.5 million primarily due to lower other operation and maintenance expenses , higher net revenues , and a lower effective income tax rate , partially offset by higher depreciation and amortization expenses ."
+      },
+      {
+        "location": "text_2",
+        "text": "2015 compared to 2014 net income increased $ 17.9 million primarily due to the write-off in 2014 of the regulatory assets associated with new nuclear generation development costs as a result of a joint stipulation entered into with the mississippi public utilities staff , subsequently approved by the mpsc , partially offset by higher depreciation and amortization expenses , higher taxes other than income taxes , higher other operation and maintenance expenses , and lower net revenue ."
+      },
+      {
+        "location": "text_3",
+        "text": "see note 2 to the financial statements for discussion of the new nuclear generation development costs and the joint stipulation ."
+      },
+      {
+        "location": "text_4",
+        "text": "net revenue 2016 compared to 2015 net revenue consists of operating revenues net of : 1 ) fuel , fuel-related expenses , and gas purchased for resale , 2 ) purchased power expenses , and 3 ) other regulatory charges ( credits ) ."
+      },
+      {
+        "location": "text_5",
+        "text": "following is an analysis of the change in net revenue comparing 2016 to 2015 ."
+      },
+      {
+        "location": "text_6",
+        "text": "amount ( in millions ) ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Amount (In Millions)"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2015 net revenue",
+          "$696.3"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Retail electric price",
+          "12.9"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Volume/weather",
+          "4.7"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Net wholesale revenue",
+          "(2.4)"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Reserve equalization",
+          "(2.8)"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Other",
+          "(3.3)"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "2016 net revenue",
+          "$705.4"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_7",
+        "text": "the retail electric price variance is primarily due to a $ 19.4 million net annual increase in revenues , as approved by the mpsc , effective with the first billing cycle of july 2016 , and an increase in revenues collected through the storm damage rider ."
+      },
+      {
+        "location": "text_8",
+        "text": "see note 2 to the financial statements for more discussion on the formula rate plan and the storm damage rider ."
+      },
+      {
+        "location": "text_9",
+        "text": "the volume/weather variance is primarily due to an increase of 153 gwh , or 1% ( 1 % ) , in billed electricity usage , including an increase in industrial usage , partially offset by the effect of less favorable weather on residential and commercial sales ."
+      },
+      {
+        "location": "text_10",
+        "text": "the increase in industrial usage is primarily due to expansion projects in the pulp and paper industry , increased demand for existing customers , primarily in the metals industry , and new customers in the wood products industry. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the growth rate in net revenue in 20016 for entergy mississippi , inc.?",
+  "reference_program": "subtract(705.4, 696.3), divide(#0, 696.3)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "705.4",
+      "raw": "705.4",
+      "location": "table_7:1",
+      "context": "2016 net revenue | Amount (In Millions)"
+    },
+    "x1": {
+      "program_token": "696.3",
+      "raw": "696.3",
+      "location": "table_1:1",
+      "context": "2015 net revenue | Amount (In Millions)"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+    "review_id": "R061",
+    "verdict": "invalid",
+    "reason": "The 50 million shares define the board’s authorized repurchase limit, an exact authorization term rather than a rounded measured quantity."
+  }

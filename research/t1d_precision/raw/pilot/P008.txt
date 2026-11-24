@@ -1,0 +1,1 @@
+{"answer":"7781.7","unit":"million dollars","expression":"7.8 * 1000 - 18.3","low":"7731.65","high":"7831.75","reliable_digits":"2","explanation":"Subtract net current deferred tax assets from net long-term deferred tax liabilities; the rounded $7.8 billion liability limits precision."}

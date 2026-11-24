@@ -1,0 +1,7 @@
+{
+    "call_id": "S068",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "For the explicitly requested 2006, row 1 reports customer premises equipment expenditures of $2,321 million and row 7 reports total cable capital expenditures of $4,244 million. The model correctly uses 2,321/4,244×100, with total 2006 expenditures as denominator. The reference instead uses the 2008 values, $3,147 million and $5,545 million."
+  }

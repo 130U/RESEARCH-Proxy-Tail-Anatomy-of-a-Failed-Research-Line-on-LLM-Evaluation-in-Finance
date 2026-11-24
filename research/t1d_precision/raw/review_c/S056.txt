@@ -1,0 +1,7 @@
+{
+    "call_id": "S056",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_17 identifies November 2015 issuance costs of $48 million and notes of $7.0 billion. Converting the denominator to $7,000 million and multiplying the ratio by 100 gives 0.686%. The reference divides amounts expressed in different money units."
+  }

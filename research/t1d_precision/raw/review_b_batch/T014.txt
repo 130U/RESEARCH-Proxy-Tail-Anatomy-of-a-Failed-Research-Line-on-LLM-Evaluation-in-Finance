@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R209",
+    "verdict": "valid",
+    "reason": "The rounded R&D expenses are $78 million for 2016 and $119 million for 2015, so subtracting the latter from the former gives the requested net change in millions."
+  },
+  {
+    "review_id": "R210",
+    "verdict": "invalid",
+    "reason": "The bound $772 million and $843 million balances are for 2012 and 2011, whereas the question asks about 2008 and 2009."
+  },
+  {
+    "review_id": "R211",
+    "verdict": "valid",
+    "reason": "The rounded minority-interest balances are $17.3 million for 2007 and $16.8 million for 2006, and the calculation correctly uses the 2006 balance as its base."
+  },
+  {
+    "review_id": "R212",
+    "verdict": "valid",
+    "reason": "The source explicitly identifies approximate PennyMac fair values of $348 million for 2017 and $259 million for 2016, and the calculation correctly measures growth relative to 2016."
+  },
+  {
+    "review_id": "R213",
+    "verdict": "valid",
+    "reason": "The rounded operating cash flows of $1,131 million and $1,165 million correspond to 2015 and 2014, and the calculation correctly measures the change against 2014."
+  },
+  {
+    "review_id": "R214",
+    "verdict": "invalid",
+    "reason": "The $169 and $138 amounts describe aggregate increases in net asbestos reserves, including direct exposures, rather than balances or changes specific to reinsurance accounts."
+  },
+  {
+    "review_id": "R215",
+    "verdict": "valid",
+    "reason": "The operating-lease table reports rounded aggregate commitments of $30 million due in 2003 and $169 million in total, making their ratio the requested share."
+  },
+  {
+    "review_id": "R216",
+    "verdict": "valid",
+    "reason": "The pro forma table reports rounded diluted earnings per share from continuing operations of $11.24 for 2015 and $10.79 for 2014, and the calculation correctly uses 2014 as the base."
+  },
+  {
+    "review_id": "R217",
+    "verdict": "invalid",
+    "reason": "Subtracting the correctly bound option fair values produces a dollar increase per option, but the requested percentage increase requires division by the 2013 value."
+  },
+  {
+    "review_id": "R218",
+    "verdict": "valid",
+    "reason": "Reading '20016' as the evident typo for 2016, the rounded Entergy Mississippi net revenues of $705.4 million and $696.3 million correctly yield the annual net change by subtraction."
+  },
+  {
+    "review_id": "R219",
+    "verdict": "invalid",
+    "reason": "Both bound amounts are in billions of dollars, so their subtraction requires conversion to millions to answer the question in its requested units."
+  },
+  {
+    "review_id": "R220",
+    "verdict": "valid",
+    "reason": "The table identifies the rounded $13 million, $24 million and $49 million variances as the positive contributions to 2011 utility net revenue, and summing them answers the question."
+  },
+  {
+    "review_id": "R221",
+    "verdict": "valid",
+    "reason": "The Treasury market values are rounded amounts of $2,075 million for 2010 and $2,068 million for 2009, and the calculation correctly measures the change relative to 2009."
+  },
+  {
+    "review_id": "R222",
+    "verdict": "uncertain",
+    "reason": "The $2.8 million numerator covers remediation of previously disposed sites specifically, while the question does not clarify whether it means that subset or remediation of all sites."
+  },
+  {
+    "review_id": "R223",
+    "verdict": "invalid",
+    "reason": "The $516 million input is free cash flow for 2006, whereas the requested 2005-to-2007 change requires the $234 million balance for 2005."
+  },
+  {
+    "review_id": "R224",
+    "verdict": "valid",
+    "reason": "The narrative reports rounded depreciation and amortization expenses of $26.3 million for 2005 and $28.4 million for 2004, and the calculation correctly uses 2004 as the base."
+  }
+]

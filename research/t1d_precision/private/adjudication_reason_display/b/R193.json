@@ -1,0 +1,20 @@
+{
+  "review_id": "R193",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "second",
+      "original_reason": "The calculation uses rounded 2018–2022 estimates, but the question does not clearly identify their five-year sum as the intended total amortization expense.",
+      "display_reason": "The calculation uses rounded 2018–2022 estimates, but the question does not clearly identify their five-year sum as the intended total amortization expense.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "first",
+      "original_reason": "Five table rows are the next five fiscal-year amortization estimates at the 2017 report date; 2019 amount 54 divided by their total matches share of displayed forecast total. No total is independently disclosed.",
+      "display_reason": "Five table rows are the next five fiscal-year amortization estimates at the 2017 report date; 2019 amount 54 divided by their total matches share of displayed forecast total. No total is independently disclosed.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

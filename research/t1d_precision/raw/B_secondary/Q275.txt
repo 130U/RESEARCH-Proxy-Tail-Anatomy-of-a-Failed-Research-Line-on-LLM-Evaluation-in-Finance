@@ -1,0 +1,1 @@
+{"answer":"72.710453284","unit":"percent","expression":"78.6 / 108.1 * 100","low":"72.6306056403","high":"72.7903748265","reliable_digits":"2","explanation":"Allowing each monetary figure to vary by 0.05 million gives these bounds, which support two significant digits."}

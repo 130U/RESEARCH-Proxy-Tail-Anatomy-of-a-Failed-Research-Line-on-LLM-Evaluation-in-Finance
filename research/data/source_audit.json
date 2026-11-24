@@ -1,0 +1,472 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-16T05:44:33.243368+00:00",
+  "source_population": {
+    "records": 120,
+    "jsonl_sha256": "5a9b357c4b979b5e85dc7622e28c5793068baeb67a48abbd218e81e7d8219a0a",
+    "manifest_sha256": "f82e2085fd1b660c4531e9ad117fbf24a20593f525dada15ceffacefaf1c37af",
+    "count_matches_manifest": true,
+    "bytes_match_manifest": true,
+    "hash_matches_manifest": true,
+    "published_date_min": "2011-02-16",
+    "published_date_max": "2025-12-30",
+    "retrieved_at_declared": "2026-10-11T10:39:20.795698+00:00",
+    "candidates_only": true
+  },
+  "selection": {
+    "method": "fixed equally spaced ranks after sorting by published_at,text_sha256",
+    "formula": "rank_i = i*(N-1)//9 for i=0,...,9",
+    "sample_size": 10,
+    "random_sample": false,
+    "population_error_rate_inference": false
+  },
+  "records": [
+    {
+      "audit_id": "FOMC-A01",
+      "sorted_rank_zero_based": 0,
+      "meeting_date": "2011-01-26",
+      "manifest_published_date": "2011-02-16",
+      "release_lag_days": 21,
+      "retrieved_at_declared": "2026-10-11T10:39:20.795698+00:00",
+      "html_decode": "cp1252-fallback",
+      "html_sha256": "7e37b9d3ca578a38cb0d0e93bc00d7de83a59e31c3c7c80de6b5c09843cf0d39",
+      "text_sha256": "fc28ee466d7b38e88d8fccf524076920028db7bd16bca8074330c61fdda1b516",
+      "discovery_sha256": "e789e7fe307bb4ee5df214e968dfad9e6ab84f9fc80c9787ea97e2367e658c17",
+      "html_machine_dates": [],
+      "html_structured_dates": [],
+      "html_last_update_dates": [
+        "2011-02-16"
+      ],
+      "html_direct_release_dates": [],
+      "linked_index_release": {
+        "matching_link_count": 1,
+        "status": "local_release_label",
+        "container": "paragraph",
+        "release_dates": [
+          "2011-02-16"
+        ],
+        "container_link_count": 2,
+        "container_document_identity": "20110126"
+      },
+      "checks": {
+        "html_matches_record_and_manifest": true,
+        "text_matches_record_and_manifest": true,
+        "metadata_record_manifest_agree": true,
+        "discovery_snapshot_hash_matches": true,
+        "linked_release_matches_published": true,
+        "page_update_matches_published": true,
+        "published_after_meeting": true
+      },
+      "historical_byte_version_proven": false,
+      "release_time_of_day_proven": false
+    },
+    {
+      "audit_id": "FOMC-A02",
+      "sorted_rank_zero_based": 13,
+      "meeting_date": "2012-09-13",
+      "manifest_published_date": "2012-10-04",
+      "release_lag_days": 21,
+      "retrieved_at_declared": "2026-10-11T10:39:20.795698+00:00",
+      "html_decode": "utf-8",
+      "html_sha256": "2708b75b6f7b8087241815cd66abe66d5f650780a362834b70fb2a5d76267cba",
+      "text_sha256": "94589dc44dd4fa950446f51e594c9ee3c05c3789603ae70eda6d27f908ec30d3",
+      "discovery_sha256": "37541338b6fb3c7b4cd35d081702def3800b6466fbbe74131303524985a27ff2",
+      "html_machine_dates": [],
+      "html_structured_dates": [],
+      "html_last_update_dates": [
+        "2012-10-04"
+      ],
+      "html_direct_release_dates": [],
+      "linked_index_release": {
+        "matching_link_count": 1,
+        "status": "local_release_label",
+        "container": "paragraph",
+        "release_dates": [
+          "2012-10-04"
+        ],
+        "container_link_count": 2,
+        "container_document_identity": "20120913"
+      },
+      "checks": {
+        "html_matches_record_and_manifest": true,
+        "text_matches_record_and_manifest": true,
+        "metadata_record_manifest_agree": true,
+        "discovery_snapshot_hash_matches": true,
+        "linked_release_matches_published": true,
+        "page_update_matches_published": true,
+        "published_after_meeting": true
+      },
+      "historical_byte_version_proven": false,
+      "release_time_of_day_proven": false
+    },
+    {
+      "audit_id": "FOMC-A03",
+      "sorted_rank_zero_based": 26,
+      "meeting_date": "2014-04-30",
+      "manifest_published_date": "2014-05-21",
+      "release_lag_days": 21,
+      "retrieved_at_declared": "2026-10-11T10:39:20.795698+00:00",
+      "html_decode": "utf-8",
+      "html_sha256": "89796ffe2550460bbbd019a70efb936ac3924e802984c7928cc67cabe85d497c",
+      "text_sha256": "05feb5cdb695648d73d6b897beec9890d6ed7e511f9c8b157fcda51fe9b7a067",
+      "discovery_sha256": "f7884e7ea187da00a29b98e6176e0ef650793c116aa5ab2b244f32779e4c0d02",
+      "html_machine_dates": [],
+      "html_structured_dates": [],
+      "html_last_update_dates": [
+        "2014-05-21"
+      ],
+      "html_direct_release_dates": [],
+      "linked_index_release": {
+        "matching_link_count": 1,
+        "status": "local_release_label",
+        "container": "paragraph",
+        "release_dates": [
+          "2014-05-21"
+        ],
+        "container_link_count": 2,
+        "container_document_identity": "20140430"
+      },
+      "checks": {
+        "html_matches_record_and_manifest": true,
+        "text_matches_record_and_manifest": true,
+        "metadata_record_manifest_agree": true,
+        "discovery_snapshot_hash_matches": true,
+        "linked_release_matches_published": true,
+        "page_update_matches_published": true,
+        "published_after_meeting": true
+      },
+      "historical_byte_version_proven": false,
+      "release_time_of_day_proven": false
+    },
+    {
+      "audit_id": "FOMC-A04",
+      "sorted_rank_zero_based": 39,
+      "meeting_date": "2015-12-16",
+      "manifest_published_date": "2016-01-06",
+      "release_lag_days": 21,
+      "retrieved_at_declared": "2026-10-11T10:39:20.795698+00:00",
+      "html_decode": "utf-8",
+      "html_sha256": "da6b757406a08d9bf67e428a9083ed826fee1f8ff2d9048a38977478ae28c716",
+      "text_sha256": "8e1d8e545f5f66bc4065e29334ae93a0929f042b293c85db5ab673a4fbbfaa4b",
+      "discovery_sha256": "3049655954ed1f375097b700735f992b2746e7dae866dfe4ea5566babf918a2a",
+      "html_machine_dates": [],
+      "html_structured_dates": [],
+      "html_last_update_dates": [
+        "2016-01-06"
+      ],
+      "html_direct_release_dates": [],
+      "linked_index_release": {
+        "matching_link_count": 1,
+        "status": "local_release_label",
+        "container": "paragraph",
+        "release_dates": [
+          "2016-01-06"
+        ],
+        "container_link_count": 2,
+        "container_document_identity": "20151216"
+      },
+      "checks": {
+        "html_matches_record_and_manifest": true,
+        "text_matches_record_and_manifest": true,
+        "metadata_record_manifest_agree": true,
+        "discovery_snapshot_hash_matches": true,
+        "linked_release_matches_published": true,
+        "page_update_matches_published": true,
+        "published_after_meeting": true
+      },
+      "historical_byte_version_proven": false,
+      "release_time_of_day_proven": false
+    },
+    {
+      "audit_id": "FOMC-A05",
+      "sorted_rank_zero_based": 52,
+      "meeting_date": "2017-07-26",
+      "manifest_published_date": "2017-08-16",
+      "release_lag_days": 21,
+      "retrieved_at_declared": "2026-10-11T10:39:20.795698+00:00",
+      "html_decode": "utf-8",
+      "html_sha256": "c008be1d21e0e29363247f088f74b2ae0088f48e78956db58f14a6d1216fb0d5",
+      "text_sha256": "a7f695b3b760c828970d6a4d3bc463afb8e5af4e14b51fa63f7e3a7a47061cc1",
+      "discovery_sha256": "4bbd4fa3f1e7d1a1451b0bfbb6fa50a5f903d6123a7eaa6d39d60d41df6730a5",
+      "html_machine_dates": [],
+      "html_structured_dates": [],
+      "html_last_update_dates": [
+        "2017-08-16"
+      ],
+      "html_direct_release_dates": [],
+      "linked_index_release": {
+        "matching_link_count": 1,
+        "status": "local_release_label",
+        "container": "paragraph",
+        "release_dates": [
+          "2017-08-16"
+        ],
+        "container_link_count": 2,
+        "container_document_identity": "20170726"
+      },
+      "checks": {
+        "html_matches_record_and_manifest": true,
+        "text_matches_record_and_manifest": true,
+        "metadata_record_manifest_agree": true,
+        "discovery_snapshot_hash_matches": true,
+        "linked_release_matches_published": true,
+        "page_update_matches_published": true,
+        "published_after_meeting": true
+      },
+      "historical_byte_version_proven": false,
+      "release_time_of_day_proven": false
+    },
+    {
+      "audit_id": "FOMC-A06",
+      "sorted_rank_zero_based": 66,
+      "meeting_date": "2019-05-01",
+      "manifest_published_date": "2019-05-22",
+      "release_lag_days": 21,
+      "retrieved_at_declared": "2026-10-11T10:39:20.795698+00:00",
+      "html_decode": "utf-8",
+      "html_sha256": "804812706b79c58735207147b620034a8eacbd2ff1f0b325115b270643a31677",
+      "text_sha256": "766dcefa1f469c1a83caba4da9ea80fbcf9e9e4215d28d0c0d2169c98cf83c72",
+      "discovery_sha256": "2537b8c2d797cce7c410afaf2db8146028e95439de7c37a58557002889f75e10",
+      "html_machine_dates": [],
+      "html_structured_dates": [],
+      "html_last_update_dates": [
+        "2019-05-22"
+      ],
+      "html_direct_release_dates": [],
+      "linked_index_release": {
+        "matching_link_count": 1,
+        "status": "local_release_label",
+        "container": "paragraph",
+        "release_dates": [
+          "2019-05-22"
+        ],
+        "container_link_count": 2,
+        "container_document_identity": "20190501"
+      },
+      "checks": {
+        "html_matches_record_and_manifest": true,
+        "text_matches_record_and_manifest": true,
+        "metadata_record_manifest_agree": true,
+        "discovery_snapshot_hash_matches": true,
+        "linked_release_matches_published": true,
+        "page_update_matches_published": true,
+        "published_after_meeting": true
+      },
+      "historical_byte_version_proven": false,
+      "release_time_of_day_proven": false
+    },
+    {
+      "audit_id": "FOMC-A07",
+      "sorted_rank_zero_based": 79,
+      "meeting_date": "2020-12-16",
+      "manifest_published_date": "2021-01-06",
+      "release_lag_days": 21,
+      "retrieved_at_declared": "2026-10-11T10:39:20.795698+00:00",
+      "html_decode": "utf-8",
+      "html_sha256": "cc77de232f5740c17c1257c39cff00c2597cb29083025ebb162ac8c96791632e",
+      "text_sha256": "2611bad09e9264674c4be177bbff8accd7fa668c5e217890cf5d7207a1b4be39",
+      "discovery_sha256": "0949fb4a279e0c553e3fedd160f1337943abf3f49c083315d7927c104e63bcf7",
+      "html_machine_dates": [],
+      "html_structured_dates": [],
+      "html_last_update_dates": [
+        "2021-01-06"
+      ],
+      "html_direct_release_dates": [],
+      "linked_index_release": {
+        "matching_link_count": 1,
+        "status": "local_release_label",
+        "container": "paragraph",
+        "release_dates": [
+          "2021-01-06"
+        ],
+        "container_link_count": 2,
+        "container_document_identity": "20201216"
+      },
+      "checks": {
+        "html_matches_record_and_manifest": true,
+        "text_matches_record_and_manifest": true,
+        "metadata_record_manifest_agree": true,
+        "discovery_snapshot_hash_matches": true,
+        "linked_release_matches_published": true,
+        "page_update_matches_published": true,
+        "published_after_meeting": true
+      },
+      "historical_byte_version_proven": false,
+      "release_time_of_day_proven": false
+    },
+    {
+      "audit_id": "FOMC-A08",
+      "sorted_rank_zero_based": 92,
+      "meeting_date": "2022-07-27",
+      "manifest_published_date": "2022-08-17",
+      "release_lag_days": 21,
+      "retrieved_at_declared": "2026-10-11T10:39:20.795698+00:00",
+      "html_decode": "utf-8",
+      "html_sha256": "eb4f5b1687a1b4b55283b9714108d80ec34129c245634f3d30f4e0111d3c8f0b",
+      "text_sha256": "6631d3c68aba5d9380003ca17f873ac4ac8d35917229d9952d91eb6ccf0c7744",
+      "discovery_sha256": "17d8272a56ffca7be4351f14670e354c18d09220ae16ea911f869d1cdc389232",
+      "html_machine_dates": [],
+      "html_structured_dates": [],
+      "html_last_update_dates": [
+        "2022-08-17"
+      ],
+      "html_direct_release_dates": [],
+      "linked_index_release": {
+        "matching_link_count": 1,
+        "status": "local_release_label",
+        "container": "minutes_div",
+        "release_dates": [
+          "2022-08-17"
+        ],
+        "container_link_count": 2,
+        "container_document_identity": "20220727"
+      },
+      "checks": {
+        "html_matches_record_and_manifest": true,
+        "text_matches_record_and_manifest": true,
+        "metadata_record_manifest_agree": true,
+        "discovery_snapshot_hash_matches": true,
+        "linked_release_matches_published": true,
+        "page_update_matches_published": true,
+        "published_after_meeting": true
+      },
+      "historical_byte_version_proven": false,
+      "release_time_of_day_proven": false
+    },
+    {
+      "audit_id": "FOMC-A09",
+      "sorted_rank_zero_based": 105,
+      "meeting_date": "2024-03-20",
+      "manifest_published_date": "2024-04-10",
+      "release_lag_days": 21,
+      "retrieved_at_declared": "2026-10-11T10:39:20.795698+00:00",
+      "html_decode": "utf-8",
+      "html_sha256": "995ce2e280b594d59c4200cc371993a0b5d67f2a6c3aa9e30617acc24c0ac1b9",
+      "text_sha256": "58ff1605d7b00c432b14aa426d11941c79f45b83a0ec9446218fb15669cde1f5",
+      "discovery_sha256": "17d8272a56ffca7be4351f14670e354c18d09220ae16ea911f869d1cdc389232",
+      "html_machine_dates": [],
+      "html_structured_dates": [],
+      "html_last_update_dates": [
+        "2024-04-10"
+      ],
+      "html_direct_release_dates": [],
+      "linked_index_release": {
+        "matching_link_count": 1,
+        "status": "local_release_label",
+        "container": "minutes_div",
+        "release_dates": [
+          "2024-04-10"
+        ],
+        "container_link_count": 2,
+        "container_document_identity": "20240320"
+      },
+      "checks": {
+        "html_matches_record_and_manifest": true,
+        "text_matches_record_and_manifest": true,
+        "metadata_record_manifest_agree": true,
+        "discovery_snapshot_hash_matches": true,
+        "linked_release_matches_published": true,
+        "page_update_matches_published": true,
+        "published_after_meeting": true
+      },
+      "historical_byte_version_proven": false,
+      "release_time_of_day_proven": false
+    },
+    {
+      "audit_id": "FOMC-A10",
+      "sorted_rank_zero_based": 119,
+      "meeting_date": "2025-12-10",
+      "manifest_published_date": "2025-12-30",
+      "release_lag_days": 20,
+      "retrieved_at_declared": "2026-10-11T10:39:20.795698+00:00",
+      "html_decode": "utf-8",
+      "html_sha256": "c7ffa291eab22a1dcbc06381881e12c603f7ed030631567b5002c0e560b1b67d",
+      "text_sha256": "9deae6333a74c448ce99bb070bf29703c5256cd5f09a118eca9636e9bb3c60b6",
+      "discovery_sha256": "17d8272a56ffca7be4351f14670e354c18d09220ae16ea911f869d1cdc389232",
+      "html_machine_dates": [],
+      "html_structured_dates": [],
+      "html_last_update_dates": [
+        "2025-12-30"
+      ],
+      "html_direct_release_dates": [],
+      "linked_index_release": {
+        "matching_link_count": 1,
+        "status": "local_release_label",
+        "container": "minutes_div",
+        "release_dates": [
+          "2025-12-30"
+        ],
+        "container_link_count": 2,
+        "container_document_identity": "20251210"
+      },
+      "checks": {
+        "html_matches_record_and_manifest": true,
+        "text_matches_record_and_manifest": true,
+        "metadata_record_manifest_agree": true,
+        "discovery_snapshot_hash_matches": true,
+        "linked_release_matches_published": true,
+        "page_update_matches_published": true,
+        "published_after_meeting": true
+      },
+      "historical_byte_version_proven": false,
+      "release_time_of_day_proven": false
+    }
+  ],
+  "rights_document_fingerprints": [
+    {
+      "source_relative_path": "docs/research/expanded_corpus_sources_20261011.md",
+      "sha256": "9f90a42e5f9c933994719f0553a8dba6d32e1eec5f08038606753242d68f3a38"
+    },
+    {
+      "source_relative_path": "docs/research/stance_sources_20261009.md",
+      "sha256": "8b4c4a08801d2dc7607f0d23543c556c58a0745f2cc4bf11b4701f9c51204d8f"
+    },
+    {
+      "source_relative_path": "docs/POST_DOMAIN_NEXT.md",
+      "sha256": "a6da680c863c6ac8451b0e15a441a3524c93adb07de70711b03a6ccde3768c43"
+    },
+    {
+      "source_relative_path": "docs/TASK_REVIEW_NEXT.md",
+      "sha256": "6578698ff1cba6c2786c76572b5dc9a51d45abd2a1269ef7808764d14c48e838"
+    },
+    {
+      "source_relative_path": "docs/REVIEW_WORKSPACE.md",
+      "sha256": "a6897d5f7583bdee55c24fde21c4bf8080c1e5f337eb16910b30f0a1ed78531a"
+    },
+    {
+      "source_relative_path": "docs/ENTITY_SFT_PILOT.md",
+      "sha256": "3229420ecf8420095c8f6ec03007a6c563828b78be93d75ced3f583159205469"
+    },
+    {
+      "source_relative_path": "data/raw/candidates/sentfin/LICENSE",
+      "sha256": "961d32986ac3fa2fe2e55ebc7bbae1ba8d632412e98493d73bdf59f0ad8fc65f"
+    },
+    {
+      "source_relative_path": "runs/task_pilot/entity_v1/task_manifest.json",
+      "sha256": "a9b65b81d5280f43822ebb5456f2b6f6304a70bb84e0f61e284aac0597725840"
+    }
+  ],
+  "summary": {
+    "all_selected_checks_pass": true,
+    "release_matches": 10,
+    "page_update_matches": 10,
+    "machine_date_fields_found": 0,
+    "discovery_snapshots_read": 8,
+    "historical_version_proofs": 0
+  },
+  "limitations": [
+    "Current local declarations only; no historical byte-version proof",
+    "Date resolution does not prove release time or timezone",
+    "Sources and selection collected in 2026; historical selection measurability unknown",
+    "Ten fixed date-spread cases are not a random audit or a population rate estimate",
+    "No source text, title, URL, or individual labels exported; date/hash metadata can still identify public documents"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "elapsed_seconds": 0.341598,
+    "peak_memory_measured": false,
+    "network_requests": 0,
+    "training_tokens": 0,
+    "source_sha256": "96577f6b877e02259cd6a138e7359f574fe0da722abec30b6ceb2777c55e2987"
+  }
+}

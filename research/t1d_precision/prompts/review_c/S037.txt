@@ -1,0 +1,220 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S037",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "note 12 ."
+      },
+      {
+        "location": "text_1",
+        "text": "shareholders 2019 equity accumulated other comprehensive loss : accumulated other comprehensive loss included the following components as of december 31: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "(In millions)",
+          "2009",
+          "2008",
+          "2007"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Foreign currency translation",
+          "$281",
+          "$68",
+          "$331"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Net unrealized loss on hedges of net investments in non-U.S. subsidiaries",
+          "(14)",
+          "(14)",
+          "(15)"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Net unrealized loss on available-for-sale securities",
+          "(1,636)",
+          "(5,205)",
+          "(678)"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Net unrealized loss on fair value hedges of available-for-sale securities",
+          "(113)",
+          "(242)",
+          "(55)"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Losses from other-than-temporary impairment on available-for-sale securities related to factors other than credit",
+          "(159)",
+          "—",
+          "—"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Losses from other-than-temporary impairment on held-to-maturity securities related to factors other than credit",
+          "(387)",
+          "—",
+          "—"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Minimum pension liability",
+          "(192)",
+          "(229)",
+          "(146)"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Net unrealized loss on cash flow hedges",
+          "(18)",
+          "(28)",
+          "(12)"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Total",
+          "$(2,238)",
+          "$(5,650)",
+          "$(575)"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_2",
+        "text": "the net after-tax unrealized loss on available-for-sale securities of $ 1.64 billion and $ 5.21 billion as of december 31 , 2009 and december 31 , 2008 , respectively , included $ 635 million and $ 1.39 billion , respectively , of net after-tax unrealized losses related to securities reclassified from securities available for sale to securities held to maturity ."
+      },
+      {
+        "location": "text_3",
+        "text": "the decrease in the losses related to transfers compared to december 31 , 2008 resulted from amortization and from the recognition of losses from other-than-temporary impairment on certain of the securities ."
+      },
+      {
+        "location": "text_4",
+        "text": "additional information is provided in note 3 ."
+      },
+      {
+        "location": "text_5",
+        "text": "for the year ended december 31 , 2009 , we realized net gains of $ 368 million from sales of available-for-sale securities ."
+      },
+      {
+        "location": "text_6",
+        "text": "unrealized pre-tax gains of $ 46 million were included in other comprehensive income at december 31 , 2008 , net of deferred taxes of $ 18 million , related to these sales ."
+      },
+      {
+        "location": "text_7",
+        "text": "for the year ended december 31 , 2008 , we realized net gains of $ 68 million from sales of available-for-sale securities ."
+      },
+      {
+        "location": "text_8",
+        "text": "unrealized pre-tax gains of $ 71 million were included in other comprehensive income at december 31 , 2007 , net of deferred taxes of $ 28 million , related to these sales ."
+      },
+      {
+        "location": "text_9",
+        "text": "for the year ended december 31 , 2007 , we realized net gains of $ 7 million on sales of available-for-sale securities ."
+      },
+      {
+        "location": "text_10",
+        "text": "unrealized pre-tax losses of $ 32 million were included in other comprehensive income at december 31 , 2006 , net of deferred taxes of $ 13 million , related to these sales ."
+      },
+      {
+        "location": "text_11",
+        "text": "preferred stock : in october 2008 , in connection with the u.s ."
+      },
+      {
+        "location": "text_12",
+        "text": "treasury 2019s capital purchase program , we issued 20000 shares of our series b fixed-rate cumulative perpetual preferred stock , $ 100000 liquidation preference per share , and a warrant to purchase 5576208 shares of our common stock at an exercise price of $ 53.80 per share , to treasury , and received aggregate proceeds of $ 2 billion ."
+      },
+      {
+        "location": "text_13",
+        "text": "the aggregate proceeds were allocated to the preferred stock and the warrant based on their relative fair values on the date of issuance ."
+      },
+      {
+        "location": "text_14",
+        "text": "as a result , approximately $ 1.88 billion and $ 121 million , respectively , were allocated to the preferred stock and the warrant ."
+      },
+      {
+        "location": "text_15",
+        "text": "the difference between the initial value of $ 1.88 billion allocated to the preferred stock and the liquidation amount of $ 2 billion was intended to be charged to retained earnings and credited to the preferred stock over the period that the preferred stock was outstanding , using the effective yield method ."
+      },
+      {
+        "location": "text_16",
+        "text": "for 2008 and 2009 , these charges to retained earnings reduced net income available to common shareholders by $ 4 million and $ 11 million , respectively , and reduced basic and diluted earnings per common share for those periods ."
+      },
+      {
+        "location": "text_17",
+        "text": "these calculations are presented in note 22 ."
+      },
+      {
+        "location": "text_18",
+        "text": "the preferred shares qualified as tier 1 regulatory capital , and paid cumulative quarterly dividends at a rate of 5% ( 5 % ) per year ."
+      },
+      {
+        "location": "text_19",
+        "text": "for 2008 and 2009 , the accrual of dividends on the preferred shares reduced net income available to common shareholders by $ 18 million and $ 46 million , respectively , and reduced basic and diluted earnings per common share for those periods ."
+      },
+      {
+        "location": "text_20",
+        "text": "these calculations are presented in note 22 ."
+      },
+      {
+        "location": "text_21",
+        "text": "the warrant was immediately ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percent change in net unrealized loss on available-for-sale securities between 2008 and 2009?",
+  "human_answer": "-68%",
+  "reference_program": "subtract(-5205, -1636), divide(#0, -1636)",
+  "reference_execution_value": 2.18154,
+  "model_response": {
+    "answer": "-68.57",
+    "unit": "percent",
+    "expression": "(1636 - 5205) / 5205 * 100",
+    "explanation": "Net unrealized losses decreased by approximately 68.57% from 2008 to 2009."
+  }
+}

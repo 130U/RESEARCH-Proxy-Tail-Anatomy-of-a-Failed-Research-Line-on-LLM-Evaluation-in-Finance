@@ -1,0 +1,1 @@
+{"answer":"11.3466334165","unit":"percent","expression":"(802 - 711) / 802 * 100","low":"11.2289457268","high":"11.4641744548","reliable_digits":"2","explanation":"Development costs decreased from 802 million to 711 million; allowing each figure to vary by 0.5 million gives these bounds."}

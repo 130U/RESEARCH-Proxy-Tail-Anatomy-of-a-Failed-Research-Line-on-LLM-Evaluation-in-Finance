@@ -1,0 +1,312 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S002",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "financing activities the decrease in cash used in 2010 relative to 2009 was attributable to a decrease in commercial paper repayments , net of proceeds , proceeds from our share issuance to bm&fbovespa as well as the termination of the nymex securities lending program in 2009 ."
+      },
+      {
+        "location": "text_1",
+        "text": "the decrease was partially offset by the distribution to dow jones of $ 607.5 million related to index services as well as an increase in share repurchases of $ 548.3 million ."
+      },
+      {
+        "location": "text_2",
+        "text": "share repurchases increased in an effort to offset most of the dilution associated with the issuance of shares to bm&fbovespa ."
+      },
+      {
+        "location": "text_3",
+        "text": "the increase in cash used in 2009 relative to 2008 was due to new issuances of debt of $ 2.9 billion in 2008 in conjunction with our merger with nymex holdings compared with net debt reductions of $ 900.1 million in debt instruments ."
+      },
+      {
+        "location": "text_4",
+        "text": "the following table summarizes our debt outstanding as of december 31 , 2010: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "(in millions)",
+          "Par Value"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Term loan due 2011, interest equal to 3-month LIBOR plus 1.00%<sup>(1)</sup>",
+          "$420.5"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Fixed rate notes due August 2013, interest equal to 5.40%",
+          "750.0"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Fixed rate notes due February 2014, interest equal to 5.75%",
+          "750.0"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Fixed rate notes due March 2018, interest equal to 4.40%<sup>(2)</sup>",
+          "612.5"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_5",
+        "text": "fixed rate notes due march 2018 , interest equal to 4.40% ( 4.40 % ) ( 2 ) ."
+      },
+      {
+        "location": "text_6",
+        "text": "."
+      },
+      {
+        "location": "text_7",
+        "text": "."
+      },
+      {
+        "location": "text_8",
+        "text": "."
+      },
+      {
+        "location": "text_9",
+        "text": "."
+      },
+      {
+        "location": "text_10",
+        "text": "."
+      },
+      {
+        "location": "text_11",
+        "text": "."
+      },
+      {
+        "location": "text_12",
+        "text": "."
+      },
+      {
+        "location": "text_13",
+        "text": "."
+      },
+      {
+        "location": "text_14",
+        "text": "."
+      },
+      {
+        "location": "text_15",
+        "text": "."
+      },
+      {
+        "location": "text_16",
+        "text": "."
+      },
+      {
+        "location": "text_17",
+        "text": "."
+      },
+      {
+        "location": "text_18",
+        "text": "."
+      },
+      {
+        "location": "text_19",
+        "text": "."
+      },
+      {
+        "location": "text_20",
+        "text": "."
+      },
+      {
+        "location": "text_21",
+        "text": "."
+      },
+      {
+        "location": "text_22",
+        "text": "."
+      },
+      {
+        "location": "text_23",
+        "text": "."
+      },
+      {
+        "location": "text_24",
+        "text": "."
+      },
+      {
+        "location": "text_25",
+        "text": "."
+      },
+      {
+        "location": "text_26",
+        "text": "."
+      },
+      {
+        "location": "text_27",
+        "text": "."
+      },
+      {
+        "location": "text_28",
+        "text": "."
+      },
+      {
+        "location": "text_29",
+        "text": "."
+      },
+      {
+        "location": "text_30",
+        "text": "."
+      },
+      {
+        "location": "text_31",
+        "text": "."
+      },
+      {
+        "location": "text_32",
+        "text": "."
+      },
+      {
+        "location": "text_33",
+        "text": "."
+      },
+      {
+        "location": "text_34",
+        "text": "."
+      },
+      {
+        "location": "text_35",
+        "text": "."
+      },
+      {
+        "location": "text_36",
+        "text": "."
+      },
+      {
+        "location": "text_37",
+        "text": "."
+      },
+      {
+        "location": "text_38",
+        "text": "."
+      },
+      {
+        "location": "text_39",
+        "text": "612.5 ( 1 ) in september 2008 , the company entered into an interest rate swap agreement that modified the variable interest obligation associated with this loan so that the interest payable effectively became fixed at a rate of 4.72% ( 4.72 % ) beginning with the interest accrued after october 22 , 2008 ."
+      },
+      {
+        "location": "text_40",
+        "text": "the interest rate swap agreement was terminated on january 11 , 2011 when the loan was repaid ."
+      },
+      {
+        "location": "text_41",
+        "text": "( 2 ) in march 2010 , we completed an unregistered offering of fixed rate notes due 2018 ."
+      },
+      {
+        "location": "text_42",
+        "text": "net proceeds from the offering were used to fund a distribution to dow jones in conjunction with our investment in index services ."
+      },
+      {
+        "location": "text_43",
+        "text": "in february 2010 , we entered into a forward-starting interest rate swap agreement that modified the interest obligation associated with these notes so that the interest payable on the notes effectively became fixed at a rate of 4.46% ( 4.46 % ) beginning with the interest accrued after march 18 , 2010 ."
+      },
+      {
+        "location": "text_44",
+        "text": "we maintained a $ 1.4 billion senior credit facility with various financial institutions , including the $ 420.5 million term loan and a $ 945.5 million revolving credit facility ."
+      },
+      {
+        "location": "text_45",
+        "text": "the senior credit facility was terminated on january 11 , 2011 ."
+      },
+      {
+        "location": "text_46",
+        "text": "any commercial paper outstanding was backed by the revolving credit facility ."
+      },
+      {
+        "location": "text_47",
+        "text": "under our senior credit facility , we were required to maintain a consolidated net worth of at least $ 12.1 billion ."
+      },
+      {
+        "location": "text_48",
+        "text": "effective january 11 , 2011 , we entered into a new $ 1.0 billion multi-currency revolving senior credit facility with various financial institutions ."
+      },
+      {
+        "location": "text_49",
+        "text": "the proceeds from the revolving senior credit facility can be used for general corporate purposes , which includes providing liquidity for our clearing house ."
+      },
+      {
+        "location": "text_50",
+        "text": "as long as we are not in default under the new senior credit facility , we have the option to increase the facility from time to time by an aggregate amount of up to $ 1.8 billion with the consent of the agent and lenders providing the additional funds ."
+      },
+      {
+        "location": "text_51",
+        "text": "the new senior credit facility matures in january 2014 and is voluntarily prepayable from time to time without premium or penalty ."
+      },
+      {
+        "location": "text_52",
+        "text": "under our new credit facility , we are required to remain in compliance with a consolidated net worth test , as defined as our consolidated shareholders 2019 equity as of september 30 , 2010 , giving effect to share repurchases made and special dividends paid during the term of the agreement ( and in no event greater than $ 2.0 billion in aggregate ) , multiplied by 0.65 ."
+      },
+      {
+        "location": "text_53",
+        "text": "we maintain a 364-day fully secured , committed line of credit with a consortium of domestic and international banks to be used in certain situations by our clearing house ."
+      },
+      {
+        "location": "text_54",
+        "text": "we may use the proceeds to provide temporary liquidity in the unlikely event of a clearing firm default , in the event of a liquidity constraint or default by a depositary ( custodian for our collateral ) , or in the event of a temporary disruption with the domestic payments system that would delay payment of settlement variation between us and our clearing firms ."
+      },
+      {
+        "location": "text_55",
+        "text": "clearing firm guaranty fund contributions received in the form of u.s ."
+      },
+      {
+        "location": "text_56",
+        "text": "treasury securities , government agency securities or ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the ratio of the increase in cash in 2009 due to the insurance of debt compared to the reduction of debt instruments",
+  "human_answer": "3.22",
+  "reference_program": "divide(2.9, 900.1)",
+  "reference_execution_value": 0.00322,
+  "model_response": {
+    "answer": "3.2218642373",
+    "unit": "times",
+    "expression": "2900 / 900.1",
+    "explanation": "Debt issuances of $2,900 million divided by debt reductions of $900.1 million give the ratio."
+  }
+}
+
+TWO SOURCE INTERPRETATIONS TO CONSIDER
+The order is random. Evaluate these reasons against the supplied source and give your own judgment using the same JSON schema. Their order carries no priority.
+[
+  "Reference definitely omits billion-to-million conversion, and model correctly forms the disclosed cross-year amount ratio. However, the question attributes the issuance to 2009 while the document assigns 2.9 billion to 2008. a correct dimensional calculation cannot establish an answer for a year whose issuance value is absent.",
+  "Text 3 compares $2.9 billion of debt issuances in 2008 with $900.1 million of net debt reductions when explaining the 2009 cash-use change. The model correctly converts the numerator to $2,900 million before dividing by $900.1 million. The reference omits this unit conversion."
+]

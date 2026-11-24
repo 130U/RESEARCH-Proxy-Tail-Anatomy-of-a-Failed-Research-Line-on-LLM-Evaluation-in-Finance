@@ -1,0 +1,22 @@
+{
+  "finqa": {
+    "change_question_denominator": 3265,
+    "matched_questions": 5,
+    "official_disagree": 5,
+    "official_rate": 0.0015313935681470138,
+    "relative_1pct_disagree": 2,
+    "printed_precision_disagree": 0,
+    "human_display_disagree": 2,
+    "recomputation_pass_and_print_fail": 5
+  },
+  "tatqa": {
+    "change_question_denominator": 4524,
+    "matched_questions": 51,
+    "official_disagree": 16,
+    "official_rate": 0.0035366931918656055,
+    "relative_1pct_disagree": 5,
+    "printed_precision_disagree": 0,
+    "human_display_disagree": 0,
+    "recomputation_pass_and_print_fail": 16
+  }
+}

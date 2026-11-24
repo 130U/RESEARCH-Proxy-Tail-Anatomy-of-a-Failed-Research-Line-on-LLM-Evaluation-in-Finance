@@ -1,0 +1,1 @@
+{"answer":"50.0341155794","unit":"percent","expression":"(217692 - 145095) / 145095 * 100","low":"50.0332539603","high":"50.0349772045","reliable_digits":"4","explanation":"Allowing each income figure to vary by 0.5 thousand gives these bounds, which agree when rounded to four significant digits."}

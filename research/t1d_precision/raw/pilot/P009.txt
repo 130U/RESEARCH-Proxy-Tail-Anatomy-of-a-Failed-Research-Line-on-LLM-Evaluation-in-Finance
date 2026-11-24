@@ -1,0 +1,1 @@
+{"answer":"55.99886007409518","unit":"percent","expression":"(3930 / 7018) * 100","low":"55.98774666951628","high":"56.00997506234414","reliable_digits":"3","explanation":"Allowing each revenue figure to vary by $0.5 million gives these bounds, which both round to 56.0% at three significant digits."}

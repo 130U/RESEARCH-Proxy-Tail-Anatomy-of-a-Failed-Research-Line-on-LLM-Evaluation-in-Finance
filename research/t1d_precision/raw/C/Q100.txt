@@ -1,0 +1,1 @@
+{"answer":"-2.796390835","unit":"percent","expression":"(109669 - 112824) / 112824 * 100","low":"-2.797264778","high":"-2.795516891","reliable_digits":"3","explanation":"Risk-weighted assets decreased by about 2.80%; the bounds allow each reported asset value to vary by $0.5 million."}

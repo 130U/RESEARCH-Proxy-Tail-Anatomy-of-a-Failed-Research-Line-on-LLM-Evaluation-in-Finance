@@ -1,0 +1,1 @@
+{"answer":"-7.32984293193717","unit":"percent","expression":"(17.7 - 19.1) / 19.1 * 100","low":"-7.83289817232376","high":"-6.82414698162730","reliable_digits":"0","explanation":"Charges and net losses decreased from $19.1 million to $17.7 million; rounding uncertainty makes even the first significant digit unreliable."}

@@ -1,0 +1,1 @@
+{"answer":"6.59","unit":"USD per share","expression":"31.16 - 24.57","low":"6.58","high":"6.60","reliable_digits":"2","explanation":"Each price is rounded to the nearest cent, so the difference has rounding uncertainty of up to $0.01 per share."}

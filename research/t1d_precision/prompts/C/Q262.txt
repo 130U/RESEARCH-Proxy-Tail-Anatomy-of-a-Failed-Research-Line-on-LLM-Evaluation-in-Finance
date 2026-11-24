@@ -1,0 +1,55 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+table of contents seasonality our business experiences seasonality that varies by product line .
+because more construction and do-it-yourself projects occur during the second and third calendar quarters of each year in the northern hemisphere , our security product sales , typically , are higher in those quarters than in the first and fourth calendar quarters .
+however , our interflex business typically experiences higher sales in the fourth calendar quarter due to project timing .
+revenue by quarter for the years ended december 31 , 2015 , 2014 and 2013 are as follows: .
+
+TABLE
+ | First Quarter | Second Quarter | Third Quarter | Fourth Quarter
+2015 | 22% | 25% | 26% | 27%
+2014 | 22% | 25% | 26% | 27%
+2013 | 23% | 26% | 26% | 25%
+
+2015 fourth quarter revenue includes the full-quarter impact of the acquisitions of simonsvoss , axa and milre .
+employees as of december 31 , 2015 , we had more than 9400 employees , approximately 26% ( 26 % ) of whom have the terms of their employment covered under collective bargaining agreements .
+this includes non-management european employees who are represented by national and local works councils .
+environmental regulation we have a dedicated environmental program that is designed to reduce the utilization and generation of hazardous materials during the manufacturing process as well as to remediate identified environmental concerns .
+as to the latter , we are currently engaged in site investigations and remediation activities to address environmental cleanup from past operations at current and former manufacturing facilities .
+we are sometimes a party to environmental lawsuits and claims and have received notices of potential violations of environmental laws and regulations from the u.s .
+environmental protection agency ( the "epa" ) and similar state authorities .
+we have also been identified as a potentially responsible party ( "prp" ) for cleanup costs associated with off-site waste disposal at federal superfund and state remediation sites .
+for all such sites , there are other prps and , in most instances , our involvement is minimal .
+in estimating our liability , we have assumed that we will not bear the entire cost of remediation of any site to the exclusion of other prps who may be jointly and severally liable .
+the ability of other prps to participate has been taken into account , based on our understanding of the parties 2019 financial condition and probable contributions on a per site basis .
+additional lawsuits and claims involving environmental matters are likely to arise from time to time in the future .
+we incurred $ 4.4 million , $ 2.9 million , and $ 2.1 million of expenses during the years ended december 31 , 2015 , 2014 , and 2013 , respectively , for environmental remediation at sites presently or formerly owned or leased by us .
+as of december 31 , 2015 and 2014 , we have recorded reserves for environmental matters of $ 15.2 million and $ 8.8 million .
+of these amounts $ 2.8 million and $ 2.4 million , respectively , relate to remediation of sites previously disposed by us .
+given the evolving nature of environmental laws , regulations and technology , the ultimate cost of future compliance is uncertain .
+available information we are required to file annual , quarterly , and current reports , proxy statements , and other documents with the u.s .
+securities and exchange commission ( "sec" ) .
+the public may read and copy any materials filed with the sec at the sec 2019s public reference room at 100 f street , n.e. , washington , d.c .
+20549 .
+the public may obtain information on the operation of the public reference room by calling the sec at 1-800-sec-0330 .
+also , the sec maintains an internet website that contains reports , proxy and information statements , and other information regarding issuers that file electronically with the sec .
+the public can obtain any documents that are filed by us at http://www.sec.gov .
+in addition , this annual report on form 10-k , as well as future quarterly reports on form 10-q , current reports on form 8-k and any amendments to all of the foregoing reports , are made available free of charge on our internet website ( http://www.allegion.com ) as soon as reasonably practicable after such reports are electronically filed with or furnished to the sec .
+the contents of our website are not incorporated by reference in this report. .
+
+QUESTION
+considering the year 2014 , what are the variation between the expenses for environmental remediation at sites and the reserves environmental matters , in millions?

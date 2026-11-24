@@ -1,0 +1,1 @@
+{"answer":"51.2210316471","unit":"percent","expression":"411.1 / 802.6 * 100","low":"51.2116115368","high":"51.2304529313","reliable_digits":"3","explanation":"Allowing for rounding in goodwill and total net assets gives these bounds, which both round to 51.2 percent at three significant digits."}

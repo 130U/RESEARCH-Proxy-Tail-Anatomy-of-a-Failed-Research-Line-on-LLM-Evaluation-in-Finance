@@ -1,0 +1,214 @@
+[
+  {
+    "call_id": "Q125",
+    "fields": [
+      "primary_cause"
+    ],
+    "root": {
+      "call_id": "Q125",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Source explicitly gives the projected cost increase without hedges as 104 million and with hedges as 87 million. Model measures the reduction caused by hedging relative to the unhedged counterfactual, (104-87)/104. Gold divides by the already-hedged amount 87, measuring a different baseline. Identical inputs; no rounding source was substituted."
+    },
+    "independent": {
+      "call_id": "Q125",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "For a $1/barrel crude-price increase, forecast 2014 fuel-expense sensitivity is $104 million without hedges and $87 million with hedges. The model explicitly measures the $17 million reduction relative to the unhedged $104 million baseline, a reasonable meaning of the broadly worded percentage effect. The reference instead expresses the difference relative to the hedged $87 million sensitivity."
+    },
+    "final": {
+      "call_id": "Q125",
+      "reviewer": "root adjudication after group-blind source_early review",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "Adopt the independent review's more cautious classification. The question asks broadly for the percentage effect of hedges, without fixing a percentage-reduction baseline. Model measures the 104-to-87 sensitivity reduction against 104; reference measures the difference against 87. Both denominators are identifiable, and ambiguity is more defensible than a definite reference-error claim. Original root and independent judgments are retained."
+    },
+    "adjudicated": true
+  },
+  {
+    "call_id": "Q182",
+    "fields": [
+      "formula_valid"
+    ],
+    "root": {
+      "call_id": "Q182",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "primary_cause": "unresolved",
+      "formula_valid": false,
+      "alternative_precision_used": false,
+      "reason": "The 127.1 year-end balance already consists of unrecognized tax benefits. Model instead adds 70.4 of related interest and penalties, a different quantity from the question. Gold adds 108.7 and 138.0, the effective-tax-rate-benefiting portions of 2018 and 2017 balances, to the 2018 balance, combining years and double-counting portions. The hypothetical is ill-defined in the excerpt; neither expression establishes the requested counterfactual, and the disagreement is not due to precision."
+    },
+    "independent": {
+      "call_id": "Q182",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "alternative_precision_used": false,
+      "reason": "The $127.1 million September 30, 2018 ending balance already consists of gross unrecognized tax benefits, so asking its increase if those benefits were included is contradictory. The model's 70.4/127.1 correctly measures adding the separately excluded $70.4 million interest and penalties, but the question does not name them. The reference adds $108.7 million and $138.0 million effective-tax-rate-related subsets from different years, which is unsupported. No unique intended increase is established."
+    },
+    "final": {
+      "call_id": "Q182",
+      "reviewer": "root adjudication after group-blind source_early review",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "alternative_precision_used": false,
+      "reason": "The unrecognized-tax-benefit balance already contains the category the question asks to add. Model computes addition of separately excluded interest and penalties, whereas reference combines benefit subsets across years. Neither interpretation is uniquely established. Adopt null formula validity rather than a definitive false judgment because the requested counterfactual itself is contradictory."
+    },
+    "adjudicated": true
+  },
+  {
+    "call_id": "Q297",
+    "fields": [
+      "primary_cause",
+      "formula_valid"
+    ],
+    "root": {
+      "call_id": "Q297",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "The financing-cash-flow comparison describes debt issuance of 2.9 billion (in 2008) and debt reductions of 900.1 million. Model harmonizes units and takes the requested ratio of these amounts, 2900/900.1, consistent with human 3.22. Gold divides 2.9 by 900.1 without conversion. The question's 2009 wording is loose relative to the issuance year, but the definite numeric mismatch is the missing unit conversion, not rounding.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false
+    },
+    "independent": {
+      "call_id": "Q297",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "alternative_precision_used": false,
+      "reason": "The narrative identifies $2.9 billion of new debt issuance in 2008 and $900.1 million of net debt reductions in the 2009 comparison, whereas the question attributes issuance-related cash increases to 2009. The model correctly converts the disclosed issuance amount to $2,900 million and computes the cross-year ratio 2900/900.1; the reference fails to convert billions to millions. However, the excerpt provides no 2009 issuance figure, so that ratio cannot be confirmed as answering the literal requested year."
+    },
+    "final": {
+      "call_id": "Q297",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "reason": "Reference definitely omits billion-to-million conversion, and model correctly forms the disclosed cross-year amount ratio. However, the question attributes the issuance to 2009 while the document assigns 2.9 billion to 2008. Adopt the independent review's unresolved classification: a correct dimensional calculation cannot establish an answer for a year whose issuance value is absent.",
+      "reviewer": "root adjudication after group-blind source_early review",
+      "alternative_precision_used": false
+    },
+    "adjudicated": true
+  },
+  {
+    "call_id": "Q329",
+    "fields": [
+      "primary_cause"
+    ],
+    "root": {
+      "call_id": "Q329",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "Source gives July/August 2018 repayments of 2.7 billion and December 2018 debt carrying value 31.2 billion. Model explicitly computes repayment as a percentage of that December carrying value, named in the question. Gold adds the repayment to December carrying value before forming the share, using a different reconstructed denominator. The text also says new June notes financed repayments, so ending debt plus repayments does not uniquely establish pre-repayment debt. The wording permits the model's stated comparison; no precision difference.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false
+    },
+    "independent": {
+      "call_id": "Q329",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "The narrative reports $2.7 billion of senior-note repayments in July and August 2018 and a $31.2 billion total-debt carrying value at December 29, 2018. The model explicitly uses that December carrying-value denominator, giving 2.7/31.2=8.65385%. The reference adds the repayments to the December balance, producing an undisclosed $33.9 billion denominator. That reconstruction is unsupported, particularly because the source states that new June notes funded most of the repayments."
+    },
+    "final": {
+      "call_id": "Q329",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "Adopt the independent review after rechecking the explicitly named December carrying value. The document supplies 31.2 billion for that denominator. Adding repaid 2.7 creates an undisclosed 33.9 measure; new June borrowing financed the repayment, so the addition cannot be treated as an established starting debt balance. Model correctly uses the named December amount.",
+      "reviewer": "root adjudication after group-blind source_final_a review",
+      "alternative_precision_used": false
+    },
+    "adjudicated": true
+  },
+  {
+    "call_id": "Q361",
+    "fields": [
+      "primary_cause",
+      "formula_valid"
+    ],
+    "root": {
+      "call_id": "Q361",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "Source reports a regulatory liability of 107 million, 66 million net of tax, implying a 41 million tax component. Model forms the requested regulatory-liability-to-tax-component ratio 107/41. Reference instead divides the tax component by the net-of-tax amount, 41/66, a different ratio. The tax component should not be confused with total company tax liabilities, but it is the only tax amount inferable for this transaction.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false
+    },
+    "independent": {
+      "call_id": "Q361",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "alternative_precision_used": false,
+      "reason": "For October 2015, the excerpt discloses a $107 million regulatory liability with a $66 million net-of-tax amount. Their $41 million difference is an implied tax effect, but the excerpt does not identify a $41 million tax liability. The model's 107/(107-66) is arithmetically a gross-regulatory-liability-to-tax-effect ratio; its assertion that the denominator is tax liability is unverified. The reference instead divides that tax effect by the net-of-tax amount, also not the stated ratio."
+    },
+    "final": {
+      "call_id": "Q361",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "reason": "Adopt the independent review: 107 minus 66 establishes a 41 million tax effect, not a separately established tax liability. Model computes a defensible gross-to-tax-effect ratio but labels the tax effect as liability; reference computes a different ratio. The literal requested liability ratio is not established by the excerpt.",
+      "reviewer": "root adjudication after group-blind source_final_a review",
+      "alternative_precision_used": false
+    },
+    "adjudicated": true
+  },
+  {
+    "call_id": "Q385",
+    "fields": [
+      "formula_valid"
+    ],
+    "root": {
+      "call_id": "Q385",
+      "primary_cause": "unresolved",
+      "formula_valid": null,
+      "reason": "The 7.75% expected-return rate is explicitly for the U.S. qualified plan, while international plans have varying rates from 3.00% to 8.25%. The 47.0 million expected return is stated for pension plans collectively. Model divides that aggregate by the U.S.-only rate, whose applicability to total assets is not established. Reference uses the 1.7 million expense sensitivity to a 25-basis-point change but divides by the level 7.75%, not the 0.25-point perturbation. Neither expression establishes total plan assets without additional scope assumptions; this is not source-precision disagreement.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false
+    },
+    "independent": {
+      "call_id": "Q385",
+      "primary_cause": "unresolved",
+      "formula_valid": false,
+      "alternative_precision_used": false,
+      "reason": "The fiscal 2008 expected return of $47.0 million refers to the pension plans collectively, whereas 7.75% applies only to the U.S. qualified plan; international-plan rates range from 3.00% to 8.25%. The model's 47/0.0775 therefore mixes scopes and cannot establish total plan assets. The $1.7 million expense sensitivity to a 25-basis-point rate change could imply an approximately $680 million return-calculation base, but the excerpt does not identify that base as actual total assets at a specified 2008 date. The reference also incorrectly treats the $1.7 million sensitivity as expected return and divides by 7.75%."
+    },
+    "final": {
+      "call_id": "Q385",
+      "primary_cause": "unresolved",
+      "formula_valid": false,
+      "reason": "Retain unresolved total-asset identification, but adopt a false formula-validity flag: dividing all-plan expected return by the U.S.-only rate mixes explicitly different scopes. The sensitivity table may identify a return-calculation base under further assumptions, not a uniquely established total-asset balance for the requested date. The reference is also unsupported.",
+      "reviewer": "root adjudication after group-blind source_final_a review",
+      "alternative_precision_used": false
+    },
+    "adjudicated": true
+  },
+  {
+    "call_id": "Q316",
+    "fields": [
+      "primary_cause"
+    ],
+    "root": {
+      "call_id": "Q316",
+      "primary_cause": "reference_error",
+      "formula_valid": true,
+      "reason": "Question requests a summary of environmental reserves at December 31, 2011, without asking for a percentage. Table gives direct 271, assumed 39, London 57, ceded -47, and net 320. Model explicitly reports the net total and reconstructs it correctly. Gold computes a percentage comparison of net 320 to direct 271, which is not requested. The excerpt shows dollar symbols but omits any magnitude header; no external monetary scale is inferred.",
+      "reviewer": "root analysis agent; separate from blind solver",
+      "alternative_precision_used": false
+    },
+    "independent": {
+      "call_id": "Q316",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "alternative_precision_used": false,
+      "reason": "The December 31, 2011 environmental-reserves table lists Direct 271, Assumed Reinsurance 39 and London Market 57, for gross Total 367, less Ceded 47 to produce Net 320. Reporting this net total is a reasonable response to the vague request for a summary; the model's addition and subtraction match the table. The reference's (320 - 271)/271 compares net total with gross direct reserves without a requested percentage comparison. The excerpt does not supply a monetary scale multiplier, so the model's literal 'dollars' label cannot be independently verified."
+    },
+    "final": {
+      "call_id": "Q316",
+      "primary_cause": "reasonable_alternative",
+      "formula_valid": true,
+      "reason": "Adopt the independent review: the question vaguely asks for a summary, so a correctly reconstructed net-reserve total is a reasonable single-number interpretation. The reference percentage is not requested, but the vague target does not justify asserting one uniquely required summary measure. Source monetary magnitude is not independently supplied.",
+      "reviewer": "root adjudication after group-blind source_final_b review",
+      "alternative_precision_used": false
+    },
+    "adjudicated": true
+  }
+]

@@ -1,0 +1,1 @@
+{"answer":"93.3012048193","unit":"index points","expression":"(88 / 83) * 88","low":"91.6916167665","high":"94.9363636364","reliable_digits":"1","explanation":"Assuming the 2008-to-2009 proportional increase repeats into 2010, the bounds are 87.5*87.5/83.5 and 88.5*88.5/82.5."}

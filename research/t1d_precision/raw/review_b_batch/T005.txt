@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R065",
+    "verdict": "valid",
+    "reason": "Despite the misleading 2003 binding context, the cells contain the rounded 2004 fair value of $1,770 million and carrying amount of $1,702 million, whose difference is $68 million."
+  },
+  {
+    "review_id": "R066",
+    "verdict": "valid",
+    "reason": "The rounded year-end liabilities are $99 million for 2008 and $110 million for 2007, and the program correctly measures their relative change against 2007."
+  },
+  {
+    "review_id": "R067",
+    "verdict": "invalid",
+    "reason": "The program divides $2.9 billion by $900.1 million without aligning units, and the source places the debt issuance in 2008 rather than 2009."
+  },
+  {
+    "review_id": "R068",
+    "verdict": "valid",
+    "reason": "The source pairs 2018's rounded aggregate cost of $45 million with a rounded scaled count of 0.6 million repurchased shares, yielding the average dollars paid per share."
+  },
+  {
+    "review_id": "R069",
+    "verdict": "valid",
+    "reason": "The bound 1.24% and 0.78% are measured daily weighted average rates for 2017 and 2016, and using 2016 as the denominator correctly measures relative change."
+  },
+  {
+    "review_id": "R070",
+    "verdict": "valid",
+    "reason": "The bound $34 million, $23 million and $13 million are rounded estimated pipeline and storage capacity payments for 2003–2005, and their sum answers the three-year total in millions."
+  },
+  {
+    "review_id": "R071",
+    "verdict": "valid",
+    "reason": "The rounded S&P 500 investment values of $63.00 and $79.67 correspond to year-end 2008 and 2009, and their change divided by the 2008 value correctly measures total investment return."
+  },
+  {
+    "review_id": "R072",
+    "verdict": "valid",
+    "reason": "The source identifies rounded interest-and-penalty liabilities of $77 million in 2018 and $55 million in 2017, and the program correctly uses the 2017 liability as its growth denominator."
+  },
+  {
+    "review_id": "R073",
+    "verdict": "valid",
+    "reason": "The rounded combined rent and office equipment expenses are $132 million for 2014 and $137 million for 2013, and the program correctly calculates growth relative to 2013."
+  },
+  {
+    "review_id": "R074",
+    "verdict": "valid",
+    "reason": "The table binds rounded additions charged to expense of 29.7 for 2012 and 21.0 for 2011 in matching monetary units, and the program correctly measures change against 2011."
+  },
+  {
+    "review_id": "R075",
+    "verdict": "valid",
+    "reason": "The 2015 restructuring programs row reports rounded termination benefits of $5,009 thousand and a total of $6,304 thousand, making their ratio the requested portion."
+  },
+  {
+    "review_id": "R076",
+    "verdict": "valid",
+    "reason": "The reported aggregate facility amounts support rounding, and converting the $1.4 billion senior facility to millions before dividing $945.5 million by it gives the requested estimated share."
+  },
+  {
+    "review_id": "R077",
+    "verdict": "valid",
+    "reason": "The rounded service operations earnings of $35.1 million and $32.8 million correspond to 2001 and 2000, and the program correctly measures their increase relative to 2000."
+  },
+  {
+    "review_id": "R078",
+    "verdict": "invalid",
+    "reason": "The bound $875 million fair value and $848 million carrying amount concern 2004, whereas the question requests a difference for 2014."
+  },
+  {
+    "review_id": "R079",
+    "verdict": "invalid",
+    "reason": "The $1.7 million input is the pension expense sensitivity to a 25-basis-point decrease, not expected investment income that can be divided by the 7.75% return assumption to obtain assets."
+  },
+  {
+    "review_id": "R080",
+    "verdict": "uncertain",
+    "reason": "The rounded $2.2 and $4.1 vested-stock fair values match 2018 and 2017, but the question leaves monetary versus percentage decrease unspecified while the program returns relative change."
+  }
+]

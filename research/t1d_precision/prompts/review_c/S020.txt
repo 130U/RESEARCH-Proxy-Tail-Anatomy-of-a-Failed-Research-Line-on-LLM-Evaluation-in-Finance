@@ -1,0 +1,188 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S020",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "american tower corporation and subsidiaries notes to consolidated financial statements 2014 ( continued ) the 7.50% ( 7.50 % ) notes mature on may 1 , 2012 and interest is payable semi-annually in arrears on may 1 and november 1 each year beginning may 1 , 2004 ."
+      },
+      {
+        "location": "text_1",
+        "text": "the company may redeem the 7.50% ( 7.50 % ) notes after may 1 , 2008 ."
+      },
+      {
+        "location": "text_2",
+        "text": "the initial redemption price on the 7.50% ( 7.50 % ) notes is 103.750% ( 103.750 % ) of the principal amount , subject to a ratable decline after may 1 of the following year to 100% ( 100 % ) of the principal amount in 2010 and thereafter ."
+      },
+      {
+        "location": "text_3",
+        "text": "the company may also redeem up to 35% ( 35 % ) of the 7.50% ( 7.50 % ) notes any time prior to february 1 , 2007 ( at a price equal to 107.50% ( 107.50 % ) of the principal amount of the notes plus accrued and unpaid interest , if any ) , with the net cash proceeds of certain public equity offerings within sixty days after the closing of any such offering ."
+      },
+      {
+        "location": "text_4",
+        "text": "the 7.50% ( 7.50 % ) notes rank equally with the 5.0% ( 5.0 % ) convertible notes and its 93 20448% ( 20448 % ) notes and are structurally and effectively junior to indebtedness outstanding under the credit facilities , the ati 12.25% ( 12.25 % ) notes and the ati 7.25% ( 7.25 % ) notes ."
+      },
+      {
+        "location": "text_5",
+        "text": "the indenture for the 7.50% ( 7.50 % ) notes contains certain covenants that restrict the company 2019s ability to incur more debt ; guarantee indebtedness ; issue preferred stock ; pay dividends ; make certain investments ; merge , consolidate or sell assets ; enter into transactions with affiliates ; and enter into sale leaseback transactions ."
+      },
+      {
+        "location": "text_6",
+        "text": "6.25% ( 6.25 % ) notes redemption 2014in february 2004 , the company completed the redemption of all of its outstanding $ 212.7 million principal amount of 6.25% ( 6.25 % ) notes ."
+      },
+      {
+        "location": "text_7",
+        "text": "the 6.25% ( 6.25 % ) notes were redeemed pursuant to the terms of the indenture at 102.083% ( 102.083 % ) of the principal amount plus unpaid and accrued interest ."
+      },
+      {
+        "location": "text_8",
+        "text": "the total aggregate redemption price was $ 221.9 million , including $ 4.8 million in accrued interest ."
+      },
+      {
+        "location": "text_9",
+        "text": "the company will record a charge of $ 7.1 million in the first quarter of 2004 from the loss on redemption and write-off of deferred financing fees ."
+      },
+      {
+        "location": "text_10",
+        "text": "other debt repurchases 2014from january 1 , 2004 to march 11 , 2004 , the company repurchased $ 36.2 million principal amount of its 5.0% ( 5.0 % ) notes for approximately $ 36.1 million in cash and made a $ 21.0 million voluntary prepayment of term loan a under its credit facilities ."
+      },
+      {
+        "location": "text_11",
+        "text": "giving effect to the issuance of the 7.50% ( 7.50 % ) notes and the use of the net proceeds to redeem all of the outstanding 6.25% ( 6.25 % ) notes ; repurchases of $ 36.2 million principal amount of the 5.0% ( 5.0 % ) notes ; and a voluntary prepayment of $ 21.0 million of the term a loan under the credit facilities ; the company 2019s aggregate principal payments of long- term debt , including capital leases , for the next five years and thereafter are as follows ( in thousands ) : year ending december 31 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "2004",
+          "$73,684"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2005",
+          "109,435"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2006",
+          "145,107"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2007",
+          "688,077"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "2008",
+          "808,043"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Thereafter",
+          "1,875,760"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Total cash obligations",
+          "3,700,106"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Accreted value of original issue discount of the ATI 12.25% Notes",
+          "(339,601)"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Accreted value of the related warrants",
+          "(44,247)"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Total",
+          "$3,316,258"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_12",
+        "text": "atc mexico holding 2014in january 2004 , mr ."
+      },
+      {
+        "location": "text_13",
+        "text": "gearon exercised his previously disclosed right to require the company to purchase his 8.7% ( 8.7 % ) interest in atc mexico ."
+      },
+      {
+        "location": "text_14",
+        "text": "giving effect to the january 2004 exercise of options described below , the company owns an 88% ( 88 % ) interest in atc mexico , which is the subsidiary through which the company conducts its mexico operations ."
+      },
+      {
+        "location": "text_15",
+        "text": "the purchase price for mr ."
+      },
+      {
+        "location": "text_16",
+        "text": "gearon 2019s interest in atc mexico is subject to review by an independent financial advisor , and is payable in cash or shares of the company 2019s class a common stock , at the company 2019s option ."
+      },
+      {
+        "location": "text_17",
+        "text": "the company intends to pay the purchase price in shares of its class a common stock , and closing is expected to occur in the second quarter of 2004 ."
+      },
+      {
+        "location": "text_18",
+        "text": "in addition , the company expects that payment of a portion of the purchase price will be contingent upon atc mexico meeting certain performance objectives. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the interest rate on the redeemed 6.25 notes in 2004",
+  "human_answer": "2.3%",
+  "reference_program": "divide(4.8, 212.7)",
+  "reference_execution_value": 0.02257,
+  "model_response": {
+    "answer": "6.25",
+    "unit": "percent",
+    "expression": "6.25 * 1",
+    "explanation": "The notes redeemed in February 2004 carried a 6.25% interest rate."
+  }
+}

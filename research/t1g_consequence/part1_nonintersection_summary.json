@@ -1,0 +1,12 @@
+{
+  "n_numeric": 2839,
+  "nonintersection": 286,
+  "sample_n": 50,
+  "sample_categories": {
+    "negative_base_convention": 20,
+    "adjusted_basis": 21,
+    "reversed_change_direction": 6,
+    "unexplained_or_source_error": 3
+  },
+  "remaining_comparable_nonintersection": 127
+}

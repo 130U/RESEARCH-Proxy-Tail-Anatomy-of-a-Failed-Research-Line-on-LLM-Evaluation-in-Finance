@@ -1,0 +1,1 @@
+{"answer":"34.914611","unit":"percent","expression":"(711 - 527) / 527 * 100","low":"34.691943","high":"35.137702","reliable_digits":"2","explanation":"Each liability is rounded to the nearest million, so using opposite rounding extremes gives the bounds and supports two significant digits."}

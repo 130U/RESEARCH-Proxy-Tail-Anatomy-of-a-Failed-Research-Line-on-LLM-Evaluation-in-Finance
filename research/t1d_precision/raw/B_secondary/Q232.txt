@@ -1,0 +1,1 @@
+{"answer":"0.84375","unit":"ratio","expression":"54 / 64","low":"0.8294573643410853","high":"0.8582677165354331","reliable_digits":"0","explanation":"The 2019-to-2018 ratio uses rounded amounts, and its possible range crosses the one-significant-digit rounding boundary of 0.85."}

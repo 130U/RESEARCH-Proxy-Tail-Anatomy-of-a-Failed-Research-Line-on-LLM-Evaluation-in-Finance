@@ -1,0 +1,1 @@
+{"answer":"17.8125","unit":"percent","expression":"(57 / 320) * 100","low":"17.62870514820593","high":"17.99687010954617","reliable_digits":"2","explanation":"Dividing reported London Market reserves by total net reserves gives this percentage; allowing ±0.5 rounding in each figure yields bounds that both round to 18% at two significant digits."}

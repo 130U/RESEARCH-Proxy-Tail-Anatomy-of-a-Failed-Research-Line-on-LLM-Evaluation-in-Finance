@@ -1,0 +1,7 @@
+{
+    "call_id": "S022",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_1 reports amortization expense of $77 million in 2016 and $75 million in 2017. Using the 2016 denominator of $77 million, (77−75)/77×100 validly expresses the positive decline magnitude; the reference expresses the signed change."
+  }

@@ -1,0 +1,1 @@
+{"answer":"4781374","unit":"thousand dollars","expression":"760,000 + 857,679 + 898,500 + 960,764 + 1,304,431","low":"4781371.5","high":"4781376.5","reliable_digits":"5","explanation":"Each maturity has rounding uncertainty of 0.5 thousand dollars, giving total uncertainty of 2.5 thousand dollars and five consistently rounded significant digits."}

@@ -1,0 +1,249 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R088",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "power purchase contracts dominion has entered into contracts for long-term purchases of capacity and energy from other utilities , qualifying facilities and independent power producers ."
+      },
+      {
+        "location": "text_1",
+        "text": "as of december 31 , 2002 , dominion had 42 non-utility purchase contracts with a com- bined dependable summer capacity of 3758 megawatts ."
+      },
+      {
+        "location": "text_2",
+        "text": "the table below reflects dominion 2019s minimum commitments as of december 31 , 2002 under these contracts. ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Commitment"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "(millions)",
+          "Capacity",
+          "Other"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2003",
+          "$643",
+          "$44"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2004",
+          "635",
+          "29"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "2005",
+          "629",
+          "22"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "2006",
+          "614",
+          "18"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "2007",
+          "589",
+          "11"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Later years",
+          "5,259",
+          "113"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Total",
+          "8,369",
+          "237"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Present value of the total",
+          "$4,836",
+          "$140"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_3",
+        "text": "capacity and other purchases under these contracts totaled $ 691 million , $ 680 million and $ 740 million for 2002 , 2001 and 2000 , respectively ."
+      },
+      {
+        "location": "text_4",
+        "text": "in 2001 , dominion completed the purchase of three gener- ating facilities and the termination of seven long-term power purchase contracts with non-utility generators ."
+      },
+      {
+        "location": "text_5",
+        "text": "dominion recorded an after-tax charge of $ 136 million in connection with the purchase and termination of long-term power purchase contracts ."
+      },
+      {
+        "location": "text_6",
+        "text": "cash payments related to the purchase of three gener- ating facilities totaled $ 207 million ."
+      },
+      {
+        "location": "text_7",
+        "text": "the allocation of the pur- chase price was assigned to the assets and liabilities acquired based upon estimated fair values as of the date of acquisition ."
+      },
+      {
+        "location": "text_8",
+        "text": "substantially all of the value was attributed to the power pur- chase contracts which were terminated and resulted in a charge included in operation and maintenance expense ."
+      },
+      {
+        "location": "text_9",
+        "text": "fuel purchase commitments dominion enters into long-term purchase commitments for fuel used in electric generation and natural gas for purposes other than trading ."
+      },
+      {
+        "location": "text_10",
+        "text": "estimated payments under these commitments for the next five years are as follows : 2003 2014$ 599 million ; 2004 2014$ 311 million ; 2005 2014$ 253 million ; 2006 2014$ 205 mil- lion ; 2007 2014$ 89 million ; and years beyond 2007 2014$ 215 mil- lion ."
+      },
+      {
+        "location": "text_11",
+        "text": "these purchase commitments include those required for regulated operations ."
+      },
+      {
+        "location": "text_12",
+        "text": "dominion recovers the costs of those pur- chases through regulated rates ."
+      },
+      {
+        "location": "text_13",
+        "text": "the natural gas purchase com- mitments of dominion 2019s field services operations are also included , net of related sales commitments ."
+      },
+      {
+        "location": "text_14",
+        "text": "in addition , dominion has committed to purchase certain volumes of nat- ural gas at market index prices determined in the period the natural gas is delivered ."
+      },
+      {
+        "location": "text_15",
+        "text": "these transactions have been designated as normal purchases and sales under sfas no ."
+      },
+      {
+        "location": "text_16",
+        "text": "133 ."
+      },
+      {
+        "location": "text_17",
+        "text": "natural gas pipeline and storage capacity commitments dominion enters into long-term commitments for the purchase of natural gas pipeline and storage capacity for purposes other than trading ."
+      },
+      {
+        "location": "text_18",
+        "text": "estimated payments under these commitments for the next five years are as follows : 2003 2014$ 34 million ; 2004 2014$ 23 million ; 2005 2014$ 13 million ."
+      },
+      {
+        "location": "text_19",
+        "text": "there were no signifi- cant commitments beyond 2005 ."
+      },
+      {
+        "location": "text_20",
+        "text": "production handling and firm transportation commitments in connection with its gas and oil production operations , dominion has entered into certain transportation and produc- tion handling agreements with minimum commitments expected to be paid in the following years : 2003 2014$ 23 million ; 2004 2014$ 57 million ; 2005 2014$ 56 million ; 2006 2014$ 53 million ; 2007 2014$ 44 million ; and years after 2007 2014$ 68 million ."
+      },
+      {
+        "location": "text_21",
+        "text": "lease commitments dominion leases various facilities , vehicles , aircraft and equip- ment under both operating and capital leases ."
+      },
+      {
+        "location": "text_22",
+        "text": "future minimum lease payments under operating and capital leases that have initial or remaining lease terms in excess of one year as of december 31 , 2002 are as follows : 2003 2014$ 94 million ; 2004 2014 $ 94 million ; 2005 2014$ 82 million ; 2006 2014$ 67 million ; 2007 2014 $ 62 million ; and years beyond 2007 2014$ 79 million ."
+      },
+      {
+        "location": "text_23",
+        "text": "rental expense included in other operations and maintenance expense was $ 84 million , $ 75 million and $ 107 million for 2002 , 2001 , and 2000 , respectively ."
+      },
+      {
+        "location": "text_24",
+        "text": "as of december 31 , 2002 , dominion , through certain sub- sidiaries , has entered into agreements with special purpose enti- ties ( lessors ) in order to finance and lease several new power generation projects , as well as its corporate headquarters and air- craft ."
+      },
+      {
+        "location": "text_25",
+        "text": "the lessors have an aggregate financing commitment from equity and debt investors of $ 2.2 billion , of which $ 1.6 billion has been used for total project costs to date ."
+      },
+      {
+        "location": "text_26",
+        "text": "dominion , in its role as construction agent for the lessors , is responsible for com- pleting construction by a specified date ."
+      },
+      {
+        "location": "text_27",
+        "text": "in the event a project is terminated before completion , dominion has the option to either purchase the project for 100 percent of project costs or terminate the project and make a payment to the lessor of approximately but no more than 89.9 percent of project costs ."
+      },
+      {
+        "location": "text_28",
+        "text": "upon completion of each individual project , dominion has use of the project assets subject to an operating lease ."
+      },
+      {
+        "location": "text_29",
+        "text": "dominion 2019s lease payments to the lessors are sufficient to provide a return to the investors ."
+      },
+      {
+        "location": "text_30",
+        "text": "at the end of each individual project 2019s lease term , dominion may renew the lease at negotiated amounts based on project costs and current market conditions , subject to investors 2019 approval ; purchase the project at its original construction cost ; or sell the project , on behalf of the lessor , to an independent third party ."
+      },
+      {
+        "location": "text_31",
+        "text": "if the project is sold and the proceeds from the sale are insufficient to repay the investors , dominion may be required to make a payment to the lessor up to an amount rang- ing from 81 percent to 85 percent of the project cost depending 85d o m i n i o n 2019 0 2 a n n u a l r e p o r t ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the growth rate in rental expense included in other operations and maintenance expense in 2001 compare to 2000?",
+  "reference_program": "subtract(75, 107), divide(#0, 107)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "75",
+      "raw": "75",
+      "location": "text_23:88",
+      "context": "rental expense included in other operations and maintenance expense was $ 84 million , $ 75 million and $ 107 million for 2002 , 2001 , and 2000 , respectively ."
+    },
+    "x1": {
+      "program_token": "107",
+      "raw": "107",
+      "location": "text_23:105",
+      "context": "rental expense included in other operations and maintenance expense was $ 84 million , $ 75 million and $ 107 million for 2002 , 2001 , and 2000 , respectively ."
+    }
+  }
+}

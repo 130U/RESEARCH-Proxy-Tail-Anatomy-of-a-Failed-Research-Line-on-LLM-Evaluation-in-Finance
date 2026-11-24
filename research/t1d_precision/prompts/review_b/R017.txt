@@ -1,0 +1,170 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R017",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "american tower corporation and subsidiaries notes to consolidated financial statements 2014 ( continued ) 12 ."
+      },
+      {
+        "location": "text_1",
+        "text": "impairments , net loss on sale of long-lived assets , restructuring and merger related expense the significant components reflected in impairments , net loss on sale of long-lived assets , restructuring and merger related expense in the accompanying consolidated statements of operations include the following : impairments and net loss on sale of long-lived assets 2014during the years ended december 31 , 2005 , 2004 and 2003 , the company recorded impairments and net loss on sale of long-lived assets ( primarily related to its rental and management segment ) of $ 19.1 million , $ 22.3 million and $ 28.3 million , respectively ."
+      },
+      {
+        "location": "text_2",
+        "text": "2022 non-core asset impairment charges 2014during the years ended december 31 , 2005 and 2004 respectively , the company sold a limited number of non-core towers and other non-core assets and recorded impairment charges to write-down these and other non-core assets to net realizable value ."
+      },
+      {
+        "location": "text_3",
+        "text": "during the year ended december 31 , 2003 , the company sold approximately 300 non-core towers and certain other non-core assets and recorded impairment charges to write-down these and other non-core assets to net realizable value ."
+      },
+      {
+        "location": "text_4",
+        "text": "as a result , the company recorded impairment charges and net losses of approximately $ 16.8 million , $ 17.7 million and $ 19.1 million for the years ended december 31 , 2005 , 2004 and 2003 , respectively ."
+      },
+      {
+        "location": "text_5",
+        "text": "2022 construction-in-progress impairment charges 2014for the year ended december 31 , 2005 , 2004 and 2003 , the company wrote-off approximately $ 2.3 million , $ 4.6 million and $ 9.2 million , respectively , of construction-in-progress costs , primarily associated with sites that it no longer planned to build ."
+      },
+      {
+        "location": "text_6",
+        "text": "restructuring expense 2014during the year ended december 31 , 2005 , the company made cash payments against its previous accrued restructuring liability in the amount of $ 0.8 million ."
+      },
+      {
+        "location": "text_7",
+        "text": "during the year ended december 31 , 2004 , the company incurred employee separation costs of $ 0.8 million and decreased its lease terminations and other facility closing costs liability by $ 0.1 million ."
+      },
+      {
+        "location": "text_8",
+        "text": "during the year ended december 31 , 2003 , the company incurred employee separation costs primarily associated with a reorganization of certain functions within its rental and management segment and increased its accrued restructuring liability by $ 2.3 million ."
+      },
+      {
+        "location": "text_9",
+        "text": "such charges are reflected in impairments , net loss on sale of long-lived assets , restructuring and merger related expense in the accompanying consolidated statement of operations for the years ended december 31 , 2004 and 2003 ."
+      },
+      {
+        "location": "text_10",
+        "text": "the following table displays activity with respect to the accrued restructuring liability for the years ended december 31 , 2003 , 2004 and 2005 ( in thousands ) ."
+      },
+      {
+        "location": "text_11",
+        "text": "the accrued restructuring liability is reflected in accounts payable and accrued expenses in the accompanying consolidated balance sheets as of december 31 , 2005 and liability january 1 , restructuring expense payments liability as december 31 , restructuring expense payments liability december 31 , restructuring expense payments liability december 31 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Liability as of January 1, 2003",
+          "2003 Restructuring Expense",
+          "2003 Cash Payments",
+          "Liability as of December 31, 2003",
+          "2004 Restructuring Expense",
+          "2004 Cash Payments",
+          "Liability as of December 31, 2004",
+          "2005 Restructuring Expense",
+          "2005 Cash Payments",
+          "Liability as of December 31, 2005"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Employee separations",
+          "$1,639",
+          "$1,919",
+          "$(1,319)",
+          "$2,239",
+          "$823",
+          "$(2,397)",
+          "$665",
+          "$84",
+          "$(448)",
+          "$301"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Lease terminations and other facility closing costs",
+          "1,993",
+          "347",
+          "(890)",
+          "1,450",
+          "(131)",
+          "(888)",
+          "431",
+          "12",
+          "(325)",
+          "118"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Total",
+          "$3,632",
+          "$2,266",
+          "$(2,209)",
+          "$3,689",
+          "$692",
+          "$(3,285)",
+          "$1,096",
+          "$96",
+          "$(773)",
+          "$419"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_12",
+        "text": "there were no material changes in estimates related to this accrued restructuring liability during the year ended december 31 , 2005 ."
+      },
+      {
+        "location": "text_13",
+        "text": "the company expects to pay the balance of these employee separation liabilities prior to the end of 2006 ."
+      },
+      {
+        "location": "text_14",
+        "text": "additionally , the company continues to negotiate certain lease terminations associated with this restructuring liability ."
+      },
+      {
+        "location": "text_15",
+        "text": "merger related expense 2014during the year ended december 31 , 2005 , the company assumed certain obligations , as a result of the merger with spectrasite , inc. , primarily related to employee separation costs of former ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the percentage change in impairment charges and net losses from 2004 to 2005?",
+  "reference_program": "subtract(16.8, 17.7), divide(#0, 17.7)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "16.8",
+      "raw": "16.8",
+      "location": "text_4:87",
+      "context": "as a result , the company recorded impairment charges and net losses of approximately $ 16.8 million , $ 17.7 million and $ 19.1 million for the years ended december 31 , 2005 , 2004 and 2003 , respectively ."
+    },
+    "x1": {
+      "program_token": "17.7",
+      "raw": "17.7",
+      "location": "text_4:104",
+      "context": "as a result , the company recorded impairment charges and net losses of approximately $ 16.8 million , $ 17.7 million and $ 19.1 million for the years ended december 31 , 2005 , 2004 and 2003 , respectively ."
+    }
+  }
+}

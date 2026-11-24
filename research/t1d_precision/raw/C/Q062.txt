@@ -1,0 +1,1 @@
+{"answer":"29.4573643411","unit":"percent","expression":"(38 / 129) * 100","low":"28.9575289575","high":"29.9610894942","reliable_digits":"1","explanation":"Allowing ±0.5 million for each rounded figure gives bounds of (37.5 / 129.5) * 100 and (38.5 / 128.5) * 100."}

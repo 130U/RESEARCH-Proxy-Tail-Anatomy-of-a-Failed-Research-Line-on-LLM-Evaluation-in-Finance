@@ -1,0 +1,1 @@
+{"answer":"1.639058","unit":"percent","expression":"(5,829 - 5,735) / 5,735 * 100","low":"1.621480","high":"1.656641","reliable_digits":"1","explanation":"Allowing each revenue figure to vary by $0.5 million gives these bounds and one reliable significant digit."}

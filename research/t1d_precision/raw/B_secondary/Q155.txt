@@ -1,0 +1,1 @@
+{"answer":"9.5829636202307","unit":"percent","expression":"10.8 / 112.7 * 100","low":"9.53436807095344","high":"9.63160230803373","reliable_digits":"1","explanation":"Stock issue costs divided by net proceeds gives this percentage; rounding permits the stated range, leaving one significant digit reliable."}

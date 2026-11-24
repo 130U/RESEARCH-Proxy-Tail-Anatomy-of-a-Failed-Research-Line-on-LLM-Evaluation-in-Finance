@@ -1,0 +1,1 @@
+{"answer":"16.6144200626959","unit":"percent","expression":"(37.2 - 31.9) / 31.9 * 100","low":"16.2754303599374","high":"16.9544740973312","reliable_digits":"1","explanation":"Accrued interest liability increased from $31.9 million to $37.2 million, with bounds reflecting rounding to the nearest $0.1 million."}

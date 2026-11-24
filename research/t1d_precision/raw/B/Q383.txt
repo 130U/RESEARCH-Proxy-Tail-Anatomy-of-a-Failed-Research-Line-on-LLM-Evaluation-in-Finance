@@ -1,0 +1,1 @@
+{"answer":"-4.3645960211","unit":"percent","expression":"(4,711 - 4,926) / 4,926 * 100","low":"-4.3844514361","high":"-4.3447365750","reliable_digits":"1","explanation":"Allowing each balance to vary by 0.5 million gives this range, which rounds consistently only to one significant digit."}

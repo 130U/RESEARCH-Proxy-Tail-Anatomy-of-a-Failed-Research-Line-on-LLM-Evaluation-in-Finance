@@ -1,0 +1,1 @@
+{"answer":"1.086134454","unit":"ratio","expression":"517 / 476","low":"1.083945435","high":"1.088328076","reliable_digits":"2","explanation":"The reported contributions combine U.S. and international pension plans; the bounds use $0.5 million rounding uncertainty for each amount."}

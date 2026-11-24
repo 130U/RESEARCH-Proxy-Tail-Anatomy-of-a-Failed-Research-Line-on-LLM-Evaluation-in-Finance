@@ -1,0 +1,7 @@
+{
+    "call_id": "S053",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Rows 1 and 2 report May 31, 2015 after-tax losses of $36.5 million and gains of $7.7 million. The model explicitly calculates the loss-magnitude ratio using $7.7 million as denominator; the reference retains the loss's negative accounting sign."
+  }

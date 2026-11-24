@@ -1,0 +1,1 @@
+{"answer":"-3.6320333433","unit":"percent","expression":"(323.7 - 335.9) / 335.9 * 100","low":"-3.6612591159","high":"-3.6027988685","reliable_digits":"1","explanation":"Basic weighted average shares decreased; allowing each displayed share figure to vary by 0.05 million gives these bounds."}

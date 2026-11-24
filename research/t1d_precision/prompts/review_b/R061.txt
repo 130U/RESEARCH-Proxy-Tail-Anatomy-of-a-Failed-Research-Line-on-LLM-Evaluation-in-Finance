@@ -1,0 +1,125 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R061",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "performance graph the table below compares the cumulative total shareholder return on our common stock with the cumulative total return of ( i ) the standard & poor 2019s 500 composite stock index ( 201cs&p 500 index 201d ) , ( ii ) the standard & poor 2019s industrials index ( 201cs&p industrials index 201d ) and ( iii ) the standard & poor 2019s consumer durables & apparel index ( 201cs&p consumer durables & apparel index 201d ) , from december 31 , 2007 through december 31 , 2012 , when the closing price of our common stock was $ 16.66 ."
+      },
+      {
+        "location": "text_1",
+        "text": "the graph assumes investments of $ 100 on december 31 , 2007 in our common stock and in each of the three indices and the reinvestment of dividends ."
+      },
+      {
+        "location": "text_2",
+        "text": "performance graph 2007 2008 2009 2010 2011 2012 s&p 500 index s&p industrials index s&p consumer durables & apparel index the table below sets forth the value , as of december 31 for each of the years indicated , of a $ 100 investment made on december 31 , 2007 in each of our common stock , the s&p 500 index , the s&p industrials index and the s&p consumer durables & apparel index and includes the reinvestment of dividends. ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2008",
+          "2009",
+          "2010",
+          "2011",
+          "2012"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Masco",
+          "$55.78",
+          "$71.52",
+          "$67.12",
+          "$52.15",
+          "$92.49"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "S&P 500 Index",
+          "$63.45",
+          "$79.90",
+          "$91.74",
+          "$93.67",
+          "$108.55"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "S&P Industrials Index",
+          "$60.60",
+          "$72.83",
+          "$92.04",
+          "$91.50",
+          "$105.47"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "S&P Consumer Durables & Apparel Index",
+          "$66.43",
+          "$90.54",
+          "$118.19",
+          "$127.31",
+          "$154.72"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_3",
+        "text": "in july 2007 , our board of directors authorized the purchase of up to 50 million shares of our common stock in open-market transactions or otherwise ."
+      },
+      {
+        "location": "text_4",
+        "text": "at december 31 , 2012 , we had remaining authorization to repurchase up to 24 million shares ."
+      },
+      {
+        "location": "text_5",
+        "text": "during the first quarter of 2012 , we repurchased and retired one million shares of our common stock , for cash aggregating $ 8 million to offset the dilutive impact of the 2012 grant of one million shares of long-term stock awards ."
+      },
+      {
+        "location": "text_6",
+        "text": "we have not purchased any shares since march 2012. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "as of december 2012 what was the ratio of the percent of the outstanding shares of the authorized repurchase of the company common stock",
+  "reference_program": "divide(24, 50)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "24",
+      "raw": "24",
+      "location": "text_4:75",
+      "context": "at december 31 , 2012 , we had remaining authorization to repurchase up to 24 million shares ."
+    },
+    "x1": {
+      "program_token": "50",
+      "raw": "50",
+      "location": "text_3:71",
+      "context": "in july 2007 , our board of directors authorized the purchase of up to 50 million shares of our common stock in open-market transactions or otherwise ."
+    }
+  }
+}

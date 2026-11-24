@@ -1,0 +1,45 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+visa inc .
+notes to consolidated financial statements 2014 ( continued ) september 30 , 2008 ( in millions , except as noted ) volume and support incentives the company has agreements with customers for various programs designed to build sales volume and increase the acceptance of its payment products .
+these agreements , with original terms ranging from one to thirteen years , provide card issuance , marketing and program support based on specific performance requirements .
+these agreements are designed to encourage customer business and to increase overall visa-branded payment volume , thereby reducing unit transaction processing costs and increasing brand awareness for all visa customers .
+payments made and obligations incurred under these programs are included on the company 2019s consolidated balance sheets .
+the company 2019s obligation under these customer agreements will be amortized as a reduction to revenue in the same period as the related revenues are earned , based on management 2019s estimate of the customer 2019s performance compared to the terms of the incentive agreement .
+the agreements may or may not limit the amount of customer incentive payments .
+excluding anticipated revenue to be earned from higher payments and transaction volumes in connection with these agreements , the company 2019s potential exposure under agreements with and without limits to incentive payments , is estimated as follows at september 30 , 2008 : fiscal ( in millions ) volume and support incentives .
+
+TABLE
+Fiscal (in millions) | Volume and Support Incentives
+2009 | $1,088
+2010 | 1,105
+2011 | 945
+2012 | 798
+2013 | 1,005
+Thereafter | 3
+Total | $4,944
+
+the ultimate amounts to be paid under these agreements may be greater than or less than the estimates above .
+based on these agreements , increases in the incentive payments are generally driven by increased payment and transaction volume , and as a result , in the event incentive payments exceed this estimate such payments are not expected to have a material effect on the company 2019s financial condition , results of operations or cash flows .
+indemnification under framework agreement in connection with the framework agreement entered into between visa inc .
+and visa europe , visa europe indemnifies visa inc .
+for any claims arising out of the provision of the services brought by visa europe 2019s member banks against visa inc. , while visa inc .
+indemnifies visa europe for any claims arising out of the provision of the services brought against visa europe by visa inc . 2019s customer financial institutions .
+based on current known facts , the company assessed the probability of loss in the future as remote .
+consequently , the estimated maximum probability-weighted liability is considered insignificant and no liability has been accrued .
+for further information with respect to the company 2019s commitments and contingencies also see note 4 2014visa europe , note 5 2014retrospective responsibility plan , note 11 2014debt , note 13 2014settlement guarantee management and note 23 2014legal matters. .
+
+QUESTION
+in september 2008 what was the percent of the total volume and support incentives that was due in 2009

@@ -1,0 +1,7 @@
+{
+    "call_id": "S015",
+    "primary_cause": "unresolved",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "For December 31, 2011, rows 2–7 support net reserves of 271 + 39 + 57 - 47 = 320 in the table's monetary scale. The question does not specify a metric or request the reference's comparison of net 320 with direct 271 using denominator 271. The net-reserve formula is valid, but the excerpt does not establish the dollar scale."
+  }

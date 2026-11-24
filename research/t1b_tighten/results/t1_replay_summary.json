@@ -1,0 +1,17 @@
+{
+  "n_all": 1147,
+  "baseline": {
+    "witnessed_outside": 196,
+    "excluded": 416,
+    "certified_inside": 532,
+    "unresolved": 3
+  },
+  "review_verdicts": {
+    "valid": 139,
+    "uncertain": 20,
+    "invalid": 37
+  },
+  "n_original_witnesses": 196,
+  "n_semantically_eligible": 139,
+  "scope": "T1 source/parser re-run all1147; semantic corrections reviewed for196 original positives only; no extrapolation to other951."
+}

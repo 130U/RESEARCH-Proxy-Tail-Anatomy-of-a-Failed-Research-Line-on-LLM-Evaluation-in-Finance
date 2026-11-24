@@ -1,0 +1,1 @@
+{"answer":"38.6","unit":"times","expression":"19.3 / 0.5","low":"35","high":"43","reliable_digits":"1","explanation":"Both amounts are in millions; rounding gives bounds of 19.25 / 0.55 and 19.35 / 0.45, supporting one reliable significant digit."}

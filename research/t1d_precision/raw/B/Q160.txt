@@ -1,0 +1,1 @@
+{"answer":"-65.0479416114","unit":"percent","expression":"(7327 - 20963) / 20963 * 100","low":"-65.0511603501","high":"-65.0447227191","reliable_digits":"2","explanation":"Liabilities decreased by approximately 65%; allowing each displayed liability to vary by 0.5 thousand leaves two significant digits consistently rounded across the range."}

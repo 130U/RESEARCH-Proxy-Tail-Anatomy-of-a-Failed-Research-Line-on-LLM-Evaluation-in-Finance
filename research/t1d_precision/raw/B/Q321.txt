@@ -1,0 +1,1 @@
+{"answer":"-22.58064516129032","unit":"percent","expression":"(24 - 31) / 31 * 100","low":"-25.39682539682540","high":"-19.67213114754098","reliable_digits":"0","explanation":"Each balance is rounded to the nearest billion, producing these bounds and leaving no significant digit reliable."}

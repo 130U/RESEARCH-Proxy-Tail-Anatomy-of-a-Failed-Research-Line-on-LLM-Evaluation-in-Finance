@@ -1,0 +1,1 @@
+{"answer":"34.9217638691","unit":"percent","expression":"(1473 / 4218) * 100","low":"34.9057721939","high":"34.9377593361","reliable_digits":"3","explanation":"The 2013 payment is the current portion; the bounds allow each displayed amount to vary by 0.5 thousand dollars."}

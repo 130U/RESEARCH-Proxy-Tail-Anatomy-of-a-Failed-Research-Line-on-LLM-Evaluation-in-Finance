@@ -1,0 +1,1 @@
+{"answer":"1.616915422885572","unit":"ratio","expression":"(1.3 * 1000) / 804","low":"1.553760099440646","high":"1.680149346608587","reliable_digits":"1","explanation":"Converting billions to millions, the rounding bounds give a minimum of 1250/804.5 and a maximum of 1350/803.5, supporting one reliable significant digit."}

@@ -1,0 +1,7 @@
+{
+    "call_id": "S023",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 1 reports average borrowings falling from $850 in 2016 to $779 in 2017, with the monetary scale unstated in the excerpt. The model uses the correct 2016 denominator of 850 and reports the positive percentage decrease; the reference reports the signed change."
+  }

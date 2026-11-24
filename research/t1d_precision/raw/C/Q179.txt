@@ -1,0 +1,1 @@
+{"answer":"12.30","unit":"USD per share","expression":"52.25 - 39.95","low":"12.29","high":"12.31","reliable_digits":"3","explanation":"Each price can vary by $0.005, so their difference can vary by $0.01."}

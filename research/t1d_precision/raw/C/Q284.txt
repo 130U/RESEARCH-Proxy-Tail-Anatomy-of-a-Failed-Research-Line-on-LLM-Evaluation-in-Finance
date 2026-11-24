@@ -1,0 +1,1 @@
+{"answer":"18.95620876","unit":"percent","expression":"(1983 - 1667) / 1667 * 100","low":"18.89055472","high":"19.02190219","reliable_digits":"2","explanation":"Allowing each balance to vary by 0.5 million gives these bounds and supports two reliable significant digits."}

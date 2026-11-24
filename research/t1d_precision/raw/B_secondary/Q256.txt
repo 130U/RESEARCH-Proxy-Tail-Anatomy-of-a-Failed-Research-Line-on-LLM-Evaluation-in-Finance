@@ -1,0 +1,1 @@
+{"answer":"10.789473684210526","unit":"percent","expression":"(42.1 - 38) / 38 * 100","low":"9.22077922077922","high":"12.4","reliable_digits":"0","explanation":"Allowing for rounding, the amounts range from 42.05 to 42.15 million in 2010 and 37.5 to 38.5 million in 2009, so even the first significant digit is uncertain."}

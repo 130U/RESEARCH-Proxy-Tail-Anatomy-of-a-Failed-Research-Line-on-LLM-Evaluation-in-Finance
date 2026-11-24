@@ -1,0 +1,1 @@
+{"answer":"150","unit":"percent","expression":"(10 - 4) / 4 * 100","low":"111.1111111111","high":"200","reliable_digits":"0","explanation":"Each reserve can vary by $0.5 million, giving bounds of (9.5 - 4.5) / 4.5 * 100 and (10.5 - 3.5) / 3.5 * 100; no significant digit is reliable."}

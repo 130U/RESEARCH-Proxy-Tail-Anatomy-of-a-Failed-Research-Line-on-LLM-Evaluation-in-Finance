@@ -1,0 +1,7 @@
+{
+    "call_id": "S010",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 1 gives $70.5 million at the beginning of 2007, and row 8 gives $214.4 million at the end of 2008. 'During 2007 and 2008' reasonably permits the model's combined two-year increase. The reference compares the 2007 and 2008 ending balances, $126.6 million and $214.4 million. No denominator is needed."
+  }

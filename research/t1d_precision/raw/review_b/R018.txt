@@ -1,0 +1,5 @@
+{
+    "review_id": "R018",
+    "verdict": "valid",
+    "reason": "The table reports rounded 2006 amounts in millions, and adding expense of 155, payments of −141 and currency revaluation of 4 correctly gives the net liability change."
+  }

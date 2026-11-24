@@ -1,0 +1,6 @@
+__pycache__/
+packets_*.json
+review_packets_*.txt
+results/*_partial.json
+results/*_partial.jsonl
+duplicate_negative_candidates_*.json

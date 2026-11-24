@@ -1,0 +1,1 @@
+{"answer":"50685","unit":"million dollars","expression":"51052 - 367","low":"50684","high":"50686","reliable_digits":"3","explanation":"Subtracting the $367 million classified as corporate stocks and other gives a rounding range whose values agree to three significant digits."}

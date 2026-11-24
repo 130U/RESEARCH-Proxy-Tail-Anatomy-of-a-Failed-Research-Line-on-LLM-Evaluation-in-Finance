@@ -1,0 +1,1 @@
+{"answer":"-26.0663507109","unit":"percent","expression":"(15.6 - 21.1) / 21.1 * 100","low":"-26.4775413712","high":"-25.6532066508","reliable_digits":"2","explanation":"Expenses decreased; allowing each displayed expense to vary by 0.05 million gives these bounds, which both round to -26 percent."}

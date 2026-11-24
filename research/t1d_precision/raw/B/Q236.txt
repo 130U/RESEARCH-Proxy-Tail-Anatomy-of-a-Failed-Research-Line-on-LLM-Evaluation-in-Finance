@@ -1,0 +1,1 @@
+{"answer":"83.09741881765196","unit":"percent","expression":"(2199 - 1201) / 1201 * 100","low":"82.97960882230545","high":"83.21532694710537","reliable_digits":"2","explanation":"The operating result deteriorated as the loss increased; allowing each displayed loss to vary by $0.5 million gives these bounds and two reliable significant digits."}

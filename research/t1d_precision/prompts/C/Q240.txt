@@ -1,0 +1,30 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+stock total return performance the following graph compares our total return to stockholders with the returns of the standard & poor 2019s composite 500 index ( 201cs&p 500 201d ) and the dow jones us select health care providers index ( 201cpeer group 201d ) for the five years ended december 31 , 2014 .
+the graph assumes an investment of $ 100 in each of our common stock , the s&p 500 , and the peer group on december 31 , 2009 , and that dividends were reinvested when paid. .
+
+TABLE
+ | 12/31/2009 | 12/31/2010 | 12/31/2011 | 12/31/2012 | 12/31/2013 | 12/31/2014
+HUM | $100 | $125 | $201 | $160 | $244 | $342
+S&P 500 | $100 | $115 | $117 | $136 | $180 | $205
+Peer Group | $100 | $112 | $123 | $144 | $198 | $252
+
+the stock price performance included in this graph is not necessarily indicative of future stock price performance .
+table of contents .
+
+QUESTION
+what was the percent of the change in the stock price performance for hum from 2010 to 2011

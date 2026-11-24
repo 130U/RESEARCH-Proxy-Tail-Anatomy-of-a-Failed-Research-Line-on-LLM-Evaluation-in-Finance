@@ -1,0 +1,5 @@
+{
+    "review_id": "R028",
+    "verdict": "valid",
+    "reason": "The source binds $42.1 million to 2010 and $38 million to 2009 as aggregate notional amounts, and the calculation correctly measures their relative increase."
+  }

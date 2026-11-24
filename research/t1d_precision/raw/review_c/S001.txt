@@ -1,0 +1,7 @@
+{
+    "call_id": "S001",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 1 reports 2010 employee-related costs of $105 million and total restructuring costs of $156 million. The model reasonably uses the 2010 total as denominator. The reference instead uses $190 million, the employee-related total across 2010–2011 in row 3; the question permits the model's reading."
+  }

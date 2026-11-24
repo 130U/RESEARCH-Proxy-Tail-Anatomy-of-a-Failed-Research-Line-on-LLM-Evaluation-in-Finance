@@ -1,0 +1,1 @@
+{"answer":"27.30119992","unit":"percent","expression":"(46984 / 172095) * 100","low":"27.30083006","high":"27.30156978","reliable_digits":"4","explanation":"Divide the 2012 non-U.S. dollar amount by the total; allowing each input to vary by 0.5 million gives these bounds."}

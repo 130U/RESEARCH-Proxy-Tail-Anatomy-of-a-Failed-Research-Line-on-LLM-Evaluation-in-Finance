@@ -1,0 +1,264 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R118",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "we have an option to purchase the class a interests for consideration equal to the then current capital account value , plus any unpaid preferred return and the prescribed make-whole amount ."
+      },
+      {
+        "location": "text_1",
+        "text": "if we purchase these interests , any change in the third-party holder 2019s capital account from its original value will be charged directly to retained earnings and will increase or decrease the net earnings used to calculate eps in that period ."
+      },
+      {
+        "location": "text_2",
+        "text": "off-balance sheet arrangements and contractual obligations as of may 28 , 2017 , we have issued guarantees and comfort letters of $ 505 million for the debt and other obligations of consolidated subsidiaries , and guarantees and comfort letters of $ 165 million for the debt and other obligations of non-consolidated affiliates , mainly cpw ."
+      },
+      {
+        "location": "text_3",
+        "text": "in addition , off-balance sheet arrangements are generally limited to the future payments under non-cancelable operating leases , which totaled $ 501 million as of may 28 , 2017 ."
+      },
+      {
+        "location": "text_4",
+        "text": "as of may 28 , 2017 , we had invested in five variable interest entities ( vies ) ."
+      },
+      {
+        "location": "text_5",
+        "text": "none of our vies are material to our results of operations , financial condition , or liquidity as of and for the fiscal year ended may 28 , 2017 ."
+      },
+      {
+        "location": "text_6",
+        "text": "our defined benefit plans in the united states are subject to the requirements of the pension protection act ( ppa ) ."
+      },
+      {
+        "location": "text_7",
+        "text": "in the future , the ppa may require us to make additional contributions to our domestic plans ."
+      },
+      {
+        "location": "text_8",
+        "text": "we do not expect to be required to make any contribu- tions in fiscal 2017 ."
+      },
+      {
+        "location": "text_9",
+        "text": "the following table summarizes our future estimated cash payments under existing contractual obligations , including payments due by period: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Payments Due by Fiscal Year"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "In Millions",
+          "Total",
+          "2018",
+          "2019 -20",
+          "2021 -22",
+          "2023 and Thereafter"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Long-term debt (a)",
+          "$8,290.6",
+          "604.2",
+          "2,647.7",
+          "1,559.3",
+          "3,479.4"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Accrued interest",
+          "83.8",
+          "83.8",
+          "—",
+          "—",
+          "—"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Operating leases (b)",
+          "500.7",
+          "118.8",
+          "182.4",
+          "110.4",
+          "89.1"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Capital leases",
+          "1.2",
+          "0.4",
+          "0.6",
+          "0.1",
+          "0.1"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Purchase obligations (c)",
+          "3,191.0",
+          "2,304.8",
+          "606.8",
+          "264.3",
+          "15.1"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Total contractual obligations",
+          "12,067.3",
+          "3,112.0",
+          "3,437.5",
+          "1,934.1",
+          "3,583.7"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Other long-term obligations (d)",
+          "1,372.7",
+          "—",
+          "—",
+          "—",
+          "—"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Total long-term obligations",
+          "$13,440.0",
+          "$3,112.0",
+          "$3,437.5",
+          "$1,934.1",
+          "$3,583.7"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_10",
+        "text": "total contractual obligations 12067.3 3112.0 3437.5 1934.1 3583.7 other long-term obligations ( d ) 1372.7 2014 2014 2014 2014 total long-term obligations $ 13440.0 $ 3112.0 $ 3437.5 $ 1934.1 $ 3583.7 ( a ) amounts represent the expected cash payments of our long-term debt and do not include $ 1.2 million for capital leases or $ 44.4 million for net unamortized debt issuance costs , premiums and discounts , and fair value adjustments ."
+      },
+      {
+        "location": "text_11",
+        "text": "( b ) operating leases represents the minimum rental commitments under non-cancelable operating leases ."
+      },
+      {
+        "location": "text_12",
+        "text": "( c ) the majority of the purchase obligations represent commitments for raw material and packaging to be utilized in the normal course of business and for consumer marketing spending commitments that support our brands ."
+      },
+      {
+        "location": "text_13",
+        "text": "for purposes of this table , arrangements are considered purchase obliga- tions if a contract specifies all significant terms , including fixed or minimum quantities to be purchased , a pricing structure , and approximate timing of the transaction ."
+      },
+      {
+        "location": "text_14",
+        "text": "most arrangements are cancelable without a significant penalty and with short notice ( usually 30 days ) ."
+      },
+      {
+        "location": "text_15",
+        "text": "any amounts reflected on the consolidated balance sheets as accounts payable and accrued liabilities are excluded from the table above ."
+      },
+      {
+        "location": "text_16",
+        "text": "( d ) the fair value of our foreign exchange , equity , commodity , and grain derivative contracts with a payable position to the counterparty was $ 24 million as of may 28 , 2017 , based on fair market values as of that date ."
+      },
+      {
+        "location": "text_17",
+        "text": "future changes in market values will impact the amount of cash ultimately paid or received to settle those instruments in the future ."
+      },
+      {
+        "location": "text_18",
+        "text": "other long-term obligations mainly consist of liabilities for accrued compensation and bene- fits , including the underfunded status of certain of our defined benefit pen- sion , other postretirement benefit , and postemployment benefit plans , and miscellaneous liabilities ."
+      },
+      {
+        "location": "text_19",
+        "text": "we expect to pay $ 21 million of benefits from our unfunded postemployment benefit plans and $ 14.6 million of deferred com- pensation in fiscal 2018 ."
+      },
+      {
+        "location": "text_20",
+        "text": "we are unable to reliably estimate the amount of these payments beyond fiscal 2018 ."
+      },
+      {
+        "location": "text_21",
+        "text": "as of may 28 , 2017 , our total liability for uncertain tax positions and accrued interest and penalties was $ 158.6 million ."
+      },
+      {
+        "location": "text_22",
+        "text": "significant accounting estimates for a complete description of our significant account- ing policies , see note 2 to the consolidated financial statements on page 51 of this report ."
+      },
+      {
+        "location": "text_23",
+        "text": "our significant accounting estimates are those that have a meaning- ful impact on the reporting of our financial condition and results of operations ."
+      },
+      {
+        "location": "text_24",
+        "text": "these estimates include our accounting for promotional expenditures , valuation of long-lived assets , intangible assets , redeemable interest , stock-based compensation , income taxes , and defined benefit pension , other postretirement benefit , and pos- temployment benefit plans ."
+      },
+      {
+        "location": "text_25",
+        "text": "promotional expenditures our promotional activi- ties are conducted through our customers and directly or indirectly with end consumers ."
+      },
+      {
+        "location": "text_26",
+        "text": "these activities include : payments to customers to perform merchan- dising activities on our behalf , such as advertising or in-store displays ; discounts to our list prices to lower retail shelf prices ; payments to gain distribution of new products ; coupons , contests , and other incentives ; and media and advertising expenditures ."
+      },
+      {
+        "location": "text_27",
+        "text": "the recognition of these costs requires estimation of customer participa- tion and performance levels ."
+      },
+      {
+        "location": "text_28",
+        "text": "these estimates are based annual report 29 ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "in 2018 what was the ratio of anticipated benefits payments from our unfunded postemployment benefit plans to the deferred compensation",
+  "reference_program": "divide(21, 14.6)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "21",
+      "raw": "21",
+      "location": "text_19:18",
+      "context": "we expect to pay $ 21 million of benefits from our unfunded postemployment benefit plans and $ 14.6 million of deferred com- pensation in fiscal 2018 ."
+    },
+    "x1": {
+      "program_token": "14.6",
+      "raw": "14.6",
+      "location": "text_19:94",
+      "context": "we expect to pay $ 21 million of benefits from our unfunded postemployment benefit plans and $ 14.6 million of deferred com- pensation in fiscal 2018 ."
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "call_id": "S038",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "For the model's stated U.S. plan scope, text 5 reports 556,000 shares in 2013, 439,000 in 2014, and 411,636 in 2015. Their annual average requires all three amounts divided by three years. The reference adds only 2014 and 2015 and never divides."
+  }

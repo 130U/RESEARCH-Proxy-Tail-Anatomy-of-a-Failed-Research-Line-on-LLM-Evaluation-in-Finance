@@ -1,0 +1,1 @@
+{"answer":"0.3384913","unit":"percent","expression":"(2075 - 2068) / 2068 * 100","low":"0.2900652647","high":"0.3869407497","reliable_digits":"0","explanation":"Treasury increased from 2,068 to 2,075 million dollars; rounding allows each balance to vary by 0.5 million."}

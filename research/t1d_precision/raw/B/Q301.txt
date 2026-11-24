@@ -1,0 +1,1 @@
+{"answer":"18.725","unit":"percent","expression":"74.9 / 400.0 * 100","low":"18.710161229846","high":"18.739842480310","reliable_digits":"3","explanation":"The $74.9 million repurchased is divided by the $400.0 million opening balance, allowing each figure to vary by $0.05 million due to rounding."}

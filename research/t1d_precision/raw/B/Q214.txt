@@ -1,0 +1,1 @@
+{"answer":"2.6515151515151515","unit":"percent","expression":"(27.1 - 26.4) / 26.4 * 100","low":"2.268431001890359","high":"3.036053130929791","reliable_digits":"0","explanation":"The euro impact increased, but the inputs’ rounding uncertainty prevents even one significant digit from being reliable."}

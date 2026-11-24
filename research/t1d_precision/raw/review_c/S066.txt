@@ -1,0 +1,7 @@
+{
+    "call_id": "S066",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_3 reports current cost exceeding LIFO cost by $5.8 million at February 3, 2006 and $6.3 million at January 28, 2005. The ambiguous 'cost difference ... in the last two years' reasonably permits the model's change between balances, 5.8−6.3=−$0.5 million, while the reference sums them. No denominator applies."
+  }

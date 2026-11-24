@@ -1,0 +1,1 @@
+{"answer":"14.76810415","unit":"percent","expression":"(1410.5 - 1229.0) / 1229.0 * 100","low":"14.75936699","high":"14.77684202","reliable_digits":"3","explanation":"Allowing each operating cash figure to vary by $0.05 million gives these bounds, supporting three significant digits."}

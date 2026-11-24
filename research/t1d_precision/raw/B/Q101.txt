@@ -1,0 +1,1 @@
+{"answer":"468878.6666666667","unit":"shares per year","expression":"(411636 + 439000 + 556000) / 3","low":"468878.6666666667","high":"468878.6666666667","reliable_digits":"16","explanation":"Using the U.S. plan’s exact share counts, the average has no input rounding uncertainty; its repeating decimal is rounded as shown."}

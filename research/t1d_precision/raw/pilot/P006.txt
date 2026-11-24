@@ -1,0 +1,1 @@
+{"answer":"9291.2","unit":"million dollars","expression":"20,086 - (134,935 * 8 / 100)","low":"9290.66","high":"9291.74","reliable_digits":"4","explanation":"Using December 2013 capital and risk-weighted assets, each rounded to the nearest million, the exact 8% target implies uncertainty of ±0.54 million."}

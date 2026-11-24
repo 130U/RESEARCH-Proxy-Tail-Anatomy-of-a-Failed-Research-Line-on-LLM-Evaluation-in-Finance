@@ -1,0 +1,1 @@
+{"answer":"54.6889726673","unit":"percent","expression":"2321 / 4244 * 100","low":"54.6707503828","high":"54.7071992459","reliable_digits":"3","explanation":"Allowing each expenditure figure to vary by 0.5 million gives these bounds, both of which round to 54.7% at three significant digits."}

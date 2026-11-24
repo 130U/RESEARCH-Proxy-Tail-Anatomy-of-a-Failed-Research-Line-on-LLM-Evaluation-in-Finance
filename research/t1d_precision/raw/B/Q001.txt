@@ -1,0 +1,1 @@
+{"answer":"33.9622641509434","unit":"percent","expression":"(5.3 - 3.5) / 5.3 * 100","low":"32.3809523809524","high":"35.5140186915888","reliable_digits":"0","explanation":"Each rate has rounding uncertainty of ±0.05 percentage points, so the decrease can round to either 30% or 40% at one significant digit."}

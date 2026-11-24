@@ -1,0 +1,1 @@
+{"answer":"-1.3262717522","unit":"percent","expression":"(22,171 - 22,469) / 22,469 * 100","low":"-1.3306927168","high":"-1.3218505908","reliable_digits":"2","explanation":"Operating expenses decreased; allowing each expense figure to vary by $0.5 million gives these bounds and supports two significant digits."}

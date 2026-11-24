@@ -1,0 +1,78 @@
+{
+  "scope": "synthetic/offline restricted XML nonFraction parser",
+  "document_sha256": "b8e1be94b53de007b269ab0cc8f5ecf0a5abc6e2cc2f12191bdf49bc7f1a3f67",
+  "facts": [
+    {
+      "id": "revenue",
+      "name": "{urn:finllm:synthetic:taxonomy}Revenue",
+      "value": "1.2340E+8",
+      "unit": "{http://www.xbrl.org/2003/iso4217}USD",
+      "scale": 6,
+      "sign": null,
+      "decimals": "-4",
+      "declared_rounding_enclosure": [
+        "1.23395E+8",
+        "1.23405E+8"
+      ],
+      "context": {
+        "entity_identifier": "SYNTHETIC-A",
+        "entity_scheme": "urn:synthetic:company",
+        "period": {
+          "start": "2024-01-01",
+          "end": "2024-03-31"
+        }
+      }
+    },
+    {
+      "id": "cash_change",
+      "name": "{urn:finllm:synthetic:taxonomy}CashChange",
+      "value": "-5.2E+3",
+      "unit": "{http://www.xbrl.org/2003/iso4217}USD",
+      "scale": 3,
+      "sign": "-",
+      "decimals": "-2",
+      "declared_rounding_enclosure": [
+        "-5.25E+3",
+        "-5.15E+3"
+      ],
+      "context": {
+        "entity_identifier": "SYNTHETIC-A",
+        "entity_scheme": "urn:synthetic:company",
+        "period": {
+          "start": "2024-01-01",
+          "end": "2024-03-31"
+        }
+      }
+    },
+    {
+      "id": "ratio",
+      "name": "{urn:finllm:synthetic:taxonomy}Ratio",
+      "value": "0.125",
+      "unit": "{http://www.xbrl.org/2003/instance}pure",
+      "scale": 0,
+      "sign": null,
+      "decimals": "3",
+      "declared_rounding_enclosure": [
+        "0.1245",
+        "0.1255"
+      ],
+      "context": {
+        "entity_identifier": "SYNTHETIC-A",
+        "entity_scheme": "urn:synthetic:company",
+        "period": {
+          "instant": "2024-03-31"
+        }
+      }
+    }
+  ],
+  "rejections": [
+    {
+      "id": "unsupported",
+      "reason": "transformation_registry_not_implemented"
+    }
+  ],
+  "unsupported_other_fact_elements": 0,
+  "status": "partial",
+  "timestamp_certificate": null,
+  "warning": "Decoded declared values are not evidence of correctness, publication time or XBRL conformance."
+}

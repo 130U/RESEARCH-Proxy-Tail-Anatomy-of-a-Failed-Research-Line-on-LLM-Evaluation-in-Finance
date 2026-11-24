@@ -1,0 +1,1 @@
+{"answer":"49080","unit":"million dollars","expression":"49,447 - 367","low":"49079","high":"49081","reliable_digits":"4","explanation":"Subtracting corporate stocks from total amortized cost gives $49,080 million, with rounding uncertainty of ±$1 million."}

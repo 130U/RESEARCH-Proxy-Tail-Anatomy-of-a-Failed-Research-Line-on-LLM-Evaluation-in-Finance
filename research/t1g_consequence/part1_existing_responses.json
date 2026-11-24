@@ -1,0 +1,16 @@
+{
+  "source_level": "our_experiment_existing_responses_only",
+  "candidate_finqa_pairs": 5,
+  "candidate_finqa_unique_questions": 5,
+  "affected_finqa_pairs": 5,
+  "affected_finqa_unique_questions": 5,
+  "existing_sample_unique_questions": 392,
+  "existing_unique_responses": 1568,
+  "matched_unique_questions": 0,
+  "affected_matched_unique_questions": 0,
+  "matched_responses": 0,
+  "selections": {},
+  "official_outcomes": {},
+  "reused_A_deduplicated": true,
+  "rows": []
+}

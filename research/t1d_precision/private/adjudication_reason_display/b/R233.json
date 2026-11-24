@@ -1,0 +1,20 @@
+{
+  "review_id": "R233",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "first",
+      "original_reason": "Table is unaudited pro forma continuing-operations earnings and supplies 3538 and 3480 million for 2015 and 2014. Program is correct within the displayed pro forma scope; no finer duplicate earnings number appears.",
+      "display_reason": "Table is unaudited pro forma continuing-operations earnings and supplies 3538 and 3480 million for 2015 and 2014. Program is correct within the displayed pro forma scope; no finer duplicate earnings number appears.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "second",
+      "original_reason": "The rounded pro forma net earnings are correctly bound to 2015 and 2014, but the calculation returns fractional change without converting it to the requested percentage.",
+      "display_reason": "The rounded pro forma net earnings are correctly bound to 2015 and 2014, but the calculation returns fractional change without converting it to the requested percentage.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

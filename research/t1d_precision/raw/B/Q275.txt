@@ -1,0 +1,1 @@
+{"answer":"72.7104532839963","unit":"percent","expression":"78.6 / 108.1 * 100","low":"72.6306056403144","high":"72.7903748264692","reliable_digits":"2","explanation":"Each amount is rounded to the nearest $0.1 million, giving these bounds and two reliable significant digits."}

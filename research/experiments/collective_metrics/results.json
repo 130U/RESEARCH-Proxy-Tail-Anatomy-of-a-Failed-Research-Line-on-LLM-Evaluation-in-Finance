@@ -1,0 +1,653 @@
+{
+  "source_level": "our_experiment_mathematical_constructed_examples",
+  "data_sha256": "b3e96e78e335c1e7e1f4755a1b85fa2828f59264db71cd8192c09aaca533f23c",
+  "base_commit": "8e4dd0b33c95ac2ac1a6015eba6f2dfafe5c1254",
+  "checker_sha256": "ff262c3362362e2d58cedfefc11090c35344b5ac5b9c67fc0cfa492a35e88c0c",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "elapsed_seconds": 0.6279989999966347,
+  "records": [
+    {
+      "name": "shared_budget_strict_improvement",
+      "method": "component",
+      "result": {
+        "status": "conditional_mathematical_certificate",
+        "method": "component",
+        "exactness": "outer envelope from separate class extrema",
+        "n_examples": 4,
+        "n_heads": 2,
+        "classes": 2,
+        "affected_heads_budget": 1,
+        "tie_rule": "smallest class index",
+        "empty_class_f1": 0,
+        "independent": {
+          "accuracy": {
+            "lower": 0.0,
+            "upper": 1.0,
+            "lower_exact": "0",
+            "upper_exact": "1"
+          },
+          "macro_f1": {
+            "lower": 0.0,
+            "upper": 1.0,
+            "lower_exact": "0",
+            "upper_exact": "1"
+          }
+        },
+        "collective": {
+          "accuracy": {
+            "lower": 0.25,
+            "upper": 0.75,
+            "lower_exact": "1/4",
+            "upper_exact": "3/4"
+          },
+          "macro_f1": {
+            "lower": 0.19999999999999998,
+            "upper": 0.7333333333333334,
+            "lower_exact": "1/5",
+            "upper_exact": "11/15"
+          }
+        },
+        "endpoint_subsets": {
+          "accuracy": {
+            "lower": [
+              0
+            ],
+            "upper": [
+              0
+            ]
+          },
+          "macro_f1": {
+            "lower": [
+              0
+            ],
+            "upper": [
+              0
+            ]
+          }
+        },
+        "subsets_enumerated": 2,
+        "exact_states": null,
+        "arithmetic": "exact fractions with outward-rounded binary64 display",
+        "assumptions": [
+          "same fixed evaluation points and true labels for clean and observed models",
+          "same ordered shard IDs across every vote row",
+          "at most budget heads may differ jointly across the evaluation set",
+          "all unselected heads and shared preprocessing/backbone are unchanged"
+        ],
+        "limitations": [
+          "head-budget premise is not verified by this checker",
+          "not a timestamp, parsing, or population generalization certificate",
+          "selected heads allowed arbitrary outputs: outer relaxation of retraining",
+          "no assertion that supplied votes came from a trained language model"
+        ]
+      },
+      "elapsed_seconds": 0.00033320000511594117
+    },
+    {
+      "name": "shared_budget_strict_improvement",
+      "method": "exact",
+      "result": {
+        "status": "conditional_mathematical_certificate",
+        "method": "exact",
+        "exactness": "exact for arbitrary selected-head outputs",
+        "n_examples": 4,
+        "n_heads": 2,
+        "classes": 2,
+        "affected_heads_budget": 1,
+        "tie_rule": "smallest class index",
+        "empty_class_f1": 0,
+        "independent": {
+          "accuracy": {
+            "lower": 0.0,
+            "upper": 1.0,
+            "lower_exact": "0",
+            "upper_exact": "1"
+          },
+          "macro_f1": {
+            "lower": 0.0,
+            "upper": 1.0,
+            "lower_exact": "0",
+            "upper_exact": "1"
+          }
+        },
+        "collective": {
+          "accuracy": {
+            "lower": 0.25,
+            "upper": 0.75,
+            "lower_exact": "1/4",
+            "upper_exact": "3/4"
+          },
+          "macro_f1": {
+            "lower": 0.19999999999999998,
+            "upper": 0.7333333333333334,
+            "lower_exact": "1/5",
+            "upper_exact": "11/15"
+          }
+        },
+        "endpoint_subsets": {
+          "accuracy": {
+            "lower": [
+              0
+            ],
+            "upper": [
+              0
+            ]
+          },
+          "macro_f1": {
+            "lower": [
+              0
+            ],
+            "upper": [
+              0
+            ]
+          }
+        },
+        "subsets_enumerated": 2,
+        "exact_states": {
+          "pointwise": {
+            "peak": 9,
+            "final": 9
+          },
+          "collective_peak": 4
+        },
+        "arithmetic": "exact fractions with outward-rounded binary64 display",
+        "assumptions": [
+          "same fixed evaluation points and true labels for clean and observed models",
+          "same ordered shard IDs across every vote row",
+          "at most budget heads may differ jointly across the evaluation set",
+          "all unselected heads and shared preprocessing/backbone are unchanged"
+        ],
+        "limitations": [
+          "head-budget premise is not verified by this checker",
+          "not a timestamp, parsing, or population generalization certificate",
+          "selected heads allowed arbitrary outputs: outer relaxation of retraining",
+          "no assertion that supplied votes came from a trained language model"
+        ]
+      },
+      "elapsed_seconds": 0.000331000002915971
+    },
+    {
+      "name": "component_optima_incompatible",
+      "method": "component",
+      "result": {
+        "status": "conditional_mathematical_certificate",
+        "method": "component",
+        "exactness": "outer envelope from separate class extrema",
+        "n_examples": 3,
+        "n_heads": 5,
+        "classes": 3,
+        "affected_heads_budget": 1,
+        "tie_rule": "smallest class index",
+        "empty_class_f1": 0,
+        "independent": {
+          "accuracy": {
+            "lower": 0.6666666666666666,
+            "upper": 0.6666666666666667,
+            "lower_exact": "2/3",
+            "upper_exact": "2/3"
+          },
+          "macro_f1": {
+            "lower": 0.4444444444444444,
+            "upper": 0.6666666666666667,
+            "lower_exact": "4/9",
+            "upper_exact": "2/3"
+          }
+        },
+        "collective": {
+          "accuracy": {
+            "lower": 0.6666666666666666,
+            "upper": 0.6666666666666667,
+            "lower_exact": "2/3",
+            "upper_exact": "2/3"
+          },
+          "macro_f1": {
+            "lower": 0.4444444444444444,
+            "upper": 0.6666666666666667,
+            "lower_exact": "4/9",
+            "upper_exact": "2/3"
+          }
+        },
+        "endpoint_subsets": {
+          "accuracy": {
+            "lower": [
+              0
+            ],
+            "upper": [
+              0
+            ]
+          },
+          "macro_f1": {
+            "lower": [
+              0
+            ],
+            "upper": [
+              0
+            ]
+          }
+        },
+        "subsets_enumerated": 5,
+        "exact_states": null,
+        "arithmetic": "exact fractions with outward-rounded binary64 display",
+        "assumptions": [
+          "same fixed evaluation points and true labels for clean and observed models",
+          "same ordered shard IDs across every vote row",
+          "at most budget heads may differ jointly across the evaluation set",
+          "all unselected heads and shared preprocessing/backbone are unchanged"
+        ],
+        "limitations": [
+          "head-budget premise is not verified by this checker",
+          "not a timestamp, parsing, or population generalization certificate",
+          "selected heads allowed arbitrary outputs: outer relaxation of retraining",
+          "no assertion that supplied votes came from a trained language model"
+        ]
+      },
+      "elapsed_seconds": 0.0003284999984316528
+    },
+    {
+      "name": "component_optima_incompatible",
+      "method": "exact",
+      "result": {
+        "status": "conditional_mathematical_certificate",
+        "method": "exact",
+        "exactness": "exact for arbitrary selected-head outputs",
+        "n_examples": 3,
+        "n_heads": 5,
+        "classes": 3,
+        "affected_heads_budget": 1,
+        "tie_rule": "smallest class index",
+        "empty_class_f1": 0,
+        "independent": {
+          "accuracy": {
+            "lower": 0.6666666666666666,
+            "upper": 0.6666666666666667,
+            "lower_exact": "2/3",
+            "upper_exact": "2/3"
+          },
+          "macro_f1": {
+            "lower": 0.5555555555555555,
+            "upper": 0.5555555555555556,
+            "lower_exact": "5/9",
+            "upper_exact": "5/9"
+          }
+        },
+        "collective": {
+          "accuracy": {
+            "lower": 0.6666666666666666,
+            "upper": 0.6666666666666667,
+            "lower_exact": "2/3",
+            "upper_exact": "2/3"
+          },
+          "macro_f1": {
+            "lower": 0.5555555555555555,
+            "upper": 0.5555555555555556,
+            "lower_exact": "5/9",
+            "upper_exact": "5/9"
+          }
+        },
+        "endpoint_subsets": {
+          "accuracy": {
+            "lower": [
+              0
+            ],
+            "upper": [
+              0
+            ]
+          },
+          "macro_f1": {
+            "lower": [
+              0
+            ],
+            "upper": [
+              0
+            ]
+          }
+        },
+        "subsets_enumerated": 5,
+        "exact_states": {
+          "pointwise": {
+            "peak": 2,
+            "final": 2
+          },
+          "collective_peak": 2
+        },
+        "arithmetic": "exact fractions with outward-rounded binary64 display",
+        "assumptions": [
+          "same fixed evaluation points and true labels for clean and observed models",
+          "same ordered shard IDs across every vote row",
+          "at most budget heads may differ jointly across the evaluation set",
+          "all unselected heads and shared preprocessing/backbone are unchanged"
+        ],
+        "limitations": [
+          "head-budget premise is not verified by this checker",
+          "not a timestamp, parsing, or population generalization certificate",
+          "selected heads allowed arbitrary outputs: outer relaxation of retraining",
+          "no assertion that supplied votes came from a trained language model"
+        ]
+      },
+      "elapsed_seconds": 0.0004199999966658652
+    },
+    {
+      "name": "no_contamination_perfect",
+      "method": "component",
+      "result": {
+        "status": "conditional_mathematical_certificate",
+        "method": "component",
+        "exactness": "outer envelope from separate class extrema",
+        "n_examples": 3,
+        "n_heads": 3,
+        "classes": 3,
+        "affected_heads_budget": 0,
+        "tie_rule": "smallest class index",
+        "empty_class_f1": 0,
+        "independent": {
+          "accuracy": {
+            "lower": 1.0,
+            "upper": 1.0,
+            "lower_exact": "1",
+            "upper_exact": "1"
+          },
+          "macro_f1": {
+            "lower": 1.0,
+            "upper": 1.0,
+            "lower_exact": "1",
+            "upper_exact": "1"
+          }
+        },
+        "collective": {
+          "accuracy": {
+            "lower": 1.0,
+            "upper": 1.0,
+            "lower_exact": "1",
+            "upper_exact": "1"
+          },
+          "macro_f1": {
+            "lower": 1.0,
+            "upper": 1.0,
+            "lower_exact": "1",
+            "upper_exact": "1"
+          }
+        },
+        "endpoint_subsets": {
+          "accuracy": {
+            "lower": [],
+            "upper": []
+          },
+          "macro_f1": {
+            "lower": [],
+            "upper": []
+          }
+        },
+        "subsets_enumerated": 1,
+        "exact_states": null,
+        "arithmetic": "exact fractions with outward-rounded binary64 display",
+        "assumptions": [
+          "same fixed evaluation points and true labels for clean and observed models",
+          "same ordered shard IDs across every vote row",
+          "at most budget heads may differ jointly across the evaluation set",
+          "all unselected heads and shared preprocessing/backbone are unchanged"
+        ],
+        "limitations": [
+          "head-budget premise is not verified by this checker",
+          "not a timestamp, parsing, or population generalization certificate",
+          "selected heads allowed arbitrary outputs: outer relaxation of retraining",
+          "no assertion that supplied votes came from a trained language model"
+        ]
+      },
+      "elapsed_seconds": 9.380000119563192e-05
+    },
+    {
+      "name": "no_contamination_perfect",
+      "method": "exact",
+      "result": {
+        "status": "conditional_mathematical_certificate",
+        "method": "exact",
+        "exactness": "exact for arbitrary selected-head outputs",
+        "n_examples": 3,
+        "n_heads": 3,
+        "classes": 3,
+        "affected_heads_budget": 0,
+        "tie_rule": "smallest class index",
+        "empty_class_f1": 0,
+        "independent": {
+          "accuracy": {
+            "lower": 1.0,
+            "upper": 1.0,
+            "lower_exact": "1",
+            "upper_exact": "1"
+          },
+          "macro_f1": {
+            "lower": 1.0,
+            "upper": 1.0,
+            "lower_exact": "1",
+            "upper_exact": "1"
+          }
+        },
+        "collective": {
+          "accuracy": {
+            "lower": 1.0,
+            "upper": 1.0,
+            "lower_exact": "1",
+            "upper_exact": "1"
+          },
+          "macro_f1": {
+            "lower": 1.0,
+            "upper": 1.0,
+            "lower_exact": "1",
+            "upper_exact": "1"
+          }
+        },
+        "endpoint_subsets": {
+          "accuracy": {
+            "lower": [],
+            "upper": []
+          },
+          "macro_f1": {
+            "lower": [],
+            "upper": []
+          }
+        },
+        "subsets_enumerated": 1,
+        "exact_states": {
+          "pointwise": {
+            "peak": 1,
+            "final": 1
+          },
+          "collective_peak": 1
+        },
+        "arithmetic": "exact fractions with outward-rounded binary64 display",
+        "assumptions": [
+          "same fixed evaluation points and true labels for clean and observed models",
+          "same ordered shard IDs across every vote row",
+          "at most budget heads may differ jointly across the evaluation set",
+          "all unselected heads and shared preprocessing/backbone are unchanged"
+        ],
+        "limitations": [
+          "head-budget premise is not verified by this checker",
+          "not a timestamp, parsing, or population generalization certificate",
+          "selected heads allowed arbitrary outputs: outer relaxation of retraining",
+          "no assertion that supplied votes came from a trained language model"
+        ]
+      },
+      "elapsed_seconds": 7.189999450929463e-05
+    },
+    {
+      "name": "all_heads_change",
+      "method": "component",
+      "result": {
+        "status": "conditional_mathematical_certificate",
+        "method": "component",
+        "exactness": "outer envelope from separate class extrema",
+        "n_examples": 3,
+        "n_heads": 3,
+        "classes": 3,
+        "affected_heads_budget": 3,
+        "tie_rule": "smallest class index",
+        "empty_class_f1": 0,
+        "independent": {
+          "accuracy": {
+            "lower": 0.0,
+            "upper": 1.0,
+            "lower_exact": "0",
+            "upper_exact": "1"
+          },
+          "macro_f1": {
+            "lower": 0.0,
+            "upper": 1.0,
+            "lower_exact": "0",
+            "upper_exact": "1"
+          }
+        },
+        "collective": {
+          "accuracy": {
+            "lower": 0.0,
+            "upper": 1.0,
+            "lower_exact": "0",
+            "upper_exact": "1"
+          },
+          "macro_f1": {
+            "lower": 0.0,
+            "upper": 1.0,
+            "lower_exact": "0",
+            "upper_exact": "1"
+          }
+        },
+        "endpoint_subsets": {
+          "accuracy": {
+            "lower": [
+              0,
+              1,
+              2
+            ],
+            "upper": [
+              0,
+              1,
+              2
+            ]
+          },
+          "macro_f1": {
+            "lower": [
+              0,
+              1,
+              2
+            ],
+            "upper": [
+              0,
+              1,
+              2
+            ]
+          }
+        },
+        "subsets_enumerated": 1,
+        "exact_states": null,
+        "arithmetic": "exact fractions with outward-rounded binary64 display",
+        "assumptions": [
+          "same fixed evaluation points and true labels for clean and observed models",
+          "same ordered shard IDs across every vote row",
+          "at most budget heads may differ jointly across the evaluation set",
+          "all unselected heads and shared preprocessing/backbone are unchanged"
+        ],
+        "limitations": [
+          "head-budget premise is not verified by this checker",
+          "not a timestamp, parsing, or population generalization certificate",
+          "selected heads allowed arbitrary outputs: outer relaxation of retraining",
+          "no assertion that supplied votes came from a trained language model"
+        ]
+      },
+      "elapsed_seconds": 7.639999967068434e-05
+    },
+    {
+      "name": "all_heads_change",
+      "method": "exact",
+      "result": {
+        "status": "conditional_mathematical_certificate",
+        "method": "exact",
+        "exactness": "exact for arbitrary selected-head outputs",
+        "n_examples": 3,
+        "n_heads": 3,
+        "classes": 3,
+        "affected_heads_budget": 3,
+        "tie_rule": "smallest class index",
+        "empty_class_f1": 0,
+        "independent": {
+          "accuracy": {
+            "lower": 0.0,
+            "upper": 1.0,
+            "lower_exact": "0",
+            "upper_exact": "1"
+          },
+          "macro_f1": {
+            "lower": 0.0,
+            "upper": 1.0,
+            "lower_exact": "0",
+            "upper_exact": "1"
+          }
+        },
+        "collective": {
+          "accuracy": {
+            "lower": 0.0,
+            "upper": 1.0,
+            "lower_exact": "0",
+            "upper_exact": "1"
+          },
+          "macro_f1": {
+            "lower": 0.0,
+            "upper": 1.0,
+            "lower_exact": "0",
+            "upper_exact": "1"
+          }
+        },
+        "endpoint_subsets": {
+          "accuracy": {
+            "lower": [
+              0,
+              1,
+              2
+            ],
+            "upper": [
+              0,
+              1,
+              2
+            ]
+          },
+          "macro_f1": {
+            "lower": [
+              0,
+              1,
+              2
+            ],
+            "upper": [
+              0,
+              1,
+              2
+            ]
+          }
+        },
+        "subsets_enumerated": 1,
+        "exact_states": {
+          "pointwise": {
+            "peak": 26,
+            "final": 26
+          },
+          "collective_peak": 26
+        },
+        "arithmetic": "exact fractions with outward-rounded binary64 display",
+        "assumptions": [
+          "same fixed evaluation points and true labels for clean and observed models",
+          "same ordered shard IDs across every vote row",
+          "at most budget heads may differ jointly across the evaluation set",
+          "all unselected heads and shared preprocessing/backbone are unchanged"
+        ],
+        "limitations": [
+          "head-budget premise is not verified by this checker",
+          "not a timestamp, parsing, or population generalization certificate",
+          "selected heads allowed arbitrary outputs: outer relaxation of retraining",
+          "no assertion that supplied votes came from a trained language model"
+        ]
+      },
+      "elapsed_seconds": 0.00038439999480033293
+    }
+  ],
+  "status": "conditional_component_verified; real_model_and_timestamp_premises_unverified"
+}

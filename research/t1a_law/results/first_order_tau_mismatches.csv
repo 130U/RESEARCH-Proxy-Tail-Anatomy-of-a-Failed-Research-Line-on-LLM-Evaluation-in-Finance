@@ -1,0 +1,6 @@
+id,split,category,tau,program,prediction,truth,reason,center,gold,radius,lo,hi,margin
+MRO/2007/page_136.pdf-2,test,ratio,0.05,"divide(37, 1.4)",inside,outside,First-order linearization does not include the nonlinear remainder or the asymmetry of the true range,185/7,2642857/100000,255/196,730/29,250/9,18499979/14000000
+MSI/2006/page_61.pdf-1,dev,growth,0.001,"subtract(1340, 607), divide(#0, 1340)",outside,inside,First-order linearization does not include the nonlinear remainder or the asymmetry of the true range,733/1340,54701/100000,1947/3591200,488/893,1468/2681,3631967/6700000000
+NKE/2016/page_37.pdf-1,dev,ratio,0.02,"divide(4.6, 5.5)",inside,outside,First-order linearization does not include the nonlinear remainder or the asymmetry of the true range,46/55,20909/25000,101/6050,91/111,93/109,229949/13750000
+RSG/2016/page_144.pdf-2,dev,ratio,0.02,"divide(37.8, 2.7)",inside,outside,First-order linearization does not include the nonlinear remainder or the asymmetry of the true range,14,14,5/18,151/11,757/53,7/25
+IP/2015/page_51.pdf-2,train,ratio,0.001,"divide(811, 1330)",inside,outside,First-order linearization does not include the nonlinear remainder or the asymmetry of the true range,811/1330,60977/100000,2141/3537800,1621/2661,1623/2659,8050941/13300000000

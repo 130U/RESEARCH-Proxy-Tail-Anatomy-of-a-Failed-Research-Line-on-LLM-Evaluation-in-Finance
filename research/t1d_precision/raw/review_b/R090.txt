@@ -1,0 +1,5 @@
+{
+    "review_id": "R090",
+    "verdict": "invalid",
+    "reason": "The $9 million is compensation expense, so dividing it by the exact count of 411,636 shares gives compensation expense per share rather than average share price."
+  }

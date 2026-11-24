@@ -1,0 +1,1 @@
+{"answer":"39.0070921986","unit":"percent","expression":"(39.2 - 28.2) / 28.2 * 100","low":"38.5840707965","high":"39.4316163410","reliable_digits":"2","explanation":"Allowing each volatility to vary by 0.05 percentage points gives these bounds, both of which round to 39% at two significant digits."}

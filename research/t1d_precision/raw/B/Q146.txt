@@ -1,0 +1,1 @@
+{"answer":"2.222222222222222","unit":"ratio","expression":"160 / 72","low":"2.2","high":"2.244755244755245","reliable_digits":"2","explanation":"Rounding to the nearest million gives bounds of 159.5 / 72.5 and 160.5 / 71.5, supporting two reliable significant digits."}

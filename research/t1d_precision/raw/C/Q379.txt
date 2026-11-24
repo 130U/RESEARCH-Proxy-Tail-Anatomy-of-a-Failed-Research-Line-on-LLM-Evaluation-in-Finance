@@ -1,0 +1,1 @@
+{"answer":"31.32382085","unit":"million dollars","expression":"766801 * 40.85 / 1000000","low":"31.319986845","high":"31.327654855","reliable_digits":"3","explanation":"The share count is exact and the exercise price ranges from $40.845 to $40.855; all possible totals round to 31.3 million at three significant digits."}

@@ -1,0 +1,50 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+payables that were reclassified as part of our capital lease obligations .
+capital lease obligations are reported in our consolidated statements of financial position as debt .
+on october 15 , 2009 , we entered into a capital lease agreement for 44 locomotives with a total equipment cost of $ 100 million .
+the lessor purchased the 44 locomotives from the corporation and subsequently leased the locomotives back to the railroad .
+these capital lease obligations are reported in our consolidated statements of financial position as debt at december 31 , 2009 .
+off-balance sheet arrangements , contractual obligations , and commercial commitments as described in the notes to the consolidated financial statements and as referenced in the tables below , we have contractual obligations and commercial commitments that may affect our financial condition .
+based on our assessment of the underlying provisions and circumstances of our contractual obligations and commercial commitments , including material sources of off-balance sheet and structured finance arrangements , other than the risks that we and other similarly situated companies face with respect to the condition of the capital markets ( as described in item 1a of part ii of this report ) , there is no known trend , demand , commitment , event , or uncertainty that is reasonably likely to occur that would have a material adverse effect on our consolidated results of operations , financial condition , or liquidity .
+in addition , our commercial obligations , financings , and commitments are customary transactions that are similar to those of other comparable corporations , particularly within the transportation industry .
+the following tables identify material obligations and commitments as of december 31 , 2009 : payments due by december 31 , contractual obligations after millions of dollars total 2010 2011 2012 2013 2014 2014 other .
+
+TABLE
+ |  | <i>Payments Due by December 31,</i>
+<i>Contractual Obligations</i> <i>Millions of Dollars</i> | <i>Total</i> | <i>2010</i> | <i>2011</i> | <i>2012</i> | <i>2013</i> | <i>2014</i> | <i>After 2014</i> | <i>Other</i>
+Debt [a] | $12,645 | $846 | $896 | $1,104 | $985 | $951 | $7,863 | $-
+Operating leases | 5,312 | 576 | 570 | 488 | 425 | 352 | 2,901 | -
+Capital lease obligations [b] | 2,975 | 290 | 292 | 247 | 256 | 267 | 1,623 | -
+Purchase obligations [c] | 2,738 | 386 | 317 | 242 | 249 | 228 | 1,284 | 32
+Other post retirement benefits [d] | 435 | 41 | 42 | 43 | 43 | 44 | 222 | -
+Income tax contingencies [e] | 61 | 1 | - | - | - | - | - | 60
+Total contractual obligations | $24,166 | $2,140 | $2,117 | $2,124 | $1,958 | $1,842 | $13,893 | $92
+
+[a] excludes capital lease obligations of $ 2061 million , unamortized discount of $ ( 110 ) million , and market value adjustments of $ 15 million for debt with qualifying hedges that are recorded as liabilities on the consolidated statements of financial position .
+includes an interest component of $ 4763 million .
+[b] represents total obligations , including interest component of $ 914 million .
+[c] purchase obligations include locomotive maintenance contracts ; purchase commitments for ties , ballast , and rail ; and agreements to purchase other goods and services .
+for amounts where we can not reasonably estimate the year of settlement , they are reflected in the other column .
+[d] includes estimated other post retirement , medical , and life insurance payments and payments made under the unfunded pension plan for the next ten years .
+no amounts are included for funded pension as no contributions are currently required .
+[e] future cash flows for income tax contingencies reflect the recorded liability for unrecognized tax benefits , including interest and penalties , as of december 31 , 2009 .
+where we can reasonably estimate the years in which these liabilities may be settled , this is shown in the table .
+for amounts where we can not reasonably estimate the year of settlement , they are reflected in the other column. .
+
+QUESTION
+what is the total cost in millions of capital lease obligation , principal only?

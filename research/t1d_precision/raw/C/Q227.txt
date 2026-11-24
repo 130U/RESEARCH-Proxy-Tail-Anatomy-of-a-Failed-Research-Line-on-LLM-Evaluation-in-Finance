@@ -1,0 +1,1 @@
+{"answer":"3.7775010378","unit":"percent","expression":"(250.0 - 240.9) / 240.9 * 100","low":"3.7352147748","high":"3.8198048578","reliable_digits":"1","explanation":"Comparing the $250.0 million principal with the $240.9 million scheduled for 2010 gives this increase, with rounding leaving one reliable significant digit."}

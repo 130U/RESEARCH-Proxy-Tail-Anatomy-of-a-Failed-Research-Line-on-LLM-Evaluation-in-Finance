@@ -1,0 +1,7 @@
+{
+    "call_id": "S008",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The Employee separations row reports liabilities of $20,963 thousand at December 31, 2005 and $7,327 thousand at December 31, 2006. The model correctly divides the 2006 change by the opening $20,963 thousand and multiplies by 100. The reference calculates only the absolute change in thousands."
+  }

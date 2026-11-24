@@ -1,0 +1,5 @@
+{
+    "review_id": "R093",
+    "verdict": "invalid",
+    "reason": "The tax rate on the sale gain requires dividing the tax difference by the $2.6 billion pretax gain, whereas the calculation divides by the $2.2 billion after-tax gain."
+  }

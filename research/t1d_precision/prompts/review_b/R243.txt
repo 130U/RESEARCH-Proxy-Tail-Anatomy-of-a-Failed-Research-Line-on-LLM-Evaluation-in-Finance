@@ -1,0 +1,136 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R243",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "the decrease in mortgage servicing rights of $ 2.7 billion was primarily 2022 attributed to mark-to-market losses recognized in the portfolio due to decreases in the mortgage interest rates and increases in refinancing ."
+      },
+      {
+        "location": "text_1",
+        "text": "the increase in securities sold under agreements to repurchase of $ 5 2022 billion is driven by a $ 6.2 billion increase from net transfers in as the continued credit crisis impacted the availability of observable inputs for the underlying securities related to this liability ."
+      },
+      {
+        "location": "text_2",
+        "text": "this was offset by a reduction from net settlements of $ 1.4 billion ."
+      },
+      {
+        "location": "text_3",
+        "text": "the decrease in short-term borrowings of $ 3.7 billion is due to net transfers 2022 out of $ 1.8 billion as valuation methodology inputs considered to be unobservable were determined not to be significant to the overall valuation ."
+      },
+      {
+        "location": "text_4",
+        "text": "in addition , net payments of $ 1.8 billion were made during the year ."
+      },
+      {
+        "location": "text_5",
+        "text": "the increase in 2022 long-term debt of $ 2.2 billion is driven by : the net transfers in of $ 38.8 billion , substantially all of which related 2013 to the transfer of consolidated siv debt in the first quarter of 2008 , as the availability of observable inputs continued to decline due to the current crisis ; offset by $ 2.2 billion in gains recognized as credit spreads widened during the 2013 year ; and $ 34.3 billion decrease from net settlements/payments ."
+      },
+      {
+        "location": "text_6",
+        "text": "included in 2013 these settlements were $ 21 billion of payments made on maturing siv debt and the replacement of $ 17 billion of non-recourse , consolidated siv debt classified as level 3 with citigroup debt classified as level 2 ."
+      },
+      {
+        "location": "text_7",
+        "text": "this replacement occurred in connection with the purchase of the siv assets by the company in november 2008 ."
+      },
+      {
+        "location": "text_8",
+        "text": "items measured at fair value on a nonrecurring basis certain assets and liabilities are measured at fair value on a nonrecurring basis and therefore are not included in the tables above ."
+      },
+      {
+        "location": "text_9",
+        "text": "these include assets measured at cost that have been written down to fair value during the periods as a result of an impairment ."
+      },
+      {
+        "location": "text_10",
+        "text": "in addition , these assets include loans held-for-sale that are measured at locom that were recognized at fair value below cost at the end of the period ."
+      },
+      {
+        "location": "text_11",
+        "text": "the fair value of loans measured on a locom basis is determined where possible using quoted secondary-market prices ."
+      },
+      {
+        "location": "text_12",
+        "text": "such loans are generally classified as level 2 of the fair-value hierarchy given the level of activity in the market and the frequency of available quotes ."
+      },
+      {
+        "location": "text_13",
+        "text": "if no such quoted price exists , the fair value of a loan is determined using quoted prices for a similar asset or assets , adjusted for the specific attributes of that loan ."
+      },
+      {
+        "location": "text_14",
+        "text": "the following table presents all loans held-for-sale that are carried at locom as of december 31 , 2009 and 2008 ( in billions ) : aggregate cost fair value level 2 level 3 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Aggregate cost",
+          "Fair value",
+          "Level 2",
+          "Level 3"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "December 31, 2009",
+          "$2.5",
+          "$1.6",
+          "$0.3",
+          "$1.3"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "December 31, 2008",
+          "3.1",
+          "2.1",
+          "0.8",
+          "1.3"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_15",
+        "text": "."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the ratio of the net increase in the in securities sold under agreements to repurchase to the net transfers in",
+  "reference_program": "divide(5, 6.2)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "5",
+      "raw": "5",
+      "location": "text_1:67",
+      "context": "the increase in securities sold under agreements to repurchase of $ 5 2022 billion is driven by a $ 6.2 billion increase from net transfers in as the continued credit crisis impacted the availability of observable inputs for the underlying securities related to this liability ."
+    },
+    "x1": {
+      "program_token": "6.2",
+      "raw": "6.2",
+      "location": "text_1:99",
+      "context": "the increase in securities sold under agreements to repurchase of $ 5 2022 billion is driven by a $ 6.2 billion increase from net transfers in as the continued credit crisis impacted the availability of observable inputs for the underlying securities related to this liability ."
+    }
+  }
+}

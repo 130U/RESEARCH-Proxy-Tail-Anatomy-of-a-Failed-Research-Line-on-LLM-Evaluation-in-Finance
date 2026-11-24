@@ -1,0 +1,55 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+latin america acquisition of grupo financiero uno in 2007 , citigroup completed its acquisition of grupo financiero uno ( gfu ) , the largest credit card issuer in central america , and its affiliates , with $ 2.2 billion in assets .
+the results for gfu are included in citigroup 2019s global cards and latin america consumer banking businesses from march 5 , 2007 forward .
+acquisition of grupo cuscatl e1n in 2007 , citigroup completed the acquisition of the subsidiaries of grupo cuscatl e1n for $ 1.51 billion ( $ 755 million in cash and 14.2 million shares of citigroup common stock ) from corporacion ubc internacional s.a .
+grupo .
+the results of grupo cuscatl e1n are included from may 11 , 2007 forward and are recorded in latin america consumer banking .
+acquisition of bank of overseas chinese in 2007 , citigroup completed its acquisition of bank of overseas chinese ( booc ) in taiwan for approximately $ 427 million .
+results for booc are included in citigroup 2019s asia consumer banking , global cards and securities and banking businesses from december 1 , 2007 forward .
+acquisition of quilter in 2007 , the company completed the acquisition of quilter , a u.k .
+wealth advisory firm , from morgan stanley .
+quilter 2019s results are included in citigroup 2019s smith barney business from march 1 , 2007 forward .
+quilter is being disposed of as part of the sale of smith barney to morgan stanley described in subsequent events .
+acquisition of egg in 2007 , citigroup completed its acquisition of egg banking plc ( egg ) , a u.k .
+online financial services provider , from prudential plc for approximately $ 1.39 billion .
+results for egg are included in citigroup 2019s global cards and emea consumer banking businesses from may 1 , 2007 forward .
+purchase of 20% ( 20 % ) equity interest in akbank in 2007 , citigroup completed its purchase of a 20% ( 20 % ) equity interest in akbank , the second-largest privately owned bank by assets in turkey for approximately $ 3.1 billion .
+this investment is accounted for using the equity method of accounting .
+sabanci holding , a 34% ( 34 % ) owner of akbank shares , and its subsidiaries have granted citigroup a right of first refusal or first offer over the sale of any of their akbank shares in the future .
+subject to certain exceptions , including purchases from sabanci holding and its subsidiaries , citigroup has otherwise agreed not to increase its percentage ownership in akbank .
+other items sale of mastercard shares in 2007 , the company recorded a $ 367 million after-tax gain ( $ 581 million pretax ) on the sale of approximately 4.9 million mastercard class b shares that had been received by citigroup as a part of the mastercard initial public offering completed in june 2006 .
+the gain was recorded in the following businesses : in millions of dollars pretax after-tax pretax after-tax .
+
+TABLE
+<i>In millions of dollars</i> | 2007 Pretax total | 2007 After-tax total | 2006 Pretax total | 2006 After-tax total
+Global Cards | $466 | $296 | $94 | $59
+Consumer Banking | 96 | 59 | 27 | 18
+ICG | 19 | 12 | 2 | 1
+Total | $581 | $367 | $123 | $78
+
+redecard ipo in 2007 , citigroup ( a 31.9% ( 31.9 % ) shareholder in redecard s.a. , the only merchant acquiring company for mastercard in brazil ) sold approximately 48.8 million redecard shares in connection with redecard 2019s initial public offering in brazil .
+following the sale of these shares , citigroup retained approximately 23.9% ( 23.9 % ) ownership in redecard .
+an after-tax gain of approximately $ 469 million ( $ 729 million pretax ) was recorded in citigroup 2019s 2007 financial results in the global cards business .
+visa restructuring and litigation matters in 2007 , visa usa , visa international and visa canada were merged into visa inc .
+( visa ) .
+as a result of that reorganization , citigroup recorded a $ 534 million ( pretax ) gain on its holdings of visa international shares primarily recognized in the consumer banking business .
+the shares were then carried on citigroup 2019s balance sheet at the new cost basis .
+in addition , citigroup recorded a $ 306 million ( pretax ) charge related to certain of visa usa 2019s litigation matters primarily recognized in the north america consumer banking business. .
+
+QUESTION
+what was the total pretax gains in millions for the sale so mastercard shares from 2006 to 2007?

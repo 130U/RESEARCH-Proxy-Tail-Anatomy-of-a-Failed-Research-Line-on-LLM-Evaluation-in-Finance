@@ -1,0 +1,1 @@
+{"answer":"2.592920353982301","unit":"billion USD","expression":"2.93/(1+13/100)","low":"2.577092511013216","high":"2.608888888888889","reliable_digits":"2","explanation":"Dividing 2017 net interest income by its growth factor gives 2016 income; rounding uncertainty supports two significant digits."}

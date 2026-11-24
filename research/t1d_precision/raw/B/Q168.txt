@@ -1,0 +1,1 @@
+{"answer":"-17.58793969849246","unit":"percent","expression":"(164 - 199) / 199 * 100","low":"-18.045112781954887","high":"-17.12846347607053","reliable_digits":"1","explanation":"Expense decreases, with bounds calculated by allowing each displayed expense to vary by $0.5 million."}

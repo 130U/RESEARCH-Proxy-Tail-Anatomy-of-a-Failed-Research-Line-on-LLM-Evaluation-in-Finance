@@ -1,0 +1,1 @@
+{"answer":"17.2664726118","unit":"percent","expression":"(177.26 - 151.16) / 151.16 * 100","low":"17.2592862104","high":"17.2736594886","reliable_digits":"3","explanation":"Growth is the increase divided by the 2016 value; rounding uncertainty leaves three significant digits reliable."}

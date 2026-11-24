@@ -1,0 +1,1 @@
+{"answer":"16.9197396963","unit":"percent","expression":"(1,014 / 5,993) * 100","low":"16.9099858188","high":"16.9294952023","reliable_digits":"3","explanation":"Allowing each expenditure figure to vary by $0.5 million gives these bounds, both of which round to 16.9% at three significant digits."}

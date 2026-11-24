@@ -1,0 +1,1 @@
+{"answer":"1375","unit":"million dollars","expression":"1.345 * 1000 + 30","low":"1374","high":"1376","reliable_digits":"3","explanation":"Add the $1.345 billion already paid to the $30 million remaining, with each amount uncertain by $0.5 million."}

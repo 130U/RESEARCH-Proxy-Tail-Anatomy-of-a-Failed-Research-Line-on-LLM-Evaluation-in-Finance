@@ -1,0 +1,1 @@
+{"answer":"9.375","unit":"percent","expression":"(9.6 - 8.7) / 9.6 * 100","low":"8.3769633508","high":"10.3626943005","reliable_digits":"0","explanation":"The tax rate equals the tax benefit divided by the pretax charge; rounding each charge by up to $0.05 billion leaves even the first significant digit uncertain."}

@@ -1,0 +1,8 @@
+{
+  "Q377": {
+    "reference_money_magnitude": "1000000000",
+    "reference_execution_unit": "billion dollars",
+    "question_requested_unit": "million dollars",
+    "reason": "Source explicitly gives net capital 4.7 billion and excess capital 3.3 billion; unscaled reference subtraction executes in billions. Convert the response's declared currency magnitude to that reference execution unit. The question asks for millions while gold/human label 1.4 retains the billion representation; this mismatch is documented, not attributed to input precision."
+  }
+}

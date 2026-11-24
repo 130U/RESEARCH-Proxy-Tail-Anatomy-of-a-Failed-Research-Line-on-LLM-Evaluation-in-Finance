@@ -1,0 +1,1 @@
+{"answer":"-5.9585307022","unit":"percent","expression":"(355173 - 377677) / 377677 * 100","low":"-5.9587875899","high":"-5.9582738137","reliable_digits":"3","explanation":"Allowing each liability total to vary by 0.5 million gives these bounds, which consistently round to -5.96 percent."}

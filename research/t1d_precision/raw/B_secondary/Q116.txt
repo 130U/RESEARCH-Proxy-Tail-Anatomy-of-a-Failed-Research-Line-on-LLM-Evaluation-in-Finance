@@ -1,0 +1,1 @@
+{"answer":"23.5294117647","unit":"percent","expression":"(63 - 51) / 51 * 100","low":"21.3592233010","high":"25.7425742574","reliable_digits":"1","explanation":"The displayed per-share prices of $63 and $51 each have rounding uncertainty of $0.50."}

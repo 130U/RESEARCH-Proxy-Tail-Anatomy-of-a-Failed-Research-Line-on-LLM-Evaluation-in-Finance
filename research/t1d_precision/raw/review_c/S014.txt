@@ -1,0 +1,7 @@
+{
+    "call_id": "S014",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The Peer Group row gives investment values of 161.90 in 2014 and 203.87 in 2015, based on $100 invested in 2012 with dividends reinvested. The model reasonably interprets '2015 total return' as the annual percentage return, using 161.90 as denominator. The reference reports only the 41.97 increase in investment value."
+  }

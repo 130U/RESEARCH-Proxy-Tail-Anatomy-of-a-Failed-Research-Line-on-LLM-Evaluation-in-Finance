@@ -1,0 +1,18 @@
+[
+  {"review_id":"R177","verdict":"invalid","reason":"The bound $97.13 is the S&P 500 ending value, whereas the question requires the DJ US Containers & Packaging ending value of $107.76."},
+  {"review_id":"R178","verdict":"valid","reason":"The approximately $1.8 million aggregate cash requirement divided by the rounded $5.6 million June obligation gives the maximum required cash share if that requirement falls entirely on June's payment."},
+  {"review_id":"R179","verdict":"valid","reason":"The calculation correctly compares the rounded average fuel costs of $3.09 per gallon in 2013 and $3.20 in 2012 using 2012 as the growth-rate denominator."},
+  {"review_id":"R180","verdict":"invalid","reason":"The calculation subtracts a net-of-tax sale gain from utility net revenue, although the excerpt does not identify that gain as part of utility net revenue."},
+  {"review_id":"R181","verdict":"valid","reason":"The correctly bound rounded additions of $24 million for prior-year tax positions and $4 million for current-year positions support the requested difference in millions."},
+  {"review_id":"R182","verdict":"valid","reason":"The rounded fair values are $21 million for 2010 and $47 million for 2009, and the calculation correctly uses 2009 as the percentage-change denominator."},
+  {"review_id":"R183","verdict":"valid","reason":"The bound 2.9% and 1.5% are the rounded weighted-average dividend yields for 2008 and 2007, and the calculation correctly measures growth relative to 2007."},
+  {"review_id":"R184","verdict":"valid","reason":"The multirow headers identify the rounded estimated $987 million and $205 million payments as U.S. and international pension benefits for 2016, respectively, supporting their ratio despite the misleading binding context."},
+  {"review_id":"R185","verdict":"valid","reason":"The rounded total other accrued liabilities are correctly bound to 2013 and 2012, and the calculation uses the 2012 balance as the percentage-change denominator."},
+  {"review_id":"R186","verdict":"valid","reason":"The $33.5 million aggregate cost and estimated weighted-average recognition period of 2.5 years are rounded quantities whose quotient expresses average cost in millions per year."},
+  {"review_id":"R187","verdict":"valid","reason":"Subtracting the rounded 2014 net-of-tax share-based compensation expense of $33.9 million from the 2015 amount of $31.9 million correctly gives the signed change in millions."},
+  {"review_id":"R188","verdict":"invalid","reason":"The divisor 3 is bound to the rounded 2015 state tax rate of 3.0 rather than the exact count of three annual observations required for the average."},
+  {"review_id":"R189","verdict":"valid","reason":"The rounded $0.3 million severance balance and $0.1 million lease termination balance are components of the same December 3, 1999 restructuring accrual and can be added in millions."},
+  {"review_id":"R190","verdict":"uncertain","reason":"The calculation measures the relative change from 2013 to 2014, but the question specifies no comparison period and the table also includes 2015."},
+  {"review_id":"R191","verdict":"invalid","reason":"Coverage decreases from approximately 60% in the first quarter to 50% in the second, so subtracting 50 from 60 reverses the sign of the chronological change."},
+  {"review_id":"R192","verdict":"valid","reason":"The rounded matching contributions of $2.6 million for 2008 and $1.4 million for 2007 are correctly bound and compared using 2007 as the growth-rate denominator."}
+]

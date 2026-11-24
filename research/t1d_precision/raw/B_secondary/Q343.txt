@@ -1,0 +1,1 @@
+{"answer":"-11","unit":"million dollars","expression":"99 - 110","low":"-12","high":"-10","reliable_digits":"1","explanation":"The liability decreased by $11 million; rounding of each balance to the nearest million gives a change between -$12 million and -$10 million."}

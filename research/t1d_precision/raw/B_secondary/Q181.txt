@@ -1,0 +1,1 @@
+{"answer":"24684","unit":"thousand dollars","expression":"561 * 44","low":"24403.5","high":"24964.5","reliable_digits":"1","explanation":"The exact 561 thousand granted shares are multiplied by $44 per share, whose rounding bounds are $43.5 and $44.5."}

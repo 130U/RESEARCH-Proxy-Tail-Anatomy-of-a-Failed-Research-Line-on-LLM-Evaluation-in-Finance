@@ -1,0 +1,1 @@
+{"answer":"2.25563909774436","unit":"percent","expression":"(136 - 133) / 133 * 100","low":"1.49812734082397","high":"3.01886792452830","reliable_digits":"0","explanation":"Each obligation is rounded to the nearest million, so the possible percentage changes do not share a reliable first significant digit."}

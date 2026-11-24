@@ -1,0 +1,1 @@
+{"answer":"7.01219512195122","unit":"percent","expression":"(35.1 - 32.8) / 32.8 * 100","low":"6.69710806697108","high":"7.32824427480916","reliable_digits":"1","explanation":"Service earnings increased from $32.8 million to $35.1 million, with rounding bounds supporting one reliable significant digit."}

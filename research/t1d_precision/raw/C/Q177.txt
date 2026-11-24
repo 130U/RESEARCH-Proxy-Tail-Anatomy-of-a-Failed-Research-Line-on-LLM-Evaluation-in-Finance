@@ -1,0 +1,1 @@
+{"answer":"45.0485436893","unit":"percent","expression":"(1,160 / 2,575) * 100","low":"45.0203843914","high":"45.0767139250","reliable_digits":"3","explanation":"Payments after 2020 are $1,160 million of the $2,575 million total, with each figure rounded to the nearest million."}

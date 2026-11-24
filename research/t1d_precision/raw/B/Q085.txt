@@ -1,0 +1,1 @@
+{"answer":"70.48141891891892","unit":"percent","expression":"(473.6 - 139.8) / 473.6 * 100","low":"70.46774363847535","high":"70.49509131215032","reliable_digits":"3","explanation":"Intangible assets equal total assets less tangible assets; allowing each displayed amount to vary by 0.05 million gives bounds that both round to 70.5%."}

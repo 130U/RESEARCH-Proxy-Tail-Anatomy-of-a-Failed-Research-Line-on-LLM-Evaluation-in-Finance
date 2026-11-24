@@ -1,0 +1,1 @@
+{"answer":"60","unit":"percent","expression":"(24 - 15) / 15 * 100","low":"51.6129032258","high":"68.9655172414","reliable_digits":"0","explanation":"Each gain is rounded to the nearest million, giving a possible increase from 51.61% to 68.97%, so even the first significant digit is uncertain."}

@@ -1,0 +1,1 @@
+{"answer":"35.82866293","unit":"percent","expression":"(33.93 - 24.98) / 24.98 * 100","low":"35.78146888","high":"35.87587588","reliable_digits":"2","explanation":"Allowing each price to vary by $0.005 gives these bounds and two reliable significant digits."}

@@ -1,0 +1,55 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+december 27 , 2008 , december 29 , 2007 , and december 30 , 2006 , respectively .
+in the next five years , the amortization expense is estimated to be $ 22859 , $ 22285 , $ 20408 , $ 10465 , and $ 3965 , respectively .
+marketable securities management determines the appropriate classification of marketable securities at the time of purchase and reevaluates such designation as of each balance sheet date .
+all of the company 2019s marketable securities are considered available-for-sale at december 27 , 2008 .
+see note 3 .
+available-for-sale securities are stated at fair value , with the unrealized gains and losses , net of tax , reported in other comprehensive gain/ ( loss ) .
+at december 27 , 2008 and december 29 , 2007 , cumulative unrealized gains/ ( losses ) of ( $ 22345 ) and $ 46445 , respectively , were reported accumulated in other comprehensive gain/ ( loss ) , net of related taxes .
+the amortized cost of debt securities classified as available-for-sale is adjusted for amortization of premiums and accretion of discounts to maturity , or in the case of mortgage-backed securities , over the estimated life of the security .
+such amortization is included in interest income from investments .
+realized gains and losses , and declines in value judged to be other-than-temporary are included in other income .
+the cost of securities sold is based on the specific identification method .
+income taxes the company accounts for income taxes using the liability method in accordance with sfas no .
+109 , accounting for income taxes .
+the liability method provides that deferred tax assets and liabilities are recorded based on the difference between the tax bases of assets and liabilities and their carrying amount for financial reporting purposes as measured by the enacted tax rates and laws that will be in effect when the differences are expected to reverse .
+income taxes of $ 153170 and $ 149071 at december 27 , 2008 and december 29 , 2007 , respectively , have not been accrued by the company for the unremitted earnings of several of its subsidiaries because such earnings are intended to be reinvested in the subsidiaries indefinitely .
+the company adopted the provisions of fasb interpretation no .
+48 , accounting for uncertainty in income taxes ( fin 48 ) , on december 31 , 2006 , the beginning of fiscal year 2007 .
+as a result of the implementation of fin 48 , the company has not recognized a material increase or decrease in the liability for unrecognized tax benefits .
+the total amount of unrecognized tax benefits as of december 27 , 2008 was $ 214.4 million including interest of $ 11.1 million .
+a reconciliation of the beginning and ending amount of unrecognized tax benefits for years ending december 27 , 2008 and december 29 , 2007 is as follows ( in $ millions ) : december 27 , december 29 , 2008 2007 .
+
+TABLE
+ | December 27, 2008 | December 29, 2007
+Balance at beginning of year | $126.6 | $70.5
+Additions based on tax positions related to prior years | 14.2 | 10.0
+Reductions based on tax positions related to prior years | (4.6) | (8.0)
+Additions based on tax positions related to current period | 83.8 | 73.0
+Reductions based on tax positions related to current period | - | -
+Reductions related to settelements with tax authorities | - | (7.6)
+Expiration of statute of limitations | (5.6) | (11.3)
+Balance at December 27, 2008 | $214.4 | $126.6
+
+the december 27 , 2008 balance of $ 214.4 million of unrecognized tax benefits , if recognized , would reduce the effective tax rate .
+none of the unrecognized tax benefits are due to uncertainty in the timing of deductibility .
+fin 48 requires unrecognized tax benefits to be classified as non-current liabilities , except for the portion that is expected to be paid within one year of the balance sheet date .
+prior to fin 48 adoption , unrecognized tax .
+
+QUESTION
+what was the increase in the unrecognized tax benefits observed during 2007 and 2008 , in millions of dollars?

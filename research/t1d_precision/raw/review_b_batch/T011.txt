@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R161",
+    "verdict": "valid",
+    "reason": "The three bindings are rounded basic net income amounts for 2005–2007 in thousands, and dividing their sum by the exact three-year count gives the requested annual average."
+  },
+  {
+    "review_id": "R162",
+    "verdict": "valid",
+    "reason": "The bindings correctly identify rounded 2007 daily throughput figures in thousands of barrels, and crude oil throughput divided by total throughput gives its percentage share."
+  },
+  {
+    "review_id": "R163",
+    "verdict": "valid",
+    "reason": "The bound amounts are rounded DVA sensitivities of $32 million and $38 million at the two specified year ends, and their sum converted to dollars answers the requested combined impact."
+  },
+  {
+    "review_id": "R164",
+    "verdict": "invalid",
+    "reason": "The $228 million, $219 million and $240 million amounts cover only uncertain tax positions that would affect the effective tax rate, rather than the total liabilities requested."
+  },
+  {
+    "review_id": "R165",
+    "verdict": "valid",
+    "reason": "The rounded 2017 euro sensitivity of $35 million and total sensitivity of $130 million are correctly bound, and their ratio gives the euro's share of the total."
+  },
+  {
+    "review_id": "R166",
+    "verdict": "valid",
+    "reason": "The bindings select 2008 operating lease obligations and total obligations in thousands, which are aggregate financial amounts whose ratio gives the requested share."
+  },
+  {
+    "review_id": "R167",
+    "verdict": "invalid",
+    "reason": "Although the rounded weighted average rates are correctly bound, subtracting 5.3 from 3.5 produces a negative percentage change rather than the requested positive percentage decrease."
+  },
+  {
+    "review_id": "R168",
+    "verdict": "invalid",
+    "reason": "The calculation divides gross London Market reserves of $57 by net total reserves of $320 without allocating ceded reserves to determine London's net contribution."
+  },
+  {
+    "review_id": "R169",
+    "verdict": "valid",
+    "reason": "The bindings correctly select rounded warranty reserves of $10 million for 2006 and $4 million for 2005, and subtraction gives the requested change in millions."
+  },
+  {
+    "review_id": "R170",
+    "verdict": "valid",
+    "reason": "The rounded rental expenses of $84 million and $75 million correspond to 2002 and 2001, and the increase divided by the 2001 expense gives the growth rate."
+  },
+  {
+    "review_id": "R171",
+    "verdict": "valid",
+    "reason": "The bindings correctly select rounded 2016 euro and total revenue sensitivities of $38 million and $129 million, whose ratio gives the requested percentage share."
+  },
+  {
+    "review_id": "R172",
+    "verdict": "valid",
+    "reason": "The source explicitly presents estimated incentive payments in millions, and dividing the correctly bound 2009 estimate by the total estimate gives the requested share."
+  },
+  {
+    "review_id": "R173",
+    "verdict": "uncertain",
+    "reason": "The year bindings and relative-change formula match, but the excerpt identifies the rates only as Black–Scholes assumptions without establishing whether they are rounded financial estimates or exact model inputs."
+  },
+  {
+    "review_id": "R174",
+    "verdict": "valid",
+    "reason": "The five bindings correctly select rounded expected principal payments for Entergy New Orleans Storm Recovery Funding for 2017–2021, and summing them gives the disclosed five-year payments in millions."
+  },
+  {
+    "review_id": "R175",
+    "verdict": "valid",
+    "reason": "The bindings correctly identify rounded rent expenses of $216 million for 2009 and $205 million for 2008, and dividing their increase by the 2008 expense gives the requested percentage increase."
+  },
+  {
+    "review_id": "R176",
+    "verdict": "invalid",
+    "reason": "The $2.3 million numerator belongs to 2011, whereas the requested 2010 collateral amount is $19.3 million."
+  }
+]

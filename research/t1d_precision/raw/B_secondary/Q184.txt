@@ -1,0 +1,1 @@
+{"answer":"-11.403508771929825","unit":"percent","expression":"(101 - 114) / 114 * 100","low":"-12.22707423580786","high":"-10.572687224669604","reliable_digits":"1","explanation":"Interpreting 20011 as 2011, ROI uses the change from 114 to 101, with rounding uncertainty of 0.5 in each figure."}

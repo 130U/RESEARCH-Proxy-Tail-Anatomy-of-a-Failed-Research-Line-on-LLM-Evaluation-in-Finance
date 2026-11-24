@@ -1,0 +1,5 @@
+{
+    "review_id": "R158",
+    "verdict": "invalid",
+    "reason": "The calculation divides $48 million of issuance costs by $7.0 billion of notes without harmonizing units or converting the resulting ratio to percent."
+  }

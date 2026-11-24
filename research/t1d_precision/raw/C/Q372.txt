@@ -1,0 +1,1 @@
+{"answer":"19.97352552","unit":"percent","expression":"(4074 / 20397) * 100","low":"19.97058463","high":"19.97646655","reliable_digits":"3","explanation":"The bounds use (4074 - 0.5)/(20397 + 0.5)*100 and (4074 + 0.5)/(20397 - 0.5)*100, reflecting rounding to millions."}

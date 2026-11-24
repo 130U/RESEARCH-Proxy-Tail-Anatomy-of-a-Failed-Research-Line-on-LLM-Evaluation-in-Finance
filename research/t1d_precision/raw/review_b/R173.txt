@@ -1,0 +1,5 @@
+{
+    "review_id": "R173",
+    "verdict": "uncertain",
+    "reason": "The year bindings and relative-change formula match, but the excerpt identifies the rates only as Black–Scholes assumptions without establishing whether they are rounded financial estimates or exact model inputs."
+  }

@@ -1,0 +1,1 @@
+{"answer":"46.7980590667","unit":"percent","expression":"(50079 - 26643) / 50079 * 100","low":"46.7965294488","high":"46.7995886540","reliable_digits":"4","explanation":"The reduction from 2011 to 2012 allows ±0.5 in each displayed amount; both bounds round to 46.80%."}

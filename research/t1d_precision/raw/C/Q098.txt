@@ -1,0 +1,1 @@
+{"answer":"3.815760","unit":"percent","expression":"(459.8 - 442.9) / 442.9 * 100","low":"3.792753","high":"3.838772","reliable_digits":"2","explanation":"Each cost can vary by $0.05 million, giving these bounds and supporting two significant digits."}

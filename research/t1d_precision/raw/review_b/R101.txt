@@ -1,0 +1,5 @@
+{
+    "review_id": "R101",
+    "verdict": "invalid",
+    "reason": "The obligation was $10 million in both 2005 and 2006, whereas dividing by nine uses the 2004 balance as an exact constant and does not calculate the 2006 increase."
+  }

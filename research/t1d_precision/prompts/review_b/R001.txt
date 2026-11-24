@@ -1,0 +1,202 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R001",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "unconditional purchase obligations have been entered into in the ordinary course of business , prin- cipally for capital projects and the purchase of cer- tain pulpwood , logs , wood chips , raw materials , energy and services , including fiber supply agree- ments to purchase pulpwood that were entered into concurrently with the 2006 transformation plan for- estland sales ( see note 7 ) ."
+      },
+      {
+        "location": "text_1",
+        "text": "at december 31 , 2006 , total future minimum commitments under existing non-cancelable leases and purchase obligations were as follows : in millions 2007 2008 2009 2010 2011 thereafter ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "<i>In millions</i>",
+          "2007",
+          "2008",
+          "2009",
+          "2010",
+          "2011",
+          "Thereafter"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Lease obligations (a)",
+          "$144",
+          "$117",
+          "$94",
+          "$74",
+          "$60",
+          "$110"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Purchase obligations (b,c)",
+          "2,329",
+          "462",
+          "362",
+          "352",
+          "323",
+          "1,794"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Total",
+          "$2,473",
+          "$579",
+          "$456",
+          "$426",
+          "$383",
+          "$1,904"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_2",
+        "text": "( a ) included in these amounts are $ 76 million of lease obligations related to discontinued operations and businesses held for sale that are due as follows : 2007 2013 $ 23 million ; 2008 2013 $ 19 million ; 2009 2013 $ 15 million ; 2010 2013 $ 7 million ; 2011 2013 $ 5 million ; and thereafter 2013 $ 7 million ."
+      },
+      {
+        "location": "text_3",
+        "text": "( b ) included in these amounts are $ 1.3 billion of purchase obliga- tions related to discontinued operations and businesses held for sale that are due as follows : 2007 2013 $ 335 million ; 2008 2013 $ 199 million ; 2009 2013 $ 157 million ; 2010 2013 $ 143 million ; 2011 2013 $ 141 million ; and thereafter 2013 $ 331 million ."
+      },
+      {
+        "location": "text_4",
+        "text": "( c ) includes $ 2.2 billion relating to fiber supply agreements entered into at the time of the transformation plan forestland sales ."
+      },
+      {
+        "location": "text_5",
+        "text": "rent expense was $ 217 million , $ 216 million and $ 225 million for 2006 , 2005 and 2004 , respectively ."
+      },
+      {
+        "location": "text_6",
+        "text": "international paper entered into an agreement in 2000 to guarantee , for a fee , an unsecured con- tractual credit agreement between a financial institution and an unrelated third-party customer ."
+      },
+      {
+        "location": "text_7",
+        "text": "in the fourth quarter of 2006 , the customer cancelled the agreement and paid the company a fee of $ 11 million , which is included in cost of products sold in the accompanying consolidated statement of oper- ations ."
+      },
+      {
+        "location": "text_8",
+        "text": "accordingly , the company has no future obligations under this agreement ."
+      },
+      {
+        "location": "text_9",
+        "text": "in connection with sales of businesses , property , equipment , forestlands and other assets , interna- tional paper commonly makes representations and warranties relating to such businesses or assets , and may agree to indemnify buyers with respect to tax and environmental liabilities , breaches of repre- sentations and warranties , and other matters ."
+      },
+      {
+        "location": "text_10",
+        "text": "where liabilities for such matters are determined to be probable and subject to reasonable estimation , accrued liabilities are recorded at the time of sale as a cost of the transaction ."
+      },
+      {
+        "location": "text_11",
+        "text": "under the terms of the sale agreement for the bever- age packaging business , the purchase price received by the company is subject to a post-closing adjust- ment if adjusted annualized earnings of the beverage packaging business for the first six months of 2007 are less than a targeted amount ."
+      },
+      {
+        "location": "text_12",
+        "text": "the adjustment , if any , would equal five times the shortfall from the targeted amount ."
+      },
+      {
+        "location": "text_13",
+        "text": "while management does not cur- rently believe that such adjustment is probable based upon current projections , it is reasonably possible that an adjustment could be required in international paper does not currently believe that it is reasonably possible that future unrecorded liabilities for other such matters , if any , would have a material adverse effect on its consolidated financial statements ."
+      },
+      {
+        "location": "text_14",
+        "text": "exterior siding and roofing settlements three nationwide class action lawsuits against the company and masonite corp. , a formerly wholly- owned subsidiary of the company , relating to exterior siding and roofing products manufactured by masonite were settled in 1998 and 1999 ."
+      },
+      {
+        "location": "text_15",
+        "text": "masonite was sold to premdor inc ."
+      },
+      {
+        "location": "text_16",
+        "text": "in 2001 ."
+      },
+      {
+        "location": "text_17",
+        "text": "the liability for these settlements , as well as the corresponding insurance recoveries ( each as further described below ) , were retained by the company ."
+      },
+      {
+        "location": "text_18",
+        "text": "the first suit , entitled judy naef v ."
+      },
+      {
+        "location": "text_19",
+        "text": "masonite and international paper , was filed in december 1994 and settled on january 15 , 1998 ( the hardboard settlement ) ."
+      },
+      {
+        "location": "text_20",
+        "text": "the plaintiffs alleged that hardboard siding manufactured by masonite failed prematurely , allowing moisture intrusion that in turn caused damage to the structure underneath the siding ."
+      },
+      {
+        "location": "text_21",
+        "text": "the class consisted of all u.s ."
+      },
+      {
+        "location": "text_22",
+        "text": "property owners having masonite hardboard siding installed on and incorporated into buildings between january 1 , 1980 , and january 15 , 1998 ."
+      },
+      {
+        "location": "text_23",
+        "text": "for siding that was installed between january 1 , 1980 , and december 31 , 1989 , the deadline for filing claims expired january 18 , 2005 , and for siding installed between january 1 , 1990 , through january 15 , 1998 , claims must be made by january 15 , 2008 ."
+      },
+      {
+        "location": "text_24",
+        "text": "the second suit , entitled cosby , et al ."
+      },
+      {
+        "location": "text_25",
+        "text": "v ."
+      },
+      {
+        "location": "text_26",
+        "text": "masonite corporation , et al. , was filed in 1997 and settled on january 6 , 1999 ( the omniwood settlement ) ."
+      },
+      {
+        "location": "text_27",
+        "text": "the plaintiffs made allegations with regard to omniwood ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "at december 31 , 2006 , what percentage of total future minimum commitments under existing non-cancelable leases and purchase obligations from lease obligations is due in 2008?",
+  "reference_program": "divide(117, 579)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "117",
+      "raw": "117",
+      "location": "table_1:2",
+      "context": "Lease obligations (a) | 2008"
+    },
+    "x1": {
+      "program_token": "579",
+      "raw": "579",
+      "location": "table_3:2",
+      "context": "Total | 2008"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"answer":"2.255639097744361","unit":"percent","expression":"(136 - 133) / 133 * 100","low":"1.498127340823970","high":"3.018867924528302","reliable_digits":"0","explanation":"Allowing each obligation to vary by 0.5 million gives these bounds, so even the first significant digit is unreliable."}

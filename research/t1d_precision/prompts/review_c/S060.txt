@@ -1,0 +1,142 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S060",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "2 0 1 9 a n n u a l r e p o r t1 6 performance graph the following chart presents a comparison for the five-year period ended june 30 , 2019 , of the market performance of the company 2019s common stock with the s&p 500 index and an index of peer companies selected by the company ."
+      },
+      {
+        "location": "text_1",
+        "text": "historic stock price performance is not necessarily indicative of future stock price performance ."
+      },
+      {
+        "location": "text_2",
+        "text": "comparison of 5 year cumulative total return among jack henry & associates , inc. , the s&p 500 index , and a peer group the following information depicts a line graph with the following values: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "JKHY",
+          "100.00",
+          "110.51",
+          "151.12",
+          "182.15",
+          "231.36",
+          "240.29"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2019 Peer Group",
+          "100.00",
+          "126.23",
+          "142.94",
+          "166.15",
+          "224.73",
+          "281.09"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2018 Peer Group",
+          "100.00",
+          "127.40",
+          "151.16",
+          "177.26",
+          "228.97",
+          "286.22"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "S&P 500",
+          "100.00",
+          "107.42",
+          "111.71",
+          "131.70",
+          "150.64",
+          "166.33"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_3",
+        "text": "this comparison assumes $ 100 was invested on june 30 , 2014 , and assumes reinvestments of dividends ."
+      },
+      {
+        "location": "text_4",
+        "text": "total returns are calculated according to market capitalization of peer group members at the beginning of each period ."
+      },
+      {
+        "location": "text_5",
+        "text": "peer companies selected are in the business of providing specialized computer software , hardware and related services to financial institutions and other businesses ."
+      },
+      {
+        "location": "text_6",
+        "text": "some peer participant companies were different for fiscal year ended 2019 compared to fiscal year ended 2018 ."
+      },
+      {
+        "location": "text_7",
+        "text": "the company 2019s compensation committee of the board of directors adjusted the peer participants due to consolidations within the industry during the 2019 fiscal year ."
+      },
+      {
+        "location": "text_8",
+        "text": "companies in the 2019 peer group are aci worldwide , inc. ; black knight , inc. ; bottomline technologies , inc. ; broadridge financial solutions , inc. ; cardtronics plc ; corelogic , inc. ; euronet worldwide , inc. ; exlservice holdings , inc. ; fair isaac corp. ; fidelity national information services , inc. ; fiserv , inc. ; fleetcor technologies , inc. ; global payments , inc. ; square , inc. ; ss&c technologies holdings , inc. ; total system services , inc. ; tyler technologies , inc. ; verint systems , inc. ; and wex , inc ."
+      },
+      {
+        "location": "text_9",
+        "text": "companies in the 2018 peer group were aci worldwide , inc. ; bottomline technology , inc. ; broadridge financial solutions ; cardtronics , inc. ; corelogic , inc. ; euronet worldwide , inc. ; fair isaac corp. ; fidelity national information services , inc. ; fiserv , inc. ; global payments , inc. ; moneygram international , inc. ; ss&c technologies holdings , inc. ; total systems services , inc. ; tyler technologies , inc. ; verifone ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percentage growth of the 5 year- cumulative total return for the 2018 peer group from 2016 to 2017",
+  "human_answer": "17.3%",
+  "reference_program": "subtract(177.26, 151.16), subtract(#0, 151.16)",
+  "reference_execution_value": -125.06,
+  "model_response": {
+    "answer": "17.2664726118",
+    "unit": "percent",
+    "expression": "(177.26 - 151.16) / 151.16 * 100",
+    "explanation": "The 2018 peer group's cumulative total return increased by 26.10 from its 2016 value of 151.16."
+  }
+}

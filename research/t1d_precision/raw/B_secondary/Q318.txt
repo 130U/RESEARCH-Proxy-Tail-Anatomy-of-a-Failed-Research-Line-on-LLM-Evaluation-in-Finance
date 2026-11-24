@@ -1,0 +1,1 @@
+{"answer":"70","unit":"million dollars","expression":"32 + 38","low":"69","high":"71","reliable_digits":"1","explanation":"Adding the 2008 and 2007 DVA sensitivities gives $70 million, with rounding bounds of $69 million to $71 million."}

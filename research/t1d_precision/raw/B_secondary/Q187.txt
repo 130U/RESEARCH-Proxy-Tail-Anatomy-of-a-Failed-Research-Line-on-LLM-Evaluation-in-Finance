@@ -1,0 +1,1 @@
+{"answer":"85.7142857142857","unit":"percent","expression":"(2.6 - 1.4) / 1.4 * 100","low":"75.8620689655172","high":"96.2962962962963","reliable_digits":"0","explanation":"Contributions rose from $1.4 million to $2.6 million; rounding permits growth between the stated bounds, so the first significant digit is not reliable."}

@@ -1,0 +1,1 @@
+{"answer":"80.0847457627","unit":"percent","expression":"(4,250 - 2,360) / 2,360 * 100","low":"80.0254183436","high":"80.1440983259","reliable_digits":"2","explanation":"GFS revenue growth uses 2015 as the base; rounding each revenue to the nearest million gives these bounds and two reliable significant digits."}

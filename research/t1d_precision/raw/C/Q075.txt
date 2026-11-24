@@ -1,0 +1,1 @@
+{"answer":"63.0548302872","unit":"percent","expression":"(24.98 - 15.32) / 15.32 * 100","low":"62.9690048940","high":"63.1407117205","reliable_digits":"2","explanation":"Each price is rounded to the nearest $0.01; using opposite rounding extremes gives the bounds, supporting two significant digits."}

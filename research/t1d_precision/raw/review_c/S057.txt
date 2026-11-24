@@ -1,0 +1,7 @@
+{
+    "call_id": "S057",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text_20 gives weighted-average borrowing rates of 5.3% in 2010 and 3.5% in 2011. Using the starting 5.3% denominator, the model correctly reports a positive decrease magnitude of 33.96%; the reference reports the signed change."
+  }

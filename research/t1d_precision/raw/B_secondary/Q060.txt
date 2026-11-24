@@ -1,0 +1,1 @@
+{"answer":"12","unit":"percent","expression":"(84 - 75) / 75 * 100","low":"10.5960264900662","high":"13.4228187919463","reliable_digits":"1","explanation":"Each rental expense figure is rounded to the nearest million, giving the stated growth-rate bounds and one reliable significant digit."}

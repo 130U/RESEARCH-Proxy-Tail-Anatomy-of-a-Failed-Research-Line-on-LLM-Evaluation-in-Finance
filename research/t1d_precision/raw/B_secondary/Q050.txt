@@ -1,0 +1,1 @@
+{"answer":"117624.84","unit":"thousand dollars","expression":"1,084 * 108.51","low":"117619.42","high":"117630.26","reliable_digits":"4","explanation":"The exact share count in thousands is multiplied by the per-share fair value, whose rounding uncertainty is 0.005 dollars."}

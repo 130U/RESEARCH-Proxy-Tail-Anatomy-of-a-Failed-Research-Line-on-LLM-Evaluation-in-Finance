@@ -1,0 +1,5 @@
+{
+    "review_id": "R107",
+    "verdict": "valid",
+    "reason": "The correctly bound 2009 and 2008 expected volatilities are estimated weighted-average assumptions, and dividing their difference by the 2008 value measures relative percentage change."
+  }

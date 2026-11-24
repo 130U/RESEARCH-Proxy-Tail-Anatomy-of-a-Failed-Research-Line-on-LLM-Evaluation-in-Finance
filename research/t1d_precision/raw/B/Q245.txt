@@ -1,0 +1,1 @@
+{"answer":"-10","unit":"percentage points","expression":"50 - 60","low":"-11","high":"-9","reliable_digits":"0","explanation":"Hedging decreased by 10 percentage points; rounding permits a decrease of 9 to 11 points, so no leading significant digit is guaranteed."}

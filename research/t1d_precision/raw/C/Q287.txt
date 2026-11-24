@@ -1,0 +1,1 @@
+{"answer":"0.6857142857142857","unit":"percent","expression":"48 / (7.0 * 1000) * 100","low":"0.673758865248227","high":"0.697841726618705","reliable_digits":"1","explanation":"The bounds divide issuance costs of $47.5–48.5 million by note proceeds of $6.95–7.05 billion, using opposite extremes."}

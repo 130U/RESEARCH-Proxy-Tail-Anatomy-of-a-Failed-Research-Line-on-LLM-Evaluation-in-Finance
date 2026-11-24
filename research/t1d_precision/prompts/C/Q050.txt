@@ -1,0 +1,56 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+zero .
+to the extent earned , these performance units convert into unrestricted shares after performance results for the three-year performance period are certified by the compensation committee .
+we recognize share-based compensation expense based on the grant-date fair value of the performance-based restricted stock units , as determined by use of a monte carlo model , on a straight-line basis over the performance period .
+leveraged performance units during the year ended may 31 , 2015 , certain executives were granted performance units that we refer to as 201cleveraged performance units , 201d or 201clpus . 201d lpus contain a market condition based on our relative stock price growth over a three-year performance period .
+the lpus contain a minimum threshold performance which , if not met , would result in no payout .
+the lpus also contain a maximum award opportunity set as a fixed dollar and fixed number of shares .
+after the three-year performance period , which concluded in october 2017 , one-third of the earned units converted to unrestricted common stock .
+the remaining two-thirds converted to restricted stock that will vest in equal installments on each of the first two anniversaries of the conversion date .
+we recognize share-based compensation expense based on the grant date fair value of the lpus , as determined by use of a monte carlo model , on a straight-line basis over the requisite service period for each separately vesting portion of the lpu award .
+the following table summarizes the changes in unvested restricted stock and performance awards for the years ended december 31 , 2018 and 2017 , the 2016 fiscal transition period and the year ended may 31 , 2016 : shares weighted-average grant-date fair value ( in thousands ) .
+
+TABLE
+ | Shares (in thousands) | Weighted-AverageGrant-DateFair Value
+Unvested at May 31, 2015 | 1,848 | $28.97
+Granted | 461 | 57.04
+Vested | (633) | 27.55
+Forfeited | (70) | 34.69
+Unvested at May 31, 2016 | 1,606 | 37.25
+Granted | 348 | 74.26
+Vested | (639) | 31.38
+Forfeited | (52) | 45.27
+Unvested at December 31, 2016 | 1,263 | 49.55
+Granted | 899 | 79.79
+Vested | (858) | 39.26
+Forfeited | (78) | 59.56
+Unvested at December 31, 2017 | 1,226 | 78.29
+Granted | 650 | 109.85
+Vested | (722) | 60.08
+Forfeited | (70) | 91.47
+Unvested at December 31, 2018 | 1,084 | $108.51
+
+the total fair value of restricted stock and performance awards vested was $ 43.4 million and $ 33.7 million for the years ended december 31 , 2018 and 2017 , respectively , $ 20.0 million for the 2016 fiscal transition period and $ 17.4 million for the year ended may 31 , 2016 .
+for restricted stock and performance awards , we recognized compensation expense of $ 53.2 million and $ 35.2 million for the years ended december 31 , 2018 and 2017 , respectively , $ 17.2 million for the 2016 fiscal transition period and $ 28.8 million for the year ended may 31 , 2016 .
+as of december 31 , 2018 , there was $ 62.7 million of unrecognized compensation expense related to unvested restricted stock and performance awards that we expect to recognize over a weighted-average period of 2.0 years .
+our restricted stock and performance award plans provide for accelerated vesting under certain conditions .
+94 2013 global payments inc .
+| 2018 form 10-k annual report .
+
+QUESTION
+what was the value in thousands of unvested restricted stock and performance awards at the weighted-averagegrant-datefair value as of december 31 , 2018?\\n

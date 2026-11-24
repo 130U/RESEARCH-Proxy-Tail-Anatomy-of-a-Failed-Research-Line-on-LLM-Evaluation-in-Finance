@@ -1,0 +1,1 @@
+{"answer":"-27.5471698113","unit":"percent","expression":"(9.60 - 13.25) / 13.25 * 100","low":"-27.6122218031","high":"-27.4820687052","reliable_digits":"2","explanation":"Each fair value may vary by $0.005, giving these bounds on the percentage decrease."}

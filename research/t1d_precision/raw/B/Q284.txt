@@ -1,0 +1,1 @@
+{"answer":"18.95620875824835","unit":"percent","expression":"(1,983 - 1,667) / 1,667 * 100","low":"18.89055472263868","high":"19.02190219021902","reliable_digits":"2","explanation":"Each balance has rounding uncertainty of $0.5 million; the resulting bounds both round to 19% at two significant digits."}

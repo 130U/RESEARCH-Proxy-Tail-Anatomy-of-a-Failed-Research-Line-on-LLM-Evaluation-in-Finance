@@ -1,0 +1,20 @@
+{
+  "review_id": "R200",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "first",
+      "original_reason": "2017repurchase cost54m/shares0.7million yields dollars/share; scaled shares are rounded counts.",
+      "display_reason": "2017repurchase cost54m/shares0.7million yields dollars/share; scaled shares are rounded counts.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "second",
+      "original_reason": "The rounded 2017 aggregate cost and scaled share volume support an average repurchase price, but the excerpt does not identify the company as AWK.",
+      "display_reason": "The rounded 2017 aggregate cost and scaled share volume support an average repurchase price, but the excerpt does not identify the company as AWK.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

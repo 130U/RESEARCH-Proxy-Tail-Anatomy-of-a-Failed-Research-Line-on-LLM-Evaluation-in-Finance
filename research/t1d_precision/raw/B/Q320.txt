@@ -1,0 +1,1 @@
+{"answer":"4.555555555555556","unit":"times","expression":"82 / 18","low":"4.405405405405405","high":"4.714285714285714","reliable_digits":"0","explanation":"Allowing ±0.5 percentage points gives bounds of 81.5/18.5 and 82.5/17.5, which round differently even at one significant digit."}

@@ -1,0 +1,228 @@
+{
+  "scope": "Same-sign canonical two-input nonzero growth; all analyzed splits, no test/train fitting.",
+  "primary": "Empirical marginal growth distribution independent of empirical joint (k_a,k_b) distribution; baseline mantissa log-uniform on [1,10), independent of both. Gold assumed equal to displayed-center calculation.",
+  "sensitivity": "Joint empirical (g,k_a,k_b); uniform within each Benford first-digit bin; first-digit-only bounds. All are same-data plug-in checks, not out-of-sample forecasts.",
+  "excluded_growth_rows": {
+    "not_canonical_two_source_growth": 31
+  },
+  "n": 1427,
+  "by_tolerance": {
+    "0.001": {
+      "n": 1427,
+      "observed_gold_rate": 0.7344078486334968,
+      "observed_center_rate": 0.7295024526979678,
+      "marginal_prediction": 0.7073178098864222,
+      "marginal_error_pp": -2.7090038747074607,
+      "joint_prediction": 0.7288313940360542,
+      "joint_error_pp": -0.5576454597442604,
+      "marginal_uniform_within_digit": 0.7062757944339179,
+      "marginal_first_digit_only_lower": 0.6838667470179628,
+      "marginal_first_digit_only_upper": 0.7319386142433386
+    },
+    "0.005": {
+      "n": 1427,
+      "observed_gold_rate": 0.5080588647512263,
+      "observed_center_rate": 0.5024526979677646,
+      "marginal_prediction": 0.5088023080988642,
+      "marginal_error_pp": 0.07434433476378732,
+      "joint_prediction": 0.5228653869017965,
+      "joint_error_pp": 1.4806522150570212,
+      "marginal_uniform_within_digit": 0.5071330606582038,
+      "marginal_first_digit_only_lower": 0.47892227614859034,
+      "marginal_first_digit_only_upper": 0.53696582352197
+    },
+    "0.01": {
+      "n": 1427,
+      "observed_gold_rate": 0.4050455501051156,
+      "observed_center_rate": 0.4050455501051156,
+      "marginal_prediction": 0.4151919044870081,
+      "marginal_error_pp": 1.0146354381892486,
+      "joint_prediction": 0.42097144513353246,
+      "joint_error_pp": 1.5925895028416848,
+      "marginal_uniform_within_digit": 0.41363524829845033,
+      "marginal_first_digit_only_lower": 0.3869035659719026,
+      "marginal_first_digit_only_upper": 0.44589123521519725
+    },
+    "0.02": {
+      "n": 1427,
+      "observed_gold_rate": 0.31114225648213034,
+      "observed_center_rate": 0.3118430273300631,
+      "marginal_prediction": 0.3261184995246065,
+      "marginal_error_pp": 1.4976243042476134,
+      "joint_prediction": 0.31973771336916623,
+      "joint_error_pp": 0.859545688703589,
+      "marginal_uniform_within_digit": 0.32451771079094016,
+      "marginal_first_digit_only_lower": 0.30028112605834123,
+      "marginal_first_digit_only_upper": 0.3535201205282343
+    },
+    "0.05": {
+      "n": 1427,
+      "observed_gold_rate": 0.18780658724597057,
+      "observed_center_rate": 0.18780658724597057,
+      "marginal_prediction": 0.2243004878975372,
+      "marginal_error_pp": 3.649390065156663,
+      "joint_prediction": 0.20491989757999335,
+      "joint_error_pp": 1.7113310334022773,
+      "marginal_uniform_within_digit": 0.22274650203629304,
+      "marginal_first_digit_only_lower": 0.19991183479029356,
+      "marginal_first_digit_only_upper": 0.24767840308950473
+    }
+  },
+  "by_k_a": [
+    {
+      "k_a": 1,
+      "n": 12,
+      "observed_gold_rate": 1.0,
+      "observed_center_rate": 1.0,
+      "marginal_prediction": 0.9976315933694156,
+      "marginal_error_pp": -0.2368406630584352,
+      "joint_prediction": 1.0,
+      "joint_error_pp": 0.0,
+      "marginal_uniform_within_digit": 0.9976232204719302,
+      "marginal_first_digit_only_lower": 0.9974291958666585,
+      "marginal_first_digit_only_upper": 0.9978319811415038
+    },
+    {
+      "k_a": 2,
+      "n": 189,
+      "observed_gold_rate": 0.9894179894179894,
+      "observed_center_rate": 0.9894179894179894,
+      "marginal_prediction": 0.9842168532044758,
+      "marginal_error_pp": -0.5201136213513591,
+      "joint_prediction": 0.9858476216950897,
+      "joint_error_pp": -0.3570367722899759,
+      "marginal_uniform_within_digit": 0.9840301507493763,
+      "marginal_first_digit_only_lower": 0.981136198896349,
+      "marginal_first_digit_only_upper": 0.9870481446403117
+    },
+    {
+      "k_a": 3,
+      "n": 412,
+      "observed_gold_rate": 0.720873786407767,
+      "observed_center_rate": 0.720873786407767,
+      "marginal_prediction": 0.7416028379179658,
+      "marginal_error_pp": 2.072905151019877,
+      "joint_prediction": 0.7304906736110551,
+      "joint_error_pp": 0.9616887203288127,
+      "marginal_uniform_within_digit": 0.7399220395009332,
+      "marginal_first_digit_only_lower": 0.6920978767573743,
+      "marginal_first_digit_only_upper": 0.7918646761930089
+    },
+    {
+      "k_a": 4,
+      "n": 488,
+      "observed_gold_rate": 0.1598360655737705,
+      "observed_center_rate": 0.1598360655737705,
+      "marginal_prediction": 0.174910907442582,
+      "marginal_error_pp": 1.50748418688115,
+      "joint_prediction": 0.20107982205572308,
+      "joint_error_pp": 4.124375648195258,
+      "marginal_uniform_within_digit": 0.17201462690677533,
+      "marginal_first_digit_only_lower": 0.137059772231271,
+      "marginal_first_digit_only_upper": 0.21921312652961544
+    },
+    {
+      "k_a": 5,
+      "n": 207,
+      "observed_gold_rate": 0.014492753623188406,
+      "observed_center_rate": 0.014492753623188406,
+      "marginal_prediction": 0.012549355527959294,
+      "marginal_error_pp": -0.1943398095229112,
+      "joint_prediction": 0.014181506080144127,
+      "joint_error_pp": -0.031124754304427855,
+      "marginal_uniform_within_digit": 0.012176726661124068,
+      "marginal_first_digit_only_lower": 0.008369642061776983,
+      "marginal_first_digit_only_upper": 0.016893538592209167
+    },
+    {
+      "k_a": 6,
+      "n": 89,
+      "observed_gold_rate": 0.0,
+      "observed_center_rate": 0.0,
+      "marginal_prediction": 0.0003996386659322036,
+      "marginal_error_pp": 0.03996386659322036,
+      "joint_prediction": 0.0,
+      "joint_error_pp": 0.0,
+      "marginal_uniform_within_digit": 0.000366549151434644,
+      "marginal_first_digit_only_lower": 4.973681711605631e-05,
+      "marginal_first_digit_only_upper": 0.0007339392439612699
+    },
+    {
+      "k_a": 7,
+      "n": 20,
+      "observed_gold_rate": 0.05,
+      "observed_center_rate": 0.05,
+      "marginal_prediction": 0.04800534185720892,
+      "marginal_error_pp": -0.1994658142791081,
+      "joint_prediction": 0.018818462782076925,
+      "joint_error_pp": -3.1181537217923077,
+      "marginal_uniform_within_digit": 0.048004934318603254,
+      "marginal_first_digit_only_lower": 0.04705300718427775,
+      "marginal_first_digit_only_upper": 0.04870870610488441
+    },
+    {
+      "k_a": 8,
+      "n": 7,
+      "observed_gold_rate": 0.0,
+      "observed_center_rate": 0.0,
+      "marginal_prediction": 0.0,
+      "marginal_error_pp": 0.0,
+      "joint_prediction": 0.0,
+      "joint_error_pp": 0.0,
+      "marginal_uniform_within_digit": 0.0,
+      "marginal_first_digit_only_lower": 0.0,
+      "marginal_first_digit_only_upper": 0.0
+    },
+    {
+      "k_a": 9,
+      "n": 3,
+      "observed_gold_rate": 0.0,
+      "observed_center_rate": 0.0,
+      "marginal_prediction": 0.0,
+      "marginal_error_pp": 0.0,
+      "joint_prediction": 0.0,
+      "joint_error_pp": 0.0,
+      "marginal_uniform_within_digit": 0.0,
+      "marginal_first_digit_only_lower": 0.0,
+      "marginal_first_digit_only_upper": 0.0
+    }
+  ],
+  "by_split": {
+    "train": {
+      "n": 1064,
+      "observed_gold_rate": 0.40225563909774437,
+      "observed_center_rate": 0.40225563909774437,
+      "marginal_prediction": 0.41847481992543334,
+      "marginal_error_pp": 1.6219180827688973,
+      "joint_prediction": 0.4177645451712016,
+      "joint_error_pp": 1.550890607345723,
+      "marginal_uniform_within_digit": 0.4168910909714426,
+      "marginal_first_digit_only_lower": 0.3895513763979482,
+      "marginal_first_digit_only_upper": 0.4488648006936837
+    },
+    "dev": {
+      "n": 140,
+      "observed_gold_rate": 0.42857142857142855,
+      "observed_center_rate": 0.42857142857142855,
+      "marginal_prediction": 0.41358656926717074,
+      "marginal_error_pp": -1.4984859304257803,
+      "joint_prediction": 0.44009221927080455,
+      "joint_error_pp": 1.1520790699376005,
+      "marginal_uniform_within_digit": 0.41188083426158073,
+      "marginal_first_digit_only_lower": 0.3849370683117937,
+      "marginal_first_digit_only_upper": 0.4499178245388429
+    },
+    "test": {
+      "n": 223,
+      "observed_gold_rate": 0.40358744394618834,
+      "observed_center_rate": 0.40358744394618834,
+      "marginal_prediction": 0.4009844257712465,
+      "marginal_error_pp": -0.26030181749418513,
+      "joint_prediction": 0.4242684549124654,
+      "joint_error_pp": 2.068101096627706,
+      "marginal_uniform_within_digit": 0.3996261591200059,
+      "marginal_first_digit_only_lower": 0.37579058790634645,
+      "marginal_first_digit_only_upper": 0.4299206791007897
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"answer":"2.2222222222","unit":"ratio","expression":"160 / 72","low":"2.2","high":"2.2447552448","reliable_digits":"2","explanation":"The rounding bounds are 159.5 / 72.5 and 160.5 / 71.5, both of which round to 2.2 at two significant digits."}

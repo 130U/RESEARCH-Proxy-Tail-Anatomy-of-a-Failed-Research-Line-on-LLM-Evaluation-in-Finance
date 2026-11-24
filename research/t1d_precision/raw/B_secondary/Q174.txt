@@ -1,0 +1,1 @@
+{"answer":"-4.3545239807","unit":"percent","expression":"(931.3 - 973.7) / 973.7 * 100","low":"-4.3645699615","high":"-4.3444769681","reliable_digits":"1","explanation":"Net revenue declined; the rounding range supports only one consistently rounded significant digit."}

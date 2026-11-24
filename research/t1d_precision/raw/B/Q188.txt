@@ -1,0 +1,1 @@
+{"answer":"327","unit":"million dollars","expression":"353 + 6 - 32","low":"325.5","high":"328.5","reliable_digits":"2","explanation":"Using the stated transaction-cost ceiling, reconstruction costs plus transaction costs minus deferred income tax benefits yield the net authorized amount."}

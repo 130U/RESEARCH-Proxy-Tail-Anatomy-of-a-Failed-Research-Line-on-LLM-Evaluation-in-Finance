@@ -1,0 +1,1 @@
+{"answer":"67.5357142857","unit":"percent","expression":"945.5 / (1.4 * 1000) * 100","low":"65.2034482759","high":"70.0407407407","reliable_digits":"1","explanation":"The $945.5 million revolving facility is divided by the $1.4 billion total, with rounding bounds of 945.45–945.55 million and 1350–1450 million."}

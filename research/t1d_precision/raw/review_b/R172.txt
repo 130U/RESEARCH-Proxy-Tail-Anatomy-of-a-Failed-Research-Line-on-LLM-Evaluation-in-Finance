@@ -1,0 +1,5 @@
+{
+    "review_id": "R172",
+    "verdict": "valid",
+    "reason": "The source explicitly presents estimated incentive payments in millions, and dividing the correctly bound 2009 estimate by the total estimate gives the requested share."
+  }

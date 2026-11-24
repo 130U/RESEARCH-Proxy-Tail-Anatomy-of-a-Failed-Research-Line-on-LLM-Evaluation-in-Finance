@@ -1,0 +1,1 @@
+{"answer":"35","unit":"million dollars","expression":"(32 + 38) / 2","low":"34.5","high":"35.5","reliable_digits":"2","explanation":"Each reported sensitivity is rounded to the nearest million dollars, so their average is uncertain by 0.5 million dollars."}

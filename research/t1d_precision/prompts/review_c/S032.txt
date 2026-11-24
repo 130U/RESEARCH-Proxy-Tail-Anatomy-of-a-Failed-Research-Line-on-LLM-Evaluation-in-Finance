@@ -1,0 +1,206 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S032",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "investment securities table 11 : details of investment securities ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "December 31, 2012",
+          "December 31, 2011"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "In millions",
+          "Amortized Cost",
+          "Fair Value",
+          "Amortized Cost",
+          "Fair Value"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Total securities available for sale (a)",
+          "$49,447",
+          "$51,052",
+          "$48,609",
+          "$48,568"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Total securities held to maturity",
+          "10,354",
+          "10,860",
+          "12,066",
+          "12,450"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Total securities",
+          "$59,801",
+          "$61,912",
+          "$60,675",
+          "$61,018"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_1",
+        "text": "( a ) includes $ 367 million of both amortized cost and fair value of securities classified as corporate stocks and other at december 31 , 2012 ."
+      },
+      {
+        "location": "text_2",
+        "text": "comparably , at december 31 , 2011 , the amortized cost and fair value of corporate stocks and other was $ 368 million ."
+      },
+      {
+        "location": "text_3",
+        "text": "the remainder of securities available for sale were debt securities ."
+      },
+      {
+        "location": "text_4",
+        "text": "the carrying amount of investment securities totaled $ 61.4 billion at december 31 , 2012 , which was made up of $ 51.0 billion of securities available for sale carried at fair value and $ 10.4 billion of securities held to maturity carried at amortized cost ."
+      },
+      {
+        "location": "text_5",
+        "text": "comparably , at december 31 , 2011 , the carrying value of investment securities totaled $ 60.6 billion of which $ 48.6 billion represented securities available for sale carried at fair value and $ 12.0 billion of securities held to maturity carried at amortized cost ."
+      },
+      {
+        "location": "text_6",
+        "text": "the increase in carrying amount between the periods primarily reflected an increase of $ 2.0 billion in available for sale asset-backed securities , which was primarily due to net purchase activity , and an increase of $ .6 billion in available for sale non-agency residential mortgage-backed securities due to increases in fair value at december 31 , 2012 ."
+      },
+      {
+        "location": "text_7",
+        "text": "these increases were partially offset by a $ 1.7 billion decrease in held to maturity debt securities due to principal payments ."
+      },
+      {
+        "location": "text_8",
+        "text": "investment securities represented 20% ( 20 % ) of total assets at december 31 , 2012 and 22% ( 22 % ) at december 31 , 2011 ."
+      },
+      {
+        "location": "text_9",
+        "text": "we evaluate our portfolio of investment securities in light of changing market conditions and other factors and , where appropriate , take steps intended to improve our overall positioning ."
+      },
+      {
+        "location": "text_10",
+        "text": "we consider the portfolio to be well-diversified and of high quality ."
+      },
+      {
+        "location": "text_11",
+        "text": "u.s ."
+      },
+      {
+        "location": "text_12",
+        "text": "treasury and government agencies , agency residential mortgage-backed and agency commercial mortgage-backed securities collectively represented 59% ( 59 % ) of the investment securities portfolio at december 31 , 2012 ."
+      },
+      {
+        "location": "text_13",
+        "text": "at december 31 , 2012 , the securities available for sale portfolio included a net unrealized gain of $ 1.6 billion , which represented the difference between fair value and amortized cost ."
+      },
+      {
+        "location": "text_14",
+        "text": "the comparable amount at december 31 , 2011 was a net unrealized loss of $ 41 million ."
+      },
+      {
+        "location": "text_15",
+        "text": "the fair value of investment securities is impacted by interest rates , credit spreads , market volatility and liquidity conditions ."
+      },
+      {
+        "location": "text_16",
+        "text": "the fair value of investment securities generally decreases when interest rates increase and vice versa ."
+      },
+      {
+        "location": "text_17",
+        "text": "in addition , the fair value generally decreases when credit spreads widen and vice versa ."
+      },
+      {
+        "location": "text_18",
+        "text": "the improvement in the net unrealized gain as compared with a loss at december 31 , 2011 was primarily due to improvement in the value of non-agency residential mortgage- backed securities , which had a decrease in net unrealized losses of $ 1.1 billion , and lower market interest rates ."
+      },
+      {
+        "location": "text_19",
+        "text": "net unrealized gains and losses in the securities available for sale portfolio are included in shareholders 2019 equity as accumulated other comprehensive income or loss from continuing operations , net of tax , on our consolidated balance sheet ."
+      },
+      {
+        "location": "text_20",
+        "text": "additional information regarding our investment securities is included in note 8 investment securities and note 9 fair value in our notes to consolidated financial statements included in item 8 of this report ."
+      },
+      {
+        "location": "text_21",
+        "text": "unrealized gains and losses on available for sale securities do not impact liquidity or risk-based capital under currently effective capital rules ."
+      },
+      {
+        "location": "text_22",
+        "text": "however , reductions in the credit ratings of these securities could have an impact on the liquidity of the securities or the determination of risk- weighted assets which could reduce our regulatory capital ratios under currently effective capital rules ."
+      },
+      {
+        "location": "text_23",
+        "text": "in addition , the amount representing the credit-related portion of otti on available for sale securities would reduce our earnings and regulatory capital ratios ."
+      },
+      {
+        "location": "text_24",
+        "text": "the expected weighted-average life of investment securities ( excluding corporate stocks and other ) was 4.0 years at december 31 , 2012 and 3.7 years at december 31 , 2011 ."
+      },
+      {
+        "location": "text_25",
+        "text": "we estimate that , at december 31 , 2012 , the effective duration of investment securities was 2.3 years for an immediate 50 basis points parallel increase in interest rates and 2.2 years for an immediate 50 basis points parallel decrease in interest rates ."
+      },
+      {
+        "location": "text_26",
+        "text": "comparable amounts at december 31 , 2011 were 2.6 years and 2.4 years , respectively ."
+      },
+      {
+        "location": "text_27",
+        "text": "the following table provides detail regarding the vintage , current credit rating , and fico score of the underlying collateral at origination , where available , for residential mortgage-backed , commercial mortgage-backed and other asset-backed securities held in the available for sale and held to maturity portfolios : 46 the pnc financial services group , inc ."
+      },
+      {
+        "location": "text_28",
+        "text": "2013 form 10-k ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what would the fair value of total securities available for sale be without the fair value of securities classified as corporate stocks as of december 31 , 2012?",
+  "human_answer": "61545",
+  "reference_program": "subtract(61912, 367)",
+  "reference_execution_value": 61545.0,
+  "model_response": {
+    "answer": "50685",
+    "unit": "million dollars",
+    "expression": "51052 - 367",
+    "explanation": "Subtract the $367 million fair value of corporate stocks and other from the $51,052 million total fair value of securities available for sale."
+  }
+}

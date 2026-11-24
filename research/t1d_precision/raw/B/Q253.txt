@@ -1,0 +1,1 @@
+{"answer":"25.5938242280285","unit":"percent","expression":"(211.5 - 168.4) / 168.4 * 100","low":"25.5268625704957","high":"25.6608256608257","reliable_digits":"2","explanation":"Each expense has a rounding uncertainty of ±0.05 million, giving these percentage-change bounds and two reliable significant digits."}

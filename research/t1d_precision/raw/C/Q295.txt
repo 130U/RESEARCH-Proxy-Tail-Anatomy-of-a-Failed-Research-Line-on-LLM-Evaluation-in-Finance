@@ -1,0 +1,1 @@
+{"answer":"0.4","unit":"million dollars","expression":"0.3 + 0.1","low":"0.3","high":"0.5","reliable_digits":"0","explanation":"Each component has rounding uncertainty of 0.05 million dollars, giving the total uncertainty of 0.1 million dollars."}

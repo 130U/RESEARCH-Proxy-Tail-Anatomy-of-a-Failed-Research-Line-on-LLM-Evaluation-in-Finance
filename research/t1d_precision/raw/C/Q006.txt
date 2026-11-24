@@ -1,0 +1,1 @@
+{"answer":"37.1","unit":"millions","expression":"41.9 - 4.8","low":"37.0","high":"37.2","reliable_digits":"2","explanation":"The range is the highest payment minus the lowest, with each figure subject to rounding of ±0.05 million."}

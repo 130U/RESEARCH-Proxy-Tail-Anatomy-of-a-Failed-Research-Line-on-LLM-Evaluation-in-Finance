@@ -1,0 +1,1 @@
+{"answer":"15.384615384615385","unit":"percent","expression":"(2.6 - 2.2) / 2.6 * 100","low":"11.764705882352941","high":"18.867924528301887","reliable_digits":"0","explanation":"Tax equals the pre-tax gain minus the after-tax gain; allowable rounding produces rates that round to either 10% or 20% at one significant digit."}

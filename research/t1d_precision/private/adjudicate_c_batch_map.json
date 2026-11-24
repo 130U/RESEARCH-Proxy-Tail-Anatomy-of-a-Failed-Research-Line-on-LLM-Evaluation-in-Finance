@@ -1,0 +1,23 @@
+[
+  {
+    "batch_id": "W001",
+    "batch_group": "adjudicate_c_batch",
+    "item_group": "adjudicate_c",
+    "item_ids": [
+      "S001",
+      "S002",
+      "S015",
+      "S024",
+      "S061"
+    ],
+    "source_prompts": [
+      "prompts/adjudicate_c/S001.txt",
+      "prompts/adjudicate_c/S002.txt",
+      "prompts/adjudicate_c/S015.txt",
+      "prompts/adjudicate_c/S024.txt",
+      "prompts/adjudicate_c/S061.txt"
+    ],
+    "characters": 44158,
+    "whitespace_words": 5662
+  }
+]

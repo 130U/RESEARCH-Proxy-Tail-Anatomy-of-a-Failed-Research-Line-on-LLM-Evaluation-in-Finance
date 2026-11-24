@@ -1,0 +1,1 @@
+{"answer":"60","unit":"percent","expression":"(24 - 15) / 15 * 100","low":"51.61290322580645","high":"68.96551724137931","reliable_digits":"0","explanation":"The displayed gains imply 60% growth, but rounding to millions allows a range too wide for any significant digit to be reliable."}

@@ -1,0 +1,1 @@
+{"answer":"88.8337468983","unit":"percent","expression":"(1.074 / 1.209) * 100","low":"88.7556841670","high":"88.9118742242","reliable_digits":"2","explanation":"Dividing the gain by proceeds gives the percentage; allowing each billion-dollar figure to vary by 0.0005 leaves two significant digits stable across the bounds."}

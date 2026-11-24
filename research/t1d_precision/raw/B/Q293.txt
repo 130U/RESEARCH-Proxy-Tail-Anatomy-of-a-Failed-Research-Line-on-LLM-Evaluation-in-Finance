@@ -1,0 +1,1 @@
+{"answer":"13.1179554390564","unit":"percent","expression":"(8630.9 - 7630.0) / 7630.0 * 100","low":"13.1165588692079","high":"13.1193520272086","reliable_digits":"4","explanation":"Growth equals the sales increase divided by 2010 sales; allowing each sales figure to vary by 0.05 million gives these bounds, both rounding to 13.12 percent."}

@@ -1,0 +1,1 @@
+{"answer":"9.8","unit":"ratio","expression":"294 / 30","low":"9.62295081967213","high":"9.98305084745763","reliable_digits":"1","explanation":"The ratio is 294 divided by 30; allowing each rounded figure to vary by 0.5 gives the stated bounds."}

@@ -1,0 +1,238 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R229",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "payables that were reclassified as part of our capital lease obligations ."
+      },
+      {
+        "location": "text_1",
+        "text": "capital lease obligations are reported in our consolidated statements of financial position as debt ."
+      },
+      {
+        "location": "text_2",
+        "text": "on october 15 , 2009 , we entered into a capital lease agreement for 44 locomotives with a total equipment cost of $ 100 million ."
+      },
+      {
+        "location": "text_3",
+        "text": "the lessor purchased the 44 locomotives from the corporation and subsequently leased the locomotives back to the railroad ."
+      },
+      {
+        "location": "text_4",
+        "text": "these capital lease obligations are reported in our consolidated statements of financial position as debt at december 31 , 2009 ."
+      },
+      {
+        "location": "text_5",
+        "text": "off-balance sheet arrangements , contractual obligations , and commercial commitments as described in the notes to the consolidated financial statements and as referenced in the tables below , we have contractual obligations and commercial commitments that may affect our financial condition ."
+      },
+      {
+        "location": "text_6",
+        "text": "based on our assessment of the underlying provisions and circumstances of our contractual obligations and commercial commitments , including material sources of off-balance sheet and structured finance arrangements , other than the risks that we and other similarly situated companies face with respect to the condition of the capital markets ( as described in item 1a of part ii of this report ) , there is no known trend , demand , commitment , event , or uncertainty that is reasonably likely to occur that would have a material adverse effect on our consolidated results of operations , financial condition , or liquidity ."
+      },
+      {
+        "location": "text_7",
+        "text": "in addition , our commercial obligations , financings , and commitments are customary transactions that are similar to those of other comparable corporations , particularly within the transportation industry ."
+      },
+      {
+        "location": "text_8",
+        "text": "the following tables identify material obligations and commitments as of december 31 , 2009 : payments due by december 31 , contractual obligations after millions of dollars total 2010 2011 2012 2013 2014 2014 other ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "",
+          "<i>Payments Due by December 31,</i>"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "<i>Contractual Obligations</i> <i>Millions of Dollars</i>",
+          "<i>Total</i>",
+          "<i>2010</i>",
+          "<i>2011</i>",
+          "<i>2012</i>",
+          "<i>2013</i>",
+          "<i>2014</i>",
+          "<i>After 2014</i>",
+          "<i>Other</i>"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Debt [a]",
+          "$12,645",
+          "$846",
+          "$896",
+          "$1,104",
+          "$985",
+          "$951",
+          "$7,863",
+          "$-"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Operating leases",
+          "5,312",
+          "576",
+          "570",
+          "488",
+          "425",
+          "352",
+          "2,901",
+          "-"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Capital lease obligations [b]",
+          "2,975",
+          "290",
+          "292",
+          "247",
+          "256",
+          "267",
+          "1,623",
+          "-"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Purchase obligations [c]",
+          "2,738",
+          "386",
+          "317",
+          "242",
+          "249",
+          "228",
+          "1,284",
+          "32"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Other post retirement benefits [d]",
+          "435",
+          "41",
+          "42",
+          "43",
+          "43",
+          "44",
+          "222",
+          "-"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Income tax contingencies [e]",
+          "61",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "60"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Total contractual obligations",
+          "$24,166",
+          "$2,140",
+          "$2,117",
+          "$2,124",
+          "$1,958",
+          "$1,842",
+          "$13,893",
+          "$92"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_9",
+        "text": "[a] excludes capital lease obligations of $ 2061 million , unamortized discount of $ ( 110 ) million , and market value adjustments of $ 15 million for debt with qualifying hedges that are recorded as liabilities on the consolidated statements of financial position ."
+      },
+      {
+        "location": "text_10",
+        "text": "includes an interest component of $ 4763 million ."
+      },
+      {
+        "location": "text_11",
+        "text": "[b] represents total obligations , including interest component of $ 914 million ."
+      },
+      {
+        "location": "text_12",
+        "text": "[c] purchase obligations include locomotive maintenance contracts ; purchase commitments for ties , ballast , and rail ; and agreements to purchase other goods and services ."
+      },
+      {
+        "location": "text_13",
+        "text": "for amounts where we can not reasonably estimate the year of settlement , they are reflected in the other column ."
+      },
+      {
+        "location": "text_14",
+        "text": "[d] includes estimated other post retirement , medical , and life insurance payments and payments made under the unfunded pension plan for the next ten years ."
+      },
+      {
+        "location": "text_15",
+        "text": "no amounts are included for funded pension as no contributions are currently required ."
+      },
+      {
+        "location": "text_16",
+        "text": "[e] future cash flows for income tax contingencies reflect the recorded liability for unrecognized tax benefits , including interest and penalties , as of december 31 , 2009 ."
+      },
+      {
+        "location": "text_17",
+        "text": "where we can reasonably estimate the years in which these liabilities may be settled , this is shown in the table ."
+      },
+      {
+        "location": "text_18",
+        "text": "for amounts where we can not reasonably estimate the year of settlement , they are reflected in the other column. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the total cost in millions of capital lease obligation , principal only?",
+  "reference_program": "subtract(2975, 914)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "2975",
+      "raw": "2,975",
+      "location": "table_4:1",
+      "context": "Capital lease obligations [b] | "
+    },
+    "x1": {
+      "program_token": "914",
+      "raw": "914",
+      "location": "text_11:68",
+      "context": "[b] represents total obligations , including interest component of $ 914 million ."
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"answer":"3.09115760698","unit":"percent","expression":"(98.05 - 95.11) / 95.11 * 100","low":"3.08048152237","high":"3.10183481415","reliable_digits":"2","explanation":"Allowing each displayed price to vary by $0.005 gives these bounds, which consistently round to 3.1 percent."}

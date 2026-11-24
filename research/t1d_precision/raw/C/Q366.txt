@@ -1,0 +1,1 @@
+{"answer":"1.6666666667","unit":"percent","expression":"(3,538 - 3,480) / 3,480 * 100","low":"1.6376957334","high":"1.6956459261","reliable_digits":"1","explanation":"Allowing each earnings figure to vary by $0.5 million gives these bounds, leaving one significant digit reliable."}

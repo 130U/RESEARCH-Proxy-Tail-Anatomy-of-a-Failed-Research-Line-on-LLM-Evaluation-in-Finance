@@ -1,0 +1,1 @@
+{"answer":"16.6144200627","unit":"percent","expression":"(37.2 - 31.9) / 31.9 * 100","low":"16.2754303599","high":"16.9544740973","reliable_digits":"1","explanation":"Accrued interest liability increased; the bounds allow each reported balance to vary by $0.05 million."}

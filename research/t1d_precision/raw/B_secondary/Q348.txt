@@ -1,0 +1,1 @@
+{"answer":"25.9234095120445","unit":"percent","expression":"(203.87 - 161.90) / 161.90 * 100","low":"25.9164324758346","high":"25.9303869792149","reliable_digits":"3","explanation":"The peer group's 2015 return is its increase from 2014 divided by its 2014 value, with rounding bounds of ±0.005 on each displayed figure."}

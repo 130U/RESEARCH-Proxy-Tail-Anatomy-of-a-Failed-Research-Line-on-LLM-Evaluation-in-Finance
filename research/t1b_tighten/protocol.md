@@ -1,0 +1,19 @@
+# T1B frozen protocol (recorded before execution)
+
+Date: 2026-11-16 (America/New_York). Read only the per-question results of T1 commit `30acb8d`; the cohort is the 196 test witnesses outside the 1% tolerance. The original FinQA version remains `0f16e2867befa6840783e58be38c9efb9229d742`.
+
+Scope fixed in advance: each question's complete `table_ori`, `pre_text`, `post_text`; no extension to the full text of the original annual reports, and no information from other pages of the same company or from other splits.
+
+- 1% is the audit tolerance carried over from T1, not FinQA's official scoring rule; it is centered on `exe_ans`, and the center is not reset.
+- The original cohort is sorted by id and a fixed sample is drawn with Python `random.Random(20261116).sample(...,40)`. For the 40, input identity, the assumption of a continuous rounded quantity, and the program's fit to the question are reviewed item by item. All 196 are checked in addition; this is model-based item-by-item semantic review, not external human annotation or a double-blind review.
+- Duplicate disclosures of the same quantity require confirming the entity, metric, period and unit; the intervals are converted to the program-input unit and then intersected. Numbers that are merely close are not merged; different rounded centers are not assumed to equal the exact true value.
+- Automatically enumerate same-column sum/difference candidates in tables, allowing the sum of the items' half-a-last-digit-unit widths to cover the residual; the relation must then be confirmed from row names and the text. Multiple references to the same rounded fact share a variable. Missing-value symbols are not treated as zero, and years are not treated as amounts.
+- Sum equations act on hidden true values; the displayed centers are not required to add up exactly. All non-program table facts involved also have their own rounding boxes. Values known to be exact are recorded separately and get no artificial noise.
+- Ranges are computed separately for the original box, the duplicate-disclosure intersection, and with the added sum constraints. Only an outer envelope verified with rationals is used for a "determined" decision, and only a rational witness lying strictly inside the rounding intervals and satisfying all equations is used for a "not determined" decision. Solver failures, contradictory constraints and unclear semantics count as neither determined nor retained.
+- Linear and linear-fractional programs use LP / Charnes–Cooper; other programs are listed separately, and may use reliable outer envelopes and direct feasible witnesses, but a non-tight interval is not called an exact extremum.
+- Fixed waterfall order: 196 → duplicate disclosures → sum relations → semantic exclusion/unresolved. Stage transitions are listed separately, so that inconsistent disclosures or semantic errors are not mislabeled as successful tightening.
+- Pass threshold: the final number of reliable remaining witnesses ≥58 (at least 5% of the 1,147 test questions). If binding or semantic problems exceed one quarter of the 40 sampled questions, first record them and fix the rules, recompute the cohort, and then decide. Unknown items get the most conservative decision of removing them all.
+
+This study is not a pre-registered confirmatory statistical experiment; no significance is reported, and sample results are not multiplied up to the population. The sample and thresholds were recorded before execution, but we do not claim to have passed a dedicated pre-registration audit.
+
+The method has prior work: [XBRL Calculations 1.1](https://www.xbrl.org/Specification/calculation-1.1/REC-2023-02-22+corrected-errata-2024-02-14/calculation-1.1-REC-2023-02-22+corrected-errata-2024-02-14.html) §5.2, §5.4–5.7 define rounding intervals, duplicate facts and interval arithmetic. The contribution here is a reviewable falsification test on a specified cohort.

@@ -1,0 +1,218 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R100",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "market risk management 2013 equity and other investment equity investment risk is the risk of potential losses associated with investing in both private and public equity markets ."
+      },
+      {
+        "location": "text_1",
+        "text": "in addition to extending credit , taking deposits , securities underwriting and trading financial instruments , we make and manage direct investments in a variety of transactions , including management buyouts , recapitalizations and growth financings in a variety of industries ."
+      },
+      {
+        "location": "text_2",
+        "text": "we also have investments in affiliated and non-affiliated funds that make similar investments in private equity and in debt and equity-oriented hedge funds ."
+      },
+      {
+        "location": "text_3",
+        "text": "the economic and/or book value of these investments and other assets such as loan servicing rights are directly affected by changes in market factors ."
+      },
+      {
+        "location": "text_4",
+        "text": "the primary risk measurement for equity and other investments is economic capital ."
+      },
+      {
+        "location": "text_5",
+        "text": "economic capital is a common measure of risk for credit , market and operational risk ."
+      },
+      {
+        "location": "text_6",
+        "text": "it is an estimate of the potential value depreciation over a one year horizon commensurate with solvency expectations of an institution rated single-a by the credit rating agencies ."
+      },
+      {
+        "location": "text_7",
+        "text": "given the illiquid nature of many of these types of investments , it can be a challenge to determine their fair values ."
+      },
+      {
+        "location": "text_8",
+        "text": "see note 7 fair value in the notes to consolidated financial statements in item 8 of this report for additional information ."
+      },
+      {
+        "location": "text_9",
+        "text": "various pnc business units manage our equity and other investment activities ."
+      },
+      {
+        "location": "text_10",
+        "text": "our businesses are responsible for making investment decisions within the approved policy limits and associated guidelines ."
+      },
+      {
+        "location": "text_11",
+        "text": "a summary of our equity investments follows : table 54 : equity investments summary in millions december 31 december 31 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "In millions",
+          "December 312014",
+          "December 312013"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "BlackRock",
+          "$6,265",
+          "$5,940"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Tax credit investments (a)",
+          "2,616",
+          "2,572"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Private equity",
+          "1,615",
+          "1,656"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Visa",
+          "77",
+          "158"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Other",
+          "155",
+          "234"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Total",
+          "$10,728",
+          "$10,560"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_12",
+        "text": "( a ) the december 31 , 2013 amount has been updated to reflect the first quarter 2014 adoption of asu 2014-01 related to investments in low income housing tax credits ."
+      },
+      {
+        "location": "text_13",
+        "text": "blackrock pnc owned approximately 35 million common stock equivalent shares of blackrock equity at december 31 , 2014 , accounted for under the equity method ."
+      },
+      {
+        "location": "text_14",
+        "text": "the primary risk measurement , similar to other equity investments , is economic capital ."
+      },
+      {
+        "location": "text_15",
+        "text": "the business segments review section of this item 7 includes additional information about blackrock ."
+      },
+      {
+        "location": "text_16",
+        "text": "tax credit investments included in our equity investments are direct tax credit investments and equity investments held by consolidated partnerships which totaled $ 2.6 billion at both december 31 , 2014 and december 31 , 2013 ."
+      },
+      {
+        "location": "text_17",
+        "text": "these equity investment balances include unfunded commitments totaling $ 717 million and $ 802 million at december 31 , 2014 and december 31 , 2013 , respectively ."
+      },
+      {
+        "location": "text_18",
+        "text": "these unfunded commitments are included in other liabilities on our consolidated balance sheet ."
+      },
+      {
+        "location": "text_19",
+        "text": "note 2 loan sale and servicing activities and variable interest entities in the notes to consolidated financial statements in item 8 of this report has further information on tax credit investments ."
+      },
+      {
+        "location": "text_20",
+        "text": "private equity the private equity portfolio is an illiquid portfolio comprised of mezzanine and equity investments that vary by industry , stage and type of investment ."
+      },
+      {
+        "location": "text_21",
+        "text": "private equity investments carried at estimated fair value totaled $ 1.6 billion at december 31 , 2014 and $ 1.7 billion at december 31 , 2013 ."
+      },
+      {
+        "location": "text_22",
+        "text": "as of december 31 , 2014 , $ 1.1 billion was invested directly in a variety of companies and $ .5 billion was invested indirectly through various private equity funds ."
+      },
+      {
+        "location": "text_23",
+        "text": "included in direct investments are investment activities of two private equity funds that are consolidated for financial reporting purposes ."
+      },
+      {
+        "location": "text_24",
+        "text": "the noncontrolling interests of these funds totaled $ 212 million as of december 31 , 2014 ."
+      },
+      {
+        "location": "text_25",
+        "text": "the interests held in indirect private equity funds are not redeemable , but pnc may receive distributions over the life of the partnership from liquidation of the underlying investments ."
+      },
+      {
+        "location": "text_26",
+        "text": "see item 1 business 2013 supervision and regulation and item 1a risk factors of this report for discussion of the potential impacts of the volcker rule provisions of dodd-frank on our interests in and sponsorship of private funds covered by the volcker rule ."
+      },
+      {
+        "location": "text_27",
+        "text": "our unfunded commitments related to private equity totaled $ 140 million at december 31 , 2014 compared with $ 164 million at december 31 , 2013 ."
+      },
+      {
+        "location": "text_28",
+        "text": "the pnc financial services group , inc ."
+      },
+      {
+        "location": "text_29",
+        "text": "2013 form 10-k 93 ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "for equity investment balances including unfunded commitments what was the change in millions between december 31 , 2014 and december 31 , 2013/",
+  "reference_program": "subtract(717, 802)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "717",
+      "raw": "717",
+      "location": "text_17:72",
+      "context": "these equity investment balances include unfunded commitments totaling $ 717 million and $ 802 million at december 31 , 2014 and december 31 , 2013 , respectively ."
+    },
+    "x1": {
+      "program_token": "802",
+      "raw": "802",
+      "location": "text_17:90",
+      "context": "these equity investment balances include unfunded commitments totaling $ 717 million and $ 802 million at december 31 , 2014 and december 31 , 2013 , respectively ."
+    }
+  }
+}

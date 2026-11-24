@@ -1,0 +1,1 @@
+{"answer":"13.7847222222222","unit":"percent","expression":"(3277 - 2880) / 2880 * 100","low":"13.7476132615865","high":"13.8218440701511","reliable_digits":"2","explanation":"Allowing each cash figure to vary by $0.5 million gives these bounds and two reliable significant digits."}

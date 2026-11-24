@@ -1,0 +1,1 @@
+{"answer":"27.272727","unit":"percent","expression":"(11.2 - 8.8) / 8.8 * 100","low":"25.988701","high":"28.571429","reliable_digits":"1","explanation":"Each receivables figure may vary by 0.05 million, leaving one reliable significant digit in the percentage increase."}

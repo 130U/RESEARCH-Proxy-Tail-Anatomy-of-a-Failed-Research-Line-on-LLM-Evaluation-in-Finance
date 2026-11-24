@@ -1,0 +1,81 @@
+[
+  {
+    "batch_id": "V001",
+    "batch_group": "adjudicate_b_batch",
+    "item_group": "adjudicate_b",
+    "item_ids": [
+      "R021",
+      "R025",
+      "R040",
+      "R092",
+      "R093",
+      "R112",
+      "R119",
+      "R141"
+    ],
+    "source_prompts": [
+      "prompts/adjudicate_b/R021.txt",
+      "prompts/adjudicate_b/R025.txt",
+      "prompts/adjudicate_b/R040.txt",
+      "prompts/adjudicate_b/R092.txt",
+      "prompts/adjudicate_b/R093.txt",
+      "prompts/adjudicate_b/R112.txt",
+      "prompts/adjudicate_b/R119.txt",
+      "prompts/adjudicate_b/R141.txt"
+    ],
+    "characters": 68960,
+    "whitespace_words": 8862
+  },
+  {
+    "batch_id": "V002",
+    "batch_group": "adjudicate_b_batch",
+    "item_group": "adjudicate_b",
+    "item_ids": [
+      "R151",
+      "R153",
+      "R155",
+      "R167",
+      "R168",
+      "R178",
+      "R191",
+      "R193"
+    ],
+    "source_prompts": [
+      "prompts/adjudicate_b/R151.txt",
+      "prompts/adjudicate_b/R153.txt",
+      "prompts/adjudicate_b/R155.txt",
+      "prompts/adjudicate_b/R167.txt",
+      "prompts/adjudicate_b/R168.txt",
+      "prompts/adjudicate_b/R178.txt",
+      "prompts/adjudicate_b/R191.txt",
+      "prompts/adjudicate_b/R193.txt"
+    ],
+    "characters": 65320,
+    "whitespace_words": 8479
+  },
+  {
+    "batch_id": "V003",
+    "batch_group": "adjudicate_b_batch",
+    "item_group": "adjudicate_b",
+    "item_ids": [
+      "R200",
+      "R202",
+      "R222",
+      "R233",
+      "R239",
+      "R250",
+      "R251"
+    ],
+    "source_prompts": [
+      "prompts/adjudicate_b/R200.txt",
+      "prompts/adjudicate_b/R202.txt",
+      "prompts/adjudicate_b/R222.txt",
+      "prompts/adjudicate_b/R233.txt",
+      "prompts/adjudicate_b/R239.txt",
+      "prompts/adjudicate_b/R250.txt",
+      "prompts/adjudicate_b/R251.txt"
+    ],
+    "characters": 56485,
+    "whitespace_words": 7321
+  }
+]

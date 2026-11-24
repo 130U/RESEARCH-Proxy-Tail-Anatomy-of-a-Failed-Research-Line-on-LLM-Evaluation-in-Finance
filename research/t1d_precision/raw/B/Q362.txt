@@ -1,0 +1,1 @@
+{"answer":"4.1008","unit":"million dollars","expression":"932 * 0.44 / 100","low":"4.052025","high":"4.149625","reliable_digits":"2","explanation":"Multiplying borrowings by the weighted-average annual rate gives implied annual interest; both rounding bounds round to 4.1 million."}

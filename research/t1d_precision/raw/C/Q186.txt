@@ -1,0 +1,1 @@
+{"answer":"2.147751606","unit":"times","expression":"100.3 / 46.7","low":"2.144385027","high":"2.151125402","reliable_digits":"2","explanation":"Divide restricted cash and marketable securities by the year-end allowance; rounding permits bounds of 100.25/46.75 and 100.35/46.65."}

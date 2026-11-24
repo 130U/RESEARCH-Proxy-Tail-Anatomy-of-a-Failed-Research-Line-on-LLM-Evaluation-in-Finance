@@ -1,0 +1,1 @@
+{"answer":"5.6770714782","unit":"percent","expression":"(687125 - 650212) / 650212 * 100","low":"5.6769133168","high":"5.6772296399","reliable_digits":"4","explanation":"Allowing each displayed total to vary by 0.5 million gives these bounds, both of which round to 5.677% at four significant digits."}

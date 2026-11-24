@@ -1,0 +1,246 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R197",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "notes to the consolidated financial statements the activity in the accrued liability for unrecognized tax benefits for the two years ended december 31 , 2008 was as follows : ( millions ) 2008 2007 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "<i>(Millions)</i>",
+          "2008",
+          "2007"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Balance at January 1",
+          "$110",
+          "$77"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Additions based on tax positions related to the current year",
+          "12",
+          "21"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Additions for tax positions of prior years",
+          "5",
+          "19"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Reductions for tax positions of prior years",
+          "(17)",
+          "(5)"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Pre-acquisition unrecognized tax benefits",
+          "20",
+          "—"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Reductions for expiration of the applicable statute of limitations",
+          "(6)",
+          "(5)"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Settlements",
+          "(21)",
+          "(1)"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Currency",
+          "(4)",
+          "4"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "<i></i> <i>Balance at December 31</i>",
+          "$99",
+          "$110"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_1",
+        "text": "balance at december 31 $ 99 $ 110 the amount of unrecognized tax benefits was $ 99 million and $ 110 million as of december 31 , 2008 and 2007 , respectively ."
+      },
+      {
+        "location": "text_2",
+        "text": "if recognized , $ 89 million and $ 88 million would impact the effective rate as of december 31 , 2008 and 2007 , respectively ."
+      },
+      {
+        "location": "text_3",
+        "text": "the company recognizes accrued interest and penalties related to unrecognized tax benefits in income tax expense ."
+      },
+      {
+        "location": "text_4",
+        "text": "the company had accrued $ 10 million and $ 9 million for estimated interest and penalties on unrecognized tax benefits as of december 31 , 2008 and 2007 , respectively ."
+      },
+      {
+        "location": "text_5",
+        "text": "the company recognized $ 1 million and $ 3 million of expense for estimated interest and penalties during the years ended december 31 , 2008 and 2007 , respectively ."
+      },
+      {
+        "location": "text_6",
+        "text": "while it is expected that the amount of unrecognized tax benefits will change in the next 12 months , quantification of an estimated range cannot be made at this time ."
+      },
+      {
+        "location": "text_7",
+        "text": "the company does not expect this change to have a significant impact on the results of operations or financial position of the company , however , actual settlements may differ from amounts accrued ."
+      },
+      {
+        "location": "text_8",
+        "text": "14 ."
+      },
+      {
+        "location": "text_9",
+        "text": "pensions and other postretirement benefits defined benefit plans ppg has defined benefit pension plans that cover certain employees worldwide ."
+      },
+      {
+        "location": "text_10",
+        "text": "ppg also sponsors welfare benefit plans that provide postretirement medical and life insurance benefits for certain u.s ."
+      },
+      {
+        "location": "text_11",
+        "text": "and canadian employees and their dependents ."
+      },
+      {
+        "location": "text_12",
+        "text": "these programs require retiree contributions based on retiree-selected coverage levels for certain retirees and their dependents and provide for sharing of future benefit cost increases between ppg and participants based on management discretion ."
+      },
+      {
+        "location": "text_13",
+        "text": "the company has the right to modify or terminate certain of these benefit plans in the future ."
+      },
+      {
+        "location": "text_14",
+        "text": "salaried and certain hourly employees hired on or after october 1 , 2004 , are not eligible for postretirement medical benefits ."
+      },
+      {
+        "location": "text_15",
+        "text": "salaried employees hired , rehired or transferred to salaried status on or after january 1 , 2006 , and certain hourly employees hired in 2006 or thereafter are eligible to participate in a defined contribution retirement plan ."
+      },
+      {
+        "location": "text_16",
+        "text": "these employees are not eligible for defined benefit pension plan benefits ."
+      },
+      {
+        "location": "text_17",
+        "text": "the medicare act of 2003 introduced a prescription drug benefit under medicare ( 201cmedicare part d 201d ) that provides several options for medicare eligible participants and employers , including a federal subsidy payable to companies that elect to provide a retiree prescription drug benefit which is at least actuarially equivalent to medicare part d ."
+      },
+      {
+        "location": "text_18",
+        "text": "during the third quarter of 2004 , ppg concluded its evaluation of the provisions of the medicare act and decided to maintain its retiree prescription drug program and to take the subsidy available under the medicare act ."
+      },
+      {
+        "location": "text_19",
+        "text": "the impact of the medicare act was accounted for in accordance with fasb staff position no ."
+      },
+      {
+        "location": "text_20",
+        "text": "106-2 , 201caccounting and disclosure requirements related to the medicare prescription drug , improvement and modernization act of 2003 201d effective january 1 , 2004 ."
+      },
+      {
+        "location": "text_21",
+        "text": "in addition , the plan was amended september 1 , 2004 , to provide that ppg management will determine the extent to which future increases in the cost of its retiree medical and prescription drug programs will be shared by certain retirees ."
+      },
+      {
+        "location": "text_22",
+        "text": "the federal subsidy related to providing a retiree prescription drug benefit is not subject to u.s ."
+      },
+      {
+        "location": "text_23",
+        "text": "federal income tax and is recorded as a reduction in annual net periodic benefit cost of other postretirement benefits ."
+      },
+      {
+        "location": "text_24",
+        "text": "in august 2007 , the company 2019s u.s ."
+      },
+      {
+        "location": "text_25",
+        "text": "other postretirement benefit plan was amended to consolidate the number of retiree health care options available for certain retirees and their dependents ."
+      },
+      {
+        "location": "text_26",
+        "text": "the plan amendment was effective january 1 , 2008 ."
+      },
+      {
+        "location": "text_27",
+        "text": "the amended plan also offers a fully-insured medicare part d prescription drug plan for certain retirees and their dependents ."
+      },
+      {
+        "location": "text_28",
+        "text": "as such , beginning in 2008 ppg is no longer eligible to receive the subsidy provided under the medicare act of 2003 for these retirees and their dependents ."
+      },
+      {
+        "location": "text_29",
+        "text": "the impact of the plan amendment was to reduce the accumulated plan benefit obligation by $ 57 million ."
+      },
+      {
+        "location": "text_30",
+        "text": "50 2008 ppg annual report and form 10-k ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the net change in the accrued liability for unrecognized tax benefits from 2007 to 2008?",
+  "reference_program": "subtract(99, 110)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "99",
+      "raw": "99",
+      "location": "table_9:1",
+      "context": " Balance at December 31 | 2008"
+    },
+    "x1": {
+      "program_token": "110",
+      "raw": "110",
+      "location": "table_9:2",
+      "context": " Balance at December 31 | 2007"
+    }
+  }
+}

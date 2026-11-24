@@ -1,0 +1,1 @@
+{"answer":"0.2994350282485876","unit":"ratio","expression":"5.3 / 17.7","low":"0.2957746478873239","high":"0.3031161473087819","reliable_digits":"2","explanation":"Allowing rounding uncertainty of ±0.05 billion in each figure gives these bounds, which both round to 0.30 at two significant digits."}

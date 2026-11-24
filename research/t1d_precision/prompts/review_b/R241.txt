@@ -1,0 +1,173 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R241",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "entity transfers of inventory , the income tax effects will continue to be deferred until the inventory has been sold to a third party ."
+      },
+      {
+        "location": "text_1",
+        "text": "cadence adopted the new standard on the first day of fiscal 2018 using the modified retrospective transition approach and recorded a cumulative-effect adjustment to decrease retained earnings in the amount of $ 8.3 million ."
+      },
+      {
+        "location": "text_2",
+        "text": "the cumulative-effect adjustment includes the write-off of income tax consequences deferred from prior intra-entity transfers involving assets other than inventory and new deferred tax assets for amounts not recognized under u.s ."
+      },
+      {
+        "location": "text_3",
+        "text": "gaap ."
+      },
+      {
+        "location": "text_4",
+        "text": "we anticipate the potential for increased volatility in future effective tax rates from the adoption of this guidance ."
+      },
+      {
+        "location": "text_5",
+        "text": "stock-based compensation in may 2017 , the fasb issued asu 2017-09 , 201ccompensation 2014stock compensation ( topic 718 ) : scope of modification accounting , 201d that provides guidance about which changes to the terms or conditions of a share-based payment award require an entity to apply modification accounting ."
+      },
+      {
+        "location": "text_6",
+        "text": "cadence adopted the standard on the first day of fiscal 2018 ."
+      },
+      {
+        "location": "text_7",
+        "text": "the adoption of this standard did not impact cadence 2019s consolidated financial statements or the related disclosures ."
+      },
+      {
+        "location": "text_8",
+        "text": "cumulative effect adjustments to retained earnings the following table presents the cumulative effect adjustments , net of income tax effects , to beginning retained earnings for new accounting standards adopted by cadence on the first day of fiscal 2018 : retained earnings ( in thousands ) ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Retained Earnings (In thousands)"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Balance, December 30, 2017, as previously reported",
+          "$341,003"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Cumulative effect adjustment from the adoption of new accounting standards:",
+          ""
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Revenue from Contracts with Customers (Topic 606)*",
+          "91,640"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Financial Instruments—Overall (Subtopic 825-10): Recognition and Measurement of Financial Assets and Financial Liabilities",
+          "2,638"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Income taxes (Topic 740): Intra-entity Transfers of Assets Other Than Inventory",
+          "(8,349)"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Balance, December 30, 2017, as adjusted",
+          "426,932"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Net Income",
+          "345,777"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Balance, December 29, 2018",
+          "$772,709"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_9",
+        "text": "* the cumulative effect adjustment from the adoption of revenue from contracts with customers ( topic 606 ) is presented net of the related income tax effect of $ 17.5 million ."
+      },
+      {
+        "location": "text_10",
+        "text": "new accounting standards not yet adopted leases in february 2016 , the fasb issued asu 2016-02 , 201cleases ( topic 842 ) , 201d requiring , among other things , the recognition of lease liabilities and corresponding right-of-use assets on the balance sheet by lessees for all leases with a term longer than 12 months ."
+      },
+      {
+        "location": "text_11",
+        "text": "the new standard is effective for cadence in the first quarter of fiscal 2019 ."
+      },
+      {
+        "location": "text_12",
+        "text": "a modified retrospective approach is required , applying the new standard to leases existing as of the date of initial application ."
+      },
+      {
+        "location": "text_13",
+        "text": "an entity may choose to apply the standard as of either its effective date or the beginning of the earliest comparative period presented in the financial statements ."
+      },
+      {
+        "location": "text_14",
+        "text": "cadence adopted the new standard on december 30 , 2018 , the first day of fiscal 2019 , and used the effective date as the date of initial application ."
+      },
+      {
+        "location": "text_15",
+        "text": "consequently , financial information will not be updated and the disclosures required under the new standard will not be provided for dates and periods prior to the first quarter of fiscal 2019 ."
+      },
+      {
+        "location": "text_16",
+        "text": "cadence elected certain practical expedients permitted under the transition guidance within the new standard , which among other things , allowed cadence to carry forward its prior conclusions about lease identification and classification. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the percentage change in the balance of retained earnings during 2018 after adjustments?",
+  "reference_program": "subtract(772709, 426932), divide(#0, 426932)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "772709",
+      "raw": "772,709",
+      "location": "table_8:1",
+      "context": "Balance, December 29, 2018 | Retained Earnings (In thousands)"
+    },
+    "x1": {
+      "program_token": "426932",
+      "raw": "426,932",
+      "location": "table_6:1",
+      "context": "Balance, December 30, 2017, as adjusted | Retained Earnings (In thousands)"
+    }
+  }
+}

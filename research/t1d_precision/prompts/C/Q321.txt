@@ -1,0 +1,37 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+action commenced by the california attorney general , we are providing customers with greater transparency into the pricing of this product and other alternatives offered by us for addressing their foreign exchange requirements .
+although we believe such disclosures will address customer interests for increased transparency , over time such action may result in pressure on our pricing of this product or result in clients electing other foreign exchange execution options , which would have an adverse impact on the revenue from , and profitability of , this product for us .
+we may be exposed to customer claims , financial loss , reputational damage and regulatory scrutiny as a result of transacting purchases and redemptions relating to the unregistered cash collateral pools underlying our securities lending program at a net asset value of $ 1.00 per unit rather than a lower net asset value based upon market value of the underlying portfolios .
+a portion of the cash collateral received by customers under our securities lending program is invested in cash collateral pools that we manage .
+interests in these cash collateral pools are held by unaffiliated customers and by registered and unregistered investment funds that we manage .
+our cash collateral pools that are money market funds registered under the investment company act of 1940 are required to maintain , and have maintained , a constant net asset value of $ 1.00 per unit .
+the remainder of our cash collateral pools are collective investment funds that are not required to be registered under the investment company act .
+these unregistered cash collateral pools seek , but are not required , to maintain , and transact purchases and redemptions at , a constant net asset value of $ 1.00 per unit .
+our securities lending operations consist of two components ; a direct lending program for third-party investment managers and asset owners , the collateral pools for which we refer to as direct lending collateral pools ; and investment funds with a broad range of investment objectives that are managed by ssga and engage in securities lending , which we refer to as ssga lending funds .
+the following table shows the aggregate net asset values of the unregistered direct lending collateral pools and the aggregate net asset value of the unregistered collateral pools underlying the ssga lending funds , in each case based on a constant net asset value of $ 1.00 per ( in billions ) december 31 , 2009 december 31 , 2008 december 31 , 2007 ( 1 ) .
+
+TABLE
+(in billions) | December 31, 2009 | December 31, 2008 | December 31, 2007<sup>(1)</sup>
+Direct lending collateral pools | $85 | $85 | $150
+Collateral pools underlying SSgA lending funds | 24 | 31 | 44
+
+( 1 ) certain of the ssga lending funds were participants in the direct lending collateral pools until october 2008 .
+the direct lending collateral pool balances at december 31 , 2007 related to ssga lending funds have been included within the ssga lending fund balances and excluded from the direct lending collateral pool balances presented above. .
+
+QUESTION
+what was the percent change in the aggregate net asset values of the collateral pools underlying ssga lending funds between 2008 and 2009?

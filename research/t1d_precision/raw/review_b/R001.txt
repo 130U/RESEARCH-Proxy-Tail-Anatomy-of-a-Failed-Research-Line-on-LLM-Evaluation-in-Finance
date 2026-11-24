@@ -1,0 +1,5 @@
+{
+    "review_id": "R001",
+    "verdict": "uncertain",
+    "reason": "The bindings correctly identify 2008 amounts, but the question leaves ambiguous whether the denominator is total 2008 commitments or total lease commitments across all years."
+  }

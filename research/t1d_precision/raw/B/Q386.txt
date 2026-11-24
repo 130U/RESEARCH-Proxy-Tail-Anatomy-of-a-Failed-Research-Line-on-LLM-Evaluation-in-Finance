@@ -1,0 +1,1 @@
+{"answer":"97.2102724547","unit":"percent","expression":"59656 / 61368 * 100","low":"97.2086656835","high":"97.2118792520","reliable_digits":"4","explanation":"Allowing each amount to vary by $0.5 million gives these bounds, both of which round to 97.21%."}

@@ -1,0 +1,7 @@
+{
+    "call_id": "S040",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 2 gives anticipated natural gas purchases hedged of 60% through the first quarter of 2004 and 50% through the second quarter. The model reports the signed change, 50 - 60 = -10 percentage points; the reference reports the positive decrease magnitude. No denominator is needed."
+  }

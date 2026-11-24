@@ -1,0 +1,1 @@
+{"answer":"86","unit":"million dollars","expression":"13 + 24 + 49","low":"84.5","high":"87.5","reliable_digits":"1","explanation":"The three favorable variances total $86 million, with combined rounding uncertainty of $1.5 million."}

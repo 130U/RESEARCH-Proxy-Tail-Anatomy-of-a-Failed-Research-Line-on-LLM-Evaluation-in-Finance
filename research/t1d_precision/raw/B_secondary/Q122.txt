@@ -1,0 +1,1 @@
+{"answer":"8.6390958909","unit":"percent","expression":"(572.93 - 527.37) / 527.37 * 100","low":"8.6371178004","high":"8.6410740189","reliable_digits":"3","explanation":"The balance increased by approximately 8.64%, with rounding bounds obtained from ±0.005 billion around each displayed balance."}

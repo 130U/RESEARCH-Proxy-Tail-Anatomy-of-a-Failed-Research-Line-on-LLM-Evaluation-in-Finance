@@ -1,0 +1,1 @@
+{"answer":"40.7960199005","unit":"percent","expression":"574 / 1407 * 100","low":"40.7460035524","high":"40.8460718095","reliable_digits":"2","explanation":"Dividing 2011 debt maturities by total 2011 obligations gives the percentage; allowing each figure to vary by 0.5 million yields these bounds and two reliable significant digits."}

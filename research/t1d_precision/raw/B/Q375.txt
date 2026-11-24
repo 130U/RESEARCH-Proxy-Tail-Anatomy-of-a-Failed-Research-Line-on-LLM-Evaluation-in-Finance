@@ -1,0 +1,1 @@
+{"answer":"2.564102564102564","unit":"percent","expression":"(66000 - 64350) / 64350 * 100","low":"2.564102564102564","high":"2.564102564102564","reliable_digits":"16","explanation":"The contractual monthly rents are exact, so there is no input-rounding uncertainty and all 16 reported significant digits are reliable."}

@@ -1,0 +1,1 @@
+{"answer":"115.56","unit":"million dollars","expression":"1.8 * 64.20","low":"115.551","high":"115.569","reliable_digits":"4","explanation":"The share count is exact, while the price ranges from $64.195 to $64.205 per share due to rounding."}

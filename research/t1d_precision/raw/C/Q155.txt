@@ -1,0 +1,1 @@
+{"answer":"9.5829636202","unit":"percent","expression":"(10.8 / 112.7) * 100","low":"9.5343680710","high":"9.6316023080","reliable_digits":"2","explanation":"Stock issue costs are divided by reported net proceeds; each amount has rounding uncertainty of $0.05 million."}

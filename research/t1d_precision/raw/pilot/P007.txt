@@ -1,0 +1,1 @@
+{"answer":"4605.731142014","unit":"percent","expression":"(111667 - 2373) / 2373 * 100","low":"4604.718769749","high":"4606.743940991","reliable_digits":"2","explanation":"Each balance can vary by 0.5 thousand; the resulting percentage increases agree when rounded to two significant digits."}

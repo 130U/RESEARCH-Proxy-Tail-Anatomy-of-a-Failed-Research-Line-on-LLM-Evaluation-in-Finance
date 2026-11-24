@@ -1,0 +1,3922 @@
+[
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T001",
+    "expected_ids": [
+      "R001",
+      "R002",
+      "R003",
+      "R004",
+      "R005",
+      "R006",
+      "R007",
+      "R008",
+      "R009",
+      "R010",
+      "R011",
+      "R012",
+      "R013",
+      "R014",
+      "R015",
+      "R016"
+    ],
+    "source_raw_file": "raw/review_b_batch/T001.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R001",
+        "source_char_span": [
+          4,
+          253
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R002",
+        "source_char_span": [
+          257,
+          491
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R003",
+        "source_char_span": [
+          495,
+          710
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R004",
+        "source_char_span": [
+          714,
+          961
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R005",
+        "source_char_span": [
+          965,
+          1192
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R006",
+        "source_char_span": [
+          1196,
+          1444
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R007",
+        "source_char_span": [
+          1448,
+          1666
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R008",
+        "source_char_span": [
+          1670,
+          1935
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R009",
+        "source_char_span": [
+          1939,
+          2213
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R010",
+        "source_char_span": [
+          2217,
+          2452
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R011",
+        "source_char_span": [
+          2456,
+          2700
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R012",
+        "source_char_span": [
+          2704,
+          2971
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R013",
+        "source_char_span": [
+          2975,
+          3219
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R014",
+        "source_char_span": [
+          3223,
+          3466
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R015",
+        "source_char_span": [
+          3470,
+          3719
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R016",
+        "source_char_span": [
+          3723,
+          3974
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T002",
+    "expected_ids": [
+      "R017",
+      "R018",
+      "R019",
+      "R020",
+      "R021",
+      "R022",
+      "R023",
+      "R024",
+      "R025",
+      "R026",
+      "R027",
+      "R028",
+      "R029",
+      "R030",
+      "R031",
+      "R032"
+    ],
+    "source_raw_file": "raw/review_b_batch/T002.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R017",
+        "source_char_span": [
+          4,
+          229
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R018",
+        "source_char_span": [
+          233,
+          471
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R019",
+        "source_char_span": [
+          475,
+          707
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R020",
+        "source_char_span": [
+          711,
+          934
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R021",
+        "source_char_span": [
+          938,
+          1169
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R022",
+        "source_char_span": [
+          1173,
+          1405
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R023",
+        "source_char_span": [
+          1409,
+          1618
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R024",
+        "source_char_span": [
+          1622,
+          1867
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R025",
+        "source_char_span": [
+          1871,
+          2132
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R026",
+        "source_char_span": [
+          2136,
+          2376
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R027",
+        "source_char_span": [
+          2380,
+          2635
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R028",
+        "source_char_span": [
+          2639,
+          2867
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R029",
+        "source_char_span": [
+          2871,
+          3116
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R030",
+        "source_char_span": [
+          3120,
+          3350
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R031",
+        "source_char_span": [
+          3354,
+          3598
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R032",
+        "source_char_span": [
+          3602,
+          3853
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T003",
+    "expected_ids": [
+      "R033",
+      "R034",
+      "R035",
+      "R036",
+      "R037",
+      "R038",
+      "R039",
+      "R040",
+      "R041",
+      "R042",
+      "R043",
+      "R044",
+      "R045",
+      "R046",
+      "R047",
+      "R048"
+    ],
+    "source_raw_file": "raw/review_b_batch/T003.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R033",
+        "source_char_span": [
+          4,
+          197
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R034",
+        "source_char_span": [
+          201,
+          436
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R035",
+        "source_char_span": [
+          440,
+          689
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R036",
+        "source_char_span": [
+          693,
+          931
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R037",
+        "source_char_span": [
+          935,
+          1172
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R038",
+        "source_char_span": [
+          1176,
+          1422
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R039",
+        "source_char_span": [
+          1426,
+          1664
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R040",
+        "source_char_span": [
+          1668,
+          1929
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R041",
+        "source_char_span": [
+          1933,
+          2125
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R042",
+        "source_char_span": [
+          2129,
+          2372
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R043",
+        "source_char_span": [
+          2376,
+          2616
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R044",
+        "source_char_span": [
+          2620,
+          2858
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R045",
+        "source_char_span": [
+          2862,
+          3112
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R046",
+        "source_char_span": [
+          3116,
+          3320
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R047",
+        "source_char_span": [
+          3324,
+          3579
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R048",
+        "source_char_span": [
+          3583,
+          3802
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T004",
+    "expected_ids": [
+      "R049",
+      "R050",
+      "R051",
+      "R052",
+      "R053",
+      "R054",
+      "R055",
+      "R056",
+      "R057",
+      "R058",
+      "R059",
+      "R060",
+      "R061",
+      "R062",
+      "R063",
+      "R064"
+    ],
+    "source_raw_file": "raw/review_b_batch/T004.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R049",
+        "source_char_span": [
+          4,
+          247
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R050",
+        "source_char_span": [
+          251,
+          494
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R051",
+        "source_char_span": [
+          498,
+          709
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R052",
+        "source_char_span": [
+          713,
+          963
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R053",
+        "source_char_span": [
+          967,
+          1204
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R054",
+        "source_char_span": [
+          1208,
+          1433
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R055",
+        "source_char_span": [
+          1437,
+          1682
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R056",
+        "source_char_span": [
+          1686,
+          1910
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R057",
+        "source_char_span": [
+          1914,
+          2171
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R058",
+        "source_char_span": [
+          2175,
+          2422
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R059",
+        "source_char_span": [
+          2426,
+          2683
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R060",
+        "source_char_span": [
+          2687,
+          2924
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R061",
+        "source_char_span": [
+          2928,
+          3139
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R062",
+        "source_char_span": [
+          3143,
+          3387
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R063",
+        "source_char_span": [
+          3391,
+          3609
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R064",
+        "source_char_span": [
+          3613,
+          3841
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T005",
+    "expected_ids": [
+      "R065",
+      "R066",
+      "R067",
+      "R068",
+      "R069",
+      "R070",
+      "R071",
+      "R072",
+      "R073",
+      "R074",
+      "R075",
+      "R076",
+      "R077",
+      "R078",
+      "R079",
+      "R080"
+    ],
+    "source_raw_file": "raw/review_b_batch/T005.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R065",
+        "source_char_span": [
+          4,
+          255
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R066",
+        "source_char_span": [
+          259,
+          485
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R067",
+        "source_char_span": [
+          489,
+          702
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R068",
+        "source_char_span": [
+          706,
+          946
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R069",
+        "source_char_span": [
+          950,
+          1177
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R070",
+        "source_char_span": [
+          1181,
+          1434
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R071",
+        "source_char_span": [
+          1438,
+          1692
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R072",
+        "source_char_span": [
+          1696,
+          1954
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R073",
+        "source_char_span": [
+          1958,
+          2199
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R074",
+        "source_char_span": [
+          2203,
+          2445
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R075",
+        "source_char_span": [
+          2449,
+          2685
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R076",
+        "source_char_span": [
+          2689,
+          2951
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R077",
+        "source_char_span": [
+          2955,
+          3197
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R078",
+        "source_char_span": [
+          3201,
+          3407
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R079",
+        "source_char_span": [
+          3411,
+          3671
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R080",
+        "source_char_span": [
+          3675,
+          3936
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T006",
+    "expected_ids": [
+      "R081",
+      "R082",
+      "R083",
+      "R084",
+      "R085",
+      "R086",
+      "R087",
+      "R088",
+      "R089",
+      "R090",
+      "R091",
+      "R092",
+      "R093",
+      "R094",
+      "R095",
+      "R096"
+    ],
+    "source_raw_file": "raw/review_b_batch/T006.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R081",
+        "source_char_span": [
+          4,
+          250
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R082",
+        "source_char_span": [
+          254,
+          482
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R083",
+        "source_char_span": [
+          486,
+          712
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R084",
+        "source_char_span": [
+          716,
+          947
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R085",
+        "source_char_span": [
+          951,
+          1219
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R086",
+        "source_char_span": [
+          1223,
+          1476
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R087",
+        "source_char_span": [
+          1480,
+          1689
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R088",
+        "source_char_span": [
+          1693,
+          1912
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R089",
+        "source_char_span": [
+          1916,
+          2173
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R090",
+        "source_char_span": [
+          2177,
+          2411
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R091",
+        "source_char_span": [
+          2415,
+          2642
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R092",
+        "source_char_span": [
+          2646,
+          2928
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R093",
+        "source_char_span": [
+          2932,
+          3172
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R094",
+        "source_char_span": [
+          3176,
+          3416
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R095",
+        "source_char_span": [
+          3420,
+          3674
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R096",
+        "source_char_span": [
+          3678,
+          3917
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T007",
+    "expected_ids": [
+      "R097",
+      "R098",
+      "R099",
+      "R100",
+      "R101",
+      "R102",
+      "R103",
+      "R104",
+      "R105",
+      "R106",
+      "R107",
+      "R108",
+      "R109",
+      "R110",
+      "R111",
+      "R112"
+    ],
+    "source_raw_file": "raw/review_b_batch/T007.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R097",
+        "source_char_span": [
+          4,
+          261
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R098",
+        "source_char_span": [
+          265,
+          476
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R099",
+        "source_char_span": [
+          480,
+          751
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R100",
+        "source_char_span": [
+          755,
+          1026
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R101",
+        "source_char_span": [
+          1030,
+          1266
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R102",
+        "source_char_span": [
+          1270,
+          1511
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R103",
+        "source_char_span": [
+          1515,
+          1744
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R104",
+        "source_char_span": [
+          1748,
+          1986
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R105",
+        "source_char_span": [
+          1990,
+          2210
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R106",
+        "source_char_span": [
+          2214,
+          2457
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R107",
+        "source_char_span": [
+          2461,
+          2716
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R108",
+        "source_char_span": [
+          2720,
+          2958
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R109",
+        "source_char_span": [
+          2962,
+          3211
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R110",
+        "source_char_span": [
+          3215,
+          3441
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R111",
+        "source_char_span": [
+          3445,
+          3684
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R112",
+        "source_char_span": [
+          3688,
+          3957
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T008",
+    "expected_ids": [
+      "R113",
+      "R114",
+      "R115",
+      "R116",
+      "R117",
+      "R118",
+      "R119",
+      "R120",
+      "R121",
+      "R122",
+      "R123",
+      "R124",
+      "R125",
+      "R126",
+      "R127",
+      "R128"
+    ],
+    "source_raw_file": "raw/review_b_batch/T008.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R113",
+        "source_char_span": [
+          4,
+          303
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R114",
+        "source_char_span": [
+          307,
+          546
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R115",
+        "source_char_span": [
+          550,
+          793
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R116",
+        "source_char_span": [
+          797,
+          1047
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R117",
+        "source_char_span": [
+          1051,
+          1284
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R118",
+        "source_char_span": [
+          1288,
+          1565
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R119",
+        "source_char_span": [
+          1569,
+          1801
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R120",
+        "source_char_span": [
+          1805,
+          2054
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R121",
+        "source_char_span": [
+          2058,
+          2295
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R122",
+        "source_char_span": [
+          2299,
+          2539
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R123",
+        "source_char_span": [
+          2543,
+          2790
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R124",
+        "source_char_span": [
+          2794,
+          3065
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R125",
+        "source_char_span": [
+          3069,
+          3311
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R126",
+        "source_char_span": [
+          3315,
+          3546
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R127",
+        "source_char_span": [
+          3550,
+          3830
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R128",
+        "source_char_span": [
+          3834,
+          4081
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T009",
+    "expected_ids": [
+      "R129",
+      "R130",
+      "R131",
+      "R132",
+      "R133",
+      "R134",
+      "R135",
+      "R136",
+      "R137",
+      "R138",
+      "R139",
+      "R140",
+      "R141",
+      "R142",
+      "R143",
+      "R144"
+    ],
+    "source_raw_file": "raw/review_b_batch/T009.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R129",
+        "source_char_span": [
+          4,
+          236
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R130",
+        "source_char_span": [
+          240,
+          462
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R131",
+        "source_char_span": [
+          466,
+          685
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R132",
+        "source_char_span": [
+          689,
+          920
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R133",
+        "source_char_span": [
+          924,
+          1191
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R134",
+        "source_char_span": [
+          1195,
+          1443
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R135",
+        "source_char_span": [
+          1447,
+          1683
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R136",
+        "source_char_span": [
+          1687,
+          1960
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R137",
+        "source_char_span": [
+          1964,
+          2205
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R138",
+        "source_char_span": [
+          2209,
+          2445
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R139",
+        "source_char_span": [
+          2449,
+          2699
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R140",
+        "source_char_span": [
+          2703,
+          2960
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R141",
+        "source_char_span": [
+          2964,
+          3223
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R142",
+        "source_char_span": [
+          3227,
+          3478
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R143",
+        "source_char_span": [
+          3482,
+          3714
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R144",
+        "source_char_span": [
+          3718,
+          3988
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T010",
+    "expected_ids": [
+      "R145",
+      "R146",
+      "R147",
+      "R148",
+      "R149",
+      "R150",
+      "R151",
+      "R152",
+      "R153",
+      "R154",
+      "R155",
+      "R156",
+      "R157",
+      "R158",
+      "R159",
+      "R160"
+    ],
+    "source_raw_file": "raw/review_b_batch/T010.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R145",
+        "source_char_span": [
+          4,
+          219
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R146",
+        "source_char_span": [
+          223,
+          453
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R147",
+        "source_char_span": [
+          457,
+          661
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R148",
+        "source_char_span": [
+          665,
+          877
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R149",
+        "source_char_span": [
+          881,
+          1128
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R150",
+        "source_char_span": [
+          1132,
+          1366
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R151",
+        "source_char_span": [
+          1370,
+          1600
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R152",
+        "source_char_span": [
+          1604,
+          1830
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R153",
+        "source_char_span": [
+          1834,
+          2058
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R154",
+        "source_char_span": [
+          2062,
+          2258
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R155",
+        "source_char_span": [
+          2262,
+          2497
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R156",
+        "source_char_span": [
+          2501,
+          2725
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R157",
+        "source_char_span": [
+          2729,
+          2959
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R158",
+        "source_char_span": [
+          2963,
+          3186
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R159",
+        "source_char_span": [
+          3190,
+          3458
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R160",
+        "source_char_span": [
+          3462,
+          3703
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T011",
+    "expected_ids": [
+      "R161",
+      "R162",
+      "R163",
+      "R164",
+      "R165",
+      "R166",
+      "R167",
+      "R168",
+      "R169",
+      "R170",
+      "R171",
+      "R172",
+      "R173",
+      "R174",
+      "R175",
+      "R176"
+    ],
+    "source_raw_file": "raw/review_b_batch/T011.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R161",
+        "source_char_span": [
+          4,
+          247
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R162",
+        "source_char_span": [
+          251,
+          497
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R163",
+        "source_char_span": [
+          501,
+          756
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R164",
+        "source_char_span": [
+          760,
+          1010
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R165",
+        "source_char_span": [
+          1014,
+          1245
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R166",
+        "source_char_span": [
+          1249,
+          1485
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R167",
+        "source_char_span": [
+          1489,
+          1745
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R168",
+        "source_char_span": [
+          1749,
+          1985
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R169",
+        "source_char_span": [
+          1989,
+          2220
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R170",
+        "source_char_span": [
+          2224,
+          2450
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R171",
+        "source_char_span": [
+          2454,
+          2687
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R172",
+        "source_char_span": [
+          2691,
+          2930
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R173",
+        "source_char_span": [
+          2934,
+          3221
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R174",
+        "source_char_span": [
+          3225,
+          3497
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R175",
+        "source_char_span": [
+          3501,
+          3766
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R176",
+        "source_char_span": [
+          3770,
+          3949
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T012",
+    "expected_ids": [
+      "R177",
+      "R178",
+      "R179",
+      "R180",
+      "R181",
+      "R182",
+      "R183",
+      "R184",
+      "R185",
+      "R186",
+      "R187",
+      "R188",
+      "R189",
+      "R190",
+      "R191",
+      "R192"
+    ],
+    "source_raw_file": "raw/review_b_batch/T012.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R177",
+        "source_char_span": [
+          4,
+          189
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R178",
+        "source_char_span": [
+          193,
+          444
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R179",
+        "source_char_span": [
+          448,
+          652
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R180",
+        "source_char_span": [
+          656,
+          863
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R181",
+        "source_char_span": [
+          867,
+          1086
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R182",
+        "source_char_span": [
+          1090,
+          1292
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R183",
+        "source_char_span": [
+          1296,
+          1501
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R184",
+        "source_char_span": [
+          1505,
+          1775
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R185",
+        "source_char_span": [
+          1779,
+          1990
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R186",
+        "source_char_span": [
+          1994,
+          2222
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R187",
+        "source_char_span": [
+          2226,
+          2450
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R188",
+        "source_char_span": [
+          2454,
+          2653
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R189",
+        "source_char_span": [
+          2657,
+          2888
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R190",
+        "source_char_span": [
+          2892,
+          3091
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R191",
+        "source_char_span": [
+          3095,
+          3304
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R192",
+        "source_char_span": [
+          3308,
+          3519
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T013",
+    "expected_ids": [
+      "R193",
+      "R194",
+      "R195",
+      "R196",
+      "R197",
+      "R198",
+      "R199",
+      "R200",
+      "R201",
+      "R202",
+      "R203",
+      "R204",
+      "R205",
+      "R206",
+      "R207",
+      "R208"
+    ],
+    "source_raw_file": "raw/review_b_batch/T013.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R193",
+        "source_char_span": [
+          4,
+          235
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R194",
+        "source_char_span": [
+          239,
+          448
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R195",
+        "source_char_span": [
+          452,
+          704
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R196",
+        "source_char_span": [
+          708,
+          928
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R197",
+        "source_char_span": [
+          932,
+          1143
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R198",
+        "source_char_span": [
+          1147,
+          1392
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R199",
+        "source_char_span": [
+          1396,
+          1615
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R200",
+        "source_char_span": [
+          1619,
+          1840
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R201",
+        "source_char_span": [
+          1844,
+          2067
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R202",
+        "source_char_span": [
+          2071,
+          2306
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R203",
+        "source_char_span": [
+          2310,
+          2589
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R204",
+        "source_char_span": [
+          2593,
+          2827
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R205",
+        "source_char_span": [
+          2831,
+          3049
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R206",
+        "source_char_span": [
+          3053,
+          3295
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R207",
+        "source_char_span": [
+          3299,
+          3528
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R208",
+        "source_char_span": [
+          3532,
+          3793
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T014",
+    "expected_ids": [
+      "R209",
+      "R210",
+      "R211",
+      "R212",
+      "R213",
+      "R214",
+      "R215",
+      "R216",
+      "R217",
+      "R218",
+      "R219",
+      "R220",
+      "R221",
+      "R222",
+      "R223",
+      "R224"
+    ],
+    "source_raw_file": "raw/review_b_batch/T014.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R209",
+        "source_char_span": [
+          4,
+          237
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R210",
+        "source_char_span": [
+          241,
+          432
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R211",
+        "source_char_span": [
+          436,
+          665
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R212",
+        "source_char_span": [
+          669,
+          921
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R213",
+        "source_char_span": [
+          925,
+          1158
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R214",
+        "source_char_span": [
+          1162,
+          1409
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R215",
+        "source_char_span": [
+          1413,
+          1641
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R216",
+        "source_char_span": [
+          1645,
+          1898
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R217",
+        "source_char_span": [
+          1902,
+          2139
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R218",
+        "source_char_span": [
+          2143,
+          2395
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R219",
+        "source_char_span": [
+          2399,
+          2618
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R220",
+        "source_char_span": [
+          2622,
+          2874
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R221",
+        "source_char_span": [
+          2878,
+          3119
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R222",
+        "source_char_span": [
+          3123,
+          3380
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R223",
+        "source_char_span": [
+          3384,
+          3593
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R224",
+        "source_char_span": [
+          3597,
+          3843
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T015",
+    "expected_ids": [
+      "R225",
+      "R226",
+      "R227",
+      "R228",
+      "R229",
+      "R230",
+      "R231",
+      "R232",
+      "R233",
+      "R234",
+      "R235",
+      "R236",
+      "R237",
+      "R238",
+      "R239",
+      "R240"
+    ],
+    "source_raw_file": "raw/review_b_batch/T015.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R225",
+        "source_char_span": [
+          4,
+          239
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R226",
+        "source_char_span": [
+          243,
+          465
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R227",
+        "source_char_span": [
+          469,
+          732
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R228",
+        "source_char_span": [
+          736,
+          977
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R229",
+        "source_char_span": [
+          981,
+          1218
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R230",
+        "source_char_span": [
+          1222,
+          1443
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R231",
+        "source_char_span": [
+          1447,
+          1676
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R232",
+        "source_char_span": [
+          1680,
+          1937
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R233",
+        "source_char_span": [
+          1941,
+          2183
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R234",
+        "source_char_span": [
+          2187,
+          2421
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R235",
+        "source_char_span": [
+          2425,
+          2678
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R236",
+        "source_char_span": [
+          2682,
+          2914
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R237",
+        "source_char_span": [
+          2918,
+          3169
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R238",
+        "source_char_span": [
+          3173,
+          3407
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R239",
+        "source_char_span": [
+          3411,
+          3655
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R240",
+        "source_char_span": [
+          3659,
+          3920
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_b_batch",
+    "batch_id": "T016",
+    "expected_ids": [
+      "R241",
+      "R242",
+      "R243",
+      "R244",
+      "R245",
+      "R246",
+      "R247",
+      "R248",
+      "R249",
+      "R250",
+      "R251",
+      "R252",
+      "R253",
+      "R254",
+      "R255",
+      "R256"
+    ],
+    "source_raw_file": "raw/review_b_batch/T016.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R241",
+        "source_char_span": [
+          4,
+          255
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R242",
+        "source_char_span": [
+          259,
+          488
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R243",
+        "source_char_span": [
+          492,
+          723
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R244",
+        "source_char_span": [
+          727,
+          951
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R245",
+        "source_char_span": [
+          955,
+          1149
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R246",
+        "source_char_span": [
+          1153,
+          1388
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R247",
+        "source_char_span": [
+          1392,
+          1588
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R248",
+        "source_char_span": [
+          1592,
+          1834
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "R249",
+        "source_char_span": [
+          1838,
+          2070
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "R250",
+        "source_char_span": [
+          2074,
+          2309
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "R251",
+        "source_char_span": [
+          2313,
+          2544
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "R252",
+        "source_char_span": [
+          2548,
+          2774
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "R253",
+        "source_char_span": [
+          2778,
+          3022
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "R254",
+        "source_char_span": [
+          3026,
+          3227
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "R255",
+        "source_char_span": [
+          3231,
+          3473
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "R256",
+        "source_char_span": [
+          3477,
+          3699
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_c_batch",
+    "batch_id": "U001",
+    "expected_ids": [
+      "S001",
+      "S002",
+      "S003",
+      "S004",
+      "S005",
+      "S006",
+      "S007",
+      "S008",
+      "S009",
+      "S010",
+      "S011",
+      "S012",
+      "S013",
+      "S014",
+      "S015",
+      "S016"
+    ],
+    "source_raw_file": "raw/review_c_batch/U001.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "S001",
+        "source_char_span": [
+          4,
+          462
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "S002",
+        "source_char_span": [
+          466,
+          896
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "S003",
+        "source_char_span": [
+          900,
+          1315
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "S004",
+        "source_char_span": [
+          1319,
+          1765
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "S005",
+        "source_char_span": [
+          1769,
+          2207
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "S006",
+        "source_char_span": [
+          2211,
+          2681
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "S007",
+        "source_char_span": [
+          2685,
+          3111
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "S008",
+        "source_char_span": [
+          3115,
+          3562
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "S009",
+        "source_char_span": [
+          3566,
+          4024
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "S010",
+        "source_char_span": [
+          4028,
+          4491
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "S011",
+        "source_char_span": [
+          4495,
+          5000
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "S012",
+        "source_char_span": [
+          5004,
+          5461
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "S013",
+        "source_char_span": [
+          5465,
+          6002
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "S014",
+        "source_char_span": [
+          6006,
+          6485
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "S015",
+        "source_char_span": [
+          6489,
+          6962
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "S016",
+        "source_char_span": [
+          6966,
+          7456
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_c_batch",
+    "batch_id": "U002",
+    "expected_ids": [
+      "S017",
+      "S018",
+      "S019",
+      "S020",
+      "S021",
+      "S022",
+      "S023",
+      "S024",
+      "S025",
+      "S026",
+      "S027",
+      "S028",
+      "S029",
+      "S030",
+      "S031",
+      "S032"
+    ],
+    "source_raw_file": "raw/review_c_batch/U002.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "S017",
+        "source_char_span": [
+          4,
+          563
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "S018",
+        "source_char_span": [
+          567,
+          1052
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "S019",
+        "source_char_span": [
+          1056,
+          1437
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "S020",
+        "source_char_span": [
+          1441,
+          1866
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "S021",
+        "source_char_span": [
+          1870,
+          2294
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "S022",
+        "source_char_span": [
+          2298,
+          2692
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "S023",
+        "source_char_span": [
+          2696,
+          3118
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "S024",
+        "source_char_span": [
+          3122,
+          3622
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "S025",
+        "source_char_span": [
+          3626,
+          4128
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "S026",
+        "source_char_span": [
+          4132,
+          4552
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "S027",
+        "source_char_span": [
+          4556,
+          5060
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "S028",
+        "source_char_span": [
+          5064,
+          5527
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "S029",
+        "source_char_span": [
+          5531,
+          5939
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "S030",
+        "source_char_span": [
+          5943,
+          6393
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "S031",
+        "source_char_span": [
+          6397,
+          6871
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "S032",
+        "source_char_span": [
+          6875,
+          7389
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_c_batch",
+    "batch_id": "U003",
+    "expected_ids": [
+      "S033",
+      "S034",
+      "S035",
+      "S036",
+      "S037",
+      "S038",
+      "S039",
+      "S040",
+      "S041",
+      "S042",
+      "S043",
+      "S044",
+      "S045",
+      "S046",
+      "S047",
+      "S048"
+    ],
+    "source_raw_file": "raw/review_c_batch/U003.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "S033",
+        "source_char_span": [
+          4,
+          396
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "S034",
+        "source_char_span": [
+          400,
+          755
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "S035",
+        "source_char_span": [
+          759,
+          1157
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "S036",
+        "source_char_span": [
+          1161,
+          1539
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "S037",
+        "source_char_span": [
+          1543,
+          1969
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "S038",
+        "source_char_span": [
+          1973,
+          2371
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "S039",
+        "source_char_span": [
+          2375,
+          2778
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "S040",
+        "source_char_span": [
+          2782,
+          3223
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "S041",
+        "source_char_span": [
+          3227,
+          3677
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "S042",
+        "source_char_span": [
+          3681,
+          4130
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "S043",
+        "source_char_span": [
+          4134,
+          4582
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "S044",
+        "source_char_span": [
+          4586,
+          5000
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "S045",
+        "source_char_span": [
+          5004,
+          5503
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "S046",
+        "source_char_span": [
+          5507,
+          5993
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "S047",
+        "source_char_span": [
+          5997,
+          6458
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "S048",
+        "source_char_span": [
+          6462,
+          6885
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_c_batch",
+    "batch_id": "U004",
+    "expected_ids": [
+      "S049",
+      "S050",
+      "S051",
+      "S052",
+      "S053",
+      "S054",
+      "S055",
+      "S056",
+      "S057",
+      "S058",
+      "S059",
+      "S060",
+      "S061",
+      "S062",
+      "S063",
+      "S064"
+    ],
+    "source_raw_file": "raw/review_c_batch/U004.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "S049",
+        "source_char_span": [
+          4,
+          405
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "S050",
+        "source_char_span": [
+          409,
+          818
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "S051",
+        "source_char_span": [
+          822,
+          1216
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "S052",
+        "source_char_span": [
+          1220,
+          1580
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "S053",
+        "source_char_span": [
+          1584,
+          1988
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "S054",
+        "source_char_span": [
+          1992,
+          2473
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "S055",
+        "source_char_span": [
+          2477,
+          2948
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "S056",
+        "source_char_span": [
+          2952,
+          3352
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 8,
+        "review_id": "S057",
+        "source_char_span": [
+          3356,
+          3743
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 9,
+        "review_id": "S058",
+        "source_char_span": [
+          3747,
+          4224
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 10,
+        "review_id": "S059",
+        "source_char_span": [
+          4228,
+          4718
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 11,
+        "review_id": "S060",
+        "source_char_span": [
+          4722,
+          5141
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 12,
+        "review_id": "S061",
+        "source_char_span": [
+          5145,
+          5559
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 13,
+        "review_id": "S062",
+        "source_char_span": [
+          5563,
+          6019
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 14,
+        "review_id": "S063",
+        "source_char_span": [
+          6023,
+          6377
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 15,
+        "review_id": "S064",
+        "source_char_span": [
+          6381,
+          6768
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 16,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "review_c_batch",
+    "batch_id": "U005",
+    "expected_ids": [
+      "S065",
+      "S066",
+      "S067",
+      "S068"
+    ],
+    "source_raw_file": "raw/review_c_batch/U005.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "S065",
+        "source_char_span": [
+          4,
+          446
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "S066",
+        "source_char_span": [
+          450,
+          923
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "S067",
+        "source_char_span": [
+          927,
+          1430
+        ],
+        "status": "already_extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "S068",
+        "source_char_span": [
+          1434,
+          1930
+        ],
+        "status": "already_extracted"
+      }
+    ],
+    "returned_n": 4,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "adjudicate_b_batch",
+    "batch_id": "V001",
+    "expected_ids": [
+      "R021",
+      "R025",
+      "R040",
+      "R092",
+      "R093",
+      "R112",
+      "R119",
+      "R141"
+    ],
+    "source_raw_file": "raw/adjudicate_b_batch/V001.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R021",
+        "source_char_span": [
+          4,
+          233
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R025",
+        "source_char_span": [
+          237,
+          462
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R040",
+        "source_char_span": [
+          466,
+          757
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R092",
+        "source_char_span": [
+          761,
+          1034
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R093",
+        "source_char_span": [
+          1038,
+          1272
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R112",
+        "source_char_span": [
+          1276,
+          1516
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R119",
+        "source_char_span": [
+          1520,
+          1752
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R141",
+        "source_char_span": [
+          1756,
+          1973
+        ],
+        "status": "extracted"
+      }
+    ],
+    "returned_n": 8,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "adjudicate_b_batch",
+    "batch_id": "V002",
+    "expected_ids": [
+      "R151",
+      "R153",
+      "R155",
+      "R167",
+      "R168",
+      "R178",
+      "R191",
+      "R193"
+    ],
+    "source_raw_file": "raw/adjudicate_b_batch/V002.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R151",
+        "source_char_span": [
+          4,
+          282
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R153",
+        "source_char_span": [
+          286,
+          551
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R155",
+        "source_char_span": [
+          555,
+          839
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R167",
+        "source_char_span": [
+          843,
+          1111
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R168",
+        "source_char_span": [
+          1115,
+          1356
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R178",
+        "source_char_span": [
+          1360,
+          1633
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R191",
+        "source_char_span": [
+          1637,
+          1915
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 7,
+        "review_id": "R193",
+        "source_char_span": [
+          1919,
+          2187
+        ],
+        "status": "extracted"
+      }
+    ],
+    "returned_n": 8,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "adjudicate_b_batch",
+    "batch_id": "V003",
+    "expected_ids": [
+      "R200",
+      "R202",
+      "R222",
+      "R233",
+      "R239",
+      "R250",
+      "R251"
+    ],
+    "source_raw_file": "raw/adjudicate_b_batch/V003.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "R200",
+        "source_char_span": [
+          4,
+          215
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "R202",
+        "source_char_span": [
+          219,
+          452
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "R222",
+        "source_char_span": [
+          456,
+          688
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "R233",
+        "source_char_span": [
+          692,
+          946
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "R239",
+        "source_char_span": [
+          950,
+          1179
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 5,
+        "review_id": "R250",
+        "source_char_span": [
+          1183,
+          1436
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 6,
+        "review_id": "R251",
+        "source_char_span": [
+          1440,
+          1679
+        ],
+        "status": "extracted"
+      }
+    ],
+    "returned_n": 7,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  },
+  {
+    "batch_group": "adjudicate_c_batch",
+    "batch_id": "W001",
+    "expected_ids": [
+      "S001",
+      "S002",
+      "S015",
+      "S024",
+      "S061"
+    ],
+    "source_raw_file": "raw/adjudicate_c_batch/W001.txt",
+    "status": "processed",
+    "items": [
+      {
+        "array_index": 0,
+        "review_id": "S001",
+        "source_char_span": [
+          4,
+          420
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 1,
+        "review_id": "S002",
+        "source_char_span": [
+          424,
+          913
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 2,
+        "review_id": "S015",
+        "source_char_span": [
+          917,
+          1432
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 3,
+        "review_id": "S024",
+        "source_char_span": [
+          1436,
+          1913
+        ],
+        "status": "extracted"
+      },
+      {
+        "array_index": 4,
+        "review_id": "S061",
+        "source_char_span": [
+          1917,
+          2395
+        ],
+        "status": "extracted"
+      }
+    ],
+    "returned_n": 5,
+    "duplicate_ids": [],
+    "unexpected_ids": [],
+    "missing_ids": [],
+    "unusable_expected_ids": [],
+    "complete": true
+  }
+]

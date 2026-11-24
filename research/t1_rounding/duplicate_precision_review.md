@@ -1,0 +1,44 @@
+# Same quantity, different precision: source verification and worked examples
+
+Date: 2026-11-16 (America/New_York). This is a supplementary audit; it does not replace the out-of-tolerance rate under rounding boxes in the main experiment. The source is the pinned FinQA version recorded in `sources.md`; all locations are zero-based indices into the original JSON. Semantic confirmation was done by this AI session reading the question, the full page representation, table headers, footnotes and gold-supported rows; it is not external expert annotation.
+
+## Scan scope, and how to read the results
+
+`find_duplicate_precision.py` has scanned all public test pages. The heuristic only nominates candidates: a positive number in a table, a number in the narrative that explicitly carries thousand/million/billion, different last-digit precision, overlapping rounding intervals after conversion to a common candidate unit, and at least one shared metric word. It does not automatically decide year, metric scope or factual identity, and it does not cover all percentages, negative numbers, unitless narrative, table-to-table duplicates or cross-page disclosures.
+
+The complete test candidates are in `duplicate_precision_test_candidates.csv`: **54 candidate location pairs, 24 pages, 54 table cells**, with no truncation. The other file, `duplicate_precision_candidates.csv`, is a demonstration set across train/dev/test deliberately truncated to 100 rows, and cannot be used as any population denominator.
+
+The author of this file is responsible for test candidate pairs 1–27; per-item results are in `duplicate_precision_test_review_part1.csv`. Of these, **14 pairs are confirmed as the same fact, 10 are rejected, and 3 remain pending**; the confirmed pairs involve 9 pages. Confirming the same quantity does not necessarily mean the question actually uses that quantity; after further checking question / gold program / gold_inds, **11 questions** in this batch actually use one of the sources.
+
+For these 11 questions, we changed only the center value at the location of the confirmed same fact, converted to a common unit, and ran the gold program unchanged. **2 questions move from inside the 1% tolerance to outside it, and 6 questions move from inside the display cell of the human answer to outside it.** The 1% rule targets `qa.exe_ans`; the display cell reuses the main analysis's `display_acceptance`. The table-average case uses an explicit addition/division expansion that matches the original table row item by item, and we checked that the original center differs from the official execution label by no more than 0.000005. Per-question original values, new values, substitution direction, fractions and decisions are in `duplicate_precision_test_substitutions_part1.csv` and are recomputed by `review_duplicate_part1.py`. Pairs 28–54 were handled by another executor and are not included in the numbers in this section.
+
+After the main parser added support for a leading decimal point, this batch was rerun: the gold `.635` of BLL/2010/page_35.pdf-1 now parses correctly, and both the original 0.635 and the substituted 0.6349 are inside the display cell. All 11 questions can now be decided under the display convention, and the crossing counts of 2 and 6 above are unchanged.
+
+These are confirmed counts within the candidate range that was read; **11 is not the complete number of duplicate-disclosure questions in all of test, and 2 and 6 are not population boundary-crossing rates**. In particular, "54 candidates" must not be restated as "54 questions have uncertain answers". One page can have several questions, and one question can involve several disclosures.
+
+## Five reviewable examples
+
+| Example | Precise and coarse displays of the same fact | Question computation and actual change |
+|---|---|---|
+| AAL/2015/page_114.pdf-1 (test) | 2013 labor-related deemed claim; `table_ori[1][1]` is 1,733 million, `post_text[2]` is 1.7 billion. Footnote (1) in `post_text[0]` explicitly binds the narrative to that table item. | `1733/2655` gives 65.2731%; using 1700 million gives 64.0301%. The relative change is about 1.9042%; the original human answer is 65.3%, and both conventions cross. |
+| ADBE/1999/page_64.pdf-2 and -3 (test) | Remaining restructuring accrual at 1999-12-03; `table_ori[1][5]` is 772 thousand, `post_text[0]` is 0.8 million. `post_text[10]` explains that the earlier merger items have no remaining balance. | The original gold of -2 uses the coarse narrative, `0.4/0.8=50%`; switching to the precise `0.4/0.772≈51.8135%` crosses under both conventions. -3 is originally `772−8867=−8095`; switching to 800 gives −8067, inside 1% but a different integer display. |
+| DXC/2018/page_56.pdf-3 (test) | 2018 cost of services, both excluding depreciation and amortization and restructuring; `table_ori[2][1]` is 17,944 million, `post_text[5]` is 17.9 billion. | `17944/22885` gives 78.4094%; using 17900 gives 78.2172%. Still inside the 1% tolerance, but at the two decimals of gold `78.41%` it becomes 78.22%. On the same page, -1 has only the integer `78%` and still passes after substitution, which shows that the display convention affects the conclusion. |
+| GS/2013/page_63.pdf-2 (test) | Total assets in December 2013; `table_ori[2][1]` is 911,507 million, `pre_text[0]` is 911.51 billion. | `911507−938555=−27048`; switching to 911510 gives −27045. Inside 1%, but the gold integer display differs. On the same page, the average assets of -1 also change from 925031 to 925032.5. |
+| GIS/2006/page_43.pdf-1 (train, demonstration, not mixed into the test counts) | 2006 current portion of long-term debt; `table_ori[2][1]` is 2,131 million, `post_text[0]` is 2.1 billion, and the narrative explains that this is debt due in the next 12 months and classified as the current portion. | `2131/6049` gives 35.2290%; using 2100 gives 34.7165%. The relative change is about 1.4547%; the original human answer is 35.2%, and both conventions cross. |
+
+Corresponding raw data: [test.json](https://github.com/czyssrs/FinQA/blob/0f16e2867befa6840783e58be38c9efb9229d742/dataset/test.json), [train.json](https://github.com/czyssrs/FinQA/blob/0f16e2867befa6840783e58be38c9efb9229d742/dataset/train.json). The computations in the table are results derived here; the paper and dataset authors did not provide these crossing statistics.
+
+## Why close values are not enough
+
+- **ABMD/2008/page_86.pdf:** the table's 168 thousand is explicitly *excluding accrued interest*, while the narrative's 0.2 million is explicitly *including accrued interest*. The values are close and the year is the same, but this is not the same quantity and must be rejected.
+- **BLK/2017/page_121.pdf:** the table's 5,225 million fair value is for 2017, while the narrative's 5.2 billion is for 2016; there are also mismatches among principal, carrying value and fair value. A number cannot be bound just because it is the closest one in the table.
+- **DXC/2018/page_56.pdf:** the intervals of depreciation and amortization of 1,964 million and SG&A of 2.0 billion overlap, and the narrative also mentions depreciation, but it is actually explicitly excluding depreciation. Similar keywords do not guarantee the same metric.
+- **AMT/2010/page_99.pdf:** the original issue amount and the outstanding principal two or three years later have equal values, but without evidence about changes in between they still cannot automatically be treated as facts of the same period.
+
+## Correct interpretation and merging
+
+In these five examples, the rounding interval of the precise source lies inside the interval of the coarse source. They are usually **consistent duplicate disclosures**, not a self-contradictory filing. For example, the GIS table supports `[2130.5, 2131.5]` million and the narrative supports `[2050, 2150]` million; when the document is used as a whole, the intersection should be taken, which gives the former. Plugging the two displayed centers into the program separately shows that "source choice changes the scoring"; it does not prove that the true value in the original filing can vary freely between the two displayed centers.
+
+Conversely, ADBE's gold already uses the coarser narrative 0.8 million; the precise table narrows the feasible value to around 0.772 million, which makes the computation at the other center cross. This supports auditing source choice and the gold's computation convention, but a single example cannot be used to declare that every answer in the benchmark targets the unrounded true quantity.
+
+All the intervals above are conditional on the round-half assumption. Contract principal, defined values and explicitly exact integers should be reviewed separately; different displayed digits for the same quantity do not by themselves prove that random or unknown errors exist.

@@ -1,0 +1,1 @@
+{"answer":"-19298","unit":"million USD","expression":"59677 - 78975","low":"-19299","high":"-19297","reliable_digits":"4","explanation":"The table’s totals net of cash collateral correspond to balance-sheet receivables, and each has rounding uncertainty of $0.5 million."}

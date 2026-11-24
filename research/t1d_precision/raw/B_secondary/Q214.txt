@@ -1,0 +1,1 @@
+{"answer":"2.6515151515","unit":"percent","expression":"(27.1 - 26.4) / 26.4 * 100","low":"2.2684310019","high":"3.0360531309","reliable_digits":"0","explanation":"Each euro figure has rounding uncertainty of 0.05, giving a percentage increase whose first significant digit is not reliable."}

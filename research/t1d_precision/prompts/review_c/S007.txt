@@ -1,0 +1,174 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S007",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "table of contents part ii item 5 ."
+      },
+      {
+        "location": "text_1",
+        "text": "market for registrant 2019s common equity , related stockholder matters and issuer purchases of equity securities ."
+      },
+      {
+        "location": "text_2",
+        "text": "price range our common stock trades on the nasdaq global select market under the symbol 201cmktx 201d ."
+      },
+      {
+        "location": "text_3",
+        "text": "the range of closing price information for our common stock , as reported by nasdaq , was as follows : on february 20 , 2013 , the last reported closing price of our common stock on the nasdaq global select market was $ 39.60 ."
+      },
+      {
+        "location": "text_4",
+        "text": "holders there were 33 holders of record of our common stock as of february 20 , 2013 ."
+      },
+      {
+        "location": "text_5",
+        "text": "dividend policy we initiated a regular quarterly dividend in the fourth quarter of 2009 ."
+      },
+      {
+        "location": "text_6",
+        "text": "during 2012 and 2011 , we paid quarterly cash dividends of $ 0.11 per share and $ 0.09 per share , respectively ."
+      },
+      {
+        "location": "text_7",
+        "text": "on december 27 , 2012 , we paid a special dividend of $ 1.30 per share ."
+      },
+      {
+        "location": "text_8",
+        "text": "in january 2013 , our board of directors approved a quarterly cash dividend of $ 0.13 per share payable on february 28 , 2013 to stockholders of record as of the close of business on february 14 , 2013 ."
+      },
+      {
+        "location": "text_9",
+        "text": "any future declaration and payment of dividends will be at the sole discretion of our board of directors ."
+      },
+      {
+        "location": "text_10",
+        "text": "the board of directors may take into account such matters as general business conditions , our financial results , capital requirements , and contractual , legal , and regulatory restrictions on the payment of dividends to our stockholders or by our subsidiaries to the parent and any other such factors as the board of directors may deem relevant ."
+      },
+      {
+        "location": "text_11",
+        "text": "recent sales of unregistered securities securities authorized for issuance under equity compensation plans please see the section entitled 201cequity compensation plan information 201d in item 12. ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "2012:",
+          "High",
+          "Low"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "January 1, 2012 to March 31, 2012",
+          "$37.79",
+          "$29.26"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "April 1, 2012 to June 30, 2012",
+          "$37.65",
+          "$26.22"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "July 1, 2012 to September 30, 2012",
+          "$34.00",
+          "$26.88"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "October 1, 2012 to December 31, 2012",
+          "$35.30",
+          "$29.00"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "2011:",
+          "High",
+          "Low"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "January 1, 2011 to March 31, 2011",
+          "$24.19",
+          "$19.78"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "April 1, 2011 to June 30, 2011",
+          "$25.22",
+          "$21.00"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "July 1, 2011 to September 30, 2011",
+          "$30.75",
+          "$23.41"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "October 1, 2011 to December 31, 2011",
+          "$31.16",
+          "$24.57"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_12",
+        "text": "."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "by how much did the high of mktx stock increase from 2011 to march 2012?",
+  "human_answer": "21.3%",
+  "reference_program": "subtract(37.79, 31.16), divide(#0, 31.16)",
+  "reference_execution_value": 0.21277,
+  "model_response": {
+    "answer": "6.63",
+    "unit": "USD per share",
+    "expression": "37.79 - 31.16",
+    "explanation": "The high rose from $31.16 in 2011 to $37.79 in the first quarter of 2012."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "finesse_rows": 1147,
+  "official_test_rows": 1147,
+  "same_order_question_matches": 1147,
+  "exact_string_exe_ans_matches": 1147,
+  "finesse_sha256": "51c267c09be8668fbe643c2707669933aa706df66cd3fe2ad957377c27abd914",
+  "official_sha256": "831dbfb2e785dbc227f895ce3f24046433467aec67b09db2bd6ac7692a8a30dc",
+  "question_unmatched_indexes": [],
+  "sources": [
+    {
+      "repository": "LimexAILab/FINESSE-Bench",
+      "commit": "3ad5870a99a8598d2c8cae5746493adf9252da2a",
+      "path": "data/finqa/question.jsonl",
+      "url": "https://raw.githubusercontent.com/LimexAILab/FINESSE-Bench/3ad5870a99a8598d2c8cae5746493adf9252da2a/data/finqa/question.jsonl",
+      "sha256": "51c267c09be8668fbe643c2707669933aa706df66cd3fe2ad957377c27abd914",
+      "matches_downloaded_bytes": true
+    },
+    {
+      "repository": "czyssrs/FinQA",
+      "commit": "0f16e2867befa6840783e58be38c9efb9229d742",
+      "path": "dataset/test.json",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/dataset/test.json",
+      "sha256": "831dbfb2e785dbc227f895ce3f24046433467aec67b09db2bd6ac7692a8a30dc",
+      "matches_downloaded_bytes": true
+    }
+  ],
+  "date": "2026-11-17",
+  "method": "Ordered comparison: finesse.prompt.rstrip().endswith(\"Question: \" + official.qa.question); finesse.answer == str(official.qa.exe_ans). This checks question and reference identity, not context bytes or normalized answer/exe_ans disagreement.",
+  "byte_note": "Initial local text-mode save converted LF to CRLF; raw pinned bytes were re-downloaded and all parsed records proved identical. The hashes here are raw HTTP bytes.",
+  "checked_on": "2026-11-17",
+  "scope": "Data identity only; shared model-error percentages are author-reported and were not recomputed. No answer/exe_ans inconsistency rate is inferred from string equality."
+}

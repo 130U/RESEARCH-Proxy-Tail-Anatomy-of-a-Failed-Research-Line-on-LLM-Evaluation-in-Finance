@@ -1,0 +1,305 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R076",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "financing activities the decrease in cash used in 2010 relative to 2009 was attributable to a decrease in commercial paper repayments , net of proceeds , proceeds from our share issuance to bm&fbovespa as well as the termination of the nymex securities lending program in 2009 ."
+      },
+      {
+        "location": "text_1",
+        "text": "the decrease was partially offset by the distribution to dow jones of $ 607.5 million related to index services as well as an increase in share repurchases of $ 548.3 million ."
+      },
+      {
+        "location": "text_2",
+        "text": "share repurchases increased in an effort to offset most of the dilution associated with the issuance of shares to bm&fbovespa ."
+      },
+      {
+        "location": "text_3",
+        "text": "the increase in cash used in 2009 relative to 2008 was due to new issuances of debt of $ 2.9 billion in 2008 in conjunction with our merger with nymex holdings compared with net debt reductions of $ 900.1 million in debt instruments ."
+      },
+      {
+        "location": "text_4",
+        "text": "the following table summarizes our debt outstanding as of december 31 , 2010: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "(in millions)",
+          "Par Value"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Term loan due 2011, interest equal to 3-month LIBOR plus 1.00%<sup>(1)</sup>",
+          "$420.5"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Fixed rate notes due August 2013, interest equal to 5.40%",
+          "750.0"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Fixed rate notes due February 2014, interest equal to 5.75%",
+          "750.0"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Fixed rate notes due March 2018, interest equal to 4.40%<sup>(2)</sup>",
+          "612.5"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_5",
+        "text": "fixed rate notes due march 2018 , interest equal to 4.40% ( 4.40 % ) ( 2 ) ."
+      },
+      {
+        "location": "text_6",
+        "text": "."
+      },
+      {
+        "location": "text_7",
+        "text": "."
+      },
+      {
+        "location": "text_8",
+        "text": "."
+      },
+      {
+        "location": "text_9",
+        "text": "."
+      },
+      {
+        "location": "text_10",
+        "text": "."
+      },
+      {
+        "location": "text_11",
+        "text": "."
+      },
+      {
+        "location": "text_12",
+        "text": "."
+      },
+      {
+        "location": "text_13",
+        "text": "."
+      },
+      {
+        "location": "text_14",
+        "text": "."
+      },
+      {
+        "location": "text_15",
+        "text": "."
+      },
+      {
+        "location": "text_16",
+        "text": "."
+      },
+      {
+        "location": "text_17",
+        "text": "."
+      },
+      {
+        "location": "text_18",
+        "text": "."
+      },
+      {
+        "location": "text_19",
+        "text": "."
+      },
+      {
+        "location": "text_20",
+        "text": "."
+      },
+      {
+        "location": "text_21",
+        "text": "."
+      },
+      {
+        "location": "text_22",
+        "text": "."
+      },
+      {
+        "location": "text_23",
+        "text": "."
+      },
+      {
+        "location": "text_24",
+        "text": "."
+      },
+      {
+        "location": "text_25",
+        "text": "."
+      },
+      {
+        "location": "text_26",
+        "text": "."
+      },
+      {
+        "location": "text_27",
+        "text": "."
+      },
+      {
+        "location": "text_28",
+        "text": "."
+      },
+      {
+        "location": "text_29",
+        "text": "."
+      },
+      {
+        "location": "text_30",
+        "text": "."
+      },
+      {
+        "location": "text_31",
+        "text": "."
+      },
+      {
+        "location": "text_32",
+        "text": "."
+      },
+      {
+        "location": "text_33",
+        "text": "."
+      },
+      {
+        "location": "text_34",
+        "text": "."
+      },
+      {
+        "location": "text_35",
+        "text": "."
+      },
+      {
+        "location": "text_36",
+        "text": "."
+      },
+      {
+        "location": "text_37",
+        "text": "."
+      },
+      {
+        "location": "text_38",
+        "text": "."
+      },
+      {
+        "location": "text_39",
+        "text": "612.5 ( 1 ) in september 2008 , the company entered into an interest rate swap agreement that modified the variable interest obligation associated with this loan so that the interest payable effectively became fixed at a rate of 4.72% ( 4.72 % ) beginning with the interest accrued after october 22 , 2008 ."
+      },
+      {
+        "location": "text_40",
+        "text": "the interest rate swap agreement was terminated on january 11 , 2011 when the loan was repaid ."
+      },
+      {
+        "location": "text_41",
+        "text": "( 2 ) in march 2010 , we completed an unregistered offering of fixed rate notes due 2018 ."
+      },
+      {
+        "location": "text_42",
+        "text": "net proceeds from the offering were used to fund a distribution to dow jones in conjunction with our investment in index services ."
+      },
+      {
+        "location": "text_43",
+        "text": "in february 2010 , we entered into a forward-starting interest rate swap agreement that modified the interest obligation associated with these notes so that the interest payable on the notes effectively became fixed at a rate of 4.46% ( 4.46 % ) beginning with the interest accrued after march 18 , 2010 ."
+      },
+      {
+        "location": "text_44",
+        "text": "we maintained a $ 1.4 billion senior credit facility with various financial institutions , including the $ 420.5 million term loan and a $ 945.5 million revolving credit facility ."
+      },
+      {
+        "location": "text_45",
+        "text": "the senior credit facility was terminated on january 11 , 2011 ."
+      },
+      {
+        "location": "text_46",
+        "text": "any commercial paper outstanding was backed by the revolving credit facility ."
+      },
+      {
+        "location": "text_47",
+        "text": "under our senior credit facility , we were required to maintain a consolidated net worth of at least $ 12.1 billion ."
+      },
+      {
+        "location": "text_48",
+        "text": "effective january 11 , 2011 , we entered into a new $ 1.0 billion multi-currency revolving senior credit facility with various financial institutions ."
+      },
+      {
+        "location": "text_49",
+        "text": "the proceeds from the revolving senior credit facility can be used for general corporate purposes , which includes providing liquidity for our clearing house ."
+      },
+      {
+        "location": "text_50",
+        "text": "as long as we are not in default under the new senior credit facility , we have the option to increase the facility from time to time by an aggregate amount of up to $ 1.8 billion with the consent of the agent and lenders providing the additional funds ."
+      },
+      {
+        "location": "text_51",
+        "text": "the new senior credit facility matures in january 2014 and is voluntarily prepayable from time to time without premium or penalty ."
+      },
+      {
+        "location": "text_52",
+        "text": "under our new credit facility , we are required to remain in compliance with a consolidated net worth test , as defined as our consolidated shareholders 2019 equity as of september 30 , 2010 , giving effect to share repurchases made and special dividends paid during the term of the agreement ( and in no event greater than $ 2.0 billion in aggregate ) , multiplied by 0.65 ."
+      },
+      {
+        "location": "text_53",
+        "text": "we maintain a 364-day fully secured , committed line of credit with a consortium of domestic and international banks to be used in certain situations by our clearing house ."
+      },
+      {
+        "location": "text_54",
+        "text": "we may use the proceeds to provide temporary liquidity in the unlikely event of a clearing firm default , in the event of a liquidity constraint or default by a depositary ( custodian for our collateral ) , or in the event of a temporary disruption with the domestic payments system that would delay payment of settlement variation between us and our clearing firms ."
+      },
+      {
+        "location": "text_55",
+        "text": "clearing firm guaranty fund contributions received in the form of u.s ."
+      },
+      {
+        "location": "text_56",
+        "text": "treasury securities , government agency securities or ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is the estimated percentage of revolving credit facility in relation with the total senior credit facility in millions?",
+  "reference_program": "multiply(1.4, const_1000), divide(945.5, #0)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "1.4",
+      "raw": "1.4",
+      "location": "text_44:17",
+      "context": "we maintained a $ 1.4 billion senior credit facility with various financial institutions , including the $ 420.5 million term loan and a $ 945.5 million revolving credit facility ."
+    },
+    "x1": {
+      "program_token": "945.5",
+      "raw": "945.5",
+      "location": "text_44:138",
+      "context": "we maintained a $ 1.4 billion senior credit facility with various financial institutions , including the $ 420.5 million term loan and a $ 945.5 million revolving credit facility ."
+    }
+  }
+}

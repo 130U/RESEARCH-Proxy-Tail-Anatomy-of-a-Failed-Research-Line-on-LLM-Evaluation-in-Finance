@@ -1,0 +1,114 @@
+[
+  {
+    "call_id": "S001",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 1 reports 2010 employee-related costs of $105 million and total restructuring costs of $156 million. The model reasonably uses the 2010 total as denominator. The reference instead uses $190 million, the employee-related total across 2010–2011 in row 3; the question permits the model's reading."
+  },
+  {
+    "call_id": "S002",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 3 compares $2.9 billion of debt issuances in 2008 with $900.1 million of net debt reductions when explaining the 2009 cash-use change. The model correctly converts the numerator to $2,900 million before dividing by $900.1 million. The reference omits this unit conversion."
+  },
+  {
+    "call_id": "S003",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 22 gives weighted average grant-date fair values of $8.05 per share in 2005 and $6.91 in 2006. Growth from 2005 to 2006 uses the 2005 denominator, $8.05, and yields a negative rate. The reference reverses the change and uses the ending value as denominator."
+  },
+  {
+    "call_id": "S004",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 1, Net cash provided by operating activities, reports $1,229.0 million for 2004 and $1,410.5 million for 2006. The model correctly divides their increase by the 2004 denominator, $1,229.0 million, and multiplies by 100. The reference subtracts the starting value again instead of dividing."
+  },
+  {
+    "call_id": "S005",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 2, Collateral pools underlying SSgA lending funds, shows $31 billion in 2008 and $24 billion in 2009. The model correctly calculates chronological percent change using the 2008 denominator of $31 billion. The reference reverses the subtraction and divides by the 2009 ending value."
+  },
+  {
+    "call_id": "S006",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "For the 2017 Anios acquisition, row 7 gives goodwill of $511.7 million and row 9 gives total consideration of $798.3 million, including debt satisfaction. That is a reasonable purchase-price denominator. The reference uses row 11's $605.5 million net consideration to sellers, a different purchase-price scope."
+  },
+  {
+    "call_id": "S007",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 9 gives the highest 2011 price, $31.16 per share, and row 1 gives $37.79 through March 2012. 'By how much' permits the model's absolute increase of $6.63 per share, requiring no denominator. The reference instead reports a percentage using $31.16 as denominator."
+  },
+  {
+    "call_id": "S008",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The Employee separations row reports liabilities of $20,963 thousand at December 31, 2005 and $7,327 thousand at December 31, 2006. The model correctly divides the 2006 change by the opening $20,963 thousand and multiplies by 100. The reference calculates only the absolute change in thousands."
+  },
+  {
+    "call_id": "S009",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 9 reports international slot and route authorities of $736 million at December 31, 2009 and $708 million at December 31, 2010. Both calculations use the correct $736 million starting denominator. The model reports the positive percentage decline magnitude; the reference reports signed change."
+  },
+  {
+    "call_id": "S010",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 1 gives $70.5 million at the beginning of 2007, and row 8 gives $214.4 million at the end of 2008. 'During 2007 and 2008' reasonably permits the model's combined two-year increase. The reference compares the 2007 and 2008 ending balances, $126.6 million and $214.4 million. No denominator is needed."
+  },
+  {
+    "call_id": "S011",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 1 estimates the 2014 annual fuel-expense increase per $1-per-barrel crude-price rise at $104 million without hedges and $87 million with hedges. The model reasonably measures the $17 million reduction against the $104 million unhedged baseline. The reference uses the $87 million hedged amount; the question does not specify that benchmark."
+  },
+  {
+    "call_id": "S012",
+    "primary_cause": "reference_error",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Row 1, Basic net income available for common shareholders, reports $145,095 thousand in 2006 and $217,692 thousand in 2007. The model correctly divides the increase by the 2006 denominator, $145,095 thousand, and multiplies by 100. The reference incorrectly subtracts 100 from the fractional growth rate."
+  },
+  {
+    "call_id": "S013",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": true,
+    "reason": "Row 3 reports operating losses of $1,201 million in 2007 and $2,199 million in 2008; text 22 rounds these to $1.2 billion and $2.2 billion. The model uses the finer figures and the 2007 loss-magnitude denominator of $1,201 million. It reasonably corrects the question's decline premise by reporting increased loss magnitude; precision alone does not explain the sign difference."
+  },
+  {
+    "call_id": "S014",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "The Peer Group row gives investment values of 161.90 in 2014 and 203.87 in 2015, based on $100 invested in 2012 with dividends reinvested. The model reasonably interprets '2015 total return' as the annual percentage return, using 161.90 as denominator. The reference reports only the 41.97 increase in investment value."
+  },
+  {
+    "call_id": "S015",
+    "primary_cause": "unresolved",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "For December 31, 2011, rows 2–7 support net reserves of 271 + 39 + 57 - 47 = 320 in the table's monetary scale. The question does not specify a metric or request the reference's comparison of net 320 with direct 271 using denominator 271. The net-reserve formula is valid, but the excerpt does not establish the dollar scale."
+  },
+  {
+    "call_id": "S016",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Text 9 reports accrued interest and penalty liabilities of $1.2 billion in 2012 and $665 million in 2013. Converting the starting denominator to $1,200 million is a unit conversion, not alternative precision. The model correctly reports the positive decrease magnitude; the reference reports the equivalent negative signed change."
+  }
+]

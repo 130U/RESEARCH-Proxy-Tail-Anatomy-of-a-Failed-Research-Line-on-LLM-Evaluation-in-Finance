@@ -1,0 +1,20 @@
+{
+  "review_id": "R040",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "second",
+      "original_reason": "The $164 million and $30 million are aggregate facility amounts maturing in 2018 and 2017, and the calculation correctly expresses their increase relative to the 2017 amount as a percentage.",
+      "display_reason": "The $164 million and $30 million are aggregate facility amounts maturing in 2018 and 2017, and the calculation correctly expresses their increase relative to the 2017 amount as a percentage.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "first",
+      "original_reason": "30/164m are maturity buckets of contractual credit facility; whether nominal limits exact rather than rounded is unresolved.",
+      "display_reason": "30/164m are maturity buckets of contractual credit facility; whether nominal limits exact rather than rounded is unresolved.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

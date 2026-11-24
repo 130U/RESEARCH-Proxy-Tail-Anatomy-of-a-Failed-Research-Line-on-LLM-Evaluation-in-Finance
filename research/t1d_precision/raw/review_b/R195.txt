@@ -1,0 +1,5 @@
+{
+    "review_id": "R195",
+    "verdict": "valid",
+    "reason": "The bound amounts are rounded utility net revenues in millions, and subtracting 2014 revenue from 2015 revenue and dividing by 2014 revenue correctly measures the percentage change."
+  }

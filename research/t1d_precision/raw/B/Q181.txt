@@ -1,0 +1,1 @@
+{"answer":"24684","unit":"thousand dollars","expression":"561 * 44","low":"24403.5","high":"24964.5","reliable_digits":"1","explanation":"The share count is exact, while $44 implies rounding bounds of $43.5–$44.5 per share; only one significant digit remains stable when rounding across the resulting range."}

@@ -1,0 +1,5 @@
+{
+    "review_id": "R237",
+    "verdict": "invalid",
+    "reason": "The tax rate must divide the difference between the rounded pretax and after-tax charges by the $9.6 billion pretax charge, whereas the program divides by $8.7 billion after tax."
+  }

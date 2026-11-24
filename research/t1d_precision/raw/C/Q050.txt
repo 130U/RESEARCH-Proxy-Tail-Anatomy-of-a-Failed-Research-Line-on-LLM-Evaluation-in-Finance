@@ -1,0 +1,1 @@
+{"answer":"117624.84","unit":"thousand dollars","expression":"1084 * 108.51","low":"117619.42","high":"117630.26","reliable_digits":"4","explanation":"Multiply the exact 1,084 thousand shares by $108.51 per share, allowing ±$0.005 for rounding of the fair value."}

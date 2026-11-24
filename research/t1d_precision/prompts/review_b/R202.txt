@@ -1,0 +1,179 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R202",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "with these types of uncapped damage provisions are fairly rare , but individual contracts could still represent meaningful risk ."
+      },
+      {
+        "location": "text_1",
+        "text": "there is a possibility that a damage claim by a counterparty to one of these contracts could result in expenses to the company that are far in excess of the revenue received from the counterparty in connection with the contract ."
+      },
+      {
+        "location": "text_2",
+        "text": "indemnification provisions : in addition , the company may provide indemnifications for losses that result from the breach of general warranties contained in certain commercial , intellectual property and divestiture agreements ."
+      },
+      {
+        "location": "text_3",
+        "text": "historically , the company has not made significant payments under these agreements , nor have there been significant claims asserted against the company ."
+      },
+      {
+        "location": "text_4",
+        "text": "however , there is an increasing risk in relation to intellectual property indemnities given the current legal climate ."
+      },
+      {
+        "location": "text_5",
+        "text": "in indemnification cases , payment by the company is conditioned on the other party making a claim pursuant to the procedures specified in the particular contract , which procedures typically allow the company to challenge the other party 2019s claims ."
+      },
+      {
+        "location": "text_6",
+        "text": "further , the company 2019s obligations under these agreements for indemnification based on breach of representations and warranties are generally limited in terms of duration , typically not more than 24 months , and for amounts not in excess of the contract value , and in some instances the company may have recourse against third parties for certain payments made by the company ."
+      },
+      {
+        "location": "text_7",
+        "text": "legal matters : the company is a defendant in various lawsuits , claims and actions , which arise in the normal course of business ."
+      },
+      {
+        "location": "text_8",
+        "text": "these include actions relating to products , contracts and securities , as well as matters initiated by third parties or motorola relating to infringements of patents , violations of licensing arrangements and other intellectual property-related matters ."
+      },
+      {
+        "location": "text_9",
+        "text": "in the opinion of management , the ultimate disposition of these matters will not have a material adverse effect on the company 2019s consolidated financial position , liquidity or results of operations ."
+      },
+      {
+        "location": "text_10",
+        "text": "segment information the following commentary should be read in conjunction with the financial results of each reporting segment as detailed in note 12 , 201cinformation by segment and geographic region , 201d to the company 2019s consolidated financial statements ."
+      },
+      {
+        "location": "text_11",
+        "text": "net sales and operating results for the company 2019s three operating segments for 2008 , 2007 and 2006 are presented below ."
+      },
+      {
+        "location": "text_12",
+        "text": "mobile devices segment the mobile devices segment designs , manufactures , sells and services wireless handsets with integrated software and accessory products , and licenses intellectual property ."
+      },
+      {
+        "location": "text_13",
+        "text": "in 2008 , the segment 2019s net sales represented 40% ( 40 % ) of the company 2019s consolidated net sales , compared to 52% ( 52 % ) in 2007 and 66% ( 66 % ) in 2006 ."
+      },
+      {
+        "location": "text_14",
+        "text": "( dollars in millions ) 2008 2007 2006 2008 20142007 2007 20142006 years ended december 31 percent change ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "<i>Years Ended December 31</i>",
+          "<i>Percent Change</i>"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "<i>(Dollars in millions)</i>",
+          "<i>2008</i>",
+          "<i>2007</i>",
+          "<i>2006</i>",
+          "<i>2008—2007</i>",
+          "<i>2007—2006</i>"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Segment net sales",
+          "$12,099",
+          "$18,988",
+          "$28,383",
+          "(36)%",
+          "(33)%"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Operating earnings (loss)",
+          "(2,199)",
+          "(1,201)",
+          "2,690",
+          "83%",
+          "***"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_15",
+        "text": "*** percentage change is not meaningful ."
+      },
+      {
+        "location": "text_16",
+        "text": "segment results 20142008 compared to 2007 in 2008 , the segment 2019s net sales were $ 12.1 billion , a decrease of 36% ( 36 % ) compared to net sales of $ 19.0 billion in 2007 ."
+      },
+      {
+        "location": "text_17",
+        "text": "the 36% ( 36 % ) decrease in net sales was primarily driven by a 37% ( 37 % ) decrease in unit shipments ."
+      },
+      {
+        "location": "text_18",
+        "text": "the segment 2019s net sales were negatively impacted by the segment 2019s limited product offerings in critical market segments , particularly 3g products , including smartphones , as well as very low-tier products ."
+      },
+      {
+        "location": "text_19",
+        "text": "in addition , the segment 2019s net sales were impacted by the global economic downturn in the second half of 2008 , which resulted in the slowing of end user demand ."
+      },
+      {
+        "location": "text_20",
+        "text": "on a product technology basis , net sales decreased substantially for gsm and cdma technologies and , to a lesser extent , decreased for iden and 3g technologies ."
+      },
+      {
+        "location": "text_21",
+        "text": "on a geographic basis , net sales decreased substantially in north america , the europe , middle east and africa region ( 201cemea 201d ) and asia and , to a lesser extent , decreased in latin america ."
+      },
+      {
+        "location": "text_22",
+        "text": "the segment incurred an operating loss of $ 2.2 billion in 2008 , compared to an operating loss of $ 1.2 billion in 2007 ."
+      },
+      {
+        "location": "text_23",
+        "text": "the increase in the operating loss was primarily due to a decrease in gross margin , driven by : ( i ) a 36% ( 36 % ) decrease in net sales , ( ii ) excess inventory and other related charges of $ 370 million in 2008 due to a decision to 61management 2019s discussion and analysis of financial condition and results of operations %%transmsg*** transmitting job : c49054 pcn : 064000000 ***%%pcmsg|61 |00028|yes|no|02/24/2009 12:31|0|0|page is valid , no graphics -- color : n| ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percentage decline in the operating loss from 2007 to 2008",
+  "reference_program": "subtract(1.2, 2.2), divide(#0, 1.2)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "1.2",
+      "raw": "1.2",
+      "location": "text_22:100",
+      "context": "the segment incurred an operating loss of $ 2.2 billion in 2008 , compared to an operating loss of $ 1.2 billion in 2007 ."
+    },
+    "x1": {
+      "program_token": "2.2",
+      "raw": "2.2",
+      "location": "text_22:43",
+      "context": "the segment incurred an operating loss of $ 2.2 billion in 2008 , compared to an operating loss of $ 1.2 billion in 2007 ."
+    }
+  }
+}

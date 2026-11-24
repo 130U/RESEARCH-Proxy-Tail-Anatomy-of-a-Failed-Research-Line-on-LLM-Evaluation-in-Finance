@@ -1,0 +1,1 @@
+{"answer":"58.97435897435897","unit":"percent","expression":"(1.24 - 0.78) / 0.78 * 100","low":"57.32484076433121","high":"60.64516129032258","reliable_digits":"1","explanation":"Each rate may vary by 0.005 percentage points, giving these bounds and one reliable significant digit."}

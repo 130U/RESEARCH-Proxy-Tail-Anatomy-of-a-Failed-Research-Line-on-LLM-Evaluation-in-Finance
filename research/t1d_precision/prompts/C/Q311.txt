@@ -1,0 +1,42 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+the remaining change in other expense was driven primarily by changes on foreign currency exchange instruments as further discussed in note 7 in 201citem 8 .
+financial statements and supplementary data 201d of this report .
+income taxes .
+
+TABLE
+ | 2018 | 2017
+Current expense (benefit) | $(70) | $112
+Deferred expense (benefit) | 226 | (97)
+Total expense | $156 | $15
+Effective income tax rate | 17% | 2%
+
+for discussion on income taxes , see note 8 in 201citem 8 .
+financial statements and supplementary data 201d of this report .
+discontinued operations discontinued operations net earnings increased primarily due to the gain on the sale of our aggregate ownership interests in enlink and the general partner of $ 2.6 billion ( $ 2.2 billion after-tax ) .
+for discussion on discontinued operations , see note 19 in 201citem 8 .
+financial statements and supplementary data 201d of this report 201d of this report .
+results of operations 2013 2017 vs .
+2016 the graph below shows the change in net earnings from 2016 to 2017 .
+the material changes are further discussed by category on the following pages .
+to facilitate the review , these numbers are being presented before consideration of earnings attributable to noncontrolling interests .
+$ 1308 ( $ 165 ) ( $ 4 ) $ 1 $ 63 $ 400 ( $ 397 ) $ 126 $ 1204 ( $ 1458 ) $ 1078 2016 upstream operations marketing operations exploration expenses dd&a g&a financing costs , net other ( 1 ) income discontinued operations net earnings ( 1 ) other in the table above includes asset impairments , asset dispositions , restructuring and transaction costs and other expenses .
+the graph below presents the drivers of the upstream operations change presented above , with additional details and discussion of the drivers following the graph .
+( $ 427 ) ( $ 427 ) $ 1395$ 1 395 $ 2176$ 2 176 $ 3484 2016 production volumes field prices hedging 2017 upstream operations expenses .
+
+QUESTION
+what is the percentage increase in total expense from 2017 to 2018?

@@ -1,0 +1,5 @@
+{
+    "review_id": "R169",
+    "verdict": "valid",
+    "reason": "The bindings correctly select rounded warranty reserves of $10 million for 2006 and $4 million for 2005, and subtraction gives the requested change in millions."
+  }

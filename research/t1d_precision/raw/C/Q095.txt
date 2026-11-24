@@ -1,0 +1,1 @@
+{"answer":"166","unit":"million dollars","expression":"284 - 118","low":"165","high":"167","reliable_digits":"2","explanation":"Each balance has rounding uncertainty of 0.5 million dollars, so the increase is between 165 and 167 million dollars."}

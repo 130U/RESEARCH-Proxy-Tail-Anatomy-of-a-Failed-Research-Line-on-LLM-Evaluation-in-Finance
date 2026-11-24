@@ -1,0 +1,7 @@
+{
+    "call_id": "S027",
+    "primary_cause": "reasonable_alternative",
+    "formula_valid": true,
+    "alternative_precision_used": false,
+    "reason": "Rows 3–5 give net adjustments of 91,640+2,638−8,349=85,929 thousand dollars. The question's wording permits expressing these as a percentage of row 6's adjusted December 30, 2017 balance of 426,932 thousand dollars, as the model explicitly does. The reference instead measures the increase relative to row 1's original 341,003 thousand dollars."
+  }

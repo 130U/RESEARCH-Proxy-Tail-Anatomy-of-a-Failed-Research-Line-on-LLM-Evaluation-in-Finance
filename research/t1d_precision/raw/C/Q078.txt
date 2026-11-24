@@ -1,0 +1,1 @@
+{"answer":"9.77177748","unit":"percent","expression":"(75970 / 777443) * 100","low":"9.77170688","high":"9.77184808","reliable_digits":"5","explanation":"Each lease amount may vary by 0.5 thousand; the bounds use opposite extremes of the numerator and denominator."}

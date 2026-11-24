@@ -1,0 +1,55 @@
+Solve the financial question using only the document below. Do not use external sources, code or tools.
+
+Figures in the document are rounded to the precision shown: a displayed figure may stand for any value that rounds to it. Counts, years, dates and contractual terms are exact.
+
+How to work it out: a figure shown to a last digit of size u may be any value within u/2 of the displayed figure. The smallest and largest values of your answer are reached at extreme values of the inputs. For a difference b - a, or a growth rate (b - a)/a, of two figures with the same last-digit unit u, the result is uncertain by about u/|b - a| in relative terms; the two figures must differ by about 100 units for the result to be reliable to 1%.
+
+Give a final numerical answer, its unit, and a brief arithmetic expression showing your calculation. Your expression must use the figures exactly as displayed, with arithmetic operators (+, -, *, /, parentheses), and evaluate to your answer in the stated unit.
+
+Then state how precisely the document determines your answer:
+- "low" and "high": the smallest and largest values your answer could take, given the rounding of the figures you used.
+- "reliable_digits": how many significant digits of your answer you would report as reliable (an integer; 0 if not even the first digit is reliable).
+
+Do not include prose outside the JSON. Return JSON with exactly these fields:
+{"answer": "numerical value as a string", "unit": "unit, or percent, ratio, times, years, etc.", "expression": "arithmetic expression", "low": "numerical value as a string", "high": "numerical value as a string", "reliable_digits": "integer as a string", "explanation": "one brief sentence"}
+
+DOCUMENT
+management 2019s discussion and analysis 120 jpmorgan chase & co./2010 annual report wholesale credit portfolio as of december 31 , 2010 , wholesale exposure ( ib , cb , tss and am ) increased by $ 36.9 billion from december 31 , 2009 .
+the overall increase was primarily driven by increases of $ 23.5 billion in loans and $ 16.8 billion of receivables from customers , partially offset by decreases in interests in purchase receivables and lending-related commitments of $ 2.5 billion and $ 1.1 billion , respectively .
+the de- crease in lending-related commitments and the increase in loans were primarily related to the january 1 , 2010 , adoption of the accounting guidance related to vies , which resulted in the elimination of a net $ 17.7 billion of lending-related commitments between the firm and its administrated multi-seller conduits upon consolidation .
+assets of the consolidated conduits included $ 15.1 billion of wholesale loans at january 1 , 2010 .
+excluding the effect of the accounting guidance , lending-related commitments and loans would have increased by $ 16.6 billion and $ 8.4 billion , respectively , mainly related to in- creased client activity .
+the increase in loans also included the pur- chase of a $ 3.5 billion loan portfolio in cb during the third quarter of 2010 .
+the increase of $ 16.8 billion in receivables from customers was due to increased client activity , predominantly in prime services .
+wholesale .
+
+TABLE
+December 31, | Credit exposure | Nonperforming (f)
+(in millions) | 2010 | 2009 | 2010 | 2009
+Loans retained | $222,510 | $200,077 | $5,510 | $6,559
+Loans held-for-sale | 3,147 | 2,734 | 341 | 234
+Loans at fair value | 1,976 | 1,364 | 155 | 111
+Loans– reported | 227,633 | 204,175 | 6,006 | 6,904
+Derivative receivables | 80,481 | 80,210 | 34 | 529
+Receivables from customers<sup>(a)</sup> | 32,541 | 15,745 | — | —
+Interests in purchased receivables<sup>(b)</sup> | 391 | 2,927 | — | —
+Total wholesale credit-related assets | 341,046 | 303,057 | 6,040 | 7,433
+Lending-related commitments<sup>(c)</sup> | 346,079 | 347,155 | 1,005 | 1,577
+Total wholesale credit exposure | $687,125 | $650,212 | $7,045 | $9,010
+Net credit derivative hedges notional<sup>(d)</sup> | $(23,108) | $(48,376) | $(55) | $(139)
+Liquid securities and other cash collateral held against derivatives<sup>(e)</sup> | (16,486) | (15,519) | NA | NA
+
+net credit derivative hedges notional ( d ) $ ( 23108 ) $ ( 48376 ) $ ( 55 ) $ ( 139 ) liquid securities and other cash collateral held against derivatives ( e ) ( 16486 ) ( 15519 ) na na ( a ) represents primarily margin loans to prime and retail brokerage customers , which are included in accrued interest and accounts receivable on the consolidated balance sheets .
+( b ) represents an ownership interest in cash flows of a pool of receivables transferred by a third-party seller into a bankruptcy-remote entity , generally a trust .
+( c ) the amounts in nonperforming represent unfunded commitments that are risk rated as nonaccrual .
+( d ) represents the net notional amount of protection purchased and sold of single-name and portfolio credit derivatives used to manage both performing and nonperform- ing credit exposures ; these derivatives do not qualify for hedge accounting under u.s .
+gaap .
+for additional information , see credit derivatives on pages 126 2013128 , and note 6 on pages 191 2013199 of this annual report .
+( e ) represents other liquid securities collateral and other cash collateral held by the firm .
+( f ) excludes assets acquired in loan satisfactions .
+the following table presents summaries of the maturity and ratings profiles of the wholesale portfolio as of december 31 , 2010 and 2009 .
+the ratings scale is based on the firm 2019s internal risk ratings , which generally correspond to the ratings as defined by s&p and moody 2019s .
+also included in this table is the notional value of net credit derivative hedges ; the counterparties to these hedges are predominantly investment grade banks and finance companies. .
+
+QUESTION
+what was the percentage change in loans retained from 2009 to 2010?

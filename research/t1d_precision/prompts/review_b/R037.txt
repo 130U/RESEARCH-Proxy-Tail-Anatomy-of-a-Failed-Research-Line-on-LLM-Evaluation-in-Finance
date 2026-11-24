@@ -1,0 +1,200 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R037",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "the company financed the acquisition with the proceeds from a $ 1.0 billion three-year term loan credit facility , $ 1.5 billion in unsecured notes , and the issuance of 61 million shares of aon common stock ."
+      },
+      {
+        "location": "text_1",
+        "text": "in addition , as part of the consideration , certain outstanding hewitt stock options were converted into options to purchase 4.5 million shares of aon common stock ."
+      },
+      {
+        "location": "text_2",
+        "text": "these items are detailed further in note 9 2018 2018debt 2019 2019 and note 12 2018 2018stockholders 2019 equity 2019 2019 ."
+      },
+      {
+        "location": "text_3",
+        "text": "the transaction has been accounted for using the acquisition method of accounting which requires , among other things , that most assets acquired and liabilities assumed be recognized at their fair values as of the acquisition date ."
+      },
+      {
+        "location": "text_4",
+        "text": "the following table summarizes the preliminary amounts recognized for assets acquired and liabilities assumed as of the acquisition date ."
+      },
+      {
+        "location": "text_5",
+        "text": "certain estimated values are not yet finalized ( see below ) and are subject to change , which could be significant ."
+      },
+      {
+        "location": "text_6",
+        "text": "the company will finalize the amounts recognized as information necessary to complete the analyses is obtained ."
+      },
+      {
+        "location": "text_7",
+        "text": "the company expects to finalize these amounts as soon as possible but no later than one year from the acquisition the following table summarizes the preliminary values of assets acquired and liabilities assumed as of the acquisition date ( in millions ) : amounts recorded as of the acquisition ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "Amountsrecorded as ofthe acquisitiondate"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Working capital (1)",
+          "$391"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Property, equipment, and capitalized software",
+          "319"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Identifiable intangible assets:",
+          ""
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Customer relationships",
+          "1,800"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Trademarks",
+          "890"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Technology",
+          "215"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Other noncurrent assets (2)",
+          "344"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Long-term debt",
+          "346"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Other noncurrent liabilities (3)",
+          "361"
+        ]
+      },
+      {
+        "row_index": 10,
+        "cells": [
+          "Net deferred tax liability (4)",
+          "1,035"
+        ]
+      },
+      {
+        "row_index": 11,
+        "cells": [
+          "Net assets acquired",
+          "2,217"
+        ]
+      },
+      {
+        "row_index": 12,
+        "cells": [
+          "Goodwill",
+          "2,715"
+        ]
+      },
+      {
+        "row_index": 13,
+        "cells": [
+          "Total consideration transferred",
+          "$4,932"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_8",
+        "text": "( 1 ) includes cash and cash equivalents , short-term investments , client receivables , other current assets , accounts payable and other current liabilities ."
+      },
+      {
+        "location": "text_9",
+        "text": "( 2 ) includes primarily deferred contract costs and long-term investments ."
+      },
+      {
+        "location": "text_10",
+        "text": "( 3 ) includes primarily unfavorable lease obligations and deferred contract revenues ."
+      },
+      {
+        "location": "text_11",
+        "text": "( 4 ) included in other current assets ( $ 31 million ) , deferred tax assets ( $ 62 million ) , other current liabilities ( $ 32 million ) and deferred tax liabilities ( $ 1.1 billion ) in the company 2019s consolidated statements of financial position ."
+      },
+      {
+        "location": "text_12",
+        "text": "the acquired customer relationships are being amortized over a weighted average life of 12 years ."
+      },
+      {
+        "location": "text_13",
+        "text": "the technology asset is being amortized over 7 years and trademarks have been determined to have indefinite useful lives ."
+      },
+      {
+        "location": "text_14",
+        "text": "goodwill is calculated as the excess of the consideration transferred over the net assets acquired and represents the synergies and other benefits that are expected to arise from combining the operations of hewitt with the operations of aon , and the future economic benefits arising from other ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what is portion of the total consideration transferred is dedicated to trademarks?",
+  "reference_program": "divide(890, 4932)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "890",
+      "raw": "890",
+      "location": "table_5:1",
+      "context": "Trademarks | Amountsrecorded as ofthe acquisitiondate"
+    },
+    "x1": {
+      "program_token": "4932",
+      "raw": "4,932",
+      "location": "table_13:1",
+      "context": "Total consideration transferred | Amountsrecorded as ofthe acquisitiondate"
+    }
+  }
+}

@@ -1,0 +1,526 @@
+[
+  {
+    "dataset": "TAT-QA",
+    "split": "test",
+    "id": "ed557028792b3e52054bd998ebebb6f2",
+    "question": "What is the component that has the highest obligation for the company in 1-5 years?",
+    "answer": [
+      "Lease liabilities"
+    ],
+    "derivation": "For COL 5 row 2-9 find the largest number and the corresponding component in COL2",
+    "computed": true,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "c07213b7a1b24cf2fd15872cc54c0b60"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "dev",
+    "id": "9314428d-bc43-4187-a194-2b7b38fcf1e5",
+    "question": "For 2019, what is the component that contributed the most to total revenue?",
+    "answer": [
+      "Fully-Paid Licenses"
+    ],
+    "derivation": "For COL4 rows 3-5 find the largest number and the corresponding component in COL2",
+    "computed": true,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "a98c60cd-3990-47d0-9d30-351743be74c7"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "5cf4c89d-022b-4dc7-9d08-41fdffba1bac",
+    "question": "Which region had the largest percentage change in revenue from 2018 to 2019?",
+    "answer": [
+      "United States"
+    ],
+    "derivation": "United States:((339,463-175,855)/175,855=0.93)  Europe :((126,203-165,602)/165,602=-0.24)  Asia:( (818,194 -476,624)/476,624=0.72)",
+    "computed": true,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "740d990b-1456-46c2-97a7-21a2553b7a1c"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "8795eb54-1406-4bed-aed7-34ca33a055b2",
+    "question": "What are the regions ranked in descending order in terms of revenue for 2019?",
+    "answer": [
+      "Asia",
+      "United States",
+      "Europe"
+    ],
+    "derivation": "Sort the values and corresponding regions in COL2 in COL4 row 4-6 in descending order by the values in COL4",
+    "computed": true,
+    "candidate_reason": "annotation",
+    "table_uid": "740d990b-1456-46c2-97a7-21a2553b7a1c"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "471408c6-832a-481f-bad5-a537ad513778",
+    "question": "Which type of asset had the greatest depreciation for the year?",
+    "answer": [
+      "Land and buildings"
+    ],
+    "derivation": "For COL 3-5, row 7, find the largest number and the corresponding asset",
+    "computed": true,
+    "candidate_reason": "annotation",
+    "table_uid": "0333ac87-e444-45f2-b491-d7348d1f75c6"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "9e5f51f8-9335-44f0-a371-ade17f609823",
+    "question": "Which year has the highest equity to total asset ratio?",
+    "answer": [
+      "2018"
+    ],
+    "derivation": "2018:(12,161/( 5,907 + 15,168 )=0.58); 2019:( 11,632/(13,381+7,464)=0.56)",
+    "computed": true,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "bf05ad69-e3db-420f-a2fe-dfd6615dc336"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "11c8488d-261b-469f-b681-656c2d06f3b9",
+    "question": "Which key performance indicator accounts for two thirds in Growth?",
+    "answer": [
+      "PBIT"
+    ],
+    "derivation": "40%/60%",
+    "computed": true,
+    "candidate_reason": "annotation",
+    "table_uid": "6f339369-41b4-4a17-919b-57523422de98"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "14aa0a57-5239-4b79-9c18-457d8bda584c",
+    "question": "Who are the NEO(s) with a FY19 target above the average?",
+    "answer": [
+      "Gregory S. Clark"
+    ],
+    "derivation": "For each row for COL4 if the value>(1,500,000+650,000+308,000+450,000+600,000)/5=701,600, select corresponding NEO name as answer.",
+    "computed": true,
+    "candidate_reason": "annotation;operator",
+    "table_uid": "35e7fcf9-1282-4bf5-ab43-dc5e32fa0cab"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "15ffa3ed-9c11-4d15-b008-dd1247cf3824",
+    "question": "In which year was Net cash provided by/(used in) operating activities negative?",
+    "answer": [
+      "2018"
+    ],
+    "derivation": "locate and analyze Net cash provided by/(used in) operating activities in row 3",
+    "computed": true,
+    "candidate_reason": "annotation",
+    "table_uid": "8d57125b-27d5-4708-b1ac-857e15991610"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "695bc6c7-5c4f-4ee7-8add-5011f7b288a8",
+    "question": "In which year is the Gain on sale / (write-down) of cost-accounted investment less than 1,000 thousands?",
+    "answer": [
+      "2019",
+      "2018"
+    ],
+    "derivation": "locate and analyze Gain on sale / (write-down) of cost-accounted investment in row 9",
+    "computed": true,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "af402e45-f3c0-483e-934e-6cf5576131a2"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "test",
+    "id": "1d5aea847254a9c3a9771b7b1a9ae40b",
+    "question": "Which year had the lowest percentage difference in basic and diluted net earnings per share?",
+    "answer": [
+      "2019"
+    ],
+    "derivation": "2018:((3.00-2.96)/2.96=1.35%) 2019:((6.66-6.58)/6.58=1.22%)",
+    "computed": true,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "8b1c7617ae16b63840f3cfc52ea82824"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "898b61d4-2700-4346-b6f7-0d2444578eef",
+    "question": "Which year has a higher total sum of 'Depreciation expense' and 'Total property and equipment, net'?",
+    "answer": [
+      "2018"
+    ],
+    "derivation": "(9 + 18) > (16 + 7)",
+    "computed": true,
+    "candidate_reason": "annotation;operator;lexical",
+    "table_uid": "36b9f7a2-43c5-472d-bbbd-79c7cd9e41d0"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "b423ebd2-47ae-49a3-a018-978bbb001d97",
+    "question": "What are the identifiable intangible assets with a useful life above 5 years?",
+    "answer": [
+      "Customer relationships"
+    ],
+    "derivation": "For COL 4 rows 3-5 check if value is >5 . If value is >5 input corresponding identifiable intangible assets in COL2 as answer",
+    "computed": true,
+    "candidate_reason": "annotation;operator",
+    "table_uid": "280ecdc9-72d4-4c22-9930-8513bdb4e9eb"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "654f5a41-0690-4968-badf-03ecaf2d9dd4",
+    "question": "Which year had a larger difference in the balance between the start and the end of the year?",
+    "answer": [
+      "2019"
+    ],
+    "derivation": "2018:(7,955-6,562=1,393); 2019:(16,424-7,955=8,469)",
+    "computed": true,
+    "candidate_reason": "annotation",
+    "table_uid": "c7170077-0218-4a58-9cb6-d10be4cd6e4a"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "a69c1c5d-4065-4168-af65-44b90bc7d9a4",
+    "question": "Which intangible assets have the highest proportion of accumulated amortization over cost in 2019?",
+    "answer": [
+      "Trade names"
+    ],
+    "derivation": "(377/618)>(6,701/17,628)>(7,104/20,341) = 0.61>0.38>0.35",
+    "computed": true,
+    "candidate_reason": "annotation;operator;lexical",
+    "table_uid": "46f3bc91-b8ca-42b8-bf03-f23e9fd70b5e"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "4c0637d8-2428-47f6-b86d-4ed5f403e076",
+    "question": "In which year has the highest % of the net deferred gain classified as current?",
+    "answer": [
+      "2018"
+    ],
+    "derivation": "(20.1/377.8) > (20.8/395.8) > (68.8/1,351.5)",
+    "computed": true,
+    "candidate_reason": "annotation;operator;lexical",
+    "table_uid": "cbe33997-01ab-4fa4-a724-a4a2d7b38161"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "877388f8-caf8-42a8-926d-4f3aba465810",
+    "question": "On which year does the dilutive effects have the largest impact on diluted earnings per share of common stock?",
+    "answer": [
+      "2017"
+    ],
+    "derivation": "2019:(41 + 15 = 56); 2018:(50 + 40 = 90); 2017:(47 + 87 = 134)",
+    "computed": true,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "b4129e1f-efcb-4157-9996-5389b83de63e"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "561cd5f1-f206-4f37-b5a0-717b59c797a6",
+    "question": "In which year(s) is A1/A+a less than 1,000 million?",
+    "answer": [
+      "2018",
+      "2017"
+    ],
+    "derivation": "Locate and analyze A1/A+a in row 5",
+    "computed": true,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "abecff2b-f651-483f-88a4-5f9f11e1348d"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "db3a9398-3891-4d1a-a083-6fa48a7f8f90",
+    "question": "Which year has the higher total financial assets?",
+    "answer": [
+      "2019"
+    ],
+    "derivation": "2018:(285,907+173,450=459,357) 2019:(497,874 + 199,535=697,409)",
+    "computed": true,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "ab75ee9c-8e53-45ba-8905-dada394aad04"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "test",
+    "id": "f55ccd949b0a3dd30fbc4839cbafaf59",
+    "question": "What are the components of total contractual obligations that are more than 100,000?",
+    "answer": [
+      "Accounts payable",
+      "Accrued expenses and other payables",
+      "Purchase commitments to suppliers"
+    ],
+    "derivation": "For COL 3 row 2-9 find the values that are >100,000 and the corresponding component in COL2",
+    "computed": true,
+    "candidate_reason": "annotation;operator;lexical",
+    "table_uid": "c07213b7a1b24cf2fd15872cc54c0b60"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "test",
+    "id": "0768e300bf9f52a725ff831165be07dd",
+    "question": "How much basis points as a percentage of net sale did Selling and administrative expenses increased in 2019 compared to 2018?",
+    "answer": [
+      "approximately 70 basis points"
+    ],
+    "derivation": "",
+    "computed": true,
+    "candidate_reason": "lexical",
+    "table_uid": "fc2f2ae5ca42d41eacf2f01cd6a89fa4"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "test",
+    "id": "1b58f06f8a7c6f8e8b5089f84750faed",
+    "question": "Which year did Bell welcome the industry's highest number of new subscribers across the growth services of retail Internet, IPTV and wireless?",
+    "answer": [
+      "2019"
+    ],
+    "derivation": "",
+    "computed": true,
+    "candidate_reason": "lexical",
+    "table_uid": "03a1386971da69e2cd625b87239694d4"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "011f4eb7-3c0f-4992-9df8-d02af5d97558",
+    "question": "In which year was the impairment losses on tangible fixed assets the largest?",
+    "answer": [
+      "2019"
+    ],
+    "derivation": "6.0>3.6>3.2",
+    "computed": false,
+    "candidate_reason": "annotation;operator;lexical",
+    "table_uid": "7ffd5216-30e1-4a4c-b548-b657d92df228"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "f31eaa52-5f92-4951-80ac-4d03875524c5",
+    "question": "Which named executive officer has the highest Market-based PRSUs award?",
+    "answer": [
+      "Timothy M.Archer"
+    ],
+    "derivation": "Find the named executive officer with the highest Market-based PRSUs award",
+    "computed": false,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "f42895d0-770c-4f38-811e-6021b50fdaed"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "6273b29f-62d8-4bef-9d5f-ef35311443c9",
+    "question": "Which year has the largest total interest expense?",
+    "answer": [
+      "2018"
+    ],
+    "derivation": "2,177>2,021>1,481",
+    "computed": false,
+    "candidate_reason": "annotation;operator;lexical",
+    "table_uid": "4fe6007e-f8ce-4d7d-889b-0da033bed89b"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "d7a538ea-29b9-4e2a-9e15-7388a9f4d186",
+    "question": "Which named executive officer has the highest Service-based RSUs Award?",
+    "answer": [
+      "Timothy M. Archer"
+    ],
+    "derivation": "Find the named executive officer with the highest Service-based RSUs Award",
+    "computed": false,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "09850176-f28f-4dc2-8a2e-1c448fe6922d"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "a656206a-ae64-4bed-b851-e55000961f9b",
+    "question": "How much is litigation expenses in 2019 and what was the increase in litigation expenses between 2018 and 2019?",
+    "answer": [
+      "$19.4 million",
+      "$3.0 million"
+    ],
+    "derivation": "",
+    "computed": true,
+    "candidate_reason": "lexical",
+    "table_uid": "b0318010-53f2-4643-a8b5-3f146410bab0"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "af4859f1-4b10-41c7-9708-e686b9f55ec4",
+    "question": "Which year did operating activities provide the most cash?",
+    "answer": [
+      "2019"
+    ],
+    "derivation": "1,461.8>1,430.1>1,234.5",
+    "computed": false,
+    "candidate_reason": "annotation;operator;lexical",
+    "table_uid": "ef312a3c-38cd-4732-a567-d8f6f838021a"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "test",
+    "id": "9301b5f98c68d52449ce4f19f25875b2",
+    "question": "Between year ended 2017 and 2018, which year had a higher sales and marketing expense?",
+    "answer": [
+      "2018"
+    ],
+    "derivation": "350,069>225,694",
+    "computed": false,
+    "candidate_reason": "annotation;operator;lexical",
+    "table_uid": "6ad2ec5c0b711b3fb827cb77b1ebecbe"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "a00d5489-305a-479b-8a37-4ce50589f852",
+    "question": "Who are compensated greater than $400,000 for total director compensation?",
+    "answer": [
+      "Daniel H. Schulman"
+    ],
+    "derivation": "For each row, Select name in col2 if the value in col5 is greater than 400,000",
+    "computed": false,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "682d10cd-fd33-4c17-9593-db74390f262f"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "b4866b92-9c1b-44cb-8d5f-9dd0b1f50bf0",
+    "question": "In which year was the total Greenhouse gas emissions the largest?",
+    "answer": [
+      "2018"
+    ],
+    "derivation": "9,894.7>9,444.6>7,969.0",
+    "computed": false,
+    "candidate_reason": "annotation;operator;lexical",
+    "table_uid": "bbe1e266-d230-4559-bdfb-d74677fc5775"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "0400f818-0d82-4264-a7d6-9a500cbdb3ff",
+    "question": "Which notes has the highest fair value?",
+    "answer": [
+      "2029"
+    ],
+    "derivation": "Find the Notes with the highest fair value",
+    "computed": false,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "b975862d-d00d-42a5-a861-77ebcb48c55e"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "c375d4b5-4202-4fed-b27e-bde11d9fd268",
+    "question": "Who is the oldest among all board members?",
+    "answer": [
+      "V. Sue Molina"
+    ],
+    "derivation": "71 is the highest",
+    "computed": false,
+    "candidate_reason": "annotation",
+    "table_uid": "1e2b7509-4a19-4bc7-9f3b-cde8c0ef171c"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "test",
+    "id": "81d29981f1dc165d704bfa76e41dd944",
+    "question": "How many years did the Weighted-average interest rate exceed 3%?",
+    "answer": "2",
+    "derivation": "2019##2018",
+    "computed": false,
+    "candidate_reason": "lexical",
+    "table_uid": "0dfb4455ae2e1b2066e99d9a3a05baf0"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "965abbcf-bc05-455a-b25d-c6319df5e280",
+    "question": "Which Executive Officer has the largest percentage increase in their annual base salary from 2017 to 2018?",
+    "answer": [
+      "Ms. Whiteley"
+    ],
+    "derivation": "From COL5 find the largest number and the corresponding name(s) in COL2",
+    "computed": true,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "87f701c5-ad4b-455e-9839-a87ce744df64"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "f5339595-416d-42d4-be69-2988d4b658f6",
+    "question": "What caused the increase in the Current and non-current financial liabilities in 2019?",
+    "answer": [
+      "as a result of commercial paper issue and bank borrowings."
+    ],
+    "derivation": "",
+    "computed": true,
+    "candidate_reason": "lexical",
+    "table_uid": "4fa0f9f0-4665-4faa-89e8-7d0f208331d1"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "7a4ca10c-3bf4-493e-8464-d68a6ee9df28",
+    "question": "In which years is the Other reserves and accruals greater than 5,000 thousand?",
+    "answer": [
+      "2019",
+      "2018"
+    ],
+    "derivation": "locate and analyze the other reserves and accruals in row 5",
+    "computed": false,
+    "candidate_reason": "annotation;lexical",
+    "table_uid": "ea18032b-1977-4efa-bd9f-6cb9150f77d3"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "26221059-78a9-42ff-8a41-09db11e26711",
+    "question": "In which year was the amount of other current assets larger?",
+    "answer": [
+      "2019"
+    ],
+    "derivation": "35.3>32.9",
+    "computed": false,
+    "candidate_reason": "annotation;operator",
+    "table_uid": "1b2cae74-b655-4f51-a080-6424534ed1ea"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "b88c44c7-3226-4439-b386-cd8eddf439cf",
+    "question": "Which year was the management and administrative services revenue the highest?",
+    "answer": [
+      "2018"
+    ],
+    "derivation": "9,809 > 9,645 > 7,762",
+    "computed": false,
+    "candidate_reason": "annotation;operator;lexical",
+    "table_uid": "a3c80b34-7e97-44e3-a07e-5b6999e5113b"
+  },
+  {
+    "dataset": "TAT-QA",
+    "split": "train",
+    "id": "86382223-b165-48ba-b08a-44aad1195137",
+    "question": "How many years did the Federal statutory income tax rate exceed 30.0%?",
+    "answer": "1",
+    "derivation": "2017",
+    "computed": false,
+    "candidate_reason": "lexical",
+    "table_uid": "e8d97ec8-c820-48d8-b35b-6606d1837c68"
+  }
+]

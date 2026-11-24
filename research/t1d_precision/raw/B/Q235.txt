@@ -1,0 +1,1 @@
+{"answer":"8.284023668639053","unit":"percent","expression":"(14 / 169) * 100","low":"7.964601769911504","high":"8.605341246290801","reliable_digits":"0","explanation":"Each total may vary by $0.5 million due to rounding, producing bounds that do not preserve even one significant digit."}

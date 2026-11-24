@@ -1,0 +1,5 @@
+{
+    "review_id": "R250",
+    "verdict": "invalid",
+    "reason": "The contribution decreased from $525 million to approximately $460 million, but the program computes a negative signed change instead of the requested positive percentage decrease."
+  }

@@ -1,0 +1,1 @@
+{"answer":"17.17173394","unit":"percent","expression":"(917491 - 783031) / 783031 * 100","low":"17.17159527","high":"17.17187262","reliable_digits":"5","explanation":"Each inventory figure may vary by 0.5 thousand, giving these bounds and five reliable significant digits."}

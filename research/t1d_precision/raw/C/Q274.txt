@@ -1,0 +1,1 @@
+{"answer":"81.42857142857143","unit":"percent","expression":"57 / 70 * 100","low":"80.1418439716312","high":"82.7338129496403","reliable_digits":"1","explanation":"The portion is $57 million divided by $70 million; rounding permits bounds of 56.5 / 70.5 and 57.5 / 69.5."}

@@ -1,0 +1,1 @@
+{"answer":"26.34146341463415","unit":"percent","expression":"54 / (64 + 54 + 52 + 19 + 16) * 100","low":"25.90799031476998","high":"26.78132678132678","reliable_digits":"1","explanation":"The 2019 estimate is divided by the total estimated amortization for 2018–2022, allowing each displayed amount to vary by 0.5 million for rounding."}

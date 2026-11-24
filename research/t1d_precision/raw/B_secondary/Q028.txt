@@ -1,0 +1,1 @@
+{"answer":"5.3658536585","unit":"percent","expression":"(216-205)/205*100","low":"4.8661800487","high":"5.8679706601","reliable_digits":"0","explanation":"Each rent expense is rounded to the nearest million, so the possible percentage increases do not share a reliable first significant digit."}

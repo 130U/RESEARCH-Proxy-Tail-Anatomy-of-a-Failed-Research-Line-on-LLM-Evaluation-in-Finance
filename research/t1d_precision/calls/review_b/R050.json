@@ -1,0 +1,23 @@
+{
+  "group": "review_b",
+  "id": "R050",
+  "status": "derived_from_batch",
+  "fresh_individual_session": false,
+  "fresh_source_session": true,
+  "source_batch_group": "review_b_batch",
+  "source_batch_id": "T004",
+  "source_call_file": "calls/review_b_batch/T004.json",
+  "source_raw_file": "raw/review_b_batch/T004.txt",
+  "source_array_index": 1,
+  "source_char_span": [
+    251,
+    494
+  ],
+  "derivation": "Verbatim JSON-object substring from the retained raw batch response. No judgment values or prose repaired.",
+  "thread_id": "01a1e8db-f078-7f62-b4b2-92197d1fd273",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "started_utc": "2026-11-17T09:34:50.121457+00:00",
+  "completed_utc": "2026-11-17T09:35:49.930612+00:00",
+  "tool_use_observed": false
+}

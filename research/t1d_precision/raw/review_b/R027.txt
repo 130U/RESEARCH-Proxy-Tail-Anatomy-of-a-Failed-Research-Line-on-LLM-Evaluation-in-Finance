@@ -1,0 +1,5 @@
+{
+    "review_id": "R027",
+    "verdict": "valid",
+    "reason": "The source defines the figures as cumulative investment values with dividends reinvested, and the rounded S&P 500 values correctly yield the 2014-to-2015 return using 2014 as the base."
+  }

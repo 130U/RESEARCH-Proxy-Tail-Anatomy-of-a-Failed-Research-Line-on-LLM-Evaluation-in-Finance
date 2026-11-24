@@ -1,0 +1,210 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S042",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "5 ."
+      },
+      {
+        "location": "text_1",
+        "text": "other current assets other current assets consisted of the following at december 31: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "(in millions)",
+          "2010",
+          "2009"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Refundable income tax",
+          "$61.0",
+          "$24.1"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Net deferred income taxes (note 14)",
+          "18.3",
+          "23.8"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Prepaid technology license and maintenance contracts",
+          "18.0",
+          "17.0"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Forward contract receivable (note 20)",
+          "11.8",
+          "27.3"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Receivables from brokers",
+          "11.2",
+          "8.8"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Other prepaid expenses",
+          "9.6",
+          "13.5"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Prepaid insurance",
+          "6.3",
+          "7.0"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "CBOE exercise rights privilege",
+          "—",
+          "39.8"
+        ]
+      },
+      {
+        "row_index": 9,
+        "cells": [
+          "Other",
+          "9.9",
+          "4.3"
+        ]
+      },
+      {
+        "row_index": 10,
+        "cells": [
+          "Total",
+          "$146.1",
+          "$165.6"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_2",
+        "text": "6 ."
+      },
+      {
+        "location": "text_3",
+        "text": "performance bonds and guaranty fund contributions cme clears and guarantees the settlement of cme , cbot and nymex contracts traded in their respective markets ."
+      },
+      {
+        "location": "text_4",
+        "text": "in its guarantor role , cme has precisely equal and offsetting claims to and from clearing firms on opposite sides of each contract , standing as an intermediary on every contract cleared ."
+      },
+      {
+        "location": "text_5",
+        "text": "clearing firm positions are combined to create a single portfolio for each clearing firm 2019s regulated and non-regulated accounts with cme for which performance bond and guaranty fund requirements are calculated ."
+      },
+      {
+        "location": "text_6",
+        "text": "to the extent that funds are not otherwise available to satisfy an obligation under the applicable contract , cme bears counterparty credit risk in the event that future market movements create conditions that could lead to clearing firms failing to meet their obligations to cme ."
+      },
+      {
+        "location": "text_7",
+        "text": "cme reduces its exposure through a risk management program that includes initial and ongoing financial standards for designation as a clearing firm , performance bond requirements and mandatory guaranty fund contributions ."
+      },
+      {
+        "location": "text_8",
+        "text": "each clearing firm is required to deposit and maintain balances in the form of cash , u.s ."
+      },
+      {
+        "location": "text_9",
+        "text": "government securities , bank letters of credit or other approved investments to satisfy performance bond and guaranty fund requirements ."
+      },
+      {
+        "location": "text_10",
+        "text": "all obligations and non-cash deposits are marked to market on a daily basis ."
+      },
+      {
+        "location": "text_11",
+        "text": "in addition , the rules and regulations of cbot require certain minimum financial requirements for delivery of physical commodities , maintenance of capital requirements and deposits on pending arbitration matters ."
+      },
+      {
+        "location": "text_12",
+        "text": "to satisfy these requirements , cbot clearing firms have deposited cash , u.s ."
+      },
+      {
+        "location": "text_13",
+        "text": "treasury securities and letters of credit ."
+      },
+      {
+        "location": "text_14",
+        "text": "cme marks-to-market open positions at least twice a day , and requires payment from clearing firms whose positions have lost value and makes payments to clearing firms whose positions have gained value ."
+      },
+      {
+        "location": "text_15",
+        "text": "for select product offerings within newer markets , positions are marked-to-market once daily , with the capability to mark-to-market more frequently as market conditions warrant ."
+      },
+      {
+        "location": "text_16",
+        "text": "under the extremely unlikely scenario of simultaneous default by every clearing firm who has open positions with unrealized losses , the maximum exposure related to cme 2019s guarantee would be one half day of changes in fair value of all open positions , before considering cme 2019s ability to access defaulting clearing firms 2019 performance bond and guaranty fund balances as well as other available resources ."
+      },
+      {
+        "location": "text_17",
+        "text": "during 2010 , cme transferred an average of approximately $ 2.4 billion a day through its clearing system for settlement from clearing firms whose positions had lost value to clearing firms whose positions had gained value ."
+      },
+      {
+        "location": "text_18",
+        "text": "cme reduces its guarantee exposure through initial and maintenance performance bond requirements and mandatory guaranty fund contributions ."
+      },
+      {
+        "location": "text_19",
+        "text": "the company believes that the guarantee liability is immaterial and therefore has not recorded any liability at december 31 , 2010. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what percentage of total other current assets is represented by",
+  "human_answer": "8%",
+  "reference_program": "divide(11.8, 146.1)",
+  "reference_execution_value": 0.08077,
+  "model_response": {
+    "answer": "Cannot be determined",
+    "unit": "percent",
+    "expression": "",
+    "explanation": "The question does not specify the asset category or year needed to calculate the percentage."
+  }
+}

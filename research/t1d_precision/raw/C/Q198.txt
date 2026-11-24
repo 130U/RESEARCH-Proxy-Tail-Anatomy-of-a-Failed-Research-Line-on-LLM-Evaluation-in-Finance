@@ -1,0 +1,1 @@
+{"answer":"5.6631","unit":"percent","expression":"1334 / 23556 * 100","low":"5.66085794","high":"5.66534355","reliable_digits":"3","explanation":"The bounds use 1333.5 / 23556.5 * 100 and 1334.5 / 23555.5 * 100, allowing for rounding to the nearest million."}

@@ -1,0 +1,1 @@
+{"answer":"-22.5806451613","unit":"percent","expression":"(24 - 31) / 31 * 100","low":"-25.3968253968","high":"-19.6721311475","reliable_digits":"0","explanation":"Rounding permits values from 23.5 to 24.5 billion in 2009 and 30.5 to 31.5 billion in 2008, leaving no significant digit reliable."}

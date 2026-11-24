@@ -1,0 +1,1 @@
+{"answer":"0.6857142857142857","unit":"percent","expression":"48 / (7.0 * 1000) * 100","low":"0.6737588652482269","high":"0.6978417266187050","reliable_digits":"1","explanation":"Issuance costs were $48 million on $7.0 billion of notes; rounding in both figures leaves one significant digit reliable."}

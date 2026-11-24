@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R017",
+    "verdict": "valid",
+    "reason": "The source identifies approximately $16.8 million and $17.7 million for 2005 and 2004, and the calculation correctly measures the change relative to 2004."
+  },
+  {
+    "review_id": "R018",
+    "verdict": "valid",
+    "reason": "The table reports rounded 2006 amounts in millions, and adding expense of 155, payments of −141 and currency revaluation of 4 correctly gives the net liability change."
+  },
+  {
+    "review_id": "R019",
+    "verdict": "valid",
+    "reason": "The bound figures are rounded net-of-tax compensation expenses of $33.9 million for 2014 and $32.9 million for 2013, correctly subtracted in chronological order."
+  },
+  {
+    "review_id": "R020",
+    "verdict": "invalid",
+    "reason": "The calculation uses $56 million for 2011 and $34 million for 2010, whereas the requested 2011-to-2012 change requires $122 million minus $56 million."
+  },
+  {
+    "review_id": "R021",
+    "verdict": "invalid",
+    "reason": "The percentage reduction attributable to hedges should use the $104 million unhedged increase as its denominator, rather than the $87 million hedged increase."
+  },
+  {
+    "review_id": "R022",
+    "verdict": "valid",
+    "reason": "The source states that the rounded $221.9 million aggregate redemption price includes $4.8 million of accrued interest, making their ratio the requested portion."
+  },
+  {
+    "review_id": "R023",
+    "verdict": "valid",
+    "reason": "The rounded net revenue amounts of $705.4 million for 2016 and $696.3 million for 2015 support the calculation of growth relative to 2015."
+  },
+  {
+    "review_id": "R024",
+    "verdict": "valid",
+    "reason": "The year-end unrecognized tax benefit balances are rounded amounts in millions, and subtracting the 2014 balance of 1,171 from the 2015 balance of 1,136 answers the question."
+  },
+  {
+    "review_id": "R025",
+    "verdict": "uncertain",
+    "reason": "The excerpt lists State Street dollar figures for 2011 and 2012 but does not define them as investment values or explain their return basis, so the ROI interpretation cannot be verified."
+  },
+  {
+    "review_id": "R026",
+    "verdict": "valid",
+    "reason": "The table reports rounded losses of $57 million in 2003 and $41 million in 2002 for this strategy, and the calculation correctly measures the increase in loss magnitude."
+  },
+  {
+    "review_id": "R027",
+    "verdict": "valid",
+    "reason": "The source defines the figures as cumulative investment values with dividends reinvested, and the rounded S&P 500 values correctly yield the 2014-to-2015 return using 2014 as the base."
+  },
+  {
+    "review_id": "R028",
+    "verdict": "valid",
+    "reason": "The source binds $42.1 million to 2010 and $38 million to 2009 as aggregate notional amounts, and the calculation correctly measures their relative increase."
+  },
+  {
+    "review_id": "R029",
+    "verdict": "valid",
+    "reason": "The Euro row provides comparable rounded impact amounts of 27.1 for 2012 and 26.4 for 2011, and their change divided by the 2011 amount gives the requested percentage change."
+  },
+  {
+    "review_id": "R030",
+    "verdict": "valid",
+    "reason": "The bound figures are rounded aggregate operating lease payments in millions for 2020 and 2019, and the calculation correctly measures growth relative to 2019."
+  },
+  {
+    "review_id": "R031",
+    "verdict": "valid",
+    "reason": "The mutual fund balances are aggregate fair values of 6,850 for 2010 and 6,213 for 2009, appropriately treated as rounded quantities and compared using the 2009 denominator."
+  },
+  {
+    "review_id": "R032",
+    "verdict": "valid",
+    "reason": "The source identifies rounded year-end loss reserves of $43 million for 2012 and $47 million for 2011, and dividing their sum by the exact count of two gives the requested average."
+  }
+]

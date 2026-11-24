@@ -1,0 +1,183 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R190",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "devon energy corporation and subsidiaries notes to consolidated financial statements 2013 ( continued ) restricted stock awards and units restricted stock awards and units are subject to the terms , conditions , restrictions and limitations , if any , that the compensation committee deems appropriate , including restrictions on continued employment ."
+      },
+      {
+        "location": "text_1",
+        "text": "generally , the service requirement for vesting ranges from zero to four years ."
+      },
+      {
+        "location": "text_2",
+        "text": "during the vesting period , recipients of restricted stock awards receive dividends that are not subject to restrictions or other limitations ."
+      },
+      {
+        "location": "text_3",
+        "text": "devon estimates the fair values of restricted stock awards and units as the closing price of devon 2019s common stock on the grant date of the award or unit , which is expensed over the applicable vesting period ."
+      },
+      {
+        "location": "text_4",
+        "text": "performance-based restricted stock awards performance-based restricted stock awards are granted to certain members of devon 2019s senior management ."
+      },
+      {
+        "location": "text_5",
+        "text": "vesting of the awards is dependent on devon meeting certain internal performance targets and the recipient meeting certain service requirements ."
+      },
+      {
+        "location": "text_6",
+        "text": "generally , the service requirement for vesting ranges from zero to four years ."
+      },
+      {
+        "location": "text_7",
+        "text": "in order for awards to vest , the performance target must be met in the first year , and if met , recipients are entitled to dividends on the awards over the remaining service vesting period ."
+      },
+      {
+        "location": "text_8",
+        "text": "if the performance target and service period requirements are not met , the award does not vest ."
+      },
+      {
+        "location": "text_9",
+        "text": "devon estimates the fair values of the awards as the closing price of devon 2019s common stock on the grant date of the award , which is expensed over the applicable vesting period ."
+      },
+      {
+        "location": "text_10",
+        "text": "performance share units performance share units are granted to certain members of devon 2019s senior management ."
+      },
+      {
+        "location": "text_11",
+        "text": "each unit that vests entitles the recipient to one share of devon common stock ."
+      },
+      {
+        "location": "text_12",
+        "text": "the vesting of these units is based on comparing devon 2019s tsr to the tsr of a predetermined group of fourteen peer companies over the specified two- or three- year performance period ."
+      },
+      {
+        "location": "text_13",
+        "text": "the vesting of units may be between zero and 200% ( 200 % ) of the units granted depending on devon 2019s tsr as compared to the peer group on the vesting date ."
+      },
+      {
+        "location": "text_14",
+        "text": "at the end of the vesting period , recipients receive dividend equivalents with respect to the number of units vested ."
+      },
+      {
+        "location": "text_15",
+        "text": "the fair value of each performance share unit is estimated as of the date of grant using a monte carlo simulation with the following assumptions used for all grants made under the plan : ( i ) a risk-free interest rate based on u.s ."
+      },
+      {
+        "location": "text_16",
+        "text": "treasury rates as of the grant date ; ( ii ) a volatility assumption based on the historical realized price volatility of devon and the designated peer group ; and ( iii ) an estimated ranking of devon among the designated peer group ."
+      },
+      {
+        "location": "text_17",
+        "text": "the fair value of the unit on the date of grant is expensed over the applicable vesting period ."
+      },
+      {
+        "location": "text_18",
+        "text": "the following table presents the assumptions related to performance share units granted. ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2015",
+          "2014",
+          "2013"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Grant-date fair value",
+          "$81.99 – $85.05",
+          "$70.18 – $81.05",
+          "$61.27 – $63.48"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Risk-free interest rate",
+          "1.06%",
+          "0.54%",
+          "0.26% – 0.36%"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Volatility factor",
+          "26.2%",
+          "28.8%",
+          "30.3%"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Contractual term (years)",
+          "2.89",
+          "2.89",
+          "3.0"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_19",
+        "text": "stock options in accordance with devon 2019s incentive plans , the exercise price of stock options granted may not be less than the market value of the stock at the date of grant ."
+      },
+      {
+        "location": "text_20",
+        "text": "in addition , options granted are exercisable during a period established for each grant , which may not exceed eight years from the date of grant ."
+      },
+      {
+        "location": "text_21",
+        "text": "the recipient must pay the exercise price in cash or in common stock , or a combination thereof , at the time that the option is exercised ."
+      },
+      {
+        "location": "text_22",
+        "text": "generally , the service requirement for vesting ranges from zero to four years ."
+      },
+      {
+        "location": "text_23",
+        "text": "the fair value of stock options on ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percent of the change in the volatility factor",
+  "reference_program": "subtract(28.8, 30.3), divide(#0, 30.3)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "28.8",
+      "raw": "28.8%",
+      "location": "table_3:2",
+      "context": "Volatility factor | 2014"
+    },
+    "x1": {
+      "program_token": "30.3",
+      "raw": "30.3%",
+      "location": "table_3:3",
+      "context": "Volatility factor | 2013"
+    }
+  }
+}

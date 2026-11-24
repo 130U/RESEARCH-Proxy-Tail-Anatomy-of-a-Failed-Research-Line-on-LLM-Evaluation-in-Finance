@@ -1,0 +1,73 @@
+{
+  "status": "first_round_resolution_only_not_repeatability",
+  "n": 1000,
+  "unique_scores": 77,
+  "boundaries": [
+    {
+      "p": 0.2,
+      "tail": "upper",
+      "nominal_n": 200,
+      "actual_n": 209,
+      "boundary_n": 33,
+      "expansion_n": 9,
+      "threshold_sum": 70,
+      "boundary_fraction_of_nominal": 0.165,
+      "tie_gate_failed": false
+    },
+    {
+      "p": 0.2,
+      "tail": "lower",
+      "nominal_n": 200,
+      "actual_n": 205,
+      "boundary_n": 14,
+      "expansion_n": 5,
+      "threshold_sum": 36,
+      "boundary_fraction_of_nominal": 0.07,
+      "tie_gate_failed": false
+    },
+    {
+      "p": 0.1,
+      "tail": "upper",
+      "nominal_n": 100,
+      "actual_n": 109,
+      "boundary_n": 12,
+      "expansion_n": 9,
+      "threshold_sum": 75,
+      "boundary_fraction_of_nominal": 0.12,
+      "tie_gate_failed": false
+    },
+    {
+      "p": 0.1,
+      "tail": "lower",
+      "nominal_n": 100,
+      "actual_n": 101,
+      "boundary_n": 10,
+      "expansion_n": 1,
+      "threshold_sum": 28,
+      "boundary_fraction_of_nominal": 0.1,
+      "tie_gate_failed": false
+    },
+    {
+      "p": 0.05,
+      "tail": "upper",
+      "nominal_n": 50,
+      "actual_n": 50,
+      "boundary_n": 7,
+      "expansion_n": 0,
+      "threshold_sum": 80,
+      "boundary_fraction_of_nominal": 0.14,
+      "tie_gate_failed": false
+    },
+    {
+      "p": 0.05,
+      "tail": "lower",
+      "nominal_n": 50,
+      "actual_n": 57,
+      "boundary_n": 8,
+      "expansion_n": 7,
+      "threshold_sum": 24,
+      "boundary_fraction_of_nominal": 0.16,
+      "tie_gate_failed": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+    "review_id": "R205",
+    "verdict": "invalid",
+    "reason": "The calculation compares aggregate debt maturities in 2011 and 2010 rather than measuring the effect of the floating rate notes maturing in 2010."
+  }

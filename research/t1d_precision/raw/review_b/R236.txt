@@ -1,0 +1,5 @@
+{
+    "review_id": "R236",
+    "verdict": "invalid",
+    "reason": "Dividing the rounded $692 million debt payments by $3,165 million total contractual payments returns a fraction without converting it to the requested percent."
+  }

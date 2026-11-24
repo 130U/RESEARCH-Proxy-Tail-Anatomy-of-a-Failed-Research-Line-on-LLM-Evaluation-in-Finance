@@ -1,0 +1,1 @@
+{"answer":"1.306907942","unit":"percent","expression":"(705.4 - 696.3) / 696.3 * 100","low":"1.2924535076","high":"1.3213644524","reliable_digits":"2","explanation":"Interpreting 20016 as 2016, each revenue has rounding uncertainty of ±$0.05 million, and both growth bounds round to 1.3%."}

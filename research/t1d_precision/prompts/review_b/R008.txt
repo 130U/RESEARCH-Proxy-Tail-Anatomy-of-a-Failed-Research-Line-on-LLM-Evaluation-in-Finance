@@ -1,0 +1,215 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R008",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "upon the death of the employee , the employee 2019s beneficiary typically receives the designated portion of the death benefits directly from the insurance company and the company receives the remainder of the death benefits ."
+      },
+      {
+        "location": "text_1",
+        "text": "it is currently expected that minimal cash payments will be required to fund these policies ."
+      },
+      {
+        "location": "text_2",
+        "text": "the net periodic pension cost for these split-dollar life insurance arrangements was $ 5 million for the years ended december 31 , 2014 , 2013 and 2012 ."
+      },
+      {
+        "location": "text_3",
+        "text": "the company has recorded a liability representing the actuarial present value of the future death benefits as of the employees 2019 expected retirement date of $ 66 million and $ 51 million as of december 31 , 2014 and december 31 , 2013 , respectively ."
+      },
+      {
+        "location": "text_4",
+        "text": "deferred compensation plan the company amended and reinstated its deferred compensation plan ( 201cthe plan 201d ) effective june 1 , 2013 to reopen the plan to certain participants ."
+      },
+      {
+        "location": "text_5",
+        "text": "under the plan , participants may elect to defer base salary and cash incentive compensation in excess of 401 ( k ) plan limitations ."
+      },
+      {
+        "location": "text_6",
+        "text": "participants under the plan may choose to invest their deferred amounts in the same investment alternatives available under the company's 401 ( k ) plan ."
+      },
+      {
+        "location": "text_7",
+        "text": "the plan also allows for company matching contributions for the following : ( i ) the first 4% ( 4 % ) of compensation deferred under the plan , subject to a maximum of $ 50000 for board officers , ( ii ) lost matching amounts that would have been made under the 401 ( k ) plan if participants had not participated in the plan , and ( iii ) discretionary amounts as approved by the compensation and leadership committee of the board of directors ."
+      },
+      {
+        "location": "text_8",
+        "text": "defined contribution plan the company and certain subsidiaries have various defined contribution plans , in which all eligible employees may participate ."
+      },
+      {
+        "location": "text_9",
+        "text": "in the u.s. , the 401 ( k ) plan is a contributory plan ."
+      },
+      {
+        "location": "text_10",
+        "text": "matching contributions are based upon the amount of the employees 2019 contributions ."
+      },
+      {
+        "location": "text_11",
+        "text": "the company 2019s expenses for material defined contribution plans for the years ended december 31 , 2014 , 2013 and 2012 were $ 31 million , $ 32 million and $ 30 million , respectively ."
+      },
+      {
+        "location": "text_12",
+        "text": "beginning january 1 , 2012 , the company may make an additional discretionary 401 ( k ) plan matching contribution to eligible employees ."
+      },
+      {
+        "location": "text_13",
+        "text": "for the years ended december 31 , 2014 , 2013 , and 2012 the company made no discretionary matching contributions ."
+      },
+      {
+        "location": "text_14",
+        "text": "8 ."
+      },
+      {
+        "location": "text_15",
+        "text": "share-based compensation plans and other incentive plans stock options , stock appreciation rights and employee stock purchase plan the company grants options to acquire shares of common stock to certain employees and to existing option holders of acquired companies in connection with the merging of option plans following an acquisition ."
+      },
+      {
+        "location": "text_16",
+        "text": "each option granted and stock appreciation right has an exercise price of no less than 100% ( 100 % ) of the fair market value of the common stock on the date of the grant ."
+      },
+      {
+        "location": "text_17",
+        "text": "the awards have a contractual life of five to fifteen years and vest over two to four years ."
+      },
+      {
+        "location": "text_18",
+        "text": "stock options and stock appreciation rights assumed or replaced with comparable stock options or stock appreciation rights in conjunction with a change in control of the company only become exercisable if the holder is also involuntarily terminated ( for a reason other than cause ) or quits for good reason within 24 months of a change in control ."
+      },
+      {
+        "location": "text_19",
+        "text": "the employee stock purchase plan allows eligible participants to purchase shares of the company 2019s common stock through payroll deductions of up to 20% ( 20 % ) of eligible compensation on an after-tax basis ."
+      },
+      {
+        "location": "text_20",
+        "text": "plan participants cannot purchase more than $ 25000 of stock in any calendar year ."
+      },
+      {
+        "location": "text_21",
+        "text": "the price an employee pays per share is 85% ( 85 % ) of the lower of the fair market value of the company 2019s stock on the close of the first trading day or last trading day of the purchase period ."
+      },
+      {
+        "location": "text_22",
+        "text": "the plan has two purchase periods , the first from october 1 through march 31 and the second from april 1 through september 30 ."
+      },
+      {
+        "location": "text_23",
+        "text": "for the years ended december 31 , 2014 , 2013 and 2012 , employees purchased 1.4 million , 1.5 million and 1.4 million shares , respectively , at purchase prices of $ 51.76 and $ 53.79 , $ 43.02 and $ 50.47 , and $ 34.52 and $ 42.96 , respectively ."
+      },
+      {
+        "location": "text_24",
+        "text": "the company calculates the value of each employee stock option , estimated on the date of grant , using the black-scholes option pricing model ."
+      },
+      {
+        "location": "text_25",
+        "text": "the weighted-average estimated fair value of employee stock options granted during 2014 , 2013 and 2012 was $ 11.02 , $ 9.52 and $ 9.60 , respectively , using the following weighted-average assumptions: ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "",
+          "2014",
+          "2013",
+          "2012"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Expected volatility",
+          "21.7%",
+          "22.1%",
+          "24.0%"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Risk-free interest rate",
+          "1.6%",
+          "0.9%",
+          "0.8%"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Dividend yield",
+          "2.5%",
+          "2.4%",
+          "2.2%"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Expected life (years)",
+          "5.2",
+          "5.9",
+          "6.1"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_26",
+        "text": "the company uses the implied volatility for traded options on the company 2019s stock as the expected volatility assumption required in the black-scholes model ."
+      },
+      {
+        "location": "text_27",
+        "text": "the selection of the implied volatility approach was based upon the availability of actively traded options on the company 2019s stock and the company 2019s assessment that implied volatility is more representative of future stock price trends than historical volatility ."
+      },
+      {
+        "location": "text_28",
+        "text": "the risk-free interest rate assumption is based upon the average daily closing rates during the year for u.s ."
+      },
+      {
+        "location": "text_29",
+        "text": "treasury notes that have a life which approximates the expected life of the option ."
+      },
+      {
+        "location": "text_30",
+        "text": "the dividend yield assumption is based on the company 2019s future expectation of dividend payouts ."
+      },
+      {
+        "location": "text_31",
+        "text": "the expected life of employee stock options represents the average of the contractual term of the options and the weighted-average vesting period for all option tranches. ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percentage change in the weighted-average estimated fair value of employee stock options granted during from 2013 to 2014",
+  "reference_program": "divide(11.02, 9.52), divide(#0, 9.52)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "11.02",
+      "raw": "11.02",
+      "location": "text_25:109",
+      "context": "the weighted-average estimated fair value of employee stock options granted during 2014 , 2013 and 2012 was $ 11.02 , $ 9.52 and $ 9.60 , respectively , using the following weighted-average assumptions: ."
+    },
+    "x1": {
+      "program_token": "9.52",
+      "raw": "9.52",
+      "location": "text_25:119",
+      "context": "the weighted-average estimated fair value of employee stock options granted during 2014 , 2013 and 2012 was $ 11.02 , $ 9.52 and $ 9.60 , respectively , using the following weighted-average assumptions: ."
+    }
+  }
+}

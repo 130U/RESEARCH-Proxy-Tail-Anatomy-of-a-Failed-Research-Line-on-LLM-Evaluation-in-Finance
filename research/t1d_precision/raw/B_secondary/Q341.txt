@@ -1,0 +1,1 @@
+{"answer":"704","unit":"million dollars","expression":"581 + 123","low":"703","high":"705","reliable_digits":"2","explanation":"Adding the 2007 and 2006 pretax totals gives $704 million, with rounding uncertainty of up to $1 million."}

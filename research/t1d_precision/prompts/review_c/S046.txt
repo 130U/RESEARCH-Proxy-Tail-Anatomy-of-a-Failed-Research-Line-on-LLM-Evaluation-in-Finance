@@ -1,0 +1,165 @@
+Independently assess the supplied financial question and model response. Use only this material; do not use external sources, code or tools.
+
+For each call, report `call_id`, `primary_cause`, `formula_valid` (true/false/null), `alternative_precision_used` (true/false), and a short source-specific `reason`. Explicitly identify the relevant row, years, units, and denominator when disputed. An expression can be valid under a reasonable stated interpretation even if it differs from the reference. Use null where the excerpt is insufficient.
+
+Primary causes:
+
+- `alternative_source_precision`: the model uses a different displayed precision of the same fact (same entity, period, concept and scope), and that substitution explains the reference disagreement without needing another change of meaning, sign, or formula.
+- `reasonable_alternative`: the question permits the model's interpretation. Examples include positive decrease magnitude versus signed change, or an actually ambiguous time horizon. Do not automatically excuse an ending-value denominator for an explicitly defined growth rate.
+- `reference_error`: source facts and question establish a definite error in the reference, such as the wrong year, missing operation, or missing unit conversion. State why the model formula is supported.
+- `true_error`: the model uses the wrong fact or operation, and the question and source support a definite resolution. Do not use this merely because it disagrees with the reference.
+- `unresolved`: the problem is incomplete, contradictory, or lacks the source information needed to establish a unique valid resolution. Note any model error that can still be established.
+- `invalid_format`: no usable model response without a substantive source-based reason for abstaining.
+
+Flags can overlap. A model can use a finer disclosure and also reverse the sign relative to the reference. In that case preserve the precision flag, but do not call precision the sole cause. Changing money units alone is a unit conversion, not a second disclosure of different precision. Numerical membership in an interval is not part of this source review.
+
+Nonnumeric abstentions and malformed responses are retained as failures in numeric scoring. A justified abstention on a truncated question can nevertheless receive `unresolved` as its semantic cause. Do not invent missing questions or replace raw responses.
+
+Return only one JSON object with the requested fields, using the anonymous call_id supplied below.
+
+MATERIAL
+{
+  "call_id": "S046",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "american tower corporation and subsidiaries notes to consolidated financial statements 2014 ( continued ) ati 7.25% ( 7.25 % ) notes 2014during the year ended december 31 , 2006 , the company repurchased in privately negotiated transactions $ 74.9 million principal amount of ati 7.25% ( 7.25 % ) notes for $ 77.3 million in cash ."
+      },
+      {
+        "location": "text_1",
+        "text": "in connection with these transactions , the company recorded a charge of $ 3.9 million related to amounts paid in excess of carrying value and the write-off of related deferred financing fees , which is reflected in loss on retirement of long-term obligations in the accompanying consolidated statement of operations for the year ended december 31 , 2006 ."
+      },
+      {
+        "location": "text_2",
+        "text": "as of december 31 , 2006 and 2005 , the company had $ 325.1 million and $ 400.0 million outstanding under the ati 7.25% ( 7.25 % ) notes , respectively ."
+      },
+      {
+        "location": "text_3",
+        "text": "capital lease obligations and notes payable 2014the company 2019s capital lease obligations and notes payable approximated $ 59.8 million and $ 60.4 million as of december 31 , 2006 and 2005 , respectively ."
+      },
+      {
+        "location": "text_4",
+        "text": "these obligations bear interest at rates ranging from 6.3% ( 6.3 % ) to 9.5% ( 9.5 % ) and mature in periods ranging from less than one year to approximately seventy years ."
+      },
+      {
+        "location": "text_5",
+        "text": "maturities 2014as of december 31 , 2006 , aggregate carrying value of long-term debt , including capital leases , for the next five years and thereafter are estimated to be ( in thousands ) : year ending december 31 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "2007",
+          "$253,907"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "2008",
+          "1,278"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "2009",
+          "654"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "2010",
+          "1,833,416"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "2011",
+          "338,501"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Thereafter",
+          "1,112,253"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Total cash obligations",
+          "$3,540,009"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Accreted value of the discount and premium of 3.00% Notes and 7.125% Notes",
+          "3,007"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Balance as of December 31, 2006",
+          "$3,543,016"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_6",
+        "text": "the holders of the company 2019s 5.0% ( 5.0 % ) notes have the right to require the company to repurchase their notes on specified dates prior to the maturity date in 2010 , but the company may pay the purchase price by issuing shares of class a common stock , subject to certain conditions ."
+      },
+      {
+        "location": "text_7",
+        "text": "obligations with respect to the right of the holders to put the 5.0% ( 5.0 % ) notes have been included in the table above as if such notes mature the date on which the put rights become exercisable in 2007 ."
+      },
+      {
+        "location": "text_8",
+        "text": "in february 2007 , the company conducted a cash tender offer for its outstanding 5.0% ( 5.0 % ) notes to enable note holders to exercise their right to require the company to purchase their notes ."
+      },
+      {
+        "location": "text_9",
+        "text": "( see note 19. ) 8 ."
+      },
+      {
+        "location": "text_10",
+        "text": "derivative financial instruments the company has entered into interest rate protection agreements to manage exposure on the variable rate debt under its credit facilities and to manage variability in cash flows relating to forecasted interest payments in connection with the likely issuance of new fixed rate debt that the company expects to issue on or before july 31 , 2007 ."
+      },
+      {
+        "location": "text_11",
+        "text": "under these agreements , the company is exposed to credit risk to the extent that a counterparty fails to meet the terms of a contract ."
+      },
+      {
+        "location": "text_12",
+        "text": "such exposure is limited to the current value of the contract at the time the counterparty fails to perform ."
+      },
+      {
+        "location": "text_13",
+        "text": "the company believes its contracts as of december 31 , 2006 and 2005 are with credit worthy institutions ."
+      },
+      {
+        "location": "text_14",
+        "text": "during the fourth quarter of 2005 and january 2006 , the company entered into a total of ten interest rate swap agreements to manage exposure to variable rate interest obligations under its american tower and spectrasite ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what portion of the ati 7.25% ( 7.25 % ) notes was paid off during 2006?",
+  "human_answer": "-18.7%",
+  "reference_program": "subtract(325.1, 400.0), divide(#0, 400.0)",
+  "reference_execution_value": -0.18725,
+  "model_response": {
+    "answer": "18.725",
+    "unit": "percent",
+    "expression": "74.9 / 400.0 * 100",
+    "explanation": "The company repurchased $74.9 million of the $400.0 million in ATI 7.25% notes outstanding at the end of 2005."
+  }
+}

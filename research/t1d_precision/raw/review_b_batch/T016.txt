@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R241",
+    "verdict": "valid",
+    "reason": "The rounded retained-earnings balances in thousands correctly compare the 2018 closing balance with the adjusted opening balance, using the adjusted opening balance as denominator."
+  },
+  {
+    "review_id": "R242",
+    "verdict": "valid",
+    "reason": "The bound values are the rounded expected-volatility assumptions for 2013 and 2012, and the calculation correctly measures their relative change against 2012."
+  },
+  {
+    "review_id": "R243",
+    "verdict": "valid",
+    "reason": "The source identifies a $5 billion net increase and $6.2 billion of net transfers in, both rounded aggregate amounts whose quotient answers the requested ratio."
+  },
+  {
+    "review_id": "R244",
+    "verdict": "valid",
+    "reason": "The rounded risk-free interest-rate assumptions are correctly bound to 2005 and 2004, and the calculation uses 2004 as the percentage-change denominator."
+  },
+  {
+    "review_id": "R245",
+    "verdict": "invalid",
+    "reason": "The bound amounts are accrued warranty liabilities for 2013 and 2012, rather than client payments and recognized revenue."
+  },
+  {
+    "review_id": "R246",
+    "verdict": "uncertain",
+    "reason": "The excerpt supplies impairment charges only for the 2007 predecessor period, so it does not establish that the sum covers all charges during 2005 through 2007."
+  },
+  {
+    "review_id": "R247",
+    "verdict": "valid",
+    "reason": "The bound values are rounded total income-tax expenses for 2018 and 2017, and dividing 156 by 15 correctly gives their ratio."
+  },
+  {
+    "review_id": "R248",
+    "verdict": "valid",
+    "reason": "The calculation preserves the negative signs of the rounded 2007 and 2006 non-interest revenues and applies the signed percentage-change formula using 2006 as denominator."
+  },
+  {
+    "review_id": "R249",
+    "verdict": "valid",
+    "reason": "The rounded broker receivables of $11.2 million and $8.8 million correspond to 2010 and 2009, and the calculation correctly uses the 2009 balance as denominator."
+  },
+  {
+    "review_id": "R250",
+    "verdict": "invalid",
+    "reason": "Although the contribution amounts are correctly bound, subtracting 525 from 460 produces a negative change rather than the requested positive percentage decrease."
+  },
+  {
+    "review_id": "R251",
+    "verdict": "invalid",
+    "reason": "The $68 million and $74 million figures measure recorded vehicle asset values under capital leases, so their difference does not measure millions of vehicles."
+  },
+  {
+    "review_id": "R252",
+    "verdict": "valid",
+    "reason": "The source assigns rounded matching contributions of $2.6 million to 2008 and $1.4 million to 2007, and subtraction correctly gives the change in millions."
+  },
+  {
+    "review_id": "R253",
+    "verdict": "invalid",
+    "reason": "The 40-year endpoint is a specified depreciation-policy limit and must be treated as exact, even though dividing 100 by it gives the minimum straight-line percentage rate."
+  },
+  {
+    "review_id": "R254",
+    "verdict": "valid",
+    "reason": "The rounded $18.7 million net-income decrease is correctly divided by the decrease between the rounded 2003 and 2004 net revenues."
+  },
+  {
+    "review_id": "R255",
+    "verdict": "valid",
+    "reason": "The source identifies 28.9% and 27.8% as rounded weighted-average volatility assumptions for 2013 and 2012, and the calculation correctly measures change relative to 2012."
+  },
+  {
+    "review_id": "R256",
+    "verdict": "invalid",
+    "reason": "The calculation reverses the chronological change and divides by the 2009 balance of $24 billion instead of the 2008 starting balance of $31 billion."
+  }
+]

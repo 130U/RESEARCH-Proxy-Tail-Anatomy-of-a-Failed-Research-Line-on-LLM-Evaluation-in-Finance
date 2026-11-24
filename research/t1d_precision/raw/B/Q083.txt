@@ -1,0 +1,1 @@
+{"answer":"10.2","unit":"million dollars","expression":"0.2 + 9.4 + 0.6","low":"10.05","high":"10.35","reliable_digits":"2","explanation":"Each charge is rounded to the nearest 0.1 million, giving a total rounding uncertainty of 0.15 million."}

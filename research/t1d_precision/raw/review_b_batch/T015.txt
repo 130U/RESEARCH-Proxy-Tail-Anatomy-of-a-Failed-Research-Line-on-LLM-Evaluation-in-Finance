@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "R225",
+    "verdict": "invalid",
+    "reason": "The correctly bound liability amounts are rounded millions, but the calculation returns fractional change without multiplying by 100 for the requested percentage."
+  },
+  {
+    "review_id": "R226",
+    "verdict": "invalid",
+    "reason": "The $66 million is the regulatory liability net of tax, not a tax liability, and (107−66)/66 does not calculate the requested liability-to-tax ratio."
+  },
+  {
+    "review_id": "R227",
+    "verdict": "valid",
+    "reason": "The source reports rounded rental expense of $1.3 million for the executive-office facility in each of 2010–2012, so multiplying by the exact three years gives the requested total in millions."
+  },
+  {
+    "review_id": "R228",
+    "verdict": "valid",
+    "reason": "The calculation correctly uses the rounded total tax expenses of $156 for 2018 and $15 for 2017, divides their increase by the 2017 base, and converts it to a percentage."
+  },
+  {
+    "review_id": "R229",
+    "verdict": "valid",
+    "reason": "The rounded $2,975 million aggregate capital lease obligations explicitly include $914 million of interest, so subtracting that component gives principal in millions."
+  },
+  {
+    "review_id": "R230",
+    "verdict": "valid",
+    "reason": "The bindings identify the rounded 2016 Priceline and NASDAQ index measurements, and dividing 313.45 by 216.54 gives the requested dimensionless ratio."
+  },
+  {
+    "review_id": "R231",
+    "verdict": "valid",
+    "reason": "The three bindings correctly identify approximate operating lease rental expenses for 2016, 2015 and 2014, and their sum gives cumulative expense in millions."
+  },
+  {
+    "review_id": "R232",
+    "verdict": "valid",
+    "reason": "The table identifies rounded segment net sales of $7,729 million, $5,400 million and $5,038 million for 2007–2005, whose sum divided by the exact three years gives the requested average."
+  },
+  {
+    "review_id": "R233",
+    "verdict": "invalid",
+    "reason": "The rounded pro forma net earnings are correctly bound to 2015 and 2014, but the calculation returns fractional change without converting it to the requested percentage."
+  },
+  {
+    "review_id": "R234",
+    "verdict": "valid",
+    "reason": "The rounded additions for prior-year tax positions decline from $12 million in 2017 to $10 million in 2018, so subtracting 10 from 12 gives the requested decrease."
+  },
+  {
+    "review_id": "R235",
+    "verdict": "invalid",
+    "reason": "Although the approximately $39 million technology value is rounded, the stated four-year amortization period is an exact term and cannot be treated as a rounded financial quantity."
+  },
+  {
+    "review_id": "R236",
+    "verdict": "invalid",
+    "reason": "Dividing the rounded $692 million debt payments by $3,165 million total contractual payments returns a fraction without converting it to the requested percent."
+  },
+  {
+    "review_id": "R237",
+    "verdict": "invalid",
+    "reason": "The tax rate must divide the difference between the rounded pretax and after-tax charges by the $9.6 billion pretax charge, whereas the program divides by $8.7 billion after tax."
+  },
+  {
+    "review_id": "R238",
+    "verdict": "valid",
+    "reason": "The inputs are rounded weighted-average diluted share quantities in millions for 2013 and 2012, and subtracting 328.4 from 326.5 gives the requested signed change."
+  },
+  {
+    "review_id": "R239",
+    "verdict": "invalid",
+    "reason": "The rounded foreign exchange loss amounts correctly refer to 2007 and 2006, but the calculation returns fractional growth without multiplying by 100 for percentage change."
+  },
+  {
+    "review_id": "R240",
+    "verdict": "uncertain",
+    "reason": "The $746 million total less approximately $554 million available does not establish drawn borrowings because these lines also support letters of credit, performance bonds and guarantees."
+  }
+]

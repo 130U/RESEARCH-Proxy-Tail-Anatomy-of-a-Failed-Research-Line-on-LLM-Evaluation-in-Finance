@@ -1,0 +1,451 @@
+{
+  "all": {
+    "n_all": 8281,
+    "n_numeric": 8127,
+    "n_analyzed": 5337,
+    "exclusions": {
+      "source_identity_ambiguous": 556,
+      "non_numeric_answer": 154,
+      "possibly_exact_count": 637,
+      "unsupported_operation": 270,
+      "constant_source_role_ambiguous": 255,
+      "possibly_exact_or_semantic_quantity": 138,
+      "source_not_found": 543,
+      "invalid_operand": 228,
+      "defined_index_base": 75,
+      "same_literal_distinct_roles_possible": 54,
+      "center_outside_relative_acceptance": 8,
+      "no_uncertain_inputs": 4,
+      "source_precision_ambiguous": 22
+    },
+    "relative_1pct": {
+      "n": 5337,
+      "witnessed_outside": 1469,
+      "certified_inside": 3853,
+      "unresolved": 15
+    },
+    "display": {
+      "n": 5337,
+      "witnessed_outside": 2817,
+      "certified_inside": 1784,
+      "unavailable": 642,
+      "unresolved": 94
+    },
+    "official_decimal_cell": {
+      "n": 5337,
+      "witnessed_outside": 5095,
+      "certified_inside": 237,
+      "unresolved": 5
+    },
+    "by_operation": {
+      "difference": {
+        "n": 872,
+        "witnessed_outside": 332,
+        "certified_inside": 538,
+        "unresolved": 2
+      },
+      "growth": {
+        "n": 1458,
+        "certified_inside": 864,
+        "witnessed_outside": 585,
+        "unresolved": 9
+      },
+      "other": {
+        "n": 74,
+        "witnessed_outside": 16,
+        "certified_inside": 58
+      },
+      "ratio": {
+        "n": 2538,
+        "certified_inside": 2075,
+        "witnessed_outside": 459,
+        "unresolved": 4
+      },
+      "sum": {
+        "n": 395,
+        "certified_inside": 318,
+        "witnessed_outside": 77
+      }
+    },
+    "by_min_sig": {
+      "1": {
+        "n": 155,
+        "witnessed_outside": 143,
+        "certified_inside": 12
+      },
+      "2": {
+        "n": 1043,
+        "certified_inside": 280,
+        "witnessed_outside": 753,
+        "unresolved": 10
+      },
+      "3": {
+        "n": 1601,
+        "certified_inside": 1162,
+        "witnessed_outside": 434,
+        "unresolved": 5
+      },
+      "4": {
+        "n": 1445,
+        "witnessed_outside": 129,
+        "certified_inside": 1316
+      },
+      "5": {
+        "n": 1093,
+        "certified_inside": 1083,
+        "witnessed_outside": 10
+      }
+    },
+    "precision_counterfactual": {
+      "10": {
+        "certified_inside": 5033,
+        "witnessed_outside": 287,
+        "unresolved": 17
+      },
+      "100": {
+        "certified_inside": 5321,
+        "witnessed_outside": 10,
+        "unresolved": 6
+      },
+      "1000": {
+        "certified_inside": 5334,
+        "witnessed_outside": 2,
+        "unresolved": 1
+      }
+    },
+    "multiple_occurrence_analyzed": 0
+  },
+  "dev": {
+    "n_all": 883,
+    "n_numeric": 873,
+    "n_analyzed": 588,
+    "exclusions": {
+      "constant_source_role_ambiguous": 42,
+      "source_not_found": 43,
+      "possibly_exact_count": 63,
+      "source_identity_ambiguous": 44,
+      "unsupported_operation": 35,
+      "same_literal_distinct_roles_possible": 6,
+      "center_outside_relative_acceptance": 2,
+      "invalid_operand": 24,
+      "non_numeric_answer": 10,
+      "defined_index_base": 7,
+      "possibly_exact_or_semantic_quantity": 13,
+      "source_precision_ambiguous": 6
+    },
+    "relative_1pct": {
+      "n": 588,
+      "witnessed_outside": 164,
+      "certified_inside": 424
+    },
+    "display": {
+      "n": 588,
+      "witnessed_outside": 304,
+      "certified_inside": 205,
+      "unavailable": 68,
+      "unresolved": 11
+    },
+    "official_decimal_cell": {
+      "n": 588,
+      "witnessed_outside": 561,
+      "certified_inside": 26,
+      "unresolved": 1
+    },
+    "by_operation": {
+      "difference": {
+        "n": 112,
+        "certified_inside": 74,
+        "witnessed_outside": 38
+      },
+      "growth": {
+        "n": 143,
+        "certified_inside": 82,
+        "witnessed_outside": 61
+      },
+      "other": {
+        "n": 7,
+        "certified_inside": 5,
+        "witnessed_outside": 2
+      },
+      "ratio": {
+        "n": 292,
+        "witnessed_outside": 57,
+        "certified_inside": 235
+      },
+      "sum": {
+        "n": 34,
+        "certified_inside": 28,
+        "witnessed_outside": 6
+      }
+    },
+    "by_min_sig": {
+      "1": {
+        "n": 21,
+        "witnessed_outside": 19,
+        "certified_inside": 2
+      },
+      "2": {
+        "n": 113,
+        "witnessed_outside": 79,
+        "certified_inside": 34
+      },
+      "3": {
+        "n": 170,
+        "certified_inside": 120,
+        "witnessed_outside": 50
+      },
+      "4": {
+        "n": 170,
+        "certified_inside": 155,
+        "witnessed_outside": 15
+      },
+      "5": {
+        "n": 114,
+        "certified_inside": 113,
+        "witnessed_outside": 1
+      }
+    },
+    "precision_counterfactual": {
+      "10": {
+        "certified_inside": 554,
+        "witnessed_outside": 31,
+        "unresolved": 3
+      },
+      "100": {
+        "certified_inside": 585,
+        "witnessed_outside": 3
+      },
+      "1000": {
+        "certified_inside": 587,
+        "witnessed_outside": 1
+      }
+    },
+    "multiple_occurrence_analyzed": 0
+  },
+  "test": {
+    "n_all": 1147,
+    "n_numeric": 1127,
+    "n_analyzed": 731,
+    "exclusions": {
+      "source_identity_ambiguous": 80,
+      "non_numeric_answer": 20,
+      "possibly_exact_count": 75,
+      "unsupported_operation": 39,
+      "constant_source_role_ambiguous": 42,
+      "possibly_exact_or_semantic_quantity": 29,
+      "source_not_found": 81,
+      "invalid_operand": 30,
+      "defined_index_base": 8,
+      "same_literal_distinct_roles_possible": 8,
+      "center_outside_relative_acceptance": 1,
+      "no_uncertain_inputs": 1,
+      "source_precision_ambiguous": 2
+    },
+    "relative_1pct": {
+      "n": 731,
+      "witnessed_outside": 196,
+      "certified_inside": 532,
+      "unresolved": 3
+    },
+    "display": {
+      "n": 731,
+      "witnessed_outside": 375,
+      "certified_inside": 255,
+      "unavailable": 85,
+      "unresolved": 16
+    },
+    "official_decimal_cell": {
+      "n": 731,
+      "witnessed_outside": 693,
+      "certified_inside": 38
+    },
+    "by_operation": {
+      "difference": {
+        "n": 105,
+        "witnessed_outside": 35,
+        "certified_inside": 69,
+        "unresolved": 1
+      },
+      "growth": {
+        "n": 230,
+        "certified_inside": 139,
+        "witnessed_outside": 90,
+        "unresolved": 1
+      },
+      "other": {
+        "n": 11,
+        "witnessed_outside": 5,
+        "certified_inside": 6
+      },
+      "ratio": {
+        "n": 323,
+        "certified_inside": 270,
+        "witnessed_outside": 52,
+        "unresolved": 1
+      },
+      "sum": {
+        "n": 62,
+        "certified_inside": 48,
+        "witnessed_outside": 14
+      }
+    },
+    "by_min_sig": {
+      "1": {
+        "n": 20,
+        "witnessed_outside": 19,
+        "certified_inside": 1
+      },
+      "2": {
+        "n": 144,
+        "certified_inside": 35,
+        "witnessed_outside": 107,
+        "unresolved": 2
+      },
+      "3": {
+        "n": 198,
+        "certified_inside": 144,
+        "witnessed_outside": 53,
+        "unresolved": 1
+      },
+      "4": {
+        "n": 205,
+        "witnessed_outside": 17,
+        "certified_inside": 188
+      },
+      "5": {
+        "n": 164,
+        "certified_inside": 164
+      }
+    },
+    "precision_counterfactual": {
+      "10": {
+        "certified_inside": 695,
+        "witnessed_outside": 35,
+        "unresolved": 1
+      },
+      "100": {
+        "certified_inside": 731
+      },
+      "1000": {
+        "certified_inside": 731
+      }
+    },
+    "multiple_occurrence_analyzed": 0
+  },
+  "train": {
+    "n_all": 6251,
+    "n_numeric": 6127,
+    "n_analyzed": 4018,
+    "exclusions": {
+      "same_literal_distinct_roles_possible": 40,
+      "non_numeric_answer": 124,
+      "invalid_operand": 174,
+      "source_identity_ambiguous": 432,
+      "possibly_exact_count": 499,
+      "unsupported_operation": 196,
+      "constant_source_role_ambiguous": 171,
+      "source_not_found": 419,
+      "possibly_exact_or_semantic_quantity": 96,
+      "defined_index_base": 60,
+      "source_precision_ambiguous": 14,
+      "center_outside_relative_acceptance": 5,
+      "no_uncertain_inputs": 3
+    },
+    "relative_1pct": {
+      "n": 4018,
+      "certified_inside": 2897,
+      "witnessed_outside": 1109,
+      "unresolved": 12
+    },
+    "display": {
+      "n": 4018,
+      "certified_inside": 1324,
+      "witnessed_outside": 2138,
+      "unavailable": 489,
+      "unresolved": 67
+    },
+    "official_decimal_cell": {
+      "n": 4018,
+      "witnessed_outside": 3841,
+      "certified_inside": 173,
+      "unresolved": 4
+    },
+    "by_operation": {
+      "difference": {
+        "n": 655,
+        "witnessed_outside": 259,
+        "certified_inside": 395,
+        "unresolved": 1
+      },
+      "growth": {
+        "n": 1085,
+        "certified_inside": 643,
+        "witnessed_outside": 434,
+        "unresolved": 8
+      },
+      "other": {
+        "n": 56,
+        "witnessed_outside": 9,
+        "certified_inside": 47
+      },
+      "ratio": {
+        "n": 1923,
+        "certified_inside": 1570,
+        "witnessed_outside": 350,
+        "unresolved": 3
+      },
+      "sum": {
+        "n": 299,
+        "certified_inside": 242,
+        "witnessed_outside": 57
+      }
+    },
+    "by_min_sig": {
+      "1": {
+        "n": 114,
+        "witnessed_outside": 105,
+        "certified_inside": 9
+      },
+      "2": {
+        "n": 786,
+        "witnessed_outside": 567,
+        "certified_inside": 211,
+        "unresolved": 8
+      },
+      "3": {
+        "n": 1233,
+        "certified_inside": 898,
+        "witnessed_outside": 331,
+        "unresolved": 4
+      },
+      "4": {
+        "n": 1070,
+        "certified_inside": 973,
+        "witnessed_outside": 97
+      },
+      "5": {
+        "n": 815,
+        "certified_inside": 806,
+        "witnessed_outside": 9
+      }
+    },
+    "precision_counterfactual": {
+      "10": {
+        "certified_inside": 3784,
+        "witnessed_outside": 221,
+        "unresolved": 13
+      },
+      "100": {
+        "certified_inside": 4005,
+        "witnessed_outside": 7,
+        "unresolved": 6
+      },
+      "1000": {
+        "certified_inside": 4016,
+        "unresolved": 1,
+        "witnessed_outside": 1
+      }
+    },
+    "multiple_occurrence_analyzed": 0
+  }
+}

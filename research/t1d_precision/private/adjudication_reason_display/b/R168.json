@@ -1,0 +1,20 @@
+{
+  "review_id": "R168",
+  "kind": "b",
+  "display_order": [
+    {
+      "source_round": "first",
+      "original_reason": "London Market 57 and Net 320 are correctly bound to environmental reserves. Ratio asks gross London category relative to net total; that wording is taken literally, not as an additive share decomposition of net reserves.",
+      "display_reason": "London Market 57 and Net 320 are correctly bound to environmental reserves. Ratio asks gross London category relative to net total; that wording is taken literally, not as an additive share decomposition of net reserves.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    },
+    {
+      "source_round": "second",
+      "original_reason": "The calculation divides gross London Market reserves of $57 by net total reserves of $320 without allocating ceded reserves to determine London's net contribution.",
+      "display_reason": "The calculation divides gross London Market reserves of $57 by net total reserves of $320 without allocating ceded reserves to determine London's net contribution.",
+      "removed_fragments": [],
+      "blindness_limitations": []
+    }
+  ]
+}

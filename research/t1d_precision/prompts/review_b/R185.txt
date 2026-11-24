@@ -1,0 +1,238 @@
+Independently assess the supplied financial question, reference calculation and source bindings. Use only the supplied material; do not use external sources, code or tools. Do not assume that either the reference calculation or the source binding is correct.
+
+Check all three issues:
+1. Does each bound input refer to the right entity, metric, period, sign and unit in the document?
+2. Is treating each bound input as a rounded financial quantity justified? Exact counts, dates, years, contractual terms and defined constants are exact; an aggregate amount or a measured average can be rounded. Decide from the source, not merely from the number of printed digits. An explicitly rounded scaled count is different from an exact item count.
+3. Does the reference calculation answer the question with the appropriate meaning, denominator and units?
+
+Use "valid" only when all three are supported. Use "invalid" when a definite binding, quantity-type or calculation error is established. Use "uncertain" when the excerpt is insufficient or genuinely ambiguous. Give one concise source-specific reason. Do not calculate uncertainty intervals.
+
+Return only JSON with exactly these fields:
+{"review_id":"the supplied anonymous id","verdict":"valid, invalid, or uncertain","reason":"one source-specific sentence"}
+
+MATERIAL
+{
+  "review_id": "R185",
+  "document": {
+    "pre_text": [
+      {
+        "location": "text_0",
+        "text": "management performs detailed reviews of its receivables on a monthly and/or quarterly basis to assess the adequacy of the allowances based on historical and current trends and other factors affecting credit losses and to determine if any impairment has occurred ."
+      },
+      {
+        "location": "text_1",
+        "text": "a receivable is impaired when it is probable that all amounts related to the receivable will not be collected according to the contractual terms of the agreement ."
+      },
+      {
+        "location": "text_2",
+        "text": "additions to the allowances for doubtful accounts are maintained through adjustments to the provision for credit losses , which are charged to current period earnings ; amounts determined to be uncollectable are charged directly against the allowances , while amounts recovered on previously charged-off accounts increase the allowances ."
+      },
+      {
+        "location": "text_3",
+        "text": "net charge-offs include the principal amount of losses charged-off as well as charged-off interest and fees ."
+      },
+      {
+        "location": "text_4",
+        "text": "recovered interest and fees previously charged-off are recorded through the allowances for doubtful accounts and increase the allowances ."
+      },
+      {
+        "location": "text_5",
+        "text": "finance receivables are assessed for charge-off when an account becomes 120 days past due and are charged-off typically within 60 days of asset repossession ."
+      },
+      {
+        "location": "text_6",
+        "text": "contract receivables related to equipment leases are generally charged-off when an account becomes 150 days past due , while contract receivables related to franchise finance and van leases are generally charged-off up to 180 days past the asset return date ."
+      },
+      {
+        "location": "text_7",
+        "text": "for finance and contract receivables , customer bankruptcies are generally charged-off upon notification that the associated debt is not being reaffirmed or , in any event , no later than 180 days past due ."
+      },
+      {
+        "location": "text_8",
+        "text": "snap-on does not believe that its trade accounts , finance or contract receivables represent significant concentrations of credit risk because of the diversified portfolio of individual customers and geographical areas ."
+      },
+      {
+        "location": "text_9",
+        "text": "see note 3 for further information on receivables and allowances for doubtful accounts ."
+      },
+      {
+        "location": "text_10",
+        "text": "other accrued liabilities : supplemental balance sheet information for 201cother accrued liabilities 201d as of 2013 and 2012 year end is as follows : ( amounts in millions ) 2013 2012 ."
+      }
+    ],
+    "table": [
+      {
+        "row_index": 0,
+        "cells": [
+          "<i>(Amounts in millions)</i>",
+          "2013",
+          "2012"
+        ]
+      },
+      {
+        "row_index": 1,
+        "cells": [
+          "Income taxes",
+          "$7.7",
+          "$19.6"
+        ]
+      },
+      {
+        "row_index": 2,
+        "cells": [
+          "Accrued restructuring",
+          "4.0",
+          "7.2"
+        ]
+      },
+      {
+        "row_index": 3,
+        "cells": [
+          "Accrued warranty",
+          "17.0",
+          "18.9"
+        ]
+      },
+      {
+        "row_index": 4,
+        "cells": [
+          "Deferred subscription revenue",
+          "26.6",
+          "24.8"
+        ]
+      },
+      {
+        "row_index": 5,
+        "cells": [
+          "Accrued property, payroll and other taxes",
+          "31.3",
+          "32.9"
+        ]
+      },
+      {
+        "row_index": 6,
+        "cells": [
+          "Accrued selling and promotion expense",
+          "24.5",
+          "26.6"
+        ]
+      },
+      {
+        "row_index": 7,
+        "cells": [
+          "Other",
+          "132.6",
+          "117.9"
+        ]
+      },
+      {
+        "row_index": 8,
+        "cells": [
+          "Total other accrued liabilities",
+          "$243.7",
+          "$247.9"
+        ]
+      }
+    ],
+    "post_text": [
+      {
+        "location": "text_11",
+        "text": "inventories : snap-on values its inventory at the lower of cost or market and adjusts for the value of inventory that is estimated to be excess , obsolete or otherwise unmarketable ."
+      },
+      {
+        "location": "text_12",
+        "text": "snap-on records allowances for excess and obsolete inventory based on historical and estimated future demand and market conditions ."
+      },
+      {
+        "location": "text_13",
+        "text": "allowances for raw materials are largely based on an analysis of raw material age and actual physical inspection of raw material for fitness for use ."
+      },
+      {
+        "location": "text_14",
+        "text": "as part of evaluating the adequacy of allowances for work-in-progress and finished goods , management reviews individual product stock-keeping units ( skus ) by product category and product life cycle ."
+      },
+      {
+        "location": "text_15",
+        "text": "cost adjustments for each product category/product life-cycle state are generally established and maintained based on a combination of historical experience , forecasted sales and promotions , technological obsolescence , inventory age and other actual known conditions and circumstances ."
+      },
+      {
+        "location": "text_16",
+        "text": "should actual product marketability and raw material fitness for use be affected by conditions that are different from management estimates , further adjustments to inventory allowances may be required ."
+      },
+      {
+        "location": "text_17",
+        "text": "snap-on adopted the 201clast-in , first-out 201d ( 201clifo 201d ) inventory valuation method in 1973 for its u.s ."
+      },
+      {
+        "location": "text_18",
+        "text": "locations ."
+      },
+      {
+        "location": "text_19",
+        "text": "snap-on 2019s u.s ."
+      },
+      {
+        "location": "text_20",
+        "text": "inventories accounted for on a lifo basis consist of purchased product and inventory manufactured at the company 2019s heritage u.s ."
+      },
+      {
+        "location": "text_21",
+        "text": "manufacturing facilities ( primarily hand tools and tool storage ) ."
+      },
+      {
+        "location": "text_22",
+        "text": "as snap-on began acquiring businesses in the 1990 2019s , the company retained the 201cfirst-in , first-out 201d ( 201cfifo 201d ) inventory valuation methodology used by the predecessor businesses prior to their acquisition by snap-on ; the company does not adopt the lifo inventory valuation methodology for new acquisitions ."
+      },
+      {
+        "location": "text_23",
+        "text": "see note 4 for further information on inventories ."
+      },
+      {
+        "location": "text_24",
+        "text": "property and equipment : property and equipment is stated at cost less accumulated depreciation and amortization ."
+      },
+      {
+        "location": "text_25",
+        "text": "depreciation and amortization are provided on a straight-line basis over estimated useful lives ."
+      },
+      {
+        "location": "text_26",
+        "text": "major repairs that extend the useful life of an asset are capitalized , while routine maintenance and repairs are expensed as incurred ."
+      },
+      {
+        "location": "text_27",
+        "text": "capitalized software included in property and equipment reflects costs related to internally developed or purchased software for internal use and is amortized on a straight-line basis over their estimated useful lives ."
+      },
+      {
+        "location": "text_28",
+        "text": "long-lived assets are evaluated for impairment when events or circumstances indicate that the carrying amount of the long-lived asset may not be recoverable ."
+      },
+      {
+        "location": "text_29",
+        "text": "see note 5 for further information on property and equipment ."
+      },
+      {
+        "location": "text_30",
+        "text": "2013 annual report 73 ."
+      }
+    ],
+    "location_convention": "All indices are zero-based. table_i:j identifies row i and column j. text_i:k identifies character offset k in combined pre_text + post_text item i after source HTML normalization."
+  },
+  "question": "what was the percent of the change in the total other accrued liabilities from 2012 to 2013",
+  "reference_program": "subtract(243.7, 247.9), divide(#0, 247.9)",
+  "reference_program_convention": "#k means the output of zero-based operation k; const_* are exact constants.",
+  "input_bindings": {
+    "x0": {
+      "program_token": "243.7",
+      "raw": "243.7",
+      "location": "table_8:1",
+      "context": "Total other accrued liabilities | 2013"
+    },
+    "x1": {
+      "program_token": "247.9",
+      "raw": "247.9",
+      "location": "table_8:2",
+      "context": "Total other accrued liabilities | 2012"
+    }
+  }
+}
